@@ -1,0 +1,94 @@
+{
+ "id": "florentine-money",
+ "title": "Florentine money of account",
+ "about": "Sums run fiorini ƒ · lire · soldi ß · denari 𝒹, closed by pc̄ (piccioli). The lira sign is a parameter set per manuscript (MPAP 4 ℔, MS 493 ⫳).",
+ "origin": "MPAP 4 (ASF, Balduccii), Laura Morreale, 16–18 Oct 2026",
+ "rules": [
+  {
+   "id": "florin-sign",
+   "level": "fix",
+   "msg": "The florin is the symbol ƒ alone: the i-like stroke after it is part of the symbol, not a letter",
+   "find": "ƒi(?=\\d| |[xlcdm]+[ivxlcdmº]*(?!\\L)|$)(?! +[ß℔⫳𝒹])",
+   "replace": "ƒ",
+   "why": "Laura, 18 Oct 2026"
+  },
+  {
+   "id": "divide-sign",
+   "level": "fix",
+   "msg": "The dot–bar–dot sign is written 1/1",
+   "find": "÷",
+   "replace": "1/1",
+   "why": "Laura 17 Oct"
+  },
+  {
+   "id": "rate-1/1",
+   "level": "check",
+   "msg": "Rate phrase 'a 30 ꝓ 𝒹': check the image for the 1/1 sign before ꝓ",
+   "find": "(?<!\\L)(a \\d+) ꝓ 𝒹",
+   "replace": "$1 1/1 ꝓ 𝒹",
+   "why": "Laura 17 Oct (RS1133 l33)"
+  },
+  {
+   "id": "pc-closing",
+   "level": "fix",
+   "msg": "Close a sum with pc̄ (not pē / pe / pc)",
+   "find": "([ß𝒹] ?[ivxlc\\d]+º? +)p(?:ē|ē|e|c)(?!\\L)",
+   "replace": "$1pc̄",
+   "why": "Money, Laura 16 Oct"
+  },
+  {
+   "id": "denari-d",
+   "level": "fix",
+   "msg": "Denari are always 𝒹, never plain d",
+   "find": "(ß ?[ivxlc\\d]+º? +)d(?= ?[ivxlc\\d]+º?(?!\\L))",
+   "replace": "$1𝒹",
+   "why": "Model line"
+  },
+  {
+   "id": "bstroke-denari",
+   "level": "fix",
+   "msg": "ƀ after the soldi figure stands where denari belong: 𝒹",
+   "find": "(ß ?[ivxlc\\d]+º? +)ƀ(?= ?[ivxlc\\d]+º?(?!\\L))",
+   "replace": "$1𝒹",
+   "why": "Money order ƒ ℔ ß 𝒹"
+  },
+  {
+   "id": "bstroke-pound",
+   "level": "fix",
+   "msg": "ƀ before a sum is a misreading of {{pound}} (ƀ is only the -br- of month names)",
+   "find": "(?<!\\L)ƀ(?= ?[ivxlc\\d]+º?(?!\\L))",
+   "replace": "{{pound}}",
+   "why": "Money, Laura 16 Oct"
+  },
+  {
+   "id": "denari-in-lire-slot",
+   "level": "fix",
+   "msg": "𝒹 between the ƒ figure and ß stands where lire belong: {{pound}}",
+   "find": "(ƒ(?:i|(?!i)) ?[ivxlcm\\d]+º? +)𝒹( ?[ivxlc\\d]+º? +ß)",
+   "replace": "$1{{pound}}$2",
+   "why": "Money, Laura 16 Oct"
+  },
+  {
+   "id": "missing-lira",
+   "level": "check",
+   "msg": "Two figures between ƒ and ß: the {{pound}} sign is probably missing (look for the knotted cross-barred loop)",
+   "find": "ƒ(?:i|(?!i)) ?(?![cm]+ )[ivxlc\\d]+º? +[ivxlc\\d]+º? +ß"
+  },
+  {
+   "id": "denari-as-date",
+   "level": "fix",
+   "msg": "𝒹 before a day + month is the date word di",
+   "find": "𝒹(?= ?[ivxlc\\d]+º? +(?:di +|d)?(?:gen|feb|mar|mã|apr|apil|dap|mag|gug|lug|lul|ago|dag|set|ott|dot|nov|dic|dcē))",
+   "replace": "di",
+   "why": "di vs 𝒹, Laura 16 Oct"
+  },
+  {
+   "id": "lira-sign",
+   "level": "fix",
+   "msg": "This manuscript writes the lira as {{pound}}",
+   "find": "[⫳℔](?<!{{pound}})",
+   "replace": "{{pound}}",
+   "why": "Pound sign"
+  }
+ ]
+}

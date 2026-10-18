@@ -1,0 +1,56 @@
+{
+ "id": "account-formulae",
+ "title": "Florentine account-book formulae",
+ "about": "Standard phrases of Florentine account books, with the word division used in the ground truth.",
+ "origin": "MPAP 4 (ASF, Balduccii), Laura Morreale, 16–18 Oct 2026",
+ "rules": [
+  {
+   "id": "a-libro-E1",
+   "level": "fix",
+   "msg": "Write 'E a libro'",
+   "find": "(?<!\\L)(E) ?alibro(?!\\L)",
+   "replace": "$1 a libro",
+   "why": "Laura 16 Oct"
+  },
+  {
+   "id": "a-libro-E2",
+   "level": "fix",
+   "msg": "Write 'E a libro'",
+   "find": "(?<!\\L)(E)a libro(?!\\L)",
+   "replace": "$1 a libro",
+   "why": "Laura 16 Oct"
+  },
+  {
+   "id": "a-libro",
+   "level": "fix",
+   "msg": "Write 'a libro'",
+   "find": "(?<!\\L)(?<!E )ali ?bro(?!\\L)",
+   "replace": "a libro",
+   "why": "Laura 16 Oct"
+  },
+  {
+   "id": "a-uscita",
+   "level": "fix",
+   "msg": "Write 'a uscita'",
+   "find": "(?<!\\L)(?:a )?(?:a[vu]scita|anscita|ansata|a vscita)(?!\\L)",
+   "replace": "a uscita",
+   "why": "Laura 16 Oct"
+  },
+  {
+   "id": "a-entrata",
+   "level": "fix",
+   "msg": "Write 'a entrata'",
+   "find": "(?<!\\L)aentrata(?!\\L)",
+   "replace": "a entrata",
+   "why": "Laura 16 Oct"
+  },
+  {
+   "id": "anno-dato",
+   "level": "fix",
+   "msg": "It is 'Anno dato' (= hanno dato)",
+   "find": "(?<!\\L)(?:Anne|Amne|Ame|mne|nne) dato(?!\\L)",
+   "replace": "Anno dato",
+   "why": "Laura 16 Oct"
+  }
+ ]
+}

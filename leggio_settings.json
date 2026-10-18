@@ -1,0 +1,31 @@
+{
+ "kraken_segmentation_model": "",
+ "kraken_recognition_model": "catmus_secondtraining_v2_4.mlmodel",
+ "folder_models": {
+  "UPenn_Fellowship": "catmus_secondtraining_v2_4.mlmodel",
+  "UPenn_1435": "catmus_secondtraining_v2_4.mlmodel",
+  "Baker_MS_493": "catmus_secondtraining_v2_4.mlmodel"
+ },
+ "kraken_command": [
+  "kraken",
+  "-a",
+  "-i",
+  "{image}",
+  "{out}",
+  "segment",
+  "-bl",
+  "{seg_args}",
+  "ocr",
+  "-m",
+  "{rec_model}"
+ ],
+ "comma_enabled": false,
+ "comma_model_repo": "wjbmattingly/comma-qwen-3.5-0.8b-full-33k",
+ "comma_prompt_space": "wjbmattingly/comma-qwen-3.5-demo",
+ "comma_runs": 5,
+ "comma_temperature": 0.7,
+ "comma_greedy_first": true,
+ "comma_device": "auto",
+ "special_characters": "ꝓ ꝑ ꝙ ⁊ ꝯ ƒ ⫳ ß 𝒹 ℔ ƀ ħ ꝫ ꝰ ◌꤬ º ª ſ ꝛ ̄ ̃ ͥ ͣ ꝝ ℑ 𝓎 β",
+ "flag_threshold": 0.5
+}

@@ -1,0 +1,47 @@
+{
+ "collection": "UPenn_1435",
+ "about": "Penn Ms. Codex 1435. Shared sets adopted CHECK-ONLY; lira sign 𝓎. Promote rules once Laura confirms them for this hand.",
+ "params": {
+  "pound": "𝓎"
+ },
+ "prose": [
+  "TRANSCRIPTION_CONVENTIONS.md",
+  "transcriptions/UPenn_1435/CONVENTIONS.md"
+ ],
+ "references": [
+  "reference/glossary/edler_wordbank.tsv",
+  "reference/glossary/edler_formulas.tsv",
+  "reference/MPAP4_vocabulary.md"
+ ],
+ "use": [
+  {
+   "set": "kraken-hygiene",
+   "level": "as-written"
+  },
+  {
+   "set": "account-formulae",
+   "level": "check-only"
+  },
+  {
+   "set": "florentine-money",
+   "level": "check-only"
+  },
+  {
+   "set": "carta-references",
+   "level": "check-only"
+  },
+  {
+   "set": "tilde-for-r",
+   "level": "check-only"
+  },
+  {
+   "set": "roman-numerals-i-final",
+   "level": "check-only"
+  }
+ ],
+ "promote": [],
+ "disable": [
+  "lira-sign"
+ ],
+ "rules": []
+}

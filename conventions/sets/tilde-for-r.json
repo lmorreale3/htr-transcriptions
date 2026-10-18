@@ -1,0 +1,32 @@
+{
+ "id": "tilde-for-r",
+ "title": "Tilde = r, macron = nasal",
+ "about": "Where a scribe distinguishes a tilde (r) from a macron (n/m): mãzo, tẽra. Includes camãlingo (camarlingo).",
+ "origin": "MPAP 4 (ASF, Balduccii), Laura Morreale, 16–18 Oct 2026",
+ "rules": [
+  {
+   "id": "marzo",
+   "level": "fix",
+   "msg": "marzo is written with a tilde (= r): mãzo",
+   "find": "(?<!\\L)m(?:ā|ā)zo(?!\\L)",
+   "replace": "mãzo",
+   "why": "Macron vs tilde"
+  },
+  {
+   "id": "terra",
+   "level": "fix",
+   "msg": "terra is written with a tilde (= r): tẽra / tẽre",
+   "find": "(?<!\\L)t(?:ē|ē)(r[ae])(?!\\L)",
+   "replace": "tẽ$1",
+   "why": "Macron vs tilde"
+  },
+  {
+   "id": "camarlingo",
+   "level": "fix",
+   "msg": "camarlingo is abbreviated with a tilde (= r) over the a after m: camãlingo / camãlingho — no macron on the m",
+   "find": "(?<!\\L)([Cc])am[̃̄]?(?:ā|ã|a[̃̄]?|o)(lingh?[oi])(?!\\L)",
+   "replace": "$1amã$2",
+   "why": "Laura, 18 Oct 2026"
+  }
+ ]
+}

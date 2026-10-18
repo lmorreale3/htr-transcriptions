@@ -1,0 +1,18 @@
+# Kept off GitHub: large, rights-restricted, or easy to recreate.
+images/
+models/
+training/
+# The app has its own repository:
+leggio/
+# Backups and Claude's working files:
+.work/
+_to_delete/
+.claude/
+*.pdf
+*.zip
+*.tgz
+workspace/*/thumbs/
+ground_truth/**/*.jpg
+ground_truth/**/*.png
+.DS_Store
+__pycache__/

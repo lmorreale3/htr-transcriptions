@@ -1,0 +1,92 @@
+{
+ "collection": "MPAP_4",
+ "about": "Which shared rule sets apply to this manuscript, its own rules, and its parameters. Shared sets live in conventions/sets/. A set only applies if listed under \"use\". level \"as-written\" keeps each rule's fix/check level; \"check-only\" turns every rule into a check (use this for a set newly adopted from another manuscript until it is confirmed here). \"promote\" lists rule ids to treat as fix anyway; \"disable\" switches rules off.",
+ "params": {
+  "pound": "℔"
+ },
+ "prose": [
+  "TRANSCRIPTION_CONVENTIONS.md",
+  "transcriptions/MPAP_4/CONVENTIONS.md"
+ ],
+ "references": [
+  "reference/MPAP4_vocabulary.md",
+  "reference/MPAP4_money_glyphs.jpg",
+  "reference/glossary/edler_wordbank.tsv"
+ ],
+ "use": [
+  {
+   "set": "roman-numerals-i-final",
+   "level": "as-written"
+  },
+  {
+   "set": "florentine-money",
+   "level": "as-written"
+  },
+  {
+   "set": "carta-references",
+   "level": "as-written"
+  },
+  {
+   "set": "account-formulae",
+   "level": "as-written"
+  },
+  {
+   "set": "tilde-for-r",
+   "level": "as-written"
+  },
+  {
+   "set": "kraken-hygiene",
+   "level": "as-written"
+  }
+ ],
+ "promote": [],
+ "disable": [],
+ "rules": [
+  {
+   "id": "rede",
+   "level": "fix",
+   "msg": "Capital R looks like B in this hand: rede (heirs)",
+   "find": "(?<!\\L)bede(?!\\L)",
+   "replace": "rede"
+  },
+  {
+   "id": "Rede",
+   "level": "fix",
+   "msg": "Capital R looks like B in this hand: Rede (heirs)",
+   "find": "(?<!\\L)Bede(?!\\L)",
+   "replace": "Rede"
+  },
+  {
+   "id": "nuovo",
+   "level": "fix",
+   "msg": "Kraken reads v as n here: Nuovo / nuovo",
+   "find": "(?<!\\L)([Nn])uono(?!\\L)",
+   "replace": "$1uovo",
+   "why": "Vocabulary"
+  },
+  {
+   "id": "truovo",
+   "level": "fix",
+   "msg": "Kraken reads v as n here: Truovo",
+   "find": "(?<!\\L)Truono(?!\\L)",
+   "replace": "Truovo",
+   "why": "Vocabulary"
+  },
+  {
+   "id": "resto",
+   "level": "fix",
+   "msg": "Kraken reads r as b here: resto",
+   "find": "(?<!\\L)besto(?!\\L)",
+   "replace": "resto",
+   "why": "Vocabulary"
+  },
+  {
+   "id": "aprile",
+   "level": "fix",
+   "msg": "aprile is abbreviated with the flourished p (= pr): aꝓile / daꝓile",
+   "find": "(?<!\\L)(d?a)p(?:ꝛ)?ile(?!\\L)",
+   "replace": "$1ꝓile",
+   "why": "Laura, 18 Oct 2026"
+  }
+ ]
+}

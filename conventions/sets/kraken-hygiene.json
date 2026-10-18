@@ -1,0 +1,48 @@
+{
+ "id": "kraken-hygiene",
+ "title": "Kraken output hygiene",
+ "about": "Mechanical clean-up that matters for any manuscript read with Kraken: one encoding per letter, no stray spaces or brackets, Latin hallucinations over blank or ruled areas.",
+ "origin": "MPAP 4 (ASF, Balduccii), Laura Morreale, 16–18 Oct 2026",
+ "rules": [
+  {
+   "id": "encoding",
+   "level": "fix",
+   "msg": "Same letter, two encodings: use the single-character form (helps training)",
+   "find": "[aeiouAEIOU][̃̄]",
+   "replace": "@NFC"
+  },
+  {
+   "id": "double-space",
+   "level": "fix",
+   "msg": "Double space",
+   "find": "  +",
+   "replace": " "
+  },
+  {
+   "id": "edge-space",
+   "level": "fix",
+   "msg": "Space at the start or end of the line",
+   "find": "^\\s+|\\s+$",
+   "replace": ""
+  },
+  {
+   "id": "bracket",
+   "level": "check",
+   "msg": "Unclosed [ bracket",
+   "find": "\\[(?![^\\[\\]]*\\])"
+  },
+  {
+   "id": "latin",
+   "level": "check",
+   "msg": "Latin words: probably a Kraken hallucination (check the image; blank the line if nothing is written)",
+   "find": "(?<!\\L)(?:tabulam|genitrice|dominus|domine|tuum|tuã|requies|permissio|infirmitate|parentu|inuidia|procludisti|aliter|filius)(?!\\L)"
+  },
+  {
+   "id": "ruled-dash",
+   "level": "fix",
+   "msg": "Ruled dashes are written ___",
+   "find": "[—–]+",
+   "replace": "___"
+  }
+ ]
+}

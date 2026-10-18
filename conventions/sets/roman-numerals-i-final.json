@@ -1,0 +1,23 @@
+{
+ "id": "roman-numerals-i-final",
+ "title": "Roman numerals: final i, º for …iiii",
+ "about": "Numerals keep their final stroke as i (never j); in sums a superscript º usually closes …iiii.",
+ "origin": "MPAP 4 (ASF, Balduccii), Laura Morreale, 16–18 Oct 2026",
+ "rules": [
+  {
+   "id": "numeral-j",
+   "level": "fix",
+   "msg": "Roman numerals end in i, never j",
+   "find": "(?<!\\L)([ivxlc]*[ivxlc])j(º?)(?!\\L)",
+   "replace": "$1i$2",
+   "why": "CONVENTIONS: Roman numerals"
+  },
+  {
+   "id": "sum-iiii",
+   "level": "check",
+   "msg": "A sum numeral with º usually ends …iiiiº (check the image)",
+   "find": "[ƒ{{pound}}ß𝒹]i? ?[xlcv]*(?<!i)i{2,3} ?º",
+   "why": "Model line: superscript º"
+  }
+ ]
+}

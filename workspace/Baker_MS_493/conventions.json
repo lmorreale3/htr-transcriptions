@@ -1,0 +1,58 @@
+{
+ "collection": "Baker_MS_493",
+ "about": "Baker MS 493 (Medici MS 493). Shared sets adopted CHECK-ONLY: the vocabulary and usage transfer from MPAP 4, the hand does not. Promote a rule (list its id under promote) once Laura confirms it holds for this hand.",
+ "params": {
+  "pound": "⫳"
+ },
+ "prose": [
+  "TRANSCRIPTION_CONVENTIONS.md",
+  "transcriptions/Baker_MS_493/CONVENTIONS.md"
+ ],
+ "references": [
+  "reference/glossary/edler_ms493_quotes.json",
+  "reference/glossary/edler_wordbank.tsv",
+  "reference/glossary/edler_formulas.tsv",
+  "reference/MPAP4_vocabulary.md"
+ ],
+ "use": [
+  {
+   "set": "kraken-hygiene",
+   "level": "as-written"
+  },
+  {
+   "set": "account-formulae",
+   "level": "check-only"
+  },
+  {
+   "set": "florentine-money",
+   "level": "check-only"
+  },
+  {
+   "set": "carta-references",
+   "level": "check-only"
+  },
+  {
+   "set": "tilde-for-r",
+   "level": "check-only"
+  },
+  {
+   "set": "roman-numerals-i-final",
+   "level": "check-only"
+  }
+ ],
+ "promote": [],
+ "disable": [
+  "numeral-j",
+  "lira-sign"
+ ],
+ "rules": [
+  {
+   "id": "lira-is-not-libbra",
+   "level": "check",
+   "msg": "In MS 493 ℔ is the weight pound (libbra); the lira is ⫳. A ℔ inside a money sum (after the ƒ figure, before ß) is probably ⫳",
+   "find": "(ƒ ?[ivxlcdmj\\d]+º? +)℔(?= ?[ivxlcdmj\\d]+º? +ß)",
+   "replace": "$1⫳",
+   "why": "Laura, 18 Oct 2026"
+  }
+ ]
+}

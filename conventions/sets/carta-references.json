@@ -1,0 +1,24 @@
+{
+ "id": "carta-references",
+ "title": "Carta references",
+ "about": "ac̄ / c̄ / acār / cār with the abbreviation stroke before a carta number.",
+ "origin": "MPAP 4 (ASF, Balduccii), Laura Morreale, 16–18 Oct 2026",
+ "rules": [
+  {
+   "id": "carta-c",
+   "level": "fix",
+   "msg": "Before a carta number write ac̄ / c̄ (with the stroke), never bare ac / c",
+   "find": "(?<!\\L)(a?c)(?= ?\\d)",
+   "replace": "$1̄",
+   "why": "Macrons, Laura 16 Oct"
+  },
+  {
+   "id": "carta-car",
+   "level": "fix",
+   "msg": "Before a carta number write acār / cār (with the stroke)",
+   "find": "(?<!\\L)(a?c)ar(?= ?\\d)",
+   "replace": "$1ār",
+   "why": "Macrons, Laura 16 Oct"
+  }
+ ]
+}
