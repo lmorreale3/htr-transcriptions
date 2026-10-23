@@ -1,0 +1,582 @@
+[
+ {
+  "name": "Florence",
+  "aliases": [
+   "Firenze",
+   "città di Firenze"
+  ],
+  "kind": "city",
+  "lat": 43.77139,
+  "lon": 11.25417,
+  "confidence": "secure",
+  "basis": "city centre point from en.wikipedia infobox",
+  "source": "https://en.wikipedia.org/wiki/Florence",
+  "modern_name": "Firenze",
+  "note": "",
+  "within": "",
+  "status": "suggested"
+ },
+ {
+  "name": "Pistoia",
+  "aliases": [
+   "città di Pistoia"
+  ],
+  "kind": "city",
+  "lat": 43.933334,
+  "lon": 10.916667,
+  "confidence": "secure",
+  "basis": "city point from DBpedia (en.wikipedia coords; low precision, ~0.001 deg)",
+  "source": "http://dbpedia.org/resource/Pistoia",
+  "modern_name": "Pistoia",
+  "note": "",
+  "within": "",
+  "status": "suggested"
+ },
+ {
+  "name": "Santa Maria Maggiore",
+  "aliases": [
+   "Santa Maria Maggiore (popolo)",
+   "popolo di Santa Maria Maggiore"
+  ],
+  "kind": "parish church",
+  "lat": 43.77327,
+  "lon": 11.253067,
+  "confidence": "secure",
+  "basis": "existing church; DBpedia geo:lat/long (en.wikipedia), matches gcatholic plus code 8FMHQ7F3+84 (43.7733,11.2528)",
+  "source": "http://dbpedia.org/resource/Santa_Maria_Maggiore,_Florence",
+  "modern_name": "Chiesa di Santa Maria Maggiore",
+  "note": "Faces Piazza di Santa Maria Maggiore at corner of via de' Cerretani (it.wikipedia). Cross-check: https://gcatholic.org/churches/italia/50703",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "Chiasso de' Buoi",
+  "aliases": [
+   "chiasso de' Buoi",
+   "Chiasso dei Buoi"
+  ],
+  "kind": "lane",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "no fetched source locates this lane",
+  "source": "",
+  "modern_name": "",
+  "note": "Document places it in the popolo of Santa Maria Maggiore (heirs' palagio there). Lane not identified in any fetched source; do not plot except as within the parish of Santa Maria Maggiore (43.77327, 11.253067).",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "San Lorenzo",
+  "aliases": [
+   "San Lorenzo (popolo)",
+   "popolo di San Lorenzo"
+  ],
+  "kind": "parish church",
+  "lat": 43.774917,
+  "lon": 11.253861,
+  "confidence": "secure",
+  "basis": "existing basilica; en.wikipedia infobox coords, matches gcatholic plus code 8FMHQ7F3+WR (43.7748,11.2546)",
+  "source": "https://en.wikipedia.org/wiki/Basilica_of_San_Lorenzo,_Florence",
+  "modern_name": "Basilica di San Lorenzo",
+  "note": "Cross-check: https://gcatholic.org/churches/italy/0072",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "Borgo San Lorenzo",
+  "aliases": [
+   "Via di Borgo San Lorenzo",
+   "Borgo San Lorenzo (Firenze)"
+  ],
+  "kind": "street",
+  "lat": 43.774,
+  "lon": 11.2544,
+  "confidence": "approximate",
+  "basis": "midpoint of its two ends: it.wikipedia says it runs between Piazza San Giovanni and Piazza San Lorenzo; Baptistery 43.7731,11.255 (en.wikipedia) and San Lorenzo 43.774917,11.253861 (en.wikipedia)",
+  "source": "https://it.wikipedia.org/wiki/Borgo_San_Lorenzo_(Firenze)",
+  "modern_name": "Borgo San Lorenzo",
+  "note": "Florence street, NOT the Mugello town. Name attested from 1117; originally opened only onto via dell'Arcivescovo, reaching Piazza San Giovanni only in the 1800s. Endpoint sources: https://en.wikipedia.org/wiki/Florence_Baptistery ; https://en.wikipedia.org/wiki/Basilica_of_San_Lorenzo,_Florence",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "Via de' Fossi",
+  "aliases": [
+   "Via de' Fossi"
+  ],
+  "kind": "street",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "modern Via de' Fossi is outside the San Lorenzo parish; identification with the document's street unconfirmed",
+  "source": "https://it.wikipedia.org/wiki/Via_de%27_Fossi",
+  "modern_name": "Via de' Fossi (?)",
+  "note": "it.wikipedia: today's Via de' Fossi runs from Piazza Santa Maria Novella to Piazza Goldoni (Piazza Goldoni 43.770925,11.24775 per en.wikipedia; S. Maria Novella basilica 43.7746,11.2493), named probably from a ditch (fossato) along the second (Dante-era) walls. That is in the Santa Maria Novella/Ognissanti area, not the popolo of San Lorenzo. If the document puts it in San Lorenzo, it may be a different 'via de' fossi' (e.g. along a moat/ditch near San Lorenzo); left unplotted.",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "Gomito dell'Oro",
+  "aliases": [
+   "Gomito dell'Oro",
+   "luogo detto Gomito dell'Oro"
+  ],
+  "kind": "area",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "no fetched source mentions this place-name",
+  "source": "",
+  "modern_name": "",
+  "note": "Document places it in the popolo of San Lorenzo; web searches found nothing.",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "Spedale di San Giovanni fra l'Arcora",
+  "aliases": [
+   "Fra l'Arcora",
+   "fra l'Arcora",
+   "spedale di san Giovanni"
+  ],
+  "kind": "hospital",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "no fetched source locates the hospital",
+  "source": "",
+  "modern_name": "",
+  "note": "Document: 'fuori delle mura allato allo spedale di san Giovanni' near San Lorenzo, i.e. outside the walls on the San Lorenzo side. Searches (it.wikipedia church lists, catalogues) found no location for San Giovanni fra l'Arcora; left unplotted.",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "San Firenze",
+  "aliases": [
+   "San Firenze (popolo)",
+   "popolo di San Firenze"
+  ],
+  "kind": "parish church",
+  "lat": 43.769812,
+  "lon": 11.257812,
+  "confidence": "approximate",
+  "basis": "position of the present Chiesa/Complesso di San Firenze from gcatholic plus code 8FMHQ795+W4 (decoded); the Baroque complex stands on Piazza San Firenze where the medieval parish church was",
+  "source": "https://gcatholic.org/churches/italia/50840",
+  "modern_name": "Complesso di San Firenze, Piazza San Firenze",
+  "note": "it.wikipedia: complex lies on Piazza San Firenze between Borgo dei Greci, via dell'Anguillara and via Filippina (https://it.wikipedia.org/wiki/Complesso_di_San_Firenze). Medieval church replaced by the 17th-18th c. complex, so the point is the site, not the 1380s building.",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "Borgo de' Greci",
+  "aliases": [
+   "Borgo de' Greci",
+   "Borgo dei Greci"
+  ],
+  "kind": "street",
+  "lat": 43.769812,
+  "lon": 11.257812,
+  "confidence": "approximate",
+  "basis": "it.wikipedia says the San Firenze complex is bounded by Borgo dei Greci; point = San Firenze (gcatholic plus code)",
+  "source": "https://it.wikipedia.org/wiki/Complesso_di_San_Firenze",
+  "modern_name": "Borgo dei Greci",
+  "note": "Street runs west from Piazza San Firenze toward Piazza Santa Croce; point marks its San Firenze end only.",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "San Piero Maggiore",
+  "aliases": [
+   "San Pier Maggiore",
+   "San Piero Maggiore (popolo)"
+  ],
+  "kind": "parish church",
+  "lat": 43.7713,
+  "lon": 11.2618,
+  "confidence": "approximate",
+  "basis": "church demolished 1783/84; stood on the site of today's Piazza San Pier Maggiore (theflorentine.net); coordinates from DBpedia (en.wikipedia San Pier Maggiore, Florence)",
+  "source": "http://dbpedia.org/resource/San_Pier_Maggiore,_Florence",
+  "modern_name": "Piazza di San Pier Maggiore",
+  "note": "Three portico arches survive at the piazza edge. Site source: https://www.theflorentine.net/2015/10/01/the-church-of-san-pier-maggiore/",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "Via di San Gilio",
+  "aliases": [
+   "Via San Gilio",
+   "Via di San Giglio"
+  ],
+  "kind": "street",
+  "lat": 43.773312,
+  "lon": 11.259813,
+  "confidence": "approximate",
+  "basis": "it.wikipedia: Via Sant'Egidio was formerly 'Via San Gilio'/'di San Giglio', named from the church of Sant'Egidio (now in Ospedale di Santa Maria Nuova); point = Sant'Egidio church, gcatholic plus code 8FMHQ7F5+8W (decoded)",
+  "source": "https://it.wikipedia.org/wiki/Via_Sant%27Egidio",
+  "modern_name": "Via Sant'Egidio",
+  "note": "Point is the street's western end at Piazza Santa Maria Nuova; the street runs east toward the San Pier Maggiore area. it.wikipedia adds that the old name also covered today's via Maurizio Bufalini. Coordinate source: https://gcatholic.org/churches/italia/50697",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "San Simone",
+  "aliases": [
+   "San Simone (popolo)",
+   "Santi Simone e Giuda"
+  ],
+  "kind": "parish church",
+  "lat": 43.769722,
+  "lon": 11.260555,
+  "confidence": "secure",
+  "basis": "existing church on Piazza San Simone; DBpedia geo (en.wikipedia), matches gcatholic plus code 8FMHQ796+X4 (43.7699,11.2603)",
+  "source": "http://dbpedia.org/resource/Santi_Simone_e_Giuda,_Florence",
+  "modern_name": "Chiesa dei Santi Simone e Giuda",
+  "note": "Now Ukrainian Greek Catholic. Cross-check: https://gcatholic.org/churches/italia/50791",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "Via del Palagio",
+  "aliases": [
+   "via del Palagio"
+  ],
+  "kind": "street",
+  "lat": 43.77016,
+  "lon": 11.25969,
+  "confidence": "approximate",
+  "basis": "it.wikipedia: Via Ghibellina was originally 'via del Palagio del Podestà', the stretch from the Bargello to the old Porta Ghibellina (now via Verdi); point = midpoint of Bargello (43.77037,11.25835) and Teatro Verdi (43.769951,11.261023), both DBpedia",
+  "source": "https://it.wikipedia.org/wiki/Via_Ghibellina",
+  "modern_name": "Via Ghibellina (Bargello to via Verdi stretch)",
+  "note": "Runs just north of San Simone, consistent with the popolo. Endpoint sources: http://dbpedia.org/resource/Bargello ; http://dbpedia.org/resource/Teatro_Verdi_(Florence)",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "San Bartolo del Corso",
+  "aliases": [
+   "San Bartolo al Corso",
+   "San Bartolo in Corso"
+  ],
+  "kind": "parish church",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "lost church; no fetched source locates it",
+  "source": "",
+  "modern_name": "",
+  "note": "Presumably on or near today's Via del Corso, but the it.wikipedia Via del Corso page and church lists do not mention it; not plotted.",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "Via di San Martino",
+  "aliases": [
+   "via di San Martino"
+  ],
+  "kind": "street",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "no fetched source identifies the medieval street",
+  "source": "",
+  "modern_name": "",
+  "note": "Likely named from San Martino del Vescovo (it.wikipedia 'Chiese di Firenze': in piazzetta di San Martino near via de' Magazzini), but no source equates a modern street with 'via di San Martino'; not plotted.",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "San Michele a Castello",
+  "aliases": [
+   "San Michele a Castello"
+  ],
+  "kind": "parish church",
+  "lat": 43.820187,
+  "lon": 11.232563,
+  "confidence": "secure",
+  "basis": "existing church; gcatholic plus code 8FMHR6CM+32 (decoded)",
+  "source": "https://gcatholic.org/churches/italia/50674",
+  "modern_name": "Chiesa di San Michele a Castello",
+  "note": "",
+  "within": "",
+  "status": "suggested"
+ },
+ {
+  "name": "Castello",
+  "aliases": [
+   "Castello (Firenze)"
+  ],
+  "kind": "village",
+  "lat": 43.820187,
+  "lon": 11.232563,
+  "confidence": "approximate",
+  "basis": "village located by its parish church San Michele a Castello (gcatholic); Villa di Castello nearby at 43.819447,11.228184 (DBpedia)",
+  "source": "https://gcatholic.org/churches/italia/50674",
+  "modern_name": "Castello, Firenze (Quartiere 5)",
+  "note": "Villa source: http://dbpedia.org/resource/Villa_di_Castello",
+  "within": "Florence",
+  "status": "suggested"
+ },
+ {
+  "name": "Santa Maria a Novoli",
+  "aliases": [
+   "Santa Maria a Novoli"
+  ],
+  "kind": "parish church",
+  "lat": 43.796188,
+  "lon": 11.218438,
+  "confidence": "secure",
+  "basis": "existing church; gcatholic plus code 8FMHQ6W9+F9 (decoded)",
+  "source": "https://gcatholic.org/churches/italia/50623",
+  "modern_name": "Chiesa di Santa Maria a Novoli",
+  "note": "",
+  "within": "",
+  "status": "suggested"
+ },
+ {
+  "name": "Santo Stefano a Campi",
+  "aliases": [
+   "pieve di Santo Stefano a Campi"
+  ],
+  "kind": "pieve",
+  "lat": 43.822187,
+  "lon": 11.135938,
+  "confidence": "secure",
+  "basis": "existing church; gcatholic plus code 8FMHR4CP+V9 (decoded)",
+  "source": "https://gcatholic.org/churches/italia/50757",
+  "modern_name": "Pieve di Santo Stefano, Campi Bisenzio",
+  "note": "gcatholic lists it as parish (not labelled pieve). Campi Bisenzio town: 43.817,11.133 (en.wikipedia).",
+  "within": "Campi Bisenzio",
+  "status": "suggested"
+ },
+ {
+  "name": "San Niccolò a Calenzano",
+  "aliases": [
+   "San Niccolò"
+  ],
+  "kind": "parish church",
+  "lat": 43.863647,
+  "lon": 11.162142,
+  "confidence": "secure",
+  "basis": "existing church; it.wikivoyage coords, matches gcatholic plus code 8FMHV576+FR (43.8637,11.1621)",
+  "source": "https://it.wikivoyage.org/wiki/Calenzano",
+  "modern_name": "Chiesa di San Niccolò, Calenzano Alto",
+  "note": "gcatholic: https://gcatholic.org/churches/italia/50752",
+  "within": "Calenzano",
+  "status": "suggested"
+ },
+ {
+  "name": "Calenzano castello",
+  "aliases": [
+   "castello di Calenzano",
+   "Calenzano"
+  ],
+  "kind": "castello",
+  "lat": 43.863647,
+  "lon": 11.162142,
+  "confidence": "approximate",
+  "basis": "italia.it: the castle's cassero stood where the church of San Niccolò now is; point = San Niccolò",
+  "source": "https://www.italia.it/it/toscana/calenzano/luoghi-della-cultura/castello-di-calenzano",
+  "modern_name": "Calenzano Alto (Via Oriolo)",
+  "note": "castellitoscani.com also places San Niccolò inside the castle: https://castellitoscani.com/en/calenzano-castle . Calenzano comune point 43.867,11.167 (en.wikipedia).",
+  "within": "Calenzano",
+  "status": "suggested"
+ },
+ {
+  "name": "Monte Ghisi",
+  "aliases": [
+   "Monte Ghisi"
+  ],
+  "kind": "area",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "no fetched source mentions it",
+  "source": "",
+  "modern_name": "",
+  "note": "Document places it in Calenzano; not found in en/it sources fetched (Calenzano frazioni list, wikivoyage).",
+  "within": "Calenzano",
+  "status": "suggested"
+ },
+ {
+  "name": "San Martino a Sesto",
+  "aliases": [
+   "pieve di San Martino a Sesto"
+  ],
+  "kind": "pieve",
+  "lat": 43.830562,
+  "lon": 11.198688,
+  "confidence": "secure",
+  "basis": "existing church; gcatholic plus code 8FMHR5JX+6F (decoded)",
+  "source": "https://gcatholic.org/churches/italia/50723",
+  "modern_name": "Pieve di San Martino, Sesto Fiorentino",
+  "note": "Pieve known from c.1000 (en.wikipedia Sesto Fiorentino); town point 43.83194,11.19944.",
+  "within": "Sesto Fiorentino",
+  "status": "suggested"
+ },
+ {
+  "name": "Olmatello",
+  "aliases": [
+   "Olmatello"
+  ],
+  "kind": "area",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "no fetched source locates it",
+  "source": "",
+  "modern_name": "",
+  "note": "Document context: Sesto area. Not found in Sesto Fiorentino pages fetched (en.wikipedia, it.wikivoyage).",
+  "within": "Sesto Fiorentino",
+  "status": "suggested"
+ },
+ {
+  "name": "Santa Maria a Quinto",
+  "aliases": [
+   "Santa Maria a Quinto"
+  ],
+  "kind": "parish church",
+  "lat": 43.830062,
+  "lon": 11.220312,
+  "confidence": "secure",
+  "basis": "existing church; gcatholic plus code 8FMHR6JC+24 (decoded)",
+  "source": "https://gcatholic.org/churches/italia/50720",
+  "modern_name": "Chiesa di Santa Maria a Quinto",
+  "note": "First recorded 11th c., rebuilt 18th c. (en.wikipedia Sesto Fiorentino).",
+  "within": "Sesto Fiorentino",
+  "status": "suggested"
+ },
+ {
+  "name": "Barberino",
+  "aliases": [
+   "Barberino Val d'Elsa"
+  ],
+  "kind": "castello",
+  "lat": 43.5333,
+  "lon": 11.1667,
+  "confidence": "secure",
+  "basis": "town; en.wikipedia coords 43°32'N 11°10'E (low precision, ~1 km)",
+  "source": "https://en.wikipedia.org/wiki/Barberino_Val_d%27Elsa",
+  "modern_name": "Barberino Val d'Elsa (comune Barberino Tavarnelle)",
+  "note": "Identified as Barberino Val d'Elsa, not di Mugello: Spoiano and San Jacopo a Magliano are Val d'Elsa/Val di Pesa places (see those entries).",
+  "within": "Barberino Tavarnelle",
+  "status": "suggested"
+ },
+ {
+  "name": "San Bartolomeo (Barberino)",
+  "aliases": [
+   "San Bartolomeo",
+   "popolo di San Bartolomeo"
+  ],
+  "kind": "parish church",
+  "lat": 43.543187,
+  "lon": 11.172438,
+  "confidence": "approximate",
+  "basis": "church San Bartolomeo a Barberino d'Elsa; gcatholic plus code 8FMHG5VC+7X (decoded). Approximate because identification of the popolo with this church is inferred",
+  "source": "https://gcatholic.org/churches/italia/50682",
+  "modern_name": "Chiesa di San Bartolomeo, Piazza Barberi, Barberino Val d'Elsa",
+  "note": "Another San Bartolomeo (a Palazzuolo) exists in the comune (btfinearts.it), so identification is not certain.",
+  "within": "Barberino Tavarnelle",
+  "status": "suggested"
+ },
+ {
+  "name": "Santa Lucia (Barberino)",
+  "aliases": [
+   "Santa Lucia",
+   "popolo di Santa Lucia"
+  ],
+  "kind": "parish church",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "not securely identified",
+  "source": "",
+  "modern_name": "",
+  "note": "Candidate: Chiesa di Santa Lucia al Borghetto (Franciscan, Tavarnelle side, attested 1260; it.wikipedia Tavarnelle Val di Pesa), but no source ties it to Barberino's popolo; not plotted.",
+  "within": "Barberino Tavarnelle",
+  "status": "suggested"
+ },
+ {
+  "name": "San Bartolomeo da Spoiano",
+  "aliases": [
+   "San Bartolomeo a Spoiano",
+   "Spoiano"
+  ],
+  "kind": "parish church",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "Spoiano located only verbally",
+  "source": "https://en.wikipedia.org/wiki/Villa_di_Spoiano",
+  "modern_name": "località Spoiano",
+  "note": "Villa di Spoiano is 'on a hillock between Tavarnelle Val di Pesa and Barberino Val d'Elsa' (en/it.wikipedia); church not located.",
+  "within": "Barberino Tavarnelle",
+  "status": "suggested"
+ },
+ {
+  "name": "San Jacopo a Magliano",
+  "aliases": [
+   "San Jacopo a Magliano",
+   "Magliano"
+  ],
+  "kind": "parish church",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "not located; it.wikipedia Villa di Spoiano cites a 1689 pastoral visit to San Jacopo a Magliano that mentions the villa, so it lies near Spoiano",
+  "source": "https://it.wikipedia.org/wiki/Villa_di_Spoiano",
+  "modern_name": "",
+  "note": "Document: 'luogo Gaville'.",
+  "within": "Barberino Tavarnelle",
+  "status": "suggested"
+ },
+ {
+  "name": "Gaville",
+  "aliases": [
+   "luogo detto Gaville"
+  ],
+  "kind": "area",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "micro-toponym in the popolo of San Jacopo a Magliano; not located",
+  "source": "",
+  "modern_name": "",
+  "note": "Not the Valdarno Gaville (Figline) pieve; it is a 'luogo' within Magliano.",
+  "within": "Barberino Tavarnelle",
+  "status": "suggested"
+ },
+ {
+  "name": "Sant'Antonino",
+  "aliases": [
+   "Sant'Antonino"
+  ],
+  "kind": "parish church",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "not identified in fetched sources",
+  "source": "",
+  "modern_name": "",
+  "note": "Not listed among Barberino Tavarnelle churches on it.wikipedia; not plotted.",
+  "within": "Barberino Tavarnelle",
+  "status": "suggested"
+ },
+ {
+  "name": "Campo Maggio",
+  "aliases": [
+   "Campo Maggio",
+   "Campomaggio"
+  ],
+  "kind": "area",
+  "lat": null,
+  "lon": null,
+  "confidence": "uncertain",
+  "basis": "not located",
+  "source": "",
+  "modern_name": "",
+  "note": "Document: 'nella città di Pistoia overo nel contado'. A 'Campomaggio' exists near Marliana (PT) per hotel listings only; no reputable source links it to this record.",
+  "within": "Pistoia",
+  "status": "suggested"
+ }
+]

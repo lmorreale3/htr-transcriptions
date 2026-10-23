@@ -3,241 +3,11 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1143_DSC00659-scr.jpg",
  "order": 35,
- "folio": "",
+ "folio": "37v",
  "width": 1280,
  "height": 1920,
  "status": "finished",
  "lines": [
-  {
-   "id": "l25",
-   "polygon": [
-    [
-     1129,
-     230
-    ],
-    [
-     1095,
-     230
-    ],
-    [
-     1095,
-     247
-    ],
-    [
-     1094,
-     258
-    ],
-    [
-     1131,
-     266
-    ],
-    [
-     1133,
-     248
-    ],
-    [
-     1133,
-     244
-    ],
-    [
-     1129,
-     230
-    ]
-   ],
-   "baseline": [
-    [
-     1095,
-     247
-    ],
-    [
-     1133,
-     248
-    ]
-   ],
-   "readings": {
-    "claude": "22",
-    "before": "",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "22",
-   "agreement": null
-  },
-  {
-   "id": "l24",
-   "polygon": [
-    [
-     855,
-     355
-    ],
-    [
-     856,
-     375
-    ],
-    [
-     874,
-     366
-    ],
-    [
-     951,
-     374
-    ],
-    [
-     952,
-     375
-    ],
-    [
-     1052,
-     375
-    ],
-    [
-     1052,
-     374
-    ],
-    [
-     1053,
-     374
-    ],
-    [
-     1054,
-     374
-    ],
-    [
-     1063,
-     369
-    ],
-    [
-     1084,
-     374
-    ],
-    [
-     1085,
-     374
-    ],
-    [
-     1086,
-     374
-    ],
-    [
-     1127,
-     365
-    ],
-    [
-     1128,
-     352
-    ],
-    [
-     1124,
-     326
-    ],
-    [
-     1098,
-     333
-    ],
-    [
-     1080,
-     327
-    ],
-    [
-     1079,
-     327
-    ],
-    [
-     1078,
-     327
-    ],
-    [
-     1048,
-     333
-    ],
-    [
-     1022,
-     327
-    ],
-    [
-     1021,
-     327
-    ],
-    [
-     1020,
-     327
-    ],
-    [
-     1019,
-     327
-    ],
-    [
-     1018,
-     327
-    ],
-    [
-     1011,
-     334
-    ],
-    [
-     972,
-     334
-    ],
-    [
-     956,
-     326
-    ],
-    [
-     955,
-     326
-    ],
-    [
-     954,
-     326
-    ],
-    [
-     915,
-     333
-    ],
-    [
-     891,
-     326
-    ],
-    [
-     890,
-     326
-    ],
-    [
-     889,
-     326
-    ],
-    [
-     854,
-     333
-    ],
-    [
-     855,
-     355
-    ]
-   ],
-   "baseline": [
-    [
-     855,
-     355
-    ],
-    [
-     1046,
-     357
-    ],
-    [
-     1128,
-     352
-    ]
-   ],
-   "readings": {
-    "kraken": "ƒo lxxxviii ßx 𝒹i aō"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ƒo lxxxviii ßx 𝒹i aō",
-   "agreement": null
-  },
   {
    "id": "l1",
    "polygon": [
@@ -522,7 +292,7 @@
    "flag": false,
    "note": "",
    "text": "Rede del calonato debardi",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "Rede del calonato debardi",
     "ref_source": "kraken",
@@ -564,6 +334,64 @@
     "low": 0,
     "n": 2
    }
+  },
+  {
+   "id": "l25",
+   "polygon": [
+    [
+     1129,
+     230
+    ],
+    [
+     1095,
+     230
+    ],
+    [
+     1095,
+     247
+    ],
+    [
+     1094,
+     258
+    ],
+    [
+     1131,
+     266
+    ],
+    [
+     1133,
+     248
+    ],
+    [
+     1133,
+     244
+    ],
+    [
+     1129,
+     230
+    ]
+   ],
+   "baseline": [
+    [
+     1095,
+     247
+    ],
+    [
+     1133,
+     248
+    ]
+   ],
+   "readings": {
+    "claude": "22",
+    "before": "",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "22",
+   "agreement": null,
+   "region": "ramt59-scr",
+   "attached_to": "l1"
   },
   {
    "id": "l2",
@@ -940,7 +768,7 @@
    "flag": false,
    "note": "",
    "text": "Comune di firenze de dare ꝓ lomonte Nuovo a segnato apaghe",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "Comine di firenze de dare ꝓ lomonte Nuono a segnato apaghe",
     "ref_source": "kraken",
@@ -1060,117 +888,6 @@
     ],
     "mean": 0.515,
     "low": 5,
-    "n": 3
-   }
-  },
-  {
-   "id": "l9",
-   "polygon": [
-    [
-     898,
-     328
-    ],
-    [
-     892,
-     327
-    ],
-    [
-     850,
-     334
-    ],
-    [
-     851,
-     356
-    ],
-    [
-     853,
-     370
-    ],
-    [
-     879,
-     363
-    ],
-    [
-     906,
-     364
-    ],
-    [
-     907,
-     352
-    ],
-    [
-     904,
-     329
-    ],
-    [
-     898,
-     328
-    ]
-   ],
-   "baseline": [
-    [
-     851,
-     356
-    ],
-    [
-     907,
-     352
-    ]
-   ],
-   "readings": {
-    "kraken": "ƒo l",
-    "comma": [
-     "",
-     "diuina sanctificatio eiꝰ.",
-     "",
-     "",
-     "seruabo et exaudiis uinũ et inunũ",
-     ""
-    ]
-   },
-   "flag": false,
-   "note": "",
-   "text": "ƒo l",
-   "region": "rmvcm7pyj",
-   "agreement": {
-    "reference": "diuina sanctificatio eiꝰ.",
-    "ref_source": "comma#2",
-    "words": [
-     {
-      "w": "diuina",
-      "score": 0.333,
-      "variants": {
-       "ƒo l": [
-        "kraken"
-       ],
-       "seruabo et exaudiis uinũ et inunũ": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "sanctificatio",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "eiꝰ.",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#5"
-       ]
-      }
-     }
-    ],
-    "mean": 0.333,
-    "low": 3,
     "n": 3
    }
   },
@@ -1573,7 +1290,7 @@
    "flag": false,
    "note": "",
    "text": "di xi prestanze pagate ꝓ le dette Rede",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "Ivi prestanze pagate ꝓ le dette Rede",
     "ref_source": "kraken",
@@ -1657,6 +1374,182 @@
    }
   },
   {
+   "id": "l24",
+   "polygon": [
+    [
+     855,
+     355
+    ],
+    [
+     856,
+     375
+    ],
+    [
+     874,
+     366
+    ],
+    [
+     951,
+     374
+    ],
+    [
+     952,
+     375
+    ],
+    [
+     1052,
+     375
+    ],
+    [
+     1052,
+     374
+    ],
+    [
+     1053,
+     374
+    ],
+    [
+     1054,
+     374
+    ],
+    [
+     1063,
+     369
+    ],
+    [
+     1084,
+     374
+    ],
+    [
+     1085,
+     374
+    ],
+    [
+     1086,
+     374
+    ],
+    [
+     1127,
+     365
+    ],
+    [
+     1128,
+     352
+    ],
+    [
+     1124,
+     326
+    ],
+    [
+     1098,
+     333
+    ],
+    [
+     1080,
+     327
+    ],
+    [
+     1079,
+     327
+    ],
+    [
+     1078,
+     327
+    ],
+    [
+     1048,
+     333
+    ],
+    [
+     1022,
+     327
+    ],
+    [
+     1021,
+     327
+    ],
+    [
+     1020,
+     327
+    ],
+    [
+     1019,
+     327
+    ],
+    [
+     1018,
+     327
+    ],
+    [
+     1011,
+     334
+    ],
+    [
+     972,
+     334
+    ],
+    [
+     956,
+     326
+    ],
+    [
+     955,
+     326
+    ],
+    [
+     954,
+     326
+    ],
+    [
+     915,
+     333
+    ],
+    [
+     891,
+     326
+    ],
+    [
+     890,
+     326
+    ],
+    [
+     889,
+     326
+    ],
+    [
+     854,
+     333
+    ],
+    [
+     855,
+     355
+    ]
+   ],
+   "baseline": [
+    [
+     855,
+     355
+    ],
+    [
+     1046,
+     357
+    ],
+    [
+     1128,
+     352
+    ]
+   ],
+   "readings": {
+    "kraken": "ƒo lxxxviii ßx 𝒹i aō"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ƒo lxxxviii ßx 𝒹i aō",
+   "agreement": null,
+   "region": "ramt59-scr",
+   "attached_to": "l4"
+  },
+  {
    "id": "l3",
    "polygon": [
     [
@@ -1712,7 +1605,7 @@
    "flag": false,
    "note": "",
    "text": "222",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "222",
     "ref_source": "kraken",
@@ -2127,7 +2020,7 @@
    "flag": false,
    "note": "",
    "text": "E dedare ꝓ x estimi pagati ⁊ uno residuo al detto comune",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "dare ꝑ x estimi pagati ꝯ uno residuo aldetto comune",
     "ref_source": "comma#1",
@@ -2451,7 +2344,7 @@
    "flag": false,
    "note": "",
    "text": "come appare a libri delmonte",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "cone appare a libri delmonte",
     "ref_source": "kraken",
@@ -2795,7 +2688,7 @@
    "flag": false,
    "note": "",
    "text": "som̄a ƒ ccxxii ß xi 𝒹 ii aō",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "som̄a ƒ ccxxii ß xi 𝒹 ii aō",
     "ref_source": "kraken",
@@ -2916,7 +2809,7 @@
    "flag": false,
    "note": "",
    "text": "ƒo c xxxiiii ß i 𝒹 i aō",
-   "region": "rmvcm7vfr",
+   "region": "ramt59-scr",
    "attached_to": "l7",
    "agreement": null
   },
@@ -3187,7 +3080,7 @@
    "flag": false,
    "note": "",
    "text": "posti inanz acār 33 ƒ cc",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "posti inanz atār 23 ƒ c",
     "ref_source": "kraken",
@@ -3291,7 +3184,7 @@
    "flag": false,
    "note": "",
    "text": "xxii ß xi 𝒹 ii aō",
-   "region": "rmvcm7vfr",
+   "region": "ramt59-scr",
    "attached_to": "l10",
    "agreement": null
   },
@@ -3574,7 +3467,7 @@
    "flag": false,
    "note": "",
    "text": "Anno dato di vi dottoƀ 388 ꝓ piu paghe de detti 𝒹 del monte",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "Anno dato di xi dottoƀ 388 ꝓ pn̄paghe de detti 𝒹 del monte",
     "ref_source": "kraken",
@@ -3729,7 +3622,7 @@
    "flag": false,
    "note": "",
    "text": "ƒ xxiii ℔ iiiiº ß xv 𝒹 viii pc̄",
-   "region": "rmvcm7vfr",
+   "region": "ramt59-scr",
    "attached_to": "l11",
    "agreement": null
   },
@@ -4060,7 +3953,7 @@
    "flag": false,
    "note": "",
    "text": "nuovo ebbe simone dagostino ßragli lo Actore delle dette rede",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "nuovo ebbe si mone dagostino ßragli lActore delle dette tede",
     "ref_source": "kraken",
@@ -4408,7 +4301,7 @@
    "flag": false,
    "note": "",
    "text": "posti a entrata del detto simone acār 8",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "posti aglitrata del detto si mone acār 8",
     "ref_source": "kraken",
@@ -4822,7 +4715,7 @@
    "flag": false,
    "note": "",
    "text": "Anno dato di xviii di genaio 388 ƒ uno ß xxxiii 𝒹 ii pc̄ ꝓ iiiiº paghe",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "Anne dato di xviii di gonaio 388 ƒ uno ß xxxiii 𝒹 ii pc̄ ꝓ iiiiº paghi",
     "ref_source": "kraken",
@@ -5289,7 +5182,7 @@
    "flag": false,
    "note": "",
    "text": "di ƒ 88 ß 10 disoꝓa ebbe il detto simone ꝓ ī fino tutto di dicēƀre 388",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "di f 88 ß 10di doꝓa ebbe il detto simone ꝓ ī smno tutto di ditēƀre 388",
     "ref_source": "kraken",
@@ -5484,7 +5377,7 @@
    "flag": false,
    "note": "",
    "text": "i ℔ i ß xiii 𝒹 ii pc̄",
-   "region": "rmvcm7vfr",
+   "region": "ramt59-scr",
    "attached_to": "l15",
    "agreement": null
   },
@@ -5839,7 +5732,7 @@
    "flag": false,
    "note": "",
    "text": "posti a entrata d simone detto acār 8",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "posti aentrata d fimone detto acār 8",
     "ref_source": "kraken",
@@ -6292,7 +6185,7 @@
    "flag": false,
    "note": "",
    "text": "Nonson̄o asbattere dellavera socta scritti di sopra ꝓ cio chessono",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "Nonsan̄o asbattere dellavera sorta scritti di sopra ꝓ cio chefpno",
     "ref_source": "kraken",
@@ -6716,7 +6609,7 @@
    "flag": false,
    "note": "",
    "text": "avuti ꝓ paghe ⁊ ꝓo labbiamo cancellate",
-   "region": "rmvcm7pyj",
+   "region": "rcol59-scr",
    "agreement": {
     "reference": "Aiiuiti ꝓ pache ⁊ ꝓo labbiamo cancellate",
     "ref_source": "kraken",
@@ -6828,30 +6721,102 @@
   {
    "t": "2026-10-18T10:26:48",
    "event": "status → Finished"
+  },
+  {
+   "t": "2026-10-18T22:41:52",
+   "event": "sums column fitted (4-point boundary)"
   }
  ],
- "updated": "2026-10-18T10:26:48",
+ "updated": "2026-10-23T11:17:56",
  "regions": [
   {
-   "id": "rmvcm7pyj",
+   "id": "rcol59-scr",
    "type": "column",
    "label": "a",
    "box": [
-    109.14303612696351,
-    181.1703012762368,
-    917.116169681839,
-    1632.7034307440072
+    138,
+    198.0,
+    932.0,
+    1024.0
+   ],
+   "poly": [
+    [
+     138,
+     198.0
+    ],
+    [
+     888.0,
+     198.0
+    ],
+    [
+     888.0,
+     198.0
+    ],
+    [
+     828.0,
+     314.0
+    ],
+    [
+     888.0,
+     908.0
+    ],
+    [
+     932.0,
+     1024.0
+    ],
+    [
+     932.0,
+     1024.0
+    ],
+    [
+     138,
+     1024.0
+    ]
    ]
   },
   {
-   "id": "rmvcm7vfr",
+   "id": "ramt59-scr",
    "type": "amounts",
    "label": "amounts",
    "box": [
-    919.4649287910102,
-    413.6974530841806,
-    1262.3837587299981,
-    1635.0521898531783
+    828.0,
+    198.0,
+    1217,
+    1024.0
+   ],
+   "poly": [
+    [
+     1217,
+     198.0
+    ],
+    [
+     888.0,
+     198.0
+    ],
+    [
+     888.0,
+     198.0
+    ],
+    [
+     828.0,
+     314.0
+    ],
+    [
+     888.0,
+     908.0
+    ],
+    [
+     932.0,
+     1024.0
+    ],
+    [
+     932.0,
+     1024.0
+    ],
+    [
+     1217,
+     1024.0
+    ]
    ]
   }
  ],
@@ -13755,5 +13720,23 @@
     "n": 2
    }
   }
+ ],
+ "sums_boundary": [
+  [
+   888,
+   198
+  ],
+  [
+   828,
+   314
+  ],
+  [
+   888,
+   908
+  ],
+  [
+   932,
+   1024
+  ]
  ]
 }

@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1142_DSC00658-scr.jpg",
  "order": 34,
- "folio": "",
+ "folio": "37r",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -526,7 +526,7 @@
    ],
    "readings": {
     "kraken": "in apie scriveremo leboscora delle dette rede ⁊ dēte altre possessi ani chessi trovara",
-    "claude": "in apie scriveremo leboscora delle dette rede / ⁊ dēte altre possessioni chessi trovarono"
+    "claude": "in apie scriveremo leboscora delle dette rede ⁊ cẽte[?] altre possessioni chessi trovarono"
    },
    "flag": false,
    "note": "",
@@ -3878,7 +3878,7 @@
    ],
    "readings": {
     "kraken": "o1i6to",
-    "claude": "ouero[?]"
+    "claude": "ouero"
    },
    "flag": false,
    "note": "",
@@ -4338,7 +4338,8 @@
      "",
      "",
      ""
-    ]
+    ],
+    "claude": "a il quale podere lavora fruosino orselli"
    },
    "flag": false,
    "note": "",
@@ -5230,7 +5231,7 @@
      "",
      ""
     ],
-    "claude": "uno canpo detto ameletuzzo ꝓ tinēte al detto podere"
+    "claude": "uno campo detto ameletuzzo ꝓ tinēte al detto podere"
    },
    "flag": false,
    "note": "",
@@ -5691,7 +5692,7 @@
      "",
      ""
     ],
-    "claude": "Item uno Campo detto alla braca ꝓ tinēte al detto podere del poggio"
+    "claude": "Item uno Campo detto alla braca ꝓ tinēte al dcō podere del poggio"
    },
    "flag": false,
    "note": "",
@@ -8145,7 +8146,7 @@
      "",
      ""
     ],
-    "claude": "Item uno campo posto alabracha apātenente al detto podere atrama"
+    "claude": "Item uno campo posto alabracha apātenente al detto podere atrama[?]"
    },
    "flag": false,
    "note": "",
@@ -8267,7 +8268,7 @@
    ],
    "readings": {
     "kraken": "a il quale",
-    "claude": "ilquale"
+    "claude": "il quale"
    },
    "flag": false,
    "note": "",
@@ -8813,7 +8814,8 @@
      "",
      "",
      ""
-    ]
+    ],
+    "claude": "uno Campo posto allalberello il quale sodo apatenēte aldcōpodere ditrama[?]"
    },
    "flag": false,
    "note": "",
@@ -9420,7 +9422,7 @@
      "",
      ""
     ],
-    "claude": "bosco alle gualchiere presso amesß gherardo bomdel monti ⁊ al fiume"
+    "claude": "bosco alle gualchiere presso amesß gherardo bomdelmonti ⁊ al fiume d"
    },
    "flag": false,
    "note": "",
@@ -9559,7 +9561,7 @@
    ],
    "readings": {
     "kraken": "emna Iqle",
-    "claude": "dema Iqle"
+    "claude": "ema Ilqle[?]"
    },
    "flag": false,
    "note": "",
@@ -12382,7 +12384,7 @@
      "",
      ""
     ],
-    "claude": "boscho sottolpoggio presso aferrante quaratesi ⁊ alle dette rede vēduto"
+    "claude": "boscho sottolpoggio presso aferrante quaratesi ⁊ alle dette rede venduto"
    },
    "flag": false,
    "note": "",
@@ -13523,9 +13525,13 @@
   {
    "t": "2026-10-18T12:10:31",
    "event": "Claude refinement: 23 line(s) suggested — Corrected garbled place and line-end words (alchiuso, ameletuzzo, alburrone, atrama/trama, calonaco, dema = d'Ema, possessioni chessi trovarono), Iteni→Item, bosto→bosco, carnpto→campo, and the marginal amounts, which are florin sums (ƒ iii, ƒ ii, ƒ xii). | layout: l38: 'no' of trovarono is just outside the box; included; l1: 'alchiuso apar' extends past the box end; included; l2: '/ lavoralo filippo ditruffo' partly outside the box; included; l4: 'tenea occu' is outside the box; included; l6/l27: 'go' of alborgo is outside l6 (added there); l27 holds the next word (ouero?), which continues the l6 line; l7: the 'A' of 'Ail' is a separate letter in the left margin under the Item initial; l15/l30: l15's box cuts 'atrama' after 'atra'; l30 starts with the 'ma', so I completed atrama in l15 and left l30 = 'ilquale'; l17/l31: l31 ('trama') is the end of l17 (…podere di trama); l18/l32: l32 ('dema Iqle') is the end of l18 (…al fiume dema Ilqle); l20/l33: 'venduto altra uolta' runs past l20's box (included in l20); l33 is a fragment straddling 'altra uolta' (l20) and 'latura' (l21), probably to delete; l21: 'ꝓ una taglatura' after the bracket runs past the box; included; l34: the ƒ sits just left of the small box; included; l24/l36: the 'to' of vēduto falls in l36; moved to l24, so l36 = 'ƒ xii'; l25: ruled dashes after aponeta are not transcribed | doubts: l39: the word after 'detto' looks like decti/dicti, not 'di cōti'; l1: 'alchiuso' read at the box edge, unsure; l2: 'ditruffo' unsure; l27: 'ouero' (ovvero) vs 'onoro': the minims are ambiguous; l7: 'orselli' could be 'orsetti' (ll vs tt); l12: 'paniatoia' could be 'pamatoia' (minims), left unchanged; l24: is there a macron in vēduto? Unsure; the line image shows a stroke over the e; l32: 'Iqle' may be 'Ilq̄le'; left as read"
+  },
+  {
+   "t": "2026-10-18T22:42:50",
+   "event": "Claude refinement: 23 line(s) suggested — Mostly words cut off at the box edges and short right-hand fragments (alborgo/ouero, ilquale, alburrone, d|ema, the florin sums ƒ iii, ƒ ii, ƒ xii), plus garbled words (Iteni→Item, canpo/ameletugzo→campo/ameletuzzo, calonatoi→calonaco, bosto→bosco, apescinassanta→apescina santa). | layout: l38: the initial q of the first word lies left of the box, and the final 'no' of trovarono lies beyond it; the line has been completed as trovarono; l1: 'so apar' at the line end lies outside the box (included); l2: '/' and 'ditruffo' at the line end lie outside the box (included); l4: 'tenea occu' lies outside the box (included); l6: the final 'go' of alborgo lies outside the box (included); l27 holds the next word, ouero; l7: the 'a' at the left is a separate letter below the I of Item, not the capital of 'il'; l15/l30: 'atrama' is split between the boxes: 'ma' falls in l30, so l15 is completed as atrama and l30 keeps only 'il quale'; l17/l31: the end 'ditrama' is split; l31 ('aiia') is only the tail 'rama' of l17 and should be deleted or merged into l17; l18: the marginal count 'i' at the left is outside the box (as on every bosco line; l25 has 'iii', l26 'ii'); the d of 'd'ema' sits in l18 and 'ema' in l32; l20/l21/l33: the bracketed note 'venduto altra uolta / ꝓ una taglatura' spans both lines; l33 ('anota') is a box that crosses both lines' ends ('ltra uolta' + 'latura') and should be deleted or split; l20 has been completed with 'altra uolta' and l21 with 'taglatura'; l24/l36: the 'to' of venduto falls in l36; l36 holds the sum ƒ xii; l25: three ruled dashes follow 'aponeta' and are not transcribed | doubts: l38: 'dēte' looks like c with a tilde + te (certe), but this is uncertain; the opening 'in' is perhaps 'qui' with the q outside the box; l39: 'di cōti testimoni' may be 'dicti/detti testimoni', which could not be decided from the image; l1: alchiuso: the letters after 'al' are cramped; l2: ditruffo or ditrusso; l15/l17: 'trama' could also be 'trauia'; l32: whether the q in Ilqle has an abbreviation stroke; l26: the image looks like 'aghabrusciati'; Kraken's 'aglia-' was kept; l35: the figure after ƒ is Y-shaped, so it was read as ii; this needs checking against the florin-sign rule (stroke after ƒ)"
   }
  ],
- "updated": "2026-10-18T12:10:31",
+ "updated": "2026-10-23T11:17:56",
  "regions": [
   {
    "id": "rmvcm7pyj",

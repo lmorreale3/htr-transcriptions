@@ -1,0 +1,179 @@
+﻿variable,code,meaning
+series,1,"City of Florence, 1427"
+series,2,Additions of 1428
+series,7,Additions of 1429
+location,11,S. Spirito – Scala
+location,12,S. Spirito – Nicchio
+location,13,S. Spirito – Ferza
+location,14,S. Spirito – Drago
+location,21,S. Croce – Carro
+location,22,S. Croce – Bue
+location,23,S. Croce – Leon Nero
+location,24,S. Croce – Ruote
+location,31,S. Maria Novella – Vipera
+location,32,S. Maria Novella – Unicorno
+location,33,S. Maria Novella – Leon Rosso
+location,34,S. Maria Novella – Leon Bianco
+location,41,S. Giovanni – Leon d'Oro
+location,42,S. Giovanni – Drago
+location,43,S. Giovanni – Chiavi
+location,44,S. Giovanni – Vaio
+type_of_declaration,0,No comment
+type_of_declaration,1,Inheritance without heirs
+type_of_declaration,2,Cancelled duplicate entry
+type_of_declaration,3,Incomplete entry
+type_of_declaration,4,Property of a rural parish or association
+type_of_declaration,5,Tax exempt
+type_of_house,1,Owns the home he lives in
+type_of_house,2,Rents the home he lives in
+type_of_house,3,"Lives in a house without paying rent (e.g. with parents, servants)"
+animals,1,Owns cattle
+animals,2,Rents cattle
+animals,3,Owns and rents cattle
+animals,4,Owns only small beasts
+animals,5,Owns beasts of burden (perhaps also small beasts)
+migration,1,"From a locality in the Florentine district, or the parish where registered"
+migration,2,"Living in the Florentine district, but not where taxed"
+migration,3,From a non-Florentine Italian locality
+migration,4,From Germany
+migration,5,From a country other than Germany or Italy
+migration,6,Residing in Italy outside the Florentine district
+migration,7,Residing in Germany
+migration,8,Residing in a country other than Germany or Italy
+sex,0,Unknown
+sex,1,Male
+sex,2,Female
+marital_status,0,Indeterminate
+marital_status,1,Married
+marital_status,2,Single
+marital_status,3,Engaged
+marital_status,4,Widowed
+marital_status,5,Married or widowed
+marital_status,6,Not given
+marital_status,7,"Separated (married woman declaring in her own name, husband living)"
+marital_status,8,Newly married or added in 1428-29
+relation_to_head,1,Declarer is head of family
+relation_to_head,0,Oldest heir among the bocche
+comment,0,No comment
+comment,1,"Not a legitimate bocca for the officials (religious, apprentice, servant)"
+comment,2,Newborn added in 1428-29
+comment,4,Living outside the Florentine district
+comment,5,Occupation differs from the head's
+comment,6,Physically or intellectually incapable
+comment,7,Illegitimate child
+comment,8,Crossed out: marriage
+comment,9,Crossed out: death
+age,79,Indeterminate age
+age,89,Infant under one year
+age,99,99 or older
+trade,01,Peasant landlord working own property
+trade,02,Peasant leasing land
+trade,03,Mezzadro (sharecropper)
+trade,04,Agricultural laborer without land
+trade,05,Shepherd
+trade,06,Fisherman
+trade,07,Greengrocer
+trade,08,"Messere (knight, bishop, high ecclesiastic)"
+trade,09,Cotton dealer (wholesale)
+trade,10,"Ship trades (sailor, caulker)"
+trade,11,"Household servant, fattore, one who stays with an employer for wages"
+trade,12,Employee of an ecclesiastical or charitable institution
+trade,13,Commune employee (non-military)
+trade,14,Soldier
+trade,15,Guild employee
+trade,16,Cook
+trade,17,Grave-digger
+trade,18,"Scribe, contract factor, guardian's attorney, letter-writer"
+trade,19,Miscellaneous
+trade,20,"Transporter (carter, carrier, porter)"
+trade,21,Judge and notary
+trade,22,Great merchant (Calimala)
+trade,23,"Money changer, banker (Cambio)"
+trade,24,Wool manufacturer/merchant/retailer (Lana)
+trade,25,Silk merchant or weaver (Por S. Maria)
+trade,26,"Spice dealer, apothecary, soap-maker"
+trade,27,Furrier
+trade,28,Butcher
+trade,29,Shoemaker
+trade,30,Blacksmith (iron worker)
+trade,31,"Linen dealer, second-hand clothes dealer"
+trade,32,Medical doctor
+trade,33,Wine dealer
+trade,34,"Innkeeper, tavern-keeper"
+trade,35,"Oil merchant, candle-maker"
+trade,36,Tanner
+trade,37,Belt-maker
+trade,38,Armor maker
+trade,39,"Locksmith, key-maker"
+trade,40,"Carpenter, cabinetmaker"
+trade,41,Baker
+trade,42,Miller
+trade,43,"Dyer, cloth bleacher"
+trade,44,Barber
+trade,45,Wool carder
+trade,46,Wool weaver (type unspecified)
+trade,47,Delicatessen / prepared-food seller
+trade,48,Cooper
+trade,49,"Goldsmith, jeweler, engraver"
+trade,50,"Urban laborer, unspecified"
+trade,51,"Maker/dealer of dishes, glass, pottery"
+trade,52,Peddler
+trade,53,Wool washer
+trade,54,"Mason, stoneworker, sculptor"
+trade,55,"Saddler, harness and sheath maker"
+trade,56,"Stationer, paper-maker"
+trade,57,Blacksmith (farrier)
+trade,58,Doublet maker
+trade,59,Kiln/furnace worker
+trade,60,Wool cloth finisher
+trade,61,"Wool comber, carder, sorter"
+trade,62,Shearer of wool cloth
+trade,63,Purse and container maker
+trade,64,Silk and linen weaver
+trade,65,Slipper-maker
+trade,66,Weigher; scale maker/seller
+trade,67,Tailor
+trade,68,Cloak and gown maker
+trade,69,"Town crier, auctioneer"
+trade,70,Priest
+trade,71,Religious
+trade,72,Beggar; ward of the Church
+trade,73,"Leather seller, saddler"
+trade,74,Hatmaker
+trade,75,Non-ferrous metalworker
+trade,76,Ironworker; iron goods dealer
+trade,77,Teacher of letters or abacus; student
+trade,78,Leather tanner and dresser
+trade,79,Broker
+trade,80,"Thread maker, spinner"
+trade,81,Leather worker
+trade,82,Pinzochera
+trade,83,"Musician, jester"
+trade,84,Laundry washer
+trade,85,Cutler
+trade,86,Muleteer; horse/mule dealer
+trade,87,"Sewer, embroiderer"
+trade,88,Mint employee
+trade,89,Rural noble
+trade,90,Jew
+trade,91,Cloth stretcher
+trade,92,Mattress and bed maker
+trade,93,Lanino (wool manufacturer)
+trade,94,Weapons maker
+trade,95,"Painter, miniaturist, art dealer"
+trade,96,Grain and fodder merchant
+trade,97,"Rope-maker, bag-maker"
+trade,98,Wool beater
+trade,99,Lawyer (law doctorate)
+trade,1xx,prefix 1: employee or fattore of someone with trade xx
+trade,2xx,prefix 2: widow or daughter of a man with trade xx
+private_investment,,"Mobile private assets, florins"
+public_investment,,"Monte (public debt) holdings, florins"
+real_estate,,"Capitalized real property excl. own dwelling, florins"
+total,,"Total assets, florins"
+deductions,,"Debts and charges, florins (excludes the 200 fl. per bocca allowance)"
+taxable,,"Total minus deductions, florins"
+bocche,,Number of persons in household incl. head
+volume,,"ASF, Catasto, Campioni volume"
+page,,Page in that volume
+stg_id,,Household ID; last 5 digits = record number in the series

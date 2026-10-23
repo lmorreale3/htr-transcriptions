@@ -28,7 +28,16 @@
   },
   {
    "id": "l3",
-   "text": "In valdinievōle ./. Ricordo chome a di di 22 di luglio 1458. Comprai",
+   "text": "In valdinievōle ./.",
+   "polygon": null,
+   "baseline": null,
+   "readings": {},
+   "flag": false,
+   "note": ""
+  },
+  {
+   "id": "n1792720274038",
+   "text": "Ricordo chome a di 22 di luglio 1458. Comprai",
    "polygon": null,
    "baseline": null,
    "readings": {},
@@ -235,7 +244,7 @@
   },
   {
    "id": "l26",
-   "text": "23",
+   "text": "⫳ 23",
    "polygon": null,
    "baseline": null,
    "readings": {},
@@ -477,7 +486,88 @@
   {
    "t": "2026-10-14T15:38:31",
    "event": "imported ground truth from ms1435_img016.gt.txt"
+  },
+  {
+   "t": "2026-10-20T20:16:55",
+   "event": "sums column fitted (6-point boundary)"
+  },
+  {
+   "t": "2026-10-20T20:55:09",
+   "event": "sums column fitted (8-point boundary)"
+  },
+  {
+   "t": "2026-10-22T21:50:47",
+   "event": "layout: 3 region(s)"
   }
  ],
- "updated": "2026-10-14T15:38:31"
+ "updated": "2026-10-22T21:52:25",
+ "regions": [
+  {
+   "id": "rmvkbbgiv",
+   "type": "margin",
+   "label": "margin",
+   "box": [
+    42.29027482812683,
+    250.5397772843289,
+    424.7360354537876,
+    2337.907293222515
+   ]
+  },
+  {
+   "id": "rmvkbbv85",
+   "type": "column",
+   "label": "a",
+   "box": [
+    403.2904787831898,
+    275.55959340002636,
+    1346.8949722894931,
+    2330.7587743323156
+   ]
+  },
+  {
+   "id": "rmvkbcauv",
+   "type": "amounts",
+   "label": "amounts",
+   "box": [
+    1354.0434911796924,
+    343.4705228569194,
+    1679.301100683759,
+    1362.134464710315
+   ]
+  }
+ ],
+ "sums_boundary": [
+  [
+   1361,
+   121
+  ],
+  [
+   1361,
+   395
+  ],
+  [
+   1348,
+   941
+  ],
+  [
+   1361,
+   1133
+  ],
+  [
+   1268,
+   1195
+  ],
+  [
+   1491,
+   1394
+  ],
+  [
+   1529,
+   1576
+  ],
+  [
+   1632,
+   1950
+  ]
+ ]
 }

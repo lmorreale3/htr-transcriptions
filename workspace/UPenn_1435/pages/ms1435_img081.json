@@ -6,14 +6,69 @@
  "folio": "55v",
  "width": 1949,
  "height": 2429,
- "status": "new",
- "lines": [],
+ "status": "machine_read",
+ "lines": [
+  {
+   "id": "l1",
+   "polygon": [
+    [
+     280.0,
+     191.0
+    ],
+    [
+     280.0,
+     198.0
+    ],
+    [
+     278.0,
+     211.0
+    ],
+    [
+     295.0,
+     217.0
+    ],
+    [
+     300.0,
+     201.0
+    ],
+    [
+     294.0,
+     188.0
+    ],
+    [
+     280.0,
+     191.0
+    ]
+   ],
+   "baseline": [
+    [
+     280.0,
+     198.0
+    ],
+    [
+     300.0,
+     201.0
+    ]
+   ],
+   "readings": {
+    "kraken": "28"
+   },
+   "flag": false,
+   "note": "",
+   "text": "28",
+   "agreement": null
+  }
+ ],
  "note": "",
  "history": [
   {
    "t": "2026-10-14T15:38:31",
    "event": "imported"
+  },
+  {
+   "t": "2026-10-20T12:45:50",
+   "event": "machine reading: kraken (catmus_secondtraining_v2_4.mlmodel)"
   }
  ],
- "updated": "2026-10-14T15:38:31"
+ "updated": "2026-10-20T12:45:50"
 }

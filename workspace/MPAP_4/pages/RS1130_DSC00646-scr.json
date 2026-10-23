@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1130_DSC00646-scr.jpg",
  "order": 22,
- "folio": "",
+ "folio": "31r",
  "width": 1280,
  "height": 1920,
  "status": "sent_to_training",
@@ -191,7 +191,8 @@
    "flag": false,
    "note": "",
    "text": "mccclxxviii",
-   "agreement": null
+   "agreement": null,
+   "region": "rcol46-scr"
   },
   {
    "id": "l2",
@@ -832,195 +833,8 @@
     "mean": 0.366,
     "low": 9,
     "n": 3
-   }
-  },
-  {
-   "id": "l3",
-   "polygon": [
-    [
-     227,
-     353
-    ],
-    [
-     225,
-     363
-    ],
-    [
-     231,
-     363
-    ],
-    [
-     233,
-     354
-    ],
-    [
-     235,
-     333
-    ],
-    [
-     229,
-     332
-    ],
-    [
-     227,
-     353
-    ]
-   ],
-   "baseline": [
-    [
-     227,
-     353
-    ],
-    [
-     233,
-     354
-    ]
-   ],
-   "readings": {
-    "kraken": "",
-    "comma": [
-     "",
-     "",
-     "fuerit scĩficata et uoluptatibꝰ Et siue solũ tamen",
-     "suam quiritur ex quo hanc tẽpore",
-     "autem ipsius ꝗd quod omnia autem",
-     ""
-    ]
    },
-   "flag": false,
-   "note": "",
-   "text": "suam quiritur ex quo hanc tẽpore",
-   "agreement": {
-    "reference": "suam quiritur ex quo hanc tẽpore",
-    "ref_source": "comma#4",
-    "words": [
-     {
-      "w": "suam",
-      "score": 0.333,
-      "variants": {
-       "fuerit scĩficata et uoluptatibꝰ Et siue solũ tamen": [
-        "comma#3"
-       ],
-       "autem": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "quiritur",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "comma#3"
-       ],
-       "ipsius": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "ex",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "comma#3"
-       ],
-       "ꝗd": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "quo",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "comma#3"
-       ],
-       "quod": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "hanc",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "comma#3"
-       ],
-       "omnia": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "tẽpore",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "comma#3"
-       ],
-       "autem": [
-        "comma#5"
-       ]
-      }
-     }
-    ],
-    "mean": 0.333,
-    "low": 6,
-    "n": 3
-   }
-  },
-  {
-   "id": "l4",
-   "polygon": [
-    [
-     214,
-     374
-    ],
-    [
-     214,
-     384
-    ],
-    [
-     234,
-     387
-    ],
-    [
-     234,
-     372
-    ],
-    [
-     227,
-     326
-    ],
-    [
-     209,
-     332
-    ],
-    [
-     214,
-     374
-    ]
-   ],
-   "baseline": [
-    [
-     214,
-     374
-    ],
-    [
-     234,
-     372
-    ]
-   ],
-   "readings": {
-    "kraken": "x"
-   },
-   "flag": false,
-   "note": "",
-   "text": "x",
-   "agreement": null
+   "region": "rcol46-scr"
   },
   {
    "id": "l5",
@@ -1316,138 +1130,8 @@
     "mean": 0.667,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l6",
-   "polygon": [
-    [
-     161,
-     418
-    ],
-    [
-     150,
-     420
-    ],
-    [
-     151,
-     448
-    ],
-    [
-     151,
-     474
-    ],
-    [
-     200,
-     468
-    ],
-    [
-     248,
-     473
-    ],
-    [
-     249,
-     445
-    ],
-    [
-     247,
-     421
-    ],
-    [
-     162,
-     417
-    ],
-    [
-     161,
-     418
-    ]
-   ],
-   "baseline": [
-    [
-     151,
-     448
-    ],
-    [
-     249,
-     445
-    ]
-   ],
-   "readings": {
-    "kraken": "ƒ ii 𝒹",
-    "comma": [
-     "",
-     "",
-     "nequaquę in huc terrȩ tuȩ etiam terra cius",
-     "quod pro eo ordine dñi se faciat a le",
-     "",
-     "in medio cubile quod"
-    ]
    },
-   "flag": false,
-   "note": "",
-   "text": "ƒ ii 𝒹",
-   "agreement": {
-    "reference": "in medio cubile quod",
-    "ref_source": "comma#6",
-    "words": [
-     {
-      "w": "in",
-      "score": 0.5,
-      "variants": {
-       "ƒ ii 𝒹": [
-        "kraken"
-       ],
-       "∅": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "medio",
-      "score": 0.25,
-      "variants": {
-       "…": [
-        "kraken"
-       ],
-       "huc terrȩ tuȩ etiam terra cius": [
-        "comma#3"
-       ],
-       "∅": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "cubile",
-      "score": 0.25,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#3"
-       ],
-       "∅": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "quod",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#3"
-       ],
-       "+ pro eo ordine dñi se faciat a le": [
-        "comma#4"
-       ]
-      }
-     }
-    ],
-    "mean": 0.375,
-    "low": 2,
-    "n": 4
-   }
+   "region": "rcol46-scr"
   },
   {
    "id": "l7",
@@ -1908,7 +1592,198 @@
     "mean": 0.542,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
+  },
+  {
+   "id": "l3",
+   "polygon": [
+    [
+     227,
+     353
+    ],
+    [
+     225,
+     363
+    ],
+    [
+     231,
+     363
+    ],
+    [
+     233,
+     354
+    ],
+    [
+     235,
+     333
+    ],
+    [
+     229,
+     332
+    ],
+    [
+     227,
+     353
+    ]
+   ],
+   "baseline": [
+    [
+     227,
+     353
+    ],
+    [
+     233,
+     354
+    ]
+   ],
+   "readings": {
+    "kraken": "",
+    "comma": [
+     "",
+     "",
+     "fuerit scĩficata et uoluptatibꝰ Et siue solũ tamen",
+     "suam quiritur ex quo hanc tẽpore",
+     "autem ipsius ꝗd quod omnia autem",
+     ""
+    ]
+   },
+   "flag": false,
+   "note": "",
+   "text": "suam quiritur ex quo hanc tẽpore",
+   "agreement": {
+    "reference": "suam quiritur ex quo hanc tẽpore",
+    "ref_source": "comma#4",
+    "words": [
+     {
+      "w": "suam",
+      "score": 0.333,
+      "variants": {
+       "fuerit scĩficata et uoluptatibꝰ Et siue solũ tamen": [
+        "comma#3"
+       ],
+       "autem": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "quiritur",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "comma#3"
+       ],
+       "ipsius": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "ex",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "comma#3"
+       ],
+       "ꝗd": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "quo",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "comma#3"
+       ],
+       "quod": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "hanc",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "comma#3"
+       ],
+       "omnia": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "tẽpore",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "comma#3"
+       ],
+       "autem": [
+        "comma#5"
+       ]
+      }
+     }
+    ],
+    "mean": 0.333,
+    "low": 6,
+    "n": 3
+   },
+   "region": "rcol46-scr"
+  },
+  {
+   "id": "l4",
+   "polygon": [
+    [
+     214,
+     374
+    ],
+    [
+     214,
+     384
+    ],
+    [
+     234,
+     387
+    ],
+    [
+     234,
+     372
+    ],
+    [
+     227,
+     326
+    ],
+    [
+     209,
+     332
+    ],
+    [
+     214,
+     374
+    ]
+   ],
+   "baseline": [
+    [
+     214,
+     374
+    ],
+    [
+     234,
+     372
+    ]
+   ],
+   "readings": {
+    "kraken": "x"
+   },
+   "flag": false,
+   "note": "",
+   "text": "x",
+   "agreement": null,
+   "region": "rcol46-scr"
   },
   {
    "id": "l8",
@@ -2333,7 +2208,8 @@
     "mean": 0.625,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l9",
@@ -2718,7 +2594,8 @@
     "mean": 0.682,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l10",
@@ -2810,7 +2687,64 @@
     "mean": 0.25,
     "low": 2,
     "n": 4
-   }
+   },
+   "region": "ramt46-scr",
+   "attached_to": "l9"
+  },
+  {
+   "id": "l16",
+   "polygon": [
+    [
+     1010,
+     427
+    ],
+    [
+     1073,
+     426
+    ],
+    [
+     1075,
+     403
+    ],
+    [
+     1075,
+     387
+    ],
+    [
+     1013,
+     371
+    ],
+    [
+     1012,
+     400
+    ],
+    [
+     1010,
+     427
+    ]
+   ],
+   "baseline": [
+    [
+     1012,
+     400
+    ],
+    [
+     1075,
+     403
+    ]
+   ],
+   "readings": {
+    "kraken": "xx",
+    "claude": "l xx",
+    "before": "xx",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "l xx",
+   "agreement": null,
+   "region": "ramt46-scr",
+   "attached_to": "l9"
   },
   {
    "id": "l11",
@@ -3260,7 +3194,140 @@
     "mean": 0.708,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
+  },
+  {
+   "id": "l6",
+   "polygon": [
+    [
+     161,
+     418
+    ],
+    [
+     150,
+     420
+    ],
+    [
+     151,
+     448
+    ],
+    [
+     151,
+     474
+    ],
+    [
+     200,
+     468
+    ],
+    [
+     248,
+     473
+    ],
+    [
+     249,
+     445
+    ],
+    [
+     247,
+     421
+    ],
+    [
+     162,
+     417
+    ],
+    [
+     161,
+     418
+    ]
+   ],
+   "baseline": [
+    [
+     151,
+     448
+    ],
+    [
+     249,
+     445
+    ]
+   ],
+   "readings": {
+    "kraken": "ƒ ii 𝒹",
+    "comma": [
+     "",
+     "",
+     "nequaquę in huc terrȩ tuȩ etiam terra cius",
+     "quod pro eo ordine dñi se faciat a le",
+     "",
+     "in medio cubile quod"
+    ]
+   },
+   "flag": false,
+   "note": "",
+   "text": "ƒ ii 𝒹",
+   "agreement": {
+    "reference": "in medio cubile quod",
+    "ref_source": "comma#6",
+    "words": [
+     {
+      "w": "in",
+      "score": 0.5,
+      "variants": {
+       "ƒ ii 𝒹": [
+        "kraken"
+       ],
+       "∅": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "medio",
+      "score": 0.25,
+      "variants": {
+       "…": [
+        "kraken"
+       ],
+       "huc terrȩ tuȩ etiam terra cius": [
+        "comma#3"
+       ],
+       "∅": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "cubile",
+      "score": 0.25,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#3"
+       ],
+       "∅": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "quod",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#3"
+       ],
+       "+ pro eo ordine dñi se faciat a le": [
+        "comma#4"
+       ]
+      }
+     }
+    ],
+    "mean": 0.375,
+    "low": 2,
+    "n": 4
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l12",
@@ -3781,7 +3848,8 @@
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l13",
@@ -3856,7 +3924,8 @@
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l14",
@@ -4356,7 +4425,8 @@
     "mean": 0.607,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l15",
@@ -4903,60 +4973,8 @@
     "mean": 0.6,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l16",
-   "polygon": [
-    [
-     1010,
-     427
-    ],
-    [
-     1073,
-     426
-    ],
-    [
-     1075,
-     403
-    ],
-    [
-     1075,
-     387
-    ],
-    [
-     1013,
-     371
-    ],
-    [
-     1012,
-     400
-    ],
-    [
-     1010,
-     427
-    ]
-   ],
-   "baseline": [
-    [
-     1012,
-     400
-    ],
-    [
-     1075,
-     403
-    ]
-   ],
-   "readings": {
-    "kraken": "xx",
-    "claude": "l xx",
-    "before": "xx",
-    "claude_status": "accepted"
    },
-   "flag": false,
-   "note": "",
-   "text": "l xx",
-   "agreement": null
+   "region": "rcol46-scr"
   },
   {
    "id": "l17",
@@ -5049,7 +5067,9 @@
     "mean": 0.333,
     "low": 2,
     "n": 3
-   }
+   },
+   "region": "ramt46-scr",
+   "attached_to": "l15"
   },
   {
    "id": "l18",
@@ -5381,7 +5401,7 @@
    },
    "flag": false,
    "note": "",
-   "text": "  anella doro vendute aduccio meglini di detto ꝓ lo detto miniato ƒ vii",
+   "text": "anella doro vendute aduccio meglini di detto ꝓ lo detto miniato ƒ vii",
    "agreement": {
     "reference": "anella doro vendute aduccio meglini di detto ꝓ lo detto miniato ƒ vii",
     "ref_source": "kraken",
@@ -5495,7 +5515,143 @@
     "mean": 0.615,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
+  },
+  {
+   "id": "l38",
+   "polygon": [
+    [
+     1250,
+     548
+    ],
+    [
+     1239,
+     547
+    ],
+    [
+     1228,
+     546
+    ],
+    [
+     1218,
+     545
+    ],
+    [
+     1207,
+     544
+    ],
+    [
+     1196,
+     544
+    ],
+    [
+     1079,
+     544
+    ],
+    [
+     1079,
+     568
+    ],
+    [
+     1078,
+     587
+    ],
+    [
+     1125,
+     589
+    ],
+    [
+     1126,
+     589
+    ],
+    [
+     1127,
+     589
+    ],
+    [
+     1161,
+     581
+    ],
+    [
+     1175,
+     588
+    ],
+    [
+     1176,
+     588
+    ],
+    [
+     1177,
+     588
+    ],
+    [
+     1178,
+     588
+    ],
+    [
+     1203,
+     581
+    ],
+    [
+     1213,
+     590
+    ],
+    [
+     1213,
+     592
+    ],
+    [
+     1214,
+     592
+    ],
+    [
+     1216,
+     592
+    ],
+    [
+     1217,
+     593
+    ],
+    [
+     1252,
+     593
+    ],
+    [
+     1253,
+     569
+    ],
+    [
+     1252,
+     548
+    ],
+    [
+     1250,
+     548
+    ]
+   ],
+   "baseline": [
+    [
+     1079,
+     568
+    ],
+    [
+     1253,
+     569
+    ]
+   ],
+   "readings": {
+    "kraken": "ß vxxii iiiº",
+    "claude": "ß xxxii 𝒹 iiiiº",
+    "before": "ß xxxii iiiº",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß xxxii 𝒹 iiiiº",
+   "agreement": null,
+   "region": "ramt46-scr",
+   "attached_to": "l18"
   },
   {
    "id": "l19",
@@ -5849,7 +6005,8 @@
     "mean": 0.611,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l20",
@@ -6243,7 +6400,8 @@
     "mean": 0.708,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l21",
@@ -6786,7 +6944,8 @@
     "mean": 0.577,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l22",
@@ -7234,7 +7393,8 @@
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l23",
@@ -7713,7 +7873,141 @@
     "mean": 0.611,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
+  },
+  {
+   "id": "l39",
+   "polygon": [
+    [
+     1158,
+     672
+    ],
+    [
+     1147,
+     680
+    ],
+    [
+     1124,
+     674
+    ],
+    [
+     1123,
+     674
+    ],
+    [
+     1122,
+     674
+    ],
+    [
+     1121,
+     674
+    ],
+    [
+     1094,
+     683
+    ],
+    [
+     1097,
+     708
+    ],
+    [
+     1098,
+     725
+    ],
+    [
+     1166,
+     720
+    ],
+    [
+     1165,
+     702
+    ],
+    [
+     1159,
+     672
+    ],
+    [
+     1158,
+     672
+    ]
+   ],
+   "baseline": [
+    [
+     1097,
+     708
+    ],
+    [
+     1165,
+     702
+    ]
+   ],
+   "readings": {
+    "kraken": "ßlii",
+    "comma": [
+     "",
+     "ab eis ab eis ab eis ab eis",
+     "",
+     "cuncta quieque fuerit ut salere",
+     "",
+     "decorissimilib; ab om"
+    ],
+    "claude": "ß lii pc̄",
+    "before": "ßlii",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß lii pc̄",
+   "agreement": {
+    "reference": "decorissimilib; ab om",
+    "ref_source": "comma#6",
+    "words": [
+     {
+      "w": "decorissimilib;",
+      "score": 0.25,
+      "variants": {
+       "ßlii": [
+        "kraken"
+       ],
+       "∅": [
+        "comma#2"
+       ],
+       "cuncta quieque fuerit ut salere": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "ab",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "om",
+      "score": 0.25,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#4"
+       ],
+       "eis ab eis ab eis ab eis": [
+        "comma#2"
+       ]
+      }
+     }
+    ],
+    "mean": 0.333,
+    "low": 2,
+    "n": 4
+   },
+   "region": "ramt46-scr",
+   "attached_to": "l23"
   },
   {
    "id": "l24",
@@ -8184,146 +8478,8 @@
     "mean": 0.611,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l25",
-   "polygon": [
-    [
-     229,
-     785
-    ],
-    [
-     229,
-     800
-    ],
-    [
-     243,
-     801
-    ],
-    [
-     244,
-     785
-    ],
-    [
-     242,
-     764
-    ],
-    [
-     229,
-     768
-    ],
-    [
-     229,
-     785
-    ]
-   ],
-   "baseline": [
-    [
-     229,
-     785
-    ],
-    [
-     244,
-     785
-    ]
-   ],
-   "readings": {
-    "kraken": "",
-    "comma": [
-     "",
-     "",
-     "etiam etiam etiam etiam etiam etiam etiam et",
-     "primum apłoꝵ quod loquit᷑",
-     "",
-     ""
-    ],
-    "before": "etiam etiam etiam etiam etiam etiam etiam et"
    },
-   "flag": false,
-   "note": "",
-   "text": "",
-   "agreement": {
-    "reference": "etiam etiam etiam etiam etiam etiam etiam et",
-    "ref_source": "comma#3",
-    "words": [
-     {
-      "w": "etiam",
-      "score": 0.5,
-      "variants": {
-       "primum apłoꝵ quod loquit᷑": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "etiam",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "etiam",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "etiam",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "etiam",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "etiam",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "etiam",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "et",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#4"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
+   "region": "rcol46-scr"
   },
   {
    "id": "l26",
@@ -8691,7 +8847,148 @@
     "mean": 0.536,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
+  },
+  {
+   "id": "l25",
+   "polygon": [
+    [
+     229,
+     785
+    ],
+    [
+     229,
+     800
+    ],
+    [
+     243,
+     801
+    ],
+    [
+     244,
+     785
+    ],
+    [
+     242,
+     764
+    ],
+    [
+     229,
+     768
+    ],
+    [
+     229,
+     785
+    ]
+   ],
+   "baseline": [
+    [
+     229,
+     785
+    ],
+    [
+     244,
+     785
+    ]
+   ],
+   "readings": {
+    "kraken": "",
+    "comma": [
+     "",
+     "",
+     "etiam etiam etiam etiam etiam etiam etiam et",
+     "primum apłoꝵ quod loquit᷑",
+     "",
+     ""
+    ],
+    "before": "etiam etiam etiam etiam etiam etiam etiam et"
+   },
+   "flag": false,
+   "note": "",
+   "text": "",
+   "agreement": {
+    "reference": "etiam etiam etiam etiam etiam etiam etiam et",
+    "ref_source": "comma#3",
+    "words": [
+     {
+      "w": "etiam",
+      "score": 0.5,
+      "variants": {
+       "primum apłoꝵ quod loquit᷑": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "etiam",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "etiam",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "etiam",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "etiam",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "etiam",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "etiam",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "et",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#4"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l27",
@@ -9101,7 +9398,8 @@
     "mean": 0.577,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l28",
@@ -9590,7 +9888,312 @@
     "mean": 0.583,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
+  },
+  {
+   "id": "l30",
+   "polygon": [
+    [
+     808,
+     864
+    ],
+    [
+     808,
+     870
+    ],
+    [
+     1061,
+     871
+    ],
+    [
+     1062,
+     857
+    ],
+    [
+     1060,
+     837
+    ],
+    [
+     978,
+     830
+    ],
+    [
+     977,
+     830
+    ],
+    [
+     976,
+     830
+    ],
+    [
+     937,
+     841
+    ],
+    [
+     876,
+     838
+    ],
+    [
+     875,
+     838
+    ],
+    [
+     874,
+     838
+    ],
+    [
+     859,
+     845
+    ],
+    [
+     807,
+     846
+    ],
+    [
+     808,
+     864
+    ]
+   ],
+   "baseline": [
+    [
+     808,
+     864
+    ],
+    [
+     1062,
+     857
+    ]
+   ],
+   "readings": {
+    "kraken": "ƒio xxx",
+    "comma": [
+     "",
+     "",
+     "etiam etiam etiam etiam etiam etiam etiam etiam",
+     "misit in primo culpato sine culpa",
+     "",
+     ""
+    ]
+   },
+   "flag": false,
+   "note": "",
+   "text": "ƒio xxx",
+   "agreement": {
+    "reference": "misit in primo culpato sine culpa",
+    "ref_source": "comma#4",
+    "words": [
+     {
+      "w": "misit",
+      "score": 0.333,
+      "variants": {
+       "ƒio xxx": [
+        "kraken"
+       ],
+       "etiam etiam etiam etiam etiam etiam etiam etiam": [
+        "comma#3"
+       ]
+      }
+     },
+     {
+      "w": "in",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#3"
+       ]
+      }
+     },
+     {
+      "w": "primo",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#3"
+       ]
+      }
+     },
+     {
+      "w": "culpato",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#3"
+       ]
+      }
+     },
+     {
+      "w": "sine",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#3"
+       ]
+      }
+     },
+     {
+      "w": "culpa",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#3"
+       ]
+      }
+     }
+    ],
+    "mean": 0.333,
+    "low": 6,
+    "n": 3
+   },
+   "region": "rcol46-scr"
+  },
+  {
+   "id": "l40",
+   "polygon": [
+    [
+     1196,
+     828
+    ],
+    [
+     1186,
+     827
+    ],
+    [
+     1175,
+     827
+    ],
+    [
+     1164,
+     826
+    ],
+    [
+     1154,
+     826
+    ],
+    [
+     1147,
+     825
+    ],
+    [
+     1089,
+     826
+    ],
+    [
+     1093,
+     858
+    ],
+    [
+     1094,
+     873
+    ],
+    [
+     1207,
+     853
+    ],
+    [
+     1207,
+     848
+    ],
+    [
+     1204,
+     828
+    ],
+    [
+     1196,
+     828
+    ]
+   ],
+   "baseline": [
+    [
+     1093,
+     858
+    ],
+    [
+     1207,
+     848
+    ]
+   ],
+   "readings": {
+    "kraken": "ß1 c𝒹 x",
+    "comma": [
+     "",
+     "ab eis ab eis ab eis ab eis",
+     "",
+     "ni modo nulla culpa aliqua",
+     "",
+     "niis sinec uita nostra"
+    ],
+    "claude": "ß i 𝒹 vi aff",
+    "before": "ß1 𝒹 vi",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß i 𝒹 vi aff",
+   "agreement": {
+    "reference": "niis sinec uita nostra",
+    "ref_source": "comma#6",
+    "words": [
+     {
+      "w": "niis",
+      "score": 0.25,
+      "variants": {
+       "ß1 c𝒹 x": [
+        "kraken"
+       ],
+       "ab eis ab eis ab eis ab eis": [
+        "comma#2"
+       ],
+       "ni modo nulla culpa aliqua": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "sinec",
+      "score": 0.25,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#2",
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "uita",
+      "score": 0.25,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#2",
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "nostra",
+      "score": 0.25,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#2",
+        "comma#4"
+       ]
+      }
+     }
+    ],
+    "mean": 0.25,
+    "low": 4,
+    "n": 4
+   },
+   "region": "ramt46-scr",
+   "attached_to": "l30"
   },
   {
    "id": "l29",
@@ -9929,167 +10532,8 @@
     "mean": 0.611,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l30",
-   "polygon": [
-    [
-     808,
-     864
-    ],
-    [
-     808,
-     870
-    ],
-    [
-     1061,
-     871
-    ],
-    [
-     1062,
-     857
-    ],
-    [
-     1060,
-     837
-    ],
-    [
-     978,
-     830
-    ],
-    [
-     977,
-     830
-    ],
-    [
-     976,
-     830
-    ],
-    [
-     937,
-     841
-    ],
-    [
-     876,
-     838
-    ],
-    [
-     875,
-     838
-    ],
-    [
-     874,
-     838
-    ],
-    [
-     859,
-     845
-    ],
-    [
-     807,
-     846
-    ],
-    [
-     808,
-     864
-    ]
-   ],
-   "baseline": [
-    [
-     808,
-     864
-    ],
-    [
-     1062,
-     857
-    ]
-   ],
-   "readings": {
-    "kraken": "ƒio xxx",
-    "comma": [
-     "",
-     "",
-     "etiam etiam etiam etiam etiam etiam etiam etiam",
-     "misit in primo culpato sine culpa",
-     "",
-     ""
-    ]
    },
-   "flag": false,
-   "note": "",
-   "text": "ƒio xxx",
-   "agreement": {
-    "reference": "misit in primo culpato sine culpa",
-    "ref_source": "comma#4",
-    "words": [
-     {
-      "w": "misit",
-      "score": 0.333,
-      "variants": {
-       "ƒio xxx": [
-        "kraken"
-       ],
-       "etiam etiam etiam etiam etiam etiam etiam etiam": [
-        "comma#3"
-       ]
-      }
-     },
-     {
-      "w": "in",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#3"
-       ]
-      }
-     },
-     {
-      "w": "primo",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#3"
-       ]
-      }
-     },
-     {
-      "w": "culpato",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#3"
-       ]
-      }
-     },
-     {
-      "w": "sine",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#3"
-       ]
-      }
-     },
-     {
-      "w": "culpa",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#3"
-       ]
-      }
-     }
-    ],
-    "mean": 0.333,
-    "low": 6,
-    "n": 3
-   }
+   "region": "rcol46-scr"
   },
   {
    "id": "l31",
@@ -10551,7 +10995,211 @@
     "mean": 0.625,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
+  },
+  {
+   "id": "l41",
+   "polygon": [
+    [
+     998,
+     908
+    ],
+    [
+     998,
+     929
+    ],
+    [
+     1037,
+     923
+    ],
+    [
+     1057,
+     932
+    ],
+    [
+     1058,
+     932
+    ],
+    [
+     1059,
+     932
+    ],
+    [
+     1126,
+     931
+    ],
+    [
+     1127,
+     931
+    ],
+    [
+     1160,
+     916
+    ],
+    [
+     1172,
+     921
+    ],
+    [
+     1173,
+     921
+    ],
+    [
+     1174,
+     921
+    ],
+    [
+     1219,
+     915
+    ],
+    [
+     1257,
+     920
+    ],
+    [
+     1259,
+     903
+    ],
+    [
+     1257,
+     881
+    ],
+    [
+     1222,
+     877
+    ],
+    [
+     1221,
+     877
+    ],
+    [
+     1220,
+     877
+    ],
+    [
+     1205,
+     883
+    ],
+    [
+     1193,
+     875
+    ],
+    [
+     1192,
+     875
+    ],
+    [
+     1191,
+     875
+    ],
+    [
+     1161,
+     875
+    ],
+    [
+     1160,
+     875
+    ],
+    [
+     1159,
+     875
+    ],
+    [
+     1158,
+     875
+    ],
+    [
+     1145,
+     886
+    ],
+    [
+     1112,
+     880
+    ],
+    [
+     1111,
+     880
+    ],
+    [
+     1110,
+     880
+    ],
+    [
+     1084,
+     887
+    ],
+    [
+     1073,
+     878
+    ],
+    [
+     1072,
+     878
+    ],
+    [
+     1070,
+     878
+    ],
+    [
+     1069,
+     878
+    ],
+    [
+     1068,
+     878
+    ],
+    [
+     1067,
+     878
+    ],
+    [
+     1057,
+     887
+    ],
+    [
+     1018,
+     882
+    ],
+    [
+     1017,
+     882
+    ],
+    [
+     1016,
+     882
+    ],
+    [
+     997,
+     888
+    ],
+    [
+     998,
+     908
+    ]
+   ],
+   "baseline": [
+    [
+     998,
+     908
+    ],
+    [
+     1259,
+     903
+    ]
+   ],
+   "readings": {
+    "kraken": "xxviii ßxxiiiº e1 afi",
+    "claude": "ƒi xxviii ß xxiiiiº 𝒹 i aff",
+    "before": "xxviii ßxxiiiº 𝒹1 afi",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ƒ xxviii ß xxiiiiº 𝒹 i aff",
+   "agreement": null,
+   "region": "ramt46-scr",
+   "attached_to": "l31"
   },
   {
    "id": "l32",
@@ -10839,7 +11487,8 @@
     "mean": 0.6,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l33",
@@ -11362,7 +12011,8 @@
     "mean": 0.615,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l34",
@@ -11796,7 +12446,8 @@
     "mean": 0.667,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l35",
@@ -12325,7 +12976,8 @@
     "mean": 0.727,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l36",
@@ -12774,7 +13426,8 @@
     "mean": 0.542,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol46-scr"
   },
   {
    "id": "l37",
@@ -12914,613 +13567,8 @@
     "mean": 0.667,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l38",
-   "polygon": [
-    [
-     1250,
-     548
-    ],
-    [
-     1239,
-     547
-    ],
-    [
-     1228,
-     546
-    ],
-    [
-     1218,
-     545
-    ],
-    [
-     1207,
-     544
-    ],
-    [
-     1196,
-     544
-    ],
-    [
-     1079,
-     544
-    ],
-    [
-     1079,
-     568
-    ],
-    [
-     1078,
-     587
-    ],
-    [
-     1125,
-     589
-    ],
-    [
-     1126,
-     589
-    ],
-    [
-     1127,
-     589
-    ],
-    [
-     1161,
-     581
-    ],
-    [
-     1175,
-     588
-    ],
-    [
-     1176,
-     588
-    ],
-    [
-     1177,
-     588
-    ],
-    [
-     1178,
-     588
-    ],
-    [
-     1203,
-     581
-    ],
-    [
-     1213,
-     590
-    ],
-    [
-     1213,
-     592
-    ],
-    [
-     1214,
-     592
-    ],
-    [
-     1216,
-     592
-    ],
-    [
-     1217,
-     593
-    ],
-    [
-     1252,
-     593
-    ],
-    [
-     1253,
-     569
-    ],
-    [
-     1252,
-     548
-    ],
-    [
-     1250,
-     548
-    ]
-   ],
-   "baseline": [
-    [
-     1079,
-     568
-    ],
-    [
-     1253,
-     569
-    ]
-   ],
-   "readings": {
-    "kraken": "ß vxxii iiiº",
-    "claude": "ß xxxii 𝒹 iiiiº",
-    "before": "ß xxxii iiiº",
-    "claude_status": "accepted"
    },
-   "flag": false,
-   "note": "",
-   "text": "ß xxxii 𝒹 iiiiº",
-   "agreement": null
-  },
-  {
-   "id": "l39",
-   "polygon": [
-    [
-     1158,
-     672
-    ],
-    [
-     1147,
-     680
-    ],
-    [
-     1124,
-     674
-    ],
-    [
-     1123,
-     674
-    ],
-    [
-     1122,
-     674
-    ],
-    [
-     1121,
-     674
-    ],
-    [
-     1094,
-     683
-    ],
-    [
-     1097,
-     708
-    ],
-    [
-     1098,
-     725
-    ],
-    [
-     1166,
-     720
-    ],
-    [
-     1165,
-     702
-    ],
-    [
-     1159,
-     672
-    ],
-    [
-     1158,
-     672
-    ]
-   ],
-   "baseline": [
-    [
-     1097,
-     708
-    ],
-    [
-     1165,
-     702
-    ]
-   ],
-   "readings": {
-    "kraken": "ßlii",
-    "comma": [
-     "",
-     "ab eis ab eis ab eis ab eis",
-     "",
-     "cuncta quieque fuerit ut salere",
-     "",
-     "decorissimilib; ab om"
-    ],
-    "claude": "ß lii pc̄",
-    "before": "ßlii",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ß lii pc̄",
-   "agreement": {
-    "reference": "decorissimilib; ab om",
-    "ref_source": "comma#6",
-    "words": [
-     {
-      "w": "decorissimilib;",
-      "score": 0.25,
-      "variants": {
-       "ßlii": [
-        "kraken"
-       ],
-       "∅": [
-        "comma#2"
-       ],
-       "cuncta quieque fuerit ut salere": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "ab",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "om",
-      "score": 0.25,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#4"
-       ],
-       "eis ab eis ab eis ab eis": [
-        "comma#2"
-       ]
-      }
-     }
-    ],
-    "mean": 0.333,
-    "low": 2,
-    "n": 4
-   }
-  },
-  {
-   "id": "l40",
-   "polygon": [
-    [
-     1196,
-     828
-    ],
-    [
-     1186,
-     827
-    ],
-    [
-     1175,
-     827
-    ],
-    [
-     1164,
-     826
-    ],
-    [
-     1154,
-     826
-    ],
-    [
-     1147,
-     825
-    ],
-    [
-     1089,
-     826
-    ],
-    [
-     1093,
-     858
-    ],
-    [
-     1094,
-     873
-    ],
-    [
-     1207,
-     853
-    ],
-    [
-     1207,
-     848
-    ],
-    [
-     1204,
-     828
-    ],
-    [
-     1196,
-     828
-    ]
-   ],
-   "baseline": [
-    [
-     1093,
-     858
-    ],
-    [
-     1207,
-     848
-    ]
-   ],
-   "readings": {
-    "kraken": "ß1 c𝒹 x",
-    "comma": [
-     "",
-     "ab eis ab eis ab eis ab eis",
-     "",
-     "ni modo nulla culpa aliqua",
-     "",
-     "niis sinec uita nostra"
-    ],
-    "claude": "ß i 𝒹 vi aff",
-    "before": "ß1 𝒹 vi",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ß i 𝒹 vi aff",
-   "agreement": {
-    "reference": "niis sinec uita nostra",
-    "ref_source": "comma#6",
-    "words": [
-     {
-      "w": "niis",
-      "score": 0.25,
-      "variants": {
-       "ß1 c𝒹 x": [
-        "kraken"
-       ],
-       "ab eis ab eis ab eis ab eis": [
-        "comma#2"
-       ],
-       "ni modo nulla culpa aliqua": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "sinec",
-      "score": 0.25,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#2",
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "uita",
-      "score": 0.25,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#2",
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "nostra",
-      "score": 0.25,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#2",
-        "comma#4"
-       ]
-      }
-     }
-    ],
-    "mean": 0.25,
-    "low": 4,
-    "n": 4
-   }
-  },
-  {
-   "id": "l41",
-   "polygon": [
-    [
-     998,
-     908
-    ],
-    [
-     998,
-     929
-    ],
-    [
-     1037,
-     923
-    ],
-    [
-     1057,
-     932
-    ],
-    [
-     1058,
-     932
-    ],
-    [
-     1059,
-     932
-    ],
-    [
-     1126,
-     931
-    ],
-    [
-     1127,
-     931
-    ],
-    [
-     1160,
-     916
-    ],
-    [
-     1172,
-     921
-    ],
-    [
-     1173,
-     921
-    ],
-    [
-     1174,
-     921
-    ],
-    [
-     1219,
-     915
-    ],
-    [
-     1257,
-     920
-    ],
-    [
-     1259,
-     903
-    ],
-    [
-     1257,
-     881
-    ],
-    [
-     1222,
-     877
-    ],
-    [
-     1221,
-     877
-    ],
-    [
-     1220,
-     877
-    ],
-    [
-     1205,
-     883
-    ],
-    [
-     1193,
-     875
-    ],
-    [
-     1192,
-     875
-    ],
-    [
-     1191,
-     875
-    ],
-    [
-     1161,
-     875
-    ],
-    [
-     1160,
-     875
-    ],
-    [
-     1159,
-     875
-    ],
-    [
-     1158,
-     875
-    ],
-    [
-     1145,
-     886
-    ],
-    [
-     1112,
-     880
-    ],
-    [
-     1111,
-     880
-    ],
-    [
-     1110,
-     880
-    ],
-    [
-     1084,
-     887
-    ],
-    [
-     1073,
-     878
-    ],
-    [
-     1072,
-     878
-    ],
-    [
-     1070,
-     878
-    ],
-    [
-     1069,
-     878
-    ],
-    [
-     1068,
-     878
-    ],
-    [
-     1067,
-     878
-    ],
-    [
-     1057,
-     887
-    ],
-    [
-     1018,
-     882
-    ],
-    [
-     1017,
-     882
-    ],
-    [
-     1016,
-     882
-    ],
-    [
-     997,
-     888
-    ],
-    [
-     998,
-     908
-    ]
-   ],
-   "baseline": [
-    [
-     998,
-     908
-    ],
-    [
-     1259,
-     903
-    ]
-   ],
-   "readings": {
-    "kraken": "xxviii ßxxiiiº e1 afi",
-    "claude": "ƒi xxviii ß xxiiiiº 𝒹 i aff",
-    "before": "xxviii ßxxiiiº 𝒹1 afi",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ƒ xxviii ß xxiiiiº 𝒹 i aff",
-   "agreement": null
+   "region": "rcol46-scr"
   }
  ],
  "note": "",
@@ -13588,9 +13636,13 @@
   {
    "t": "2026-10-18T11:10:04",
    "event": "florin convention: 3 line(s) ƒi → ƒ (Laura, 18 Oct)"
+  },
+  {
+   "t": "2026-10-18T22:59:51",
+   "event": "sums column fitted (11-point boundary)"
   }
  ],
- "updated": "2026-10-18T11:10:04",
+ "updated": "2026-10-23T11:17:56",
  "previous_lines": [
   {
    "id": "l1",
@@ -27097,5 +27149,199 @@
    "text": "xxviii ßxxiiiº e1 afi",
    "agreement": null
   }
+ ],
+ "regions": [
+  {
+   "id": "rcol46-scr",
+   "type": "column",
+   "label": "a",
+   "box": [
+    138,
+    124,
+    1016.0,
+    1545.0
+   ],
+   "poly": [
+    [
+     138,
+     124
+    ],
+    [
+     1011.0,
+     124
+    ],
+    [
+     1011.0,
+     216.0
+    ],
+    [
+     947.0,
+     398.0
+    ],
+    [
+     954.0,
+     526.0
+    ],
+    [
+     962.0,
+     650.0
+    ],
+    [
+     960.0,
+     776.0
+    ],
+    [
+     965.0,
+     1024.0
+    ],
+    [
+     996.0,
+     1086.0
+    ],
+    [
+     1016.0,
+     1191.0
+    ],
+    [
+     833.0,
+     1368.0
+    ],
+    [
+     844.0,
+     1440.0
+    ],
+    [
+     828.0,
+     1545.0
+    ],
+    [
+     828.0,
+     1545.0
+    ],
+    [
+     138,
+     1545.0
+    ]
+   ]
+  },
+  {
+   "id": "ramt46-scr",
+   "type": "amounts",
+   "label": "amounts",
+   "box": [
+    828.0,
+    124,
+    1271,
+    1545.0
+   ],
+   "poly": [
+    [
+     1271,
+     124
+    ],
+    [
+     1011.0,
+     124
+    ],
+    [
+     1011.0,
+     216.0
+    ],
+    [
+     947.0,
+     398.0
+    ],
+    [
+     954.0,
+     526.0
+    ],
+    [
+     962.0,
+     650.0
+    ],
+    [
+     960.0,
+     776.0
+    ],
+    [
+     965.0,
+     1024.0
+    ],
+    [
+     996.0,
+     1086.0
+    ],
+    [
+     1016.0,
+     1191.0
+    ],
+    [
+     833.0,
+     1368.0
+    ],
+    [
+     844.0,
+     1440.0
+    ],
+    [
+     828.0,
+     1545.0
+    ],
+    [
+     828.0,
+     1545.0
+    ],
+    [
+     1271,
+     1545.0
+    ]
+   ]
+  }
+ ],
+ "sums_boundary": [
+  [
+   1011,
+   216
+  ],
+  [
+   947,
+   398
+  ],
+  [
+   954,
+   526
+  ],
+  [
+   962,
+   650
+  ],
+  [
+   960,
+   776
+  ],
+  [
+   965,
+   1024
+  ],
+  [
+   996,
+   1086
+  ],
+  [
+   1016,
+   1191
+  ],
+  [
+   833,
+   1368
+  ],
+  [
+   844,
+   1440
+  ],
+  [
+   828,
+   1545
+  ]
  ]
 }

@@ -6,14 +6,26 @@
  "folio": "2v",
  "width": 1949,
  "height": 2429,
- "status": "new",
+ "status": "finished",
  "lines": [],
  "note": "",
  "history": [
   {
    "t": "2026-10-14T15:38:30",
    "event": "imported"
+  },
+  {
+   "t": "2026-10-20T12:35:50",
+   "event": "machine reading: kraken (catmus_secondtraining_v2_4.mlmodel)"
+  },
+  {
+   "t": "2026-10-20T23:00:53",
+   "event": "started correcting"
+  },
+  {
+   "t": "2026-10-20T23:01:00",
+   "event": "status → Finished"
   }
  ],
- "updated": "2026-10-14T15:38:30"
+ "updated": "2026-10-20T23:01:00"
 }

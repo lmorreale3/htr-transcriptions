@@ -1,0 +1,45 @@
+
+/* ---- Ask tab */
+.askgrid { display: grid; grid-template-columns: 330px minmax(0, 1fr); gap: 18px; margin-top: 12px; align-items: start; }
+.askgrid > section > .card { margin-bottom: 14px; }
+@media (max-width: 900px) { .askgrid { grid-template-columns: 1fr; } }
+#aq { width: 100%; border: 1px solid var(--line); border-radius: 8px; padding: 8px; background: var(--panel); resize: vertical; font: inherit; color: inherit; }
+.aex { display: flex; flex-direction: column; gap: 4px; margin-top: 4px; }
+.alist { display: flex; flex-direction: column; gap: 6px; max-height: 60vh; overflow: auto; }
+.aitem { display: block; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: inherit; }
+.aitem.on { border-color: var(--accent); }
+.ast { font-size: 12px; padding: 1px 8px; border-radius: 99px; background: var(--panel-2); }
+.ast-done { color: var(--ok); } .ast-error { color: var(--warn); } .ast-waiting, .ast-answered-without-text { color: var(--chg); }
+.ast-planning, .ast-running, .ast-writing { color: var(--accent); }
+.spin { width: 12px; height: 12px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.alog { background: var(--panel-2); padding: 8px; border-radius: 8px; white-space: pre-wrap; }
+.ahead { font-family: var(--ms); font-size: 21px; line-height: 1.35; margin: 6px 0 10px; }
+.aprose p { margin: 0 0 10px; max-width: 75ch; }
+.aclaims li { margin-bottom: 4px; }
+.str { font-size: 11px; padding: 0 6px; border-radius: 99px; border: 1px solid var(--line); }
+.str-strong { color: var(--ok); border-color: var(--ok); } .str-moderate { color: var(--chg); border-color: var(--chg); } .str-weak { color: var(--warn); border-color: var(--warn); }
+.chgc { color: var(--chg); } .ok { color: var(--ok); }
+.acav { margin: 8px 0 0; padding-left: 18px; color: var(--ink-2); }
+.astep h3 { font-family: var(--ms); font-weight: 500; font-size: 18px; }
+.astep h4 { margin: 14px 0 6px; font-size: 13px; }
+.abadges { gap: 6px 14px; margin: 6px 0; }
+.bars { display: flex; flex-direction: column; gap: 3px; margin: 10px 0; }
+.bar { display: grid; grid-template-columns: minmax(120px, 220px) minmax(0, 1fr) 150px; gap: 8px; align-items: center; cursor: pointer; font-size: 13px; }
+.bar:hover .bl { color: var(--accent); }
+.bar .bl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: right; }
+.bar .bt { background: var(--panel-2); height: 14px; border-radius: 4px; overflow: hidden; }
+.bar .bt i { display: block; height: 100%; background: color-mix(in srgb, var(--accent) 50%, transparent); border-radius: 4px; }
+.bar .bt i.chk { background: var(--accent); }
+.bar .bv { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.hscroll { overflow-x: auto; }
+.cons td.rk1 { background: color-mix(in srgb, var(--accent) 45%, transparent); font-weight: 600; }
+.cons td.rk2 { background: color-mix(in srgb, var(--accent) 25%, transparent); }
+.cons td.rk3 { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.atx td { vertical-align: top; } .imgrow img { max-width: 100%; display: block; margin-bottom: 4px; }
+svg.dnet { width: 100%; display: block; }
+.dlink { stroke: var(--ink-3); stroke-opacity: .6; } .dlink.assumed { stroke-dasharray: 4 3; }
+.arrowhead { fill: var(--ink-3); }
+.dnode circle { stroke: var(--panel); stroke-width: 1.5; }
+.dnode.r-borrower circle { fill: var(--t-person); } .dnode.r-lender circle { fill: var(--t-place); } .dnode.r-borrowerlender circle { fill: var(--t-occupation); }
+.dnode text { fill: var(--ink); font-size: 11px; paint-order: stroke; stroke: var(--panel); stroke-width: 3px; }

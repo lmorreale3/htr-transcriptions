@@ -3,10 +3,10 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1128_DSC00644-scr.jpg",
  "order": 20,
- "folio": "",
+ "folio": "30r",
  "width": 1280,
  "height": 1920,
- "status": "needs_recheck",
+ "status": "finished",
  "lines": [
   {
    "id": "l5",
@@ -124,7 +124,8 @@
    "flag": false,
    "note": "",
    "text": "mcclxxxviii",
-   "agreement": null
+   "agreement": null,
+   "region": "rcol44-scr"
   },
   {
    "id": "l6",
@@ -579,7 +580,68 @@
     "mean": 0.417,
     "low": 9,
     "n": 3
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l27",
+   "polygon": [
+    [
+     1000,
+     304
+    ],
+    [
+     996,
+     302
+    ],
+    [
+     989,
+     302
+    ],
+    [
+     989,
+     320
+    ],
+    [
+     989,
+     336
+    ],
+    [
+     1009,
+     339
+    ],
+    [
+     1010,
+     320
+    ],
+    [
+     1010,
+     305
+    ],
+    [
+     1000,
+     304
+    ]
+   ],
+   "baseline": [
+    [
+     989,
+     320
+    ],
+    [
+     1010,
+     320
+    ]
+   ],
+   "readings": {
+    "kraken": "1"
+   },
+   "flag": false,
+   "note": "",
+   "text": "1",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l6"
   },
   {
    "id": "l7",
@@ -1020,7 +1082,103 @@
     "mean": 0.531,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l28",
+   "polygon": [
+    [
+     1028,
+     360
+    ],
+    [
+     981,
+     365
+    ],
+    [
+     981,
+     387
+    ],
+    [
+     981,
+     398
+    ],
+    [
+     1008,
+     397
+    ],
+    [
+     1028,
+     405
+    ],
+    [
+     1030,
+     387
+    ],
+    [
+     1029,
+     360
+    ],
+    [
+     1028,
+     360
+    ]
+   ],
+   "baseline": [
+    [
+     981,
+     387
+    ],
+    [
+     1030,
+     387
+    ]
+   ],
+   "readings": {
+    "kraken": "ß iiº",
+    "comma": [
+     "",
+     "",
+     "",
+     "",
+     "testes stolas que fecit ei.",
+     ""
+    ],
+    "claude": "ß iiiiº"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß iiiiº",
+   "agreement": {
+    "reference": "ß iiº",
+    "ref_source": "kraken",
+    "words": [
+     {
+      "w": "ß",
+      "score": 0.5,
+      "variants": {
+       "testes stolas que fecit ei.": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "iiº",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l7"
   },
   {
    "id": "l8",
@@ -1401,7 +1559,7 @@
    },
    "flag": false,
    "note": "",
-   "text": "ƒilippo di brunetto chiamato matano ⁊ macho dasesto deondare ac̄ 39ƒ ii",
+   "text": "Filippo di brunetto chiamato matano ⁊ macho dasesto deondare ac̄ 39ƒ ii",
    "agreement": {
     "reference": "ƒilippo di brunetto chiamato matano ⁊ macho dasesto deondare ac̄ 39ƒ ii",
     "ref_source": "kraken",
@@ -1510,7 +1668,8 @@
     "mean": 0.583,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l9",
@@ -1909,11 +2068,12 @@
      ""
     ],
     "claude": "Niccolo di van̄i pagan̄i dacalenzano de dare al detto libro ac̄ 39pc̄",
-    "before": "Niccolo di van̄i pagan̄i dacalenzano de dare al detto libro ac̄ 39 pē"
+    "before": "Niccolo di van̄i pagan̄i dacalenzano de dare al detto libro ac̄ 39pē",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "Niccolo di van̄i pagan̄i dacalenzano de dare al detto libro ac̄ 39pē",
+   "text": "Niccolo di van̄i pagan̄i dacalenzano de dare al detto libro ac̄ 39pc̄",
    "agreement": {
     "reference": "Niccolo di van̄i pagan̄i dacalenzano de dare al detto li bro ac̄ 39pē",
     "ref_source": "kraken",
@@ -2039,7 +2199,63 @@
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l11",
+   "polygon": [
+    [
+     885,
+     437
+    ],
+    [
+     884,
+     449
+    ],
+    [
+     946,
+     449
+    ],
+    [
+     947,
+     438
+    ],
+    [
+     946,
+     417
+    ],
+    [
+     885,
+     420
+    ],
+    [
+     885,
+     437
+    ]
+   ],
+   "baseline": [
+    [
+     885,
+     437
+    ],
+    [
+     947,
+     438
+    ]
+   ],
+   "readings": {
+    "kraken": "ƒe",
+    "claude": "℔ i",
+    "before": "ƒe",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "℔ i",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l9"
   },
   {
    "id": "l10",
@@ -2234,11 +2450,12 @@
      ""
     ],
     "claude": "Stefano dilippo da torri di val di marina de dare al detto ac̄ 39pc̄",
-    "before": "tesano dilippo da torri di val di marina de dare al detto ac̄ 39pe"
+    "before": "Stefano dilippo da torri di val di marina de dare al detto ac̄ 39pe",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "Stefano dilippo da torri di val di marina de dare al detto ac̄ 39pe",
+   "text": "Stefano dilippo da torri di val di marina de dare al detto ac̄ 39pc̄",
    "agreement": {
     "reference": "tesano dilippo da torri di val di marina de dare al detto ac̄ 39pe",
     "ref_source": "kraken",
@@ -2369,60 +2586,8 @@
     "mean": 0.536,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l11",
-   "polygon": [
-    [
-     885,
-     437
-    ],
-    [
-     884,
-     449
-    ],
-    [
-     946,
-     449
-    ],
-    [
-     947,
-     438
-    ],
-    [
-     946,
-     417
-    ],
-    [
-     885,
-     420
-    ],
-    [
-     885,
-     437
-    ]
-   ],
-   "baseline": [
-    [
-     885,
-     437
-    ],
-    [
-     947,
-     438
-    ]
-   ],
-   "readings": {
-    "kraken": "ƒe",
-    "claude": "℔ i",
-    "before": "ƒe",
-    "claude_status": "accepted"
    },
-   "flag": false,
-   "note": "",
-   "text": "℔ i",
-   "agreement": null
+   "region": "rcol44-scr"
   },
   {
    "id": "l12",
@@ -2475,7 +2640,61 @@
    "flag": false,
    "note": "",
    "text": "℔ i",
-   "agreement": null
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l10"
+  },
+  {
+   "id": "l29",
+   "polygon": [
+    [
+     988,
+     480
+    ],
+    [
+     990,
+     493
+    ],
+    [
+     1034,
+     490
+    ],
+    [
+     1032,
+     473
+    ],
+    [
+     1026,
+     449
+    ],
+    [
+     984,
+     453
+    ],
+    [
+     988,
+     480
+    ]
+   ],
+   "baseline": [
+    [
+     988,
+     480
+    ],
+    [
+     1032,
+     473
+    ]
+   ],
+   "readings": {
+    "kraken": "ßv"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ßv",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l10"
   },
   {
    "id": "l13",
@@ -2898,7 +3117,8 @@
     "mean": 0.571,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l14",
@@ -3085,11 +3305,12 @@
      ""
     ],
     "claude": "domenicho del carnina maestro de dare a libro detto acār 39 pc̄",
-    "before": "domenicho del carnina maestro de dare alibro detto ācā 39pc"
+    "before": "domenicho del carnina maestro de dare a libro detto ācā 39 pc̄",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "domenicho del carnina maestro de dare a libro detto ācā 39 pc̄",
+   "text": "domenicho del carnina maestro de dare a libro detto acār 39 pc̄",
    "agreement": {
     "reference": "domenicho del carnina maestro de dare alibro detto ācā 39pc",
     "ref_source": "kraken",
@@ -3176,7 +3397,195 @@
     "mean": 0.65,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l16",
+   "polygon": [
+    [
+     834,
+     522
+    ],
+    [
+     833,
+     531
+    ],
+    [
+     971,
+     536
+    ],
+    [
+     973,
+     525
+    ],
+    [
+     971,
+     504
+    ],
+    [
+     834,
+     504
+    ],
+    [
+     834,
+     522
+    ]
+   ],
+   "baseline": [
+    [
+     834,
+     522
+    ],
+    [
+     973,
+     525
+    ]
+   ],
+   "readings": {
+    "kraken": "ƒ iiiº",
+    "comma": [
+     "",
+     "",
+     "",
+     "ad modũ nunc in ecclesia factata sit. Ad modũ",
+     "",
+     ""
+    ],
+    "claude": "℔ iiiiº",
+    "before": "ƒ iiiº",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "℔ iiiiº",
+   "agreement": {
+    "reference": "ƒ iiiº",
+    "ref_source": "kraken",
+    "words": [
+     {
+      "w": "ƒ",
+      "score": 0.5,
+      "variants": {
+       "ad modũ nunc in ecclesia factata sit. Ad modũ": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "iiiº",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#4"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l14"
+  },
+  {
+   "id": "l30",
+   "polygon": [
+    [
+     988,
+     526
+    ],
+    [
+     987,
+     542
+    ],
+    [
+     1044,
+     544
+    ],
+    [
+     1046,
+     529
+    ],
+    [
+     1046,
+     514
+    ],
+    [
+     1014,
+     505
+    ],
+    [
+     1013,
+     505
+    ],
+    [
+     1012,
+     505
+    ],
+    [
+     988,
+     508
+    ],
+    [
+     988,
+     526
+    ]
+   ],
+   "baseline": [
+    [
+     988,
+     526
+    ],
+    [
+     1046,
+     529
+    ]
+   ],
+   "readings": {
+    "kraken": "ß vii",
+    "comma": [
+     "",
+     "",
+     "",
+     "",
+     "non te possides nec aliqͦ.",
+     ""
+    ]
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß vii",
+   "agreement": {
+    "reference": "ß vii",
+    "ref_source": "kraken",
+    "words": [
+     {
+      "w": "ß",
+      "score": 0.5,
+      "variants": {
+       "non te possides nec aliqͦ.": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "vii",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l14"
   },
   {
    "id": "l15",
@@ -3292,7 +3701,7 @@
    },
    "flag": false,
    "note": "",
-   "text": "Pagolo di choso maestro dedare a libro detto acār 39  pc̄",
+   "text": "Pagolo di choso maestro dedare a libro detto acār 39 pc̄",
    "agreement": {
     "reference": "xagolo di choso maestro dedare alebro detto acār 3pē",
     "ref_source": "kraken",
@@ -3378,94 +3787,8 @@
     "mean": 0.556,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l16",
-   "polygon": [
-    [
-     834,
-     522
-    ],
-    [
-     833,
-     531
-    ],
-    [
-     971,
-     536
-    ],
-    [
-     973,
-     525
-    ],
-    [
-     971,
-     504
-    ],
-    [
-     834,
-     504
-    ],
-    [
-     834,
-     522
-    ]
-   ],
-   "baseline": [
-    [
-     834,
-     522
-    ],
-    [
-     973,
-     525
-    ]
-   ],
-   "readings": {
-    "kraken": "ƒ iiiº",
-    "comma": [
-     "",
-     "",
-     "",
-     "ad modũ nunc in ecclesia factata sit. Ad modũ",
-     "",
-     ""
-    ],
-    "claude": "℔ iiiiº",
-    "before": "ƒ iiiº",
-    "claude_status": "accepted"
    },
-   "flag": false,
-   "note": "",
-   "text": "℔ iiiiº",
-   "agreement": {
-    "reference": "ƒ iiiº",
-    "ref_source": "kraken",
-    "words": [
-     {
-      "w": "ƒ",
-      "score": 0.5,
-      "variants": {
-       "ad modũ nunc in ecclesia factata sit. Ad modũ": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "iiiº",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#4"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
+   "region": "rcol44-scr"
   },
   {
    "id": "l17",
@@ -3522,7 +3845,197 @@
    "flag": false,
    "note": "",
    "text": "℔ v",
-   "agreement": null
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l15"
+  },
+  {
+   "id": "l31",
+   "polygon": [
+    [
+     1003,
+     552
+    ],
+    [
+     1003,
+     567
+    ],
+    [
+     1033,
+     561
+    ],
+    [
+     1033,
+     551
+    ],
+    [
+     1030,
+     533
+    ],
+    [
+     1002,
+     537
+    ],
+    [
+     1003,
+     552
+    ]
+   ],
+   "baseline": [
+    [
+     1003,
+     552
+    ],
+    [
+     1033,
+     551
+    ]
+   ],
+   "readings": {
+    "kraken": "ß iiiº",
+    "comma": [
+     "",
+     "",
+     "",
+     "",
+     "s sibi te uenientes qui te ueniente te uenire",
+     ""
+    ],
+    "claude": "ß iiiiº"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß iiiiº",
+   "agreement": {
+    "reference": "ß iiiº",
+    "ref_source": "kraken",
+    "words": [
+     {
+      "w": "ß",
+      "score": 0.5,
+      "variants": {
+       "s sibi te uenientes qui te ueniente te uenire": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "iiiº",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l15"
+  },
+  {
+   "id": "l33",
+   "polygon": [
+    [
+     1090,
+     534
+    ],
+    [
+     1079,
+     532
+    ],
+    [
+     1078,
+     531
+    ],
+    [
+     1047,
+     535
+    ],
+    [
+     1047,
+     552
+    ],
+    [
+     1046,
+     571
+    ],
+    [
+     1093,
+     571
+    ],
+    [
+     1094,
+     554
+    ],
+    [
+     1092,
+     534
+    ],
+    [
+     1090,
+     534
+    ]
+   ],
+   "baseline": [
+    [
+     1047,
+     552
+    ],
+    [
+     1094,
+     554
+    ]
+   ],
+   "readings": {
+    "kraken": "x iiiiº",
+    "comma": [
+     "",
+     "",
+     "",
+     "",
+     "si te uenientes. qui te ueniente te uiuentem",
+     ""
+    ],
+    "claude": "𝒹 iiiiº",
+    "before": "x iiiiº",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "𝒹 iiiiº",
+   "agreement": {
+    "reference": "x iiiiº",
+    "ref_source": "kraken",
+    "words": [
+     {
+      "w": "x",
+      "score": 0.5,
+      "variants": {
+       "si te uenientes. qui te ueniente te uiuentem": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "iiiiº",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l15"
   },
   {
    "id": "l18",
@@ -3959,144 +4472,77 @@
     "mean": 0.625,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
-   "id": "l19",
+   "id": "l32",
    "polygon": [
     [
-     154,
-     625
+     992,
+     580
     ],
     [
-     144,
-     629
+     992,
+     594
     ],
     [
-     145,
-     654
+     1040,
+     601
     ],
     [
-     145,
-     669
+     1040,
+     577
     ],
     [
-     179,
-     673
+     1036,
+     557
     ],
     [
-     180,
-     653
+     989,
+     565
     ],
     [
-     179,
-     627
-    ],
-    [
-     162,
-     620
-    ],
-    [
-     154,
-     625
+     992,
+     580
     ]
    ],
    "baseline": [
     [
-     145,
-     654
+     992,
+     580
     ],
     [
-     180,
-     653
+     1040,
+     577
     ]
    ],
    "readings": {
-    "kraken": "",
+    "kraken": "ßuiiº",
     "comma": [
      "",
      "",
      "",
-     "potuit indubium indigne et iudisti. Qđ si ad",
-     "aliud te uiuentem me. nec aliud te uiuentem me. nec",
+     "",
+     "debent. Se non te possides nec aliqͦ.",
      ""
-    ]
+    ],
+    "claude": "ß iiiiº",
+    "before": "ß iiiiº",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "potuit indubium indigne et iudisti. Qđ si ad",
+   "text": "ß iiiiº",
    "agreement": {
-    "reference": "potuit indubium indigne et iudisti. Qđ si ad",
-    "ref_source": "comma#4",
+    "reference": "ßuiiº",
+    "ref_source": "kraken",
     "words": [
      {
-      "w": "potuit",
+      "w": "ßuiiº",
       "score": 0.5,
       "variants": {
-       "aliud te uiuentem me. nec aliud te uiuentem me. nec": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "indubium",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "indigne",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "et",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "iudisti.",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "Qđ",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "si",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "ad",
-      "score": 0.5,
-      "variants": {
-       "…": [
+       "debent. Se non te possides nec aliqͦ.": [
         "comma#5"
        ]
       }
@@ -4105,194 +4551,9 @@
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l20",
-   "polygon": [
-    [
-     136,
-     850
-    ],
-    [
-     138,
-     874
-    ],
-    [
-     156,
-     874
-    ],
-    [
-     154,
-     848
-    ],
-    [
-     151,
-     835
-    ],
-    [
-     134,
-     835
-    ],
-    [
-     136,
-     850
-    ]
-   ],
-   "baseline": [
-    [
-     136,
-     850
-    ],
-    [
-     154,
-     848
-    ]
-   ],
-   "readings": {
-    "kraken": "",
-    "comma": [
-     "",
-     "",
-     "",
-     "modum uideatur. si ad modũ ipsũ potuerit",
-     "aliud te uiuentem me. nec aliud te i uinentem me. nec",
-     ""
-    ]
    },
-   "flag": false,
-   "note": "",
-   "text": "modum uideatur. si ad modũ ipsũ potuerit",
-   "agreement": {
-    "reference": "modum uideatur. si ad modũ ipsũ potuerit",
-    "ref_source": "comma#4",
-    "words": [
-     {
-      "w": "modum",
-      "score": 0.5,
-      "variants": {
-       "aliud te uiuentem me. nec aliud te i uinentem me. nec": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "uideatur.",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "si",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "ad",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "modũ",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "ipsũ",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "potuerit",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
-  },
-  {
-   "id": "l21",
-   "polygon": [
-    [
-     145,
-     1258
-    ],
-    [
-     140,
-     1248
-    ],
-    [
-     132,
-     1246
-    ],
-    [
-     135,
-     1261
-    ],
-    [
-     137,
-     1274
-    ],
-    [
-     149,
-     1270
-    ],
-    [
-     148,
-     1259
-    ],
-    [
-     147,
-     1258
-    ],
-    [
-     145,
-     1258
-    ]
-   ],
-   "baseline": [
-    [
-     135,
-     1261
-    ],
-    [
-     148,
-     1259
-    ]
-   ],
-   "readings": {
-    "kraken": "i"
-   },
-   "flag": false,
-   "note": "",
-   "text": "i",
-   "agreement": null
+   "region": "ramt44-scr",
+   "attached_to": "l18"
   },
   {
    "id": "l22",
@@ -4788,7 +5049,8 @@
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l24",
@@ -4952,7 +5214,8 @@
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l25",
@@ -5006,48 +5269,58 @@
    "flag": false,
    "note": "",
    "text": "ƒ 1",
-   "agreement": null
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l24"
   },
   {
-   "id": "l26",
+   "id": "l19",
    "polygon": [
     [
-     882,
+     154,
+     625
+    ],
+    [
+     144,
      629
     ],
     [
-     901,
-     629
+     145,
+     654
     ],
     [
-     901,
+     145,
+     669
+    ],
+    [
+     179,
+     673
+    ],
+    [
+     180,
+     653
+    ],
+    [
+     179,
+     627
+    ],
+    [
+     162,
      620
     ],
     [
-     901,
-     599
-    ],
-    [
-     883,
-     594
-    ],
-    [
-     882,
-     620
-    ],
-    [
-     882,
-     629
+     154,
+     625
     ]
    ],
    "baseline": [
     [
-     882,
-     620
+     145,
+     654
     ],
     [
-     901,
-     620
+     180,
+     653
     ]
    ],
    "readings": {
@@ -5056,32 +5329,29 @@
      "",
      "",
      "",
-     "sia. ad modũ. si ad modũ potuerit ad modũ hoc loco.",
-     "te iuineni me. nec aliud te uiuentem me. nec aliud",
+     "potuit indubium indigne et iudisti. Qđ si ad",
+     "aliud te uiuentem me. nec aliud te uiuentem me. nec",
      ""
-    ],
-    "claude": "___",
-    "before": "sia. ad modũ. si ad modũ potuerit ad modũ hoc loco.",
-    "claude_status": "accepted"
+    ]
    },
    "flag": false,
    "note": "",
-   "text": "___",
+   "text": "potuit indubium indigne et iudisti. Qđ si ad",
    "agreement": {
-    "reference": "sia. ad modũ. si ad modũ potuerit ad modũ hoc loco.",
+    "reference": "potuit indubium indigne et iudisti. Qđ si ad",
     "ref_source": "comma#4",
     "words": [
      {
-      "w": "sia.",
+      "w": "potuit",
       "score": 0.5,
       "variants": {
-       "te iuineni me. nec aliud te uiuentem me. nec aliud": [
+       "aliud te uiuentem me. nec aliud te uiuentem me. nec": [
         "comma#5"
        ]
       }
      },
      {
-      "w": "ad",
+      "w": "indubium",
       "score": 0.5,
       "variants": {
        "…": [
@@ -5090,7 +5360,34 @@
       }
      },
      {
-      "w": "modũ.",
+      "w": "indigne",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "et",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "iudisti.",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "Qđ",
       "score": 0.5,
       "variants": {
        "…": [
@@ -5115,625 +5412,13 @@
         "comma#5"
        ]
       }
-     },
-     {
-      "w": "modũ",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "potuerit",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "ad",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "modũ",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "hoc",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "loco.",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
      }
     ],
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l27",
-   "polygon": [
-    [
-     1000,
-     304
-    ],
-    [
-     996,
-     302
-    ],
-    [
-     989,
-     302
-    ],
-    [
-     989,
-     320
-    ],
-    [
-     989,
-     336
-    ],
-    [
-     1009,
-     339
-    ],
-    [
-     1010,
-     320
-    ],
-    [
-     1010,
-     305
-    ],
-    [
-     1000,
-     304
-    ]
-   ],
-   "baseline": [
-    [
-     989,
-     320
-    ],
-    [
-     1010,
-     320
-    ]
-   ],
-   "readings": {
-    "kraken": "1"
    },
-   "flag": false,
-   "note": "",
-   "text": "1",
-   "agreement": null
-  },
-  {
-   "id": "l28",
-   "polygon": [
-    [
-     1028,
-     360
-    ],
-    [
-     981,
-     365
-    ],
-    [
-     981,
-     387
-    ],
-    [
-     981,
-     398
-    ],
-    [
-     1008,
-     397
-    ],
-    [
-     1028,
-     405
-    ],
-    [
-     1030,
-     387
-    ],
-    [
-     1029,
-     360
-    ],
-    [
-     1028,
-     360
-    ]
-   ],
-   "baseline": [
-    [
-     981,
-     387
-    ],
-    [
-     1030,
-     387
-    ]
-   ],
-   "readings": {
-    "kraken": "ß iiº",
-    "comma": [
-     "",
-     "",
-     "",
-     "",
-     "testes stolas que fecit ei.",
-     ""
-    ],
-    "claude": "ß iiiiº"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ß iiiiº",
-   "agreement": {
-    "reference": "ß iiº",
-    "ref_source": "kraken",
-    "words": [
-     {
-      "w": "ß",
-      "score": 0.5,
-      "variants": {
-       "testes stolas que fecit ei.": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "iiº",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
-  },
-  {
-   "id": "l29",
-   "polygon": [
-    [
-     988,
-     480
-    ],
-    [
-     990,
-     493
-    ],
-    [
-     1034,
-     490
-    ],
-    [
-     1032,
-     473
-    ],
-    [
-     1026,
-     449
-    ],
-    [
-     984,
-     453
-    ],
-    [
-     988,
-     480
-    ]
-   ],
-   "baseline": [
-    [
-     988,
-     480
-    ],
-    [
-     1032,
-     473
-    ]
-   ],
-   "readings": {
-    "kraken": "ßv"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ßv",
-   "agreement": null
-  },
-  {
-   "id": "l30",
-   "polygon": [
-    [
-     988,
-     526
-    ],
-    [
-     987,
-     542
-    ],
-    [
-     1044,
-     544
-    ],
-    [
-     1046,
-     529
-    ],
-    [
-     1046,
-     514
-    ],
-    [
-     1014,
-     505
-    ],
-    [
-     1013,
-     505
-    ],
-    [
-     1012,
-     505
-    ],
-    [
-     988,
-     508
-    ],
-    [
-     988,
-     526
-    ]
-   ],
-   "baseline": [
-    [
-     988,
-     526
-    ],
-    [
-     1046,
-     529
-    ]
-   ],
-   "readings": {
-    "kraken": "ß vii",
-    "comma": [
-     "",
-     "",
-     "",
-     "",
-     "non te possides nec aliqͦ.",
-     ""
-    ]
-   },
-   "flag": false,
-   "note": "",
-   "text": "ß vii",
-   "agreement": {
-    "reference": "ß vii",
-    "ref_source": "kraken",
-    "words": [
-     {
-      "w": "ß",
-      "score": 0.5,
-      "variants": {
-       "non te possides nec aliqͦ.": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "vii",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
-  },
-  {
-   "id": "l31",
-   "polygon": [
-    [
-     1003,
-     552
-    ],
-    [
-     1003,
-     567
-    ],
-    [
-     1033,
-     561
-    ],
-    [
-     1033,
-     551
-    ],
-    [
-     1030,
-     533
-    ],
-    [
-     1002,
-     537
-    ],
-    [
-     1003,
-     552
-    ]
-   ],
-   "baseline": [
-    [
-     1003,
-     552
-    ],
-    [
-     1033,
-     551
-    ]
-   ],
-   "readings": {
-    "kraken": "ß iiiº",
-    "comma": [
-     "",
-     "",
-     "",
-     "",
-     "s sibi te uenientes qui te ueniente te uenire",
-     ""
-    ],
-    "claude": "ß iiiiº"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ß iiiiº",
-   "agreement": {
-    "reference": "ß iiiº",
-    "ref_source": "kraken",
-    "words": [
-     {
-      "w": "ß",
-      "score": 0.5,
-      "variants": {
-       "s sibi te uenientes qui te ueniente te uenire": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "iiiº",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
-  },
-  {
-   "id": "l32",
-   "polygon": [
-    [
-     992,
-     580
-    ],
-    [
-     992,
-     594
-    ],
-    [
-     1040,
-     601
-    ],
-    [
-     1040,
-     577
-    ],
-    [
-     1036,
-     557
-    ],
-    [
-     989,
-     565
-    ],
-    [
-     992,
-     580
-    ]
-   ],
-   "baseline": [
-    [
-     992,
-     580
-    ],
-    [
-     1040,
-     577
-    ]
-   ],
-   "readings": {
-    "kraken": "ßuiiº",
-    "comma": [
-     "",
-     "",
-     "",
-     "",
-     "debent. Se non te possides nec aliqͦ.",
-     ""
-    ],
-    "claude": "ß iiiiº",
-    "before": "ß iiiiº",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ß iiiiº",
-   "agreement": {
-    "reference": "ßuiiº",
-    "ref_source": "kraken",
-    "words": [
-     {
-      "w": "ßuiiº",
-      "score": 0.5,
-      "variants": {
-       "debent. Se non te possides nec aliqͦ.": [
-        "comma#5"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
-  },
-  {
-   "id": "l33",
-   "polygon": [
-    [
-     1090,
-     534
-    ],
-    [
-     1079,
-     532
-    ],
-    [
-     1078,
-     531
-    ],
-    [
-     1047,
-     535
-    ],
-    [
-     1047,
-     552
-    ],
-    [
-     1046,
-     571
-    ],
-    [
-     1093,
-     571
-    ],
-    [
-     1094,
-     554
-    ],
-    [
-     1092,
-     534
-    ],
-    [
-     1090,
-     534
-    ]
-   ],
-   "baseline": [
-    [
-     1047,
-     552
-    ],
-    [
-     1094,
-     554
-    ]
-   ],
-   "readings": {
-    "kraken": "x iiiiº",
-    "comma": [
-     "",
-     "",
-     "",
-     "",
-     "si te uenientes. qui te ueniente te uiuentem",
-     ""
-    ],
-    "claude": "𝒹 iiiiº",
-    "before": "x iiiiº",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "𝒹 iiiiº",
-   "agreement": {
-    "reference": "x iiiiº",
-    "ref_source": "kraken",
-    "words": [
-     {
-      "w": "x",
-      "score": 0.5,
-      "variants": {
-       "si te uenientes. qui te ueniente te uiuentem": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "iiiiº",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#5"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
+   "region": "rcol44-scr"
   },
   {
    "id": "l34",
@@ -6102,7 +5787,8 @@
     "mean": 0.625,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l35",
@@ -6427,7 +6113,131 @@
     "mean": 0.667,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l37",
+   "polygon": [
+    [
+     998,
+     690
+    ],
+    [
+     998,
+     709
+    ],
+    [
+     1054,
+     709
+    ],
+    [
+     1054,
+     690
+    ],
+    [
+     1054,
+     673
+    ],
+    [
+     998,
+     668
+    ],
+    [
+     998,
+     690
+    ]
+   ],
+   "baseline": [
+    [
+     998,
+     690
+    ],
+    [
+     1054,
+     690
+    ]
+   ],
+   "readings": {
+    "kraken": "ß xiio",
+    "comma": [
+     "",
+     "",
+     "",
+     "Modũ . Admodus. Ad modũ. Ad modũ. Ad modũ. Id",
+     "testes stolas que fecit ei.",
+     ""
+    ],
+    "claude": "ß xiii",
+    "before": "ß xiii",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß xiii",
+   "agreement": {
+    "reference": "testes stolas que fecit ei.",
+    "ref_source": "comma#5",
+    "words": [
+     {
+      "w": "testes",
+      "score": 0.333,
+      "variants": {
+       "ß xiio": [
+        "kraken"
+       ],
+       "Modũ . Admodus. Ad modũ. Ad modũ. Ad modũ. Id": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "stolas",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "que",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "fecit",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "ei.",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#4"
+       ]
+      }
+     }
+    ],
+    "mean": 0.333,
+    "low": 5,
+    "n": 3
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l35"
   },
   {
    "id": "l36",
@@ -6672,128 +6482,8 @@
     "mean": 0.583,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l37",
-   "polygon": [
-    [
-     998,
-     690
-    ],
-    [
-     998,
-     709
-    ],
-    [
-     1054,
-     709
-    ],
-    [
-     1054,
-     690
-    ],
-    [
-     1054,
-     673
-    ],
-    [
-     998,
-     668
-    ],
-    [
-     998,
-     690
-    ]
-   ],
-   "baseline": [
-    [
-     998,
-     690
-    ],
-    [
-     1054,
-     690
-    ]
-   ],
-   "readings": {
-    "kraken": "ß xiio",
-    "comma": [
-     "",
-     "",
-     "",
-     "Modũ . Admodus. Ad modũ. Ad modũ. Ad modũ. Id",
-     "testes stolas que fecit ei.",
-     ""
-    ],
-    "claude": "ß xiii",
-    "before": "ß xiii",
-    "claude_status": "accepted"
    },
-   "flag": false,
-   "note": "",
-   "text": "ß xiii",
-   "agreement": {
-    "reference": "testes stolas que fecit ei.",
-    "ref_source": "comma#5",
-    "words": [
-     {
-      "w": "testes",
-      "score": 0.333,
-      "variants": {
-       "ß xiio": [
-        "kraken"
-       ],
-       "Modũ . Admodus. Ad modũ. Ad modũ. Ad modũ. Id": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "stolas",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "que",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "fecit",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "ei.",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#4"
-       ]
-      }
-     }
-    ],
-    "mean": 0.333,
-    "low": 5,
-    "n": 3
-   }
+   "region": "rcol44-scr"
   },
   {
    "id": "l38",
@@ -6871,7 +6561,9 @@
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l36"
   },
   {
    "id": "l39",
@@ -7159,7 +6851,8 @@
     "mean": 0.633,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l40",
@@ -7585,7 +7278,8 @@
     "mean": 0.538,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l41",
@@ -7894,7 +7588,8 @@
     "mean": 0.656,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l42",
@@ -8240,7 +7935,91 @@
     "mean": 0.577,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l46",
+   "polygon": [
+    [
+     902,
+     817
+    ],
+    [
+     902,
+     826
+    ],
+    [
+     936,
+     826
+    ],
+    [
+     946,
+     834
+    ],
+    [
+     946,
+     835
+    ],
+    [
+     947,
+     835
+    ],
+    [
+     948,
+     835
+    ],
+    [
+     949,
+     835
+    ],
+    [
+     1038,
+     833
+    ],
+    [
+     1099,
+     821
+    ],
+    [
+     1099,
+     812
+    ],
+    [
+     1096,
+     788
+    ],
+    [
+     901,
+     796
+    ],
+    [
+     902,
+     817
+    ]
+   ],
+   "baseline": [
+    [
+     902,
+     817
+    ],
+    [
+     1099,
+     812
+    ]
+   ],
+   "readings": {
+    "kraken": "lxl vi ß viiiiº",
+    "claude": "℔ xlvi ß viiiiº",
+    "before": "lxl vi ß viiiiº",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "℔ xlvi ß viiiiº",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l42"
   },
   {
    "id": "l43",
@@ -8327,11 +8106,12 @@
      ""
     ],
     "claude": "ß piero pucci",
-    "before": "5 piero pncci"
+    "before": "5 piero pucci",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "5 piero pucci",
+   "text": "ß piero pucci",
    "agreement": {
     "reference": "5 piero pncci",
     "ref_source": "kraken",
@@ -8367,7 +8147,138 @@
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l20",
+   "polygon": [
+    [
+     136,
+     850
+    ],
+    [
+     138,
+     874
+    ],
+    [
+     156,
+     874
+    ],
+    [
+     154,
+     848
+    ],
+    [
+     151,
+     835
+    ],
+    [
+     134,
+     835
+    ],
+    [
+     136,
+     850
+    ]
+   ],
+   "baseline": [
+    [
+     136,
+     850
+    ],
+    [
+     154,
+     848
+    ]
+   ],
+   "readings": {
+    "kraken": "",
+    "comma": [
+     "",
+     "",
+     "",
+     "modum uideatur. si ad modũ ipsũ potuerit",
+     "aliud te uiuentem me. nec aliud te i uinentem me. nec",
+     ""
+    ]
+   },
+   "flag": false,
+   "note": "",
+   "text": "modum uideatur. si ad modũ ipsũ potuerit",
+   "agreement": {
+    "reference": "modum uideatur. si ad modũ ipsũ potuerit",
+    "ref_source": "comma#4",
+    "words": [
+     {
+      "w": "modum",
+      "score": 0.5,
+      "variants": {
+       "aliud te uiuentem me. nec aliud te i uinentem me. nec": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "uideatur.",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "si",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "ad",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "modũ",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "ipsũ",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "potuerit",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#5"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l44",
@@ -8828,7 +8739,147 @@
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l47",
+   "polygon": [
+    [
+     846,
+     873
+    ],
+    [
+     845,
+     884
+    ],
+    [
+     957,
+     884
+    ],
+    [
+     970,
+     893
+    ],
+    [
+     971,
+     893
+    ],
+    [
+     972,
+     893
+    ],
+    [
+     1072,
+     896
+    ],
+    [
+     1074,
+     878
+    ],
+    [
+     1073,
+     853
+    ],
+    [
+     1015,
+     852
+    ],
+    [
+     1014,
+     852
+    ],
+    [
+     1013,
+     852
+    ],
+    [
+     1012,
+     852
+    ],
+    [
+     1012,
+     853
+    ],
+    [
+     1003,
+     860
+    ],
+    [
+     953,
+     860
+    ],
+    [
+     935,
+     851
+    ],
+    [
+     934,
+     851
+    ],
+    [
+     933,
+     851
+    ],
+    [
+     932,
+     851
+    ],
+    [
+     914,
+     858
+    ],
+    [
+     878,
+     851
+    ],
+    [
+     877,
+     851
+    ],
+    [
+     876,
+     851
+    ],
+    [
+     875,
+     851
+    ],
+    [
+     867,
+     857
+    ],
+    [
+     846,
+     857
+    ],
+    [
+     846,
+     873
+    ]
+   ],
+   "baseline": [
+    [
+     846,
+     873
+    ],
+    [
+     1074,
+     878
+    ]
+   ],
+   "readings": {
+    "kraken": "ii ß xvi",
+    "claude": "℔ ii ß xvi",
+    "before": "ii ß xvi",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "℔ ii ß xvi",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l44"
   },
   {
    "id": "l45",
@@ -9079,225 +9130,8 @@
     "mean": 0.444,
     "low": 4,
     "n": 3
-   }
-  },
-  {
-   "id": "l46",
-   "polygon": [
-    [
-     902,
-     817
-    ],
-    [
-     902,
-     826
-    ],
-    [
-     936,
-     826
-    ],
-    [
-     946,
-     834
-    ],
-    [
-     946,
-     835
-    ],
-    [
-     947,
-     835
-    ],
-    [
-     948,
-     835
-    ],
-    [
-     949,
-     835
-    ],
-    [
-     1038,
-     833
-    ],
-    [
-     1099,
-     821
-    ],
-    [
-     1099,
-     812
-    ],
-    [
-     1096,
-     788
-    ],
-    [
-     901,
-     796
-    ],
-    [
-     902,
-     817
-    ]
-   ],
-   "baseline": [
-    [
-     902,
-     817
-    ],
-    [
-     1099,
-     812
-    ]
-   ],
-   "readings": {
-    "kraken": "lxl vi ß viiiiº",
-    "claude": "℔ xlvi ß viiiiº",
-    "before": "lxl vi ß viiiiº",
-    "claude_status": "accepted"
    },
-   "flag": false,
-   "note": "",
-   "text": "℔ xlvi ß viiiiº",
-   "agreement": null
-  },
-  {
-   "id": "l47",
-   "polygon": [
-    [
-     846,
-     873
-    ],
-    [
-     845,
-     884
-    ],
-    [
-     957,
-     884
-    ],
-    [
-     970,
-     893
-    ],
-    [
-     971,
-     893
-    ],
-    [
-     972,
-     893
-    ],
-    [
-     1072,
-     896
-    ],
-    [
-     1074,
-     878
-    ],
-    [
-     1073,
-     853
-    ],
-    [
-     1015,
-     852
-    ],
-    [
-     1014,
-     852
-    ],
-    [
-     1013,
-     852
-    ],
-    [
-     1012,
-     852
-    ],
-    [
-     1012,
-     853
-    ],
-    [
-     1003,
-     860
-    ],
-    [
-     953,
-     860
-    ],
-    [
-     935,
-     851
-    ],
-    [
-     934,
-     851
-    ],
-    [
-     933,
-     851
-    ],
-    [
-     932,
-     851
-    ],
-    [
-     914,
-     858
-    ],
-    [
-     878,
-     851
-    ],
-    [
-     877,
-     851
-    ],
-    [
-     876,
-     851
-    ],
-    [
-     875,
-     851
-    ],
-    [
-     867,
-     857
-    ],
-    [
-     846,
-     857
-    ],
-    [
-     846,
-     873
-    ]
-   ],
-   "baseline": [
-    [
-     846,
-     873
-    ],
-    [
-     1074,
-     878
-    ]
-   ],
-   "readings": {
-    "kraken": "ii ß xvi",
-    "claude": "℔ ii ß xvi",
-    "before": "ii ß xvi",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "℔ ii ß xvi",
-   "agreement": null
+   "region": "rcol44-scr"
   },
   {
    "id": "l48",
@@ -9654,7 +9488,127 @@
     "mean": 0.583,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l57",
+   "polygon": [
+    [
+     1006,
+     914
+    ],
+    [
+     1006,
+     925
+    ],
+    [
+     1061,
+     931
+    ],
+    [
+     1062,
+     931
+    ],
+    [
+     1096,
+     923
+    ],
+    [
+     1116,
+     930
+    ],
+    [
+     1118,
+     912
+    ],
+    [
+     1115,
+     885
+    ],
+    [
+     1005,
+     891
+    ],
+    [
+     1006,
+     914
+    ]
+   ],
+   "baseline": [
+    [
+     1006,
+     914
+    ],
+    [
+     1118,
+     912
+    ]
+   ],
+   "readings": {
+    "kraken": "ß iiiº 𝒹 iiº",
+    "comma": [
+     "",
+     "",
+     "",
+     "minime. id",
+     "",
+     ""
+    ],
+    "claude": "ß iiiiº 𝒹 iiiiº",
+    "before": "ß iiiº 𝒹 iiº",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß iiiiº 𝒹 iiiiº",
+   "agreement": {
+    "reference": "ß iiiº 𝒹 iiº",
+    "ref_source": "kraken",
+    "words": [
+     {
+      "w": "ß",
+      "score": 0.5,
+      "variants": {
+       "minime. id": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "iiiº",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "𝒹",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#4"
+       ]
+      }
+     },
+     {
+      "w": "iiº",
+      "score": 0.5,
+      "variants": {
+       "…": [
+        "comma#4"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l48"
   },
   {
    "id": "l49",
@@ -9809,11 +9763,12 @@
      ""
     ],
     "claude": "Nan̄i di bartolomeo genero di mō bice di ricciardo dellariviera c̄42 pc̄ ℔ iii",
-    "before": "Nan̄i di bartolomeo genero di mo bice di ricciardo dellariivera c4pē iii"
+    "before": "Nan̄i di bartolomeo genero di mō bice di ricciardo dellariivera c̄42 pc̄ ℔ iii",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "Nan̄i di bartolomeo genero di mō bice di ricciardo dellariivera c̄42 pc̄ ℔ iii",
+   "text": "Nan̄i di bartolomeo genero di mō bice di ricciardo dellariviera c̄42 pc̄ ℔ iii",
    "agreement": {
     "reference": "Nan̄i di bartolomeo genero di mo bice di ricciardo dellariivera c4pē iii",
     "ref_source": "kraken",
@@ -9922,7 +9877,60 @@
     "mean": 0.583,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l58",
+   "polygon": [
+    [
+     1017,
+     945
+    ],
+    [
+     1017,
+     960
+    ],
+    [
+     1075,
+     950
+    ],
+    [
+     1075,
+     945
+    ],
+    [
+     1075,
+     923
+    ],
+    [
+     1017,
+     923
+    ],
+    [
+     1017,
+     945
+    ]
+   ],
+   "baseline": [
+    [
+     1017,
+     945
+    ],
+    [
+     1075,
+     945
+    ]
+   ],
+   "readings": {
+    "kraken": ""
+   },
+   "flag": false,
+   "note": "",
+   "text": "",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l49"
   },
   {
    "id": "l50",
@@ -10169,11 +10177,12 @@
      ""
     ],
     "claude": "Bal dino di buto biadaiuolo inborgo de dare a libro detto c̄42 pc̄ ℔ ii",
-    "before": "hal dino di buto bi 𝒹 violo 1nborgo de ddire alilro detto xpēƒ ii"
+    "before": "hal dino di buto biadaiuolo inborgo de dare a libro detto c̄42 pc̄ ℔ ii",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "hal dino di buto biadaiuolo inborgo de dare a libro detto c̄42 pc̄ ℔ ii",
+   "text": "Baldino di buto biadaiuolo inborgo de dare a libro detto c̄42 pc̄ ℔ ii",
    "agreement": {
     "reference": "l al dino di buto bi 𝒹 violo 1nborgo de ddire alilro detto xpēƒ ii",
     "ref_source": "kraken",
@@ -10313,7 +10322,91 @@
     "mean": 0.533,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l59",
+   "polygon": [
+    [
+     1008,
+     978
+    ],
+    [
+     1009,
+     994
+    ],
+    [
+     1029,
+     986
+    ],
+    [
+     1040,
+     992
+    ],
+    [
+     1041,
+     992
+    ],
+    [
+     1042,
+     992
+    ],
+    [
+     1043,
+     992
+    ],
+    [
+     1044,
+     992
+    ],
+    [
+     1053,
+     984
+    ],
+    [
+     1117,
+     987
+    ],
+    [
+     1118,
+     972
+    ],
+    [
+     1115,
+     947
+    ],
+    [
+     1006,
+     957
+    ],
+    [
+     1008,
+     978
+    ]
+   ],
+   "baseline": [
+    [
+     1008,
+     978
+    ],
+    [
+     1118,
+     972
+    ]
+   ],
+   "readings": {
+    "kraken": "ß 1 c𝒹 iiiiº",
+    "claude": "ß i 𝒹 iiiiº",
+    "before": "ß 1 c𝒹 iiiiº",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß i 𝒹 iiiiº",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l50"
   },
   {
    "id": "l51",
@@ -10725,7 +10818,85 @@
     "mean": 0.545,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l60",
+   "polygon": [
+    [
+     1027,
+     1005
+    ],
+    [
+     1027,
+     1017
+    ],
+    [
+     1061,
+     1016
+    ],
+    [
+     1061,
+     1002
+    ],
+    [
+     1059,
+     985
+    ],
+    [
+     1024,
+     981
+    ],
+    [
+     1027,
+     1005
+    ]
+   ],
+   "baseline": [
+    [
+     1027,
+     1005
+    ],
+    [
+     1061,
+     1002
+    ]
+   ],
+   "readings": {
+    "kraken": "ßx",
+    "comma": [
+     "",
+     "",
+     "",
+     "minus. ad",
+     "",
+     ""
+    ]
+   },
+   "flag": false,
+   "note": "",
+   "text": "ßx",
+   "agreement": {
+    "reference": "ßx",
+    "ref_source": "kraken",
+    "words": [
+     {
+      "w": "ßx",
+      "score": 0.5,
+      "variants": {
+       "minus. ad": [
+        "comma#4"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l51"
   },
   {
    "id": "l52",
@@ -11111,7 +11282,101 @@
     "mean": 0.577,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l61",
+   "polygon": [
+    [
+     1006,
+     1032
+    ],
+    [
+     1005,
+     1043
+    ],
+    [
+     1120,
+     1048
+    ],
+    [
+     1122,
+     1034
+    ],
+    [
+     1120,
+     1012
+    ],
+    [
+     1006,
+     1013
+    ],
+    [
+     1006,
+     1032
+    ]
+   ],
+   "baseline": [
+    [
+     1006,
+     1032
+    ],
+    [
+     1122,
+     1034
+    ]
+   ],
+   "readings": {
+    "kraken": "ßx ƀ xi",
+    "comma": [
+     "",
+     "",
+     "",
+     "mas. Ad",
+     "Nam diem prodesti prodest.",
+     ""
+    ],
+    "claude": "ß x 𝒹 xi",
+    "before": "ßx ƀ xi",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß x 𝒹 xi",
+   "agreement": {
+    "reference": "mas. Ad",
+    "ref_source": "comma#4",
+    "words": [
+     {
+      "w": "mas.",
+      "score": 0.333,
+      "variants": {
+       "ßx ƀ xi": [
+        "kraken"
+       ],
+       "Nam diem prodesti prodest.": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "Ad",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#5"
+       ]
+      }
+     }
+    ],
+    "mean": 0.333,
+    "low": 2,
+    "n": 3
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l52"
   },
   {
    "id": "l53",
@@ -11423,7 +11688,60 @@
     "mean": 0.545,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l62",
+   "polygon": [
+    [
+     1017,
+     1062
+    ],
+    [
+     1018,
+     1073
+    ],
+    [
+     1056,
+     1066
+    ],
+    [
+     1056,
+     1058
+    ],
+    [
+     1052,
+     1040
+    ],
+    [
+     1014,
+     1040
+    ],
+    [
+     1017,
+     1062
+    ]
+   ],
+   "baseline": [
+    [
+     1017,
+     1062
+    ],
+    [
+     1056,
+     1058
+    ]
+   ],
+   "readings": {
+    "kraken": "ßx"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ßx",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l53"
   },
   {
    "id": "l54",
@@ -11764,7 +12082,80 @@
     "mean": 0.625,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l63",
+   "polygon": [
+    [
+     1008,
+     1089
+    ],
+    [
+     1008,
+     1107
+    ],
+    [
+     1069,
+     1102
+    ],
+    [
+     1076,
+     1108
+    ],
+    [
+     1076,
+     1109
+    ],
+    [
+     1077,
+     1109
+    ],
+    [
+     1078,
+     1109
+    ],
+    [
+     1133,
+     1110
+    ],
+    [
+     1134,
+     1086
+    ],
+    [
+     1131,
+     1068
+    ],
+    [
+     1006,
+     1069
+    ],
+    [
+     1008,
+     1089
+    ]
+   ],
+   "baseline": [
+    [
+     1008,
+     1089
+    ],
+    [
+     1134,
+     1086
+    ]
+   ],
+   "readings": {
+    "kraken": "ßxviii 𝒹ii"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ßxviii 𝒹ii",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l54"
   },
   {
    "id": "l55",
@@ -11991,11 +12382,12 @@
      ""
     ],
     "claude": "mō dea nipo di mō stella nostra dedare a libro detto c̄ 43 pc̄ ℔ i",
-    "before": "anō dea nipo di mo stella nostra dedare alibro detto xrē1"
+    "before": "anō dea nipo di mō stella nostra dedare a libro detto c̄ 43 pc̄ ℔ i",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "anō dea nipo di mō stella nostra dedare a libro detto c̄ 43 pc̄ ℔ i",
+   "text": "mō dea nipo di mō stella nostra dedare a libro detto c̄ 43 pc̄ ℔ i",
    "agreement": {
     "reference": "anō dea nipo di mo stella nostra dedare alibro detto xrē1",
     "ref_source": "kraken",
@@ -12083,7 +12475,63 @@
     "mean": 0.727,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l64",
+   "polygon": [
+    [
+     1016,
+     1118
+    ],
+    [
+     1017,
+     1132
+    ],
+    [
+     1061,
+     1127
+    ],
+    [
+     1061,
+     1115
+    ],
+    [
+     1058,
+     1093
+    ],
+    [
+     1014,
+     1097
+    ],
+    [
+     1016,
+     1118
+    ]
+   ],
+   "baseline": [
+    [
+     1016,
+     1118
+    ],
+    [
+     1061,
+     1115
+    ]
+   ],
+   "readings": {
+    "kraken": "ßi x",
+    "claude": "ß v",
+    "before": "ßi x",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß v",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l55"
   },
   {
    "id": "l56",
@@ -12358,11 +12806,12 @@
      ""
     ],
     "claude": "Nan̄i de tassi da sesto de dare a libro detto acār 44 pc̄ ℔ i",
-    "before": "Nān̄i de tassi da sessto de dare alibro detto acārr 44pē1"
+    "before": "Nān̄i de tassi da sessto de dare a libro detto acār 44 pc̄ ℔ i",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "Nān̄i de tassi da sessto de dare a libro detto acār 44 pc̄ ℔ i",
+   "text": "Nan̄i de tassi da sesto de dare a libro detto acār 44 pc̄ ℔ i",
    "agreement": {
     "reference": "Nān̄i de tassi da sessto de dare alibro detto acārr 44pē1",
     "ref_source": "kraken",
@@ -12466,594 +12915,8 @@
     "mean": 0.545,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l57",
-   "polygon": [
-    [
-     1006,
-     914
-    ],
-    [
-     1006,
-     925
-    ],
-    [
-     1061,
-     931
-    ],
-    [
-     1062,
-     931
-    ],
-    [
-     1096,
-     923
-    ],
-    [
-     1116,
-     930
-    ],
-    [
-     1118,
-     912
-    ],
-    [
-     1115,
-     885
-    ],
-    [
-     1005,
-     891
-    ],
-    [
-     1006,
-     914
-    ]
-   ],
-   "baseline": [
-    [
-     1006,
-     914
-    ],
-    [
-     1118,
-     912
-    ]
-   ],
-   "readings": {
-    "kraken": "ß iiiº 𝒹 iiº",
-    "comma": [
-     "",
-     "",
-     "",
-     "minime. id",
-     "",
-     ""
-    ],
-    "claude": "ß iiiiº 𝒹 iiiiº",
-    "before": "ß iiiº 𝒹 iiº",
-    "claude_status": "accepted"
    },
-   "flag": false,
-   "note": "",
-   "text": "ß iiiiº 𝒹 iiiiº",
-   "agreement": {
-    "reference": "ß iiiº 𝒹 iiº",
-    "ref_source": "kraken",
-    "words": [
-     {
-      "w": "ß",
-      "score": 0.5,
-      "variants": {
-       "minime. id": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "iiiº",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "𝒹",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#4"
-       ]
-      }
-     },
-     {
-      "w": "iiº",
-      "score": 0.5,
-      "variants": {
-       "…": [
-        "comma#4"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
-  },
-  {
-   "id": "l58",
-   "polygon": [
-    [
-     1017,
-     945
-    ],
-    [
-     1017,
-     960
-    ],
-    [
-     1075,
-     950
-    ],
-    [
-     1075,
-     945
-    ],
-    [
-     1075,
-     923
-    ],
-    [
-     1017,
-     923
-    ],
-    [
-     1017,
-     945
-    ]
-   ],
-   "baseline": [
-    [
-     1017,
-     945
-    ],
-    [
-     1075,
-     945
-    ]
-   ],
-   "readings": {
-    "kraken": ""
-   },
-   "flag": false,
-   "note": "",
-   "text": "",
-   "agreement": null
-  },
-  {
-   "id": "l59",
-   "polygon": [
-    [
-     1008,
-     978
-    ],
-    [
-     1009,
-     994
-    ],
-    [
-     1029,
-     986
-    ],
-    [
-     1040,
-     992
-    ],
-    [
-     1041,
-     992
-    ],
-    [
-     1042,
-     992
-    ],
-    [
-     1043,
-     992
-    ],
-    [
-     1044,
-     992
-    ],
-    [
-     1053,
-     984
-    ],
-    [
-     1117,
-     987
-    ],
-    [
-     1118,
-     972
-    ],
-    [
-     1115,
-     947
-    ],
-    [
-     1006,
-     957
-    ],
-    [
-     1008,
-     978
-    ]
-   ],
-   "baseline": [
-    [
-     1008,
-     978
-    ],
-    [
-     1118,
-     972
-    ]
-   ],
-   "readings": {
-    "kraken": "ß 1 c𝒹 iiiiº",
-    "claude": "ß i 𝒹 iiiiº",
-    "before": "ß 1 c𝒹 iiiiº",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ß i 𝒹 iiiiº",
-   "agreement": null
-  },
-  {
-   "id": "l60",
-   "polygon": [
-    [
-     1027,
-     1005
-    ],
-    [
-     1027,
-     1017
-    ],
-    [
-     1061,
-     1016
-    ],
-    [
-     1061,
-     1002
-    ],
-    [
-     1059,
-     985
-    ],
-    [
-     1024,
-     981
-    ],
-    [
-     1027,
-     1005
-    ]
-   ],
-   "baseline": [
-    [
-     1027,
-     1005
-    ],
-    [
-     1061,
-     1002
-    ]
-   ],
-   "readings": {
-    "kraken": "ßx",
-    "comma": [
-     "",
-     "",
-     "",
-     "minus. ad",
-     "",
-     ""
-    ]
-   },
-   "flag": false,
-   "note": "",
-   "text": "ßx",
-   "agreement": {
-    "reference": "ßx",
-    "ref_source": "kraken",
-    "words": [
-     {
-      "w": "ßx",
-      "score": 0.5,
-      "variants": {
-       "minus. ad": [
-        "comma#4"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
-  },
-  {
-   "id": "l61",
-   "polygon": [
-    [
-     1006,
-     1032
-    ],
-    [
-     1005,
-     1043
-    ],
-    [
-     1120,
-     1048
-    ],
-    [
-     1122,
-     1034
-    ],
-    [
-     1120,
-     1012
-    ],
-    [
-     1006,
-     1013
-    ],
-    [
-     1006,
-     1032
-    ]
-   ],
-   "baseline": [
-    [
-     1006,
-     1032
-    ],
-    [
-     1122,
-     1034
-    ]
-   ],
-   "readings": {
-    "kraken": "ßx ƀ xi",
-    "comma": [
-     "",
-     "",
-     "",
-     "mas. Ad",
-     "Nam diem prodesti prodest.",
-     ""
-    ],
-    "claude": "ß x 𝒹 xi",
-    "before": "ßx ƀ xi",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ß x 𝒹 xi",
-   "agreement": {
-    "reference": "mas. Ad",
-    "ref_source": "comma#4",
-    "words": [
-     {
-      "w": "mas.",
-      "score": 0.333,
-      "variants": {
-       "ßx ƀ xi": [
-        "kraken"
-       ],
-       "Nam diem prodesti prodest.": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "Ad",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#5"
-       ]
-      }
-     }
-    ],
-    "mean": 0.333,
-    "low": 2,
-    "n": 3
-   }
-  },
-  {
-   "id": "l62",
-   "polygon": [
-    [
-     1017,
-     1062
-    ],
-    [
-     1018,
-     1073
-    ],
-    [
-     1056,
-     1066
-    ],
-    [
-     1056,
-     1058
-    ],
-    [
-     1052,
-     1040
-    ],
-    [
-     1014,
-     1040
-    ],
-    [
-     1017,
-     1062
-    ]
-   ],
-   "baseline": [
-    [
-     1017,
-     1062
-    ],
-    [
-     1056,
-     1058
-    ]
-   ],
-   "readings": {
-    "kraken": "ßx"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ßx",
-   "agreement": null
-  },
-  {
-   "id": "l63",
-   "polygon": [
-    [
-     1008,
-     1089
-    ],
-    [
-     1008,
-     1107
-    ],
-    [
-     1069,
-     1102
-    ],
-    [
-     1076,
-     1108
-    ],
-    [
-     1076,
-     1109
-    ],
-    [
-     1077,
-     1109
-    ],
-    [
-     1078,
-     1109
-    ],
-    [
-     1133,
-     1110
-    ],
-    [
-     1134,
-     1086
-    ],
-    [
-     1131,
-     1068
-    ],
-    [
-     1006,
-     1069
-    ],
-    [
-     1008,
-     1089
-    ]
-   ],
-   "baseline": [
-    [
-     1008,
-     1089
-    ],
-    [
-     1134,
-     1086
-    ]
-   ],
-   "readings": {
-    "kraken": "ßxviii 𝒹ii"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ßxviii 𝒹ii",
-   "agreement": null
-  },
-  {
-   "id": "l64",
-   "polygon": [
-    [
-     1016,
-     1118
-    ],
-    [
-     1017,
-     1132
-    ],
-    [
-     1061,
-     1127
-    ],
-    [
-     1061,
-     1115
-    ],
-    [
-     1058,
-     1093
-    ],
-    [
-     1014,
-     1097
-    ],
-    [
-     1016,
-     1118
-    ]
-   ],
-   "baseline": [
-    [
-     1016,
-     1118
-    ],
-    [
-     1061,
-     1115
-    ]
-   ],
-   "readings": {
-    "kraken": "ßi x",
-    "claude": "ß v",
-    "before": "ßi x",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ß v",
-   "agreement": null
+   "region": "rcol44-scr"
   },
   {
    "id": "l65",
@@ -13110,7 +12973,9 @@
    "flag": false,
    "note": "",
    "text": "ß iii 𝒹 ii",
-   "agreement": null
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l56"
   },
   {
    "id": "l66",
@@ -13619,7 +13484,8 @@
     "mean": 0.575,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l67",
@@ -14015,7 +13881,60 @@
     "mean": 0.591,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l70",
+   "polygon": [
+    [
+     1016,
+     1202
+    ],
+    [
+     1016,
+     1217
+    ],
+    [
+     1066,
+     1213
+    ],
+    [
+     1066,
+     1198
+    ],
+    [
+     1063,
+     1184
+    ],
+    [
+     1014,
+     1186
+    ],
+    [
+     1016,
+     1202
+    ]
+   ],
+   "baseline": [
+    [
+     1016,
+     1202
+    ],
+    [
+     1066,
+     1198
+    ]
+   ],
+   "readings": {
+    "kraken": "ßv"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ßv",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l67"
   },
   {
    "id": "l68",
@@ -14354,11 +14273,12 @@
      ""
     ],
     "claude": "Sandro di Guido chiamato scarpentrasso dacastello de dare c̄ 44 pc̄",
-    "before": "sandro di Guido chiamato scarpentrasso dacastello de dare c x4 pē"
+    "before": "andro di Guido chiamato scarpentrasso dacastello de dare c̄ 44 pc̄",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "andro di Guido chiamato scarpentrasso dacastello de dare c̄ 44 pc̄",
+   "text": "Sandro di Guido chiamato scarpentrasso dacastello de dare c̄ 44 pc̄",
    "agreement": {
     "reference": "andro di Guido chiamato scarpentrasso dacastello de dare c x4 pē",
     "ref_source": "kraken",
@@ -14458,7 +14378,8 @@
     "mean": 0.591,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l69",
@@ -14539,57 +14460,9 @@
     "mean": 0.333,
     "low": 1,
     "n": 3
-   }
-  },
-  {
-   "id": "l70",
-   "polygon": [
-    [
-     1016,
-     1202
-    ],
-    [
-     1016,
-     1217
-    ],
-    [
-     1066,
-     1213
-    ],
-    [
-     1066,
-     1198
-    ],
-    [
-     1063,
-     1184
-    ],
-    [
-     1014,
-     1186
-    ],
-    [
-     1016,
-     1202
-    ]
-   ],
-   "baseline": [
-    [
-     1016,
-     1202
-    ],
-    [
-     1066,
-     1198
-    ]
-   ],
-   "readings": {
-    "kraken": "ßv"
    },
-   "flag": false,
-   "note": "",
-   "text": "ßv",
-   "agreement": null
+   "region": "ramt44-scr",
+   "attached_to": "l68"
   },
   {
    "id": "l71",
@@ -14872,11 +14745,12 @@
      ""
     ],
     "claude": "morando di guido dam̄ote carulli de dare a libro detto ac̄ 47 pc̄ ℔ xii ß vii",
-    "before": "morarido di guido dam̄ote carulli de dare alibro detto ac̄ 4pēƒ xii ß vii"
+    "before": "morarido di guido dam̄ote carulli de dare a libro detto ac̄ 47 pc̄ ℔ xii ß vii",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "morarido di guido dam̄ote carulli de dare a libro detto ac̄ 47 pc̄ ℔ xii ß vii",
+   "text": "morando di guido dam̄ote carulli de dare a libro detto ac̄ 47 pc̄ ℔ xii ß vii",
    "agreement": {
     "reference": "morarido di guido dam̄ote carulli de dare alibro detto ac̄ 4pēƒ xii ß vii",
     "ref_source": "kraken",
@@ -15007,7 +14881,8 @@
     "mean": 0.536,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l72",
@@ -15346,11 +15221,12 @@
      ""
     ],
     "claude": "piero di mãtino biadaiuolo acalenzano de dare a libro detto c̄ 48 pc̄ ℔ v ß xvii",
-    "before": "piero di mācino biadamolo acalenzano de dare ali bro detto ō ƒ8pēv ßxvii"
+    "before": "piero di mātino biadaiuolo acalenzano de dare a libro detto ō 48 pc̄ ℔ v ß xvii",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "piero di mātino biadaiuolo acalenzano de dare a libro detto ō 48 pc̄ ℔ v ß xvii",
+   "text": "piero di mãtino biadaiuolo acalenzano de dare a libro detto c̄ 48 pc̄ ℔ v ß xvii",
    "agreement": {
     "reference": "piero di mācino biadamolo acalenzano de dare ali bro detto ō ƒ8pēv ßxvii",
     "ref_source": "kraken",
@@ -15464,7 +15340,8 @@
     "mean": 0.615,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l73",
@@ -15715,11 +15592,12 @@
      ""
     ],
     "claude": "G herardo di ß ugolino cognato fu di deo de dare a libro detto c̄ 48 pc̄ ƒ ii ℔",
-    "before": "6 herardo di ß ugolino cognato fu di deo de dare libro detto c 8 pē ƒcō ii"
+    "before": "6 herardo di ß ugolino cognato fu di deo de dare a libro detto c̄ 48 pc̄ ƒ ii ℔",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "6 herardo di ß ugolino cognato fu di deo de dare a libro detto c̄ 48 pc̄ ƒ ii ℔",
+   "text": "Gherardo di ß ugolino cognato fu di deo de dare a libro detto c̄ 48 pc̄ ƒ ii ℔",
    "agreement": {
     "reference": "6 herardo di ß ugolino cognato fu di deo de dare libro detto c 8 pē ƒcō ii",
     "ref_source": "kraken",
@@ -15878,7 +15756,241 @@
     "mean": 0.583,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l80",
+   "polygon": [
+    [
+     1033,
+     1316
+    ],
+    [
+     1033,
+     1334
+    ],
+    [
+     1093,
+     1332
+    ],
+    [
+     1093,
+     1314
+    ],
+    [
+     1091,
+     1300
+    ],
+    [
+     1040,
+     1292
+    ],
+    [
+     1038,
+     1292
+    ],
+    [
+     1037,
+     1292
+    ],
+    [
+     1036,
+     1292
+    ],
+    [
+     1036,
+     1293
+    ],
+    [
+     1035,
+     1293
+    ],
+    [
+     1032,
+     1297
+    ],
+    [
+     1033,
+     1316
+    ]
+   ],
+   "baseline": [
+    [
+     1033,
+     1316
+    ],
+    [
+     1093,
+     1314
+    ]
+   ],
+   "readings": {
+    "kraken": "ßxvii",
+    "comma": [
+     "",
+     "",
+     "",
+     "nus. id nus. ad",
+     "",
+     ""
+    ]
+   },
+   "flag": false,
+   "note": "",
+   "text": "ßxvii",
+   "agreement": {
+    "reference": "ßxvii",
+    "ref_source": "kraken",
+    "words": [
+     {
+      "w": "ßxvii",
+      "score": 0.5,
+      "variants": {
+       "nus. id nus. ad": [
+        "comma#4"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l73"
+  },
+  {
+   "id": "l78",
+   "polygon": [
+    [
+     984,
+     1315
+    ],
+    [
+     984,
+     1329
+    ],
+    [
+     992,
+     1334
+    ],
+    [
+     995,
+     1315
+    ],
+    [
+     995,
+     1297
+    ],
+    [
+     984,
+     1297
+    ],
+    [
+     984,
+     1315
+    ]
+   ],
+   "baseline": [
+    [
+     984,
+     1315
+    ],
+    [
+     995,
+     1315
+    ]
+   ],
+   "readings": {
+    "kraken": "i",
+    "comma": [
+     "",
+     "",
+     "",
+     "nus. id nus. ad",
+     "",
+     ""
+    ],
+    "claude": "ii",
+    "before": "i",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ii",
+   "agreement": {
+    "reference": "i",
+    "ref_source": "kraken",
+    "words": [
+     {
+      "w": "i",
+      "score": 0.5,
+      "variants": {
+       "nus. id nus. ad": [
+        "comma#4"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l73"
+  },
+  {
+   "id": "l82",
+   "polygon": [
+    [
+     1110,
+     1313
+    ],
+    [
+     1110,
+     1333
+    ],
+    [
+     1140,
+     1333
+    ],
+    [
+     1140,
+     1313
+    ],
+    [
+     1140,
+     1298
+    ],
+    [
+     1110,
+     1298
+    ],
+    [
+     1110,
+     1313
+    ]
+   ],
+   "baseline": [
+    [
+     1110,
+     1313
+    ],
+    [
+     1140,
+     1313
+    ]
+   ],
+   "readings": {
+    "kraken": ""
+   },
+   "flag": false,
+   "note": "",
+   "text": "",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l73"
   },
   {
    "id": "l74",
@@ -16185,11 +16297,12 @@
      ""
     ],
     "claude": "van̄i del fede da castello de dare al detto libro ac̄ 49 pc̄",
-    "before": "van̄i del fede dacastello de dare al detto libro ac 49pē"
+    "before": "van̄i del fede da castello de dare al detto libro ac̄ 49 pē",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "van̄i del fede da castello de dare al detto libro ac̄ 49 pē",
+   "text": "van̄i del fede da castello de dare al detto libro ac̄ 49 pc̄",
    "agreement": {
     "reference": "van̄i del fede dacastello de dare al detto libro ac 49pē",
     "ref_source": "kraken",
@@ -16289,7 +16402,8 @@
     "mean": 0.591,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l75",
@@ -16342,7 +16456,9 @@
    "flag": false,
    "note": "",
    "text": "℔ ii",
-   "agreement": null
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l74"
   },
   {
    "id": "l76",
@@ -16689,11 +16805,12 @@
      ""
     ],
     "claude": "Bernado di corso calzolaio alcāto ala macina de dare al detto c̄ 50 pc̄ ƒ ii ℔",
-    "before": "sernado di corso calholaio alcato ala macina de dare al detto 𝒹 30 pē ƒ iiƀ"
+    "before": "Bernado di corso calholaio alcāto ala macina de dare al detto c̄ 50 pc̄ ƒ ii ℔",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "Bernado di corso calholaio alcāto ala macina de dare al detto c̄ 50 pc̄ ƒ ii ℔",
+   "text": "Bernado di corso calzolaio alcāto ala macina de dare al detto c̄ 50 pc̄ ƒ ii ℔",
    "agreement": {
     "reference": "sernado di corso calholaio alcato ala macina de dare al detto 𝒹 30 pē ƒ iiƀ",
     "ref_source": "kraken",
@@ -16846,7 +16963,224 @@
     "mean": 0.5,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l79",
+   "polygon": [
+    [
+     979,
+     1371
+    ],
+    [
+     979,
+     1382
+    ],
+    [
+     993,
+     1384
+    ],
+    [
+     994,
+     1371
+    ],
+    [
+     994,
+     1351
+    ],
+    [
+     979,
+     1349
+    ],
+    [
+     979,
+     1371
+    ]
+   ],
+   "baseline": [
+    [
+     979,
+     1371
+    ],
+    [
+     994,
+     1371
+    ]
+   ],
+   "readings": {
+    "kraken": "i",
+    "comma": [
+     "",
+     "",
+     "",
+     "nus. id nus. ad",
+     "",
+     ""
+    ],
+    "claude": "ii",
+    "before": "i",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "ii",
+   "agreement": {
+    "reference": "i",
+    "ref_source": "kraken",
+    "words": [
+     {
+      "w": "i",
+      "score": 0.5,
+      "variants": {
+       "nus. id nus. ad": [
+        "comma#4"
+       ]
+      }
+     }
+    ],
+    "mean": 0.5,
+    "low": 0,
+    "n": 2
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l76"
+  },
+  {
+   "id": "l81",
+   "polygon": [
+    [
+     1027,
+     1370
+    ],
+    [
+     1028,
+     1387
+    ],
+    [
+     1054,
+     1381
+    ],
+    [
+     1064,
+     1387
+    ],
+    [
+     1065,
+     1387
+    ],
+    [
+     1066,
+     1387
+    ],
+    [
+     1067,
+     1387
+    ],
+    [
+     1083,
+     1384
+    ],
+    [
+     1082,
+     1366
+    ],
+    [
+     1080,
+     1350
+    ],
+    [
+     1037,
+     1347
+    ],
+    [
+     1036,
+     1347
+    ],
+    [
+     1035,
+     1347
+    ],
+    [
+     1034,
+     1347
+    ],
+    [
+     1025,
+     1351
+    ],
+    [
+     1027,
+     1370
+    ]
+   ],
+   "baseline": [
+    [
+     1027,
+     1370
+    ],
+    [
+     1082,
+     1366
+    ]
+   ],
+   "readings": {
+    "kraken": "ß vii",
+    "comma": [
+     "",
+     "",
+     "",
+     "nus. id. id̾.",
+     "et ad mensa dei genitore.",
+     ""
+    ]
+   },
+   "flag": false,
+   "note": "",
+   "text": "ß vii",
+   "agreement": {
+    "reference": "nus. id. id̾.",
+    "ref_source": "comma#4",
+    "words": [
+     {
+      "w": "nus.",
+      "score": 0.333,
+      "variants": {
+       "ß vii": [
+        "kraken"
+       ],
+       "et ad mensa dei genitore.": [
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "id.",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#5"
+       ]
+      }
+     },
+     {
+      "w": "id̾.",
+      "score": 0.333,
+      "variants": {
+       "…": [
+        "kraken",
+        "comma#5"
+       ]
+      }
+     }
+    ],
+    "mean": 0.333,
+    "low": 3,
+    "n": 3
+   },
+   "region": "ramt44-scr",
+   "attached_to": "l76"
   },
   {
    "id": "l77",
@@ -17207,446 +17541,8 @@
     "mean": 0.625,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l78",
-   "polygon": [
-    [
-     984,
-     1315
-    ],
-    [
-     984,
-     1329
-    ],
-    [
-     992,
-     1334
-    ],
-    [
-     995,
-     1315
-    ],
-    [
-     995,
-     1297
-    ],
-    [
-     984,
-     1297
-    ],
-    [
-     984,
-     1315
-    ]
-   ],
-   "baseline": [
-    [
-     984,
-     1315
-    ],
-    [
-     995,
-     1315
-    ]
-   ],
-   "readings": {
-    "kraken": "i",
-    "comma": [
-     "",
-     "",
-     "",
-     "nus. id nus. ad",
-     "",
-     ""
-    ],
-    "claude": "ii",
-    "before": "i",
-    "claude_status": "accepted"
    },
-   "flag": false,
-   "note": "",
-   "text": "ii",
-   "agreement": {
-    "reference": "i",
-    "ref_source": "kraken",
-    "words": [
-     {
-      "w": "i",
-      "score": 0.5,
-      "variants": {
-       "nus. id nus. ad": [
-        "comma#4"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
-  },
-  {
-   "id": "l79",
-   "polygon": [
-    [
-     979,
-     1371
-    ],
-    [
-     979,
-     1382
-    ],
-    [
-     993,
-     1384
-    ],
-    [
-     994,
-     1371
-    ],
-    [
-     994,
-     1351
-    ],
-    [
-     979,
-     1349
-    ],
-    [
-     979,
-     1371
-    ]
-   ],
-   "baseline": [
-    [
-     979,
-     1371
-    ],
-    [
-     994,
-     1371
-    ]
-   ],
-   "readings": {
-    "kraken": "i",
-    "comma": [
-     "",
-     "",
-     "",
-     "nus. id nus. ad",
-     "",
-     ""
-    ],
-    "claude": "ii",
-    "before": "i",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "ii",
-   "agreement": {
-    "reference": "i",
-    "ref_source": "kraken",
-    "words": [
-     {
-      "w": "i",
-      "score": 0.5,
-      "variants": {
-       "nus. id nus. ad": [
-        "comma#4"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
-  },
-  {
-   "id": "l80",
-   "polygon": [
-    [
-     1033,
-     1316
-    ],
-    [
-     1033,
-     1334
-    ],
-    [
-     1093,
-     1332
-    ],
-    [
-     1093,
-     1314
-    ],
-    [
-     1091,
-     1300
-    ],
-    [
-     1040,
-     1292
-    ],
-    [
-     1038,
-     1292
-    ],
-    [
-     1037,
-     1292
-    ],
-    [
-     1036,
-     1292
-    ],
-    [
-     1036,
-     1293
-    ],
-    [
-     1035,
-     1293
-    ],
-    [
-     1032,
-     1297
-    ],
-    [
-     1033,
-     1316
-    ]
-   ],
-   "baseline": [
-    [
-     1033,
-     1316
-    ],
-    [
-     1093,
-     1314
-    ]
-   ],
-   "readings": {
-    "kraken": "ßxvii",
-    "comma": [
-     "",
-     "",
-     "",
-     "nus. id nus. ad",
-     "",
-     ""
-    ]
-   },
-   "flag": false,
-   "note": "",
-   "text": "ßxvii",
-   "agreement": {
-    "reference": "ßxvii",
-    "ref_source": "kraken",
-    "words": [
-     {
-      "w": "ßxvii",
-      "score": 0.5,
-      "variants": {
-       "nus. id nus. ad": [
-        "comma#4"
-       ]
-      }
-     }
-    ],
-    "mean": 0.5,
-    "low": 0,
-    "n": 2
-   }
-  },
-  {
-   "id": "l81",
-   "polygon": [
-    [
-     1027,
-     1370
-    ],
-    [
-     1028,
-     1387
-    ],
-    [
-     1054,
-     1381
-    ],
-    [
-     1064,
-     1387
-    ],
-    [
-     1065,
-     1387
-    ],
-    [
-     1066,
-     1387
-    ],
-    [
-     1067,
-     1387
-    ],
-    [
-     1083,
-     1384
-    ],
-    [
-     1082,
-     1366
-    ],
-    [
-     1080,
-     1350
-    ],
-    [
-     1037,
-     1347
-    ],
-    [
-     1036,
-     1347
-    ],
-    [
-     1035,
-     1347
-    ],
-    [
-     1034,
-     1347
-    ],
-    [
-     1025,
-     1351
-    ],
-    [
-     1027,
-     1370
-    ]
-   ],
-   "baseline": [
-    [
-     1027,
-     1370
-    ],
-    [
-     1082,
-     1366
-    ]
-   ],
-   "readings": {
-    "kraken": "ß vii",
-    "comma": [
-     "",
-     "",
-     "",
-     "nus. id. id̾.",
-     "et ad mensa dei genitore.",
-     ""
-    ]
-   },
-   "flag": false,
-   "note": "",
-   "text": "ß vii",
-   "agreement": {
-    "reference": "nus. id. id̾.",
-    "ref_source": "comma#4",
-    "words": [
-     {
-      "w": "nus.",
-      "score": 0.333,
-      "variants": {
-       "ß vii": [
-        "kraken"
-       ],
-       "et ad mensa dei genitore.": [
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "id.",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#5"
-       ]
-      }
-     },
-     {
-      "w": "id̾.",
-      "score": 0.333,
-      "variants": {
-       "…": [
-        "kraken",
-        "comma#5"
-       ]
-      }
-     }
-    ],
-    "mean": 0.333,
-    "low": 3,
-    "n": 3
-   }
-  },
-  {
-   "id": "l82",
-   "polygon": [
-    [
-     1110,
-     1313
-    ],
-    [
-     1110,
-     1333
-    ],
-    [
-     1140,
-     1333
-    ],
-    [
-     1140,
-     1313
-    ],
-    [
-     1140,
-     1298
-    ],
-    [
-     1110,
-     1298
-    ],
-    [
-     1110,
-     1313
-    ]
-   ],
-   "baseline": [
-    [
-     1110,
-     1313
-    ],
-    [
-     1140,
-     1313
-    ]
-   ],
-   "readings": {
-    "kraken": ""
-   },
-   "flag": false,
-   "note": "",
-   "text": "",
-   "agreement": null
+   "region": "rcol44-scr"
   },
   {
    "id": "l83",
@@ -18005,11 +17901,12 @@
      ""
     ],
     "claude": "Nan̄i di pagolo sarto ⁊ francescho ganazi deondare ac̄ 50pc̄ ℔ xiii ß xiii 𝒹 iiiiº",
-    "before": "pan̄i di pagolo sarto ⁊ francestho ganari deondare ac̄ c0pēxiii ß xiii 𝒹"
+    "before": "Nan̄i di pagolo sarto ⁊ francescho ganari deondare ac̄ 50pc̄ ℔ xiii ß xiii 𝒹 iiiiº",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "Nan̄i di pagolo sarto ⁊ francescho ganari deondare ac̄ 50pc̄ ℔ xiii ß xiii 𝒹 iiiiº",
+   "text": "Nan̄i di pagolo sarto ⁊ francescho ganazi deondare ac̄ 50pc̄ ℔ xiii ß xiii 𝒹 iiiiº",
    "agreement": {
     "reference": "pan̄i di pagolo sarto ⁊ francestho ganari deondare ac̄ c0pēxiii ß xiii 𝒹",
     "ref_source": "kraken",
@@ -18131,7 +18028,8 @@
     "mean": 0.538,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
   },
   {
    "id": "l84",
@@ -18587,7 +18485,63 @@
     "mean": 0.682,
     "low": 0,
     "n": 2
-   }
+   },
+   "region": "rcol44-scr"
+  },
+  {
+   "id": "l87",
+   "polygon": [
+    [
+     1101,
+     1462
+    ],
+    [
+     1101,
+     1475
+    ],
+    [
+     1145,
+     1482
+    ],
+    [
+     1146,
+     1460
+    ],
+    [
+     1144,
+     1443
+    ],
+    [
+     1099,
+     1434
+    ],
+    [
+     1101,
+     1462
+    ]
+   ],
+   "baseline": [
+    [
+     1101,
+     1462
+    ],
+    [
+     1146,
+     1460
+    ]
+   ],
+   "readings": {
+    "kraken": "Ex",
+    "claude": "𝒹 vii",
+    "before": "Ex",
+    "claude_status": "accepted"
+   },
+   "flag": false,
+   "note": "",
+   "text": "𝒹 vi",
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l84"
   },
   {
    "id": "l85",
@@ -18720,7 +18674,9 @@
    "flag": false,
    "note": "",
    "text": "℔ i ß xvii",
-   "agreement": null
+   "agreement": null,
+   "region": "ramt44-scr",
+   "attached_to": "l84"
   },
   {
    "id": "l86",
@@ -19180,60 +19136,8 @@
     "mean": 0.545,
     "low": 0,
     "n": 2
-   }
-  },
-  {
-   "id": "l87",
-   "polygon": [
-    [
-     1101,
-     1462
-    ],
-    [
-     1101,
-     1475
-    ],
-    [
-     1145,
-     1482
-    ],
-    [
-     1146,
-     1460
-    ],
-    [
-     1144,
-     1443
-    ],
-    [
-     1099,
-     1434
-    ],
-    [
-     1101,
-     1462
-    ]
-   ],
-   "baseline": [
-    [
-     1101,
-     1462
-    ],
-    [
-     1146,
-     1460
-    ]
-   ],
-   "readings": {
-    "kraken": "Ex",
-    "claude": "𝒹 vii",
-    "before": "Ex",
-    "claude_status": "accepted"
    },
-   "flag": false,
-   "note": "",
-   "text": "𝒹 vi",
-   "agreement": null
+   "region": "rcol44-scr"
   }
  ],
  "note": "",
@@ -19305,9 +19209,17 @@
   {
    "t": "2026-10-17T12:42:35",
    "event": "Claude: vocabulary prediction pass (formulas + MPAP4_vocabulary.md + Edler) — 15 line(s): pē→pc̄; pe→pc̄; ācā→acār; 5→ß; dellariivera→dellariviera; hal→Bal; anō→mō; Nān̄i→Nan̄i; sessto→sesto; andro→Sandro; morarido→morando; mātino→mãtino; ō→c̄; 6→G; pē→pc̄; calholaio→calzolaio; ganari→ganazi"
+  },
+  {
+   "t": "2026-10-18T22:54:31",
+   "event": "sums column fitted (11-point boundary)"
+  },
+  {
+   "t": "2026-10-18T22:56:46",
+   "event": "status → Finished"
   }
  ],
- "updated": "2026-10-17T12:42:35",
+ "updated": "2026-10-23T11:17:56",
  "previous_lines": [
   {
    "id": "l1",
@@ -38205,5 +38117,199 @@
    "text": "Ex",
    "agreement": null
   }
+ ],
+ "regions": [
+  {
+   "id": "rcol44-scr",
+   "type": "column",
+   "label": "a",
+   "box": [
+    122,
+    218,
+    849.0,
+    1545.0
+   ],
+   "poly": [
+    [
+     122,
+     218
+    ],
+    [
+     848.0,
+     218
+    ],
+    [
+     848.0,
+     218.0
+    ],
+    [
+     819.0,
+     379.0
+    ],
+    [
+     812.0,
+     408.0
+    ],
+    [
+     807.0,
+     610.0
+    ],
+    [
+     817.0,
+     721.0
+    ],
+    [
+     849.0,
+     926.0
+    ],
+    [
+     805.0,
+     1037.0
+    ],
+    [
+     833.0,
+     1154.0
+    ],
+    [
+     836.0,
+     1368.0
+    ],
+    [
+     847.0,
+     1440.0
+    ],
+    [
+     831.0,
+     1545.0
+    ],
+    [
+     831.0,
+     1545.0
+    ],
+    [
+     122,
+     1545.0
+    ]
+   ]
+  },
+  {
+   "id": "ramt44-scr",
+   "type": "amounts",
+   "label": "amounts",
+   "box": [
+    805.0,
+    218,
+    1158,
+    1545.0
+   ],
+   "poly": [
+    [
+     1158,
+     218
+    ],
+    [
+     848.0,
+     218
+    ],
+    [
+     848.0,
+     218.0
+    ],
+    [
+     819.0,
+     379.0
+    ],
+    [
+     812.0,
+     408.0
+    ],
+    [
+     807.0,
+     610.0
+    ],
+    [
+     817.0,
+     721.0
+    ],
+    [
+     849.0,
+     926.0
+    ],
+    [
+     805.0,
+     1037.0
+    ],
+    [
+     833.0,
+     1154.0
+    ],
+    [
+     836.0,
+     1368.0
+    ],
+    [
+     847.0,
+     1440.0
+    ],
+    [
+     831.0,
+     1545.0
+    ],
+    [
+     831.0,
+     1545.0
+    ],
+    [
+     1158,
+     1545.0
+    ]
+   ]
+  }
+ ],
+ "sums_boundary": [
+  [
+   848,
+   218
+  ],
+  [
+   819,
+   379
+  ],
+  [
+   812,
+   408
+  ],
+  [
+   807,
+   610
+  ],
+  [
+   817,
+   721
+  ],
+  [
+   849,
+   926
+  ],
+  [
+   805,
+   1037
+  ],
+  [
+   833,
+   1154
+  ],
+  [
+   836,
+   1368
+  ],
+  [
+   847,
+   1440
+  ],
+  [
+   831,
+   1545
+  ]
  ]
 }

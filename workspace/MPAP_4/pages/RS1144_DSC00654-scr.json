@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1144_DSC00654-scr.jpg",
  "order": 36,
- "folio": "",
+ "folio": "38r",
  "width": 1280,
  "height": 1920,
  "status": "finished",
@@ -1268,7 +1268,8 @@
     ]
    ],
    "readings": {
-    "kraken": "ꝓla xxv prestanza Ra battuto Cēto residuo che dovea avere ilpō"
+    "kraken": "ꝓla xxv prestanza Ra battuto Cēto residuo che dovea avere ilpō",
+    "claude": "ꝓla xxv prestanza Ra battuto Cēto residuo che dovea avere ilgō"
    },
    "flag": false,
    "note": "",
@@ -19209,9 +19210,13 @@
   {
    "t": "2026-10-18T11:13:11",
    "event": "status → Finished"
+  },
+  {
+   "t": "2026-10-18T22:52:11",
+   "event": "Claude refinement: 1 line(s) suggested — Most lines here are tiny boxes or empty boxes; the only word correction is ilpō → ilgō (il gonfalone, which continues as 'falone' on the next line), and two non-text boxes were blanked (a Latin hallucination and an ƒ read over the long s of 'simone'). | layout: l58: heading mccclxxxviii is written upside down in the cartouche; reading is right; l66: empty sliver over the ß of the sum 'ß vi 𝒹 iiii pc̄' beside l59/l60; it can be deleted; l67, l69, l68, l71: the sum 'ß lxx 𝒹 iiii pc̄' (row of entry l4) is split into four slivers (ßl / xx / empty / the 𝒹); merge them into one amounts line; l64, l65, l70: the sum 'ƒ viiiiº ß lxv…' of entry l6/l7 is split into three boxes (ƒ / viiiiº / ßl), and the rest of the soldi figure lies outside them; merge; l15: box covers only the long s of 'simone' in l8 ('pago simone'); it is not a florin sign; delete the box; l27: empty box over a ruled vertical line next to l24; the comma text is a Latin hallucination; delete; l48: 'tore' is the end of 'attore' from l29 ('loro a…'), outside that line's box; l54, l55, l56, l57: empty boxes in the blank lower right of the page; delete | doubts: l46: after 'ß v' the image seems to show a 𝒹-like sign before the final figure (ß v 𝒹 iiii?), and the fiorini figure may be lxxxviiii rather than lxxviiii; I left the numerals unchanged under the convention, so please check against the image; l61: 'avere' could be 'aver' in the image; left as it is; l20: 'soma' may carry an abbreviation stroke (Som̃a, as comma-qwen reads it); not clear enough to suggest"
   }
  ],
- "updated": "2026-10-18T11:13:11",
+ "updated": "2026-10-23T11:17:56",
  "regions": [
   {
    "id": "rmvcm7pyj",

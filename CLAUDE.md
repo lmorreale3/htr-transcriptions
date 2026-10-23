@@ -131,3 +131,73 @@ This project resides at `/Users/Shared/HTR_exploration` and focuses on Handwritt
 - PROGRESS WORKBOOK: HTR_progress_2026-10-18.xlsx (Overview formulas over Pages; Next steps with Status column; Done log). Regenerate
   from workspace/*/pages on request (generator: collect .work/progress_data.json, then openpyxl).
 - Roadmap 2(a) partly done (procedure now lives in refine.py + refine_prompt.md + conventions); 2(b) can now be a scheduled task calling the same code.
+- 2026-10-18: Archived on GitHub (private): github.com/lmorreale3/htr-transcriptions (project, ~1,130 files) and github.com/lmorreale3/leggio (app). After each session: git add -A && git commit -m "…" && git push in both folders (Laura runs it in Terminal; the device shell cannot commit).
+
+## Status 2026-10-22 (full summary: SESSION_SUMMARY_2026-10-22.md; needs Leggio restart)
+- CARET BUG fixed (app.js): the 5-s "new Claude suggestions?" poll treated your own saves as new suggestions on pages whose last
+  history event was a Claude refinement → reloaded the page, caret to position 0. Now only a NEW refinement event reloads, never while
+  typing ("Load them" button instead); caret restored after any reload; char buttons never write into a stale line box.
+- SUMS UNDER ENTRIES: leggio/leggio/tidy.py. split_sums cuts lines that cross the red sums boundary (text cut at the money sign nearest
+  it, else nearest space + flag); sum becomes a ↳ sub-line; unedited halves re-read by Kraken. Runs on "Apply, keep my text" in
+  ⫼ Sums column, on page button "✂ Tidy lines", on line ⋯ → "✂ Cut the sum off this line", and after every machine reading
+  (Settings: tidy_after_read). tidy(): removes empty slivers + true duplicates, merges tiny same-row pieces; never touches edited,
+  flagged or sums/dates-box lines. Undo: page["before_tidy"], POST /api/pages/{cid}/{pid}/tidy/undo (tidy bar → Undo).
+  layout.apply: a margin year/mark on the same row no longer takes a sum (full-width lines preferred).
+  Sum/date sub-lines show a picture of the sum cut from the page beside the box.
+  Backups: .work/*.bak_before_caretfix_20261022, .work/*.bak_before_tidy_20261022.
+- Segmentation training (ketos segtrain on clean layouts): deferred by Laura.
+- EXPORT (task 2, done): collection → More ▾ → "Export (spreadsheet, Word, PDF)…" (one dialog, replaces the old text-export item;
+  plain text is still a format in it). leggio/leggio/export_data.py + POST /api/collections/{cid}/export, GET /api/exports/{cid}/{name}.
+  Formats: .xlsx (sheets Lines / Pages / About) and .csv = one row per line of text, numbered as in the editor, sums/dates (↳ sub-lines)
+  in Sum / Date columns AS WRITTEN (Laura: no numeric conversion), expanded + translation from reading/<pid>.json;
+  .docx reading edition (table № · transcription · sum · translation, header row repeats); PDF = print-ready HTML that opens in a new tab
+  (browser Save as PDF, so every special glyph finds a font). Edition text: semi / expanded († = not expanded yet) / both.
+  Files land in ROOT/exports/<cid>/ and are downloaded. New deps in pyproject: openpyxl, python-docx (uv installs them on next start).
+  Backups .work/*.bak_before_export_20261022. Test files in .work/export_test/ (can be deleted).
+- Next: (3) new app "financial records data visualizer" — should read the .xlsx/.csv export (Lines sheet).
+
+## Conti (financial records visualizer), started 2026-10-22
+- Separate app in `conti/` (port 8771, `conti/Start Conti.command`); READS Leggio's workspace only, never writes it.
+  Imports leggio/leggio/export_data.page_rows read-only so lines/sums group exactly as in Leggio's export.
+- Laura's data: `conti_data/<collection>/settings.json`, `sums_review.json` (decisions keyed "<page>|<line ids>", tied to the
+  sum as written; a later edit in Leggio shows "changed since checked").
+- Rules (conti/conti/): money.py (ƒ kept apart from ℔·ß·𝒹; ƒ ß 𝒹 without ℔ = parts of the florin a fiorino),
+  dates.py (year_written + year_modern; Florentine style default = 25 March), refs.py (ac̄/acār/c̄ folio refs + book; kind de dare/de avere/resta).
+- 2026-10-22 step 2 done: tags (conti/tags.py; conti_data/<ms>/tags.json, names merged across manuscripts in conti_data/_names.json),
+  entries (account/item grouping, heuristic), query builder (conti/query.py: lines/entries/tags, count-by, xlsx/csv), datasets
+  (conti_data/_datasets/, growing or snapshot). Claude pilot tags: 459 suggestions on 10 MPAP 4 pages (guide + raw files in
+  .work/conti_pilot_tags/). Laura: data other than sums is the priority.
+- 2026-10-22 step 3a done: holdings (conti/holdings.py; conti_data/<ms>/holdings.json: owner, former owners, occupants+contract,
+  location, confini 1º–4º = ORDER WRITTEN not compass), networks (conti/network.py, static/network.js, d3 vendored: people named
+  together, holdings & owners, cross-references; Gephi zip) and relational Neighbourhood map (squares with 4 confini, pulled to
+  shared neighbours). Claude extracted 56 holdings (suggestions) from RS1108, RS1110–1113, RS1158, RS1195 (.work/conti_holdings/).
+  Laura wants relational, not terrestrial, maps (coordinates only if secure).
+- 2026-10-22 step 3b: holding timelines (holding.timeline: owner/occupant periods, modern dates, basis stated/inferred/unknown/open;
+  Claude suggestions in .work/conti_holdings/timeline_*.json, guide TIMELINE.md). Neighbourhoods has a time slider + play: squares
+  coloured by owner at that date (colour changes when ownership passes), panel shows a Gantt of owners/occupants.
+- 2026-10-22 step 3c: Map tab (Leaflet vendored, OSM tiles optional): holdings tethered to the most specific LOCATED place
+  (conti/places.py, gazetteer conti_data/_places.json: 35 places, 12 secure / 9 approximate / 14 uncertain, each with basis +
+  source; Barberino = Val d'Elsa). Places tab: approve, change confidence, click map to place a lane. Florence As It Was has no
+  downloadable data (ArcGIS app only); candidates to ask: Atkinson's CATASTO 1427 (UChicago/OCHRE), Litchfield gazetteer (Brown).
+- Plan: 1 rules + sums review (done) · 2 query builder + saved/growing datasets + xlsx/csv · 3 views (amounts, people/places,
+  timeline, cross-ref network) · 4 Claude tagging pass for people/places/occupations/goods (suggestions, Laura approves).
+- Next (Laura, 22 Oct): plain-language questions for Conti (answers with evidence); see SESSION_SUMMARY_2026-10-22.md, Conti section 5.
+- 2026-10-22: Leggio ⚑ Flags button: list of flagged lines (all collections) with links to the line (#/p/<c>/<p>/<line id>), Copy / .md / .csv for colleagues (leggio/leggio/flags.py; exports/_flags/). Backups .work/*.bak_before_flags_20261022.
+
+## Conti Ask tab (plain-language questions), 2026-10-23
+- conti/conti/ledger.py (debts/payments with debtor, occupation via occupation tag "of", creditor tagged or ASSUMED = settings
+  account_holder; MPAP_4 = "Heirs of Deo di Vanni"), analyze.py (plan runner: transactions · aggregate [by occupation/debtor/creditor/
+  year/page, rank_by median|total|count, over=year → consistency] · network [debtor → creditor, payments counted apart] · query;
+  coverage + caveats; xlsx + Gephi), ask.py (conti_data/_questions/<id>.json; Claude Code headless via leggio.refine.claude_path,
+  prompts in conti/conti/prompts/), static/ask.js. Tests: conti/tests/test_ask.py (26 passing in all).
+- ANSWERING QUESTIONS SAVED FOR A CHAT (Laura: "answer the Conti questions waiting"): in the device shell, from conti/:
+  `python3 -m conti.ask pending` → `python3 -m conti.ask packet <id>` (read .work/ask/<id>/profile.json + PLAN_LANGUAGE.md +
+  INSTRUCTIONS.md) → write plan.json ({title, understood, limits, plan}) → `python3 -m conti.ask run <id> --plan plan.json`
+  → read .work/ask/<id>/results.json, write answer.json per ANSWER_INSTRUCTIONS.md → `python3 -m conti.ask answer <id> answer.json`.
+  Never invent numbers: every figure must come from results.json. Run with TZ=America/New_York.
+- First two questions answered (20261023-102408-a225 occupations; -307d network). Findings: 63 debts with a tagged debtor on the
+  10 tagged pages, 26 with an occupation, 0 sums checked, 8 dated → "consistently" untestable; largest debt Bartolo di Nese
+  vinattiere ƒ 176 ℔ 79 (RS1123, plain-d warning). Network = star: no entry names a creditor, all 75 links to the heirs (assumed).
+- Next: tag creditors where named; Deo's own books (libro giallo/rosso) for lender networks; a "recipient/agent" layer (Miniato).
+
+- 2026-10-23: CATASTO 1427 (city of Florence, Brown Online Catasto) downloaded to reference/catasto_1427/ (10,004 households, codebook, decoded copy; README there). For cross-referencing contemporary account books.

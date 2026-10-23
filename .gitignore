@@ -16,3 +16,9 @@ ground_truth/**/*.jpg
 ground_truth/**/*.png
 .DS_Store
 __pycache__/
+
+# Conti (local app) environment
+conti/.venv/
+conti/conti.egg-info/
+conti_data/**/*.bak
+conti_data/_exports/

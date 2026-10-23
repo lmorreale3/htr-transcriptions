@@ -1,0 +1,6709 @@
+{
+ "id": "20261023-102408-a225",
+ "question": "Which occupation consistently borrowed the largest sums, with data to back up this assertion?",
+ "t": "2026-10-23T10:24:08",
+ "status": "done",
+ "source": "chat",
+ "log": [],
+ "updated": "2026-10-23T10:26:29",
+ "title": "Occupations owing the largest sums",
+ "understood": "'Borrowed' = owed the estate in a de dare entry; occupation = an occupation tag linked to the debtor. Size is the median debt, florins and lire ranked separately; 'consistently' = whether the ranking holds year by year.",
+ "limits": "Only 10 of 38 included pages are tagged and none of the sums has been checked; few debts carry a date, so year-by-year consistency cannot really be tested yet.",
+ "plan": {
+  "manuscripts": [
+   "MPAP_4"
+  ],
+  "steps": [
+   {
+    "id": "debts",
+    "op": "transactions",
+    "kind": "debt",
+    "where": {
+     "has_debtor": true
+    },
+    "title": "Debts with a tagged debtor"
+   },
+   {
+    "id": "occ_fl",
+    "op": "aggregate",
+    "from": "debts",
+    "by": "occupation",
+    "currency": "florins",
+    "rank_by": "median",
+    "over": "year",
+    "top": 20,
+    "title": "Median debt in florins, by occupation (and year by year)"
+   },
+   {
+    "id": "occ_li",
+    "op": "aggregate",
+    "from": "debts",
+    "by": "occupation",
+    "currency": "lire",
+    "rank_by": "median",
+    "over": "year",
+    "top": 20,
+    "title": "Median debt in lire, by occupation (and year by year)"
+   },
+   {
+    "id": "occ_fl_total",
+    "op": "aggregate",
+    "from": "debts",
+    "by": "occupation",
+    "currency": "florins",
+    "rank_by": "total",
+    "top": 20,
+    "title": "Total owed in florins, by occupation (check)"
+   },
+   {
+    "id": "debts_clean",
+    "op": "transactions",
+    "kind": "debt",
+    "where": {
+     "has_debtor": true,
+     "exclude_problem_sums": true
+    },
+    "title": "Debts, leaving out flagged sums"
+   },
+   {
+    "id": "occ_fl_clean",
+    "op": "aggregate",
+    "from": "debts_clean",
+    "by": "occupation",
+    "currency": "florins",
+    "rank_by": "median",
+    "top": 20,
+    "title": "Same, leaving out sums the rules flagged"
+   }
+  ],
+  "question": "Which occupation consistently borrowed the largest sums, with data to back up this assertion?"
+ },
+ "result": {
+  "plan": {
+   "manuscripts": [
+    "MPAP_4"
+   ],
+   "steps": [
+    {
+     "id": "debts",
+     "op": "transactions",
+     "kind": "debt",
+     "where": {
+      "has_debtor": true
+     },
+     "title": "Debts with a tagged debtor"
+    },
+    {
+     "id": "occ_fl",
+     "op": "aggregate",
+     "from": "debts",
+     "by": "occupation",
+     "currency": "florins",
+     "rank_by": "median",
+     "over": "year",
+     "top": 20,
+     "title": "Median debt in florins, by occupation (and year by year)"
+    },
+    {
+     "id": "occ_li",
+     "op": "aggregate",
+     "from": "debts",
+     "by": "occupation",
+     "currency": "lire",
+     "rank_by": "median",
+     "over": "year",
+     "top": 20,
+     "title": "Median debt in lire, by occupation (and year by year)"
+    },
+    {
+     "id": "occ_fl_total",
+     "op": "aggregate",
+     "from": "debts",
+     "by": "occupation",
+     "currency": "florins",
+     "rank_by": "total",
+     "top": 20,
+     "title": "Total owed in florins, by occupation (check)"
+    },
+    {
+     "id": "debts_clean",
+     "op": "transactions",
+     "kind": "debt",
+     "where": {
+      "has_debtor": true,
+      "exclude_problem_sums": true
+     },
+     "title": "Debts, leaving out flagged sums"
+    },
+    {
+     "id": "occ_fl_clean",
+     "op": "aggregate",
+     "from": "debts_clean",
+     "by": "occupation",
+     "currency": "florins",
+     "rank_by": "median",
+     "top": 20,
+     "title": "Same, leaving out sums the rules flagged"
+    }
+   ],
+   "question": "Which occupation consistently borrowed the largest sums, with data to back up this assertion?"
+  },
+  "steps": {
+   "debts": {
+    "type": "transactions",
+    "rows": [
+     {
+      "id": "RS1120_DSC00636-scr#2/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#2",
+      "lines": [
+       4,
+       5
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l6",
+       "RS1120_DSC00636-scr|l7"
+      ],
+      "line_ids": "l6,l7",
+      "sum_line_ids": "l7",
+      "debtors": [
+       {
+        "name": "Filippo di Rinaldo Rondinelli",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 4.8208,
+      "display": "℔ 4 ß 16 𝒹 5 pc̄",
+      "sum_written": "pē 𝓎 iiiiº ß xvi 𝒹 v",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Lo rede di filippo di Rinaldo rondi nelli deondare levāmo dal me̶ / moriale soꝑadetto a c̄ 3ꝯ e a libro giallo a c̄ 1ª1___pē ___𝓎 iiiiº ß xvi 𝒹 v",
+      "translation": "The heirs of Filippo di Rinaldo Rondinelli owe; we took it from the day- book abovesaid at fol. 3ꝯ and in the yellow book at fol. 1ª1___pē ___𝓎 iiiiº ß xvi 𝒹 v"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#2/2",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#2",
+      "lines": [
+       6,
+       7
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l13",
+       "RS1120_DSC00636-scr|l9"
+      ],
+      "line_ids": "l13,l9",
+      "sum_line_ids": "l9",
+      "debtors": [
+       {
+        "name": "Francecho Masi",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Tommaso di ser Francecho Masi",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 1.0,
+      "lire": null,
+      "display": "ƒ 1",
+      "sum_written": "ƒ 1",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "ß francecho masi overo ß tomāso suo figluiolo di dare alibro detto / a cār 3ꝯ e a libro giallo detto a cār 187 ___ƒ 1",
+      "translation": "Ser Francecho Masi or Ser Tommaso his son owes in the said book at fol. 3ꝯ and in the said yellow book at fol. 187 ___ƒ 1"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#3/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#3",
+      "lines": [
+       8,
+       9
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l14",
+       "RS1120_DSC00636-scr|l15"
+      ],
+      "line_ids": "l14,l15",
+      "sum_line_ids": "l15",
+      "debtors": [
+       {
+        "name": "Michele Pucci",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "albergatore"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 4.0792,
+      "display": "℔ 4 ß 1 𝒹 7 pc̄",
+      "sum_written": "pē 𝓎 iiiiº ß i 𝒹 vii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Michele pucci albergatroe ⁊ sue rede deondare a libro detto c̄ 3ꝯ / E a libro giallo detto a cār 189___pē___𝓎 iiiiº ß i 𝒹 vii",
+      "translation": "Michele Pucci, innkeeper, and his heirs owe in the said book fol. 3ꝯ And in the said yellow book at fol. 189___pē___𝓎 iiiiº ß i 𝒹 vii"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#4/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#4",
+      "lines": [
+       10,
+       11
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l16",
+       "RS1120_DSC00636-scr|l17"
+      ],
+      "line_ids": "l16,l17",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "San Barnaba",
+        "type": "institution",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Convento di sambernaba di firenze deondare al detto libro c̄  40 / E alibro giallo detto a c̄ 10ꝵ",
+      "translation": "The convent of San Barnaba of Florence owes in the said book fol. 40 And in the said yellow book at fol. 10ꝵ"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#5/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#5",
+      "lines": [
+       12,
+       13
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l18",
+       "RS1120_DSC00636-scr|l19"
+      ],
+      "line_ids": "l18,l19",
+      "sum_line_ids": "l19",
+      "debtors": [
+       {
+        "name": "San Barnaba",
+        "type": "institution",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 13.0,
+      "lire": null,
+      "display": "ƒ 13",
+      "sum_written": "ƒ xiii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "E deondare le case di san bernaba come appare al detto libro a c̄ 40 / E a libro di deo a cār 330___ƒ xiii",
+      "translation": "And the houses of San Barnaba owe, as appears in the said book at fol. 40 And in Deo's book at fol. 330___ƒ xiii"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#6/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#6",
+      "lines": [
+       14,
+       15
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l20",
+       "RS1120_DSC00636-scr|l21"
+      ],
+      "line_ids": "l20,l21",
+      "sum_line_ids": "l21",
+      "debtors": [
+       {
+        "name": "Opera di San Barnaba",
+        "type": "institution",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 14.5833,
+      "display": "℔ 14 ß 11 𝒹 8 pc̄",
+      "sum_written": "pē 𝓎 xiiiiº ß xi 𝒹 viii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1389-02-13",
+      "year": 1389,
+      "year_written": 1388,
+      "year_inferred": false,
+      "text": "E de dare lo ꝑa di san bernaba al detto libro a cār 40 E a libro di deo / overo quaderno sognato n n a cār 83 pē 𝓎 xiiiiº ß xi 𝒹 viii",
+      "translation": "And the Opera (works) of San Barnaba owes, in the said book at fol. 40 and in Deo's book or quire marked n n at fol. 83 pē 𝓎 xiiiiº ß xi 𝒹 viii"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#6/5",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#6",
+      "lines": [
+       21,
+       22
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l10",
+       "RS1120_DSC00636-scr|l11"
+      ],
+      "line_ids": "l10,l11",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Matteo di Giunta",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "tavernaio"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1389-02-13",
+      "year": 1389,
+      "year_written": 1388,
+      "year_inferred": false,
+      "text": "matteo di gunta tavēnaio di dare a libro detto a c̄  40 ⁊ a libro di deo / giallo a cār 298",
+      "translation": "Matteo di Gunta, taverner, owes in the said book at fol. 40 and in Deo's yellow book at fol. 298"
+     },
+     {
+      "id": "RS1121_DSC00637-scr#1/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1121_DSC00637-scr",
+      "entry": "RS1121_DSC00637-scr#1",
+      "lines": [
+       1,
+       2,
+       3
+      ],
+      "keys": [
+       "RS1121_DSC00637-scr|l1",
+       "RS1121_DSC00637-scr|l2",
+       "RS1121_DSC00637-scr|l4,l35"
+      ],
+      "line_ids": "l1,l2,l4,l35",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Niccolò di Vanozzo Baroni",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Niccolo di vanozo baroni dedare levām̄o dal memoriale tiene aminiato loro / attore acār 40 Ealibro di deo giallo acār 308 / pmise ꝓ lo detto Gherardo di ß vgolino ⁊ mō scotta sua don̄a a bianēlai",
+      "translation": "Niccolo di Vanozo Baroni owes; we took it from the daybook that Miniato, their agent, keeps, fol. 40, and in Deo's yellow book fol. 308 [he] promised for the said Gherardo di ser Ugolino and monna Scotta his wife [illegible]"
+     },
+     {
+      "id": "RS1121_DSC00637-scr#3/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1121_DSC00637-scr",
+      "entry": "RS1121_DSC00637-scr#3",
+      "lines": [
+       11
+      ],
+      "keys": [
+       "RS1121_DSC00637-scr|l8,l38"
+      ],
+      "line_ids": "l8,l38",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Guelfo di Nuto",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Guelfo di Nuto da fiesole de dare alibro detto ac̄ 41 E a libro giallo di",
+      "translation": "Guelfo di Nuto da Fiesole owes in the said book, fol. 41, and in the yellow book of"
+     },
+     {
+      "id": "RS1121_DSC00637-scr#6/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1121_DSC00637-scr",
+      "entry": "RS1121_DSC00637-scr#6",
+      "lines": [
+       22,
+       25,
+       26
+      ],
+      "keys": [
+       "RS1121_DSC00637-scr|l14,l43,l44",
+       "RS1121_DSC00637-scr|l15",
+       "RS1121_DSC00637-scr|l16,l45"
+      ],
+      "line_ids": "l14,l43,l44,l15,l16,l45",
+      "sum_line_ids": "l16,l45",
+      "debtors": [
+       {
+        "name": "Compagnia di Santa Maria da Carraia",
+        "type": "institution",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 19.0345,
+      "lire": null,
+      "display": "ƒ 19 ß 1 pc̄",
+      "sum_written": "pēƒ xviiii ßni i",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "1389-05-12",
+      "year": 1389,
+      "year_written": 1389,
+      "year_inferred": false,
+      "text": "La cōpagnia di santa mª dacharraia di val di marina de dare a libro detto / acār 42Ealibro giallo detto acār 320 / Ene tenuto perino mānucci da carraia chera camãlingo",
+      "translation": "The confraternity of Santa Maria da Carraia of Val di Marina owes in the said book fol. 42, and in the said yellow book, fol. 320 And Perino Mannucci da Carraia, who was treasurer, is liable for it"
+     },
+     {
+      "id": "RS1121_DSC00637-scr#7/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1121_DSC00637-scr",
+      "entry": "RS1121_DSC00637-scr#7",
+      "lines": [
+       34,
+       36
+      ],
+      "keys": [
+       "RS1121_DSC00637-scr|l20,l49",
+       "RS1121_DSC00637-scr|l21"
+      ],
+      "line_ids": "l20,l49,l21",
+      "sum_line_ids": "l20,l49",
+      "debtors": [
+       {
+        "name": "Francescho di Piero",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "bicchieraio"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 0.0083,
+      "display": "𝒹 2",
+      "sum_written": "pe𝒹 ii ƒ",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "francescho di piero bicchieraio ī borgo salorēzo de dare alibro detto ac̄ 43 / Eali bro giallo acār 323",
+      "translation": "Francescho di Piero, glassmaker in Borgo San Lorenzo, owes in the said book, fol. 43 and in the yellow book, fol. 323"
+     },
+     {
+      "id": "RS1121_DSC00637-scr#8/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1121_DSC00637-scr",
+      "entry": "RS1121_DSC00637-scr#8",
+      "lines": [
+       37,
+       40
+      ],
+      "keys": [
+       "RS1121_DSC00637-scr|l22,l50,l51",
+       "RS1121_DSC00637-scr|l23"
+      ],
+      "line_ids": "l22,l50,l51,l23",
+      "sum_line_ids": "l22,l50,l51",
+      "debtors": [
+       {
+        "name": "Pagolo di Jacopo dell'Aressa",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 24.0,
+      "lire": null,
+      "display": "ƒ 24",
+      "sum_written": "1 ƒ xxiiiiº",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "1388-10-12",
+      "year": 1388,
+      "year_written": 1388,
+      "year_inferred": false,
+      "text": "pagolo di Jacopo dellaressa da villanuova de dare a libro detto ac̄ 44 / E a libro [del: giallo] rosso ac̄ 148 ⁊ alꝙ NN ac̄ 80 ꝓ Rƒ",
+      "translation": "Pagolo di Jacopo dell'Aressa da Villanuova owes in the said book, fol. 44 and in the red book, fol. 148, and in quire NN, fol. 80, for the balance[?]"
+     },
+     {
+      "id": "RS1121_DSC00637-scr#9/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1121_DSC00637-scr",
+      "entry": "RS1121_DSC00637-scr#9",
+      "lines": [
+       52,
+       54
+      ],
+      "keys": [
+       "RS1121_DSC00637-scr|l30,l56",
+       "RS1121_DSC00637-scr|l31,l57"
+      ],
+      "line_ids": "l30,l56,l31,l57",
+      "sum_line_ids": "l30,l56",
+      "debtors": [
+       {
+        "name": "Niccolò di ser Bartolo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 3.0,
+      "lire": null,
+      "display": "ƒ 3",
+      "sum_written": "ƒ iii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1389-02-26",
+      "year": 1389,
+      "year_written": 1388,
+      "year_inferred": false,
+      "text": "Niccolo di ß bartolo da mangone de dare alibro detto acār 44 / assene la sentenza",
+      "translation": "Niccolo di ser Bartolo da Mangone owes in the said book, fol. 44 there is a judgment on it"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#1/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#1",
+      "lines": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l1",
+       "RS1122_DSC00638-scr|l2",
+       "RS1122_DSC00638-scr|l3",
+       "RS1122_DSC00638-scr|l4",
+       "RS1122_DSC00638-scr|l5",
+       "RS1122_DSC00638-scr|l6"
+      ],
+      "line_ids": "l1,l2,l3,l4,l5,l6",
+      "sum_line_ids": "l2",
+      "debtors": [
+       {
+        "name": "Mino di Ciapo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Lorenza",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Antonio di Sandro",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Cristofano di Sandro",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 32.0,
+      "lire": null,
+      "display": "ƒ 32",
+      "sum_written": "ƒ xxxii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "mino di ciapo da santa mª īpianeta de dare a libro detto ac̄ 44 / ƒ xxxii / ßii 𝒹 viii rē / x / 11 / Mona lorenza ⁊ Antonio ⁊ Cristo fano di sandro daghagliano",
+      "translation": "Mino di Ciapo da Santa Maria in Pianeta owes in the said book, fol. 44 ƒ xxxii ßii 𝒹 viii [illegible] x 11 Monna Lorenza and Antonio and Cristofano di Sandro da Ghagliano"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#3/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#3",
+      "lines": [
+       11,
+       12
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l11",
+       "RS1122_DSC00638-scr|l12"
+      ],
+      "line_ids": "l11,l12",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Guido d'Argomento",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "setaiolo"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Guido dargom̄to setaiuolo de dare a libro detto a c̄ 45 e a libro / loso di deo acār 143",
+      "translation": "Guido d'Argomento, silk merchant, owes in the said book, fol. 45, and in Deo's [pi]loso book, fol. 143"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#5/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#5",
+      "lines": [
+       17,
+       18
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l17",
+       "RS1122_DSC00638-scr|l18"
+      ],
+      "line_ids": "l17,l18",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Bernardo di Ricciardino",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "pizzicagnolo"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Bernardo di ricchardino pizicagnolo de dare a libro detto ac̄ 45 / E a libro piloso di deo acār 161",
+      "translation": "Bernardo di Ricchardino, provision seller, owes in the said book, fol. 45 and in Deo's piloso book, fol. 161"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#7/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#7",
+      "lines": [
+       22,
+       23,
+       24
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l22",
+       "RS1122_DSC00638-scr|l23",
+       "RS1122_DSC00638-scr|l24"
+      ],
+      "line_ids": "l22,l23,l24",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Tedici di Manno Manovelli",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Tedici di man̄o manovelli de dare a libro detto ac̄ 45 E a libro / piloso di deo acār 166 / pago īēo 𝒹i van̄i",
+      "translation": "Tedici di Manno Manovelli owes in the said book, fol. 45, and in Deo's piloso book, fol. 166 paid [illegible] di Vanni"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#8/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#8",
+      "lines": [
+       26,
+       27
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l26",
+       "RS1122_DSC00638-scr|l27"
+      ],
+      "line_ids": "l26,l27",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Piero Ghii",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Maria",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Piero ghii ⁊ amō maria sua don̄a deondare a libro detto ac̄ 45 / E a libro piloso di deo acār 189",
+      "translation": "Piero Ghii and monna Maria his wife owe in the said book, fol. 45 and in Deo's piloso book, fol. 189"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#9/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#9",
+      "lines": [
+       29,
+       30
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l29",
+       "RS1122_DSC00638-scr|l30"
+      ],
+      "line_ids": "l29,l30",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Filippo di Lossello",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "maestro"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "ilippo di lossello maestro da quarto de dare a libro detto ac̄ 46 / a libro piloso di deo acār 199",
+      "translation": "[F]ilippo di Lossello, master, of Quarto, owes in the said book, fol. 46 in Deo's piloso book, fol. 199"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#12/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#12",
+      "lines": [
+       36,
+       37,
+       38
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l36",
+       "RS1122_DSC00638-scr|l37",
+       "RS1122_DSC00638-scr|l38"
+      ],
+      "line_ids": "l36,l37,l38",
+      "sum_line_ids": "l38",
+      "debtors": [
+       {
+        "name": "Tingo di Lapo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "albergatore"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 14.3448,
+      "lire": null,
+      "display": "ƒ 14 ß 10",
+      "sum_written": "ƒ xiiiiº ß x",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Tingo di lapo albergatore ī borgo salorenzo de dare a libro detto c̄ 46 / E a libro rosso di deo acār 22 pc / ƒ xiiiiº ß x",
+      "translation": "Tingo di Lapo, innkeeper in Borgo San Lorenzo, owes in the said book, fol. 46 and in Deo's red book, fol. 22 pc ƒ xiiiiº ß x"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#1/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#1",
+      "lines": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l1",
+       "RS1123_DSC00639-scr|l2",
+       "RS1123_DSC00639-scr|l3",
+       "RS1123_DSC00639-scr|l4",
+       "RS1123_DSC00639-scr|l5"
+      ],
+      "line_ids": "l1,l2,l3,l4,l5",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Ermanno di Mato",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Mante",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Erman̄o di mato ⁊ mon̄a mante sua don̄a dasesto deondare a libro detto / xx / acār 46 E a libro rosso di deo acār 23 / 1ch xvi / dignitia. Sicut pro his qui mecum filiis tene",
+      "translation": "Ermanno di Mato and monna Mante his wife, from Sesto, ought to pay, in the said book xx at fol. 46 and in the red book of Deo at fol. 23 1ch xvi [Latin pen trial: illegible]"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#2/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#2",
+      "lines": [
+       6,
+       7,
+       8
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l6",
+       "RS1123_DSC00639-scr|l7",
+       "RS1123_DSC00639-scr|l8"
+      ],
+      "line_ids": "l6,l7,l8",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Francesco di Detto",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "sarto"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1388-07-13",
+      "year": 1388,
+      "year_written": 1388,
+      "year_inferred": true,
+      "text": "Francescho di detto sarto ī borgosalorenzo de dare a libro detto acār / E a libro Rosso di deo ac̄ 36 E a libro giallo di deo ac̄ 276 ⁊ ac̄ 320 / Ene tenuta mō Niccolosa che fu sua don̄ā chenogle di benedeto pizicaºglo",
+      "translation": "Francescho di Detto, tailor in Borgo San Lorenzo, owes in the said book at fol. and in the red book of Deo at fol. 36 and in the yellow book of Deo at fol. 276 and at fol. 320 and monna Niccolosa, who was his wife, [daughter?] of Benedetto, cheesemonger, is liable for it"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#3/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#3",
+      "lines": [
+       12,
+       13
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l12",
+       "RS1123_DSC00639-scr|l13"
+      ],
+      "line_ids": "l12,l13",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Toso di Salvi",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Toso di salvi dacastello de dare a libro detto ac̄47 E a libro Rosso di deo / acār 42",
+      "translation": "Toso di Salvi from Castello owes in the said book at fol. 47 and in the red book of Deo at fol. 42"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#6/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#6",
+      "lines": [
+       23,
+       24,
+       25,
+       26
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l23",
+       "RS1123_DSC00639-scr|l24",
+       "RS1123_DSC00639-scr|l25",
+       "RS1123_DSC00639-scr|l26"
+      ],
+      "line_ids": "l23,l24,l25,l26",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Antonio di Firenze",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "tavernaio"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Antonio di firenze tan̄enaio de dare a libro detto ac̄ 47 E a libro Rosso / di deo acār [del: 45] 65 ꝓ Resto / ƒ / ß",
+      "translation": "Antonio di Firenze, taverner, owes in the said book at fol. 47 and in the red book of Deo at fol. 65, for the remainder ƒ ß"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#7/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#7",
+      "lines": [
+       27,
+       28
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l27",
+       "RS1123_DSC00639-scr|l28"
+      ],
+      "line_ids": "l27,l28",
+      "sum_line_ids": "l28",
+      "debtors": [
+       {
+        "name": "Bartolo di Nese",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "vinattiere"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 176.0,
+      "lire": 79.8083,
+      "display": "ƒ 176 ℔ 79 ß 16 𝒹 2 pc̄",
+      "sum_written": "ƒ clxxviº ℔ lxxviiiiº ß xvi d ii pc̄",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Bartolo di nese vinattiere da cā mignano de dare a libro detto ac̄47 / E a libro rosso di deo acār 72/⁊/73/74/105 ⁊ a libro giallo c̄ 316 ƒclxxviº ℔ lxxviiiiº ß xvi d ii pc̄",
+      "translation": "Bartolo di Nese, wine-seller from Camignano, owes in the said book at fol. 47 and in the red book of Deo at fol. 72/and/73/74/105 and in the yellow book, fol. 316  ƒclxxviº ℔ lxxviiiiº ß xvi d ii pc̄"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#8/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#8",
+      "lines": [
+       29,
+       30,
+       31
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l29",
+       "RS1123_DSC00639-scr|l30",
+       "RS1123_DSC00639-scr|l31"
+      ],
+      "line_ids": "l29,l30,l31",
+      "sum_line_ids": "l31",
+      "debtors": [
+       {
+        "name": "Leonardo di Donato",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 25.6897,
+      "lire": null,
+      "display": "ƒ 25 ß 20",
+      "sum_written": "ƒ xxv ß xx",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "leonardo di donato nellavia dellalbero asanpaolo de dare a libro detto c̄ 47 / E a libro Rosso di deo acār 74 / ƒ xxv ßxx",
+      "translation": "Leonardo di Donato, in the Via dell'Albero at San Paolo, owes in the said book, fol. 47 and in the red book of Deo at fol. 74 ƒ xxv ßxx"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#9/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#9",
+      "lines": [
+       32,
+       33
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l32",
+       "RS1123_DSC00639-scr|l33"
+      ],
+      "line_ids": "l32,l33",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Giovanni di Gherardo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "bottaio"
+        ],
+        "occupation_basis": "same entry"
+       },
+       {
+        "name": "Bartolomea",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Giovan̄i di gherardo vocato prete bottaio de dare a libro detto ac̄ 47 ⁊ / mō bartolomea sua don̄a E a libro rosso di deo acār 78",
+      "translation": "Giovanni di Gherardo, called Prete, cooper, owes in the said book at fol. 47, and monna Bartolomea his wife; and in the red book of Deo at fol. 78"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#11/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#11",
+      "lines": [
+       36,
+       37
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l36",
+       "RS1123_DSC00639-scr|l37"
+      ],
+      "line_ids": "l36,l37",
+      "sum_line_ids": "l36",
+      "debtors": [
+       {
+        "name": "Angiolino di Niccolaio",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "barilaio"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 3.0,
+      "lire": 3.35,
+      "display": "ƒ 3 ℔ 3 ß 7",
+      "sum_written": "ƒiō iii ℔ iii ß vii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1389-10-11",
+      "year": 1389,
+      "year_written": 1389,
+      "year_inferred": false,
+      "text": "Angiolino di niccolaio barliere tedescho ī borgo salorenzo de dare a libro ƒiō iii ℔ iii ß vii / detto acār 48 E a libro Rosse di deo acār 91",
+      "translation": "Angiolino di Niccolaio, German barrel-maker in Borgo San Lorenzo, owes in the book  fiorini iii ℔ iii ß vii said, at fol. 48, and in the red book of Deo at fol. 91"
+     },
+     {
+      "id": "RS1126_DSC00642-scr#1/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1126_DSC00642-scr",
+      "entry": "RS1126_DSC00642-scr#1",
+      "lines": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "keys": [
+       "RS1126_DSC00642-scr|l1",
+       "RS1126_DSC00642-scr|l2",
+       "RS1126_DSC00642-scr|l3",
+       "RS1126_DSC00642-scr|l4",
+       "RS1126_DSC00642-scr|l5"
+      ],
+      "line_ids": "l1,l2,l3,l4,l5",
+      "sum_line_ids": "l5",
+      "debtors": [
+       {
+        "name": "Domenicuccio d'Andrea",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "lavoratore"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 6.0,
+      "lire": 64.875,
+      "display": "ƒ 6 ℔ 64 ß 17 𝒹 6 pc̄",
+      "sum_written": "ƒo vi ℔ lxiiiiº ß xvii 𝒹 vi pc̄",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1388-12-12",
+      "year": 1388,
+      "year_written": 1388,
+      "year_inferred": false,
+      "text": "domenichuccio dandrea lavoratore a castello de dare a libro detto / acār 59 / Qquidem quodam / 13 / ƒo vi ℔ lxiiiiº ßxvii 𝒹vi pc̄",
+      "translation": "Domenichuccio d'Andrea, tenant farmer at Castello, owes, in the said book at fol. 59 [pen trial: Qquidem quodam] 13 ƒo vi ℔ lxiiiiº ßxvii 𝒹vi pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#2/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#2",
+      "lines": [
+       4
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l7,l28"
+      ],
+      "line_ids": "l7,l28",
+      "sum_line_ids": "l7,l28",
+      "debtors": [
+       {
+        "name": "Ceni",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 6.2,
+      "display": "℔ 6 ß 4 pc̄",
+      "sum_written": "pc̄ ℔ vi | ß iiiiº",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Cēni ⁊ figluoli da villanuova deondare al memoriale delle rede ac̄ 38 pc̄ ℔ vi",
+      "translation": "Ceni and sons of Villanuova owe, in the daybook of the heirs at folio 38, pc̄ ℔ vi"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#3/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#3",
+      "lines": [
+       6
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l8"
+      ],
+      "line_ids": "l8",
+      "sum_line_ids": "l8",
+      "debtors": [
+       {
+        "name": "Filippo di Brunetto",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Macho",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 2.0,
+      "lire": null,
+      "display": "ƒ 2",
+      "sum_written": "ƒ ii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Filippo di brunetto chiamato matano ⁊ macho dasesto deondare ac̄ 39ƒ ii",
+      "translation": "Filippo di Brunetto, called Matano, and Macho of Sesto owe, at folio 39, ƒ ii"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#4/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#4",
+      "lines": [
+       7
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l9,l11"
+      ],
+      "line_ids": "l9,l11",
+      "sum_line_ids": "l9,l11",
+      "debtors": [
+       {
+        "name": "Niccolò di Vanni Pagani",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.0,
+      "display": "℔ 1",
+      "sum_written": "℔ i",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Niccolo di van̄i pagan̄i dacalenzano de dare al detto libro ac̄ 39pc̄",
+      "translation": "Niccolò di Vanni Pagani of Calenzano owes, in the said book at folio 39, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#5/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#5",
+      "lines": [
+       9
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l10,l12,l29"
+      ],
+      "line_ids": "l10,l12,l29",
+      "sum_line_ids": "l10,l12,l29",
+      "debtors": [
+       {
+        "name": "Stefano di Lippo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.25,
+      "display": "℔ 1 ß 5",
+      "sum_written": "℔ i | ßv",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Stefano dilippo da torri di val di marina de dare al detto ac̄ 39pc̄",
+      "translation": "Stefano di Lippo of Torri in Val di Marina owes, in the said [book] at folio 39, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#6/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#6",
+      "lines": [
+       12
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l13"
+      ],
+      "line_ids": "l13",
+      "sum_line_ids": "l13",
+      "debtors": [
+       {
+        "name": "Matteo di Cecco",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.0,
+      "display": "℔ 1 pc̄",
+      "sum_written": "pc̄ ℔ i",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "matteo di cecto da torri de dare a libro a libro detto acār 39 pc̄ ℔ i",
+      "translation": "Matteo di Cecto of Torri owes, in the said book [book written twice] at folio 39, pc̄ ℔ i"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#7/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#7",
+      "lines": [
+       13
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l14,l16,l30"
+      ],
+      "line_ids": "l14,l16,l30",
+      "sum_line_ids": "l14,l16,l30",
+      "debtors": [
+       {
+        "name": "Domenico del Carnina",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "maestro"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 4.35,
+      "display": "℔ 4 ß 7",
+      "sum_written": "℔ iiiiº | ß vii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "domenicho del carnina maestro de dare a libro detto acār 39 pc̄",
+      "translation": "Domenico del Carnina, master [builder?], owes, in the said book at folio 39, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#8/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#8",
+      "lines": [
+       16
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l15,l17,l31,l33"
+      ],
+      "line_ids": "l15,l17,l31,l33",
+      "sum_line_ids": "l15,l17,l31,l33",
+      "debtors": [
+       {
+        "name": "Pagolo di Choso",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "maestro"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 5.2167,
+      "display": "℔ 5 ß 4 𝒹 4",
+      "sum_written": "℔ v | ß iiiiº | 𝒹 iiiiº",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Pagolo di choso maestro dedare a libro detto acār 39 pc̄",
+      "translation": "Pagolo di Choso, master [builder?], owes, in the said book at folio 39, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#9/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#9",
+      "lines": [
+       20
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l18,l32"
+      ],
+      "line_ids": "l18,l32",
+      "sum_line_ids": "l18,l32",
+      "debtors": [
+       {
+        "name": "Lapo di Filippo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "maestro"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.2,
+      "display": "℔ 1 ß 4 pc̄",
+      "sum_written": "pc̄ ℔ i | ß iiiiº",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "lapo di filippo maestro dacampi de dare a libro detto ac̄ 39 pc̄ ℔ i",
+      "translation": "Lapo di Filippo, master [builder?], of Campi owes, in the said book at folio 39, pc̄ ℔ i"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#10/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#10",
+      "lines": [
+       22,
+       23,
+       25
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l22",
+       "RS1128_DSC00644-scr|l24,l25",
+       "RS1128_DSC00644-scr|l19"
+      ],
+      "line_ids": "l22,l24,l25,l19",
+      "sum_line_ids": "l24,l25",
+      "debtors": [
+       {
+        "name": "Michele di Sandro",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 1.0,
+      "lire": null,
+      "display": "ƒ 1",
+      "sum_written": "ƒ 1",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "m ichele di sandro chugino di marcho stellucci de dare al detto ac̄ 39 / En̄e la sentenza / potuit indubium indigne et iudisti. Qđ si ad",
+      "translation": "Michele di Sandro, cousin of Marco Stellucci, owes, in the said [book] at folio 39 There is a judgment on it [?] [Latin:] could [be] in doubt, unworthily, and you judged. But if to [?]"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#11/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#11",
+      "lines": [
+       26,
+       27
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l34",
+       "RS1128_DSC00644-scr|l35,l37"
+      ],
+      "line_ids": "l34,l35,l37",
+      "sum_line_ids": "l34",
+      "debtors": [
+       {
+        "name": "Piera de' Guidalotti",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "monaca"
+        ],
+        "occupation_basis": "same entry"
+       },
+       {
+        "name": "Lorenzo di Giovanni",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "fornaio"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 3.825,
+      "display": "℔ 3 ß 16 𝒹 6 pc̄",
+      "sum_written": "pc̄ ℔ iii ß xvi 𝒹 vi",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "suora piera monacha de guidalotti de dare a libro detto ac̄ 40 pc̄ ℔ iii ß xvi 𝒹 vi / lorenzo di Giovan̄i fornaio ī bargo lanoce a libro detto ac̄ 40. pc̄ ℔ iiiiº",
+      "translation": "Sister Piera, nun, of the Guidalotti owes, in the said book at folio 40, pc̄ ℔ iii ß xvi 𝒹 vi Lorenzo di Giovanni, baker in Borgo la Noce, [owes] in the said book at folio 40, pc̄ ℔ iiiiº"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#13/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#13",
+      "lines": [
+       31
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l39"
+      ],
+      "line_ids": "l39",
+      "sum_line_ids": "l39",
+      "debtors": [
+       {
+        "name": "Cambio di Bettino",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 6.1917,
+      "display": "℔ 6 ß 3 𝒹 10 pc̄",
+      "sum_written": "pc̄ ℔ vi ß iii 𝒹 x",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Cambio di bettino ī borgo lanoce de dare a libro detto ac̄40 pc̄ ℔ vi ß iii 𝒹 x",
+      "translation": "Cambio di Bettino in Borgo la Noce owes, in the said book at folio 40, pc̄ ℔ vi ß iii 𝒹 x"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#14/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#14",
+      "lines": [
+       32
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l40"
+      ],
+      "line_ids": "l40",
+      "sum_line_ids": "l40",
+      "debtors": [
+       {
+        "name": "Nanni di Cione",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 3.25,
+      "display": "℔ 3 ß 5 pc̄",
+      "sum_written": "pc̄ ℔ iii ß v",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Nan̄i dicione da collina dedare a libro detto acār 41 pc̄ ℔ iii ß v",
+      "translation": "Nanni di Cione of Collina owes, in the said book at folio 41, pc̄ ℔ iii ß v"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#15/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#15",
+      "lines": [
+       33
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l41"
+      ],
+      "line_ids": "l41",
+      "sum_line_ids": "l41",
+      "debtors": [
+       {
+        "name": "Nanni di Piero Nucci",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 3.0,
+      "lire": null,
+      "display": "ƒ 3 pc̄",
+      "sum_written": "pc̄ ƒ iii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Nan̄i di piero nucci al mēcatale agrieve de dare a libro detto c̄ 41 pc̄ ƒ iii",
+      "translation": "Nanni di Piero Nucci at the Mercatale of Greve owes, in the said book at folio 41, pc̄ ƒ iii"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#16/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#16",
+      "lines": [
+       34,
+       36,
+       37,
+       38
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l42,l46",
+       "RS1128_DSC00644-scr|l43",
+       "RS1128_DSC00644-scr|l20",
+       "RS1128_DSC00644-scr|l44,l47"
+      ],
+      "line_ids": "l42,l46,l43,l20,l44,l47",
+      "sum_line_ids": "l42,l46",
+      "debtors": [
+       {
+        "name": "Antonio",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Bartolomeo di Neri",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "tessitore di drappi"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 46.45,
+      "display": "℔ 46 ß 9",
+      "sum_written": "℔ xlvi ß viiiiº",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "mesß Antonio ⁊ ī calonaci di salorenzo deondare a libro detto c̄ 41 pc̄ / ß piero pucci / modum uideatur. si ad modũ ipsũ potuerit / Bartolomeo di Neri chetesse i drappi ī via sangallo dalłe don̄e delgli",
+      "translation": "Messer Antonio and the canons of San Lorenzo owe, in the said book at folio 41, pc̄ Ser Piero Pucci [Latin:] manner it should seem. If it could [come] to that very manner [?] Bartolomeo di Neri, who weaves cloths in Via San Gallo, by the [house of the] women of the"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#18/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#18",
+      "lines": [
+       41,
+       43
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l48,l57",
+       "RS1128_DSC00644-scr|l49,l58"
+      ],
+      "line_ids": "l48,l57,l49,l58",
+      "sum_line_ids": "l48,l57",
+      "debtors": [
+       {
+        "name": "Nanni di Benuccio",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "ferratore"
+        ],
+        "occupation_basis": "same entry"
+       },
+       {
+        "name": "Nanni di Bartolomeo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 2.2167,
+      "display": "℔ 2 ß 4 𝒹 4 pc̄",
+      "sum_written": "pc̄ ℔ ii | ß iiiiº 𝒹 iiiiº",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Nan̄i di benuccio ferratore de dare a libro detto a cār 42. pc̄ ℔ ii / Nan̄i di bartolomeo genero di mō bice di ricciardo dellariviera c̄42 pc̄ ℔ iii",
+      "translation": "Nanni di Benuccio, farrier, owes, in the said book at folio 42, pc̄ ℔ ii Nanni di Bartolomeo, son-in-law of Monna Bice di Ricciardo della Riviera, [owes] at folio 42, pc̄ ℔ iii"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#19/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#19",
+      "lines": [
+       45
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l50,l59"
+      ],
+      "line_ids": "l50,l59",
+      "sum_line_ids": "l50,l59",
+      "debtors": [
+       {
+        "name": "Baldino di Buto",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "biadaiolo"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 2.0667,
+      "display": "℔ 2 ß 1 𝒹 4 pc̄",
+      "sum_written": "pc̄ ℔ ii | ß i 𝒹 iiiiº",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Baldino di buto biadaiuolo inborgo de dare a libro detto c̄42 pc̄ ℔ ii",
+      "translation": "Baldino di Buto, grain dealer in Borgo [San Lorenzo?], owes, in the said book at folio 42, pc̄ ℔ ii"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#20/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#20",
+      "lines": [
+       47
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l51,l60"
+      ],
+      "line_ids": "l51,l60",
+      "sum_line_ids": "l51,l60",
+      "debtors": [
+       {
+        "name": "Giovanni di Matteo di Caronbello",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.5,
+      "display": "℔ 1 ß 10 pc̄",
+      "sum_written": "pc̄ ℔ i | ßx",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Giovan̄i di matteo di caronbello dacolon̄ata de dare a libro ac̄4 3 pc̄ ℔ i",
+      "translation": "Giovanni di Matteo di Caronbello of Colonnata owes, in the book at folio 43, pc̄ ℔ i"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#21/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#21",
+      "lines": [
+       49
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l52,l61"
+      ],
+      "line_ids": "l52,l61",
+      "sum_line_ids": "l52,l61",
+      "debtors": [
+       {
+        "name": "Brunetto di Baldino",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "speziale"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 4.0,
+      "lire": 6.5458,
+      "display": "ƒ 4 ℔ 6 ß 10 𝒹 11",
+      "sum_written": "ƒ iiiiº ℔ vi | ß x 𝒹 xi",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "brunetto di baldino speziale de dare a libro detto acār 43 ƒ iiiiº ℔ vi",
+      "translation": "Brunetto di Baldino, apothecary, owes, in the said book at folio 43, ƒ iiiiº ℔ vi"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#22/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#22",
+      "lines": [
+       51
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l53,l62"
+      ],
+      "line_ids": "l53,l62",
+      "sum_line_ids": "l53,l62",
+      "debtors": [
+       {
+        "name": "Michele di Bonagiunta",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 0.5,
+      "display": "ß 10",
+      "sum_written": "ßx",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "michele di bonagiunta da sancresci de dare a libro detto ac̄ 43",
+      "translation": "Michele di Bonagiunta of San Cresci owes, in the said book at folio 43"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#23/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#23",
+      "lines": [
+       53
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l54,l63"
+      ],
+      "line_ids": "l54,l63",
+      "sum_line_ids": "l54,l63",
+      "debtors": [
+       {
+        "name": "Giovanni",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "prete"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.9083,
+      "display": "℔ 1 ß 18 𝒹 2 pc̄",
+      "sum_written": "pc̄ ℔ i | ßxviii 𝒹ii",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "ß Giovan̄i prete da spugnole de dare a libro detto acār 43 pc̄ ℔ i",
+      "translation": "Ser Giovanni, priest, of Spugnole owes, in the said book at folio 43, pc̄ ℔ i"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#24/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#24",
+      "lines": [
+       55
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l55,l64"
+      ],
+      "line_ids": "l55,l64",
+      "sum_line_ids": "l55,l64",
+      "debtors": [
+       {
+        "name": "Dea",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.25,
+      "display": "℔ 1 ß 5 pc̄",
+      "sum_written": "pc̄ ℔ i | ß v",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "mō dea nipo di mō stella nostra dedare a libro detto c̄ 43 pc̄ ℔ i",
+      "translation": "Monna Dea, niece of our Monna Stella, owes, in the said book at folio 43, pc̄ ℔ i"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#25/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#25",
+      "lines": [
+       57
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l56,l65"
+      ],
+      "line_ids": "l56,l65",
+      "sum_line_ids": "l56,l65",
+      "debtors": [
+       {
+        "name": "Nanni de' Tassi",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.1583,
+      "display": "℔ 1 ß 3 𝒹 2 pc̄",
+      "sum_written": "pc̄ ℔ i | ß iii 𝒹 ii",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Nan̄i de tassi da sesto de dare a libro detto acār 44 pc̄ ℔ i",
+      "translation": "Nanni de' Tassi of Sesto owes, in the said book at folio 44, pc̄ ℔ i"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#26/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#26",
+      "lines": [
+       59
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l66"
+      ],
+      "line_ids": "l66",
+      "sum_line_ids": "l66",
+      "debtors": [
+       {
+        "name": "Beldi di Marco",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 8.225,
+      "display": "℔ 8 ß 4 𝒹 6 pc̄",
+      "sum_written": "pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "mō beldi di marcho Nel chiasso de buoi de dare a libro detto ac̄ 44 pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "translation": "Monna Beldi di Marco, in the Chiasso de' Buoi, owes, in the said book at folio 44, pc̄ ℔ viii ß iiiiº 𝒹 vi"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#27/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#27",
+      "lines": [
+       60
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l67,l70"
+      ],
+      "line_ids": "l67,l70",
+      "sum_line_ids": "l67,l70",
+      "debtors": [
+       {
+        "name": "Domenico di Geri",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "pagliaiolo"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 3.25,
+      "display": "℔ 3 ß 5 pc̄",
+      "sum_written": "pc̄ ℔ iii | ßv",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "domenicho di geri paglamolo de dare a libro detto ac̄ 44 pc̄ ℔ iii",
+      "translation": "Domenico di Geri Paglamolo [straw dealer?] owes, in the said book at folio 44, pc̄ ℔ iii"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#28/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#28",
+      "lines": [
+       62
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l68,l69"
+      ],
+      "line_ids": "l68,l69",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Sandro di Guido",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Sandro di Guido chiamato scarpentrasso dacastello de dare c̄ 44 pc̄",
+      "translation": "Sandro di Guido, called Scarpentrasso, of Castello owes, at folio 44, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#29/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#29",
+      "lines": [
+       64
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l71"
+      ],
+      "line_ids": "l71",
+      "sum_line_ids": "l71",
+      "debtors": [
+       {
+        "name": "Morando di Guido",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 12.35,
+      "display": "℔ 12 ß 7 pc̄",
+      "sum_written": "pc̄ ℔ xii ß vii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "morando di guido dam̄ote carulli de dare a libro detto ac̄ 47 pc̄ ℔ xii ß vii",
+      "translation": "Morando di Guido of Monte Carulli owes, in the said book at folio 47, pc̄ ℔ xii ß vii"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#30/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#30",
+      "lines": [
+       65
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l72"
+      ],
+      "line_ids": "l72",
+      "sum_line_ids": "l72",
+      "debtors": [
+       {
+        "name": "Piero di Martino",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "biadaiolo"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 5.85,
+      "display": "℔ 5 ß 17 pc̄",
+      "sum_written": "pc̄ ℔ v ß xvii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "piero di mãtino biadaiuolo acalenzano de dare a libro detto c̄ 48 pc̄ ℔ v ß xvii",
+      "translation": "Piero di Martino, grain dealer at Calenzano, owes, in the said book at folio 48, pc̄ ℔ v ß xvii"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#31/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#31",
+      "lines": [
+       66
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l73,l80,l78,l82"
+      ],
+      "line_ids": "l73,l80,l78,l82",
+      "sum_line_ids": "l73,l80,l78,l82",
+      "debtors": [
+       {
+        "name": "Gherardo di ser Ugolino",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 2.5862,
+      "lire": null,
+      "display": "ƒ 2 ß 17 pc̄",
+      "sum_written": "pc̄ ƒ ii ℔ | ßxvii | ii |",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Gherardo di ß ugolino cognato fu di deo de dare a libro detto c̄ 48 pc̄ ƒ ii ℔",
+      "translation": "Gherardo di Ser Ugolino, who was Deo's brother-in-law, owes, in the said book at folio 48, pc̄ ƒ ii ℔"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#32/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#32",
+      "lines": [
+       70
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l74,l75"
+      ],
+      "line_ids": "l74,l75",
+      "sum_line_ids": "l74,l75",
+      "debtors": [
+       {
+        "name": "Vanni del Fede",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 2.0,
+      "display": "℔ 2",
+      "sum_written": "℔ ii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "van̄i del fede da castello de dare al detto libro ac̄ 49 pc̄",
+      "translation": "Vanni del Fede of Castello owes, in the said book at folio 49, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#33/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#33",
+      "lines": [
+       72
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l76,l79,l81"
+      ],
+      "line_ids": "l76,l79,l81",
+      "sum_line_ids": "l76,l79,l81",
+      "debtors": [
+       {
+        "name": "Bernardo di Corso",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "calzolaio"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 2.0,
+      "lire": 2.35,
+      "display": "ƒ 2 ℔ 2 ß 7 pc̄",
+      "sum_written": "pc̄ ƒ ii ℔ | ii | ß vii",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Bernado di corso calzolaio alcāto ala macina de dare al detto c̄ 50 pc̄ ƒ ii ℔",
+      "translation": "Bernado di Corso, shoemaker at the Canto alla Macina, owes, in the said [book] at folio 50, pc̄ ƒ ii ℔"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#34/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#34",
+      "lines": [
+       75
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l77"
+      ],
+      "line_ids": "l77",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Dada",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "mō dada don̄a fu di bernado di ceccho spina de dare a libro detto c̄ 50ƒ",
+      "translation": "Monna Dada, widow of Bernado di Ceccho Spina, owes, in the said book at folio 50, ƒ"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#35/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#35",
+      "lines": [
+       76
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l83"
+      ],
+      "line_ids": "l83",
+      "sum_line_ids": "l83",
+      "debtors": [
+       {
+        "name": "Nanni di Pagolo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "sarto"
+        ],
+        "occupation_basis": "same entry"
+       },
+       {
+        "name": "Francesco Ganazzi",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 13.6667,
+      "display": "℔ 13 ß 13 𝒹 4 pc̄",
+      "sum_written": "pc̄ ℔ xiii ß xiii 𝒹 iiiiº",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Nan̄i di pagolo sarto ⁊ francescho ganazi deondare ac̄ 50pc̄ ℔ xiii ß xiii 𝒹 iiiiº",
+      "translation": "Nanni di Pagolo, tailor, and Francesco Ganazi owe, at folio 50, pc̄ ℔ xiii ß xiii 𝒹 iiiiº"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#36/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#36",
+      "lines": [
+       77
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l84,l87,l85"
+      ],
+      "line_ids": "l84,l87,l85",
+      "sum_line_ids": "l84,l87,l85",
+      "debtors": [
+       {
+        "name": "Pagolo di Jacopo della Cingha",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.875,
+      "display": "℔ 1 ß 17 𝒹 6",
+      "sum_written": "𝒹 vi | ℔ i ß xvii",
+      "sum_checked": false,
+      "sum_problems": true,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "pagolo di Jacopo della cingha de dare a libro detto ac̄ 50 ƒ",
+      "translation": "Pagolo di Jacopo della Cingha owes, in the said book at folio 50, ƒ"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#37/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#37",
+      "lines": [
+       80
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l86"
+      ],
+      "line_ids": "l86",
+      "sum_line_ids": "l86",
+      "debtors": [
+       {
+        "name": "Miglino",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 4.0,
+      "lire": 24.0,
+      "display": "ƒ 4 ℔ 24",
+      "sum_written": "ƒ iiiiº ℔ xxiiiiº",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "miglino chiamato ganardino dacastello de dare a libro ac̄ 51ƒ iiiiº ℔ xxiiiiº",
+      "translation": "Miglino, called Ganardino, of Castello owes, in the book at folio 51, ƒ iiiiº ℔ xxiiiiº"
+     }
+    ],
+    "count": 63,
+    "counts": {
+     "with_debtor": 63,
+     "with_sum": 47,
+     "sum_checked": 0,
+     "sum_problems": 17,
+     "tags_checked": 0,
+     "creditor_tagged": 0,
+     "creditor_assumed": 63,
+     "with_occupation": 26,
+     "dated": 8
+    },
+    "id": "debts",
+    "op": "transactions",
+    "title": "Debts with a tagged debtor"
+   },
+   "occ_fl": {
+    "type": "table",
+    "by": "occupation",
+    "currencies": [
+     "florins"
+    ],
+    "rank_by": "median",
+    "split": "equal",
+    "min_n": 1,
+    "rows": [
+     {
+      "value": "vinattiere",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Bartolo di Nese"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1123_DSC00639-scr#7/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 176.0,
+      "florins_mean": 176.0,
+      "florins_median": 176.0,
+      "florins_max": 176.0,
+      "florins_min": 176.0
+     },
+     {
+      "value": "albergatore",
+      "transactions": 2,
+      "people": 2,
+      "people_names": [
+       "Michele Pucci",
+       "Tingo di Lapo"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1120_DSC00636-scr#3/1",
+       "RS1122_DSC00638-scr#12/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 14.34,
+      "florins_mean": 14.34,
+      "florins_median": 14.34,
+      "florins_max": 14.34,
+      "florins_min": 14.34
+     },
+     {
+      "value": "lavoratore",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Domenicuccio d'Andrea"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1126_DSC00642-scr#1/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 6.0,
+      "florins_mean": 6.0,
+      "florins_median": 6.0,
+      "florins_max": 6.0,
+      "florins_min": 6.0
+     },
+     {
+      "value": "speziale",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Brunetto di Baldino"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1128_DSC00644-scr#21/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 4.0,
+      "florins_mean": 4.0,
+      "florins_median": 4.0,
+      "florins_max": 4.0,
+      "florins_min": 4.0
+     },
+     {
+      "value": "(no occupation recorded)",
+      "transactions": 37,
+      "people": 43,
+      "people_names": [
+       "Antonio di Sandro",
+       "Beldi di Marco",
+       "Cambio di Bettino",
+       "Ceni",
+       "Compagnia di Santa Maria da Carraia",
+       "Cristofano di Sandro",
+       "Dada",
+       "Dea",
+       "Ermanno di Mato",
+       "Filippo di Brunetto",
+       "Filippo di Rinaldo Rondinelli",
+       "Francecho Masi",
+       "Gherardo di ser Ugolino",
+       "Giovanni di Matteo di Caronbello",
+       "Guelfo di Nuto",
+       "Leonardo di Donato",
+       "Lorenza",
+       "Macho",
+       "Mante",
+       "Maria",
+       "Matteo di Cecco",
+       "Michele di Bonagiunta",
+       "Michele di Sandro",
+       "Miglino",
+       "Mino di Ciapo",
+       "Morando di Guido",
+       "Nanni de' Tassi",
+       "Nanni di Cione",
+       "Nanni di Piero Nucci",
+       "Niccolò di Vanni Pagani",
+       "Niccolò di Vanozzo Baroni",
+       "Niccolò di ser Bartolo",
+       "Opera di San Barnaba",
+       "Pagolo di Jacopo dell'Aressa",
+       "Pagolo di Jacopo della Cingha",
+       "Piero Ghii",
+       "San Barnaba",
+       "Sandro di Guido",
+       "Stefano di Lippo",
+       "Tedici di Manno Manovelli",
+       "Tommaso di ser Francecho Masi",
+       "Toso di Salvi",
+       "Vanni del Fede"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 8,
+      "ids": [
+       "RS1120_DSC00636-scr#2/1",
+       "RS1120_DSC00636-scr#2/2",
+       "RS1120_DSC00636-scr#4/1",
+       "RS1120_DSC00636-scr#5/1",
+       "RS1120_DSC00636-scr#6/1",
+       "RS1121_DSC00637-scr#1/1",
+       "RS1121_DSC00637-scr#3/1",
+       "RS1121_DSC00637-scr#6/1",
+       "RS1121_DSC00637-scr#8/1",
+       "RS1121_DSC00637-scr#9/1",
+       "RS1122_DSC00638-scr#1/1",
+       "RS1122_DSC00638-scr#7/1",
+       "RS1122_DSC00638-scr#8/1",
+       "RS1123_DSC00639-scr#1/1",
+       "RS1123_DSC00639-scr#3/1",
+       "RS1123_DSC00639-scr#8/1",
+       "RS1128_DSC00644-scr#2/1",
+       "RS1128_DSC00644-scr#3/1",
+       "RS1128_DSC00644-scr#4/1",
+       "RS1128_DSC00644-scr#5/1",
+       "RS1128_DSC00644-scr#6/1",
+       "RS1128_DSC00644-scr#10/1",
+       "RS1128_DSC00644-scr#13/1",
+       "RS1128_DSC00644-scr#14/1",
+       "RS1128_DSC00644-scr#15/1",
+       "RS1128_DSC00644-scr#20/1",
+       "RS1128_DSC00644-scr#22/1",
+       "RS1128_DSC00644-scr#24/1",
+       "RS1128_DSC00644-scr#25/1",
+       "RS1128_DSC00644-scr#26/1",
+       "RS1128_DSC00644-scr#28/1",
+       "RS1128_DSC00644-scr#29/1",
+       "RS1128_DSC00644-scr#31/1",
+       "RS1128_DSC00644-scr#32/1",
+       "RS1128_DSC00644-scr#34/1",
+       "RS1128_DSC00644-scr#36/1",
+       "RS1128_DSC00644-scr#37/1"
+      ],
+      "florins_n": 12,
+      "florins_total": 104.81,
+      "florins_mean": 8.73,
+      "florins_median": 3.5,
+      "florins_max": 25.69,
+      "florins_min": 0.5
+     },
+     {
+      "value": "barilaio",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Angiolino di Niccolaio"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1123_DSC00639-scr#11/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 3.0,
+      "florins_mean": 3.0,
+      "florins_median": 3.0,
+      "florins_max": 3.0,
+      "florins_min": 3.0
+     },
+     {
+      "value": "calzolaio",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Bernardo di Corso"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1128_DSC00644-scr#33/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 2.0,
+      "florins_mean": 2.0,
+      "florins_median": 2.0,
+      "florins_max": 2.0,
+      "florins_min": 2.0
+     }
+    ],
+    "groups_total": 7,
+    "chart": null,
+    "over": "year",
+    "periods": [
+     "(undated)",
+     "1388",
+     "1389"
+    ],
+    "matrix": [
+     {
+      "period": "(undated)",
+      "value": "vinattiere",
+      "rank": 1,
+      "of": 4,
+      "metric": 176.0,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "albergatore",
+      "rank": 2,
+      "of": 4,
+      "metric": 14.34,
+      "transactions": 2
+     },
+     {
+      "period": "(undated)",
+      "value": "speziale",
+      "rank": 3,
+      "of": 4,
+      "metric": 4.0,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "calzolaio",
+      "rank": 4,
+      "of": 4,
+      "metric": 2.0,
+      "transactions": 1
+     },
+     {
+      "period": 1388,
+      "value": "lavoratore",
+      "rank": 1,
+      "of": 1,
+      "metric": 6.0,
+      "transactions": 1
+     },
+     {
+      "period": 1389,
+      "value": "barilaio",
+      "rank": 1,
+      "of": 1,
+      "metric": 3.0,
+      "transactions": 1
+     }
+    ],
+    "consistency": [
+     {
+      "value": "vinattiere",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 1,
+      "periods_top3": 1,
+      "mean_rank": 1
+     },
+     {
+      "value": "lavoratore",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 1,
+      "periods_top3": 1,
+      "mean_rank": 1
+     },
+     {
+      "value": "barilaio",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 1,
+      "periods_top3": 1,
+      "mean_rank": 1
+     },
+     {
+      "value": "albergatore",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 1,
+      "mean_rank": 2
+     },
+     {
+      "value": "speziale",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 1,
+      "mean_rank": 3
+     },
+     {
+      "value": "calzolaio",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 4
+     }
+    ],
+    "id": "occ_fl",
+    "op": "aggregate",
+    "title": "Median debt in florins, by occupation (and year by year)"
+   },
+   "occ_li": {
+    "type": "table",
+    "by": "occupation",
+    "currencies": [
+     "lire"
+    ],
+    "rank_by": "median",
+    "split": "equal",
+    "min_n": 1,
+    "rows": [
+     {
+      "value": "vinattiere",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Bartolo di Nese"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1123_DSC00639-scr#7/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 79.81,
+      "lire_mean": 79.81,
+      "lire_median": 79.81,
+      "lire_max": 79.81,
+      "lire_min": 79.81
+     },
+     {
+      "value": "lavoratore",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Domenicuccio d'Andrea"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1126_DSC00642-scr#1/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 64.88,
+      "lire_mean": 64.88,
+      "lire_median": 64.88,
+      "lire_max": 64.88,
+      "lire_min": 64.88
+     },
+     {
+      "value": "tessitore di drappi",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Bartolomeo di Neri"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1128_DSC00644-scr#16/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 23.23,
+      "lire_mean": 23.23,
+      "lire_median": 23.23,
+      "lire_max": 23.23,
+      "lire_min": 23.23
+     },
+     {
+      "value": "sarto",
+      "transactions": 2,
+      "people": 2,
+      "people_names": [
+       "Francesco di Detto",
+       "Nanni di Pagolo"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1123_DSC00639-scr#2/1",
+       "RS1128_DSC00644-scr#35/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 6.83,
+      "lire_mean": 6.83,
+      "lire_median": 6.83,
+      "lire_max": 6.83,
+      "lire_min": 6.83
+     },
+     {
+      "value": "speziale",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Brunetto di Baldino"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1128_DSC00644-scr#21/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 6.55,
+      "lire_mean": 6.55,
+      "lire_median": 6.55,
+      "lire_max": 6.55,
+      "lire_min": 6.55
+     },
+     {
+      "value": "maestro",
+      "transactions": 4,
+      "people": 4,
+      "people_names": [
+       "Domenico del Carnina",
+       "Filippo di Lossello",
+       "Lapo di Filippo",
+       "Pagolo di Choso"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1122_DSC00638-scr#9/1",
+       "RS1128_DSC00644-scr#7/1",
+       "RS1128_DSC00644-scr#8/1",
+       "RS1128_DSC00644-scr#9/1"
+      ],
+      "lire_n": 3,
+      "lire_total": 10.77,
+      "lire_mean": 3.59,
+      "lire_median": 4.35,
+      "lire_max": 5.22,
+      "lire_min": 1.2
+     },
+     {
+      "value": "albergatore",
+      "transactions": 2,
+      "people": 2,
+      "people_names": [
+       "Michele Pucci",
+       "Tingo di Lapo"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1120_DSC00636-scr#3/1",
+       "RS1122_DSC00638-scr#12/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 4.08,
+      "lire_mean": 4.08,
+      "lire_median": 4.08,
+      "lire_max": 4.08,
+      "lire_min": 4.08
+     },
+     {
+      "value": "biadaiolo",
+      "transactions": 2,
+      "people": 2,
+      "people_names": [
+       "Baldino di Buto",
+       "Piero di Martino"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1128_DSC00644-scr#19/1",
+       "RS1128_DSC00644-scr#30/1"
+      ],
+      "lire_n": 2,
+      "lire_total": 7.92,
+      "lire_mean": 3.96,
+      "lire_median": 3.96,
+      "lire_max": 5.85,
+      "lire_min": 2.07
+     },
+     {
+      "value": "barilaio",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Angiolino di Niccolaio"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1123_DSC00639-scr#11/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 3.35,
+      "lire_mean": 3.35,
+      "lire_median": 3.35,
+      "lire_max": 3.35,
+      "lire_min": 3.35
+     },
+     {
+      "value": "pagliaiolo",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Domenico di Geri"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1128_DSC00644-scr#27/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 3.25,
+      "lire_mean": 3.25,
+      "lire_median": 3.25,
+      "lire_max": 3.25,
+      "lire_min": 3.25
+     },
+     {
+      "value": "calzolaio",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Bernardo di Corso"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1128_DSC00644-scr#33/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 2.35,
+      "lire_mean": 2.35,
+      "lire_median": 2.35,
+      "lire_max": 2.35,
+      "lire_min": 2.35
+     },
+     {
+      "value": "(no occupation recorded)",
+      "transactions": 37,
+      "people": 43,
+      "people_names": [
+       "Antonio di Sandro",
+       "Beldi di Marco",
+       "Cambio di Bettino",
+       "Ceni",
+       "Compagnia di Santa Maria da Carraia",
+       "Cristofano di Sandro",
+       "Dada",
+       "Dea",
+       "Ermanno di Mato",
+       "Filippo di Brunetto",
+       "Filippo di Rinaldo Rondinelli",
+       "Francecho Masi",
+       "Gherardo di ser Ugolino",
+       "Giovanni di Matteo di Caronbello",
+       "Guelfo di Nuto",
+       "Leonardo di Donato",
+       "Lorenza",
+       "Macho",
+       "Mante",
+       "Maria",
+       "Matteo di Cecco",
+       "Michele di Bonagiunta",
+       "Michele di Sandro",
+       "Miglino",
+       "Mino di Ciapo",
+       "Morando di Guido",
+       "Nanni de' Tassi",
+       "Nanni di Cione",
+       "Nanni di Piero Nucci",
+       "Niccolò di Vanni Pagani",
+       "Niccolò di Vanozzo Baroni",
+       "Niccolò di ser Bartolo",
+       "Opera di San Barnaba",
+       "Pagolo di Jacopo dell'Aressa",
+       "Pagolo di Jacopo della Cingha",
+       "Piero Ghii",
+       "San Barnaba",
+       "Sandro di Guido",
+       "Stefano di Lippo",
+       "Tedici di Manno Manovelli",
+       "Tommaso di ser Francecho Masi",
+       "Toso di Salvi",
+       "Vanni del Fede"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 8,
+      "ids": [
+       "RS1120_DSC00636-scr#2/1",
+       "RS1120_DSC00636-scr#2/2",
+       "RS1120_DSC00636-scr#4/1",
+       "RS1120_DSC00636-scr#5/1",
+       "RS1120_DSC00636-scr#6/1",
+       "RS1121_DSC00637-scr#1/1",
+       "RS1121_DSC00637-scr#3/1",
+       "RS1121_DSC00637-scr#6/1",
+       "RS1121_DSC00637-scr#8/1",
+       "RS1121_DSC00637-scr#9/1",
+       "RS1122_DSC00638-scr#1/1",
+       "RS1122_DSC00638-scr#7/1",
+       "RS1122_DSC00638-scr#8/1",
+       "RS1123_DSC00639-scr#1/1",
+       "RS1123_DSC00639-scr#3/1",
+       "RS1123_DSC00639-scr#8/1",
+       "RS1128_DSC00644-scr#2/1",
+       "RS1128_DSC00644-scr#3/1",
+       "RS1128_DSC00644-scr#4/1",
+       "RS1128_DSC00644-scr#5/1",
+       "RS1128_DSC00644-scr#6/1",
+       "RS1128_DSC00644-scr#10/1",
+       "RS1128_DSC00644-scr#13/1",
+       "RS1128_DSC00644-scr#14/1",
+       "RS1128_DSC00644-scr#15/1",
+       "RS1128_DSC00644-scr#20/1",
+       "RS1128_DSC00644-scr#22/1",
+       "RS1128_DSC00644-scr#24/1",
+       "RS1128_DSC00644-scr#25/1",
+       "RS1128_DSC00644-scr#26/1",
+       "RS1128_DSC00644-scr#28/1",
+       "RS1128_DSC00644-scr#29/1",
+       "RS1128_DSC00644-scr#31/1",
+       "RS1128_DSC00644-scr#32/1",
+       "RS1128_DSC00644-scr#34/1",
+       "RS1128_DSC00644-scr#36/1",
+       "RS1128_DSC00644-scr#37/1"
+      ],
+      "lire_n": 17,
+      "lire_total": 91.15,
+      "lire_mean": 5.36,
+      "lire_median": 2.0,
+      "lire_max": 24.0,
+      "lire_min": 0.5
+     },
+     {
+      "value": "fornaio",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Lorenzo di Giovanni"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1128_DSC00644-scr#11/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 1.91,
+      "lire_mean": 1.91,
+      "lire_median": 1.91,
+      "lire_max": 1.91,
+      "lire_min": 1.91
+     },
+     {
+      "value": "monaca",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Piera de' Guidalotti"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1128_DSC00644-scr#11/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 1.91,
+      "lire_mean": 1.91,
+      "lire_median": 1.91,
+      "lire_max": 1.91,
+      "lire_min": 1.91
+     },
+     {
+      "value": "prete",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Giovanni"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1128_DSC00644-scr#23/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 1.91,
+      "lire_mean": 1.91,
+      "lire_median": 1.91,
+      "lire_max": 1.91,
+      "lire_min": 1.91
+     },
+     {
+      "value": "ferratore",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Nanni di Benuccio"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1128_DSC00644-scr#18/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 1.11,
+      "lire_mean": 1.11,
+      "lire_median": 1.11,
+      "lire_max": 1.11,
+      "lire_min": 1.11
+     },
+     {
+      "value": "bicchieraio",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Francescho di Piero"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1121_DSC00637-scr#7/1"
+      ],
+      "lire_n": 1,
+      "lire_total": 0.01,
+      "lire_mean": 0.01,
+      "lire_median": 0.01,
+      "lire_max": 0.01,
+      "lire_min": 0.01
+     }
+    ],
+    "groups_total": 17,
+    "chart": null,
+    "over": "year",
+    "periods": [
+     "(undated)",
+     "1388",
+     "1389"
+    ],
+    "matrix": [
+     {
+      "period": "(undated)",
+      "value": "vinattiere",
+      "rank": 1,
+      "of": 14,
+      "metric": 79.81,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "tessitore di drappi",
+      "rank": 2,
+      "of": 14,
+      "metric": 23.23,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "sarto",
+      "rank": 3,
+      "of": 14,
+      "metric": 6.83,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "speziale",
+      "rank": 4,
+      "of": 14,
+      "metric": 6.55,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "maestro",
+      "rank": 5,
+      "of": 14,
+      "metric": 4.35,
+      "transactions": 4
+     },
+     {
+      "period": "(undated)",
+      "value": "albergatore",
+      "rank": 6,
+      "of": 14,
+      "metric": 4.08,
+      "transactions": 2
+     },
+     {
+      "period": "(undated)",
+      "value": "biadaiolo",
+      "rank": 7,
+      "of": 14,
+      "metric": 3.96,
+      "transactions": 2
+     },
+     {
+      "period": "(undated)",
+      "value": "pagliaiolo",
+      "rank": 8,
+      "of": 14,
+      "metric": 3.25,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "calzolaio",
+      "rank": 9,
+      "of": 14,
+      "metric": 2.35,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "fornaio",
+      "rank": 10,
+      "of": 14,
+      "metric": 1.91,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "monaca",
+      "rank": 11,
+      "of": 14,
+      "metric": 1.91,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "prete",
+      "rank": 12,
+      "of": 14,
+      "metric": 1.91,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "ferratore",
+      "rank": 13,
+      "of": 14,
+      "metric": 1.11,
+      "transactions": 1
+     },
+     {
+      "period": "(undated)",
+      "value": "bicchieraio",
+      "rank": 14,
+      "of": 14,
+      "metric": 0.01,
+      "transactions": 1
+     },
+     {
+      "period": 1388,
+      "value": "lavoratore",
+      "rank": 1,
+      "of": 1,
+      "metric": 64.88,
+      "transactions": 1
+     },
+     {
+      "period": 1389,
+      "value": "barilaio",
+      "rank": 1,
+      "of": 1,
+      "metric": 3.35,
+      "transactions": 1
+     }
+    ],
+    "consistency": [
+     {
+      "value": "vinattiere",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 1,
+      "periods_top3": 1,
+      "mean_rank": 1
+     },
+     {
+      "value": "lavoratore",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 1,
+      "periods_top3": 1,
+      "mean_rank": 1
+     },
+     {
+      "value": "barilaio",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 1,
+      "periods_top3": 1,
+      "mean_rank": 1
+     },
+     {
+      "value": "tessitore di drappi",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 1,
+      "mean_rank": 2
+     },
+     {
+      "value": "sarto",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 1,
+      "mean_rank": 3
+     },
+     {
+      "value": "speziale",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 4
+     },
+     {
+      "value": "maestro",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 5
+     },
+     {
+      "value": "albergatore",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 6
+     },
+     {
+      "value": "biadaiolo",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 7
+     },
+     {
+      "value": "pagliaiolo",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 8
+     },
+     {
+      "value": "calzolaio",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 9
+     },
+     {
+      "value": "fornaio",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 10
+     },
+     {
+      "value": "monaca",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 11
+     },
+     {
+      "value": "prete",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 12
+     },
+     {
+      "value": "ferratore",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 13
+     },
+     {
+      "value": "bicchieraio",
+      "periods_present": 1,
+      "periods_total": 3,
+      "periods_first": 0,
+      "periods_top3": 0,
+      "mean_rank": 14
+     }
+    ],
+    "id": "occ_li",
+    "op": "aggregate",
+    "title": "Median debt in lire, by occupation (and year by year)"
+   },
+   "occ_fl_total": {
+    "type": "table",
+    "by": "occupation",
+    "currencies": [
+     "florins"
+    ],
+    "rank_by": "total",
+    "split": "equal",
+    "min_n": 1,
+    "rows": [
+     {
+      "value": "vinattiere",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Bartolo di Nese"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1123_DSC00639-scr#7/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 176.0,
+      "florins_mean": 176.0,
+      "florins_median": 176.0,
+      "florins_max": 176.0,
+      "florins_min": 176.0
+     },
+     {
+      "value": "(no occupation recorded)",
+      "transactions": 37,
+      "people": 43,
+      "people_names": [
+       "Antonio di Sandro",
+       "Beldi di Marco",
+       "Cambio di Bettino",
+       "Ceni",
+       "Compagnia di Santa Maria da Carraia",
+       "Cristofano di Sandro",
+       "Dada",
+       "Dea",
+       "Ermanno di Mato",
+       "Filippo di Brunetto",
+       "Filippo di Rinaldo Rondinelli",
+       "Francecho Masi",
+       "Gherardo di ser Ugolino",
+       "Giovanni di Matteo di Caronbello",
+       "Guelfo di Nuto",
+       "Leonardo di Donato",
+       "Lorenza",
+       "Macho",
+       "Mante",
+       "Maria",
+       "Matteo di Cecco",
+       "Michele di Bonagiunta",
+       "Michele di Sandro",
+       "Miglino",
+       "Mino di Ciapo",
+       "Morando di Guido",
+       "Nanni de' Tassi",
+       "Nanni di Cione",
+       "Nanni di Piero Nucci",
+       "Niccolò di Vanni Pagani",
+       "Niccolò di Vanozzo Baroni",
+       "Niccolò di ser Bartolo",
+       "Opera di San Barnaba",
+       "Pagolo di Jacopo dell'Aressa",
+       "Pagolo di Jacopo della Cingha",
+       "Piero Ghii",
+       "San Barnaba",
+       "Sandro di Guido",
+       "Stefano di Lippo",
+       "Tedici di Manno Manovelli",
+       "Tommaso di ser Francecho Masi",
+       "Toso di Salvi",
+       "Vanni del Fede"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 8,
+      "ids": [
+       "RS1120_DSC00636-scr#2/1",
+       "RS1120_DSC00636-scr#2/2",
+       "RS1120_DSC00636-scr#4/1",
+       "RS1120_DSC00636-scr#5/1",
+       "RS1120_DSC00636-scr#6/1",
+       "RS1121_DSC00637-scr#1/1",
+       "RS1121_DSC00637-scr#3/1",
+       "RS1121_DSC00637-scr#6/1",
+       "RS1121_DSC00637-scr#8/1",
+       "RS1121_DSC00637-scr#9/1",
+       "RS1122_DSC00638-scr#1/1",
+       "RS1122_DSC00638-scr#7/1",
+       "RS1122_DSC00638-scr#8/1",
+       "RS1123_DSC00639-scr#1/1",
+       "RS1123_DSC00639-scr#3/1",
+       "RS1123_DSC00639-scr#8/1",
+       "RS1128_DSC00644-scr#2/1",
+       "RS1128_DSC00644-scr#3/1",
+       "RS1128_DSC00644-scr#4/1",
+       "RS1128_DSC00644-scr#5/1",
+       "RS1128_DSC00644-scr#6/1",
+       "RS1128_DSC00644-scr#10/1",
+       "RS1128_DSC00644-scr#13/1",
+       "RS1128_DSC00644-scr#14/1",
+       "RS1128_DSC00644-scr#15/1",
+       "RS1128_DSC00644-scr#20/1",
+       "RS1128_DSC00644-scr#22/1",
+       "RS1128_DSC00644-scr#24/1",
+       "RS1128_DSC00644-scr#25/1",
+       "RS1128_DSC00644-scr#26/1",
+       "RS1128_DSC00644-scr#28/1",
+       "RS1128_DSC00644-scr#29/1",
+       "RS1128_DSC00644-scr#31/1",
+       "RS1128_DSC00644-scr#32/1",
+       "RS1128_DSC00644-scr#34/1",
+       "RS1128_DSC00644-scr#36/1",
+       "RS1128_DSC00644-scr#37/1"
+      ],
+      "florins_n": 12,
+      "florins_total": 104.81,
+      "florins_mean": 8.73,
+      "florins_median": 3.5,
+      "florins_max": 25.69,
+      "florins_min": 0.5
+     },
+     {
+      "value": "albergatore",
+      "transactions": 2,
+      "people": 2,
+      "people_names": [
+       "Michele Pucci",
+       "Tingo di Lapo"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1120_DSC00636-scr#3/1",
+       "RS1122_DSC00638-scr#12/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 14.34,
+      "florins_mean": 14.34,
+      "florins_median": 14.34,
+      "florins_max": 14.34,
+      "florins_min": 14.34
+     },
+     {
+      "value": "lavoratore",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Domenicuccio d'Andrea"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1126_DSC00642-scr#1/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 6.0,
+      "florins_mean": 6.0,
+      "florins_median": 6.0,
+      "florins_max": 6.0,
+      "florins_min": 6.0
+     },
+     {
+      "value": "speziale",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Brunetto di Baldino"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1128_DSC00644-scr#21/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 4.0,
+      "florins_mean": 4.0,
+      "florins_median": 4.0,
+      "florins_max": 4.0,
+      "florins_min": 4.0
+     },
+     {
+      "value": "barilaio",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Angiolino di Niccolaio"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1123_DSC00639-scr#11/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 3.0,
+      "florins_mean": 3.0,
+      "florins_median": 3.0,
+      "florins_max": 3.0,
+      "florins_min": 3.0
+     },
+     {
+      "value": "calzolaio",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Bernardo di Corso"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 1,
+      "ids": [
+       "RS1128_DSC00644-scr#33/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 2.0,
+      "florins_mean": 2.0,
+      "florins_median": 2.0,
+      "florins_max": 2.0,
+      "florins_min": 2.0
+     }
+    ],
+    "groups_total": 7,
+    "chart": null,
+    "id": "occ_fl_total",
+    "op": "aggregate",
+    "title": "Total owed in florins, by occupation (check)"
+   },
+   "debts_clean": {
+    "type": "transactions",
+    "rows": [
+     {
+      "id": "RS1120_DSC00636-scr#2/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#2",
+      "lines": [
+       4,
+       5
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l6",
+       "RS1120_DSC00636-scr|l7"
+      ],
+      "line_ids": "l6,l7",
+      "sum_line_ids": "l7",
+      "debtors": [
+       {
+        "name": "Filippo di Rinaldo Rondinelli",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 4.8208,
+      "display": "℔ 4 ß 16 𝒹 5 pc̄",
+      "sum_written": "pē 𝓎 iiiiº ß xvi 𝒹 v",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Lo rede di filippo di Rinaldo rondi nelli deondare levāmo dal me̶ / moriale soꝑadetto a c̄ 3ꝯ e a libro giallo a c̄ 1ª1___pē ___𝓎 iiiiº ß xvi 𝒹 v",
+      "translation": "The heirs of Filippo di Rinaldo Rondinelli owe; we took it from the day- book abovesaid at fol. 3ꝯ and in the yellow book at fol. 1ª1___pē ___𝓎 iiiiº ß xvi 𝒹 v"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#2/2",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#2",
+      "lines": [
+       6,
+       7
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l13",
+       "RS1120_DSC00636-scr|l9"
+      ],
+      "line_ids": "l13,l9",
+      "sum_line_ids": "l9",
+      "debtors": [
+       {
+        "name": "Francecho Masi",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Tommaso di ser Francecho Masi",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 1.0,
+      "lire": null,
+      "display": "ƒ 1",
+      "sum_written": "ƒ 1",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "ß francecho masi overo ß tomāso suo figluiolo di dare alibro detto / a cār 3ꝯ e a libro giallo detto a cār 187 ___ƒ 1",
+      "translation": "Ser Francecho Masi or Ser Tommaso his son owes in the said book at fol. 3ꝯ and in the said yellow book at fol. 187 ___ƒ 1"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#3/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#3",
+      "lines": [
+       8,
+       9
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l14",
+       "RS1120_DSC00636-scr|l15"
+      ],
+      "line_ids": "l14,l15",
+      "sum_line_ids": "l15",
+      "debtors": [
+       {
+        "name": "Michele Pucci",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "albergatore"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 4.0792,
+      "display": "℔ 4 ß 1 𝒹 7 pc̄",
+      "sum_written": "pē 𝓎 iiiiº ß i 𝒹 vii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Michele pucci albergatroe ⁊ sue rede deondare a libro detto c̄ 3ꝯ / E a libro giallo detto a cār 189___pē___𝓎 iiiiº ß i 𝒹 vii",
+      "translation": "Michele Pucci, innkeeper, and his heirs owe in the said book fol. 3ꝯ And in the said yellow book at fol. 189___pē___𝓎 iiiiº ß i 𝒹 vii"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#4/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#4",
+      "lines": [
+       10,
+       11
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l16",
+       "RS1120_DSC00636-scr|l17"
+      ],
+      "line_ids": "l16,l17",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "San Barnaba",
+        "type": "institution",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Convento di sambernaba di firenze deondare al detto libro c̄  40 / E alibro giallo detto a c̄ 10ꝵ",
+      "translation": "The convent of San Barnaba of Florence owes in the said book fol. 40 And in the said yellow book at fol. 10ꝵ"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#5/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#5",
+      "lines": [
+       12,
+       13
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l18",
+       "RS1120_DSC00636-scr|l19"
+      ],
+      "line_ids": "l18,l19",
+      "sum_line_ids": "l19",
+      "debtors": [
+       {
+        "name": "San Barnaba",
+        "type": "institution",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 13.0,
+      "lire": null,
+      "display": "ƒ 13",
+      "sum_written": "ƒ xiii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "E deondare le case di san bernaba come appare al detto libro a c̄ 40 / E a libro di deo a cār 330___ƒ xiii",
+      "translation": "And the houses of San Barnaba owe, as appears in the said book at fol. 40 And in Deo's book at fol. 330___ƒ xiii"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#6/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#6",
+      "lines": [
+       14,
+       15
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l20",
+       "RS1120_DSC00636-scr|l21"
+      ],
+      "line_ids": "l20,l21",
+      "sum_line_ids": "l21",
+      "debtors": [
+       {
+        "name": "Opera di San Barnaba",
+        "type": "institution",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 14.5833,
+      "display": "℔ 14 ß 11 𝒹 8 pc̄",
+      "sum_written": "pē 𝓎 xiiiiº ß xi 𝒹 viii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1389-02-13",
+      "year": 1389,
+      "year_written": 1388,
+      "year_inferred": false,
+      "text": "E de dare lo ꝑa di san bernaba al detto libro a cār 40 E a libro di deo / overo quaderno sognato n n a cār 83 pē 𝓎 xiiiiº ß xi 𝒹 viii",
+      "translation": "And the Opera (works) of San Barnaba owes, in the said book at fol. 40 and in Deo's book or quire marked n n at fol. 83 pē 𝓎 xiiiiº ß xi 𝒹 viii"
+     },
+     {
+      "id": "RS1120_DSC00636-scr#6/5",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1120_DSC00636-scr",
+      "entry": "RS1120_DSC00636-scr#6",
+      "lines": [
+       21,
+       22
+      ],
+      "keys": [
+       "RS1120_DSC00636-scr|l10",
+       "RS1120_DSC00636-scr|l11"
+      ],
+      "line_ids": "l10,l11",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Matteo di Giunta",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "tavernaio"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1389-02-13",
+      "year": 1389,
+      "year_written": 1388,
+      "year_inferred": false,
+      "text": "matteo di gunta tavēnaio di dare a libro detto a c̄  40 ⁊ a libro di deo / giallo a cār 298",
+      "translation": "Matteo di Gunta, taverner, owes in the said book at fol. 40 and in Deo's yellow book at fol. 298"
+     },
+     {
+      "id": "RS1121_DSC00637-scr#1/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1121_DSC00637-scr",
+      "entry": "RS1121_DSC00637-scr#1",
+      "lines": [
+       1,
+       2,
+       3
+      ],
+      "keys": [
+       "RS1121_DSC00637-scr|l1",
+       "RS1121_DSC00637-scr|l2",
+       "RS1121_DSC00637-scr|l4,l35"
+      ],
+      "line_ids": "l1,l2,l4,l35",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Niccolò di Vanozzo Baroni",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Niccolo di vanozo baroni dedare levām̄o dal memoriale tiene aminiato loro / attore acār 40 Ealibro di deo giallo acār 308 / pmise ꝓ lo detto Gherardo di ß vgolino ⁊ mō scotta sua don̄a a bianēlai",
+      "translation": "Niccolo di Vanozo Baroni owes; we took it from the daybook that Miniato, their agent, keeps, fol. 40, and in Deo's yellow book fol. 308 [he] promised for the said Gherardo di ser Ugolino and monna Scotta his wife [illegible]"
+     },
+     {
+      "id": "RS1121_DSC00637-scr#3/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1121_DSC00637-scr",
+      "entry": "RS1121_DSC00637-scr#3",
+      "lines": [
+       11
+      ],
+      "keys": [
+       "RS1121_DSC00637-scr|l8,l38"
+      ],
+      "line_ids": "l8,l38",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Guelfo di Nuto",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Guelfo di Nuto da fiesole de dare alibro detto ac̄ 41 E a libro giallo di",
+      "translation": "Guelfo di Nuto da Fiesole owes in the said book, fol. 41, and in the yellow book of"
+     },
+     {
+      "id": "RS1121_DSC00637-scr#9/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1121_DSC00637-scr",
+      "entry": "RS1121_DSC00637-scr#9",
+      "lines": [
+       52,
+       54
+      ],
+      "keys": [
+       "RS1121_DSC00637-scr|l30,l56",
+       "RS1121_DSC00637-scr|l31,l57"
+      ],
+      "line_ids": "l30,l56,l31,l57",
+      "sum_line_ids": "l30,l56",
+      "debtors": [
+       {
+        "name": "Niccolò di ser Bartolo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 3.0,
+      "lire": null,
+      "display": "ƒ 3",
+      "sum_written": "ƒ iii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1389-02-26",
+      "year": 1389,
+      "year_written": 1388,
+      "year_inferred": false,
+      "text": "Niccolo di ß bartolo da mangone de dare alibro detto acār 44 / assene la sentenza",
+      "translation": "Niccolo di ser Bartolo da Mangone owes in the said book, fol. 44 there is a judgment on it"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#1/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#1",
+      "lines": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l1",
+       "RS1122_DSC00638-scr|l2",
+       "RS1122_DSC00638-scr|l3",
+       "RS1122_DSC00638-scr|l4",
+       "RS1122_DSC00638-scr|l5",
+       "RS1122_DSC00638-scr|l6"
+      ],
+      "line_ids": "l1,l2,l3,l4,l5,l6",
+      "sum_line_ids": "l2",
+      "debtors": [
+       {
+        "name": "Mino di Ciapo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Lorenza",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Antonio di Sandro",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Cristofano di Sandro",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 32.0,
+      "lire": null,
+      "display": "ƒ 32",
+      "sum_written": "ƒ xxxii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "mino di ciapo da santa mª īpianeta de dare a libro detto ac̄ 44 / ƒ xxxii / ßii 𝒹 viii rē / x / 11 / Mona lorenza ⁊ Antonio ⁊ Cristo fano di sandro daghagliano",
+      "translation": "Mino di Ciapo da Santa Maria in Pianeta owes in the said book, fol. 44 ƒ xxxii ßii 𝒹 viii [illegible] x 11 Monna Lorenza and Antonio and Cristofano di Sandro da Ghagliano"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#3/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#3",
+      "lines": [
+       11,
+       12
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l11",
+       "RS1122_DSC00638-scr|l12"
+      ],
+      "line_ids": "l11,l12",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Guido d'Argomento",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "setaiolo"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Guido dargom̄to setaiuolo de dare a libro detto a c̄ 45 e a libro / loso di deo acār 143",
+      "translation": "Guido d'Argomento, silk merchant, owes in the said book, fol. 45, and in Deo's [pi]loso book, fol. 143"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#5/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#5",
+      "lines": [
+       17,
+       18
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l17",
+       "RS1122_DSC00638-scr|l18"
+      ],
+      "line_ids": "l17,l18",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Bernardo di Ricciardino",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "pizzicagnolo"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Bernardo di ricchardino pizicagnolo de dare a libro detto ac̄ 45 / E a libro piloso di deo acār 161",
+      "translation": "Bernardo di Ricchardino, provision seller, owes in the said book, fol. 45 and in Deo's piloso book, fol. 161"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#7/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#7",
+      "lines": [
+       22,
+       23,
+       24
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l22",
+       "RS1122_DSC00638-scr|l23",
+       "RS1122_DSC00638-scr|l24"
+      ],
+      "line_ids": "l22,l23,l24",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Tedici di Manno Manovelli",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Tedici di man̄o manovelli de dare a libro detto ac̄ 45 E a libro / piloso di deo acār 166 / pago īēo 𝒹i van̄i",
+      "translation": "Tedici di Manno Manovelli owes in the said book, fol. 45, and in Deo's piloso book, fol. 166 paid [illegible] di Vanni"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#8/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#8",
+      "lines": [
+       26,
+       27
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l26",
+       "RS1122_DSC00638-scr|l27"
+      ],
+      "line_ids": "l26,l27",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Piero Ghii",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Maria",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Piero ghii ⁊ amō maria sua don̄a deondare a libro detto ac̄ 45 / E a libro piloso di deo acār 189",
+      "translation": "Piero Ghii and monna Maria his wife owe in the said book, fol. 45 and in Deo's piloso book, fol. 189"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#9/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#9",
+      "lines": [
+       29,
+       30
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l29",
+       "RS1122_DSC00638-scr|l30"
+      ],
+      "line_ids": "l29,l30",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Filippo di Lossello",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "maestro"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "ilippo di lossello maestro da quarto de dare a libro detto ac̄ 46 / a libro piloso di deo acār 199",
+      "translation": "[F]ilippo di Lossello, master, of Quarto, owes in the said book, fol. 46 in Deo's piloso book, fol. 199"
+     },
+     {
+      "id": "RS1122_DSC00638-scr#12/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1122_DSC00638-scr",
+      "entry": "RS1122_DSC00638-scr#12",
+      "lines": [
+       36,
+       37,
+       38
+      ],
+      "keys": [
+       "RS1122_DSC00638-scr|l36",
+       "RS1122_DSC00638-scr|l37",
+       "RS1122_DSC00638-scr|l38"
+      ],
+      "line_ids": "l36,l37,l38",
+      "sum_line_ids": "l38",
+      "debtors": [
+       {
+        "name": "Tingo di Lapo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "albergatore"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 14.3448,
+      "lire": null,
+      "display": "ƒ 14 ß 10",
+      "sum_written": "ƒ xiiiiº ß x",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Tingo di lapo albergatore ī borgo salorenzo de dare a libro detto c̄ 46 / E a libro rosso di deo acār 22 pc / ƒ xiiiiº ß x",
+      "translation": "Tingo di Lapo, innkeeper in Borgo San Lorenzo, owes in the said book, fol. 46 and in Deo's red book, fol. 22 pc ƒ xiiiiº ß x"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#1/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#1",
+      "lines": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l1",
+       "RS1123_DSC00639-scr|l2",
+       "RS1123_DSC00639-scr|l3",
+       "RS1123_DSC00639-scr|l4",
+       "RS1123_DSC00639-scr|l5"
+      ],
+      "line_ids": "l1,l2,l3,l4,l5",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Ermanno di Mato",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Mante",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Erman̄o di mato ⁊ mon̄a mante sua don̄a dasesto deondare a libro detto / xx / acār 46 E a libro rosso di deo acār 23 / 1ch xvi / dignitia. Sicut pro his qui mecum filiis tene",
+      "translation": "Ermanno di Mato and monna Mante his wife, from Sesto, ought to pay, in the said book xx at fol. 46 and in the red book of Deo at fol. 23 1ch xvi [Latin pen trial: illegible]"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#2/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#2",
+      "lines": [
+       6,
+       7,
+       8
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l6",
+       "RS1123_DSC00639-scr|l7",
+       "RS1123_DSC00639-scr|l8"
+      ],
+      "line_ids": "l6,l7,l8",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Francesco di Detto",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "sarto"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1388-07-13",
+      "year": 1388,
+      "year_written": 1388,
+      "year_inferred": true,
+      "text": "Francescho di detto sarto ī borgosalorenzo de dare a libro detto acār / E a libro Rosso di deo ac̄ 36 E a libro giallo di deo ac̄ 276 ⁊ ac̄ 320 / Ene tenuta mō Niccolosa che fu sua don̄ā chenogle di benedeto pizicaºglo",
+      "translation": "Francescho di Detto, tailor in Borgo San Lorenzo, owes in the said book at fol. and in the red book of Deo at fol. 36 and in the yellow book of Deo at fol. 276 and at fol. 320 and monna Niccolosa, who was his wife, [daughter?] of Benedetto, cheesemonger, is liable for it"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#3/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#3",
+      "lines": [
+       12,
+       13
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l12",
+       "RS1123_DSC00639-scr|l13"
+      ],
+      "line_ids": "l12,l13",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Toso di Salvi",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Toso di salvi dacastello de dare a libro detto ac̄47 E a libro Rosso di deo / acār 42",
+      "translation": "Toso di Salvi from Castello owes in the said book at fol. 47 and in the red book of Deo at fol. 42"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#6/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#6",
+      "lines": [
+       23,
+       24,
+       25,
+       26
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l23",
+       "RS1123_DSC00639-scr|l24",
+       "RS1123_DSC00639-scr|l25",
+       "RS1123_DSC00639-scr|l26"
+      ],
+      "line_ids": "l23,l24,l25,l26",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Antonio di Firenze",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "tavernaio"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Antonio di firenze tan̄enaio de dare a libro detto ac̄ 47 E a libro Rosso / di deo acār [del: 45] 65 ꝓ Resto / ƒ / ß",
+      "translation": "Antonio di Firenze, taverner, owes in the said book at fol. 47 and in the red book of Deo at fol. 65, for the remainder ƒ ß"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#8/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#8",
+      "lines": [
+       29,
+       30,
+       31
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l29",
+       "RS1123_DSC00639-scr|l30",
+       "RS1123_DSC00639-scr|l31"
+      ],
+      "line_ids": "l29,l30,l31",
+      "sum_line_ids": "l31",
+      "debtors": [
+       {
+        "name": "Leonardo di Donato",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 25.6897,
+      "lire": null,
+      "display": "ƒ 25 ß 20",
+      "sum_written": "ƒ xxv ß xx",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "leonardo di donato nellavia dellalbero asanpaolo de dare a libro detto c̄ 47 / E a libro Rosso di deo acār 74 / ƒ xxv ßxx",
+      "translation": "Leonardo di Donato, in the Via dell'Albero at San Paolo, owes in the said book, fol. 47 and in the red book of Deo at fol. 74 ƒ xxv ßxx"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#9/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#9",
+      "lines": [
+       32,
+       33
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l32",
+       "RS1123_DSC00639-scr|l33"
+      ],
+      "line_ids": "l32,l33",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Giovanni di Gherardo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "bottaio"
+        ],
+        "occupation_basis": "same entry"
+       },
+       {
+        "name": "Bartolomea",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Giovan̄i di gherardo vocato prete bottaio de dare a libro detto ac̄ 47 ⁊ / mō bartolomea sua don̄a E a libro rosso di deo acār 78",
+      "translation": "Giovanni di Gherardo, called Prete, cooper, owes in the said book at fol. 47, and monna Bartolomea his wife; and in the red book of Deo at fol. 78"
+     },
+     {
+      "id": "RS1123_DSC00639-scr#11/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1123_DSC00639-scr",
+      "entry": "RS1123_DSC00639-scr#11",
+      "lines": [
+       36,
+       37
+      ],
+      "keys": [
+       "RS1123_DSC00639-scr|l36",
+       "RS1123_DSC00639-scr|l37"
+      ],
+      "line_ids": "l36,l37",
+      "sum_line_ids": "l36",
+      "debtors": [
+       {
+        "name": "Angiolino di Niccolaio",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "barilaio"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 3.0,
+      "lire": 3.35,
+      "display": "ƒ 3 ℔ 3 ß 7",
+      "sum_written": "ƒiō iii ℔ iii ß vii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1389-10-11",
+      "year": 1389,
+      "year_written": 1389,
+      "year_inferred": false,
+      "text": "Angiolino di niccolaio barliere tedescho ī borgo salorenzo de dare a libro ƒiō iii ℔ iii ß vii / detto acār 48 E a libro Rosse di deo acār 91",
+      "translation": "Angiolino di Niccolaio, German barrel-maker in Borgo San Lorenzo, owes in the book  fiorini iii ℔ iii ß vii said, at fol. 48, and in the red book of Deo at fol. 91"
+     },
+     {
+      "id": "RS1126_DSC00642-scr#1/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1126_DSC00642-scr",
+      "entry": "RS1126_DSC00642-scr#1",
+      "lines": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "keys": [
+       "RS1126_DSC00642-scr|l1",
+       "RS1126_DSC00642-scr|l2",
+       "RS1126_DSC00642-scr|l3",
+       "RS1126_DSC00642-scr|l4",
+       "RS1126_DSC00642-scr|l5"
+      ],
+      "line_ids": "l1,l2,l3,l4,l5",
+      "sum_line_ids": "l5",
+      "debtors": [
+       {
+        "name": "Domenicuccio d'Andrea",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "lavoratore"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 6.0,
+      "lire": 64.875,
+      "display": "ƒ 6 ℔ 64 ß 17 𝒹 6 pc̄",
+      "sum_written": "ƒo vi ℔ lxiiiiº ß xvii 𝒹 vi pc̄",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "1388-12-12",
+      "year": 1388,
+      "year_written": 1388,
+      "year_inferred": false,
+      "text": "domenichuccio dandrea lavoratore a castello de dare a libro detto / acār 59 / Qquidem quodam / 13 / ƒo vi ℔ lxiiiiº ßxvii 𝒹vi pc̄",
+      "translation": "Domenichuccio d'Andrea, tenant farmer at Castello, owes, in the said book at fol. 59 [pen trial: Qquidem quodam] 13 ƒo vi ℔ lxiiiiº ßxvii 𝒹vi pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#3/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#3",
+      "lines": [
+       6
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l8"
+      ],
+      "line_ids": "l8",
+      "sum_line_ids": "l8",
+      "debtors": [
+       {
+        "name": "Filippo di Brunetto",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Macho",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 2.0,
+      "lire": null,
+      "display": "ƒ 2",
+      "sum_written": "ƒ ii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Filippo di brunetto chiamato matano ⁊ macho dasesto deondare ac̄ 39ƒ ii",
+      "translation": "Filippo di Brunetto, called Matano, and Macho of Sesto owe, at folio 39, ƒ ii"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#4/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#4",
+      "lines": [
+       7
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l9,l11"
+      ],
+      "line_ids": "l9,l11",
+      "sum_line_ids": "l9,l11",
+      "debtors": [
+       {
+        "name": "Niccolò di Vanni Pagani",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.0,
+      "display": "℔ 1",
+      "sum_written": "℔ i",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Niccolo di van̄i pagan̄i dacalenzano de dare al detto libro ac̄ 39pc̄",
+      "translation": "Niccolò di Vanni Pagani of Calenzano owes, in the said book at folio 39, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#5/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#5",
+      "lines": [
+       9
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l10,l12,l29"
+      ],
+      "line_ids": "l10,l12,l29",
+      "sum_line_ids": "l10,l12,l29",
+      "debtors": [
+       {
+        "name": "Stefano di Lippo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.25,
+      "display": "℔ 1 ß 5",
+      "sum_written": "℔ i | ßv",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Stefano dilippo da torri di val di marina de dare al detto ac̄ 39pc̄",
+      "translation": "Stefano di Lippo of Torri in Val di Marina owes, in the said [book] at folio 39, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#6/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#6",
+      "lines": [
+       12
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l13"
+      ],
+      "line_ids": "l13",
+      "sum_line_ids": "l13",
+      "debtors": [
+       {
+        "name": "Matteo di Cecco",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 1.0,
+      "display": "℔ 1 pc̄",
+      "sum_written": "pc̄ ℔ i",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "matteo di cecto da torri de dare a libro a libro detto acār 39 pc̄ ℔ i",
+      "translation": "Matteo di Cecto of Torri owes, in the said book [book written twice] at folio 39, pc̄ ℔ i"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#7/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#7",
+      "lines": [
+       13
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l14,l16,l30"
+      ],
+      "line_ids": "l14,l16,l30",
+      "sum_line_ids": "l14,l16,l30",
+      "debtors": [
+       {
+        "name": "Domenico del Carnina",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "maestro"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 4.35,
+      "display": "℔ 4 ß 7",
+      "sum_written": "℔ iiiiº | ß vii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "domenicho del carnina maestro de dare a libro detto acār 39 pc̄",
+      "translation": "Domenico del Carnina, master [builder?], owes, in the said book at folio 39, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#8/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#8",
+      "lines": [
+       16
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l15,l17,l31,l33"
+      ],
+      "line_ids": "l15,l17,l31,l33",
+      "sum_line_ids": "l15,l17,l31,l33",
+      "debtors": [
+       {
+        "name": "Pagolo di Choso",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "maestro"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 5.2167,
+      "display": "℔ 5 ß 4 𝒹 4",
+      "sum_written": "℔ v | ß iiiiº | 𝒹 iiiiº",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Pagolo di choso maestro dedare a libro detto acār 39 pc̄",
+      "translation": "Pagolo di Choso, master [builder?], owes, in the said book at folio 39, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#10/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#10",
+      "lines": [
+       22,
+       23,
+       25
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l22",
+       "RS1128_DSC00644-scr|l24,l25",
+       "RS1128_DSC00644-scr|l19"
+      ],
+      "line_ids": "l22,l24,l25,l19",
+      "sum_line_ids": "l24,l25",
+      "debtors": [
+       {
+        "name": "Michele di Sandro",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 1.0,
+      "lire": null,
+      "display": "ƒ 1",
+      "sum_written": "ƒ 1",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "m ichele di sandro chugino di marcho stellucci de dare al detto ac̄ 39 / En̄e la sentenza / potuit indubium indigne et iudisti. Qđ si ad",
+      "translation": "Michele di Sandro, cousin of Marco Stellucci, owes, in the said [book] at folio 39 There is a judgment on it [?] [Latin:] could [be] in doubt, unworthily, and you judged. But if to [?]"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#11/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#11",
+      "lines": [
+       26,
+       27
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l34",
+       "RS1128_DSC00644-scr|l35,l37"
+      ],
+      "line_ids": "l34,l35,l37",
+      "sum_line_ids": "l34",
+      "debtors": [
+       {
+        "name": "Piera de' Guidalotti",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "monaca"
+        ],
+        "occupation_basis": "same entry"
+       },
+       {
+        "name": "Lorenzo di Giovanni",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "fornaio"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 3.825,
+      "display": "℔ 3 ß 16 𝒹 6 pc̄",
+      "sum_written": "pc̄ ℔ iii ß xvi 𝒹 vi",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "suora piera monacha de guidalotti de dare a libro detto ac̄ 40 pc̄ ℔ iii ß xvi 𝒹 vi / lorenzo di Giovan̄i fornaio ī bargo lanoce a libro detto ac̄ 40. pc̄ ℔ iiiiº",
+      "translation": "Sister Piera, nun, of the Guidalotti owes, in the said book at folio 40, pc̄ ℔ iii ß xvi 𝒹 vi Lorenzo di Giovanni, baker in Borgo la Noce, [owes] in the said book at folio 40, pc̄ ℔ iiiiº"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#13/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#13",
+      "lines": [
+       31
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l39"
+      ],
+      "line_ids": "l39",
+      "sum_line_ids": "l39",
+      "debtors": [
+       {
+        "name": "Cambio di Bettino",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 6.1917,
+      "display": "℔ 6 ß 3 𝒹 10 pc̄",
+      "sum_written": "pc̄ ℔ vi ß iii 𝒹 x",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Cambio di bettino ī borgo lanoce de dare a libro detto ac̄40 pc̄ ℔ vi ß iii 𝒹 x",
+      "translation": "Cambio di Bettino in Borgo la Noce owes, in the said book at folio 40, pc̄ ℔ vi ß iii 𝒹 x"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#14/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#14",
+      "lines": [
+       32
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l40"
+      ],
+      "line_ids": "l40",
+      "sum_line_ids": "l40",
+      "debtors": [
+       {
+        "name": "Nanni di Cione",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 3.25,
+      "display": "℔ 3 ß 5 pc̄",
+      "sum_written": "pc̄ ℔ iii ß v",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Nan̄i dicione da collina dedare a libro detto acār 41 pc̄ ℔ iii ß v",
+      "translation": "Nanni di Cione of Collina owes, in the said book at folio 41, pc̄ ℔ iii ß v"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#15/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#15",
+      "lines": [
+       33
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l41"
+      ],
+      "line_ids": "l41",
+      "sum_line_ids": "l41",
+      "debtors": [
+       {
+        "name": "Nanni di Piero Nucci",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 3.0,
+      "lire": null,
+      "display": "ƒ 3 pc̄",
+      "sum_written": "pc̄ ƒ iii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Nan̄i di piero nucci al mēcatale agrieve de dare a libro detto c̄ 41 pc̄ ƒ iii",
+      "translation": "Nanni di Piero Nucci at the Mercatale of Greve owes, in the said book at folio 41, pc̄ ƒ iii"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#16/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#16",
+      "lines": [
+       34,
+       36,
+       37,
+       38
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l42,l46",
+       "RS1128_DSC00644-scr|l43",
+       "RS1128_DSC00644-scr|l20",
+       "RS1128_DSC00644-scr|l44,l47"
+      ],
+      "line_ids": "l42,l46,l43,l20,l44,l47",
+      "sum_line_ids": "l42,l46",
+      "debtors": [
+       {
+        "name": "Antonio",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       },
+       {
+        "name": "Bartolomeo di Neri",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "tessitore di drappi"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 46.45,
+      "display": "℔ 46 ß 9",
+      "sum_written": "℔ xlvi ß viiiiº",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "mesß Antonio ⁊ ī calonaci di salorenzo deondare a libro detto c̄ 41 pc̄ / ß piero pucci / modum uideatur. si ad modũ ipsũ potuerit / Bartolomeo di Neri chetesse i drappi ī via sangallo dalłe don̄e delgli",
+      "translation": "Messer Antonio and the canons of San Lorenzo owe, in the said book at folio 41, pc̄ Ser Piero Pucci [Latin:] manner it should seem. If it could [come] to that very manner [?] Bartolomeo di Neri, who weaves cloths in Via San Gallo, by the [house of the] women of the"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#22/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#22",
+      "lines": [
+       51
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l53,l62"
+      ],
+      "line_ids": "l53,l62",
+      "sum_line_ids": "l53,l62",
+      "debtors": [
+       {
+        "name": "Michele di Bonagiunta",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 0.5,
+      "display": "ß 10",
+      "sum_written": "ßx",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "michele di bonagiunta da sancresci de dare a libro detto ac̄ 43",
+      "translation": "Michele di Bonagiunta of San Cresci owes, in the said book at folio 43"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#26/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#26",
+      "lines": [
+       59
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l66"
+      ],
+      "line_ids": "l66",
+      "sum_line_ids": "l66",
+      "debtors": [
+       {
+        "name": "Beldi di Marco",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 8.225,
+      "display": "℔ 8 ß 4 𝒹 6 pc̄",
+      "sum_written": "pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "mō beldi di marcho Nel chiasso de buoi de dare a libro detto ac̄ 44 pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "translation": "Monna Beldi di Marco, in the Chiasso de' Buoi, owes, in the said book at folio 44, pc̄ ℔ viii ß iiiiº 𝒹 vi"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#28/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#28",
+      "lines": [
+       62
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l68,l69"
+      ],
+      "line_ids": "l68,l69",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Sandro di Guido",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Sandro di Guido chiamato scarpentrasso dacastello de dare c̄ 44 pc̄",
+      "translation": "Sandro di Guido, called Scarpentrasso, of Castello owes, at folio 44, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#29/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#29",
+      "lines": [
+       64
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l71"
+      ],
+      "line_ids": "l71",
+      "sum_line_ids": "l71",
+      "debtors": [
+       {
+        "name": "Morando di Guido",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 12.35,
+      "display": "℔ 12 ß 7 pc̄",
+      "sum_written": "pc̄ ℔ xii ß vii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "morando di guido dam̄ote carulli de dare a libro detto ac̄ 47 pc̄ ℔ xii ß vii",
+      "translation": "Morando di Guido of Monte Carulli owes, in the said book at folio 47, pc̄ ℔ xii ß vii"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#30/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#30",
+      "lines": [
+       65
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l72"
+      ],
+      "line_ids": "l72",
+      "sum_line_ids": "l72",
+      "debtors": [
+       {
+        "name": "Piero di Martino",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "biadaiolo"
+        ],
+        "occupation_basis": "same entry"
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 5.85,
+      "display": "℔ 5 ß 17 pc̄",
+      "sum_written": "pc̄ ℔ v ß xvii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "piero di mãtino biadaiuolo acalenzano de dare a libro detto c̄ 48 pc̄ ℔ v ß xvii",
+      "translation": "Piero di Martino, grain dealer at Calenzano, owes, in the said book at folio 48, pc̄ ℔ v ß xvii"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#32/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#32",
+      "lines": [
+       70
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l74,l75"
+      ],
+      "line_ids": "l74,l75",
+      "sum_line_ids": "l74,l75",
+      "debtors": [
+       {
+        "name": "Vanni del Fede",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 2.0,
+      "display": "℔ 2",
+      "sum_written": "℔ ii",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "van̄i del fede da castello de dare al detto libro ac̄ 49 pc̄",
+      "translation": "Vanni del Fede of Castello owes, in the said book at folio 49, pc̄"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#34/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#34",
+      "lines": [
+       75
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l77"
+      ],
+      "line_ids": "l77",
+      "sum_line_ids": "",
+      "debtors": [
+       {
+        "name": "Dada",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": null,
+      "display": "",
+      "sum_written": "",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "mō dada don̄a fu di bernado di ceccho spina de dare a libro detto c̄ 50ƒ",
+      "translation": "Monna Dada, widow of Bernado di Ceccho Spina, owes, in the said book at folio 50, ƒ"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#35/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#35",
+      "lines": [
+       76
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l83"
+      ],
+      "line_ids": "l83",
+      "sum_line_ids": "l83",
+      "debtors": [
+       {
+        "name": "Nanni di Pagolo",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [
+         "sarto"
+        ],
+        "occupation_basis": "same entry"
+       },
+       {
+        "name": "Francesco Ganazzi",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": null,
+      "lire": 13.6667,
+      "display": "℔ 13 ß 13 𝒹 4 pc̄",
+      "sum_written": "pc̄ ℔ xiii ß xiii 𝒹 iiiiº",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "Nan̄i di pagolo sarto ⁊ francescho ganazi deondare ac̄ 50pc̄ ℔ xiii ß xiii 𝒹 iiiiº",
+      "translation": "Nanni di Pagolo, tailor, and Francesco Ganazi owe, at folio 50, pc̄ ℔ xiii ß xiii 𝒹 iiiiº"
+     },
+     {
+      "id": "RS1128_DSC00644-scr#37/1",
+      "kind": "debt",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "entry": "RS1128_DSC00644-scr#37",
+      "lines": [
+       80
+      ],
+      "keys": [
+       "RS1128_DSC00644-scr|l86"
+      ],
+      "line_ids": "l86",
+      "sum_line_ids": "l86",
+      "debtors": [
+       {
+        "name": "Miglino",
+        "type": "person",
+        "status": "suggested",
+        "occupations": [],
+        "occupation_basis": ""
+       }
+      ],
+      "creditor": {
+       "name": "Heirs of Deo di Vanni",
+       "basis": "assumed (account holder)",
+       "status": "setting"
+      },
+      "florins": 4.0,
+      "lire": 24.0,
+      "display": "ƒ 4 ℔ 24",
+      "sum_written": "ƒ iiiiº ℔ xxiiiiº",
+      "sum_checked": false,
+      "sum_problems": false,
+      "tags_checked": false,
+      "date": "",
+      "year": null,
+      "year_written": null,
+      "year_inferred": false,
+      "text": "miglino chiamato ganardino dacastello de dare a libro ac̄ 51ƒ iiiiº ℔ xxiiiiº",
+      "translation": "Miglino, called Ganardino, of Castello owes, in the book at folio 51, ƒ iiiiº ℔ xxiiiiº"
+     }
+    ],
+    "count": 46,
+    "counts": {
+     "with_debtor": 46,
+     "with_sum": 30,
+     "sum_checked": 0,
+     "sum_problems": 0,
+     "tags_checked": 0,
+     "creditor_tagged": 0,
+     "creditor_assumed": 46,
+     "with_occupation": 17,
+     "dated": 6
+    },
+    "id": "debts_clean",
+    "op": "transactions",
+    "title": "Debts, leaving out flagged sums"
+   },
+   "occ_fl_clean": {
+    "type": "table",
+    "by": "occupation",
+    "currencies": [
+     "florins"
+    ],
+    "rank_by": "median",
+    "split": "equal",
+    "min_n": 1,
+    "rows": [
+     {
+      "value": "albergatore",
+      "transactions": 2,
+      "people": 2,
+      "people_names": [
+       "Michele Pucci",
+       "Tingo di Lapo"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1120_DSC00636-scr#3/1",
+       "RS1122_DSC00638-scr#12/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 14.34,
+      "florins_mean": 14.34,
+      "florins_median": 14.34,
+      "florins_max": 14.34,
+      "florins_min": 14.34
+     },
+     {
+      "value": "lavoratore",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Domenicuccio d'Andrea"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1126_DSC00642-scr#1/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 6.0,
+      "florins_mean": 6.0,
+      "florins_median": 6.0,
+      "florins_max": 6.0,
+      "florins_min": 6.0
+     },
+     {
+      "value": "(no occupation recorded)",
+      "transactions": 29,
+      "people": 35,
+      "people_names": [
+       "Antonio di Sandro",
+       "Beldi di Marco",
+       "Cambio di Bettino",
+       "Cristofano di Sandro",
+       "Dada",
+       "Ermanno di Mato",
+       "Filippo di Brunetto",
+       "Filippo di Rinaldo Rondinelli",
+       "Francecho Masi",
+       "Guelfo di Nuto",
+       "Leonardo di Donato",
+       "Lorenza",
+       "Macho",
+       "Mante",
+       "Maria",
+       "Matteo di Cecco",
+       "Michele di Bonagiunta",
+       "Michele di Sandro",
+       "Miglino",
+       "Mino di Ciapo",
+       "Morando di Guido",
+       "Nanni di Cione",
+       "Nanni di Piero Nucci",
+       "Niccolò di Vanni Pagani",
+       "Niccolò di Vanozzo Baroni",
+       "Niccolò di ser Bartolo",
+       "Opera di San Barnaba",
+       "Piero Ghii",
+       "San Barnaba",
+       "Sandro di Guido",
+       "Stefano di Lippo",
+       "Tedici di Manno Manovelli",
+       "Tommaso di ser Francecho Masi",
+       "Toso di Salvi",
+       "Vanni del Fede"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1120_DSC00636-scr#2/1",
+       "RS1120_DSC00636-scr#2/2",
+       "RS1120_DSC00636-scr#4/1",
+       "RS1120_DSC00636-scr#5/1",
+       "RS1120_DSC00636-scr#6/1",
+       "RS1121_DSC00637-scr#1/1",
+       "RS1121_DSC00637-scr#3/1",
+       "RS1121_DSC00637-scr#9/1",
+       "RS1122_DSC00638-scr#1/1",
+       "RS1122_DSC00638-scr#7/1",
+       "RS1122_DSC00638-scr#8/1",
+       "RS1123_DSC00639-scr#1/1",
+       "RS1123_DSC00639-scr#3/1",
+       "RS1123_DSC00639-scr#8/1",
+       "RS1128_DSC00644-scr#3/1",
+       "RS1128_DSC00644-scr#4/1",
+       "RS1128_DSC00644-scr#5/1",
+       "RS1128_DSC00644-scr#6/1",
+       "RS1128_DSC00644-scr#10/1",
+       "RS1128_DSC00644-scr#13/1",
+       "RS1128_DSC00644-scr#14/1",
+       "RS1128_DSC00644-scr#15/1",
+       "RS1128_DSC00644-scr#22/1",
+       "RS1128_DSC00644-scr#26/1",
+       "RS1128_DSC00644-scr#28/1",
+       "RS1128_DSC00644-scr#29/1",
+       "RS1128_DSC00644-scr#32/1",
+       "RS1128_DSC00644-scr#34/1",
+       "RS1128_DSC00644-scr#37/1"
+      ],
+      "florins_n": 9,
+      "florins_total": 59.19,
+      "florins_mean": 6.58,
+      "florins_median": 3.0,
+      "florins_max": 25.69,
+      "florins_min": 0.5
+     },
+     {
+      "value": "barilaio",
+      "transactions": 1,
+      "people": 1,
+      "people_names": [
+       "Angiolino di Niccolaio"
+      ],
+      "sums_checked": 0,
+      "sums_flagged": 0,
+      "ids": [
+       "RS1123_DSC00639-scr#11/1"
+      ],
+      "florins_n": 1,
+      "florins_total": 3.0,
+      "florins_mean": 3.0,
+      "florins_median": 3.0,
+      "florins_max": 3.0,
+      "florins_min": 3.0
+     }
+    ],
+    "groups_total": 4,
+    "chart": null,
+    "id": "occ_fl_clean",
+    "op": "aggregate",
+    "title": "Same, leaving out sums the rules flagged"
+   }
+  },
+  "coverage": {
+   "manuscripts": [
+    {
+     "id": "MPAP_4",
+     "pages_total": 593,
+     "pages_included": 38,
+     "statuses": [
+      "finished",
+      "sent_to_training"
+     ],
+     "pages_tagged": 10,
+     "tags": 459,
+     "tags_approved": 0,
+     "sums": 318,
+     "sums_checked": 1,
+     "entries": 620,
+     "account_holder": "Heirs of Deo di Vanni",
+     "date_style": "florentine"
+    }
+   ]
+  },
+  "t": "2026-10-23T10:26:29",
+  "caveats": [
+   "“De dare” means the person owed the estate; the book rarely says whether the debt is a loan, rent or a purchase.",
+   "Sums are mostly machine-read: 0 of 47 sums used were checked by you; 17 carry a rule warning.",
+   "63 of 63 rows have no creditor named; the account holder is assumed (Settings).",
+   "People and occupations come from tags: 0 of 63 rows rest only on tags you approved.",
+   "Florins and lire are kept apart (no exchange rate); ƒ ß 𝒹 a fiorino counted at 29 soldi to the florin.",
+   "MPAP_4: only 10 of 38 included pages are tagged (593 pages in the manuscript), so people and occupations are partial."
+  ]
+ },
+ "error": null,
+ "answer": {
+  "headline": "Not yet answerable with confidence: the largest single debt is a vinattiere's (ƒ 176 plus ℔ 79), but every occupation rests on one to three machine-read sums, so no occupation is shown to borrow large sums consistently.",
+  "answer": "Read as 'owed the estate in a de dare entry', the 10 tagged pages of MPAP 4 give 63 debts with a tagged debtor [debts]. Only 26 of them name the debtor's occupation, 47 have a sum, none of those sums has been checked yet, and 17 carry a rule warning.\n\nIn florins, the vinattiere ranks first by both median and total: Bartolo di Nese, vinattiere “da cā mignano”, owes ƒ 176 ℔ 79 ß 16 𝒹 2 on RS1123 [occ_fl] [occ_fl_total]. That is one entry. The next occupations (albergatore ƒ 14.34, lavoratore ƒ 6, speziale ƒ 4) also rest on a single florin sum each. In lire the order is vinattiere (℔ 79.81), lavoratore (℔ 64.88, Domenicuccio d'Andrea), tessitore di drappi (℔ 23.23), then sarto, speziale and maestro, all under ℔ 7 [occ_li]. Only maestro (3 sums, median ℔ 4.35) and biadaiolo (2 sums) have more than one lire sum.\n\nConsistency cannot be tested. Only 8 of the 63 debts carry a date (1388 and 1389), and each occupation appears in at most one dated year [occ_fl] [occ_li]. When sums the rules flagged are left out, the vinattiere's debt drops out (its sum has a plain 'd' read as denari) and the albergatore leads in florins with ƒ 14.34 [occ_fl_clean]. So the ranking depends on a single unchecked line.\n\nWhat the data does show: a vinattiere and a lavoratore owed the two largest debts in this sample, in both currencies, far above the typical debt (median ƒ 3.5 and ℔ 2 among debtors with no recorded occupation).",
+  "claims": [
+   {
+    "text": "The largest single debt with a recorded occupation is the vinattiere Bartolo di Nese's: ƒ 176 ℔ 79 ß 16 𝒹 2 pc̄.",
+    "evidence": "occ_fl: vinattiere (RS1123_DSC00639-scr#7/1)",
+    "strength": "moderate"
+   },
+   {
+    "text": "Each occupation's ranking rests on 1–3 sums; no occupation has more than 3 sums in either currency.",
+    "evidence": "occ_fl, occ_li: florins_n / lire_n",
+    "strength": "strong"
+   },
+   {
+    "text": "Whether any occupation 'consistently' owed more cannot be tested: 8 of 63 debts are dated, in two years.",
+    "evidence": "debts: dated; occ_fl consistency",
+    "strength": "strong"
+   },
+   {
+    "text": "Leaving out flagged sums changes the florin leader from vinattiere to albergatore.",
+    "evidence": "occ_fl_clean: albergatore",
+    "strength": "moderate"
+   }
+  ],
+  "caveats": [
+   "Many of these debts are arrears carried over from Deo's books ('levammo dal memoriale', 'a libro giallo'): they are what people owed the estate, often rents or purchases, not necessarily loans."
+  ],
+  "followups": [
+   "Check the 47 sums behind the debts in the Sums tab (start with RS1123 line of Bartolo di Nese and RS1126 Domenicuccio d'Andrea).",
+   "Approve the occupation tags on the 10 pilot pages, then tag RS1124–RS1145 so more debtors have an occupation.",
+   "Re-run this question once more pages are tagged; use rank_by median with min_n 3."
+  ],
+  "written_on_data_of": "2026-10-23T10:26:29"
+ },
+ "reruns": 2
+}
