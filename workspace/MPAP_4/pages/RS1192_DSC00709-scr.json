@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1192_DSC00709-scr.jpg",
  "order": 83,
- "folio": "61v",
+ "folio": "47r",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -283,7 +283,10 @@
     ]
    ],
    "readings": {
-    "kraken": "m ccclxxxv di Novēbre"
+    "kraken": "m ccclxxxv di Novēbre",
+    "tei": "(mccclxxxv di Novembre)",
+    "tei_expanded": "(mccclxxxv di Novembre)",
+    "claude": "(mccclxxxv di Novēbre"
    },
    "flag": false,
    "note": "",
@@ -693,7 +696,10 @@
     ]
    ],
    "readings": {
-    "kraken": "iii appresso faremo memoria di tutti libri ⁊ scricture le quali si trovaro"
+    "kraken": "iii appresso faremo memoria di tutti libri ⁊ scricture le quali si trovaro",
+    "tei": "Qui appresso faremo memoria di tutti libri e scritture lequali sitrovaro",
+    "tei_expanded": "Qui appresso faremo memoria di tutti libri e scritture lequali sitrovaro",
+    "claude": "Qui appresso faremo memoria di tutti libri ⁊ scritture lequali sitrovaro"
    },
    "flag": false,
    "note": "",
@@ -979,7 +985,10 @@
     ]
    ],
    "readings": {
-    "kraken": "nellurte di chalinala de detti ⁊ ꝓma"
+    "kraken": "nellurte di chalinala de detti ⁊ ꝓma",
+    "tei": "nellarte dichalimala dedetti e per prima",
+    "tei_expanded": "nellarte dichalimala dedetti e per prima",
+    "claude": "nellarte dichalimala dedetti ⁊ per prima"
    },
    "flag": false,
    "note": "",
@@ -1325,7 +1334,10 @@
     ]
    ],
    "readings": {
-    "kraken": "tre cassette Entrovi nelle due due tasche di scrcture di banlagia ⁊ alchima carta di"
+    "kraken": "tre cassette Entrovi nelle due due tasche di scrcture di banlagia ⁊ alchima carta di",
+    "tei": "tre cassette entroivi nelle due/ due tasche discritture di banbagia e alchuna carta di",
+    "tei_expanded": "tre cassette entroivi nelle due/ due tasche discritture di banbagia e alchuna carta di",
+    "claude": "tre cassette entroivi nelle due/ due tasche discritture di banbagia ⁊ alchuna carta di"
    },
    "flag": false,
    "note": "",
@@ -1679,7 +1691,10 @@
     ]
    ],
    "readings": {
-    "kraken": "petora Enellaltra cassetta avea uno suggello dariēto ⁊ uno cristallo piccolo Ilale"
+    "kraken": "petora Enellaltra cassetta avea uno suggello dariēto ⁊ uno cristallo piccolo Ilale",
+    "tei": "pecora E nellaltra cassetta . avea uno suggello darjento e uno cristallo piccolo ilquale",
+    "tei_expanded": "pecora E nellaltra cassetta . avea uno suggello darjento e uno cristallo piccolo ilquale",
+    "claude": "pecora ⁊ nellaltra cassetta . avea uno suggello darjento ⁊ uno cristallo piccolo ilquale"
    },
    "flag": false,
    "note": "",
@@ -2053,7 +2068,10 @@
     ]
    ],
    "readings": {
-    "kraken": "suggello ⁊ cristallo diedefsi dettod a Inghilese ⁊ amadon̄a 𝒹saletta"
+    "kraken": "suggello ⁊ cristallo diedefsi dettod a Inghilese ⁊ amadon̄a 𝒹saletta",
+    "tei": "suggello e cristallo dedesi dettodi Inghilese e a madonna Isabetta./",
+    "tei_expanded": "suggello e cristallo dedesi dettodi Inghilese e a madonna Isabetta./",
+    "claude": "suggello ⁊ cristallo dedesi dettodi Inghilese ⁊ a madonna Isabetta./"
    },
    "flag": false,
    "note": "",
@@ -2423,7 +2441,10 @@
     ]
    ],
    "readings": {
-    "kraken": "libri ⁊ quaderna chevisitrovarono entro sono questi"
+    "kraken": "libri ⁊ quaderna chevisitrovarono entro sono questi",
+    "tei": "Libri e quaderna cheinsitrovarono entre sono questi/",
+    "tei_expanded": "Libri e quaderna cheinsitrovarono entre sono questi/",
+    "claude": "Libri ⁊ quaderna cheinsitrovarono entre sono questi/"
    },
    "flag": false,
    "note": "",
@@ -2533,6 +2554,320 @@
   {
    "id": "l10",
    "polygon": [
+    [
+     190.0,
+     486.0
+    ],
+    [
+     192.0,
+     486.0
+    ],
+    [
+     193.0,
+     486.0
+    ],
+    [
+     194.0,
+     486.0
+    ],
+    [
+     218.0,
+     480.0
+    ],
+    [
+     289.0,
+     480.0
+    ],
+    [
+     345.0,
+     491.0
+    ],
+    [
+     346.0,
+     491.0
+    ],
+    [
+     347.0,
+     491.0
+    ],
+    [
+     369.0,
+     483.0
+    ],
+    [
+     454.0,
+     484.0
+    ],
+    [
+     467.0,
+     496.0
+    ],
+    [
+     467.0,
+     497.0
+    ],
+    [
+     468.0,
+     497.0
+    ],
+    [
+     469.0,
+     497.0
+    ],
+    [
+     470.0,
+     497.0
+    ],
+    [
+     471.0,
+     497.0
+    ],
+    [
+     472.0,
+     497.0
+    ],
+    [
+     489.0,
+     486.0
+    ],
+    [
+     552.0,
+     496.0
+    ],
+    [
+     553.0,
+     496.0
+    ],
+    [
+     594.0,
+     489.0
+    ],
+    [
+     624.0,
+     490.0
+    ],
+    [
+     637.0,
+     502.0
+    ],
+    [
+     638.0,
+     502.0
+    ],
+    [
+     640.0,
+     502.0
+    ],
+    [
+     641.0,
+     502.0
+    ],
+    [
+     694.0,
+     494.0
+    ],
+    [
+     723.0,
+     494.0
+    ],
+    [
+     734.0,
+     505.0
+    ],
+    [
+     736.0,
+     505.0
+    ],
+    [
+     737.0,
+     505.0
+    ],
+    [
+     738.0,
+     505.0
+    ],
+    [
+     857.0,
+     504.0
+    ],
+    [
+     869.0,
+     509.0
+    ],
+    [
+     870.0,
+     509.0
+    ],
+    [
+     964.0,
+     512.0
+    ],
+    [
+     966.0,
+     502.0
+    ],
+    [
+     966.0,
+     474.0
+    ],
+    [
+     811.0,
+     472.0
+    ],
+    [
+     800.0,
+     461.0
+    ],
+    [
+     798.0,
+     461.0
+    ],
+    [
+     797.0,
+     461.0
+    ],
+    [
+     796.0,
+     461.0
+    ],
+    [
+     795.0,
+     461.0
+    ],
+    [
+     766.0,
+     470.0
+    ],
+    [
+     744.0,
+     460.0
+    ],
+    [
+     743.0,
+     460.0
+    ],
+    [
+     742.0,
+     460.0
+    ],
+    [
+     697.0,
+     468.0
+    ],
+    [
+     630.0,
+     456.0
+    ],
+    [
+     629.0,
+     456.0
+    ],
+    [
+     477.0,
+     458.0
+    ],
+    [
+     436.0,
+     451.0
+    ],
+    [
+     435.0,
+     451.0
+    ],
+    [
+     401.0,
+     457.0
+    ],
+    [
+     366.0,
+     456.0
+    ],
+    [
+     359.0,
+     449.0
+    ],
+    [
+     359.0,
+     448.0
+    ],
+    [
+     358.0,
+     448.0
+    ],
+    [
+     357.0,
+     448.0
+    ],
+    [
+     282.0,
+     446.0
+    ],
+    [
+     281.0,
+     446.0
+    ],
+    [
+     280.0,
+     446.0
+    ],
+    [
+     258.0,
+     454.0
+    ],
+    [
+     224.0,
+     445.0
+    ],
+    [
+     222.0,
+     445.0
+    ],
+    [
+     221.0,
+     445.0
+    ],
+    [
+     119.0,
+     446.0
+    ],
+    [
+     119.0,
+     476.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     473.0
+    ],
+    [
+     465.0,
+     473.0
+    ],
+    [
+     740.0,
+     487.0
+    ],
+    [
+     887.0,
+     501.0
+    ],
+    [
+     966.0,
+     502.0
+    ]
+   ],
+   "readings": {
+    "kraken": "libro di tarte beali coverta di pecora di Giovan̄i baroncelli segna ƒ a dna iiiiº",
+    "tei": "1 libro di carte Reali coverta di pecora di Giovanni baroncelli segnata ff quaderna iiiio",
+    "tei_expanded": "1 libro di carte Reali coverta di pecora di Giovanni baroncelli segnata ff quaderna iiiio",
+    "claude": "1 libro di carte Reali coverta di pecora di Giovan̄i baroncelli segnata ff quaderna iiiio"
+   },
+   "flag": false,
+   "note": "",
+   "text": "libro di tarte beali coverta di pecora di Giovan̄i baroncelli segna ƒ a dna iiiiº",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      173.0,
      473.0
@@ -2822,7 +3157,7 @@
      473.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      173.0,
      473.0
@@ -2843,18 +3178,413 @@
      966.0,
      502.0
     ]
-   ],
-   "readings": {
-    "kraken": "libro di tarte beali coverta di pecora di Giovan̄i baroncelli segna ƒ a dna iiiiº"
-   },
-   "flag": false,
-   "note": "",
-   "text": "libro di tarte beali coverta di pecora di Giovan̄i baroncelli segna ƒ a dna iiiiº",
-   "agreement": null
+   ]
   },
   {
    "id": "l11",
    "polygon": [
+    [
+     1047.0,
+     510.0
+    ],
+    [
+     890.0,
+     507.0
+    ],
+    [
+     866.0,
+     500.0
+    ],
+    [
+     866.0,
+     500.0
+    ],
+    [
+     855.0,
+     499.0
+    ],
+    [
+     854.0,
+     498.0
+    ],
+    [
+     842.0,
+     504.0
+    ],
+    [
+     816.0,
+     498.0
+    ],
+    [
+     814.0,
+     498.0
+    ],
+    [
+     813.0,
+     498.0
+    ],
+    [
+     744.0,
+     502.0
+    ],
+    [
+     720.0,
+     489.0
+    ],
+    [
+     718.0,
+     489.0
+    ],
+    [
+     672.0,
+     489.0
+    ],
+    [
+     670.0,
+     489.0
+    ],
+    [
+     669.0,
+     489.0
+    ],
+    [
+     645.0,
+     498.0
+    ],
+    [
+     611.0,
+     491.0
+    ],
+    [
+     610.0,
+     491.0
+    ],
+    [
+     609.0,
+     491.0
+    ],
+    [
+     584.0,
+     498.0
+    ],
+    [
+     569.0,
+     486.0
+    ],
+    [
+     568.0,
+     486.0
+    ],
+    [
+     567.0,
+     486.0
+    ],
+    [
+     566.0,
+     486.0
+    ],
+    [
+     565.0,
+     486.0
+    ],
+    [
+     542.0,
+     493.0
+    ],
+    [
+     516.0,
+     484.0
+    ],
+    [
+     515.0,
+     484.0
+    ],
+    [
+     481.0,
+     483.0
+    ],
+    [
+     480.0,
+     483.0
+    ],
+    [
+     478.0,
+     483.0
+    ],
+    [
+     464.0,
+     490.0
+    ],
+    [
+     441.0,
+     482.0
+    ],
+    [
+     440.0,
+     482.0
+    ],
+    [
+     315.0,
+     478.0
+    ],
+    [
+     314.0,
+     478.0
+    ],
+    [
+     289.0,
+     484.0
+    ],
+    [
+     283.0,
+     480.0
+    ],
+    [
+     282.0,
+     480.0
+    ],
+    [
+     281.0,
+     480.0
+    ],
+    [
+     280.0,
+     480.0
+    ],
+    [
+     279.0,
+     480.0
+    ],
+    [
+     256.0,
+     489.0
+    ],
+    [
+     236.0,
+     480.0
+    ],
+    [
+     235.0,
+     480.0
+    ],
+    [
+     119.0,
+     478.0
+    ],
+    [
+     119.0,
+     515.0
+    ],
+    [
+     240.0,
+     513.0
+    ],
+    [
+     257.0,
+     520.0
+    ],
+    [
+     258.0,
+     520.0
+    ],
+    [
+     259.0,
+     520.0
+    ],
+    [
+     260.0,
+     520.0
+    ],
+    [
+     275.0,
+     514.0
+    ],
+    [
+     325.0,
+     514.0
+    ],
+    [
+     358.0,
+     523.0
+    ],
+    [
+     359.0,
+     523.0
+    ],
+    [
+     360.0,
+     523.0
+    ],
+    [
+     361.0,
+     523.0
+    ],
+    [
+     362.0,
+     523.0
+    ],
+    [
+     373.0,
+     517.0
+    ],
+    [
+     473.0,
+     518.0
+    ],
+    [
+     492.0,
+     531.0
+    ],
+    [
+     493.0,
+     531.0
+    ],
+    [
+     494.0,
+     531.0
+    ],
+    [
+     496.0,
+     531.0
+    ],
+    [
+     558.0,
+     521.0
+    ],
+    [
+     581.0,
+     536.0
+    ],
+    [
+     582.0,
+     536.0
+    ],
+    [
+     583.0,
+     536.0
+    ],
+    [
+     584.0,
+     536.0
+    ],
+    [
+     585.0,
+     536.0
+    ],
+    [
+     630.0,
+     523.0
+    ],
+    [
+     665.0,
+     538.0
+    ],
+    [
+     666.0,
+     538.0
+    ],
+    [
+     667.0,
+     538.0
+    ],
+    [
+     668.0,
+     538.0
+    ],
+    [
+     694.0,
+     530.0
+    ],
+    [
+     715.0,
+     535.0
+    ],
+    [
+     716.0,
+     535.0
+    ],
+    [
+     717.0,
+     535.0
+    ],
+    [
+     718.0,
+     535.0
+    ],
+    [
+     748.0,
+     528.0
+    ],
+    [
+     803.0,
+     541.0
+    ],
+    [
+     804.0,
+     541.0
+    ],
+    [
+     805.0,
+     541.0
+    ],
+    [
+     842.0,
+     534.0
+    ],
+    [
+     876.0,
+     544.0
+    ],
+    [
+     877.0,
+     544.0
+    ],
+    [
+     1049.0,
+     548.0
+    ],
+    [
+     1051.0,
+     537.0
+    ],
+    [
+     1051.0,
+     524.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     506.0
+    ],
+    [
+     506.0,
+     506.0
+    ],
+    [
+     747.0,
+     518.0
+    ],
+    [
+     893.0,
+     532.0
+    ],
+    [
+     1051.0,
+     537.0
+    ]
+   ],
+   "readings": {
+    "kraken": "libro di carte Reali cō covēta di pecora di m tre se gn̄a A di michele barocell ⁊ cōlanaiia",
+    "tei": "1 libro di carte Reali con coverta di pecora di quaderni tre segnata .A. di michele baroncelli e con lana in oli",
+    "tei_expanded": "1 libro di carte Reali con coverta di pecora di quaderni tre segnata .A. di michele baroncelli e con lana in oli",
+    "claude": "1 libro di carte Reali cō coverta di pecora di quaderni tre segnata .A. di michele baroncelli ⁊ cō lana in oli"
+   },
+   "flag": false,
+   "note": "",
+   "text": "libro di carte Reali cō covēta di pecora di m tre se gn̄a A di michele barocell ⁊ cōlanaiia",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      1047.0,
      510.0
@@ -3232,7 +3962,7 @@
      510.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      173.0,
      506.0
@@ -3253,18 +3983,397 @@
      1051.0,
      537.0
     ]
-   ],
-   "readings": {
-    "kraken": "libro di carte Reali cō covēta di pecora di m tre se gn̄a A di michele barocell ⁊ cōlanaiia"
-   },
-   "flag": false,
-   "note": "",
-   "text": "libro di carte Reali cō covēta di pecora di m tre se gn̄a A di michele barocell ⁊ cōlanaiia",
-   "agreement": null
+   ]
   },
   {
    "id": "l12",
    "polygon": [
+    [
+     200.0,
+     556.0
+    ],
+    [
+     201.0,
+     556.0
+    ],
+    [
+     202.0,
+     556.0
+    ],
+    [
+     224.0,
+     546.0
+    ],
+    [
+     243.0,
+     553.0
+    ],
+    [
+     244.0,
+     553.0
+    ],
+    [
+     245.0,
+     553.0
+    ],
+    [
+     246.0,
+     553.0
+    ],
+    [
+     263.0,
+     546.0
+    ],
+    [
+     278.0,
+     552.0
+    ],
+    [
+     279.0,
+     552.0
+    ],
+    [
+     280.0,
+     552.0
+    ],
+    [
+     281.0,
+     552.0
+    ],
+    [
+     304.0,
+     547.0
+    ],
+    [
+     434.0,
+     549.0
+    ],
+    [
+     455.0,
+     551.0
+    ],
+    [
+     471.0,
+     564.0
+    ],
+    [
+     472.0,
+     564.0
+    ],
+    [
+     473.0,
+     564.0
+    ],
+    [
+     474.0,
+     564.0
+    ],
+    [
+     541.0,
+     552.0
+    ],
+    [
+     574.0,
+     566.0
+    ],
+    [
+     576.0,
+     566.0
+    ],
+    [
+     577.0,
+     566.0
+    ],
+    [
+     578.0,
+     566.0
+    ],
+    [
+     609.0,
+     554.0
+    ],
+    [
+     634.0,
+     554.0
+    ],
+    [
+     658.0,
+     564.0
+    ],
+    [
+     659.0,
+     564.0
+    ],
+    [
+     660.0,
+     564.0
+    ],
+    [
+     661.0,
+     564.0
+    ],
+    [
+     685.0,
+     557.0
+    ],
+    [
+     700.0,
+     568.0
+    ],
+    [
+     701.0,
+     568.0
+    ],
+    [
+     702.0,
+     568.0
+    ],
+    [
+     704.0,
+     569.0
+    ],
+    [
+     704.0,
+     568.0
+    ],
+    [
+     705.0,
+     568.0
+    ],
+    [
+     706.0,
+     568.0
+    ],
+    [
+     722.0,
+     557.0
+    ],
+    [
+     741.0,
+     557.0
+    ],
+    [
+     786.0,
+     561.0
+    ],
+    [
+     813.0,
+     572.0
+    ],
+    [
+     814.0,
+     572.0
+    ],
+    [
+     990.0,
+     576.0
+    ],
+    [
+     993.0,
+     566.0
+    ],
+    [
+     993.0,
+     541.0
+    ],
+    [
+     842.0,
+     536.0
+    ],
+    [
+     818.0,
+     529.0
+    ],
+    [
+     817.0,
+     529.0
+    ],
+    [
+     816.0,
+     529.0
+    ],
+    [
+     814.0,
+     529.0
+    ],
+    [
+     804.0,
+     533.0
+    ],
+    [
+     778.0,
+     524.0
+    ],
+    [
+     777.0,
+     524.0
+    ],
+    [
+     776.0,
+     524.0
+    ],
+    [
+     775.0,
+     524.0
+    ],
+    [
+     746.0,
+     532.0
+    ],
+    [
+     734.0,
+     524.0
+    ],
+    [
+     733.0,
+     524.0
+    ],
+    [
+     732.0,
+     524.0
+    ],
+    [
+     731.0,
+     524.0
+    ],
+    [
+     704.0,
+     525.0
+    ],
+    [
+     702.0,
+     525.0
+    ],
+    [
+     701.0,
+     525.0
+    ],
+    [
+     693.0,
+     533.0
+    ],
+    [
+     661.0,
+     524.0
+    ],
+    [
+     660.0,
+     524.0
+    ],
+    [
+     659.0,
+     524.0
+    ],
+    [
+     602.0,
+     531.0
+    ],
+    [
+     548.0,
+     515.0
+    ],
+    [
+     547.0,
+     515.0
+    ],
+    [
+     546.0,
+     515.0
+    ],
+    [
+     492.0,
+     524.0
+    ],
+    [
+     458.0,
+     513.0
+    ],
+    [
+     457.0,
+     513.0
+    ],
+    [
+     456.0,
+     513.0
+    ],
+    [
+     358.0,
+     515.0
+    ],
+    [
+     324.0,
+     509.0
+    ],
+    [
+     323.0,
+     509.0
+    ],
+    [
+     289.0,
+     512.0
+    ],
+    [
+     288.0,
+     512.0
+    ],
+    [
+     286.0,
+     512.0
+    ],
+    [
+     273.0,
+     521.0
+    ],
+    [
+     212.0,
+     513.0
+    ],
+    [
+     211.0,
+     513.0
+    ],
+    [
+     119.0,
+     519.0
+    ],
+    [
+     119.0,
+     550.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     539.0
+    ],
+    [
+     466.0,
+     538.0
+    ],
+    [
+     744.0,
+     549.0
+    ],
+    [
+     851.0,
+     562.0
+    ],
+    [
+     993.0,
+     566.0
+    ]
+   ],
+   "readings": {
+    "kraken": "libro di carte leali cō covēta di pecora di m tre di michele barocelli ⁊ ōpa lanaiuoli",
+    "tei": "1 libro di carte Reali con coverta di pecora di quaderni",
+    "tei_expanded": "1 libro di carte Reali con coverta di pecora di quaderni",
+    "claude": "1 libro di carte Reali cō coverta di pecora di quaderni"
+   },
+   "flag": false,
+   "note": "",
+   "text": "libro di carte leali cō covēta di pecora di m tre di michele barocelli ⁊ ōpa lanaiuoli",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      174.0,
      539.0
@@ -3626,7 +4735,7 @@
      539.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      174.0,
      539.0
@@ -3647,18 +4756,333 @@
      993.0,
      566.0
     ]
-   ],
-   "readings": {
-    "kraken": "libro di carte leali cō covēta di pecora di m tre di michele barocelli ⁊ ōpa lanaiuoli"
-   },
-   "flag": false,
-   "note": "",
-   "text": "libro di carte leali cō covēta di pecora di m tre di michele barocelli ⁊ ōpa lanaiuoli",
-   "agreement": null
+   ]
   },
   {
    "id": "l13",
    "polygon": [
+    [
+     222.0,
+     576.0
+    ],
+    [
+     262.0,
+     585.0
+    ],
+    [
+     263.0,
+     585.0
+    ],
+    [
+     264.0,
+     585.0
+    ],
+    [
+     265.0,
+     585.0
+    ],
+    [
+     292.0,
+     577.0
+    ],
+    [
+     362.0,
+     578.0
+    ],
+    [
+     371.0,
+     585.0
+    ],
+    [
+     372.0,
+     585.0
+    ],
+    [
+     373.0,
+     585.0
+    ],
+    [
+     374.0,
+     585.0
+    ],
+    [
+     375.0,
+     585.0
+    ],
+    [
+     376.0,
+     585.0
+    ],
+    [
+     384.0,
+     579.0
+    ],
+    [
+     402.0,
+     579.0
+    ],
+    [
+     412.0,
+     588.0
+    ],
+    [
+     413.0,
+     588.0
+    ],
+    [
+     414.0,
+     588.0
+    ],
+    [
+     416.0,
+     588.0
+    ],
+    [
+     417.0,
+     588.0
+    ],
+    [
+     432.0,
+     581.0
+    ],
+    [
+     445.0,
+     588.0
+    ],
+    [
+     446.0,
+     588.0
+    ],
+    [
+     448.0,
+     588.0
+    ],
+    [
+     504.0,
+     581.0
+    ],
+    [
+     537.0,
+     590.0
+    ],
+    [
+     538.0,
+     590.0
+    ],
+    [
+     539.0,
+     590.0
+    ],
+    [
+     588.0,
+     584.0
+    ],
+    [
+     599.0,
+     592.0
+    ],
+    [
+     600.0,
+     592.0
+    ],
+    [
+     601.0,
+     592.0
+    ],
+    [
+     602.0,
+     593.0
+    ],
+    [
+     661.0,
+     593.0
+    ],
+    [
+     662.0,
+     577.0
+    ],
+    [
+     662.0,
+     560.0
+    ],
+    [
+     643.0,
+     551.0
+    ],
+    [
+     642.0,
+     551.0
+    ],
+    [
+     641.0,
+     551.0
+    ],
+    [
+     640.0,
+     551.0
+    ],
+    [
+     622.0,
+     560.0
+    ],
+    [
+     579.0,
+     560.0
+    ],
+    [
+     569.0,
+     551.0
+    ],
+    [
+     568.0,
+     551.0
+    ],
+    [
+     567.0,
+     551.0
+    ],
+    [
+     566.0,
+     551.0
+    ],
+    [
+     565.0,
+     551.0
+    ],
+    [
+     545.0,
+     558.0
+    ],
+    [
+     488.0,
+     558.0
+    ],
+    [
+     462.0,
+     557.0
+    ],
+    [
+     439.0,
+     545.0
+    ],
+    [
+     438.0,
+     545.0
+    ],
+    [
+     381.0,
+     544.0
+    ],
+    [
+     380.0,
+     544.0
+    ],
+    [
+     379.0,
+     544.0
+    ],
+    [
+     368.0,
+     549.0
+    ],
+    [
+     322.0,
+     542.0
+    ],
+    [
+     321.0,
+     542.0
+    ],
+    [
+     320.0,
+     542.0
+    ],
+    [
+     318.0,
+     542.0
+    ],
+    [
+     318.0,
+     544.0
+    ],
+    [
+     312.0,
+     549.0
+    ],
+    [
+     292.0,
+     541.0
+    ],
+    [
+     291.0,
+     541.0
+    ],
+    [
+     290.0,
+     541.0
+    ],
+    [
+     289.0,
+     541.0
+    ],
+    [
+     248.0,
+     553.0
+    ],
+    [
+     224.0,
+     540.0
+    ],
+    [
+     222.0,
+     540.0
+    ],
+    [
+     221.0,
+     540.0
+    ],
+    [
+     220.0,
+     540.0
+    ],
+    [
+     196.0,
+     553.0
+    ],
+    [
+     119.0,
+     553.0
+    ],
+    [
+     119.0,
+     583.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     570.0
+    ],
+    [
+     356.0,
+     568.0
+    ],
+    [
+     662.0,
+     577.0
+    ]
+   ],
+   "readings": {
+    "kraken": "mi lungo di tār reali di giovan̄i baroncelli",
+    "tei": "1 quaderno lungo di carte reali di giovanni baroncelli",
+    "tei_expanded": "1 quaderno lungo di carte reali di giovanni baroncelli",
+    "claude": "1 quaderno lungo di carte reali di giovan̄i baroncelli"
+   },
+   "flag": false,
+   "note": "",
+   "text": "mi lungo di tār reali di giovan̄i baroncelli",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      170.0,
      570.0
@@ -3964,7 +5388,7 @@
      570.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      170.0,
      570.0
@@ -3977,18 +5401,229 @@
      662.0,
      577.0
     ]
-   ],
-   "readings": {
-    "kraken": "mi lungo di tār reali di giovan̄i baroncelli"
-   },
-   "flag": false,
-   "note": "",
-   "text": "mi lungo di tār reali di giovan̄i baroncelli",
-   "agreement": null
+   ]
   },
   {
    "id": "l14",
    "polygon": [
+    [
+     994.0,
+     646.0
+    ],
+    [
+     996.0,
+     635.0
+    ],
+    [
+     996.0,
+     614.0
+    ],
+    [
+     919.0,
+     604.0
+    ],
+    [
+     918.0,
+     604.0
+    ],
+    [
+     917.0,
+     604.0
+    ],
+    [
+     897.0,
+     610.0
+    ],
+    [
+     871.0,
+     599.0
+    ],
+    [
+     870.0,
+     599.0
+    ],
+    [
+     869.0,
+     599.0
+    ],
+    [
+     868.0,
+     599.0
+    ],
+    [
+     850.0,
+     608.0
+    ],
+    [
+     818.0,
+     600.0
+    ],
+    [
+     817.0,
+     600.0
+    ],
+    [
+     769.0,
+     604.0
+    ],
+    [
+     717.0,
+     593.0
+    ],
+    [
+     716.0,
+     593.0
+    ],
+    [
+     668.0,
+     600.0
+    ],
+    [
+     642.0,
+     589.0
+    ],
+    [
+     641.0,
+     589.0
+    ],
+    [
+     640.0,
+     589.0
+    ],
+    [
+     600.0,
+     597.0
+    ],
+    [
+     566.0,
+     586.0
+    ],
+    [
+     565.0,
+     586.0
+    ],
+    [
+     564.0,
+     586.0
+    ],
+    [
+     497.0,
+     593.0
+    ],
+    [
+     478.0,
+     583.0
+    ],
+    [
+     477.0,
+     583.0
+    ],
+    [
+     438.0,
+     581.0
+    ],
+    [
+     437.0,
+     581.0
+    ],
+    [
+     363.0,
+     587.0
+    ],
+    [
+     330.0,
+     580.0
+    ],
+    [
+     329.0,
+     580.0
+    ],
+    [
+     328.0,
+     580.0
+    ],
+    [
+     312.0,
+     585.0
+    ],
+    [
+     285.0,
+     576.0
+    ],
+    [
+     284.0,
+     576.0
+    ],
+    [
+     233.0,
+     572.0
+    ],
+    [
+     232.0,
+     572.0
+    ],
+    [
+     231.0,
+     572.0
+    ],
+    [
+     212.0,
+     581.0
+    ],
+    [
+     206.0,
+     576.0
+    ],
+    [
+     206.0,
+     574.0
+    ],
+    [
+     205.0,
+     574.0
+    ],
+    [
+     204.0,
+     574.0
+    ],
+    [
+     203.0,
+     574.0
+    ],
+    [
+     119.0,
+     579.0
+    ],
+    [
+     119.0,
+     611.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     606.0
+    ],
+    [
+     473.0,
+     605.0
+    ],
+    [
+     996.0,
+     635.0
+    ]
+   ],
+   "readings": {
+    "kraken": "bbro di cā mezane coli6ta di pecora scritto di mano d imone barōcelli di cār 142",
+    "tei": "1 libro di carte mezne coverta di pecora scritto di mano di simone baroncelli di carte 142",
+    "tei_expanded": "1 libro di carte mezne coverta di pecora scritto di mano di simone baroncelli di carte 142",
+    "claude": "1 libro di carte mezne coverta di pecora scritto di mano di simone barōcelli di carte 142"
+   },
+   "flag": false,
+   "note": "",
+   "text": "bbro di cā mezane coli6ta di pecora scritto di mano d imone barōcelli di cār 142",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      170.0,
      606.0
@@ -4190,7 +5825,7 @@
      606.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      170.0,
      606.0
@@ -4203,18 +5838,405 @@
      996.0,
      635.0
     ]
-   ],
-   "readings": {
-    "kraken": "bbro di cā mezane coli6ta di pecora scritto di mano d imone barōcelli di cār 142"
-   },
-   "flag": false,
-   "note": "",
-   "text": "bbro di cā mezane coli6ta di pecora scritto di mano d imone barōcelli di cār 142",
-   "agreement": null
+   ]
   },
   {
    "id": "l15",
    "polygon": [
+    [
+     206.0,
+     654.0
+    ],
+    [
+     208.0,
+     654.0
+    ],
+    [
+     209.0,
+     654.0
+    ],
+    [
+     233.0,
+     647.0
+    ],
+    [
+     259.0,
+     657.0
+    ],
+    [
+     260.0,
+     657.0
+    ],
+    [
+     261.0,
+     657.0
+    ],
+    [
+     262.0,
+     657.0
+    ],
+    [
+     282.0,
+     651.0
+    ],
+    [
+     320.0,
+     658.0
+    ],
+    [
+     321.0,
+     658.0
+    ],
+    [
+     322.0,
+     658.0
+    ],
+    [
+     348.0,
+     648.0
+    ],
+    [
+     368.0,
+     660.0
+    ],
+    [
+     369.0,
+     660.0
+    ],
+    [
+     370.0,
+     660.0
+    ],
+    [
+     371.0,
+     660.0
+    ],
+    [
+     372.0,
+     660.0
+    ],
+    [
+     404.0,
+     651.0
+    ],
+    [
+     424.0,
+     662.0
+    ],
+    [
+     425.0,
+     662.0
+    ],
+    [
+     426.0,
+     662.0
+    ],
+    [
+     427.0,
+     662.0
+    ],
+    [
+     457.0,
+     651.0
+    ],
+    [
+     520.0,
+     652.0
+    ],
+    [
+     554.0,
+     666.0
+    ],
+    [
+     555.0,
+     666.0
+    ],
+    [
+     556.0,
+     666.0
+    ],
+    [
+     557.0,
+     666.0
+    ],
+    [
+     585.0,
+     656.0
+    ],
+    [
+     592.0,
+     662.0
+    ],
+    [
+     593.0,
+     662.0
+    ],
+    [
+     594.0,
+     662.0
+    ],
+    [
+     595.0,
+     662.0
+    ],
+    [
+     596.0,
+     662.0
+    ],
+    [
+     608.0,
+     657.0
+    ],
+    [
+     672.0,
+     658.0
+    ],
+    [
+     697.0,
+     667.0
+    ],
+    [
+     698.0,
+     667.0
+    ],
+    [
+     699.0,
+     667.0
+    ],
+    [
+     700.0,
+     667.0
+    ],
+    [
+     701.0,
+     667.0
+    ],
+    [
+     709.0,
+     662.0
+    ],
+    [
+     721.0,
+     672.0
+    ],
+    [
+     722.0,
+     672.0
+    ],
+    [
+     723.0,
+     672.0
+    ],
+    [
+     766.0,
+     673.0
+    ],
+    [
+     768.0,
+     673.0
+    ],
+    [
+     769.0,
+     673.0
+    ],
+    [
+     770.0,
+     673.0
+    ],
+    [
+     780.0,
+     665.0
+    ],
+    [
+     850.0,
+     676.0
+    ],
+    [
+     851.0,
+     676.0
+    ],
+    [
+     915.0,
+     672.0
+    ],
+    [
+     916.0,
+     660.0
+    ],
+    [
+     916.0,
+     643.0
+    ],
+    [
+     851.0,
+     640.0
+    ],
+    [
+     833.0,
+     630.0
+    ],
+    [
+     832.0,
+     630.0
+    ],
+    [
+     830.0,
+     630.0
+    ],
+    [
+     829.0,
+     630.0
+    ],
+    [
+     812.0,
+     637.0
+    ],
+    [
+     798.0,
+     631.0
+    ],
+    [
+     797.0,
+     631.0
+    ],
+    [
+     796.0,
+     631.0
+    ],
+    [
+     795.0,
+     631.0
+    ],
+    [
+     794.0,
+     631.0
+    ],
+    [
+     782.0,
+     637.0
+    ],
+    [
+     718.0,
+     636.0
+    ],
+    [
+     651.0,
+     621.0
+    ],
+    [
+     650.0,
+     621.0
+    ],
+    [
+     545.0,
+     625.0
+    ],
+    [
+     499.0,
+     617.0
+    ],
+    [
+     498.0,
+     617.0
+    ],
+    [
+     497.0,
+     617.0
+    ],
+    [
+     470.0,
+     624.0
+    ],
+    [
+     448.0,
+     615.0
+    ],
+    [
+     446.0,
+     615.0
+    ],
+    [
+     445.0,
+     615.0
+    ],
+    [
+     444.0,
+     615.0
+    ],
+    [
+     419.0,
+     621.0
+    ],
+    [
+     355.0,
+     612.0
+    ],
+    [
+     354.0,
+     612.0
+    ],
+    [
+     323.0,
+     617.0
+    ],
+    [
+     290.0,
+     612.0
+    ],
+    [
+     289.0,
+     612.0
+    ],
+    [
+     288.0,
+     612.0
+    ],
+    [
+     262.0,
+     620.0
+    ],
+    [
+     219.0,
+     614.0
+    ],
+    [
+     218.0,
+     614.0
+    ],
+    [
+     119.0,
+     617.0
+    ],
+    [
+     119.0,
+     653.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     638.0
+    ],
+    [
+     468.0,
+     638.0
+    ],
+    [
+     916.0,
+     660.0
+    ]
+   ],
+   "readings": {
+    "kraken": "mi di michele ⁊ de cōpagni di carte mezane cō coliēta di pecora di cār 32",
+    "tei": "1 quaderno di michele et de compagni di carte mezane con coverta di pecora di carte 32",
+    "tei_expanded": "1 quaderno di michele et de compagni di carte mezane con coverta di pecora di carte 32",
+    "claude": "1 quaderno di michele ⁊ de cōpagni di carte mezane cō coverta di pecora di carte 32"
+   },
+   "flag": false,
+   "note": "",
+   "text": "mi di michele ⁊ de cōpagni di carte mezane cō coliēta di pecora di cār 32",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      163.0,
      638.0
@@ -4592,7 +6614,7 @@
      638.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      163.0,
      638.0
@@ -4605,18 +6627,417 @@
      916.0,
      660.0
     ]
-   ],
-   "readings": {
-    "kraken": "mi di michele ⁊ de cōpagni di carte mezane cō coliēta di pecora di cār 32"
-   },
-   "flag": false,
-   "note": "",
-   "text": "mi di michele ⁊ de cōpagni di carte mezane cō coliēta di pecora di cār 32",
-   "agreement": null
+   ]
   },
   {
    "id": "l16",
    "polygon": [
+    [
+     204.0,
+     688.0
+    ],
+    [
+     205.0,
+     688.0
+    ],
+    [
+     206.0,
+     688.0
+    ],
+    [
+     244.0,
+     678.0
+    ],
+    [
+     259.0,
+     690.0
+    ],
+    [
+     260.0,
+     690.0
+    ],
+    [
+     261.0,
+     690.0
+    ],
+    [
+     262.0,
+     690.0
+    ],
+    [
+     263.0,
+     690.0
+    ],
+    [
+     295.0,
+     680.0
+    ],
+    [
+     316.0,
+     691.0
+    ],
+    [
+     317.0,
+     691.0
+    ],
+    [
+     318.0,
+     691.0
+    ],
+    [
+     352.0,
+     684.0
+    ],
+    [
+     362.0,
+     693.0
+    ],
+    [
+     363.0,
+     693.0
+    ],
+    [
+     364.0,
+     693.0
+    ],
+    [
+     405.0,
+     694.0
+    ],
+    [
+     406.0,
+     694.0
+    ],
+    [
+     407.0,
+     694.0
+    ],
+    [
+     420.0,
+     688.0
+    ],
+    [
+     430.0,
+     694.0
+    ],
+    [
+     432.0,
+     694.0
+    ],
+    [
+     433.0,
+     694.0
+    ],
+    [
+     434.0,
+     694.0
+    ],
+    [
+     435.0,
+     694.0
+    ],
+    [
+     466.0,
+     683.0
+    ],
+    [
+     542.0,
+     686.0
+    ],
+    [
+     554.0,
+     697.0
+    ],
+    [
+     554.0,
+     698.0
+    ],
+    [
+     555.0,
+     698.0
+    ],
+    [
+     556.0,
+     698.0
+    ],
+    [
+     557.0,
+     698.0
+    ],
+    [
+     603.0,
+     688.0
+    ],
+    [
+     664.0,
+     690.0
+    ],
+    [
+     684.0,
+     698.0
+    ],
+    [
+     685.0,
+     698.0
+    ],
+    [
+     686.0,
+     698.0
+    ],
+    [
+     688.0,
+     698.0
+    ],
+    [
+     701.0,
+     692.0
+    ],
+    [
+     739.0,
+     705.0
+    ],
+    [
+     740.0,
+     705.0
+    ],
+    [
+     741.0,
+     705.0
+    ],
+    [
+     806.0,
+     695.0
+    ],
+    [
+     841.0,
+     708.0
+    ],
+    [
+     842.0,
+     708.0
+    ],
+    [
+     843.0,
+     709.0
+    ],
+    [
+     910.0,
+     709.0
+    ],
+    [
+     912.0,
+     691.0
+    ],
+    [
+     909.0,
+     665.0
+    ],
+    [
+     890.0,
+     672.0
+    ],
+    [
+     827.0,
+     662.0
+    ],
+    [
+     826.0,
+     662.0
+    ],
+    [
+     825.0,
+     662.0
+    ],
+    [
+     800.0,
+     668.0
+    ],
+    [
+     742.0,
+     668.0
+    ],
+    [
+     713.0,
+     656.0
+    ],
+    [
+     712.0,
+     656.0
+    ],
+    [
+     669.0,
+     653.0
+    ],
+    [
+     668.0,
+     653.0
+    ],
+    [
+     667.0,
+     653.0
+    ],
+    [
+     648.0,
+     664.0
+    ],
+    [
+     630.0,
+     652.0
+    ],
+    [
+     629.0,
+     652.0
+    ],
+    [
+     628.0,
+     652.0
+    ],
+    [
+     627.0,
+     652.0
+    ],
+    [
+     548.0,
+     660.0
+    ],
+    [
+     525.0,
+     649.0
+    ],
+    [
+     524.0,
+     649.0
+    ],
+    [
+     464.0,
+     647.0
+    ],
+    [
+     462.0,
+     647.0
+    ],
+    [
+     402.0,
+     656.0
+    ],
+    [
+     346.0,
+     644.0
+    ],
+    [
+     345.0,
+     644.0
+    ],
+    [
+     344.0,
+     644.0
+    ],
+    [
+     316.0,
+     654.0
+    ],
+    [
+     302.0,
+     654.0
+    ],
+    [
+     293.0,
+     645.0
+    ],
+    [
+     293.0,
+     644.0
+    ],
+    [
+     292.0,
+     644.0
+    ],
+    [
+     291.0,
+     644.0
+    ],
+    [
+     290.0,
+     644.0
+    ],
+    [
+     289.0,
+     644.0
+    ],
+    [
+     288.0,
+     644.0
+    ],
+    [
+     276.0,
+     652.0
+    ],
+    [
+     229.0,
+     652.0
+    ],
+    [
+     220.0,
+     644.0
+    ],
+    [
+     220.0,
+     643.0
+    ],
+    [
+     219.0,
+     643.0
+    ],
+    [
+     218.0,
+     643.0
+    ],
+    [
+     217.0,
+     643.0
+    ],
+    [
+     216.0,
+     643.0
+    ],
+    [
+     197.0,
+     650.0
+    ],
+    [
+     119.0,
+     650.0
+    ],
+    [
+     119.0,
+     686.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     668.0
+    ],
+    [
+     515.0,
+     673.0
+    ],
+    [
+     912.0,
+     691.0
+    ]
+   ],
+   "readings": {
+    "kraken": "m di michele ⁊ de cōpagni di carte mezane cō covēta di pecora di cār 64",
+    "tei": "1 quaderno di michele et de compagni di carte mezane con coverta di pecora di carte 64",
+    "tei_expanded": "1 quaderno di michele et de compagni di carte mezane con coverta di pecora di carte 64",
+    "claude": "1 quaderno di michele ⁊ de cōpagni di carte mezane cō coverta di pecora di carte 64"
+   },
+   "flag": false,
+   "note": "",
+   "text": "m di michele ⁊ de cōpagni di carte mezane cō covēta di pecora di cār 64",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      167.0,
      668.0
@@ -5006,7 +7427,7 @@
      668.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      167.0,
      668.0
@@ -5019,18 +7440,417 @@
      912.0,
      691.0
     ]
-   ],
-   "readings": {
-    "kraken": "m di michele ⁊ de cōpagni di carte mezane cō covēta di pecora di cār 64"
-   },
-   "flag": false,
-   "note": "",
-   "text": "m di michele ⁊ de cōpagni di carte mezane cō covēta di pecora di cār 64",
-   "agreement": null
+   ]
   },
   {
    "id": "l17",
    "polygon": [
+    [
+     194.0,
+     721.0
+    ],
+    [
+     195.0,
+     721.0
+    ],
+    [
+     243.0,
+     709.0
+    ],
+    [
+     249.0,
+     714.0
+    ],
+    [
+     249.0,
+     715.0
+    ],
+    [
+     250.0,
+     715.0
+    ],
+    [
+     251.0,
+     715.0
+    ],
+    [
+     252.0,
+     715.0
+    ],
+    [
+     279.0,
+     712.0
+    ],
+    [
+     321.0,
+     725.0
+    ],
+    [
+     322.0,
+     725.0
+    ],
+    [
+     323.0,
+     726.0
+    ],
+    [
+     355.0,
+     726.0
+    ],
+    [
+     355.0,
+     725.0
+    ],
+    [
+     356.0,
+     725.0
+    ],
+    [
+     357.0,
+     725.0
+    ],
+    [
+     373.0,
+     713.0
+    ],
+    [
+     391.0,
+     713.0
+    ],
+    [
+     408.0,
+     713.0
+    ],
+    [
+     430.0,
+     728.0
+    ],
+    [
+     432.0,
+     728.0
+    ],
+    [
+     433.0,
+     728.0
+    ],
+    [
+     434.0,
+     728.0
+    ],
+    [
+     435.0,
+     728.0
+    ],
+    [
+     480.0,
+     716.0
+    ],
+    [
+     508.0,
+     724.0
+    ],
+    [
+     509.0,
+     724.0
+    ],
+    [
+     510.0,
+     724.0
+    ],
+    [
+     512.0,
+     724.0
+    ],
+    [
+     524.0,
+     717.0
+    ],
+    [
+     545.0,
+     724.0
+    ],
+    [
+     546.0,
+     724.0
+    ],
+    [
+     547.0,
+     724.0
+    ],
+    [
+     589.0,
+     720.0
+    ],
+    [
+     605.0,
+     733.0
+    ],
+    [
+     606.0,
+     733.0
+    ],
+    [
+     608.0,
+     733.0
+    ],
+    [
+     609.0,
+     734.0
+    ],
+    [
+     625.0,
+     734.0
+    ],
+    [
+     625.0,
+     733.0
+    ],
+    [
+     626.0,
+     733.0
+    ],
+    [
+     627.0,
+     733.0
+    ],
+    [
+     645.0,
+     722.0
+    ],
+    [
+     673.0,
+     722.0
+    ],
+    [
+     683.0,
+     731.0
+    ],
+    [
+     684.0,
+     731.0
+    ],
+    [
+     685.0,
+     731.0
+    ],
+    [
+     686.0,
+     731.0
+    ],
+    [
+     688.0,
+     731.0
+    ],
+    [
+     705.0,
+     724.0
+    ],
+    [
+     741.0,
+     738.0
+    ],
+    [
+     742.0,
+     738.0
+    ],
+    [
+     743.0,
+     738.0
+    ],
+    [
+     744.0,
+     738.0
+    ],
+    [
+     775.0,
+     727.0
+    ],
+    [
+     776.0,
+     718.0
+    ],
+    [
+     776.0,
+     701.0
+    ],
+    [
+     723.0,
+     700.0
+    ],
+    [
+     694.0,
+     691.0
+    ],
+    [
+     693.0,
+     691.0
+    ],
+    [
+     692.0,
+     691.0
+    ],
+    [
+     691.0,
+     691.0
+    ],
+    [
+     676.0,
+     698.0
+    ],
+    [
+     644.0,
+     698.0
+    ],
+    [
+     637.0,
+     692.0
+    ],
+    [
+     637.0,
+     691.0
+    ],
+    [
+     636.0,
+     691.0
+    ],
+    [
+     635.0,
+     691.0
+    ],
+    [
+     634.0,
+     691.0
+    ],
+    [
+     633.0,
+     691.0
+    ],
+    [
+     615.0,
+     696.0
+    ],
+    [
+     601.0,
+     688.0
+    ],
+    [
+     600.0,
+     688.0
+    ],
+    [
+     599.0,
+     688.0
+    ],
+    [
+     598.0,
+     688.0
+    ],
+    [
+     549.0,
+     693.0
+    ],
+    [
+     496.0,
+     684.0
+    ],
+    [
+     494.0,
+     684.0
+    ],
+    [
+     462.0,
+     691.0
+    ],
+    [
+     440.0,
+     683.0
+    ],
+    [
+     439.0,
+     683.0
+    ],
+    [
+     438.0,
+     683.0
+    ],
+    [
+     371.0,
+     689.0
+    ],
+    [
+     358.0,
+     680.0
+    ],
+    [
+     357.0,
+     680.0
+    ],
+    [
+     356.0,
+     680.0
+    ],
+    [
+     355.0,
+     680.0
+    ],
+    [
+     252.0,
+     685.0
+    ],
+    [
+     217.0,
+     676.0
+    ],
+    [
+     216.0,
+     676.0
+    ],
+    [
+     215.0,
+     676.0
+    ],
+    [
+     214.0,
+     676.0
+    ],
+    [
+     199.0,
+     683.0
+    ],
+    [
+     119.0,
+     683.0
+    ],
+    [
+     119.0,
+     720.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     701.0
+    ],
+    [
+     423.0,
+     704.0
+    ],
+    [
+     776.0,
+     718.0
+    ]
+   ],
+   "readings": {
+    "kraken": "im di Ricordanze di cār mezane coverta di pecora cār 48",
+    "tei": "1 quaderno di Ricordanze di carte mezane coverta di pecora carcarte 48",
+    "tei_expanded": "1 quaderno di Ricordanze di carte mezane coverta di pecora carcarte 48",
+    "claude": "1 quaderno di Ricordanze di carte mezane coverta di pecora carcarte 48"
+   },
+   "flag": false,
+   "note": "",
+   "text": "im di Ricordanze di cār mezane coverta di pecora cār 48",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      166.0,
      701.0
@@ -5420,7 +8240,7 @@
      701.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      166.0,
      701.0
@@ -5433,18 +8253,373 @@
      776.0,
      718.0
     ]
-   ],
-   "readings": {
-    "kraken": "im di Ricordanze di cār mezane coverta di pecora cār 48"
-   },
-   "flag": false,
-   "note": "",
-   "text": "im di Ricordanze di cār mezane coverta di pecora cār 48",
-   "agreement": null
+   ]
   },
   {
    "id": "l18",
    "polygon": [
+    [
+     220.0,
+     750.0
+    ],
+    [
+     221.0,
+     750.0
+    ],
+    [
+     222.0,
+     750.0
+    ],
+    [
+     251.0,
+     743.0
+    ],
+    [
+     313.0,
+     750.0
+    ],
+    [
+     314.0,
+     750.0
+    ],
+    [
+     315.0,
+     750.0
+    ],
+    [
+     316.0,
+     750.0
+    ],
+    [
+     323.0,
+     745.0
+    ],
+    [
+     389.0,
+     757.0
+    ],
+    [
+     390.0,
+     757.0
+    ],
+    [
+     391.0,
+     757.0
+    ],
+    [
+     423.0,
+     748.0
+    ],
+    [
+     482.0,
+     749.0
+    ],
+    [
+     520.0,
+     761.0
+    ],
+    [
+     521.0,
+     761.0
+    ],
+    [
+     522.0,
+     761.0
+    ],
+    [
+     523.0,
+     761.0
+    ],
+    [
+     524.0,
+     761.0
+    ],
+    [
+     532.0,
+     756.0
+    ],
+    [
+     553.0,
+     762.0
+    ],
+    [
+     554.0,
+     762.0
+    ],
+    [
+     555.0,
+     762.0
+    ],
+    [
+     556.0,
+     762.0
+    ],
+    [
+     573.0,
+     755.0
+    ],
+    [
+     633.0,
+     760.0
+    ],
+    [
+     634.0,
+     760.0
+    ],
+    [
+     635.0,
+     760.0
+    ],
+    [
+     646.0,
+     756.0
+    ],
+    [
+     656.0,
+     764.0
+    ],
+    [
+     656.0,
+     765.0
+    ],
+    [
+     657.0,
+     765.0
+    ],
+    [
+     658.0,
+     765.0
+    ],
+    [
+     659.0,
+     765.0
+    ],
+    [
+     710.0,
+     758.0
+    ],
+    [
+     753.0,
+     769.0
+    ],
+    [
+     754.0,
+     769.0
+    ],
+    [
+     755.0,
+     769.0
+    ],
+    [
+     756.0,
+     769.0
+    ],
+    [
+     785.0,
+     761.0
+    ],
+    [
+     829.0,
+     771.0
+    ],
+    [
+     830.0,
+     771.0
+    ],
+    [
+     882.0,
+     766.0
+    ],
+    [
+     917.0,
+     773.0
+    ],
+    [
+     919.0,
+     757.0
+    ],
+    [
+     918.0,
+     740.0
+    ],
+    [
+     824.0,
+     738.0
+    ],
+    [
+     802.0,
+     728.0
+    ],
+    [
+     801.0,
+     728.0
+    ],
+    [
+     800.0,
+     728.0
+    ],
+    [
+     756.0,
+     734.0
+    ],
+    [
+     723.0,
+     725.0
+    ],
+    [
+     722.0,
+     725.0
+    ],
+    [
+     721.0,
+     725.0
+    ],
+    [
+     648.0,
+     729.0
+    ],
+    [
+     552.0,
+     720.0
+    ],
+    [
+     551.0,
+     720.0
+    ],
+    [
+     550.0,
+     720.0
+    ],
+    [
+     549.0,
+     720.0
+    ],
+    [
+     539.0,
+     726.0
+    ],
+    [
+     457.0,
+     716.0
+    ],
+    [
+     456.0,
+     716.0
+    ],
+    [
+     455.0,
+     716.0
+    ],
+    [
+     440.0,
+     724.0
+    ],
+    [
+     426.0,
+     715.0
+    ],
+    [
+     425.0,
+     715.0
+    ],
+    [
+     424.0,
+     715.0
+    ],
+    [
+     423.0,
+     715.0
+    ],
+    [
+     326.0,
+     721.0
+    ],
+    [
+     293.0,
+     711.0
+    ],
+    [
+     292.0,
+     711.0
+    ],
+    [
+     291.0,
+     711.0
+    ],
+    [
+     256.0,
+     718.0
+    ],
+    [
+     228.0,
+     718.0
+    ],
+    [
+     215.0,
+     710.0
+    ],
+    [
+     214.0,
+     710.0
+    ],
+    [
+     213.0,
+     710.0
+    ],
+    [
+     212.0,
+     710.0
+    ],
+    [
+     211.0,
+     710.0
+    ],
+    [
+     210.0,
+     710.0
+    ],
+    [
+     202.0,
+     716.0
+    ],
+    [
+     119.0,
+     716.0
+    ],
+    [
+     119.0,
+     749.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     734.0
+    ],
+    [
+     435.0,
+     738.0
+    ],
+    [
+     752.0,
+     754.0
+    ],
+    [
+     919.0,
+     757.0
+    ]
+   ],
+   "readings": {
+    "kraken": "mi setreto di cār mezane cār 48 scricto di mano di Nigi di Nerone",
+    "tei": "1 quaderno secreto di carte mezane 48 scritto di maneo di Nigi di Nerone",
+    "tei_expanded": "1 quaderno secreto di carte mezane 48 scritto di maneo di Nigi di Nerone",
+    "claude": "1 quaderno secreto di carte mezane 48 scritto di maneo di Nigi di Nerone"
+   },
+   "flag": false,
+   "note": "",
+   "text": "mi setreto di cār mezane cār 48 scricto di mano di Nigi di Nerone",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      166.0,
      734.0
@@ -5786,7 +8961,7 @@
      734.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      166.0,
      734.0
@@ -5803,18 +8978,377 @@
      919.0,
      757.0
     ]
-   ],
-   "readings": {
-    "kraken": "mi setreto di cār mezane cār 48 scricto di mano di Nigi di Nerone"
-   },
-   "flag": false,
-   "note": "",
-   "text": "mi setreto di cār mezane cār 48 scricto di mano di Nigi di Nerone",
-   "agreement": null
+   ]
   },
   {
    "id": "l19",
    "polygon": [
+    [
+     206.0,
+     788.0
+    ],
+    [
+     208.0,
+     788.0
+    ],
+    [
+     209.0,
+     788.0
+    ],
+    [
+     210.0,
+     788.0
+    ],
+    [
+     240.0,
+     777.0
+    ],
+    [
+     278.0,
+     790.0
+    ],
+    [
+     279.0,
+     790.0
+    ],
+    [
+     280.0,
+     790.0
+    ],
+    [
+     281.0,
+     790.0
+    ],
+    [
+     317.0,
+     779.0
+    ],
+    [
+     357.0,
+     792.0
+    ],
+    [
+     358.0,
+     792.0
+    ],
+    [
+     359.0,
+     792.0
+    ],
+    [
+     436.0,
+     782.0
+    ],
+    [
+     454.0,
+     794.0
+    ],
+    [
+     455.0,
+     794.0
+    ],
+    [
+     456.0,
+     794.0
+    ],
+    [
+     457.0,
+     794.0
+    ],
+    [
+     458.0,
+     794.0
+    ],
+    [
+     459.0,
+     794.0
+    ],
+    [
+     472.0,
+     785.0
+    ],
+    [
+     515.0,
+     785.0
+    ],
+    [
+     549.0,
+     791.0
+    ],
+    [
+     550.0,
+     791.0
+    ],
+    [
+     551.0,
+     791.0
+    ],
+    [
+     560.0,
+     787.0
+    ],
+    [
+     569.0,
+     796.0
+    ],
+    [
+     569.0,
+     797.0
+    ],
+    [
+     570.0,
+     797.0
+    ],
+    [
+     571.0,
+     797.0
+    ],
+    [
+     572.0,
+     797.0
+    ],
+    [
+     615.0,
+     788.0
+    ],
+    [
+     643.0,
+     798.0
+    ],
+    [
+     644.0,
+     798.0
+    ],
+    [
+     684.0,
+     801.0
+    ],
+    [
+     685.0,
+     801.0
+    ],
+    [
+     686.0,
+     801.0
+    ],
+    [
+     688.0,
+     801.0
+    ],
+    [
+     688.0,
+     800.0
+    ],
+    [
+     694.0,
+     794.0
+    ],
+    [
+     711.0,
+     800.0
+    ],
+    [
+     714.0,
+     781.0
+    ],
+    [
+     713.0,
+     757.0
+    ],
+    [
+     676.0,
+     762.0
+    ],
+    [
+     637.0,
+     755.0
+    ],
+    [
+     636.0,
+     755.0
+    ],
+    [
+     602.0,
+     760.0
+    ],
+    [
+     587.0,
+     753.0
+    ],
+    [
+     586.0,
+     753.0
+    ],
+    [
+     585.0,
+     753.0
+    ],
+    [
+     584.0,
+     753.0
+    ],
+    [
+     570.0,
+     759.0
+    ],
+    [
+     517.0,
+     759.0
+    ],
+    [
+     481.0,
+     756.0
+    ],
+    [
+     476.0,
+     749.0
+    ],
+    [
+     475.0,
+     749.0
+    ],
+    [
+     475.0,
+     748.0
+    ],
+    [
+     474.0,
+     748.0
+    ],
+    [
+     473.0,
+     748.0
+    ],
+    [
+     472.0,
+     748.0
+    ],
+    [
+     372.0,
+     754.0
+    ],
+    [
+     345.0,
+     745.0
+    ],
+    [
+     344.0,
+     745.0
+    ],
+    [
+     343.0,
+     745.0
+    ],
+    [
+     298.0,
+     752.0
+    ],
+    [
+     280.0,
+     743.0
+    ],
+    [
+     279.0,
+     743.0
+    ],
+    [
+     250.0,
+     743.0
+    ],
+    [
+     249.0,
+     743.0
+    ],
+    [
+     248.0,
+     743.0
+    ],
+    [
+     247.0,
+     743.0
+    ],
+    [
+     247.0,
+     744.0
+    ],
+    [
+     240.0,
+     750.0
+    ],
+    [
+     224.0,
+     742.0
+    ],
+    [
+     222.0,
+     742.0
+    ],
+    [
+     221.0,
+     742.0
+    ],
+    [
+     220.0,
+     742.0
+    ],
+    [
+     219.0,
+     742.0
+    ],
+    [
+     211.0,
+     749.0
+    ],
+    [
+     195.0,
+     742.0
+    ],
+    [
+     194.0,
+     742.0
+    ],
+    [
+     193.0,
+     742.0
+    ],
+    [
+     192.0,
+     742.0
+    ],
+    [
+     119.0,
+     747.0
+    ],
+    [
+     119.0,
+     776.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     771.0
+    ],
+    [
+     302.0,
+     769.0
+    ],
+    [
+     714.0,
+     781.0
+    ]
+   ],
+   "readings": {
+    "kraken": "borse di chuoio chusaite ī sieme auo di bancho",
+    "tei": "ii borse di chuoio chuscite insieme a uso di bancho",
+    "tei_expanded": "ii borse di chuoio chuscite insieme a uso di bancho",
+    "claude": "ii borse di chuoio chuscite insieme a uso di bancho"
+   },
+   "flag": false,
+   "note": "",
+   "text": "borse di chuoio chusaite ī sieme auo di bancho",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      177.0,
      771.0
@@ -6164,7 +9698,7 @@
      771.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      177.0,
      771.0
@@ -6177,18 +9711,265 @@
      714.0,
      781.0
     ]
-   ],
-   "readings": {
-    "kraken": "borse di chuoio chusaite ī sieme auo di bancho"
-   },
-   "flag": false,
-   "note": "",
-   "text": "borse di chuoio chusaite ī sieme auo di bancho",
-   "agreement": null
+   ]
   },
   {
    "id": "l20",
    "polygon": [
+    [
+     208.0,
+     821.0
+    ],
+    [
+     209.0,
+     821.0
+    ],
+    [
+     300.0,
+     816.0
+    ],
+    [
+     315.0,
+     823.0
+    ],
+    [
+     316.0,
+     823.0
+    ],
+    [
+     317.0,
+     823.0
+    ],
+    [
+     375.0,
+     818.0
+    ],
+    [
+     398.0,
+     824.0
+    ],
+    [
+     400.0,
+     824.0
+    ],
+    [
+     401.0,
+     824.0
+    ],
+    [
+     402.0,
+     824.0
+    ],
+    [
+     427.0,
+     818.0
+    ],
+    [
+     439.0,
+     825.0
+    ],
+    [
+     440.0,
+     825.0
+    ],
+    [
+     441.0,
+     825.0
+    ],
+    [
+     442.0,
+     825.0
+    ],
+    [
+     617.0,
+     822.0
+    ],
+    [
+     618.0,
+     810.0
+    ],
+    [
+     616.0,
+     792.0
+    ],
+    [
+     555.0,
+     792.0
+    ],
+    [
+     531.0,
+     785.0
+    ],
+    [
+     530.0,
+     785.0
+    ],
+    [
+     529.0,
+     785.0
+    ],
+    [
+     528.0,
+     785.0
+    ],
+    [
+     526.0,
+     785.0
+    ],
+    [
+     518.0,
+     792.0
+    ],
+    [
+     492.0,
+     792.0
+    ],
+    [
+     464.0,
+     784.0
+    ],
+    [
+     462.0,
+     784.0
+    ],
+    [
+     461.0,
+     784.0
+    ],
+    [
+     460.0,
+     784.0
+    ],
+    [
+     442.0,
+     790.0
+    ],
+    [
+     425.0,
+     782.0
+    ],
+    [
+     424.0,
+     782.0
+    ],
+    [
+     423.0,
+     782.0
+    ],
+    [
+     365.0,
+     789.0
+    ],
+    [
+     332.0,
+     784.0
+    ],
+    [
+     331.0,
+     784.0
+    ],
+    [
+     302.0,
+     788.0
+    ],
+    [
+     292.0,
+     781.0
+    ],
+    [
+     291.0,
+     781.0
+    ],
+    [
+     290.0,
+     781.0
+    ],
+    [
+     289.0,
+     781.0
+    ],
+    [
+     288.0,
+     781.0
+    ],
+    [
+     267.0,
+     787.0
+    ],
+    [
+     251.0,
+     780.0
+    ],
+    [
+     250.0,
+     780.0
+    ],
+    [
+     249.0,
+     780.0
+    ],
+    [
+     248.0,
+     780.0
+    ],
+    [
+     247.0,
+     780.0
+    ],
+    [
+     240.0,
+     787.0
+    ],
+    [
+     224.0,
+     779.0
+    ],
+    [
+     222.0,
+     779.0
+    ],
+    [
+     221.0,
+     779.0
+    ],
+    [
+     220.0,
+     779.0
+    ],
+    [
+     203.0,
+     786.0
+    ],
+    [
+     119.0,
+     778.0
+    ],
+    [
+     119.0,
+     812.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     803.0
+    ],
+    [
+     618.0,
+     810.0
+    ]
+   ],
+   "readings": {
+    "kraken": "borse di chuoio grandi dasuggellare",
+    "tei": "ii borse di chuoio grande da suggellare",
+    "tei_expanded": "ii borse di chuoio grande da suggellare",
+    "claude": "ii borse di chuoio grande da suggellare"
+   },
+   "flag": false,
+   "note": "",
+   "text": "borse di chuoio grandi dasuggellare",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      174.0,
      812.0
@@ -6430,7 +10211,7 @@
      812.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      176.0,
      803.0
@@ -6439,18 +10220,253 @@
      618.0,
      810.0
     ]
-   ],
-   "readings": {
-    "kraken": "borse di chuoio grandi dasuggellare"
-   },
-   "flag": false,
-   "note": "",
-   "text": "borse di chuoio grandi dasuggellare",
-   "agreement": null
+   ]
   },
   {
    "id": "l21",
    "polygon": [
+    [
+     210.0,
+     846.0
+    ],
+    [
+     216.0,
+     852.0
+    ],
+    [
+     217.0,
+     852.0
+    ],
+    [
+     218.0,
+     852.0
+    ],
+    [
+     219.0,
+     852.0
+    ],
+    [
+     252.0,
+     848.0
+    ],
+    [
+     289.0,
+     853.0
+    ],
+    [
+     290.0,
+     853.0
+    ],
+    [
+     322.0,
+     846.0
+    ],
+    [
+     356.0,
+     854.0
+    ],
+    [
+     357.0,
+     854.0
+    ],
+    [
+     358.0,
+     854.0
+    ],
+    [
+     359.0,
+     854.0
+    ],
+    [
+     359.0,
+     853.0
+    ],
+    [
+     365.0,
+     848.0
+    ],
+    [
+     400.0,
+     848.0
+    ],
+    [
+     434.0,
+     855.0
+    ],
+    [
+     435.0,
+     855.0
+    ],
+    [
+     465.0,
+     849.0
+    ],
+    [
+     481.0,
+     856.0
+    ],
+    [
+     482.0,
+     856.0
+    ],
+    [
+     483.0,
+     856.0
+    ],
+    [
+     554.0,
+     849.0
+    ],
+    [
+     555.0,
+     841.0
+    ],
+    [
+     555.0,
+     824.0
+    ],
+    [
+     530.0,
+     816.0
+    ],
+    [
+     529.0,
+     816.0
+    ],
+    [
+     528.0,
+     816.0
+    ],
+    [
+     526.0,
+     816.0
+    ],
+    [
+     512.0,
+     823.0
+    ],
+    [
+     441.0,
+     823.0
+    ],
+    [
+     433.0,
+     816.0
+    ],
+    [
+     432.0,
+     816.0
+    ],
+    [
+     430.0,
+     816.0
+    ],
+    [
+     429.0,
+     816.0
+    ],
+    [
+     400.0,
+     822.0
+    ],
+    [
+     330.0,
+     820.0
+    ],
+    [
+     316.0,
+     812.0
+    ],
+    [
+     315.0,
+     812.0
+    ],
+    [
+     273.0,
+     812.0
+    ],
+    [
+     272.0,
+     812.0
+    ],
+    [
+     270.0,
+     812.0
+    ],
+    [
+     269.0,
+     812.0
+    ],
+    [
+     269.0,
+     813.0
+    ],
+    [
+     264.0,
+     819.0
+    ],
+    [
+     244.0,
+     811.0
+    ],
+    [
+     243.0,
+     811.0
+    ],
+    [
+     242.0,
+     811.0
+    ],
+    [
+     241.0,
+     811.0
+    ],
+    [
+     217.0,
+     817.0
+    ],
+    [
+     186.0,
+     811.0
+    ],
+    [
+     185.0,
+     811.0
+    ],
+    [
+     184.0,
+     811.0
+    ],
+    [
+     119.0,
+     818.0
+    ],
+    [
+     119.0,
+     850.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     836.0
+    ],
+    [
+     555.0,
+     841.0
+    ]
+   ],
+   "readings": {
+    "kraken": "sacchetti di canovaccio damoneta",
+    "tei": "vi sacchetti di canovaccio da moneta.",
+    "tei_expanded": "vi sacchetti di canovaccio da moneta.",
+    "claude": "vi sacchetti di canovaccio da moneta."
+   },
+   "flag": false,
+   "note": "",
+   "text": "sacchetti di canovaccio damoneta",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      169.0,
      836.0
@@ -6680,7 +10696,7 @@
      836.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      169.0,
      836.0
@@ -6689,14 +10705,7 @@
      555.0,
      841.0
     ]
-   ],
-   "readings": {
-    "kraken": "sacchetti di canovaccio damoneta"
-   },
-   "flag": false,
-   "note": "",
-   "text": "sacchetti di canovaccio damoneta",
-   "agreement": null
+   ]
   },
   {
    "id": "l22",
@@ -6993,7 +11002,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Altri libri ⁊ scricture levati dalꝓ consolo di firenze ī uno forziere"
+    "kraken": "Altri libri ⁊ scricture levati dalꝓ consolo di firenze ī uno forziere",
+    "tei": "(Altri libri et scriture levati dal proconsolo di firenze in uno forziere)",
+    "tei_expanded": "(Altri libri et scriture levati dal proconsolo di firenze in uno forziere)",
+    "claude": "(Altri libri ⁊ scriture levati dal proconsolo di firenze ī uno forziere)"
    },
    "flag": false,
    "note": "",
@@ -7003,6 +11015,400 @@
   {
    "id": "l23",
    "polygon": [
+    [
+     230.0,
+     940.0
+    ],
+    [
+     231.0,
+     940.0
+    ],
+    [
+     291.0,
+     934.0
+    ],
+    [
+     386.0,
+     942.0
+    ],
+    [
+     387.0,
+     942.0
+    ],
+    [
+     388.0,
+     942.0
+    ],
+    [
+     389.0,
+     942.0
+    ],
+    [
+     393.0,
+     938.0
+    ],
+    [
+     421.0,
+     949.0
+    ],
+    [
+     422.0,
+     949.0
+    ],
+    [
+     423.0,
+     949.0
+    ],
+    [
+     424.0,
+     949.0
+    ],
+    [
+     425.0,
+     949.0
+    ],
+    [
+     441.0,
+     938.0
+    ],
+    [
+     487.0,
+     945.0
+    ],
+    [
+     488.0,
+     945.0
+    ],
+    [
+     489.0,
+     945.0
+    ],
+    [
+     500.0,
+     939.0
+    ],
+    [
+     519.0,
+     947.0
+    ],
+    [
+     520.0,
+     947.0
+    ],
+    [
+     521.0,
+     947.0
+    ],
+    [
+     522.0,
+     947.0
+    ],
+    [
+     549.0,
+     940.0
+    ],
+    [
+     592.0,
+     953.0
+    ],
+    [
+     593.0,
+     953.0
+    ],
+    [
+     594.0,
+     953.0
+    ],
+    [
+     595.0,
+     953.0
+    ],
+    [
+     615.0,
+     945.0
+    ],
+    [
+     630.0,
+     951.0
+    ],
+    [
+     631.0,
+     951.0
+    ],
+    [
+     632.0,
+     951.0
+    ],
+    [
+     633.0,
+     951.0
+    ],
+    [
+     652.0,
+     944.0
+    ],
+    [
+     720.0,
+     944.0
+    ],
+    [
+     768.0,
+     957.0
+    ],
+    [
+     769.0,
+     957.0
+    ],
+    [
+     770.0,
+     957.0
+    ],
+    [
+     816.0,
+     950.0
+    ],
+    [
+     834.0,
+     958.0
+    ],
+    [
+     835.0,
+     958.0
+    ],
+    [
+     836.0,
+     958.0
+    ],
+    [
+     890.0,
+     955.0
+    ],
+    [
+     932.0,
+     961.0
+    ],
+    [
+     934.0,
+     941.0
+    ],
+    [
+     934.0,
+     923.0
+    ],
+    [
+     771.0,
+     920.0
+    ],
+    [
+     722.0,
+     908.0
+    ],
+    [
+     721.0,
+     908.0
+    ],
+    [
+     720.0,
+     908.0
+    ],
+    [
+     697.0,
+     915.0
+    ],
+    [
+     667.0,
+     907.0
+    ],
+    [
+     666.0,
+     907.0
+    ],
+    [
+     665.0,
+     907.0
+    ],
+    [
+     664.0,
+     907.0
+    ],
+    [
+     646.0,
+     916.0
+    ],
+    [
+     593.0,
+     905.0
+    ],
+    [
+     592.0,
+     905.0
+    ],
+    [
+     531.0,
+     906.0
+    ],
+    [
+     530.0,
+     906.0
+    ],
+    [
+     518.0,
+     913.0
+    ],
+    [
+     500.0,
+     903.0
+    ],
+    [
+     499.0,
+     903.0
+    ],
+    [
+     498.0,
+     903.0
+    ],
+    [
+     497.0,
+     903.0
+    ],
+    [
+     471.0,
+     909.0
+    ],
+    [
+     440.0,
+     903.0
+    ],
+    [
+     439.0,
+     903.0
+    ],
+    [
+     438.0,
+     903.0
+    ],
+    [
+     422.0,
+     910.0
+    ],
+    [
+     389.0,
+     910.0
+    ],
+    [
+     378.0,
+     901.0
+    ],
+    [
+     378.0,
+     900.0
+    ],
+    [
+     377.0,
+     900.0
+    ],
+    [
+     376.0,
+     900.0
+    ],
+    [
+     375.0,
+     900.0
+    ],
+    [
+     374.0,
+     900.0
+    ],
+    [
+     362.0,
+     904.0
+    ],
+    [
+     295.0,
+     899.0
+    ],
+    [
+     294.0,
+     899.0
+    ],
+    [
+     254.0,
+     906.0
+    ],
+    [
+     237.0,
+     900.0
+    ],
+    [
+     236.0,
+     900.0
+    ],
+    [
+     235.0,
+     900.0
+    ],
+    [
+     234.0,
+     900.0
+    ],
+    [
+     213.0,
+     905.0
+    ],
+    [
+     202.0,
+     897.0
+    ],
+    [
+     202.0,
+     896.0
+    ],
+    [
+     201.0,
+     896.0
+    ],
+    [
+     200.0,
+     896.0
+    ],
+    [
+     199.0,
+     896.0
+    ],
+    [
+     119.0,
+     899.0
+    ],
+    [
+     119.0,
+     931.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     924.0
+    ],
+    [
+     394.0,
+     926.0
+    ],
+    [
+     934.0,
+     941.0
+    ]
+   ],
+   "readings": {
+    "kraken": "libro di carte Reali di michele baroncelli sē 𝒹 cō covēta di pecora mi iiiiº",
+    "tei": "1 libro di carte Reali di michele baroncelli ser A. con coverta di pecora quaderni iiiiº",
+    "tei_expanded": "1 libro di carte Reali di michele baroncelli ser A. con coverta di pecora quaderni iiiiº",
+    "claude": "1 libro di carte Reali di michele baroncelli ser A. cō coverta di pecora quaderni iiiiº"
+   },
+   "flag": false,
+   "note": "",
+   "text": "libro di carte Reali di michele baroncelli sē 𝒹 cō covēta di pecora mi iiiiº",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      171.0,
      924.0
@@ -7380,7 +11786,7 @@
      924.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      171.0,
      924.0
@@ -7393,14 +11799,7 @@
      934.0,
      941.0
     ]
-   ],
-   "readings": {
-    "kraken": "libro di carte Reali di michele baroncelli sē 𝒹 cō covēta di pecora mi iiiiº"
-   },
-   "flag": false,
-   "note": "",
-   "text": "libro di carte Reali di michele baroncelli sē 𝒹 cō covēta di pecora mi iiiiº",
-   "agreement": null
+   ]
   },
   {
    "id": "l24",
@@ -7828,6 +12227,320 @@
    "id": "l25",
    "polygon": [
     [
+     193.0,
+     1012.0
+    ],
+    [
+     194.0,
+     1012.0
+    ],
+    [
+     195.0,
+     1012.0
+    ],
+    [
+     196.0,
+     1012.0
+    ],
+    [
+     196.0,
+     1011.0
+    ],
+    [
+     205.0,
+     1002.0
+    ],
+    [
+     229.0,
+     1002.0
+    ],
+    [
+     249.0,
+     1013.0
+    ],
+    [
+     250.0,
+     1013.0
+    ],
+    [
+     322.0,
+     1014.0
+    ],
+    [
+     323.0,
+     1014.0
+    ],
+    [
+     324.0,
+     1014.0
+    ],
+    [
+     341.0,
+     1006.0
+    ],
+    [
+     368.0,
+     1014.0
+    ],
+    [
+     369.0,
+     1014.0
+    ],
+    [
+     370.0,
+     1014.0
+    ],
+    [
+     397.0,
+     1010.0
+    ],
+    [
+     405.0,
+     1016.0
+    ],
+    [
+     406.0,
+     1016.0
+    ],
+    [
+     407.0,
+     1016.0
+    ],
+    [
+     408.0,
+     1016.0
+    ],
+    [
+     409.0,
+     1016.0
+    ],
+    [
+     445.0,
+     1006.0
+    ],
+    [
+     499.0,
+     1012.0
+    ],
+    [
+     500.0,
+     1012.0
+    ],
+    [
+     501.0,
+     1012.0
+    ],
+    [
+     515.0,
+     1008.0
+    ],
+    [
+     541.0,
+     1018.0
+    ],
+    [
+     542.0,
+     1018.0
+    ],
+    [
+     544.0,
+     1018.0
+    ],
+    [
+     640.0,
+     1009.0
+    ],
+    [
+     641.0,
+     1001.0
+    ],
+    [
+     640.0,
+     981.0
+    ],
+    [
+     582.0,
+     984.0
+    ],
+    [
+     563.0,
+     977.0
+    ],
+    [
+     562.0,
+     977.0
+    ],
+    [
+     561.0,
+     977.0
+    ],
+    [
+     560.0,
+     977.0
+    ],
+    [
+     547.0,
+     983.0
+    ],
+    [
+     542.0,
+     977.0
+    ],
+    [
+     541.0,
+     977.0
+    ],
+    [
+     541.0,
+     976.0
+    ],
+    [
+     540.0,
+     976.0
+    ],
+    [
+     539.0,
+     976.0
+    ],
+    [
+     538.0,
+     976.0
+    ],
+    [
+     510.0,
+     981.0
+    ],
+    [
+     469.0,
+     974.0
+    ],
+    [
+     468.0,
+     974.0
+    ],
+    [
+     467.0,
+     974.0
+    ],
+    [
+     453.0,
+     981.0
+    ],
+    [
+     443.0,
+     973.0
+    ],
+    [
+     442.0,
+     973.0
+    ],
+    [
+     441.0,
+     973.0
+    ],
+    [
+     412.0,
+     973.0
+    ],
+    [
+     411.0,
+     973.0
+    ],
+    [
+     410.0,
+     973.0
+    ],
+    [
+     387.0,
+     980.0
+    ],
+    [
+     371.0,
+     972.0
+    ],
+    [
+     370.0,
+     972.0
+    ],
+    [
+     369.0,
+     972.0
+    ],
+    [
+     368.0,
+     972.0
+    ],
+    [
+     347.0,
+     978.0
+    ],
+    [
+     341.0,
+     971.0
+    ],
+    [
+     340.0,
+     971.0
+    ],
+    [
+     339.0,
+     971.0
+    ],
+    [
+     338.0,
+     971.0
+    ],
+    [
+     245.0,
+     978.0
+    ],
+    [
+     231.0,
+     969.0
+    ],
+    [
+     230.0,
+     969.0
+    ],
+    [
+     229.0,
+     969.0
+    ],
+    [
+     228.0,
+     969.0
+    ],
+    [
+     119.0,
+     976.0
+    ],
+    [
+     119.0,
+     1011.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     993.0
+    ],
+    [
+     641.0,
+     1001.0
+    ]
+   ],
+   "readings": {
+    "kraken": "m lungo di cār Reali coverta di pecora",
+    "tei": "1 libro di carte Reali coverta di pecora.",
+    "tei_expanded": "1 libro di carte Reali coverta di pecora.",
+    "claude": "1 libro di carte Reali coverta di pecora."
+   },
+   "flag": false,
+   "note": "",
+   "text": "m lungo di cār Reali coverta di pecora",
+   "agreement": null,
+   "polygon_before_tei": [
+    [
      170.0,
      993.0
     ],
@@ -8128,7 +12841,7 @@
      993.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      170.0,
      993.0
@@ -8137,18 +12850,333 @@
      641.0,
      1001.0
     ]
-   ],
-   "readings": {
-    "kraken": "m lungo di cār Reali coverta di pecora"
-   },
-   "flag": false,
-   "note": "",
-   "text": "m lungo di cār Reali coverta di pecora",
-   "agreement": null
+   ]
   },
   {
    "id": "l26",
    "polygon": [
+    [
+     1096.0,
+     1030.0
+    ],
+    [
+     1040.0,
+     1022.0
+    ],
+    [
+     1038.0,
+     1022.0
+    ],
+    [
+     1037.0,
+     1022.0
+    ],
+    [
+     1024.0,
+     1030.0
+    ],
+    [
+     1011.0,
+     1021.0
+    ],
+    [
+     1010.0,
+     1021.0
+    ],
+    [
+     1009.0,
+     1021.0
+    ],
+    [
+     1008.0,
+     1021.0
+    ],
+    [
+     933.0,
+     1028.0
+    ],
+    [
+     886.0,
+     1018.0
+    ],
+    [
+     885.0,
+     1018.0
+    ],
+    [
+     678.0,
+     1021.0
+    ],
+    [
+     635.0,
+     1012.0
+    ],
+    [
+     634.0,
+     1012.0
+    ],
+    [
+     530.0,
+     1017.0
+    ],
+    [
+     484.0,
+     1009.0
+    ],
+    [
+     483.0,
+     1009.0
+    ],
+    [
+     427.0,
+     1015.0
+    ],
+    [
+     384.0,
+     1005.0
+    ],
+    [
+     382.0,
+     1005.0
+    ],
+    [
+     381.0,
+     1005.0
+    ],
+    [
+     357.0,
+     1013.0
+    ],
+    [
+     263.0,
+     1012.0
+    ],
+    [
+     246.0,
+     1002.0
+    ],
+    [
+     245.0,
+     1002.0
+    ],
+    [
+     244.0,
+     1002.0
+    ],
+    [
+     119.0,
+     1008.0
+    ],
+    [
+     119.0,
+     1047.0
+    ],
+    [
+     261.0,
+     1041.0
+    ],
+    [
+     304.0,
+     1051.0
+    ],
+    [
+     305.0,
+     1051.0
+    ],
+    [
+     306.0,
+     1051.0
+    ],
+    [
+     342.0,
+     1045.0
+    ],
+    [
+     388.0,
+     1053.0
+    ],
+    [
+     389.0,
+     1053.0
+    ],
+    [
+     390.0,
+     1053.0
+    ],
+    [
+     391.0,
+     1053.0
+    ],
+    [
+     405.0,
+     1045.0
+    ],
+    [
+     429.0,
+     1045.0
+    ],
+    [
+     467.0,
+     1045.0
+    ],
+    [
+     496.0,
+     1056.0
+    ],
+    [
+     497.0,
+     1056.0
+    ],
+    [
+     498.0,
+     1056.0
+    ],
+    [
+     499.0,
+     1056.0
+    ],
+    [
+     526.0,
+     1048.0
+    ],
+    [
+     564.0,
+     1054.0
+    ],
+    [
+     565.0,
+     1054.0
+    ],
+    [
+     597.0,
+     1049.0
+    ],
+    [
+     681.0,
+     1061.0
+    ],
+    [
+     682.0,
+     1061.0
+    ],
+    [
+     683.0,
+     1061.0
+    ],
+    [
+     706.0,
+     1052.0
+    ],
+    [
+     727.0,
+     1052.0
+    ],
+    [
+     740.0,
+     1062.0
+    ],
+    [
+     741.0,
+     1062.0
+    ],
+    [
+     742.0,
+     1062.0
+    ],
+    [
+     832.0,
+     1064.0
+    ],
+    [
+     833.0,
+     1064.0
+    ],
+    [
+     889.0,
+     1057.0
+    ],
+    [
+     934.0,
+     1063.0
+    ],
+    [
+     935.0,
+     1063.0
+    ],
+    [
+     963.0,
+     1059.0
+    ],
+    [
+     981.0,
+     1068.0
+    ],
+    [
+     982.0,
+     1068.0
+    ],
+    [
+     983.0,
+     1068.0
+    ],
+    [
+     984.0,
+     1068.0
+    ],
+    [
+     1015.0,
+     1060.0
+    ],
+    [
+     1045.0,
+     1069.0
+    ],
+    [
+     1046.0,
+     1069.0
+    ],
+    [
+     1098.0,
+     1070.0
+    ],
+    [
+     1100.0,
+     1049.0
+    ],
+    [
+     1099.0,
+     1043.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     1030.0
+    ],
+    [
+     199.0,
+     1027.0
+    ],
+    [
+     413.0,
+     1031.0
+    ],
+    [
+     1100.0,
+     1049.0
+    ]
+   ],
+   "readings": {
+    "kraken": "  m di cār mezane cō coverta di pecora di Ri cōdanze Entroiii unquadenuccio di michele bardcl",
+    "tei": "1 quaderno di carte mezane con coverta du pecora di Ricordanze entroivi un quadernuccio di michele baroncelli",
+    "tei_expanded": "1 quaderno di carte mezane con coverta du pecora di Ricordanze entroivi un quadernuccio di michele baroncelli",
+    "claude": "1 quaderno di carte mezane cō coverta du pecora di Ricordanze entroivi un quadernuccio di michele baroncelli"
+   },
+   "flag": false,
+   "note": "",
+   "text": "  m di cār mezane cō coverta di pecora di Ri cōdanze Entroiii unquadenuccio di michele bardcl",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      1096.0,
      1030.0
@@ -8450,7 +13478,7 @@
      1030.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      156.0,
      1030.0
@@ -8467,14 +13495,7 @@
      1100.0,
      1049.0
     ]
-   ],
-   "readings": {
-    "kraken": "  m di cār mezane cō coverta di pecora di Ri cōdanze Entroiii unquadenuccio di michele bardcl"
-   },
-   "flag": false,
-   "note": "",
-   "text": "  m di cār mezane cō coverta di pecora di Ri cōdanze Entroiii unquadenuccio di michele bardcl",
-   "agreement": null
+   ]
   },
   {
    "id": "l27",
@@ -8787,7 +13808,10 @@
     ]
    ],
    "readings": {
-    "kraken": "tropezi di carta insieme de fatti di m̄o gineura"
+    "kraken": "tropezi di carta insieme de fatti di m̄o gineura",
+    "tei": "tre pezi di carte insieme di carta insieme de fatti di madonna ginevra",
+    "tei_expanded": "tre pezi di carte insieme di carta insieme de fatti di madonna ginevra",
+    "claude": "tre pezi di carte insieme di carta insieme de fatti di madonna ginevra"
    },
    "flag": false,
    "note": "",
@@ -8941,7 +13965,9 @@
     ]
    ],
    "readings": {
-    "kraken": "tre pezi di carte insieme di cōꝓe di case"
+    "kraken": "tre pezi di carte insieme di cōꝓe di case",
+    "tei": "tre pezi di carte insieme di conpere di case",
+    "tei_expanded": "tre pezi di carte insieme di conpere di case"
    },
    "flag": false,
    "note": "",
@@ -8951,6 +13977,388 @@
   {
    "id": "l29",
    "polygon": [
+    [
+     918.0,
+     1117.0
+    ],
+    [
+     840.0,
+     1116.0
+    ],
+    [
+     839.0,
+     1116.0
+    ],
+    [
+     838.0,
+     1116.0
+    ],
+    [
+     819.0,
+     1123.0
+    ],
+    [
+     793.0,
+     1115.0
+    ],
+    [
+     792.0,
+     1115.0
+    ],
+    [
+     791.0,
+     1115.0
+    ],
+    [
+     722.0,
+     1121.0
+    ],
+    [
+     698.0,
+     1113.0
+    ],
+    [
+     697.0,
+     1113.0
+    ],
+    [
+     696.0,
+     1113.0
+    ],
+    [
+     695.0,
+     1113.0
+    ],
+    [
+     674.0,
+     1118.0
+    ],
+    [
+     664.0,
+     1112.0
+    ],
+    [
+     663.0,
+     1112.0
+    ],
+    [
+     662.0,
+     1112.0
+    ],
+    [
+     661.0,
+     1112.0
+    ],
+    [
+     576.0,
+     1117.0
+    ],
+    [
+     568.0,
+     1111.0
+    ],
+    [
+     568.0,
+     1110.0
+    ],
+    [
+     567.0,
+     1110.0
+    ],
+    [
+     566.0,
+     1110.0
+    ],
+    [
+     565.0,
+     1110.0
+    ],
+    [
+     564.0,
+     1110.0
+    ],
+    [
+     541.0,
+     1116.0
+    ],
+    [
+     524.0,
+     1109.0
+    ],
+    [
+     523.0,
+     1109.0
+    ],
+    [
+     522.0,
+     1109.0
+    ],
+    [
+     435.0,
+     1114.0
+    ],
+    [
+     426.0,
+     1109.0
+    ],
+    [
+     425.0,
+     1109.0
+    ],
+    [
+     424.0,
+     1109.0
+    ],
+    [
+     423.0,
+     1109.0
+    ],
+    [
+     341.0,
+     1112.0
+    ],
+    [
+     331.0,
+     1106.0
+    ],
+    [
+     330.0,
+     1106.0
+    ],
+    [
+     329.0,
+     1106.0
+    ],
+    [
+     328.0,
+     1106.0
+    ],
+    [
+     295.0,
+     1111.0
+    ],
+    [
+     267.0,
+     1106.0
+    ],
+    [
+     266.0,
+     1106.0
+    ],
+    [
+     119.0,
+     1108.0
+    ],
+    [
+     119.0,
+     1144.0
+    ],
+    [
+     220.0,
+     1139.0
+    ],
+    [
+     247.0,
+     1147.0
+    ],
+    [
+     248.0,
+     1147.0
+    ],
+    [
+     305.0,
+     1148.0
+    ],
+    [
+     306.0,
+     1148.0
+    ],
+    [
+     307.0,
+     1148.0
+    ],
+    [
+     308.0,
+     1148.0
+    ],
+    [
+     308.0,
+     1147.0
+    ],
+    [
+     315.0,
+     1142.0
+    ],
+    [
+     325.0,
+     1149.0
+    ],
+    [
+     326.0,
+     1149.0
+    ],
+    [
+     327.0,
+     1149.0
+    ],
+    [
+     328.0,
+     1149.0
+    ],
+    [
+     329.0,
+     1149.0
+    ],
+    [
+     342.0,
+     1145.0
+    ],
+    [
+     388.0,
+     1150.0
+    ],
+    [
+     389.0,
+     1150.0
+    ],
+    [
+     390.0,
+     1150.0
+    ],
+    [
+     411.0,
+     1143.0
+    ],
+    [
+     485.0,
+     1153.0
+    ],
+    [
+     486.0,
+     1153.0
+    ],
+    [
+     522.0,
+     1145.0
+    ],
+    [
+     534.0,
+     1154.0
+    ],
+    [
+     535.0,
+     1154.0
+    ],
+    [
+     536.0,
+     1154.0
+    ],
+    [
+     537.0,
+     1154.0
+    ],
+    [
+     572.0,
+     1146.0
+    ],
+    [
+     592.0,
+     1155.0
+    ],
+    [
+     593.0,
+     1155.0
+    ],
+    [
+     594.0,
+     1155.0
+    ],
+    [
+     651.0,
+     1150.0
+    ],
+    [
+     706.0,
+     1157.0
+    ],
+    [
+     707.0,
+     1157.0
+    ],
+    [
+     708.0,
+     1157.0
+    ],
+    [
+     722.0,
+     1150.0
+    ],
+    [
+     761.0,
+     1150.0
+    ],
+    [
+     793.0,
+     1159.0
+    ],
+    [
+     794.0,
+     1159.0
+    ],
+    [
+     795.0,
+     1159.0
+    ],
+    [
+     796.0,
+     1159.0
+    ],
+    [
+     821.0,
+     1152.0
+    ],
+    [
+     870.0,
+     1161.0
+    ],
+    [
+     871.0,
+     1161.0
+    ],
+    [
+     918.0,
+     1153.0
+    ],
+    [
+     919.0,
+     1142.0
+    ],
+    [
+     919.0,
+     1134.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     1126.0
+    ],
+    [
+     919.0,
+     1142.0
+    ]
+   ],
+   "readings": {
+    "kraken": "carta di ꝓchura e carta di fine fece michele ⁊ si mone limo allaltro",
+    "tei": "1 carta di pechura e i carta di fine fece michele e simone l uno allaltro",
+    "tei_expanded": "1 carta di pechura e i carta di fine fece michele e simone l uno allaltro",
+    "claude": "1 carta di pechura ⁊ i carta di fine fece michele ⁊ simone l uno allaltro"
+   },
+   "flag": false,
+   "note": "",
+   "text": "carta di ꝓchura e carta di fine fece michele ⁊ si mone limo allaltro",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      918.0,
      1117.0
@@ -9320,7 +14728,7 @@
      1117.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      178.0,
      1126.0
@@ -9329,14 +14737,7 @@
      919.0,
      1142.0
     ]
-   ],
-   "readings": {
-    "kraken": "carta di ꝓchura e carta di fine fece michele ⁊ si mone limo allaltro"
-   },
-   "flag": false,
-   "note": "",
-   "text": "carta di ꝓchura e carta di fine fece michele ⁊ si mone limo allaltro",
-   "agreement": null
+   ]
   },
   {
    "id": "l30",
@@ -9653,7 +15054,10 @@
     ]
    ],
    "readings": {
-    "kraken": "iiiiº carte ⁊ altre scricture piu desatti di pagolo dapistoia"
+    "kraken": "iiiiº carte ⁊ altre scricture piu desatti di pagolo dapistoia",
+    "tei": "iiiiº et altre scritture piu de fatti di pagolo di pistoia",
+    "tei_expanded": "iiiiº et altre scritture piu de fatti di pagolo di pistoia",
+    "claude": "iiiiº ⁊ altre scritture piu de fatti di pagolo di pistoia"
    },
    "flag": false,
    "note": "",
@@ -9663,6 +15067,144 @@
   {
    "id": "l31",
    "polygon": [
+    [
+     214.0,
+     1212.0
+    ],
+    [
+     215.0,
+     1212.0
+    ],
+    [
+     216.0,
+     1212.0
+    ],
+    [
+     217.0,
+     1212.0
+    ],
+    [
+     242.0,
+     1202.0
+    ],
+    [
+     250.0,
+     1207.0
+    ],
+    [
+     251.0,
+     1207.0
+    ],
+    [
+     252.0,
+     1207.0
+    ],
+    [
+     253.0,
+     1207.0
+    ],
+    [
+     298.0,
+     1203.0
+    ],
+    [
+     321.0,
+     1214.0
+    ],
+    [
+     322.0,
+     1214.0
+    ],
+    [
+     323.0,
+     1216.0
+    ],
+    [
+     377.0,
+     1216.0
+    ],
+    [
+     377.0,
+     1214.0
+    ],
+    [
+     378.0,
+     1214.0
+    ],
+    [
+     424.0,
+     1202.0
+    ],
+    [
+     425.0,
+     1196.0
+    ],
+    [
+     424.0,
+     1180.0
+    ],
+    [
+     368.0,
+     1173.0
+    ],
+    [
+     366.0,
+     1173.0
+    ],
+    [
+     313.0,
+     1179.0
+    ],
+    [
+     299.0,
+     1172.0
+    ],
+    [
+     298.0,
+     1172.0
+    ],
+    [
+     297.0,
+     1172.0
+    ],
+    [
+     296.0,
+     1172.0
+    ],
+    [
+     282.0,
+     1178.0
+    ],
+    [
+     119.0,
+     1175.0
+    ],
+    [
+     119.0,
+     1200.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     1194.0
+    ],
+    [
+     425.0,
+     1196.0
+    ]
+   ],
+   "readings": {
+    "kraken": "altra carta di ꝓchura",
+    "tei": "1 altra carta di pechura",
+    "tei_expanded": "1 altra carta di pechura",
+    "claude": "1 altra carta di pechura"
+   },
+   "flag": false,
+   "note": "",
+   "text": "altra carta di ꝓchura",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      176.0,
      1194.0
@@ -9788,7 +15330,7 @@
      1194.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      176.0,
      1194.0
@@ -9797,18 +15339,349 @@
      425.0,
      1196.0
     ]
-   ],
-   "readings": {
-    "kraken": "altra carta di ꝓchura"
-   },
-   "flag": false,
-   "note": "",
-   "text": "altra carta di ꝓchura",
-   "agreement": null
+   ]
   },
   {
    "id": "l32",
    "polygon": [
+    [
+     231.0,
+     1243.0
+    ],
+    [
+     232.0,
+     1243.0
+    ],
+    [
+     233.0,
+     1243.0
+    ],
+    [
+     247.0,
+     1239.0
+    ],
+    [
+     267.0,
+     1245.0
+    ],
+    [
+     268.0,
+     1245.0
+    ],
+    [
+     269.0,
+     1246.0
+    ],
+    [
+     313.0,
+     1246.0
+    ],
+    [
+     313.0,
+     1245.0
+    ],
+    [
+     314.0,
+     1245.0
+    ],
+    [
+     333.0,
+     1238.0
+    ],
+    [
+     363.0,
+     1246.0
+    ],
+    [
+     364.0,
+     1246.0
+    ],
+    [
+     365.0,
+     1248.0
+    ],
+    [
+     409.0,
+     1248.0
+    ],
+    [
+     409.0,
+     1246.0
+    ],
+    [
+     410.0,
+     1246.0
+    ],
+    [
+     430.0,
+     1238.0
+    ],
+    [
+     452.0,
+     1246.0
+    ],
+    [
+     453.0,
+     1246.0
+    ],
+    [
+     454.0,
+     1246.0
+    ],
+    [
+     489.0,
+     1239.0
+    ],
+    [
+     566.0,
+     1239.0
+    ],
+    [
+     583.0,
+     1246.0
+    ],
+    [
+     584.0,
+     1246.0
+    ],
+    [
+     585.0,
+     1246.0
+    ],
+    [
+     586.0,
+     1246.0
+    ],
+    [
+     599.0,
+     1239.0
+    ],
+    [
+     608.0,
+     1246.0
+    ],
+    [
+     608.0,
+     1248.0
+    ],
+    [
+     609.0,
+     1248.0
+    ],
+    [
+     610.0,
+     1248.0
+    ],
+    [
+     632.0,
+     1249.0
+    ],
+    [
+     633.0,
+     1249.0
+    ],
+    [
+     634.0,
+     1249.0
+    ],
+    [
+     635.0,
+     1249.0
+    ],
+    [
+     650.0,
+     1240.0
+    ],
+    [
+     711.0,
+     1240.0
+    ],
+    [
+     728.0,
+     1249.0
+    ],
+    [
+     729.0,
+     1249.0
+    ],
+    [
+     730.0,
+     1250.0
+    ],
+    [
+     762.0,
+     1250.0
+    ],
+    [
+     762.0,
+     1249.0
+    ],
+    [
+     763.0,
+     1249.0
+    ],
+    [
+     784.0,
+     1239.0
+    ],
+    [
+     785.0,
+     1229.0
+    ],
+    [
+     785.0,
+     1208.0
+    ],
+    [
+     759.0,
+     1204.0
+    ],
+    [
+     758.0,
+     1204.0
+    ],
+    [
+     757.0,
+     1204.0
+    ],
+    [
+     756.0,
+     1204.0
+    ],
+    [
+     744.0,
+     1213.0
+    ],
+    [
+     696.0,
+     1213.0
+    ],
+    [
+     675.0,
+     1204.0
+    ],
+    [
+     674.0,
+     1204.0
+    ],
+    [
+     589.0,
+     1203.0
+    ],
+    [
+     588.0,
+     1203.0
+    ],
+    [
+     587.0,
+     1203.0
+    ],
+    [
+     573.0,
+     1209.0
+    ],
+    [
+     561.0,
+     1203.0
+    ],
+    [
+     560.0,
+     1203.0
+    ],
+    [
+     558.0,
+     1203.0
+    ],
+    [
+     500.0,
+     1211.0
+    ],
+    [
+     490.0,
+     1204.0
+    ],
+    [
+     490.0,
+     1203.0
+    ],
+    [
+     489.0,
+     1203.0
+    ],
+    [
+     488.0,
+     1203.0
+    ],
+    [
+     456.0,
+     1202.0
+    ],
+    [
+     455.0,
+     1202.0
+    ],
+    [
+     454.0,
+     1202.0
+    ],
+    [
+     453.0,
+     1202.0
+    ],
+    [
+     439.0,
+     1211.0
+    ],
+    [
+     328.0,
+     1211.0
+    ],
+    [
+     267.0,
+     1201.0
+    ],
+    [
+     266.0,
+     1201.0
+    ],
+    [
+     265.0,
+     1201.0
+    ],
+    [
+     235.0,
+     1209.0
+    ],
+    [
+     119.0,
+     1208.0
+    ],
+    [
+     119.0,
+     1237.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     1225.0
+    ],
+    [
+     785.0,
+     1229.0
+    ]
+   ],
+   "readings": {
+    "kraken": "carta di cōfessione ⁊ fine di ƒ 200 di Jacopo bonatcorfi",
+    "tei": "1 carta di confessione et fine di fr 200 di Jacopo bonaccorsi",
+    "tei_expanded": "1 carta di confessione et fine di fr 200 di Jacopo bonaccorsi",
+    "claude": "1 carta di cōfessione ⁊ fine di fr 200 di Jacopo bonaccorsi"
+   },
+   "flag": false,
+   "note": "",
+   "text": "carta di cōfessione ⁊ fine di ƒ 200 di Jacopo bonatcorfi",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      174.0,
      1225.0
@@ -10134,7 +16007,7 @@
      1225.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      174.0,
      1225.0
@@ -10143,18 +16016,221 @@
      785.0,
      1229.0
     ]
-   ],
-   "readings": {
-    "kraken": "carta di cōfessione ⁊ fine di ƒ 200 di Jacopo bonatcorfi"
-   },
-   "flag": false,
-   "note": "",
-   "text": "carta di cōfessione ⁊ fine di ƒ 200 di Jacopo bonatcorfi",
-   "agreement": null
+   ]
   },
   {
    "id": "l33",
    "polygon": [
+    [
+     243.0,
+     1267.0
+    ],
+    [
+     272.0,
+     1277.0
+    ],
+    [
+     273.0,
+     1277.0
+    ],
+    [
+     274.0,
+     1277.0
+    ],
+    [
+     356.0,
+     1271.0
+    ],
+    [
+     376.0,
+     1278.0
+    ],
+    [
+     377.0,
+     1278.0
+    ],
+    [
+     430.0,
+     1280.0
+    ],
+    [
+     432.0,
+     1280.0
+    ],
+    [
+     433.0,
+     1280.0
+    ],
+    [
+     434.0,
+     1280.0
+    ],
+    [
+     434.0,
+     1278.0
+    ],
+    [
+     442.0,
+     1271.0
+    ],
+    [
+     477.0,
+     1272.0
+    ],
+    [
+     480.0,
+     1262.0
+    ],
+    [
+     480.0,
+     1246.0
+    ],
+    [
+     454.0,
+     1238.0
+    ],
+    [
+     453.0,
+     1238.0
+    ],
+    [
+     452.0,
+     1238.0
+    ],
+    [
+     451.0,
+     1238.0
+    ],
+    [
+     450.0,
+     1238.0
+    ],
+    [
+     450.0,
+     1239.0
+    ],
+    [
+     442.0,
+     1245.0
+    ],
+    [
+     400.0,
+     1238.0
+    ],
+    [
+     398.0,
+     1238.0
+    ],
+    [
+     397.0,
+     1238.0
+    ],
+    [
+     396.0,
+     1238.0
+    ],
+    [
+     388.0,
+     1244.0
+    ],
+    [
+     326.0,
+     1244.0
+    ],
+    [
+     322.0,
+     1239.0
+    ],
+    [
+     321.0,
+     1239.0
+    ],
+    [
+     321.0,
+     1238.0
+    ],
+    [
+     320.0,
+     1238.0
+    ],
+    [
+     318.0,
+     1238.0
+    ],
+    [
+     317.0,
+     1238.0
+    ],
+    [
+     301.0,
+     1241.0
+    ],
+    [
+     289.0,
+     1236.0
+    ],
+    [
+     288.0,
+     1236.0
+    ],
+    [
+     286.0,
+     1236.0
+    ],
+    [
+     285.0,
+     1236.0
+    ],
+    [
+     284.0,
+     1236.0
+    ],
+    [
+     277.0,
+     1242.0
+    ],
+    [
+     246.0,
+     1235.0
+    ],
+    [
+     245.0,
+     1235.0
+    ],
+    [
+     196.0,
+     1242.0
+    ],
+    [
+     119.0,
+     1234.0
+    ],
+    [
+     119.0,
+     1266.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     1258.0
+    ],
+    [
+     480.0,
+     1262.0
+    ]
+   ],
+   "readings": {
+    "kraken": "carta di cōfessione di ƒ x 𝒹",
+    "tei": "1 carta di confessione di fr x di",
+    "tei_expanded": "1 carta di confessione di fr x di",
+    "claude": "1 carta di cōfessione di fr x di"
+   },
+   "flag": false,
+   "note": "",
+   "text": "carta di cōfessione di ƒ x 𝒹",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      169.0,
      1266.0
@@ -10352,7 +16428,7 @@
      1266.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      170.0,
      1258.0
@@ -10361,18 +16437,405 @@
      480.0,
      1262.0
     ]
-   ],
-   "readings": {
-    "kraken": "carta di cōfessione di ƒ x 𝒹"
-   },
-   "flag": false,
-   "note": "",
-   "text": "carta di cōfessione di ƒ x 𝒹",
-   "agreement": null
+   ]
   },
   {
    "id": "l34",
    "polygon": [
+    [
+     196.0,
+     1307.0
+    ],
+    [
+     197.0,
+     1307.0
+    ],
+    [
+     198.0,
+     1307.0
+    ],
+    [
+     235.0,
+     1302.0
+    ],
+    [
+     263.0,
+     1310.0
+    ],
+    [
+     264.0,
+     1310.0
+    ],
+    [
+     265.0,
+     1310.0
+    ],
+    [
+     321.0,
+     1303.0
+    ],
+    [
+     355.0,
+     1312.0
+    ],
+    [
+     356.0,
+     1312.0
+    ],
+    [
+     357.0,
+     1313.0
+    ],
+    [
+     413.0,
+     1313.0
+    ],
+    [
+     413.0,
+     1312.0
+    ],
+    [
+     414.0,
+     1312.0
+    ],
+    [
+     416.0,
+     1312.0
+    ],
+    [
+     426.0,
+     1304.0
+    ],
+    [
+     497.0,
+     1312.0
+    ],
+    [
+     498.0,
+     1312.0
+    ],
+    [
+     499.0,
+     1312.0
+    ],
+    [
+     516.0,
+     1305.0
+    ],
+    [
+     534.0,
+     1313.0
+    ],
+    [
+     535.0,
+     1313.0
+    ],
+    [
+     536.0,
+     1313.0
+    ],
+    [
+     537.0,
+     1313.0
+    ],
+    [
+     558.0,
+     1304.0
+    ],
+    [
+     624.0,
+     1305.0
+    ],
+    [
+     638.0,
+     1313.0
+    ],
+    [
+     640.0,
+     1313.0
+    ],
+    [
+     641.0,
+     1314.0
+    ],
+    [
+     688.0,
+     1314.0
+    ],
+    [
+     688.0,
+     1313.0
+    ],
+    [
+     689.0,
+     1313.0
+    ],
+    [
+     690.0,
+     1313.0
+    ],
+    [
+     704.0,
+     1304.0
+    ],
+    [
+     727.0,
+     1314.0
+    ],
+    [
+     728.0,
+     1314.0
+    ],
+    [
+     729.0,
+     1314.0
+    ],
+    [
+     730.0,
+     1314.0
+    ],
+    [
+     750.0,
+     1305.0
+    ],
+    [
+     862.0,
+     1305.0
+    ],
+    [
+     877.0,
+     1313.0
+    ],
+    [
+     878.0,
+     1313.0
+    ],
+    [
+     880.0,
+     1313.0
+    ],
+    [
+     881.0,
+     1313.0
+    ],
+    [
+     900.0,
+     1304.0
+    ],
+    [
+     901.0,
+     1294.0
+    ],
+    [
+     901.0,
+     1278.0
+    ],
+    [
+     883.0,
+     1270.0
+    ],
+    [
+     882.0,
+     1270.0
+    ],
+    [
+     881.0,
+     1270.0
+    ],
+    [
+     830.0,
+     1277.0
+    ],
+    [
+     817.0,
+     1270.0
+    ],
+    [
+     816.0,
+     1270.0
+    ],
+    [
+     740.0,
+     1270.0
+    ],
+    [
+     739.0,
+     1270.0
+    ],
+    [
+     738.0,
+     1270.0
+    ],
+    [
+     721.0,
+     1278.0
+    ],
+    [
+     682.0,
+     1277.0
+    ],
+    [
+     674.0,
+     1270.0
+    ],
+    [
+     674.0,
+     1269.0
+    ],
+    [
+     673.0,
+     1269.0
+    ],
+    [
+     672.0,
+     1269.0
+    ],
+    [
+     670.0,
+     1269.0
+    ],
+    [
+     628.0,
+     1278.0
+    ],
+    [
+     602.0,
+     1278.0
+    ],
+    [
+     585.0,
+     1269.0
+    ],
+    [
+     584.0,
+     1269.0
+    ],
+    [
+     583.0,
+     1269.0
+    ],
+    [
+     582.0,
+     1269.0
+    ],
+    [
+     564.0,
+     1277.0
+    ],
+    [
+     519.0,
+     1277.0
+    ],
+    [
+     492.0,
+     1268.0
+    ],
+    [
+     491.0,
+     1268.0
+    ],
+    [
+     490.0,
+     1268.0
+    ],
+    [
+     441.0,
+     1277.0
+    ],
+    [
+     418.0,
+     1277.0
+    ],
+    [
+     410.0,
+     1270.0
+    ],
+    [
+     409.0,
+     1270.0
+    ],
+    [
+     408.0,
+     1270.0
+    ],
+    [
+     407.0,
+     1270.0
+    ],
+    [
+     406.0,
+     1270.0
+    ],
+    [
+     405.0,
+     1270.0
+    ],
+    [
+     397.0,
+     1276.0
+    ],
+    [
+     299.0,
+     1276.0
+    ],
+    [
+     273.0,
+     1267.0
+    ],
+    [
+     272.0,
+     1267.0
+    ],
+    [
+     270.0,
+     1267.0
+    ],
+    [
+     224.0,
+     1272.0
+    ],
+    [
+     203.0,
+     1267.0
+    ],
+    [
+     202.0,
+     1267.0
+    ],
+    [
+     201.0,
+     1267.0
+    ],
+    [
+     119.0,
+     1274.0
+    ],
+    [
+     119.0,
+     1300.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     1290.0
+    ],
+    [
+     901.0,
+     1294.0
+    ]
+   ],
+   "readings": {
+    "kraken": "carta di ristitutione fatta ꝓ Jacopo bonatcorsi ⁊ michele baroncelli",
+    "tei": "1 carta di ristitutione fatta ser Jacopo bonaccrosi et michele baroncelli",
+    "tei_expanded": "1 carta di ristitutione fatta ser Jacopo bonaccrosi et michele baroncelli",
+    "claude": "1 carta di ristitutione fatta ser Jacopo bonaccrosi ⁊ michele baroncelli"
+   },
+   "flag": false,
+   "note": "",
+   "text": "carta di ristitutione fatta ꝓ Jacopo bonatcorsi ⁊ michele baroncelli",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      169.0,
      1290.0
@@ -10754,7 +17217,7 @@
      1290.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      169.0,
      1290.0
@@ -10763,18 +17226,389 @@
      901.0,
      1294.0
     ]
-   ],
-   "readings": {
-    "kraken": "carta di ristitutione fatta ꝓ Jacopo bonatcorsi ⁊ michele baroncelli"
-   },
-   "flag": false,
-   "note": "",
-   "text": "carta di ristitutione fatta ꝓ Jacopo bonatcorsi ⁊ michele baroncelli",
-   "agreement": null
+   ]
   },
   {
    "id": "l35",
    "polygon": [
+    [
+     1062.0,
+     1314.0
+    ],
+    [
+     1059.0,
+     1308.0
+    ],
+    [
+     987.0,
+     1301.0
+    ],
+    [
+     986.0,
+     1301.0
+    ],
+    [
+     937.0,
+     1308.0
+    ],
+    [
+     897.0,
+     1301.0
+    ],
+    [
+     896.0,
+     1301.0
+    ],
+    [
+     894.0,
+     1301.0
+    ],
+    [
+     874.0,
+     1308.0
+    ],
+    [
+     828.0,
+     1301.0
+    ],
+    [
+     827.0,
+     1301.0
+    ],
+    [
+     826.0,
+     1301.0
+    ],
+    [
+     811.0,
+     1308.0
+    ],
+    [
+     788.0,
+     1301.0
+    ],
+    [
+     787.0,
+     1301.0
+    ],
+    [
+     786.0,
+     1301.0
+    ],
+    [
+     734.0,
+     1308.0
+    ],
+    [
+     695.0,
+     1301.0
+    ],
+    [
+     694.0,
+     1301.0
+    ],
+    [
+     693.0,
+     1301.0
+    ],
+    [
+     661.0,
+     1310.0
+    ],
+    [
+     608.0,
+     1310.0
+    ],
+    [
+     589.0,
+     1302.0
+    ],
+    [
+     588.0,
+     1302.0
+    ],
+    [
+     587.0,
+     1302.0
+    ],
+    [
+     586.0,
+     1302.0
+    ],
+    [
+     562.0,
+     1310.0
+    ],
+    [
+     464.0,
+     1310.0
+    ],
+    [
+     451.0,
+     1302.0
+    ],
+    [
+     450.0,
+     1302.0
+    ],
+    [
+     449.0,
+     1302.0
+    ],
+    [
+     416.0,
+     1302.0
+    ],
+    [
+     414.0,
+     1302.0
+    ],
+    [
+     413.0,
+     1302.0
+    ],
+    [
+     412.0,
+     1302.0
+    ],
+    [
+     402.0,
+     1309.0
+    ],
+    [
+     358.0,
+     1302.0
+    ],
+    [
+     285.0,
+     1302.0
+    ],
+    [
+     284.0,
+     1302.0
+    ],
+    [
+     245.0,
+     1309.0
+    ],
+    [
+     217.0,
+     1303.0
+    ],
+    [
+     216.0,
+     1303.0
+    ],
+    [
+     215.0,
+     1303.0
+    ],
+    [
+     119.0,
+     1305.0
+    ],
+    [
+     119.0,
+     1337.0
+    ],
+    [
+     229.0,
+     1337.0
+    ],
+    [
+     241.0,
+     1346.0
+    ],
+    [
+     242.0,
+     1346.0
+    ],
+    [
+     243.0,
+     1346.0
+    ],
+    [
+     244.0,
+     1347.0
+    ],
+    [
+     309.0,
+     1347.0
+    ],
+    [
+     309.0,
+     1346.0
+    ],
+    [
+     310.0,
+     1346.0
+    ],
+    [
+     334.0,
+     1337.0
+    ],
+    [
+     385.0,
+     1346.0
+    ],
+    [
+     386.0,
+     1347.0
+    ],
+    [
+     445.0,
+     1347.0
+    ],
+    [
+     445.0,
+     1346.0
+    ],
+    [
+     446.0,
+     1346.0
+    ],
+    [
+     468.0,
+     1338.0
+    ],
+    [
+     485.0,
+     1346.0
+    ],
+    [
+     486.0,
+     1346.0
+    ],
+    [
+     487.0,
+     1346.0
+    ],
+    [
+     528.0,
+     1345.0
+    ],
+    [
+     529.0,
+     1345.0
+    ],
+    [
+     542.0,
+     1337.0
+    ],
+    [
+     644.0,
+     1344.0
+    ],
+    [
+     645.0,
+     1344.0
+    ],
+    [
+     681.0,
+     1337.0
+    ],
+    [
+     732.0,
+     1345.0
+    ],
+    [
+     733.0,
+     1345.0
+    ],
+    [
+     794.0,
+     1336.0
+    ],
+    [
+     811.0,
+     1345.0
+    ],
+    [
+     812.0,
+     1345.0
+    ],
+    [
+     813.0,
+     1345.0
+    ],
+    [
+     851.0,
+     1338.0
+    ],
+    [
+     876.0,
+     1345.0
+    ],
+    [
+     877.0,
+     1345.0
+    ],
+    [
+     878.0,
+     1345.0
+    ],
+    [
+     963.0,
+     1336.0
+    ],
+    [
+     1004.0,
+     1336.0
+    ],
+    [
+     1017.0,
+     1345.0
+    ],
+    [
+     1018.0,
+     1345.0
+    ],
+    [
+     1019.0,
+     1345.0
+    ],
+    [
+     1020.0,
+     1345.0
+    ],
+    [
+     1066.0,
+     1338.0
+    ],
+    [
+     1067.0,
+     1323.0
+    ],
+    [
+     1066.0,
+     1318.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     1322.0
+    ],
+    [
+     470.0,
+     1328.0
+    ],
+    [
+     1067.0,
+     1323.0
+    ]
+   ],
+   "readings": {
+    "kraken": "carta ⁊ ii lettere di mesß luchino novello tutte di cabio ⁊ altre puate scricture ī balugia",
+    "tei": "1 carte e ii lettere di messer luchino novello tutte di canbio e altre private scritture in bambagia",
+    "tei_expanded": "1 carte e ii lettere di messer luchino novello tutte di canbio e altre private scritture in bambagia",
+    "claude": "1 carte ⁊ ii lettere di mesß luchino novello tutte di canbio ⁊ altre private scritture ī bambagia"
+   },
+   "flag": false,
+   "note": "",
+   "text": "carta ⁊ ii lettere di mesß luchino novello tutte di cabio ⁊ altre puate scricture ī balugia",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      1062.0,
      1314.0
@@ -11136,7 +17970,7 @@
      1314.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      167.0,
      1322.0
@@ -11149,18 +17983,229 @@
      1067.0,
      1323.0
     ]
-   ],
-   "readings": {
-    "kraken": "carta ⁊ ii lettere di mesß luchino novello tutte di cabio ⁊ altre puate scricture ī balugia"
-   },
-   "flag": false,
-   "note": "",
-   "text": "carta ⁊ ii lettere di mesß luchino novello tutte di cabio ⁊ altre puate scricture ī balugia",
-   "agreement": null
+   ]
   },
   {
    "id": "l36",
    "polygon": [
+    [
+     227.0,
+     1363.0
+    ],
+    [
+     246.0,
+     1373.0
+    ],
+    [
+     247.0,
+     1373.0
+    ],
+    [
+     248.0,
+     1373.0
+    ],
+    [
+     320.0,
+     1368.0
+    ],
+    [
+     364.0,
+     1374.0
+    ],
+    [
+     365.0,
+     1374.0
+    ],
+    [
+     366.0,
+     1374.0
+    ],
+    [
+     368.0,
+     1374.0
+    ],
+    [
+     375.0,
+     1367.0
+    ],
+    [
+     436.0,
+     1366.0
+    ],
+    [
+     456.0,
+     1376.0
+    ],
+    [
+     457.0,
+     1376.0
+    ],
+    [
+     458.0,
+     1377.0
+    ],
+    [
+     489.0,
+     1377.0
+    ],
+    [
+     489.0,
+     1376.0
+    ],
+    [
+     490.0,
+     1376.0
+    ],
+    [
+     491.0,
+     1376.0
+    ],
+    [
+     491.0,
+     1374.0
+    ],
+    [
+     498.0,
+     1367.0
+    ],
+    [
+     499.0,
+     1357.0
+    ],
+    [
+     498.0,
+     1341.0
+    ],
+    [
+     449.0,
+     1335.0
+    ],
+    [
+     448.0,
+     1335.0
+    ],
+    [
+     392.0,
+     1341.0
+    ],
+    [
+     381.0,
+     1334.0
+    ],
+    [
+     380.0,
+     1334.0
+    ],
+    [
+     379.0,
+     1334.0
+    ],
+    [
+     378.0,
+     1334.0
+    ],
+    [
+     377.0,
+     1334.0
+    ],
+    [
+     376.0,
+     1334.0
+    ],
+    [
+     371.0,
+     1339.0
+    ],
+    [
+     358.0,
+     1334.0
+    ],
+    [
+     357.0,
+     1334.0
+    ],
+    [
+     356.0,
+     1334.0
+    ],
+    [
+     355.0,
+     1334.0
+    ],
+    [
+     354.0,
+     1334.0
+    ],
+    [
+     346.0,
+     1340.0
+    ],
+    [
+     248.0,
+     1340.0
+    ],
+    [
+     240.0,
+     1333.0
+    ],
+    [
+     238.0,
+     1333.0
+    ],
+    [
+     237.0,
+     1333.0
+    ],
+    [
+     236.0,
+     1333.0
+    ],
+    [
+     235.0,
+     1333.0
+    ],
+    [
+     234.0,
+     1333.0
+    ],
+    [
+     225.0,
+     1340.0
+    ],
+    [
+     197.0,
+     1340.0
+    ],
+    [
+     119.0,
+     1333.0
+    ],
+    [
+     119.0,
+     1362.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     1354.0
+    ],
+    [
+     499.0,
+     1357.0
+    ]
+   ],
+   "readings": {
+    "kraken": "paio di guanti di chuoio vecchi",
+    "tei": "1 paio di guanti di chuoio vecchi",
+    "tei_expanded": "1 paio di guanti di chuoio vecchi",
+    "claude": "1 paio di guanti di chuoio vecchi"
+   },
+   "flag": false,
+   "note": "",
+   "text": "paio di guanti di chuoio vecchi",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      171.0,
      1362.0
@@ -11366,7 +18411,7 @@
      1362.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      172.0,
      1354.0
@@ -11375,18 +18420,317 @@
      499.0,
      1357.0
     ]
-   ],
-   "readings": {
-    "kraken": "paio di guanti di chuoio vecchi"
-   },
-   "flag": false,
-   "note": "",
-   "text": "paio di guanti di chuoio vecchi",
-   "agreement": null
+   ]
   },
   {
    "id": "l37",
    "polygon": [
+    [
+     210.0,
+     1396.0
+    ],
+    [
+     224.0,
+     1409.0
+    ],
+    [
+     225.0,
+     1409.0
+    ],
+    [
+     226.0,
+     1409.0
+    ],
+    [
+     227.0,
+     1409.0
+    ],
+    [
+     296.0,
+     1398.0
+    ],
+    [
+     364.0,
+     1410.0
+    ],
+    [
+     365.0,
+     1410.0
+    ],
+    [
+     366.0,
+     1410.0
+    ],
+    [
+     395.0,
+     1398.0
+    ],
+    [
+     423.0,
+     1410.0
+    ],
+    [
+     424.0,
+     1410.0
+    ],
+    [
+     425.0,
+     1411.0
+    ],
+    [
+     455.0,
+     1411.0
+    ],
+    [
+     455.0,
+     1410.0
+    ],
+    [
+     456.0,
+     1410.0
+    ],
+    [
+     485.0,
+     1398.0
+    ],
+    [
+     493.0,
+     1403.0
+    ],
+    [
+     494.0,
+     1403.0
+    ],
+    [
+     496.0,
+     1403.0
+    ],
+    [
+     497.0,
+     1403.0
+    ],
+    [
+     498.0,
+     1403.0
+    ],
+    [
+     499.0,
+     1403.0
+    ],
+    [
+     505.0,
+     1399.0
+    ],
+    [
+     525.0,
+     1405.0
+    ],
+    [
+     526.0,
+     1405.0
+    ],
+    [
+     528.0,
+     1405.0
+    ],
+    [
+     529.0,
+     1405.0
+    ],
+    [
+     530.0,
+     1405.0
+    ],
+    [
+     530.0,
+     1404.0
+    ],
+    [
+     537.0,
+     1398.0
+    ],
+    [
+     552.0,
+     1402.0
+    ],
+    [
+     555.0,
+     1389.0
+    ],
+    [
+     555.0,
+     1373.0
+    ],
+    [
+     532.0,
+     1364.0
+    ],
+    [
+     531.0,
+     1364.0
+    ],
+    [
+     530.0,
+     1364.0
+    ],
+    [
+     481.0,
+     1373.0
+    ],
+    [
+     453.0,
+     1373.0
+    ],
+    [
+     444.0,
+     1366.0
+    ],
+    [
+     444.0,
+     1365.0
+    ],
+    [
+     443.0,
+     1365.0
+    ],
+    [
+     442.0,
+     1365.0
+    ],
+    [
+     441.0,
+     1365.0
+    ],
+    [
+     440.0,
+     1365.0
+    ],
+    [
+     439.0,
+     1365.0
+    ],
+    [
+     439.0,
+     1366.0
+    ],
+    [
+     433.0,
+     1372.0
+    ],
+    [
+     416.0,
+     1366.0
+    ],
+    [
+     414.0,
+     1366.0
+    ],
+    [
+     413.0,
+     1366.0
+    ],
+    [
+     364.0,
+     1372.0
+    ],
+    [
+     328.0,
+     1372.0
+    ],
+    [
+     318.0,
+     1365.0
+    ],
+    [
+     317.0,
+     1365.0
+    ],
+    [
+     316.0,
+     1365.0
+    ],
+    [
+     315.0,
+     1365.0
+    ],
+    [
+     314.0,
+     1365.0
+    ],
+    [
+     292.0,
+     1371.0
+    ],
+    [
+     246.0,
+     1365.0
+    ],
+    [
+     245.0,
+     1365.0
+    ],
+    [
+     244.0,
+     1365.0
+    ],
+    [
+     235.0,
+     1369.0
+    ],
+    [
+     229.0,
+     1363.0
+    ],
+    [
+     228.0,
+     1363.0
+    ],
+    [
+     227.0,
+     1363.0
+    ],
+    [
+     226.0,
+     1363.0
+    ],
+    [
+     225.0,
+     1363.0
+    ],
+    [
+     209.0,
+     1369.0
+    ],
+    [
+     119.0,
+     1362.0
+    ],
+    [
+     119.0,
+     1395.0
+    ]
+   ],
+   "baseline": [
+    [
+     119.0,
+     1387.0
+    ],
+    [
+     555.0,
+     1389.0
+    ]
+   ],
+   "readings": {
+    "kraken": "braghiere datrepati dafanciullo",
+    "tei": "1 braghiere d atrepati da faciullo",
+    "tei_expanded": "1 braghiere d atrepati da faciullo",
+    "claude": "1 braghiere d atrepati da faciullo"
+   },
+   "flag": false,
+   "note": "",
+   "text": "braghiere datrepati dafanciullo",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      173.0,
      1387.0
@@ -11680,7 +19024,7 @@
      1387.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      173.0,
      1387.0
@@ -11689,14 +19033,7 @@
      555.0,
      1389.0
     ]
-   ],
-   "readings": {
-    "kraken": "braghiere datrepati dafanciullo"
-   },
-   "flag": false,
-   "note": "",
-   "text": "braghiere datrepati dafanciullo",
-   "agreement": null
+   ]
   },
   {
    "id": "l38",
@@ -12089,7 +19426,10 @@
     ]
    ],
    "readings": {
-    "kraken": "menoria chesandro pieri loro Actore di ce rende letre cassette di soꝓa scritte a dal dobrodo"
+    "kraken": "menoria chesandro pieri loro Actore di ce rende letre cassette di soꝓa scritte a dal dobrodo",
+    "tei": "memoria che sandro pieri loro Actore dice rende letre cassetto di sopra scritte ad aldobrando",
+    "tei_expanded": "memoria che sandro pieri loro Actore dice rende letre cassetto di sopra scritte ad aldobrando",
+    "claude": "memoria che sandro pieri loro Actore dice rende letre cassetto di sopra scritte ad aldobrando"
    },
    "flag": false,
    "note": "",
@@ -12551,7 +19891,10 @@
     ]
    ],
    "readings": {
-    "kraken": "baroncelli di volonta del gluficiali del mote 𝒹 1 di settenbre an̄o 1386 ꝓo si trovo le dette"
+    "kraken": "baroncelli di volonta del gluficiali del mote 𝒹 1 di settenbre an̄o 1386 ꝓo si trovo le dette",
+    "tei": "baroncelli di volunta del gluficiali di monte di i di settembre anno 1386 pro si trovo le dette",
+    "tei_expanded": "baroncelli di volunta del gluficiali di monte di i di settembre anno 1386 pro si trovo le dette",
+    "claude": "baroncelli di volunta del gluficiali di monte di i di settembre an̄o 1386 pro si trovo le dette"
    },
    "flag": false,
    "note": "",
@@ -12981,7 +20324,10 @@
     ]
    ],
    "readings": {
-    "kraken": "tre cassette esfe del detto Al dobrando 310 de detti fanciulli"
+    "kraken": "tre cassette esfe del detto Al dobrando 310 de detti fanciulli",
+    "tei": "tre cassette essere del detto Aldobrando zio de detti fanciulli",
+    "tei_expanded": "tre cassette essere del detto Aldobrando zio de detti fanciulli",
+    "claude": "tre cassette essere del detto Aldobrando zio de detti fanciulli"
    },
    "flag": false,
    "note": "",
@@ -13331,7 +20677,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Lananzo dellesoꝓadette masserize escritture sono nella canera dellarme del comime d"
+    "kraken": "Lananzo dellesoꝓadette masserize escritture sono nella canera dellarme del comime d",
+    "tei": "Lavanzo delle sopradette masserize e scritture sono nella camera dell arme del comune di",
+    "tei_expanded": "Lavanzo delle sopradette masserize e scritture sono nella camera dell arme del comune di",
+    "claude": "Lavanzo delle sopradette masserize e scritture sono nella camera dell arme del comune di"
    },
    "flag": false,
    "note": "",
@@ -13653,7 +21002,10 @@
     ]
    ],
    "readings": {
-    "kraken": "fi renze ī forzieri ⁊ cassettei le quali tiene i guardia sandro pieri actore di detti"
+    "kraken": "fi renze ī forzieri ⁊ cassettei le quali tiene i guardia sandro pieri actore di detti",
+    "tei": "firenze in forzieri e cassette le quali tiene in guardia sandro pieri attore de detti",
+    "tei_expanded": "firenze in forzieri e cassette le quali tiene in guardia sandro pieri attore de detti",
+    "claude": "firenze ī forzieri ⁊ cassette le quali tiene ī guardia sandro pieri attore de detti"
    },
    "flag": false,
    "note": "",
@@ -13899,7 +21251,10 @@
     ]
    ],
    "readings": {
-    "kraken": "fanciulli nella detta canera del detto comune"
+    "kraken": "fanciulli nella detta canera del detto comune",
+    "tei": "fanciulli nella detta camera del detto comune",
+    "tei_expanded": "fanciulli nella detta camera del detto comune",
+    "claude": "fanciulli nella detta camera del detto comune"
    },
    "flag": false,
    "note": "",
@@ -13907,7 +21262,7 @@
    "agreement": null
   }
  ],
- "note": "",
+ "note": "Ninth of eighteen folios of the estate of Simone di Ricciardo Baroncelli, written November, 1 1385; this (47r) is a list of all the books and writing found at the woolmakers' guild.",
  "history": [
   {
    "t": "2026-10-15T21:20:53",
@@ -13916,7 +21271,19 @@
   {
    "t": "2026-10-18T17:27:04",
    "event": "machine reading: kraken (catmus_secondtraining_v3_wleggio_2026-10-17b.mlmodel)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 45v → 47r (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T17:46:26",
+   "event": "attached TEI ASF MPAP 4 (di Baronicelli)_47r_RS1192.xml: 40 of 41 lines matched, 39 suggestion(s); 23 box(es) widened for item numbers; 1 TEI line(s) with no machine line"
   }
  ],
- "updated": "2026-10-23T11:17:56"
+ "updated": "2026-10-23T17:46:26",
+ "tei_unmatched": [
+  "1 quaderno lungo di carte Reali covernta di pecora"
+ ],
+ "tei_file": "ASF MPAP 4 (di Baronicelli)_47r_RS1192.xml"
 }

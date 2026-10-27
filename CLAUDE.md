@@ -201,3 +201,19 @@ This project resides at `/Users/Shared/HTR_exploration` and focuses on Handwritt
 - Next: tag creditors where named; Deo's own books (libro giallo/rosso) for lender networks; a "recipient/agent" layer (Miniato).
 
 - 2026-10-23: CATASTO 1427 (city of Florence, Brown Online Catasto) downloaded to reference/catasto_1427/ (10,004 households, codebook, decoded copy; README there). For cross-referencing contemporary account books.
+- 2026-10-23: Conti CATASTO 1427 tab (#/catasto): conti/conti/catasto.py + static/catasto.js; proposes Catasto households for tagged people (same person / relative), Laura decides → conti_data/_catasto.json; xlsx export. Needs Conti restart (index.html v=7). Backups .work/*.bak_before_catasto_20261023. Tests conti/tests/test_catasto.py.
+
+## TEI import, MPAP 4 inventories (23 Oct 2026, evening)
+- Source: Laura's TEI files, /Users/lauramorreale/Applications, job, grant, etc./Upenn fellowship/MPAP4/Transcriptions (559 xml, named
+  "ASF MPAP 4 (<family>)_<folio>_RS<n>.xml"; ~280 with text, the rest description only / <mute>). No coordinates; abbreviations expanded.
+- scripts/tei_import.py (device shell: python3 -B scripts/tei_import.py <folder> RS… | --all [--dry-run]; run in chunks of ~35 pages,
+  background runs stall). Per page: readings.tei, readings.tei_expanded, an open suggestion in readings.claude (TEI letters + Kraken's
+  abbreviation signs), Reading-view expanded text (from:"TEI"), page note from <quote>, page.tei_unmatched; boxes widened left to take
+  in item numbers (old box in line.polygon_before_tei / baseline_before_tei). Skips finished / in_progress / sent_to_training pages.
+  Run 23 Oct: 184 pages, 14,912 of 15,686 TEI lines matched, 13,991 suggestions, 10,166 boxes widened. Log .work/tei_import_run_20261023.txt.
+  Backup before: .work/backup_MPAP4_before_tei_20261023_1717.
+- Laura's decisions: braccia = ƀ; word division as in the TEI; item numbers part of the line. Shared rule bstroke-pound disabled for MPAP_4,
+  replaced by check rule bstroke-pound-sum (ƀ before a sum ending in ß/𝒹).
+- FOLIOS reset from the TEI file names (560 pages); 33 pages without a file got an estimated folio ending in "?"
+  (RS1153–1173, RS1175–1183, RS1490–1493). Old Leggio numbering was wrong (RS1152 was 42r, really 27r).
+- No image in Leggio for RS1326, RS1334, RS1554, RS1668 (TEI exists).

@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1733_DSC01249-scr.jpg",
  "order": 546,
- "folio": "293r",
+ "folio": "408r",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -581,7 +581,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Lagioni di pippo di piero damselmo Cige di no lel"
+    "kraken": "Lagioni di pippo di piero damselmo Cige di no lel",
+    "tei": "Ragioni di Pippo di Piero damselmo Cioe di sue Rede",
+    "tei_expanded": "Ragioni di Pippo di Piero damselmo Cioe di sue Rede",
+    "claude": "Ragioni di Pippo di Piero damselmo Cioe di sue Rede"
    },
    "flag": false,
    "note": "",
@@ -1051,7 +1054,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Nuentaro delle decte lede"
+    "kraken": "Nuentaro delle decte lede",
+    "tei": "Inventaro delle dette Rede facto di",
+    "tei_expanded": "Inventaro delle dette Rede facto di",
+    "claude": "Inventaro delle dette Rede facto di"
    },
    "flag": false,
    "note": "",
@@ -1563,7 +1569,10 @@
     ]
    ],
    "readings": {
-    "kraken": "una Casa pesta ī firenze nel ppło di sandonato devecchietti traferrovecchi cō finato"
+    "kraken": "una Casa pesta ī firenze nel ppło di sandonato devecchietti traferrovecchi cō finato",
+    "tei": "Una Casa pota in firenze nel popoli di san donato de vecchietti tra ferrovecchi confintat",
+    "tei_expanded": "Una Casa pota in firenze nel popoli di san donato de vecchietti tra ferrovecchi confintat",
+    "claude": "Una Casa pota ī firenze nel popoli di san donato de vecchietti tra ferrovecchi confintat"
    },
    "flag": false,
    "note": "",
@@ -2021,7 +2030,10 @@
     ]
    ],
    "readings": {
-    "kraken": "a iº Gia a iiº Rede dugo vecchietti a iiiº lapaza dellapaglia a iiiº nucēai"
+    "kraken": "a iº Gia a iiº Rede dugo vecchietti a iiiº lapaza dellapaglia a iiiº nucēai",
+    "tei": "a iº Rede d Ugo Vecchietti a iiiº sapienza della paglia a iiiiº Nucciai",
+    "tei_expanded": "a iº Rede d Ugo Vecchietti a iiiº sapienza della paglia a iiiiº Nucciai",
+    "claude": "a iº Rede d Ugo Vecchietti a iiiº sapienza della paglia a iiiiº Nucciai"
    },
    "flag": false,
    "note": "",
@@ -2565,7 +2577,10 @@
     ]
    ],
    "readings": {
-    "kraken": "tolsela ꝓ tre an̄i pagaindo di mesi 6 i vi me"
+    "kraken": "tolsela ꝓ tre an̄i pagaindo di mesi 6 i vi me",
+    "tei": "tolsela per tre anni pagando di mesi 6 in vi mesi",
+    "tei_expanded": "tolsela per tre anni pagando di mesi 6 in vi mesi",
+    "claude": "tolsela ꝓ tre an̄i pagando di mesi 6 in vi mesi"
    },
    "flag": false,
    "note": "",
@@ -2971,7 +2986,10 @@
     ]
    ],
    "readings": {
-    "kraken": "una Casetta posta nel dcoppło a iº via a iiº mō maria creccha a iiiº via a iiiº Nicoluio"
+    "kraken": "una Casetta posta nel dcoppło a iº via a iiº mō maria creccha a iiiº via a iiiº Nicoluio",
+    "tei": "Una casetta psta nel dicto popoli a iº fia a iiº madonna maria treccha a iiiº via a iiiiº Niccolao",
+    "tei_expanded": "Una casetta psta nel dicto popoli a iº fia a iiº madonna maria treccha a iiiº via a iiiiº Niccolao",
+    "claude": "Una casetta psta nel dicto popoli a iº fia a iiº madonna maria treccha a iiiº via a iiiiº Niccolao"
    },
    "flag": false,
    "note": "",
@@ -3037,7 +3055,9 @@
     ]
    ],
    "readings": {
-    "kraken": "di Niccolo rigattiere"
+    "kraken": "di Niccolo rigattiere",
+    "tei": "di Niccolo rigattiere",
+    "tei_expanded": "di Niccolo rigattiere"
    },
    "flag": false,
    "note": "",
@@ -3455,7 +3475,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Angionata amō Caterina ⁊ mō mania trecche ꝓ ƒ nove lano"
+    "kraken": "Angionata amō Caterina ⁊ mō mania trecche ꝓ ƒ nove lano",
+    "tei": "Apigionata Monna Caterina e monna Maria trecche per fiorini nove lanno...",
+    "tei_expanded": "Apigionata Monna Caterina e monna Maria trecche per fiorini nove lanno...",
+    "claude": "Apigionata Monna Caterina ⁊ monna Maria trecche ꝓ fiorini nove lanno..."
    },
    "flag": false,
    "note": "",
@@ -11037,7 +11060,7 @@
    "agreement": null
   }
  ],
- "note": "",
+ "note": "Page one of eight, Estsate of of Pippo di Piero d’Anselmo written June, 1291; this folio contains an inventory of immovable goods. Partially transcribed.",
  "history": [
   {
    "t": "2026-10-15T21:21:00",
@@ -11046,7 +11069,20 @@
   {
    "t": "2026-10-18T18:56:52",
    "event": "machine reading: kraken (catmus_secondtraining_v3_wleggio_2026-10-17b.mlmodel)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 277r → 408r (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T17:52:18",
+   "event": "attached TEI ASF MPAP 4 (d’Anselmo)_408r_RS1733.xml: 8 of 10 lines matched, 7 suggestion(s); 2 TEI line(s) with no machine line"
   }
  ],
- "updated": "2026-10-23T11:17:59"
+ "updated": "2026-10-23T17:52:18",
+ "tei_unmatched": [
+  "Le quale venne per Riformagione di [...] di gugno 1391",
+  "Apigioinata a martino di francescho ferrovecchio per fiorini xi lanno comincia a di 1 di gennaio 390"
+ ],
+ "tei_file": "ASF MPAP 4 (d’Anselmo)_408r_RS1733.xml"
 }

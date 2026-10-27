@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1737_DSC01253-scr.jpg",
  "order": 550,
- "folio": "295r",
+ "folio": "410r",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -509,7 +509,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Eapporto dima Ragione delle bede di pippo di piero danselmo tenita ꝓuttolo"
+    "kraken": "Eapporto dima Ragione delle bede di pippo di piero danselmo tenita ꝓuttolo",
+    "tei": "Rapporto duna Ragione delle Rede di Pippo di Piero danselmo tenut per Noiccolo",
+    "tei_expanded": "Rapporto duna Ragione delle Rede di Pippo di Piero danselmo tenut per Noiccolo",
+    "claude": "Rapporto duna Ragione delle Rede di Pippo di Piero danselmo tenut per Noiccolo"
    },
    "flag": false,
    "note": "",
@@ -1045,7 +1048,10 @@
     ]
    ],
    "readings": {
-    "kraken": "di Jacopo ridolfi attore dadi 27"
+    "kraken": "di Jacopo ridolfi attore dadi 27",
+    "tei": "di Jacopo Ridolfi attore da di 27 di gugno 391 a di 28 di mayo 392 venduta",
+    "tei_expanded": "di Jacopo Ridolfi attore da di 27 di gugno 391 a di 28 di mayo 392 venduta",
+    "claude": "di Jacopo Ridolfi attore da di 27 di gugno 391 a di 28 di mayo 392 venduta"
    },
    "flag": false,
    "note": "",
@@ -10437,7 +10443,7 @@
    "agreement": null
   }
  ],
- "note": "",
+ "note": "Page five of eight, Estsate of of Pippo di Piero d’Anselmo written in 1291; this folio contains a continuation of the debits and credits to the estate. Not transcribed.",
  "history": [
   {
    "t": "2026-10-15T21:21:00",
@@ -10446,7 +10452,19 @@
   {
    "t": "2026-10-18T18:57:38",
    "event": "machine reading: kraken (catmus_secondtraining_v3_wleggio_2026-10-17b.mlmodel)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 279r → 410r (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T17:52:18",
+   "event": "attached TEI ASF MPAP 4 (d’Anselmo)_410r_RS1737.xml: 2 of 3 lines matched, 2 suggestion(s); 1 TEI line(s) with no machine line"
   }
  ],
- "updated": "2026-10-23T11:17:59"
+ "updated": "2026-10-23T17:52:18",
+ "tei_unmatched": [
+  "per papero cavalchanti e per me Giovani di Pagno stanziati per ser Lapo di 1 daprile 392"
+ ],
+ "tei_file": "ASF MPAP 4 (d’Anselmo)_410r_RS1737.xml"
 }

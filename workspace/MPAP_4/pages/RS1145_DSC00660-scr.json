@@ -3,10 +3,10 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1145_DSC00660-scr.jpg",
  "order": 37,
- "folio": "38v",
+ "folio": "23r",
  "width": 1280,
  "height": 1920,
- "status": "finished",
+ "status": "sent_to_training",
  "lines": [
   {
    "id": "l1",
@@ -4136,7 +4136,8 @@
      "",
      "",
      ""
-    ]
+    ],
+    "claude": "Concha di rame datenere īsala peso ℔[?] xxxviii℔ xi"
    },
    "flag": false,
    "note": "",
@@ -19297,9 +19298,21 @@
   {
    "t": "2026-10-18T12:12:02",
    "event": "Claude refinement: 5 line(s) suggested — Most of this page was already read well; I made a few small corrections: words Kraken had split in the middle (forz eretto, sti mate, si mone), the closing ⁊ that Kraken read as '7' in l5, the capital O of Orcia, the spacing in 'ß x pc̄', and a Latin hallucination on a tiny box (l52). | layout: l52: tiny box over the bracket stroke before 'Som̄a' (margin); nothing is written there, so the Latin text is a hallucination and the box can be deleted; l13: box holds only the 'v' of the line-initial numeral 'vi' that belongs to l39 (pezi di lettiera …); the 'i' is outside every box; l56: box covers the i-like stroke right after ƒ (l55), which is part of the florin sign; the real figure 'i' of 'ƒ i' (iii panche cattive) is further right, outside the box; l19: amounts box (dashes + ℔ iii) belongs to l26 'pancha a dentellata', not to l18; l27: amounts box ƒ xiii belongs to l22 'Coltrice di lunello'; l37: amounts box ƒ iii belongs to l36 'lettuccio rivolto e1 pancha' | doubts: l5: the mark after 'cioe' could be ⁊ (as in l17 'pestello ⁊') or the start of the bracket; I chose ⁊; l18/l36: 'e1' vs 'ei' (both appear on Laura's lines); left as e1; l20: the sign before xxxviii (weight after 'peso') looks smaller than the ℔ in the amounts column; left as ß, but it may be ℔ (libbre); l61: the numeral after ƒ ƒ appears as l + xx + iiii with no clear º; numeral left unchanged under the no-numeral-change rule; l27/l37: the final strokes could be read as xii / ii; numerals left unchanged"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 22v → 23r (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T21:38:43",
+   "event": "Claude refinement: 1 line(s) suggested — This page was already largely correct (TEI-based text). I made only two changes: the weight sign after 'peso' in l20, which is the low knotted ℔ (libbre), not the long-s ß, and the Latin hallucination in l52, which sits over a single bracket stroke. | layout: l52: tiny box over the bracket stroke at the left of the Soma paragraph, with no text in it: delete the box.; l13: holds only the 'v' of the item number 'vi' for the entry in l39. The final i lies outside the box. The item number belongs at the start of l39.; l56: the box covers the i-like stroke that is part of the ƒ in l55. The real figure (i) stands further right, outside the box: merge l55 and l56 as 'ƒ i'.; l6: '60' is the first of three marginal figures (60 / 64 / 0) beside the Soma paragraph. The other two are not in any box.; l11: item number 'iii' of the Coltella entry (l38). It should be part of l38, not a separate line. | doubts: l37, l48: after ƒ (with its own i-like stroke) the figure looks like i + y-shaped stroke, which could be ii rather than iii. I left the numeral unchanged per the conventions. Please check.; l61: arithmetic does not close. ƒ lx ℔ liiiiº ß xvii (l60) at ß 75 per florin = ℔ 279 ß 17 = ƒ 74 ℔ 2 ß 7, so either the soldi figure here is vii or l60 differs. I left the numerals as read.; l20: ℔ vs ß before xxxviii. The sign is low and knotted like ℔, and a weight after 'peso' makes sense, but it is small and faint, hence [?]."
+  },
+  {
+   "t": "2026-10-23T23:35:21",
+   "event": "used to train catmus_secondtraining_v3_wleggio_2026-10-17b_ft_MPAP_4_20261023_221332.mlmodel"
   }
  ],
- "updated": "2026-10-23T11:17:56",
+ "updated": "2026-10-23T23:35:21",
  "previous_lines": [
   {
    "id": "l1",

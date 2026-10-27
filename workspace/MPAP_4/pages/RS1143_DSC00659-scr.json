@@ -3,10 +3,10 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1143_DSC00659-scr.jpg",
  "order": 35,
- "folio": "37v",
+ "folio": "22r",
  "width": 1280,
  "height": 1920,
- "status": "finished",
+ "status": "sent_to_training",
  "lines": [
   {
    "id": "l1",
@@ -287,11 +287,14 @@
      "",
      "",
      ""
-    ]
+    ],
+    "claude": "Rede del calonaco debardi",
+    "before": "Rede del calonato debardi",
+    "claude_status": "accepted"
    },
    "flag": false,
    "note": "",
-   "text": "Rede del calonato debardi",
+   "text": "Rede del calonaco debardi",
    "region": "rcol59-scr",
    "agreement": {
     "reference": "Rede del calonato debardi",
@@ -334,64 +337,6 @@
     "low": 0,
     "n": 2
    }
-  },
-  {
-   "id": "l25",
-   "polygon": [
-    [
-     1129,
-     230
-    ],
-    [
-     1095,
-     230
-    ],
-    [
-     1095,
-     247
-    ],
-    [
-     1094,
-     258
-    ],
-    [
-     1131,
-     266
-    ],
-    [
-     1133,
-     248
-    ],
-    [
-     1133,
-     244
-    ],
-    [
-     1129,
-     230
-    ]
-   ],
-   "baseline": [
-    [
-     1095,
-     247
-    ],
-    [
-     1133,
-     248
-    ]
-   ],
-   "readings": {
-    "claude": "22",
-    "before": "",
-    "claude_status": "accepted"
-   },
-   "flag": false,
-   "note": "",
-   "text": "22",
-   "agreement": null,
-   "region": "ramt59-scr",
-   "attached_to": "l1"
   },
   {
    "id": "l2",
@@ -6725,9 +6670,21 @@
   {
    "t": "2026-10-18T22:41:52",
    "event": "sums column fitted (4-point boundary)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 21v → 22r (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T21:19:03",
+   "event": "Claude refinement: 1 line(s) suggested — The only change is l1: 'calonato' becomes 'calonaco' (the letter before the final o is a c). The sums were checked sign by sign and add up: l24 ƒ lxxxviii ß x 𝒹 i plus l19 ƒ cxxxiiii ß i 𝒹 i makes the total in l7, ƒ ccxxii ß xi 𝒹 ii. | layout: l7: a full stop after aō sits at the edge of the outline and is not in the text; l3: the marginal '222' has a smaller mark below it (looks like 'ii' or '11') that is outside the box and not transcribed | doubts: l1: 'calonaco' (= calonaco, canon, in the heading 'heirs of the canon de' Bardi') matches the image and the comma reading, but it is not in the vocabulary or glossary lists; l3: in this hand the z-shaped figure is read as 2 here, by analogy with the folio number 22; the CONVENTIONS ʒ = 3 note is about a different, ʒ-shaped figure"
+  },
+  {
+   "t": "2026-10-23T23:35:21",
+   "event": "used to train catmus_secondtraining_v3_wleggio_2026-10-17b_ft_MPAP_4_20261023_221332.mlmodel"
   }
  ],
- "updated": "2026-10-23T11:17:56",
+ "updated": "2026-10-23T23:35:21",
  "regions": [
   {
    "id": "rcol59-scr",

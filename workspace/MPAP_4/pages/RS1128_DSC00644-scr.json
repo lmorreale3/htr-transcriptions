@@ -3,10 +3,10 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1128_DSC00644-scr.jpg",
  "order": 20,
- "folio": "30r",
+ "folio": "14r",
  "width": 1280,
  "height": 1920,
- "status": "finished",
+ "status": "sent_to_training",
  "lines": [
   {
    "id": "l5",
@@ -19217,9 +19217,13 @@
   {
    "t": "2026-10-18T22:56:46",
    "event": "status → Finished"
+  },
+  {
+   "t": "2026-10-23T23:35:20",
+   "event": "used to train catmus_secondtraining_v3_wleggio_2026-10-17b_ft_MPAP_4_20261023_221332.mlmodel"
   }
  ],
- "updated": "2026-10-23T11:17:56",
+ "updated": "2026-10-23T23:35:20",
  "previous_lines": [
   {
    "id": "l1",

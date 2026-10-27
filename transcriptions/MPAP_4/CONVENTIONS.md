@@ -18,7 +18,8 @@
 - In this hand capital R looks like B: Kraken "bede" = "rede" (heirs).
 - Money (Laura, 16 Oct): amounts, especially in the margins, run in the order fiorini ƒ · lire ℔ · soldi ß · denari 𝒹
   (12 denari = 1 soldo), often closed by pc̄ (piccioli). E.g. "ƒ 2221 ℔ 344 ß 11 𝒹 3 pc̄". Write the closing mark as pc̄ (not pē).
-  ƀ is the -br- abbreviation in month names (Novēƀre, dicēƀre); before a sum it is a Kraken misreading of ℔.
+  ƀ is the -br- abbreviation in month names (Novēƀre, dicēƀre) and the sign for braccia in the inventories (ƀ 6, ƀ viii;
+  Laura 23 Oct). Before a sum in ƒ ℔ ß 𝒹 it is a Kraken misreading of ℔.
 - A 𝒹 that stands where lire belong in that order (after the ƒ figure, before ß) is a Kraken misreading of ℔: suggest ℔.
 - "E a libro" (= and in the book) and "a libro", NOT "Ealibro / E alibro / ali bro / alibro" (Laura, 16 Oct). This overrides
   the no-word-division rule for this phrase only. Ground truth already writes "a libro".
@@ -75,3 +76,9 @@ and which Claude's suggestions must pass before they are written. When a new rul
   "ƒi xxvi" → "ƒ xxvi". Checked by rule "florin-sign" (set florentine-money). Not affected: ƒiō / ƒio (fiorini written as a word),
   and ƒi directly before ß/℔ (could be ƒ i = one florin: decide from the image). The reference image MPAP4_money_glyphs.jpg still
   captions "ƒi"; this rule overrides it.
+
+## Inventories (Laura, 23 Oct 2026)
+- braccia = ƀ.
+- Word division follows Laura's TEI transcriptions (da donna, al letto), not the run-together forms of the machine reading.
+- Item numbers at the start of each entry (1, ii, iiiiº…) are part of the line; the line box must include them.
+- Source: Laura's TEI files (Upenn fellowship/MPAP4/Transcriptions), imported with scripts/tei_import.py.

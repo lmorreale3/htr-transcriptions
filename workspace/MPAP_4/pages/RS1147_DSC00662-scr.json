@@ -3,10 +3,10 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1147_DSC00662-scr.jpg",
  "order": 39,
- "folio": "39v",
+ "folio": "24r",
  "width": 1280,
  "height": 1920,
- "status": "finished",
+ "status": "sent_to_training",
  "lines": [
   {
    "id": "l1",
@@ -6548,7 +6548,15 @@
   {
    "t": "2026-10-18T23:05:52",
    "event": "status → Finished"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 23v → 24r (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T23:35:21",
+   "event": "used to train catmus_secondtraining_v3_wleggio_2026-10-17b_ft_MPAP_4_20261023_221332.mlmodel"
   }
  ],
- "updated": "2026-10-23T11:17:56"
+ "updated": "2026-10-23T23:35:21"
 }

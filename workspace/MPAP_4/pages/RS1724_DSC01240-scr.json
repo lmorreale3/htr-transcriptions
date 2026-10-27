@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1724_DSC01240-scr.jpg",
  "order": 537,
- "folio": "288v",
+ "folio": "401r",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -3163,7 +3163,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Elascian̄ogli ꝓ invētaro quoste messerize Cioe 4 tina tragran"
+    "kraken": "Elascian̄ogli ꝓ invētaro quoste messerize Cioe 4 tina tragran",
+    "tei": "E la sciammogli per inventaro queste masserizie Cioe/4 tina tra grandi e piccole cognª xii",
+    "tei_expanded": "E la sciammogli per inventaro queste masserizie Cioe/4 tina tra grandi e piccole cognª xii",
+    "claude": "E la sciammogli ꝓ invētaro queste masserizie Cioe/4 tina tra grandi e piccole cognª xii"
    },
    "flag": false,
    "note": "",
@@ -5093,7 +5096,10 @@
     ]
    ],
    "readings": {
-    "kraken": "lacolonlaia i stala Inchucinai 1 madia 1 botte daceto 1 stia dapoll"
+    "kraken": "lacolonlaia i stala Inchucinai 1 madia 1 botte daceto 1 stia dapoll",
+    "tei": "lacolonbaia/ 1 scala / Inchucina/ 1 madia/ botte daceto/ 1 sita da polli/ 1 cassa a 2 serrami/ 1 cassonaccio/ 1 mortaio",
+    "tei_expanded": "lacolonbaia/ 1 scala / Inchucina/ 1 madia/ botte daceto/ 1 sita da polli/ 1 cassa a 2 serrami/ 1 cassonaccio/ 1 mortaio",
+    "claude": "lacolonbaia/ 1 scala / Inchucina/ 1 madia/ botte daceto/ 1 sita da polli/ 1 cassa a 2 serrami/ 1 cassonaccio/ 1 mortaio"
    },
    "flag": false,
    "note": "",
@@ -13003,7 +13009,7 @@
    "agreement": null
   }
  ],
- "note": "",
+ "note": "Seventh of ten folios of the estate of Guido di Filippo Fagni. This is the second folio containing an inventory immovable goods at the top of the page, not transcribed. A section at mid-page inventories a collection of movable goods. The bottom of the page contains credits and debits to the estate, not transcribed.",
  "history": [
   {
    "t": "2026-10-15T21:21:00",
@@ -13012,7 +13018,21 @@
   {
    "t": "2026-10-18T18:55:04",
    "event": "machine reading: kraken (catmus_secondtraining_v3_wleggio_2026-10-17b.mlmodel)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 272v → 401r (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T17:52:15",
+   "event": "attached TEI ASF MPAP 4 (di Fagni)_401r_RS1724.xml: 2 of 5 lines matched, 2 suggestion(s); 3 TEI line(s) with no machine line"
   }
  ],
- "updated": "2026-10-23T11:17:59"
+ "updated": "2026-10-23T17:52:15",
+ "tei_unmatched": [
+  "di cogna x braccia 8/In camera terrena/1 lettiera braccia 41/2 /1 cassone a 2 serrami/ 1 pancha braccia 5 regolata/1 tavola /pane di trespoli braccia 4/2 deschestti / prede;;e 1 botte some 3 1/2/ 2 scale dascagliari/In camera soprª la camera",
+  "terrena/ 1 lettiera braccia 5 con cannaio e trespoli/ 1 lettiera braccia 2/ 1 cassone braccia 3/ 1 panchaccia larga/ 1 paio di trespoi sotta",
+  "Nellaloggia/1 tavola braccia 6/1 descho da famiglia braccia 2 1/2/ sopra la loggia/ 1 lettiera braccia 4 col cannaio / 13 chiavi apui serrami"
+ ],
+ "tei_file": "ASF MPAP 4 (di Fagni)_401r_RS1724.xml"
 }

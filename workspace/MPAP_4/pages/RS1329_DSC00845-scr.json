@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1329_DSC00845-scr.jpg",
  "order": 216,
- "folio": "128r",
+ "folio": "134v",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -163,7 +163,10 @@
     ]
    ],
    "readings": {
-    "kraken": "mccclxxxxi"
+    "kraken": "mccclxxxxi",
+    "tei": "(mccclxxxxi)",
+    "tei_expanded": "(mccclxxxxi)",
+    "claude": "(mccclxxxxi)"
    },
    "flag": false,
    "note": "",
@@ -625,7 +628,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Alinēti ꝓ le dette Rede fatti in℔ settēƀre 391 ꝓ i an̄o cō vi bocchc"
+    "kraken": "Alinēti ꝓ le dette Rede fatti in℔ settēƀre 391 ꝓ i an̄o cō vi bocchc",
+    "tei": "Alimenti per le dette Rede fatti in[...] settēbre 391 per iº an̄o cō vi bocche",
+    "tei_expanded": "Alimenti per le dette Rede fatti in[...] settembre 391 per iº anno con vi bocche",
+    "claude": "Alimenti ꝓ le dette Rede fatti in[...] settēƀre 391 ꝓ iº an̄o cō vi bocche"
    },
    "flag": false,
    "note": "",
@@ -839,7 +845,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Grano moggia iiiº"
+    "kraken": "Grano moggia iiiº",
+    "tei": "Grano moggia iiiiº",
+    "tei_expanded": "Grano moggia iiiiº",
+    "claude": "Grano moggia iiiiº"
    },
    "flag": false,
    "note": "",
@@ -977,7 +986,10 @@
     ]
    ],
    "readings": {
-    "kraken": "vino cogne iiiiº"
+    "kraken": "vino cogne iiiiº",
+    "tei": "Vino cogna iiiiº",
+    "tei_expanded": "Vino cogna iiiiº",
+    "claude": "Vino cogna iiiiº"
    },
    "flag": false,
    "note": "",
@@ -1139,7 +1151,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Alio orcia"
+    "kraken": "Alio orcia",
+    "tei": "Olio Orcia ii",
+    "tei_expanded": "Olio Orcia ii",
+    "claude": "Olio Orcia ii"
    },
    "flag": false,
    "note": "",
@@ -1305,7 +1320,10 @@
     ]
    ],
    "readings": {
-    "kraken": "sale ⁊ salina sti i"
+    "kraken": "sale ⁊ salina sti i",
+    "tei": "sale e salina fī ii",
+    "tei_expanded": "sale e salina fiorini ii",
+    "claude": "sale ⁊ salina fī ii"
    },
    "flag": false,
    "note": "",
@@ -1455,7 +1473,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Legne cataste ii"
+    "kraken": "Legne cataste ii",
+    "tei": "legne cataste ii",
+    "tei_expanded": "legne cataste ii",
+    "claude": "legne cataste ii"
    },
    "flag": false,
    "note": "",
@@ -1633,7 +1654,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Carne ꝓ ī salare ß cc"
+    "kraken": "Carne ꝓ ī salare ß cc",
+    "tei": "Carne ꝓ insalare b cc",
+    "tei_expanded": "Carne per insalare b cc",
+    "claude": "Carne ꝓ insalare b cc"
    },
    "flag": false,
    "note": "",
@@ -1767,7 +1791,10 @@
     ]
    ],
    "readings": {
-    "kraken": "pese minute ƒ xxiiiiº"
+    "kraken": "pese minute ƒ xxiiiiº",
+    "tei": "Spese minute fiorini xxiiiiº",
+    "tei_expanded": "Spese minute fiorini xxiiiiº",
+    "claude": "Spese minute fiorini xxiiiiº"
    },
    "flag": false,
    "note": "",
@@ -2029,7 +2056,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Rogati 𝒹 18 dsett℔ 39"
+    "kraken": "Rogati 𝒹 18 dsett℔ 39",
+    "tei": "Rogati di 18 settēb̄ 391",
+    "tei_expanded": "Rogati di 18 settembre 391",
+    "claude": "Rogati di 18 settēb̄ 391"
    },
    "flag": false,
    "note": "",
@@ -2163,7 +2193,10 @@
     ]
    ],
    "readings": {
-    "kraken": "piero di giovcin̄i"
+    "kraken": "piero di giovcin̄i",
+    "tei": "ꝓ s̄ piero digiovanni",
+    "tei_expanded": "per ser piero digiovanni",
+    "claude": "ꝓ s̄ piero digiovanni"
    },
    "flag": false,
    "note": "",
@@ -2583,7 +2616,10 @@
     ]
    ],
    "readings": {
-    "kraken": "vestire ⁊ calzale adiscretione del gluficiali"
+    "kraken": "vestire ⁊ calzale adiscretione del gluficiali",
+    "tei": "Vestire e calzate a discretione delgluficiali",
+    "tei_expanded": "Vestire e calzate a discretione delgluficiali",
+    "claude": "Vestire ⁊ calzate a discretione delgluficiali"
    },
    "flag": false,
    "note": "",
@@ -8927,7 +8963,7 @@
    "agreement": null
   }
  ],
- "note": "",
+ "note": "Page six of seven recounting the estatee accounting of the inheritance of Vese Magalocti, written May 17, 1390; this folio contains an inventory of foodstuffs from the decedent's farm. The bottom section of the folio contatins debits and credits to the estate, partially transcribed.",
  "history": [
   {
    "t": "2026-10-15T21:20:55",
@@ -8936,7 +8972,17 @@
   {
    "t": "2026-10-18T17:50:05",
    "event": "machine reading: kraken (catmus_secondtraining_v3_wleggio_2026-10-17b.mlmodel)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 112r → 134v (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T17:46:50",
+   "event": "attached TEI ASF MPAP 4 (Magalocti)_134v_RS1329.xml: 12 of 12 lines matched, 12 suggestion(s)"
   }
  ],
- "updated": "2026-10-23T11:17:57"
+ "updated": "2026-10-23T17:46:50",
+ "tei_unmatched": [],
+ "tei_file": "ASF MPAP 4 (Magalocti)_134v_RS1329.xml"
 }

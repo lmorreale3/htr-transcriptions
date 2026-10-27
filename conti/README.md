@@ -43,6 +43,18 @@ Start: double-click `conti/Start Conti.command` → http://127.0.0.1:8771 (Leggi
 - Code: `ledger.py` (debts), `analyze.py` (plan steps: transactions, aggregate with year-by-year consistency, network, query),
   `ask.py` (questions in `conti_data/_questions/`, Claude Code calls, CLI `python3 -m conti.ask …`), `prompts/`, `static/ask.js`.
 
+## Catasto 1427 (who in the books appears in the Catasto)
+- **Catasto 1427** tab: every person tagged in the books, with households of the Florentine Catasto of 1427 (city of Florence;
+  `reference/catasto_1427/`, Brown's Online Catasto) that may be the same person or a relative. Code: `catasto.py`, `static/catasto.js`.
+- Names are compared in the Catasto's spelling (upper case, 10 letters, Jacopo → IACOPO, Paolo → PAGOLO, ser/messer dropped);
+  short forms (Nanni/Vanni = Giovanni, Meo = Bartolomeo, Cecco = Francesco…) count as weaker.
+- **Same person**: first name + father's name (+ family name when both have one; a different one rules it out). **Relative**: the
+  head's father (or a widow's late husband) has the person's name and family name. Common names are marked; the Catasto age in 1427
+  is turned back to the year of the entry (a child then = probably a son or heir); the occupation tag is compared with the trade code.
+- Each candidate shows gonfalone, trade, age, bocche, total / deductions / taxable (florins), ASF Campioni volume and page, and the
+  reasons. You decide: **Same person / Relative / Not this one**; also a search by hand. Decisions: `conti_data/_catasto.json`.
+  **⬇ Confirmed links .xlsx** lists them.
+
 ## Where things are
 - Code: `conti/conti/` (`money.py`, `dates.py`, `refs.py`, `extract.py`, `app.py`, `static/`). Tests: `conti/tests/`.
 - Your decisions: `conti_data/<manuscript>/tags.json`, `holdings.json`, `sums_review.json`; datasets in `conti_data/_datasets/`;

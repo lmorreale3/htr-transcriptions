@@ -12,7 +12,7 @@ from urllib.parse import quote
 from fastapi.staticfiles import StaticFiles
 from PIL import Image
 
-from . import __version__, analyze, ask, data, datasets, extract, holdings, money, network, query, source, tags
+from . import __version__, analyze, ask, catasto, data, datasets, extract, holdings, money, network, query, source, tags
 from . import places as gaz
 
 STATIC = os.path.join(os.path.dirname(__file__), "static")
@@ -513,6 +513,49 @@ def ask_dataset(qid: str, body: dict):
     return datasets.save({"name": body.get("name") or f"{rec.get('title') or rec['question'][:40]} ({body['step']})",
                           "description": f"From the question: {rec['question']}", "query": s["query"],
                           "mode": body.get("mode") or "live"})
+
+
+# ---------------------------------------------------------------- Catasto of 1427
+@app.get("/api/catasto")
+def catasto_matches():
+    """People in the account books with possible households in the Catasto of 1427, and Laura's decisions."""
+    return catasto.matches()
+
+
+@app.get("/api/catasto/search")
+def catasto_search(q: str = ""):
+    return catasto.search(q)
+
+
+@app.post("/api/catasto/decide")
+def catasto_decide(body: dict):
+    try:
+        return catasto.decide(body.get("person") or "", str(body.get("stg_id") or ""), body.get("decision"), body.get("note") or "")
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+
+
+@app.get("/api/catasto/export")
+def catasto_export():
+    from openpyxl import Workbook
+    from openpyxl.styles import Font
+    rows = catasto.export_rows()
+    wb = Workbook(); ws = wb.active; ws.title = "Links"
+    cols = list(rows[0].keys()) if rows else ["Person (account books)", "Decision", "Catasto head"]
+    ws.append(cols)
+    for c in ws[1]:
+        c.font = Font(bold=True)
+    for r in rows:
+        ws.append([r.get(k) for k in cols])
+    ab = wb.create_sheet("About")
+    for line in [("Source", "Florentine Catasto of 1427, city of Florence: Online Catasto, Brown University Library (Herlihy & Klapisch-Zuber)"),
+                 ("File", str(catasto.CSV.relative_to(source.ROOT))), ("Links", f"{len(rows)} decided by Laura in Conti"),
+                 ("Money", "florins; deductions omit the 200-florin allowance per bocca"), ("Exported", data.now() + " from Conti")]:
+        ab.append(list(line))
+    buf = io.BytesIO(); wb.save(buf)
+    name = f"conti_catasto_links_{data.now()[:10]}.xlsx"
+    return Response(buf.getvalue(), media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    headers={"Content-Disposition": f"attachment; filename*=UTF-8''{quote(name)}"})
 
 
 @app.get("/")

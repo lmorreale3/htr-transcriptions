@@ -1,0 +1,4636 @@
+{
+ "id": "20261025-165255-eddf",
+ "question": "tell me all of the pages that list cows or cattle",
+ "t": "2026-10-25T16:52:55",
+ "status": "done",
+ "source": "claude-code",
+ "log": [
+  "16:52:56 Claude: writing a plan…",
+  "16:53:23 Plan: 5 steps. Conti is running it…",
+  "16:53:23 Claude: writing the answer from Conti's results…",
+  "16:53:57 Done."
+ ],
+ "updated": "2026-10-25T16:53:57",
+ "error": null,
+ "title": "Pages that mention cows or cattle",
+ "understood": "No goods tag for cattle exists yet, so I read the question as a word search across all manuscripts. It looks for the period words for cattle in the transcription, expanded text and translation: bue/buoi, vacca/vacche, giovenco, vitello/vitella, bestiame, bovino, and the Latin bos/boves and vacca. The results are grouped by page. Separate steps list the matching lines and entries so each hit can be checked, and isolate the street name Chiasso de' Buoi, which is not about animals.",
+ "limits": "No goods are tagged as cattle, so this search runs on words only. It covers only the pages Conti includes today (51 of 593 MPAP 4 pages, plus a few in other manuscripts), and many of those are still uncorrected machine readings. A misspelled or heavily abbreviated word (for example b̄oi or vacħe) may be missed. 'Vitello' can mean veal rather than a live calf. 'Bestie' and soccida contracts may concern sheep, pigs or donkeys rather than cattle. Lines naming the Chiasso de' Buoi must be subtracted by hand using the 'street' step.",
+ "plan": {
+  "manuscripts": [],
+  "steps": [
+   {
+    "id": "pages",
+    "title": "Pages with a cattle word, counted per page",
+    "op": "query",
+    "query": {
+     "unit": "lines",
+     "match": "all",
+     "conditions": [
+      {
+       "field": "text",
+       "op": "regex",
+       "value": "(?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b"
+      }
+     ]
+    },
+    "group_by": "page"
+   },
+   {
+    "id": "lines",
+    "title": "The matching lines themselves, to check each hit",
+    "op": "query",
+    "query": {
+     "unit": "lines",
+     "match": "all",
+     "conditions": [
+      {
+       "field": "text",
+       "op": "regex",
+       "value": "(?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b"
+      }
+     ]
+    }
+   },
+   {
+    "id": "entries",
+    "title": "Whole entries that mention cattle (with any sums and parties)",
+    "op": "query",
+    "query": {
+     "unit": "entries",
+     "match": "all",
+     "conditions": [
+      {
+       "field": "text",
+       "op": "regex",
+       "value": "(?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b"
+      }
+     ]
+    }
+   },
+   {
+    "id": "street",
+    "title": "False hits: the street Chiasso de' Buoi (not animals)",
+    "op": "query",
+    "query": {
+     "unit": "lines",
+     "match": "any",
+     "conditions": [
+      {
+       "field": "text",
+       "op": "regex",
+       "value": "(?i)chiass\\w*\\s+de\\W*\\s*buoi"
+      },
+      {
+       "field": "place",
+       "op": "is",
+       "value": "Chiasso de' Buoi"
+      }
+     ]
+    },
+    "group_by": "page"
+   },
+   {
+    "id": "livestock",
+    "title": "Wider check: livestock in general and share-farming of animals (bestie, soccio/soccida)",
+    "op": "query",
+    "query": {
+     "unit": "lines",
+     "match": "all",
+     "conditions": [
+      {
+       "field": "text",
+       "op": "regex",
+       "value": "(?i)\\b(besti[ae]|bestie|soc[cç]i[od]\\w*|soccit\\w*|livestock|beasts?)\\b"
+      }
+     ]
+    },
+    "group_by": "page"
+   }
+  ],
+  "title": "Pages that mention cows or cattle",
+  "question": "tell me all of the pages that list cows or cattle"
+ },
+ "result": {
+  "plan": {
+   "manuscripts": [],
+   "steps": [
+    {
+     "id": "pages",
+     "title": "Pages with a cattle word, counted per page",
+     "op": "query",
+     "query": {
+      "unit": "lines",
+      "match": "all",
+      "conditions": [
+       {
+        "field": "text",
+        "op": "regex",
+        "value": "(?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b"
+       }
+      ]
+     },
+     "group_by": "page"
+    },
+    {
+     "id": "lines",
+     "title": "The matching lines themselves, to check each hit",
+     "op": "query",
+     "query": {
+      "unit": "lines",
+      "match": "all",
+      "conditions": [
+       {
+        "field": "text",
+        "op": "regex",
+        "value": "(?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b"
+       }
+      ]
+     }
+    },
+    {
+     "id": "entries",
+     "title": "Whole entries that mention cattle (with any sums and parties)",
+     "op": "query",
+     "query": {
+      "unit": "entries",
+      "match": "all",
+      "conditions": [
+       {
+        "field": "text",
+        "op": "regex",
+        "value": "(?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b"
+       }
+      ]
+     }
+    },
+    {
+     "id": "street",
+     "title": "False hits: the street Chiasso de' Buoi (not animals)",
+     "op": "query",
+     "query": {
+      "unit": "lines",
+      "match": "any",
+      "conditions": [
+       {
+        "field": "text",
+        "op": "regex",
+        "value": "(?i)chiass\\w*\\s+de\\W*\\s*buoi"
+       },
+       {
+        "field": "place",
+        "op": "is",
+        "value": "Chiasso de' Buoi"
+       }
+      ]
+     },
+     "group_by": "page"
+    },
+    {
+     "id": "livestock",
+     "title": "Wider check: livestock in general and share-farming of animals (bestie, soccio/soccida)",
+     "op": "query",
+     "query": {
+      "unit": "lines",
+      "match": "all",
+      "conditions": [
+       {
+        "field": "text",
+        "op": "regex",
+        "value": "(?i)\\b(besti[ae]|bestie|soc[cç]i[od]\\w*|soccit\\w*|livestock|beasts?)\\b"
+       }
+      ]
+     },
+     "group_by": "page"
+    }
+   ],
+   "title": "Pages that mention cows or cattle",
+   "question": "tell me all of the pages that list cows or cattle"
+  },
+  "steps": {
+   "pages": {
+    "type": "query",
+    "query": {
+     "unit": "lines",
+     "match": "all",
+     "conditions": [
+      {
+       "field": "text",
+       "op": "regex",
+       "value": "(?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b"
+      }
+     ]
+    },
+    "describe": "lines: text regex (?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b · manuscripts: all",
+    "unit": "lines",
+    "count": 17,
+    "rows": [
+     {
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "folio": "7r",
+      "image": "ms493_img010.jpg",
+      "status": "Finished",
+      "line": 17,
+      "region": "column a",
+      "text": "recho giovencho di giuliano īquatꝯ a ß 79 𝒹 10[?] ꝓ ƒ",
+      "sum": "",
+      "date": "",
+      "expanded": "",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "",
+      "translation_state": "",
+      "flag": false,
+      "note": "",
+      "line_ids": "l17",
+      "page_order": 9,
+      "status_code": "finished",
+      "key": "ms493_img010|l17",
+      "dates": [],
+      "kind": null,
+      "entry": "ms493_img010#5",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ß 79 𝒹 10",
+        "amount": {
+         "florins": null,
+         "lire": null,
+         "soldi": 79,
+         "denari": 10,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [
+          {
+           "code": "soldi>=20",
+           "msg": "79 soldi (20 make a lira)"
+          }
+         ],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 958,
+         "lire_decimal": 3.9917,
+         "display": "ß 79 𝒹 10"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "folio": "7r",
+      "image": "ms493_img010.jpg",
+      "status": "Finished",
+      "line": 19,
+      "region": "column a",
+      "text": "recho giovencho di giuliano ī g° a ß 79 ꝓ ƒ",
+      "sum": "",
+      "date": "",
+      "expanded": "",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "",
+      "translation_state": "",
+      "flag": false,
+      "note": "",
+      "line_ids": "l19",
+      "page_order": 9,
+      "status_code": "finished",
+      "key": "ms493_img010|l19",
+      "dates": [],
+      "kind": null,
+      "entry": "ms493_img010#6",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ß 79",
+        "amount": {
+         "florins": null,
+         "lire": null,
+         "soldi": 79,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [
+          {
+           "code": "soldi>=20",
+           "msg": "79 soldi (20 make a lira)"
+          }
+         ],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 948,
+         "lire_decimal": 3.95,
+         "display": "ß 79"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "folio": "7r",
+      "image": "ms493_img010.jpg",
+      "status": "Finished",
+      "line": 21,
+      "region": "column a",
+      "text": "recho giovencho di giuliano ī ꝙ̄ e ß 78 𝒹 x ꝓ ƒ",
+      "sum": "",
+      "date": "",
+      "expanded": "",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "",
+      "translation_state": "",
+      "flag": false,
+      "note": "",
+      "line_ids": "l21",
+      "page_order": 9,
+      "status_code": "finished",
+      "key": "ms493_img010|l21",
+      "dates": [],
+      "kind": null,
+      "entry": "ms493_img010#7",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ß 78 𝒹 x",
+        "amount": {
+         "florins": null,
+         "lire": null,
+         "soldi": 78,
+         "denari": 10,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [
+          {
+           "code": "soldi>=20",
+           "msg": "78 soldi (20 make a lira)"
+          }
+         ],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 946,
+         "lire_decimal": 3.9417,
+         "display": "ß 78 𝒹 10"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "folio": "7r",
+      "image": "ms493_img010.jpg",
+      "status": "Finished",
+      "line": 23,
+      "region": "column a",
+      "text": "e ß xxj a 𝒹 ꝓ resto recho giovencho di giuliano",
+      "sum": "𝒹",
+      "date": "",
+      "expanded": "",
+      "sum_expanded": "𝒹",
+      "date_expanded": "",
+      "translation": "",
+      "translation_state": "",
+      "flag": true,
+      "note": "percesto?",
+      "line_ids": "l23,l28",
+      "page_order": 9,
+      "status_code": "finished",
+      "key": "ms493_img010|l23,l28",
+      "dates": [],
+      "kind": null,
+      "entry": "ms493_img010#8",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ß xxj",
+        "amount": {
+         "florins": null,
+         "lire": null,
+         "soldi": 21,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [
+          {
+           "code": "soldi>=20",
+           "msg": "21 soldi (20 make a lira)"
+          }
+         ],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 252,
+         "lire_decimal": 1.05,
+         "display": "ß 21"
+        }
+       }
+      ],
+      "amount": {
+       "florins": null,
+       "lire": null,
+       "soldi": null,
+       "denari": null,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": true,
+       "florin_parts": false,
+       "lsd_denari": null,
+       "lire_decimal": null,
+       "display": ""
+      },
+      "amount_written": "𝒹",
+      "amount_source": "sum",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 7,
+      "region": "",
+      "text": "chiasso de buoi cosi confinata a iº via a iiº Giovan̄i dambriogio ciabattiere",
+      "sum": "",
+      "date": "",
+      "expanded": "chiasso de buoi cosi confinata a iº via a iiº Giovanni dambriogio ciabattiere",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Chiasso de' Buoi, bounded thus: 1st the street, 2nd Giovanni d'Ambriogio, cobbler,",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l7",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l7",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#3",
+      "tags": [
+       {
+        "id": "taa75bd440e",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       },
+       {
+        "id": "tfcfedf6089",
+        "type": "person",
+        "span": "Giovan̄i dambriogio",
+        "name": "Giovanni d'Ambrogio",
+        "attrs": {
+         "role": "neighbour",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Giovanni d'Ambrogio",
+        "stale": false
+       },
+       {
+        "id": "t03eb1d5e5d",
+        "type": "occupation",
+        "span": "ciabattiere",
+        "name": "ciabattino",
+        "attrs": {
+         "of": "Giovanni d'Ambrogio"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "ciabattino",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 21,
+      "region": "",
+      "text": "Item una casa posta nel detto ppło nel detto chiasso de buoi cosi confinata iiº via",
+      "sum": "",
+      "date": "",
+      "expanded": "Item una casa posta nel detto popolo nel detto chiasso de buoi cosi confinata iiº via",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Item, a house located in the said parish in the said Chiasso de' Buoi, bounded thus: [1st] the street,",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l21",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l21",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#6",
+      "tags": [
+       {
+        "id": "t0eca57137d",
+        "type": "goods",
+        "span": "casa",
+        "name": "casa",
+        "attrs": {},
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "casa",
+        "stale": false
+       },
+       {
+        "id": "tf1f8984d78",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 36,
+      "region": "",
+      "text": "Item due casolari murati nel chiasso de buoi fra confini cosi confinati",
+      "sum": "",
+      "date": "",
+      "expanded": "Item due casolari murati nel chiasso de buoi fra confini cosi confinati",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Item, two walled ruined houses in the Chiasso de' Buoi, among the boundaries, bounded thus:",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l36",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l36",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#10",
+      "tags": [
+       {
+        "id": "t3ddfac01bb",
+        "type": "goods",
+        "span": "casolari",
+        "name": "casolare",
+        "attrs": {
+         "quantity": "due"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "casolare",
+        "stale": false
+       },
+       {
+        "id": "t8f58dd455d",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 37,
+      "region": "",
+      "text": "a iº chiasso de buoi a iiº deo di Van̄i ⁊ altri confini",
+      "sum": "",
+      "date": "",
+      "expanded": "a iº chiasso de buoi a iiº deo di vanni e altri confini",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "1st the Chiasso de' Buoi, 2nd Deo di Vanni, and other boundaries",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l37",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l37",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#10",
+      "tags": [
+       {
+        "id": "t286029427b",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       },
+       {
+        "id": "t3b3c3e79fd",
+        "type": "person",
+        "span": "deo di Van̄i",
+        "name": "Deo di Vanni",
+        "attrs": {
+         "role": "neighbour",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Deo di Vanni",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "folio": "14r",
+      "image": "RS1128_DSC00644-scr.jpg",
+      "status": "Sent to training",
+      "line": 59,
+      "region": "column a",
+      "text": "mō beldi di marcho Nel chiasso de buoi de dare a libro detto ac̄ 44 pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "sum": "",
+      "date": "",
+      "expanded": "monna beldi di marcho Nel chiasso de buoi de dare a libro detto a carte 44 pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Monna Beldi di Marco, in the Chiasso de' Buoi, owes, in the said book at folio 44, pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l66",
+      "page_order": 20,
+      "status_code": "sent_to_training",
+      "key": "RS1128_DSC00644-scr|l66",
+      "dates": [],
+      "kind": "debit",
+      "entry": "RS1128_DSC00644-scr#26",
+      "tags": [
+       {
+        "id": "t74a5286062",
+        "type": "person",
+        "span": "mō beldi di marcho",
+        "name": "Beldi di Marco",
+        "attrs": {
+         "title": "monna",
+         "gender": "f",
+         "role": "debtor"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Beldi di Marco",
+        "stale": false
+       },
+       {
+        "id": "t83fb13e02f",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "residence",
+         "of": "Beldi di Marco"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       }
+      ],
+      "refs": [
+       {
+        "folios": [
+         44
+        ],
+        "book": "libro detto",
+        "raw": "ac 44",
+        "book_resolved": "libro delle prestanze"
+       }
+      ],
+      "mentions": [
+       {
+        "raw": "℔ viii ß iiiiº 𝒹 vi",
+        "amount": {
+         "florins": null,
+         "lire": 8,
+         "soldi": 4,
+         "denari": 6,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 1974,
+         "lire_decimal": 8.225,
+         "display": "℔ 8 ß 4 𝒹 6"
+        }
+       }
+      ],
+      "amount": {
+       "florins": null,
+       "lire": 8,
+       "soldi": 4,
+       "denari": 6,
+       "piccioli": true,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 1974,
+       "lire_decimal": 8.225,
+       "display": "℔ 8 ß 4 𝒹 6 pc̄"
+      },
+      "amount_written": "pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "amount_source": "end of entry",
+      "review": null,
+      "amount_final": {
+       "florins": null,
+       "lire": 8,
+       "soldi": 4,
+       "denari": 6,
+       "piccioli": true,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 1974,
+       "lire_decimal": 8.225,
+       "display": "℔ 8 ß 4 𝒹 6 pc̄"
+      },
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1139_DSC00655-scr",
+      "folio": "20r",
+      "image": "RS1139_DSC00655-scr.jpg",
+      "status": "Sent to training",
+      "line": 23,
+      "region": "column a",
+      "text": "E debbe tenere ƒ sedici 𝒹 ꝓ uno paio di buoi ī sul luogo di tutto questo e",
+      "sum": "",
+      "date": "",
+      "expanded": "E debbe tenere ƒ sedici 𝒹 per uno paio di buoi in sul luogo di tutto questo e",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "And he is to keep ƒ sixteen 𝒹 [worth] for a pair of oxen on the place; for all this the",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l25",
+      "page_order": 31,
+      "status_code": "sent_to_training",
+      "key": "RS1139_DSC00655-scr|l25",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1139_DSC00655-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ƒ sedici 𝒹",
+        "amount": {
+         "florins": 16,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 16"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1140_DSC00656-scr",
+      "folio": "20v",
+      "image": "RS1140_DSC00656-scr.jpg",
+      "status": "Sent to training",
+      "line": 24,
+      "region": "column a",
+      "text": "Ce ī sul detto podere uno paio di buoi costarono ƒa xxxiiiiº 𝒹 sono amezo pro ⁊ amezo",
+      "sum": "",
+      "date": "",
+      "expanded": "Ce in sul detto podere uno paio di buoi costarono ƒa xxxiiiiº 𝒹 sono amezo pro e amezo",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "On the said farm there is a pair of oxen, which cost ƒa xxxiiiiº 𝒹; they are in sharecropping, half the profit and half the",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l24",
+      "page_order": 32,
+      "status_code": "sent_to_training",
+      "key": "RS1140_DSC00656-scr|l24",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1140_DSC00656-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1140_DSC00656-scr",
+      "folio": "20v",
+      "image": "RS1140_DSC00656-scr.jpg",
+      "status": "Sent to training",
+      "line": 28,
+      "region": "column a",
+      "text": "Et ebbe il detto filippo di xxvi di gugno 389 ꝓ arogere a uno paio di buoi",
+      "sum": "",
+      "date": "",
+      "expanded": "Et ebbe il detto filippo di xxvi di gugno 389 per arogere a uno paio di buoi",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "And the said Filippo had, on 26 June 1389, to add to [the price of] a pair of oxen,",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l28",
+      "page_order": 32,
+      "status_code": "sent_to_training",
+      "key": "RS1140_DSC00656-scr|l28",
+      "dates": [
+       {
+        "day": 26,
+        "month": 6,
+        "year_written": 1389,
+        "raw": "xxvi di gugno 389",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "giugno",
+        "iso_modern": "1389-06-26",
+        "ambiguous": false
+       }
+      ],
+      "kind": null,
+      "entry": "RS1140_DSC00656-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1141_DSC00657-scr",
+      "folio": "21r",
+      "image": "RS1141_DSC00657-scr.jpg",
+      "status": "Sent to training",
+      "line": 6,
+      "region": "column a",
+      "text": "An̄i suso unpaio di buoi di stima di ƒ xxvi Ene morto uno di mãzo 388",
+      "sum": "",
+      "date": "",
+      "expanded": "Anni suso unpaio di buoi di stima di ƒ xxvi Ene morto uno di marzo 388",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "There is on it a pair of oxen valued at ƒ xxvi; one of them died in March 1388",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l2",
+      "page_order": 33,
+      "status_code": "sent_to_training",
+      "key": "RS1141_DSC00657-scr|l2",
+      "dates": [
+       {
+        "day": 1,
+        "month": 3,
+        "year_written": 1388,
+        "raw": "uno di mazo 388",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "marzo",
+        "iso_modern": "1389-03-01",
+        "ambiguous": false
+       }
+      ],
+      "kind": null,
+      "entry": "RS1141_DSC00657-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ƒ xxvi",
+        "amount": {
+         "florins": 26,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 26"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1141_DSC00657-scr",
+      "folio": "21r",
+      "image": "RS1141_DSC00657-scr.jpg",
+      "status": "Sent to training",
+      "line": 8,
+      "region": "column a",
+      "text": "ꝓricoꝓare uno bue a uscita di simone ßragli acār 18 ƒ xi",
+      "sum": "",
+      "date": "",
+      "expanded": "per ricomprare uno bue a uscita di simone ßragli a carte 18 ƒ xi",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "to buy back an ox, to the outgoings of Simone Fragli at folio 18, ƒ xi",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l4",
+      "page_order": 33,
+      "status_code": "sent_to_training",
+      "key": "RS1141_DSC00657-scr|l4",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1141_DSC00657-scr#1",
+      "tags": [],
+      "refs": [
+       {
+        "folios": [
+         18
+        ],
+        "book": "uscita di simone",
+        "raw": "acar 18",
+        "book_resolved": "uscita di simone"
+       }
+      ],
+      "mentions": [
+       {
+        "raw": "ƒ xi",
+        "amount": {
+         "florins": 11,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 11"
+        }
+       }
+      ],
+      "amount": {
+       "florins": 11,
+       "lire": null,
+       "soldi": null,
+       "denari": null,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": null,
+       "lire_decimal": null,
+       "display": "ƒ 11"
+      },
+      "amount_written": "ƒ xi",
+      "amount_source": "end of entry",
+      "review": null,
+      "amount_final": {
+       "florins": 11,
+       "lire": null,
+       "soldi": null,
+       "denari": null,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": null,
+       "lire_decimal": null,
+       "display": "ƒ 11"
+      },
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1141_DSC00657-scr",
+      "folio": "21r",
+      "image": "RS1141_DSC00657-scr.jpg",
+      "status": "Sent to training",
+      "line": 10,
+      "region": "column a",
+      "text": "Restagli i buoi ꝓ ƒ xxiiiiº ß xv pc̄ Eresta adare delbue simone[?] ___ ƒ vi 1/1 𝒹 i",
+      "sum": "",
+      "date": "",
+      "expanded": "Restagli i buoi per ƒ xxiiiiº ß xv pc̄ Eresta adare delbue simone ___ ƒ vi 1/1 𝒹 i",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "The oxen remain with him for ƒ xxiiii ß xv pc̄; and there remains to be paid for the ox, Simone ___ ƒ vi 1/1 𝒹 i",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l6,l20",
+      "page_order": 33,
+      "status_code": "sent_to_training",
+      "key": "RS1141_DSC00657-scr|l6,l20",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1141_DSC00657-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ƒ xxiiiiº ß xv pc̄",
+        "amount": {
+         "florins": 24,
+         "lire": null,
+         "soldi": 15,
+         "denari": null,
+         "piccioli": true,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": true,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 24 ß 15 pc̄"
+        }
+       },
+       {
+        "raw": "ƒ vi",
+        "amount": {
+         "florins": 6,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 6"
+        }
+       },
+       {
+        "raw": "𝒹 i",
+        "amount": {
+         "florins": null,
+         "lire": null,
+         "soldi": null,
+         "denari": 1,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 1,
+         "lire_decimal": 0.0042,
+         "display": "𝒹 1"
+        }
+       }
+      ],
+      "amount": {
+       "florins": null,
+       "lire": null,
+       "soldi": null,
+       "denari": 1,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 1,
+       "lire_decimal": 0.0042,
+       "display": "𝒹 1"
+      },
+      "amount_written": "𝒹 i",
+      "amount_source": "end of entry",
+      "review": null,
+      "amount_final": {
+       "florins": null,
+       "lire": null,
+       "soldi": null,
+       "denari": 1,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 1,
+       "lire_decimal": 0.0042,
+       "display": "𝒹 1"
+      },
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1141_DSC00657-scr",
+      "folio": "21r",
+      "image": "RS1141_DSC00657-scr.jpg",
+      "status": "Sent to training",
+      "line": 17,
+      "region": "column a",
+      "text": "insul detto podere uno paio di buoi costarono ƒ xxxiii 𝒹 isono am pro",
+      "sum": "",
+      "date": "",
+      "expanded": "insul detto podere uno paio di buoi costarono ƒ xxxiii 𝒹 isono am pro",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "On the said farm [there is] a pair of oxen, which cost ƒ xxxiii 𝒹 i; they are in half [shares], profit",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l11",
+      "page_order": 33,
+      "status_code": "sent_to_training",
+      "key": "RS1141_DSC00657-scr|l11",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1141_DSC00657-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ƒ xxxiii 𝒹",
+        "amount": {
+         "florins": 33,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 33"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1147_DSC00662-scr",
+      "folio": "24r",
+      "image": "RS1147_DSC00662-scr.jpg",
+      "status": "Sent to training",
+      "line": 18,
+      "region": "",
+      "text": "di lulglio 388 ƒ sedici 𝒹 ꝓ uno paio di buoi dee tenere",
+      "sum": "",
+      "date": "",
+      "expanded": "di lulglio 388 ƒ sedici 𝒹 per uno paio di buoi dee tenere",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "July 1388, ƒ sixteen 𝒹 for a pair of oxen, which he is to keep",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l18",
+      "page_order": 39,
+      "status_code": "sent_to_training",
+      "key": "RS1147_DSC00662-scr|l18",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1147_DSC00662-scr#2",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ƒ sedici 𝒹",
+        "amount": {
+         "florins": 16,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 16"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     }
+    ],
+    "groups": [
+     {
+      "value": "RS1110_DSC00626-scr",
+      "rows": 4,
+      "first": null,
+      "last": null
+     },
+     {
+      "value": "RS1141_DSC00657-scr",
+      "rows": 4,
+      "first": "1389-03-01",
+      "last": "1389-03-01"
+     },
+     {
+      "value": "ms493_img010",
+      "rows": 4,
+      "first": null,
+      "last": null
+     },
+     {
+      "value": "RS1140_DSC00656-scr",
+      "rows": 2,
+      "first": "1389-06-26",
+      "last": "1389-06-26"
+     },
+     {
+      "value": "RS1128_DSC00644-scr",
+      "rows": 1,
+      "first": null,
+      "last": null
+     },
+     {
+      "value": "RS1139_DSC00655-scr",
+      "rows": 1,
+      "first": null,
+      "last": null
+     },
+     {
+      "value": "RS1147_DSC00662-scr",
+      "rows": 1,
+      "first": null,
+      "last": null
+     }
+    ],
+    "group_by": "page",
+    "id": "pages",
+    "op": "query",
+    "title": "Pages with a cattle word, counted per page"
+   },
+   "lines": {
+    "type": "query",
+    "query": {
+     "unit": "lines",
+     "match": "all",
+     "conditions": [
+      {
+       "field": "text",
+       "op": "regex",
+       "value": "(?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b"
+      }
+     ]
+    },
+    "describe": "lines: text regex (?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b · manuscripts: all",
+    "unit": "lines",
+    "count": 17,
+    "rows": [
+     {
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "folio": "7r",
+      "image": "ms493_img010.jpg",
+      "status": "Finished",
+      "line": 17,
+      "region": "column a",
+      "text": "recho giovencho di giuliano īquatꝯ a ß 79 𝒹 10[?] ꝓ ƒ",
+      "sum": "",
+      "date": "",
+      "expanded": "",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "",
+      "translation_state": "",
+      "flag": false,
+      "note": "",
+      "line_ids": "l17",
+      "page_order": 9,
+      "status_code": "finished",
+      "key": "ms493_img010|l17",
+      "dates": [],
+      "kind": null,
+      "entry": "ms493_img010#5",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ß 79 𝒹 10",
+        "amount": {
+         "florins": null,
+         "lire": null,
+         "soldi": 79,
+         "denari": 10,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [
+          {
+           "code": "soldi>=20",
+           "msg": "79 soldi (20 make a lira)"
+          }
+         ],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 958,
+         "lire_decimal": 3.9917,
+         "display": "ß 79 𝒹 10"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "folio": "7r",
+      "image": "ms493_img010.jpg",
+      "status": "Finished",
+      "line": 19,
+      "region": "column a",
+      "text": "recho giovencho di giuliano ī g° a ß 79 ꝓ ƒ",
+      "sum": "",
+      "date": "",
+      "expanded": "",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "",
+      "translation_state": "",
+      "flag": false,
+      "note": "",
+      "line_ids": "l19",
+      "page_order": 9,
+      "status_code": "finished",
+      "key": "ms493_img010|l19",
+      "dates": [],
+      "kind": null,
+      "entry": "ms493_img010#6",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ß 79",
+        "amount": {
+         "florins": null,
+         "lire": null,
+         "soldi": 79,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [
+          {
+           "code": "soldi>=20",
+           "msg": "79 soldi (20 make a lira)"
+          }
+         ],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 948,
+         "lire_decimal": 3.95,
+         "display": "ß 79"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "folio": "7r",
+      "image": "ms493_img010.jpg",
+      "status": "Finished",
+      "line": 21,
+      "region": "column a",
+      "text": "recho giovencho di giuliano ī ꝙ̄ e ß 78 𝒹 x ꝓ ƒ",
+      "sum": "",
+      "date": "",
+      "expanded": "",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "",
+      "translation_state": "",
+      "flag": false,
+      "note": "",
+      "line_ids": "l21",
+      "page_order": 9,
+      "status_code": "finished",
+      "key": "ms493_img010|l21",
+      "dates": [],
+      "kind": null,
+      "entry": "ms493_img010#7",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ß 78 𝒹 x",
+        "amount": {
+         "florins": null,
+         "lire": null,
+         "soldi": 78,
+         "denari": 10,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [
+          {
+           "code": "soldi>=20",
+           "msg": "78 soldi (20 make a lira)"
+          }
+         ],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 946,
+         "lire_decimal": 3.9417,
+         "display": "ß 78 𝒹 10"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "folio": "7r",
+      "image": "ms493_img010.jpg",
+      "status": "Finished",
+      "line": 23,
+      "region": "column a",
+      "text": "e ß xxj a 𝒹 ꝓ resto recho giovencho di giuliano",
+      "sum": "𝒹",
+      "date": "",
+      "expanded": "",
+      "sum_expanded": "𝒹",
+      "date_expanded": "",
+      "translation": "",
+      "translation_state": "",
+      "flag": true,
+      "note": "percesto?",
+      "line_ids": "l23,l28",
+      "page_order": 9,
+      "status_code": "finished",
+      "key": "ms493_img010|l23,l28",
+      "dates": [],
+      "kind": null,
+      "entry": "ms493_img010#8",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ß xxj",
+        "amount": {
+         "florins": null,
+         "lire": null,
+         "soldi": 21,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [
+          {
+           "code": "soldi>=20",
+           "msg": "21 soldi (20 make a lira)"
+          }
+         ],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 252,
+         "lire_decimal": 1.05,
+         "display": "ß 21"
+        }
+       }
+      ],
+      "amount": {
+       "florins": null,
+       "lire": null,
+       "soldi": null,
+       "denari": null,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": true,
+       "florin_parts": false,
+       "lsd_denari": null,
+       "lire_decimal": null,
+       "display": ""
+      },
+      "amount_written": "𝒹",
+      "amount_source": "sum",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 7,
+      "region": "",
+      "text": "chiasso de buoi cosi confinata a iº via a iiº Giovan̄i dambriogio ciabattiere",
+      "sum": "",
+      "date": "",
+      "expanded": "chiasso de buoi cosi confinata a iº via a iiº Giovanni dambriogio ciabattiere",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Chiasso de' Buoi, bounded thus: 1st the street, 2nd Giovanni d'Ambriogio, cobbler,",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l7",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l7",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#3",
+      "tags": [
+       {
+        "id": "taa75bd440e",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       },
+       {
+        "id": "tfcfedf6089",
+        "type": "person",
+        "span": "Giovan̄i dambriogio",
+        "name": "Giovanni d'Ambrogio",
+        "attrs": {
+         "role": "neighbour",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Giovanni d'Ambrogio",
+        "stale": false
+       },
+       {
+        "id": "t03eb1d5e5d",
+        "type": "occupation",
+        "span": "ciabattiere",
+        "name": "ciabattino",
+        "attrs": {
+         "of": "Giovanni d'Ambrogio"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "ciabattino",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 21,
+      "region": "",
+      "text": "Item una casa posta nel detto ppło nel detto chiasso de buoi cosi confinata iiº via",
+      "sum": "",
+      "date": "",
+      "expanded": "Item una casa posta nel detto popolo nel detto chiasso de buoi cosi confinata iiº via",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Item, a house located in the said parish in the said Chiasso de' Buoi, bounded thus: [1st] the street,",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l21",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l21",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#6",
+      "tags": [
+       {
+        "id": "t0eca57137d",
+        "type": "goods",
+        "span": "casa",
+        "name": "casa",
+        "attrs": {},
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "casa",
+        "stale": false
+       },
+       {
+        "id": "tf1f8984d78",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 36,
+      "region": "",
+      "text": "Item due casolari murati nel chiasso de buoi fra confini cosi confinati",
+      "sum": "",
+      "date": "",
+      "expanded": "Item due casolari murati nel chiasso de buoi fra confini cosi confinati",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Item, two walled ruined houses in the Chiasso de' Buoi, among the boundaries, bounded thus:",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l36",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l36",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#10",
+      "tags": [
+       {
+        "id": "t3ddfac01bb",
+        "type": "goods",
+        "span": "casolari",
+        "name": "casolare",
+        "attrs": {
+         "quantity": "due"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "casolare",
+        "stale": false
+       },
+       {
+        "id": "t8f58dd455d",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 37,
+      "region": "",
+      "text": "a iº chiasso de buoi a iiº deo di Van̄i ⁊ altri confini",
+      "sum": "",
+      "date": "",
+      "expanded": "a iº chiasso de buoi a iiº deo di vanni e altri confini",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "1st the Chiasso de' Buoi, 2nd Deo di Vanni, and other boundaries",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l37",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l37",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#10",
+      "tags": [
+       {
+        "id": "t286029427b",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       },
+       {
+        "id": "t3b3c3e79fd",
+        "type": "person",
+        "span": "deo di Van̄i",
+        "name": "Deo di Vanni",
+        "attrs": {
+         "role": "neighbour",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Deo di Vanni",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "folio": "14r",
+      "image": "RS1128_DSC00644-scr.jpg",
+      "status": "Sent to training",
+      "line": 59,
+      "region": "column a",
+      "text": "mō beldi di marcho Nel chiasso de buoi de dare a libro detto ac̄ 44 pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "sum": "",
+      "date": "",
+      "expanded": "monna beldi di marcho Nel chiasso de buoi de dare a libro detto a carte 44 pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Monna Beldi di Marco, in the Chiasso de' Buoi, owes, in the said book at folio 44, pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l66",
+      "page_order": 20,
+      "status_code": "sent_to_training",
+      "key": "RS1128_DSC00644-scr|l66",
+      "dates": [],
+      "kind": "debit",
+      "entry": "RS1128_DSC00644-scr#26",
+      "tags": [
+       {
+        "id": "t74a5286062",
+        "type": "person",
+        "span": "mō beldi di marcho",
+        "name": "Beldi di Marco",
+        "attrs": {
+         "title": "monna",
+         "gender": "f",
+         "role": "debtor"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Beldi di Marco",
+        "stale": false
+       },
+       {
+        "id": "t83fb13e02f",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "residence",
+         "of": "Beldi di Marco"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       }
+      ],
+      "refs": [
+       {
+        "folios": [
+         44
+        ],
+        "book": "libro detto",
+        "raw": "ac 44",
+        "book_resolved": "libro delle prestanze"
+       }
+      ],
+      "mentions": [
+       {
+        "raw": "℔ viii ß iiiiº 𝒹 vi",
+        "amount": {
+         "florins": null,
+         "lire": 8,
+         "soldi": 4,
+         "denari": 6,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 1974,
+         "lire_decimal": 8.225,
+         "display": "℔ 8 ß 4 𝒹 6"
+        }
+       }
+      ],
+      "amount": {
+       "florins": null,
+       "lire": 8,
+       "soldi": 4,
+       "denari": 6,
+       "piccioli": true,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 1974,
+       "lire_decimal": 8.225,
+       "display": "℔ 8 ß 4 𝒹 6 pc̄"
+      },
+      "amount_written": "pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "amount_source": "end of entry",
+      "review": null,
+      "amount_final": {
+       "florins": null,
+       "lire": 8,
+       "soldi": 4,
+       "denari": 6,
+       "piccioli": true,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 1974,
+       "lire_decimal": 8.225,
+       "display": "℔ 8 ß 4 𝒹 6 pc̄"
+      },
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1139_DSC00655-scr",
+      "folio": "20r",
+      "image": "RS1139_DSC00655-scr.jpg",
+      "status": "Sent to training",
+      "line": 23,
+      "region": "column a",
+      "text": "E debbe tenere ƒ sedici 𝒹 ꝓ uno paio di buoi ī sul luogo di tutto questo e",
+      "sum": "",
+      "date": "",
+      "expanded": "E debbe tenere ƒ sedici 𝒹 per uno paio di buoi in sul luogo di tutto questo e",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "And he is to keep ƒ sixteen 𝒹 [worth] for a pair of oxen on the place; for all this the",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l25",
+      "page_order": 31,
+      "status_code": "sent_to_training",
+      "key": "RS1139_DSC00655-scr|l25",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1139_DSC00655-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ƒ sedici 𝒹",
+        "amount": {
+         "florins": 16,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 16"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1140_DSC00656-scr",
+      "folio": "20v",
+      "image": "RS1140_DSC00656-scr.jpg",
+      "status": "Sent to training",
+      "line": 24,
+      "region": "column a",
+      "text": "Ce ī sul detto podere uno paio di buoi costarono ƒa xxxiiiiº 𝒹 sono amezo pro ⁊ amezo",
+      "sum": "",
+      "date": "",
+      "expanded": "Ce in sul detto podere uno paio di buoi costarono ƒa xxxiiiiº 𝒹 sono amezo pro e amezo",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "On the said farm there is a pair of oxen, which cost ƒa xxxiiiiº 𝒹; they are in sharecropping, half the profit and half the",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l24",
+      "page_order": 32,
+      "status_code": "sent_to_training",
+      "key": "RS1140_DSC00656-scr|l24",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1140_DSC00656-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1140_DSC00656-scr",
+      "folio": "20v",
+      "image": "RS1140_DSC00656-scr.jpg",
+      "status": "Sent to training",
+      "line": 28,
+      "region": "column a",
+      "text": "Et ebbe il detto filippo di xxvi di gugno 389 ꝓ arogere a uno paio di buoi",
+      "sum": "",
+      "date": "",
+      "expanded": "Et ebbe il detto filippo di xxvi di gugno 389 per arogere a uno paio di buoi",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "And the said Filippo had, on 26 June 1389, to add to [the price of] a pair of oxen,",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l28",
+      "page_order": 32,
+      "status_code": "sent_to_training",
+      "key": "RS1140_DSC00656-scr|l28",
+      "dates": [
+       {
+        "day": 26,
+        "month": 6,
+        "year_written": 1389,
+        "raw": "xxvi di gugno 389",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "giugno",
+        "iso_modern": "1389-06-26",
+        "ambiguous": false
+       }
+      ],
+      "kind": null,
+      "entry": "RS1140_DSC00656-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1141_DSC00657-scr",
+      "folio": "21r",
+      "image": "RS1141_DSC00657-scr.jpg",
+      "status": "Sent to training",
+      "line": 6,
+      "region": "column a",
+      "text": "An̄i suso unpaio di buoi di stima di ƒ xxvi Ene morto uno di mãzo 388",
+      "sum": "",
+      "date": "",
+      "expanded": "Anni suso unpaio di buoi di stima di ƒ xxvi Ene morto uno di marzo 388",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "There is on it a pair of oxen valued at ƒ xxvi; one of them died in March 1388",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l2",
+      "page_order": 33,
+      "status_code": "sent_to_training",
+      "key": "RS1141_DSC00657-scr|l2",
+      "dates": [
+       {
+        "day": 1,
+        "month": 3,
+        "year_written": 1388,
+        "raw": "uno di mazo 388",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "marzo",
+        "iso_modern": "1389-03-01",
+        "ambiguous": false
+       }
+      ],
+      "kind": null,
+      "entry": "RS1141_DSC00657-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ƒ xxvi",
+        "amount": {
+         "florins": 26,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 26"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1141_DSC00657-scr",
+      "folio": "21r",
+      "image": "RS1141_DSC00657-scr.jpg",
+      "status": "Sent to training",
+      "line": 8,
+      "region": "column a",
+      "text": "ꝓricoꝓare uno bue a uscita di simone ßragli acār 18 ƒ xi",
+      "sum": "",
+      "date": "",
+      "expanded": "per ricomprare uno bue a uscita di simone ßragli a carte 18 ƒ xi",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "to buy back an ox, to the outgoings of Simone Fragli at folio 18, ƒ xi",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l4",
+      "page_order": 33,
+      "status_code": "sent_to_training",
+      "key": "RS1141_DSC00657-scr|l4",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1141_DSC00657-scr#1",
+      "tags": [],
+      "refs": [
+       {
+        "folios": [
+         18
+        ],
+        "book": "uscita di simone",
+        "raw": "acar 18",
+        "book_resolved": "uscita di simone"
+       }
+      ],
+      "mentions": [
+       {
+        "raw": "ƒ xi",
+        "amount": {
+         "florins": 11,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 11"
+        }
+       }
+      ],
+      "amount": {
+       "florins": 11,
+       "lire": null,
+       "soldi": null,
+       "denari": null,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": null,
+       "lire_decimal": null,
+       "display": "ƒ 11"
+      },
+      "amount_written": "ƒ xi",
+      "amount_source": "end of entry",
+      "review": null,
+      "amount_final": {
+       "florins": 11,
+       "lire": null,
+       "soldi": null,
+       "denari": null,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": null,
+       "lire_decimal": null,
+       "display": "ƒ 11"
+      },
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1141_DSC00657-scr",
+      "folio": "21r",
+      "image": "RS1141_DSC00657-scr.jpg",
+      "status": "Sent to training",
+      "line": 10,
+      "region": "column a",
+      "text": "Restagli i buoi ꝓ ƒ xxiiiiº ß xv pc̄ Eresta adare delbue simone[?] ___ ƒ vi 1/1 𝒹 i",
+      "sum": "",
+      "date": "",
+      "expanded": "Restagli i buoi per ƒ xxiiiiº ß xv pc̄ Eresta adare delbue simone ___ ƒ vi 1/1 𝒹 i",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "The oxen remain with him for ƒ xxiiii ß xv pc̄; and there remains to be paid for the ox, Simone ___ ƒ vi 1/1 𝒹 i",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l6,l20",
+      "page_order": 33,
+      "status_code": "sent_to_training",
+      "key": "RS1141_DSC00657-scr|l6,l20",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1141_DSC00657-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ƒ xxiiiiº ß xv pc̄",
+        "amount": {
+         "florins": 24,
+         "lire": null,
+         "soldi": 15,
+         "denari": null,
+         "piccioli": true,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": true,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 24 ß 15 pc̄"
+        }
+       },
+       {
+        "raw": "ƒ vi",
+        "amount": {
+         "florins": 6,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 6"
+        }
+       },
+       {
+        "raw": "𝒹 i",
+        "amount": {
+         "florins": null,
+         "lire": null,
+         "soldi": null,
+         "denari": 1,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 1,
+         "lire_decimal": 0.0042,
+         "display": "𝒹 1"
+        }
+       }
+      ],
+      "amount": {
+       "florins": null,
+       "lire": null,
+       "soldi": null,
+       "denari": 1,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 1,
+       "lire_decimal": 0.0042,
+       "display": "𝒹 1"
+      },
+      "amount_written": "𝒹 i",
+      "amount_source": "end of entry",
+      "review": null,
+      "amount_final": {
+       "florins": null,
+       "lire": null,
+       "soldi": null,
+       "denari": 1,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 1,
+       "lire_decimal": 0.0042,
+       "display": "𝒹 1"
+      },
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1141_DSC00657-scr",
+      "folio": "21r",
+      "image": "RS1141_DSC00657-scr.jpg",
+      "status": "Sent to training",
+      "line": 17,
+      "region": "column a",
+      "text": "insul detto podere uno paio di buoi costarono ƒ xxxiii 𝒹 isono am pro",
+      "sum": "",
+      "date": "",
+      "expanded": "insul detto podere uno paio di buoi costarono ƒ xxxiii 𝒹 isono am pro",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "On the said farm [there is] a pair of oxen, which cost ƒ xxxiii 𝒹 i; they are in half [shares], profit",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l11",
+      "page_order": 33,
+      "status_code": "sent_to_training",
+      "key": "RS1141_DSC00657-scr|l11",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1141_DSC00657-scr#1",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ƒ xxxiii 𝒹",
+        "amount": {
+         "florins": 33,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 33"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1147_DSC00662-scr",
+      "folio": "24r",
+      "image": "RS1147_DSC00662-scr.jpg",
+      "status": "Sent to training",
+      "line": 18,
+      "region": "",
+      "text": "di lulglio 388 ƒ sedici 𝒹 ꝓ uno paio di buoi dee tenere",
+      "sum": "",
+      "date": "",
+      "expanded": "di lulglio 388 ƒ sedici 𝒹 per uno paio di buoi dee tenere",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "July 1388, ƒ sixteen 𝒹 for a pair of oxen, which he is to keep",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l18",
+      "page_order": 39,
+      "status_code": "sent_to_training",
+      "key": "RS1147_DSC00662-scr|l18",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1147_DSC00662-scr#2",
+      "tags": [],
+      "refs": [],
+      "mentions": [
+       {
+        "raw": "ƒ sedici 𝒹",
+        "amount": {
+         "florins": 16,
+         "lire": null,
+         "soldi": null,
+         "denari": null,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": null,
+         "lire_decimal": null,
+         "display": "ƒ 16"
+        }
+       }
+      ],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     }
+    ],
+    "id": "lines",
+    "op": "query",
+    "title": "The matching lines themselves, to check each hit"
+   },
+   "entries": {
+    "type": "query",
+    "query": {
+     "unit": "entries",
+     "match": "all",
+     "conditions": [
+      {
+       "field": "text",
+       "op": "regex",
+       "value": "(?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b"
+      }
+     ]
+    },
+    "describe": "entries: text regex (?i)\\b(bu[eo]|buoi|boi|bovi|boves|bovin\\w*|vacch?[ae]|vacc[ae]|vacchin\\w*|giovench?\\w*|giovenc\\w*|vitell\\w*|bestiame|cattle|cows?|oxen|ox|heifers?|calf|calves|bullocks?)\\b · manuscripts: all",
+    "unit": "entries",
+    "count": 12,
+    "rows": [
+     {
+      "key": "ms493_img010#5",
+      "entry": "ms493_img010#5",
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "line": 16,
+      "last_line": 17,
+      "line_ids": "l16,l17",
+      "text": "E deono avere adi xiiiiº di novembre ƒ tre / recho giovencho di giuliano īquatꝯ a ß 79 𝒹 10[?] ꝓ ƒ",
+      "expanded": "",
+      "translation": "",
+      "sum": "",
+      "date": "",
+      "kind": "credit",
+      "tags": [],
+      "dates": [
+       {
+        "day": 14,
+        "month": 11,
+        "year_written": 1420,
+        "raw": "xiiii di novembre",
+        "year_inferred": true,
+        "style": "florentine",
+        "year_modern": 1420,
+        "month_name": "novembre",
+        "iso_modern": "1420-11-14",
+        "ambiguous": false,
+        "year_from": "ms493_img010 line 7"
+       }
+      ],
+      "refs": [],
+      "amount_final": {
+       "florins": 3,
+       "lire": null,
+       "soldi": null,
+       "denari": null,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": null,
+       "lire_decimal": null,
+       "display": "ƒ 3"
+      },
+      "amounts": [
+       {
+        "florins": 3,
+        "lire": null,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 3"
+       }
+      ],
+      "flag": false,
+      "status": "Finished",
+      "lines": 2
+     },
+     {
+      "key": "ms493_img010#6",
+      "entry": "ms493_img010#6",
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "line": 18,
+      "last_line": 19,
+      "line_ids": "l18,l19",
+      "text": "E deono avere adi v di dicenƀe ƒ quatro ß 7 / recho giovencho di giuliano ī g° a ß 79 ꝓ ƒ",
+      "expanded": "",
+      "translation": "",
+      "sum": "",
+      "date": "",
+      "kind": "credit",
+      "tags": [],
+      "dates": [
+       {
+        "day": 5,
+        "month": 12,
+        "year_written": 1420,
+        "raw": "v di dicenbe",
+        "year_inferred": true,
+        "style": "florentine",
+        "year_modern": 1420,
+        "month_name": "dicembre",
+        "iso_modern": "1420-12-05",
+        "ambiguous": false,
+        "year_from": "ms493_img010 line 7"
+       }
+      ],
+      "refs": [],
+      "amount_final": {
+       "florins": 4,
+       "lire": null,
+       "soldi": 7,
+       "denari": null,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": true,
+       "lsd_denari": null,
+       "lire_decimal": null,
+       "display": "ƒ 4 ß 7"
+      },
+      "amounts": [
+       {
+        "florins": 4,
+        "lire": null,
+        "soldi": 7,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": true,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 4 ß 7"
+       }
+      ],
+      "flag": false,
+      "status": "Finished",
+      "lines": 2
+     },
+     {
+      "key": "ms493_img010#7",
+      "entry": "ms493_img010#7",
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "line": 20,
+      "last_line": 21,
+      "line_ids": "l20,l21",
+      "text": "E deono avere adi xij di genaio 1419 ƒ due / recho giovencho di giuliano ī ꝙ̄ e ß 78 𝒹 x ꝓ ƒ",
+      "expanded": "",
+      "translation": "",
+      "sum": "",
+      "date": "",
+      "kind": "credit",
+      "tags": [],
+      "dates": [
+       {
+        "day": 12,
+        "month": 1,
+        "year_written": 1419,
+        "raw": "xij di genaio 1419",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1420,
+        "month_name": "gennaio",
+        "iso_modern": "1420-01-12",
+        "ambiguous": false
+       }
+      ],
+      "refs": [],
+      "amount_final": {
+       "florins": 2,
+       "lire": null,
+       "soldi": null,
+       "denari": null,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": null,
+       "lire_decimal": null,
+       "display": "ƒ 2"
+      },
+      "amounts": [
+       {
+        "florins": 2,
+        "lire": null,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 2"
+       }
+      ],
+      "flag": false,
+      "status": "Finished",
+      "lines": 2
+     },
+     {
+      "key": "ms493_img010#8",
+      "entry": "ms493_img010#8",
+      "manuscript": "Baker_MS_493",
+      "page": "ms493_img010",
+      "line": 22,
+      "last_line": 25,
+      "line_ids": "l22,l23,l28,l24",
+      "text": "E deono avere adi xxvij di luglio 1419 ƒ vii / e ß xxj a 𝒹 ꝓ resto recho giovencho di giuliano / ꝙ a ß 79 𝒹 4 ꝓ ƒ",
+      "expanded": "",
+      "translation": "",
+      "sum": "𝒹",
+      "date": "",
+      "kind": "credit",
+      "tags": [],
+      "dates": [
+       {
+        "day": 27,
+        "month": 7,
+        "year_written": 1419,
+        "raw": "xxvij di luglio 1419",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1419,
+        "month_name": "luglio",
+        "iso_modern": "1419-07-27",
+        "ambiguous": false
+       }
+      ],
+      "refs": [],
+      "amount_final": {
+       "florins": 7,
+       "lire": null,
+       "soldi": null,
+       "denari": null,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": null,
+       "lire_decimal": null,
+       "display": "ƒ 7"
+      },
+      "amounts": [
+       {
+        "florins": 7,
+        "lire": null,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 7"
+       }
+      ],
+      "flag": true,
+      "status": "Finished",
+      "lines": 3
+     },
+     {
+      "key": "RS1110_DSC00626-scr#3",
+      "entry": "RS1110_DSC00626-scr#3",
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "line": 6,
+      "last_line": 10,
+      "line_ids": "l6,l7,l8,l9,l10",
+      "text": "Item una casa cō corticella posta nel decto ppło di santa maria maggiore Nel / chiasso de buoi cosi confinata a iº via a iiº Giovan̄i dambriogio ciabattiere / a iiiº fancescho marchi ⁊ altri confini / la quale tiene a pigione miniato mazziere ꝓ pregio di ƒ sei 𝒹 lom̄o / Ralogata an̄o mattea di bartolomeo di x di marzo 388 ꝓ ƒ cinque 𝒹 ban̄o",
+      "expanded": "Item una casa con corticella posta nel decto popolo di santa maria maggiore Nel / chiasso de buoi cosi confinata a iº via a iiº Giovanni dambriogio ciabattiere / a iiiº fancescho marchi e altri confini / la quale tiene a pigione miniato mazziere per pregio di ƒ sei 𝒹 lommo / Ralogata anno mattea di bartolomeo di x di marzo 388 per ƒ cinque 𝒹 banno",
+      "translation": "Item, a house with a small courtyard located in the said parish of Santa Maria Maggiore, in the Chiasso de' Buoi, bounded thus: 1st the street, 2nd Giovanni d'Ambriogio, cobbler, 3rd Francescho Marchi, and other boundaries which Miniato the mace-bearer rents at a price of ƒ six 𝒹 a year Re-let to [monna] Mattea di Bartolomeo on 10 March 1388 for ƒ five 𝒹 a year",
+      "sum": "",
+      "date": "",
+      "kind": null,
+      "tags": [
+       {
+        "id": "t8c3b0b06c4",
+        "type": "goods",
+        "span": "casa",
+        "name": "casa",
+        "attrs": {},
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "casa",
+        "stale": false
+       },
+       {
+        "id": "t47a20b2bc2",
+        "type": "place",
+        "span": "ppło di santa maria maggiore",
+        "name": "Santa Maria Maggiore",
+        "attrs": {
+         "kind": "parish",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Santa Maria Maggiore",
+        "stale": false
+       },
+       {
+        "id": "taa75bd440e",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       },
+       {
+        "id": "tfcfedf6089",
+        "type": "person",
+        "span": "Giovan̄i dambriogio",
+        "name": "Giovanni d'Ambrogio",
+        "attrs": {
+         "role": "neighbour",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Giovanni d'Ambrogio",
+        "stale": false
+       },
+       {
+        "id": "t03eb1d5e5d",
+        "type": "occupation",
+        "span": "ciabattiere",
+        "name": "ciabattino",
+        "attrs": {
+         "of": "Giovanni d'Ambrogio"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "ciabattino",
+        "stale": false
+       },
+       {
+        "id": "teec0338c51",
+        "type": "person",
+        "span": "fancescho marchi",
+        "name": "Francescho Marchi",
+        "attrs": {
+         "role": "neighbour",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Francescho Marchi",
+        "stale": false
+       },
+       {
+        "id": "t01b4836e4f",
+        "type": "person",
+        "span": "miniato",
+        "name": "Miniato mazziere",
+        "attrs": {
+         "role": "tenant",
+         "gender": "m",
+         "note": "not the agent Miniato di messer Arrigo"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Miniato mazziere",
+        "stale": false
+       },
+       {
+        "id": "t0851907c05",
+        "type": "occupation",
+        "span": "mazziere",
+        "name": "mazziere",
+        "attrs": {
+         "of": "Miniato mazziere"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "mazziere",
+        "stale": false
+       },
+       {
+        "id": "t32e8b9c0fe",
+        "type": "person",
+        "span": "mattea di bartolomeo",
+        "name": "Mattea di Bartolomeo",
+        "attrs": {
+         "title": "monna",
+         "role": "tenant",
+         "gender": "f",
+         "uncertain": true,
+         "note": "'an̄o' before name read as a monna"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Mattea di Bartolomeo",
+        "stale": false
+       }
+      ],
+      "dates": [
+       {
+        "day": 10,
+        "month": 3,
+        "year_written": 1388,
+        "raw": "x di marzo 388",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "marzo",
+        "iso_modern": "1389-03-10",
+        "ambiguous": false
+       }
+      ],
+      "refs": [],
+      "amount_final": null,
+      "amounts": [],
+      "flag": false,
+      "status": "Sent to training",
+      "lines": 5
+     },
+     {
+      "key": "RS1110_DSC00626-scr#6",
+      "entry": "RS1110_DSC00626-scr#6",
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "line": 21,
+      "last_line": 24,
+      "line_ids": "l21,l22,l23,l24",
+      "text": "Item una casa posta nel detto ppło nel detto chiasso de buoi cosi confinata iiº via / a iiº francescho di marcho a iiiº degli aligli / la quale e allogata a pigione a puccio di giramonte ⁊ Ambrogio di giovanni / E deone dare di pigione lan̄o ƒ sette o mezo 𝒹 Allogata a ß donato p̄te di x de febraio",
+      "expanded": "Item una casa posta nel detto popolo nel detto chiasso de buoi cosi confinata iiº via / a iiº francescho di marcho a iiiº degli aligli / la quale e allogata a pigione a puccio di giramonte e Ambrogio di giovanni / E deone dare di pigione lanno ƒ sette o mezo 𝒹 Allogata a ser donato prete di x de febraio",
+      "translation": "Item, a house located in the said parish in the said Chiasso de' Buoi, bounded thus: [1st] the street, 2nd Francescho di Marcho, 3rd the Aligli [degli Agli] which is let for rent to Puccio di Giramonte and Ambrogio di Giovanni, and they must pay in rent ƒ seven and a half 𝒹 a year. Let to ser Donato, priest, on 10 February",
+      "sum": "",
+      "date": "",
+      "kind": null,
+      "tags": [
+       {
+        "id": "t0eca57137d",
+        "type": "goods",
+        "span": "casa",
+        "name": "casa",
+        "attrs": {},
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "casa",
+        "stale": false
+       },
+       {
+        "id": "tf1f8984d78",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       },
+       {
+        "id": "tb138aa6679",
+        "type": "person",
+        "span": "francescho di marcho",
+        "name": "Francescho Marchi",
+        "attrs": {
+         "role": "neighbour",
+         "gender": "m",
+         "note": "written 'di marcho'; same as Francescho Marchi"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Francescho Marchi",
+        "stale": false
+       },
+       {
+        "id": "t1234fd214f",
+        "type": "person",
+        "span": "degli aligli",
+        "name": "degli Agli",
+        "attrs": {
+         "role": "neighbour",
+         "uncertain": true,
+         "note": "family name (the Agli), read as 'aligli'"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "degli Agli",
+        "stale": false
+       },
+       {
+        "id": "t2e5956042f",
+        "type": "person",
+        "span": "puccio di giramonte",
+        "name": "Puccio di Giramonte",
+        "attrs": {
+         "role": "tenant",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Puccio di Giramonte",
+        "stale": false
+       },
+       {
+        "id": "ta175a78c9a",
+        "type": "person",
+        "span": "Ambrogio di giovanni",
+        "name": "Ambrogio di Giovanni",
+        "attrs": {
+         "role": "tenant",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Ambrogio di Giovanni",
+        "stale": false
+       },
+       {
+        "id": "te28686d3bd",
+        "type": "person",
+        "span": "ß donato",
+        "name": "Donato",
+        "attrs": {
+         "title": "ser",
+         "role": "tenant",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Donato",
+        "stale": false
+       },
+       {
+        "id": "tf3c68cfc35",
+        "type": "occupation",
+        "span": "p̄te",
+        "name": "prete",
+        "attrs": {
+         "of": "Donato"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "prete",
+        "stale": false
+       }
+      ],
+      "dates": [
+       {
+        "day": 10,
+        "month": 2,
+        "year_written": 1388,
+        "raw": "x de febraio",
+        "year_inferred": true,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "febbraio",
+        "iso_modern": "1389-02-10",
+        "ambiguous": false,
+        "year_from": "RS1110_DSC00626-scr line 10"
+       }
+      ],
+      "refs": [],
+      "amount_final": null,
+      "amounts": [],
+      "flag": false,
+      "status": "Sent to training",
+      "lines": 4
+     },
+     {
+      "key": "RS1110_DSC00626-scr#10",
+      "entry": "RS1110_DSC00626-scr#10",
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "line": 36,
+      "last_line": 40,
+      "line_ids": "l36,l37,l38,l39,l40",
+      "text": "Item due casolari murati nel chiasso de buoi fra confini cosi confinati / a iº chiasso de buoi a iiº deo di Van̄i ⁊ altri confini / facem̄o murate i sudetti casolari ⁊ fare due case nuove a giovan̄i di tom̄aso ⁊ giovā ƒ clxxx ℔ xl / ni di francescho maiestri di 27 dagosto 389 costarono ī tutto ƒ cento ottanta doro / ⁊ ℔ quaranta ß vi pc̄ come sistanziare in 𝒹 tre partite ⁊ anscita ī 4 pãtite",
+      "expanded": "Item due casolari murati nel chiasso de buoi fra confini cosi confinati / a iº chiasso de buoi a iiº deo di vanni e altri confini / facemmo murate i sudetti casolari e fare due case nuove a giovanni di tommaso e giovan ƒ clxxx ℔ xl / ni di francescho maiestri di 27 dagosto 389 costarono in tutto ƒ cento ottanta doro / e ℔ quaranta ß vi pc̄ come sistanziare in 𝒹 tre partite e anscita in 4 partite",
+      "translation": "Item, two walled ruined houses in the Chiasso de' Buoi, among the boundaries, bounded thus: 1st the Chiasso de' Buoi, 2nd Deo di Vanni, and other boundaries We had the aforesaid ruined houses walled and two new houses made by Giovanni di Tommaso and Giovan-  ƒ clxxx ℔ xl ni di Francescho, master builders, on 27 August 1389; they cost in all ƒ one hundred eighty in gold and ℔ forty ß vi pc̄, as was authorised, in money in three entries, and in expenditure in 4 entries",
+      "sum": "",
+      "date": "",
+      "kind": null,
+      "tags": [
+       {
+        "id": "t3ddfac01bb",
+        "type": "goods",
+        "span": "casolari",
+        "name": "casolare",
+        "attrs": {
+         "quantity": "due"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "casolare",
+        "stale": false
+       },
+       {
+        "id": "t8f58dd455d",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       },
+       {
+        "id": "t286029427b",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       },
+       {
+        "id": "t3b3c3e79fd",
+        "type": "person",
+        "span": "deo di Van̄i",
+        "name": "Deo di Vanni",
+        "attrs": {
+         "role": "neighbour",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Deo di Vanni",
+        "stale": false
+       },
+       {
+        "id": "t117888ee28",
+        "type": "person",
+        "span": "giovan̄i di tom̄aso",
+        "name": "Giovanni di Tommaso",
+        "attrs": {
+         "role": "recipient",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Giovanni di Tommaso",
+        "stale": false
+       },
+       {
+        "id": "te55b5a4d1c",
+        "type": "person",
+        "span": "giovā",
+        "name": "Giovanni di Francescho",
+        "attrs": {
+         "role": "recipient",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Giovanni di Francescho",
+        "stale": false
+       },
+       {
+        "id": "t0f4bf8b75f",
+        "type": "person",
+        "span": "ni di francescho",
+        "name": "Giovanni di Francescho",
+        "attrs": {
+         "role": "recipient",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Giovanni di Francescho",
+        "stale": false
+       },
+       {
+        "id": "tc94ee5eec3",
+        "type": "occupation",
+        "span": "maiestri",
+        "name": "maestro",
+        "attrs": {
+         "of": "Giovanni di Tommaso; Giovanni di Francescho",
+         "note": "master builders"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "maestro",
+        "stale": false
+       }
+      ],
+      "dates": [
+       {
+        "day": 27,
+        "month": 8,
+        "year_written": 1389,
+        "raw": "27 dagosto 389",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "agosto",
+        "iso_modern": "1389-08-27",
+        "ambiguous": false
+       }
+      ],
+      "refs": [],
+      "amount_final": {
+       "florins": 180,
+       "lire": 40,
+       "soldi": null,
+       "denari": null,
+       "piccioli": false,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 9600,
+       "lire_decimal": 40.0,
+       "display": "ƒ 180 ℔ 40"
+      },
+      "amounts": [
+       {
+        "florins": 180,
+        "lire": 40,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": 9600,
+        "lire_decimal": 40.0,
+        "display": "ƒ 180 ℔ 40"
+       }
+      ],
+      "flag": false,
+      "status": "Sent to training",
+      "lines": 5
+     },
+     {
+      "key": "RS1128_DSC00644-scr#26",
+      "entry": "RS1128_DSC00644-scr#26",
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "line": 59,
+      "last_line": 59,
+      "line_ids": "l66",
+      "text": "mō beldi di marcho Nel chiasso de buoi de dare a libro detto ac̄ 44 pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "expanded": "monna beldi di marcho Nel chiasso de buoi de dare a libro detto a carte 44 pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "translation": "Monna Beldi di Marco, in the Chiasso de' Buoi, owes, in the said book at folio 44, pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "sum": "",
+      "date": "",
+      "kind": "debit",
+      "tags": [
+       {
+        "id": "t74a5286062",
+        "type": "person",
+        "span": "mō beldi di marcho",
+        "name": "Beldi di Marco",
+        "attrs": {
+         "title": "monna",
+         "gender": "f",
+         "role": "debtor"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Beldi di Marco",
+        "stale": false
+       },
+       {
+        "id": "t83fb13e02f",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "residence",
+         "of": "Beldi di Marco"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       }
+      ],
+      "dates": [],
+      "refs": [
+       {
+        "folios": [
+         44
+        ],
+        "book": "libro detto",
+        "raw": "ac 44",
+        "book_resolved": "libro delle prestanze"
+       }
+      ],
+      "amount_final": {
+       "florins": null,
+       "lire": 8,
+       "soldi": 4,
+       "denari": 6,
+       "piccioli": true,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 1974,
+       "lire_decimal": 8.225,
+       "display": "℔ 8 ß 4 𝒹 6 pc̄"
+      },
+      "amounts": [
+       {
+        "florins": null,
+        "lire": 8,
+        "soldi": 4,
+        "denari": 6,
+        "piccioli": true,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": 1974,
+        "lire_decimal": 8.225,
+        "display": "℔ 8 ß 4 𝒹 6 pc̄"
+       }
+      ],
+      "flag": false,
+      "status": "Sent to training",
+      "lines": 1
+     },
+     {
+      "key": "RS1139_DSC00655-scr#1",
+      "entry": "RS1139_DSC00655-scr#1",
+      "manuscript": "MPAP_4",
+      "page": "RS1139_DSC00655-scr",
+      "line": 2,
+      "last_line": 24,
+      "line_ids": "l27,l2,l3,l5,l6,l7,l8,l9,l10,l11,l12,l15,l16,l17,l18,l19,l20,l21,l22,l23,l24,l25,l26",
+      "text": "20 / Inventaro de beni trovam̄o aveano lerede di dosso di giovan̄i de / bardi vocato calonaco di xvi di maggio an̄o mccclxxxviii / una Casa posta nel ppło di santa lucia [del: soprarno] [ins: demagnoli] ī su la piaza demozzi ap / pie del ponte rubaconte cosi confinata a iº via a iiº il fiume darno a iiiº / uno chiassolmo di dietro a viiiº lachasa che fu di bartolomeo di gian̄i de bardi / ladetta casa tiene apigione mesß filippo di mesß chiuolo de guazalotri / daprato Comincio lappigione di pimo dagosto an̄o 1388 Carta ꝓ mano / di ßlapo mazei E dene dare lan̄o di pigione ƒiō quaranta 𝒹 / Anno dato di 31 di mãzo 389 ƒa venticinque di cōt a entrata di simone ac̄8ƒ xxv / Anno dato di 30 di gugno 389 ꝓ piu spese fatte Nellacasa ƒ viii / Anno dato di 13 di genaio 389 posti a entrata di simone detto ac̄ 10ƒ xviii / uno podere cō case dalavoratore ⁊ fattoio daolio ⁊ capan̄a murata ⁊ for / no ⁊ conaltri pezi di terra posto nel ppło di sanxpofano astrata luogo / decto al santo cosi cōfinato a iº via a iiº lachiesa predetta a iiiº tomaso bugliasi / a iiiiº fossato di fontanella / Ce ī sul detto luogo uno tino da vē demiare di tenuta di some / Anche ane uno porcho amezo el detto porcho e suo di patti fatti / Ildetto podere ae aficto Ginduccio di tuccio chiamato piloso ꝓ ƒiō se dici 𝒹 / lan̄o Comīcia il ficto 𝒹 pimo dagosto 1388 llo ꝓ cin que an̄i E dee pagare / ognan̄o in kl̄ agosto Carta ꝓ mano di ß lapo mazei notaio degluficiali del mōte / E debbe tenere ƒ sedici 𝒹 ꝓ uno paio di buoi ī sul luogo di tutto questo e / mallevadore piero di lapo fornaciaio dastrata",
+      "expanded": "20 / Inventaro de beni trovammo aveano lerede di dosso di giovanni de / bardi vocato calonaco di xvi di maggio anno mccclxxxviii / una Casa posta nel popolo di santa lucia demagnoli in su la piaza demozzi ap / pie del ponte rubaconte cosi confinata a iº via a iiº il fiume darno a iiiº / uno chiassolmo di dietro a viiiº lachasa che fu di bartolomeo di gianni de bardi / ladetta casa tiene apigione messer filippo di messer chiuolo de guazalotri / daprato Comincio lappigione di pimo dagosto anno 1388 Carta per mano / di serlapo mazei E dene dare lanno di pigione ƒiō quaranta 𝒹 / Anno dato di 31 di marzo 389 ƒa venticinque di contanti a entrata di simone a carte 8ƒ xxv / Anno dato di 30 di gugno 389 per piu spese fatte Nellacasa ƒ viii / Anno dato di 13 di genaio 389 posti a entrata di simone detto a carte 10ƒ xviii / uno podere con case dalavoratore e fattoio daolio e capanna murata e for / no e conaltri pezi di terra posto nel popolo di sancristofano astrata luogo / decto al santo cosi confinato a iº via a iiº lachiesa predetta a iiiº tomaso bugliasi / a iiiiº fossato di fontanella / Ce in sul detto luogo uno tino da ven demiare di tenuta di some / Anche ane uno porcho amezo el detto porcho e suo di patti fatti / Ildetto podere ae aficto Ginduccio di tuccio chiamato piloso per ƒiō se dici 𝒹 / lanno Comincia il ficto 𝒹 pimo dagosto 1388 llo per cin que anni E dee pagare / ognanno in kalende agosto Carta per mano di ser lapo mazei notaio degluficiali del monte / E debbe tenere ƒ sedici 𝒹 per uno paio di buoi in sul luogo di tutto questo e / mallevadore piero di lapo fornaciaio dastrata",
+      "translation": "20 Inventory of the goods that we found the heirs of Doffo di Giovanni de' Bardi, called Calonaco, had, on 16 May in the year 1388 A house situated in the parish of Santa Lucia de' Magnoli, on the Piazza de' Mozzi, at the foot of the Ponte Rubaconte, bounded thus: first, the street; second, the river Arno; third, an alley behind; [fourth?] the house that belonged to Bartolomeo di Gianni de' Bardi The said house is held on rent by messer Filippo di messer Chiuolo de' Guazalotri of Prato. The rent began on 1 August 1388. Deed by the hand of ser Lapo Mazei. And he must give in rent per year ƒ forty 𝒹 They have given on 31 March 1389 ƒ twenty-five in cash, [posted] to receipts of Simone at folio 8 ƒ xxv They have given on 30 June 1389, for various expenses made on the house, ƒ viii They have given on 13 January 1389 [Florentine style; 1390 modern], posted to receipts of the said Simone at folio 10 ƒ xviii A farm with tenant's houses and an olive-oil press and a walled barn and an ov- en, and with other pieces of land, situated in the parish of San Cristofano a Strada, [in the] place called Al Santo, bounded thus: first, the street; second, the aforesaid church; third, Tomaso Bugliasi; fourth, the ditch of Fontanella There is on the said place a vat for the grape harvest with a capacity of [blank] some Also he has a pig in sharecropping (a mezzadria); the said pig is his by agreements made The said farm is held on lease by Ginduccio di Tuccio, called Piloso, for ƒ sixteen 𝒹 a year. The lease begins on 1 August 1388, for five years, and he must pay every year on the Kalends of August. Deed by the hand of ser Lapo Mazei, notary of the officials of the Monte And he is to keep ƒ sixteen 𝒹 [worth] for a pair of oxen on the place; for all this the guarantor is Piero di Lapo, kiln-man, of Strada",
+      "sum": "",
+      "date": "",
+      "kind": null,
+      "tags": [],
+      "dates": [
+       {
+        "day": 16,
+        "month": 5,
+        "year_written": 1388,
+        "raw": "xvi di maggio ano",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1388,
+        "month_name": "maggio",
+        "iso_modern": "1388-05-16",
+        "ambiguous": false
+       },
+       {
+        "day": null,
+        "month": 8,
+        "year_written": 1388,
+        "raw": "dagosto ano",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1388,
+        "month_name": "agosto",
+        "iso_modern": "1388-08",
+        "ambiguous": false
+       },
+       {
+        "day": 31,
+        "month": 3,
+        "year_written": 1389,
+        "raw": "31 di mazo 389",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "marzo",
+        "iso_modern": "1389-03-31",
+        "ambiguous": false
+       },
+       {
+        "day": 30,
+        "month": 6,
+        "year_written": 1389,
+        "raw": "30 di gugno 389",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "giugno",
+        "iso_modern": "1389-06-30",
+        "ambiguous": false
+       },
+       {
+        "day": 13,
+        "month": 1,
+        "year_written": 1389,
+        "raw": "13 di genaio 389",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1390,
+        "month_name": "gennaio",
+        "iso_modern": "1390-01-13",
+        "ambiguous": false
+       },
+       {
+        "day": null,
+        "month": 8,
+        "year_written": 1388,
+        "raw": "dagosto 1388",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1388,
+        "month_name": "agosto",
+        "iso_modern": "1388-08",
+        "ambiguous": false
+       }
+      ],
+      "refs": [
+       {
+        "folios": [
+         8
+        ],
+        "book": "entrata di simone",
+        "raw": "ac8",
+        "book_resolved": "entrata di simone"
+       },
+       {
+        "folios": [
+         10
+        ],
+        "book": "entrata di simone",
+        "raw": "ac 10",
+        "book_resolved": "entrata di simone"
+       }
+      ],
+      "amount_final": null,
+      "amounts": [
+       {
+        "florins": 40,
+        "lire": null,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 40"
+       },
+       {
+        "florins": 25,
+        "lire": null,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 25"
+       },
+       {
+        "florins": 8,
+        "lire": null,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 8"
+       },
+       {
+        "florins": 18,
+        "lire": null,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 18"
+       }
+      ],
+      "flag": false,
+      "status": "Sent to training",
+      "lines": 23
+     },
+     {
+      "key": "RS1140_DSC00656-scr#1",
+      "entry": "RS1140_DSC00656-scr#1",
+      "manuscript": "MPAP_4",
+      "page": "RS1140_DSC00656-scr",
+      "line": 2,
+      "last_line": 31,
+      "line_ids": "l2,l3,l4,l5,l6,l7,l8,l9,l10,l20,l14,l11,l13,l12,l15,l16,l17,l18,l21,l19,l22,l23,l24,l25,l26,l27,l28,l29,l30,l31",
+      "text": "uno podere cō case dalavoratore ⁊ capan̄a murata ⁊ fattoio daolio posto nel / ppło di sam xpofano astrata luogo detto a bi bbian̄o cosi cō finato a iº lastrada / a iiº il fiume dema aiiiº bindo di mesß Jacopo de bardi a iiiiº Ruberto di dosso de bardi / A logato il detto podere aficto ꝓ cinque an̄i a Carlo di giovan̄i damacia com̄icia / do di pimo dagosto an̄o 1388 E dene dare lano di ficto ƒ trentadue 𝒹 / Carta ꝓ mano di ß lapo mazzei notaio degluficiali del monte E dee pagare / di sei mesi in sei mesi indue paghe Cioe lameta ꝓogni paga / Anno dato di 17 daꝓile 389 ƒ Nove 𝒹 a entrata di simone ac̄ 9 / Anno dato di 26 di gugno 389 ƒ tre 𝒹 a entrata detta ac̄ 9 / Anno dato di 14 dagosto 389 ƒa do dici 𝒹 a entrata detta ac̄ 6 / Anno dato di 13 di dcēƀre 389 ƒ otto 𝒹 ꝓ ƀƒ del ficto a entrata detta c̄ 62 / Vendessi il detto podere pegluficiali del monte di xxvii dottobre an̄o 1389 a mon̄a / Agnola di gherardozzo bartoli ꝓ ƒ cin quecento cin quanta 𝒹 Ei detti 𝒹 ēƀbe / bernardo ardinghelli camarlingho de detti vi ficiali da gherardozzo bartoli di detto / posti a entrata di simone ßragli attore acār 75 / uno podere cō case dalavoratore ⁊ colonbaia cō terre lavoratoie ⁊ vignate / posto nel ppło di sā martino asezzata luogo detto a colonbaia cosi confinato Cioe / Ce ī sul detto podere uno paio di buoi costarono ƒa xxxiiiiº 𝒹 sono amezo pro ⁊ amezo / danō / E an̄i suso uno paio di porci amezo / lavora il detto podere amezo filippo di trullo ⁊ fruosino chiamato chianti īsieme / Et ebbe il detto filippo di xxvi di gugno 389 ꝓ arogere a uno paio di buoi / come appare a uscita di simone ßragli attore ac̄ 18 ƒ vi ß xviii pc̄ / Ebbe d xv di gugno 390 xviiiiº pecore ⁊ iiiiº capre amezo pro ⁊ mezo dan̄o costarono / ƒ dodici deiß agnolo prete a uscita di simone ßragli acār 79 ƒ xii",
+      "expanded": "uno podere con case dalavoratore e capanna murata e fattoio daolio posto nel / popolo di sam cristofano astrata luogo detto a bi bbianno cosi con finato a iº lastrada / a iiº il fiume dema aiiiº bindo di messer Jacopo de bardi a iiiiº Ruberto di dosso de bardi / A logato il detto podere aficto per cinque anni a Carlo di giovanni damacia commicia / do di pimo dagosto anno 1388 E dene dare lano di ficto ƒ trentadue 𝒹 / Carta per mano di ser lapo mazzei notaio degluficiali del monte E dee pagare / di sei mesi in sei mesi indue paghe Cioe lameta perogni paga / Anno dato di 17 daprile 389 ƒ Nove 𝒹 a entrata di simone a carte 9 / Anno dato di 26 di gugno 389 ƒ tre 𝒹 a entrata detta a carte 9 / Anno dato di 14 dagosto 389 ƒa do dici 𝒹 a entrata detta a carte 6 / Anno dato di 13 di dicembre 389 ƒ otto 𝒹 per ƀƒ del ficto a entrata detta carte 62 / Vendessi il detto podere pegluficiali del monte di xxvii dottobre anno 1389 a monna / Agnola di gherardozzo bartoli per ƒ cin quecento cin quanta 𝒹 Ei detti 𝒹 ebbe / bernardo ardinghelli camarlingho de detti vi ficiali da gherardozzo bartoli di detto / posti a entrata di simone fragli attore a carte 75 / uno podere con case dalavoratore e colonbaia con terre lavoratoie e vignate / posto nel popolo di san martino asezzata luogo detto a colonbaia cosi confinato Cioe / Ce in sul detto podere uno paio di buoi costarono ƒa xxxiiiiº 𝒹 sono amezo pro e amezo / danno / E anni suso uno paio di porci amezo / lavora il detto podere amezo filippo di trullo e fruosino chiamato chianti insieme / Et ebbe il detto filippo di xxvi di gugno 389 per arogere a uno paio di buoi / come appare a uscita di simone fragli attore a carte 18 ƒ vi ß xviii pc̄ / Ebbe di xv di gugno 390 xviiiiº pecore e iiiiº capre amezo pro e mezo danno costarono / ƒ dodici dei ser agnolo prete a uscita di simone fragli a carte 79 ƒ xii",
+      "translation": "A farm with tenant's houses and a walled hut and an olive press, located in the parish of San Cristofano a Strada, in the place called a Bibbiano, bounded thus: on the 1st the road, on the 2nd the river Ema, on the 3rd Bindo di messer Jacopo de' Bardi, on the 4th Ruberto di Dosso de' Bardi They have let the said farm on lease for five years to Carlo di Giovanni da Macia [?], begin- ning on 1 August 1388. And he must pay ƒ thirty-two 𝒹 a year in rent. Instrument by the hand of ser Lapo Mazzei, notary of the officials of the Monte. And he must pay every six months in two payments, that is, half at each payment They have paid on 17 April 1389 ƒ nine 𝒹, to receipts of Simone at folio 9 They have paid on 26 June 1389 ƒ three 𝒹, to the said receipts at folio 9 They have paid on 14 August 1389 ƒa twelve 𝒹, to the said receipts at folio 6 They have paid on 13 December 1389 ƒ eight 𝒹 for [ƀƒ ?] of the rent, to the said receipts at folio 62 The said farm was sold by the officials of the Monte on 27 October 1389 to monna Agnola di Gherardozzo Bartoli for ƒ five hundred and fifty 𝒹. And the said 𝒹 were received by Bernardo Ardinghelli, treasurer of the said officials, from Gherardozzo Bartoli; of the said [sum] entered to receipts of Simone Fragli, agent, at folio 75 A farm with tenant's houses and a dovecote, with arable and vine-planted lands, located in the parish of San Martino a Sezzata, in the place called a Colombaia, bounded thus, that is: On the said farm there is a pair of oxen, which cost ƒa xxxiiiiº 𝒹; they are in sharecropping, half the profit and half the loss And there is on it a pair of pigs in sharecropping Filippo di Trullo and Fruosino called Chianti work the said farm together in sharecropping And the said Filippo had, on 26 June 1389, to add to [the price of] a pair of oxen, as appears in the outgoings of Simone Fragli, agent, at folio 18, ƒ vi ß xviii pc̄ He had on 15 June 1390 19 sheep and 4 goats in sharecropping, half the profit and half the loss; they cost ƒ twelve [paid to?] ser Agnolo the priest, to outgoings of Simone Fragli at folio 79, ƒ xii",
+      "sum": "___ | viiiº / ___ / ƒ viii / 𝒹 l",
+      "date": "",
+      "kind": null,
+      "tags": [],
+      "dates": [
+       {
+        "day": null,
+        "month": 8,
+        "year_written": 1388,
+        "raw": "dagosto ano",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1388,
+        "month_name": "agosto",
+        "iso_modern": "1388-08",
+        "ambiguous": false
+       },
+       {
+        "day": 26,
+        "month": 6,
+        "year_written": 1389,
+        "raw": "26 di gugno 389",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "giugno",
+        "iso_modern": "1389-06-26",
+        "ambiguous": false
+       },
+       {
+        "day": 14,
+        "month": 8,
+        "year_written": 1389,
+        "raw": "14 dagosto 389",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "agosto",
+        "iso_modern": "1389-08-14",
+        "ambiguous": false
+       },
+       {
+        "day": 13,
+        "month": 12,
+        "year_written": 1389,
+        "raw": "13 di dcebre 389",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "dicembre",
+        "iso_modern": "1389-12-13",
+        "ambiguous": false
+       },
+       {
+        "day": 27,
+        "month": 10,
+        "year_written": 1389,
+        "raw": "xxvii dottobre ano",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "ottobre",
+        "iso_modern": "1389-10-27",
+        "ambiguous": false
+       },
+       {
+        "day": 26,
+        "month": 6,
+        "year_written": 1389,
+        "raw": "xxvi di gugno 389",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "giugno",
+        "iso_modern": "1389-06-26",
+        "ambiguous": false
+       },
+       {
+        "day": 15,
+        "month": 6,
+        "year_written": 1390,
+        "raw": "xv di gugno 390",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1390,
+        "month_name": "giugno",
+        "iso_modern": "1390-06-15",
+        "ambiguous": false
+       }
+      ],
+      "refs": [
+       {
+        "folios": [
+         9
+        ],
+        "book": "entrata di simone",
+        "raw": "ac 9",
+        "book_resolved": "entrata di simone"
+       },
+       {
+        "folios": [
+         9
+        ],
+        "book": "entrata detta",
+        "raw": "ac 9",
+        "book_resolved": "entrata di simone"
+       },
+       {
+        "folios": [
+         6
+        ],
+        "book": "entrata detta",
+        "raw": "ac 6",
+        "book_resolved": "entrata di simone"
+       },
+       {
+        "folios": [
+         62
+        ],
+        "book": "entrata detta",
+        "raw": "c 62",
+        "book_resolved": "entrata di simone"
+       },
+       {
+        "folios": [
+         75
+        ],
+        "book": "entrata di simone",
+        "raw": "acar 75",
+        "book_resolved": "entrata di simone"
+       },
+       {
+        "folios": [
+         18
+        ],
+        "book": "uscita di simone",
+        "raw": "ac 18",
+        "book_resolved": "uscita di simone"
+       },
+       {
+        "folios": [
+         79
+        ],
+        "book": "uscita di simone",
+        "raw": "acar 79",
+        "book_resolved": "uscita di simone"
+       }
+      ],
+      "amount_final": null,
+      "amounts": [
+       {
+        "florins": 32,
+        "lire": null,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 32"
+       },
+       {
+        "florins": 8,
+        "lire": null,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 8"
+       },
+       {
+        "florins": null,
+        "lire": null,
+        "soldi": null,
+        "denari": 50,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [
+         {
+          "code": "denari>=12",
+          "msg": "50 denari (12 make a soldo)"
+         }
+        ],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": 50,
+        "lire_decimal": 0.2083,
+        "display": "𝒹 50"
+       },
+       {
+        "florins": 6,
+        "lire": null,
+        "soldi": 18,
+        "denari": null,
+        "piccioli": true,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": true,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 6 ß 18 pc̄"
+       },
+       {
+        "florins": 12,
+        "lire": null,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 12"
+       }
+      ],
+      "flag": false,
+      "status": "Sent to training",
+      "lines": 25
+     },
+     {
+      "key": "RS1141_DSC00657-scr#1",
+      "entry": "RS1141_DSC00657-scr#1",
+      "manuscript": "MPAP_4",
+      "page": "RS1141_DSC00657-scr",
+      "line": 2,
+      "last_line": 20,
+      "line_ids": "l28,l29,l30,l1,l2,l3,l4,l5,l6,l20,l7,l21,l8,l9,l10,l11,l12,l13,l14",
+      "text": "uno podere sanza casa posto nel ppło di sāmartino asezzata luogo detto atramā / cosi cō finato / ß xv pc̄ / Lavoralo il chiocciola amezo Cioe francescho di marcho / An̄i suso unpaio di buoi di stima di ƒ xxvi Ene morto uno di mãzo 388 / Ebbe il detto francescho di marcho vocato chiocciola di xxii di gugno 389 / ꝓricoꝓare uno bue a uscita di simone ßragli acār 18 ƒ xi / E debbe il detto di detto ꝑ uno porcho a uscita detta ac̄ 18 ƒ i ß 59 1/1 pc̄ / Restagli i buoi ꝓ ƒ xxiiiiº ß xv pc̄ Eresta adare delbue simone[?] ___ ƒ vi 1/1 𝒹 i / uno podere cō case dalavoratore ⁊ colon baia ⁊ capan̄a murata cōterre lavo / ratoie vliuate ⁊ pāte vignate ⁊ sodi damortina posto nel ppło sāmartino / asezata luogo detto alpoggio cosi cōfinato / Lavoralo amezo ilvecchio / insul detto podere uno paio di buoi costarono ƒ xxxiii 𝒹 isono am pro / ⁊ amezo dan̄o colavoratore detto ⁊ ae / uno paio di porci amezo / Ean̄i suso due tina da vēdemia di tenuta luno some xvi ⁊ laltro some xii",
+      "expanded": "uno podere sanza casa posto nel popolo di sanmartino asezzata luogo detto atraman / cosi con finato / ß xv pc̄ / Lavoralo il chiocciola amezo Cioe francescho di marcho / Anni suso unpaio di buoi di stima di ƒ xxvi Ene morto uno di marzo 388 / Ebbe il detto francescho di marcho vocato chiocciola di xxii di gugno 389 / per ricomprare uno bue a uscita di simone ßragli a carte 18 ƒ xi / E debbe il detto di detto per uno porcho a uscita detta a carte 18 ƒ i ß 59 1/1 pc̄ / Restagli i buoi per ƒ xxiiiiº ß xv pc̄ Eresta adare delbue simone ___ ƒ vi 1/1 𝒹 i / uno podere con case dalavoratore e colon baia e capanna murata conterre lavo / ratoie vliuate e parte vignate e sodi damortina posto nel popolo sanmartino / asezata luogo detto alpoggio cosi confinato / Lavoralo amezo ilvecchio / insul detto podere uno paio di buoi costarono ƒ xxxiii 𝒹 isono am pro / e amezo danno colavoratore detto e ae / uno paio di porci amezo / Eanni suso due tina da vendemia di tenuta luno some xvi e laltro some xii",
+      "translation": "A farm without a house, located in the popolo of San Martino a Sezzata, place called Atraman [?] bounded thus ß xv pc̄ Il Chiocciola works it in sharecropping, that is Francesco di Marco There is on it a pair of oxen valued at ƒ xxvi; one of them died in March 1388 The said Francesco di Marco, called Chiocciola, received on 22 June 1389 to buy back an ox, to the outgoings of Simone Fragli at folio 18, ƒ xi And the said [man] owes on the said date for a pig, to the said outgoings at folio 18, ƒ i ß 59 1/1 pc̄ The oxen remain with him for ƒ xxiiii ß xv pc̄; and there remains to be paid for the ox, Simone ___ ƒ vi 1/1 𝒹 i A farm with tenant's houses and a dovecote and a walled hut, with lands worked [by a tenant:] lavo- ratoie [arable lands], olive-planted and partly vine-planted, and uncultivated lands of Amortina [?], located in the popolo of San Martino a Sezzata, place called Al Poggio, bounded thus Il Vecchio works it in sharecropping On the said farm [there is] a pair of oxen, which cost ƒ xxxiii 𝒹 i; they are in half [shares], profit and half loss, with the said tenant; and he has a pair of pigs in half shares And there are on it two vats for the grape harvest, the one holding xvi some and the other xii some",
+      "sum": "re lano",
+      "date": "",
+      "kind": null,
+      "tags": [],
+      "dates": [
+       {
+        "day": 1,
+        "month": 3,
+        "year_written": 1388,
+        "raw": "uno di mazo 388",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "marzo",
+        "iso_modern": "1389-03-01",
+        "ambiguous": false
+       },
+       {
+        "day": 22,
+        "month": 6,
+        "year_written": 1389,
+        "raw": "xxii di gugno 389",
+        "year_inferred": false,
+        "style": "florentine",
+        "year_modern": 1389,
+        "month_name": "giugno",
+        "iso_modern": "1389-06-22",
+        "ambiguous": false
+       }
+      ],
+      "refs": [
+       {
+        "folios": [
+         18
+        ],
+        "book": "uscita di simone",
+        "raw": "acar 18",
+        "book_resolved": "uscita di simone"
+       },
+       {
+        "folios": [
+         18
+        ],
+        "book": "uscita detta",
+        "raw": "ac 18",
+        "book_resolved": "uscita di simone"
+       }
+      ],
+      "amount_final": null,
+      "amounts": [
+       {
+        "florins": null,
+        "lire": null,
+        "soldi": 15,
+        "denari": null,
+        "piccioli": true,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": 180,
+        "lire_decimal": 0.75,
+        "display": "ß 15 pc̄"
+       },
+       {
+        "florins": 11,
+        "lire": null,
+        "soldi": null,
+        "denari": null,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": null,
+        "lire_decimal": null,
+        "display": "ƒ 11"
+       },
+       {
+        "florins": null,
+        "lire": null,
+        "soldi": null,
+        "denari": 1,
+        "piccioli": false,
+        "a_fiorino": false,
+        "problems": [],
+        "empty": false,
+        "florin_parts": false,
+        "lsd_denari": 1,
+        "lire_decimal": 0.0042,
+        "display": "𝒹 1"
+       }
+      ],
+      "flag": false,
+      "status": "Sent to training",
+      "lines": 17
+     },
+     {
+      "key": "RS1147_DSC00662-scr#2",
+      "entry": "RS1147_DSC00662-scr#2",
+      "manuscript": "MPAP_4",
+      "page": "RS1147_DSC00662-scr",
+      "line": 15,
+      "last_line": 20,
+      "line_ids": "l15,l16,l17,l18,l19,l20",
+      "text": "sono messi anse Giuduccio[?] di puceto di tuccio lavoratore astrata dedare di 1 / ta di simone / ßragli / di lulglio 388 ƒ sedici 𝒹 ꝓ uno paio di buoi dee tenere / īsu luogo cha afficto dalle dette Rede presto simone / xvi",
+      "expanded": "sono messi anse Giuduccio di puceto di tuccio lavoratore astrata dedare di 1 / ta di simone / ßragli / di lulglio 388 ƒ sedici 𝒹 per uno paio di buoi dee tenere / insu luogo cha afficto dalle dette Rede presto simone / xvi",
+      "translation": "are placed anse[?] | Giuduccio di Puceto di Tuccio, tenant at Strada, owes, on 1 -ta [?] of Simone Fragli July 1388, ƒ sixteen 𝒹 for a pair of oxen, which he is to keep on the holding that he has on lease from the said heirs; Simone lent [them] xvi",
+      "sum": "",
+      "date": "",
+      "kind": "debit",
+      "tags": [],
+      "dates": [],
+      "refs": [],
+      "amount_final": null,
+      "amounts": [],
+      "flag": false,
+      "status": "Sent to training",
+      "lines": 6
+     }
+    ],
+    "id": "entries",
+    "op": "query",
+    "title": "Whole entries that mention cattle (with any sums and parties)"
+   },
+   "street": {
+    "type": "query",
+    "query": {
+     "unit": "lines",
+     "match": "any",
+     "conditions": [
+      {
+       "field": "text",
+       "op": "regex",
+       "value": "(?i)chiass\\w*\\s+de\\W*\\s*buoi"
+      },
+      {
+       "field": "place",
+       "op": "is",
+       "value": "Chiasso de' Buoi"
+      }
+     ]
+    },
+    "describe": "lines: text regex (?i)chiass\\w*\\s+de\\W*\\s*buoi OR place is Chiasso de' Buoi · manuscripts: all",
+    "unit": "lines",
+    "count": 5,
+    "rows": [
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 7,
+      "region": "",
+      "text": "chiasso de buoi cosi confinata a iº via a iiº Giovan̄i dambriogio ciabattiere",
+      "sum": "",
+      "date": "",
+      "expanded": "chiasso de buoi cosi confinata a iº via a iiº Giovanni dambriogio ciabattiere",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Chiasso de' Buoi, bounded thus: 1st the street, 2nd Giovanni d'Ambriogio, cobbler,",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l7",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l7",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#3",
+      "tags": [
+       {
+        "id": "taa75bd440e",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       },
+       {
+        "id": "tfcfedf6089",
+        "type": "person",
+        "span": "Giovan̄i dambriogio",
+        "name": "Giovanni d'Ambrogio",
+        "attrs": {
+         "role": "neighbour",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Giovanni d'Ambrogio",
+        "stale": false
+       },
+       {
+        "id": "t03eb1d5e5d",
+        "type": "occupation",
+        "span": "ciabattiere",
+        "name": "ciabattino",
+        "attrs": {
+         "of": "Giovanni d'Ambrogio"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "ciabattino",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 21,
+      "region": "",
+      "text": "Item una casa posta nel detto ppło nel detto chiasso de buoi cosi confinata iiº via",
+      "sum": "",
+      "date": "",
+      "expanded": "Item una casa posta nel detto popolo nel detto chiasso de buoi cosi confinata iiº via",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Item, a house located in the said parish in the said Chiasso de' Buoi, bounded thus: [1st] the street,",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l21",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l21",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#6",
+      "tags": [
+       {
+        "id": "t0eca57137d",
+        "type": "goods",
+        "span": "casa",
+        "name": "casa",
+        "attrs": {},
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "casa",
+        "stale": false
+       },
+       {
+        "id": "tf1f8984d78",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 36,
+      "region": "",
+      "text": "Item due casolari murati nel chiasso de buoi fra confini cosi confinati",
+      "sum": "",
+      "date": "",
+      "expanded": "Item due casolari murati nel chiasso de buoi fra confini cosi confinati",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Item, two walled ruined houses in the Chiasso de' Buoi, among the boundaries, bounded thus:",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l36",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l36",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#10",
+      "tags": [
+       {
+        "id": "t3ddfac01bb",
+        "type": "goods",
+        "span": "casolari",
+        "name": "casolare",
+        "attrs": {
+         "quantity": "due"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "casolare",
+        "stale": false
+       },
+       {
+        "id": "t8f58dd455d",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1110_DSC00626-scr",
+      "folio": "5r",
+      "image": "RS1110_DSC00626-scr.jpg",
+      "status": "Sent to training",
+      "line": 37,
+      "region": "",
+      "text": "a iº chiasso de buoi a iiº deo di Van̄i ⁊ altri confini",
+      "sum": "",
+      "date": "",
+      "expanded": "a iº chiasso de buoi a iiº deo di vanni e altri confini",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "1st the Chiasso de' Buoi, 2nd Deo di Vanni, and other boundaries",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l37",
+      "page_order": 2,
+      "status_code": "sent_to_training",
+      "key": "RS1110_DSC00626-scr|l37",
+      "dates": [],
+      "kind": null,
+      "entry": "RS1110_DSC00626-scr#10",
+      "tags": [
+       {
+        "id": "t286029427b",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "location"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       },
+       {
+        "id": "t3b3c3e79fd",
+        "type": "person",
+        "span": "deo di Van̄i",
+        "name": "Deo di Vanni",
+        "attrs": {
+         "role": "neighbour",
+         "gender": "m"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Deo di Vanni",
+        "stale": false
+       }
+      ],
+      "refs": [],
+      "mentions": [],
+      "amount": null,
+      "amount_written": "",
+      "amount_source": "",
+      "review": null,
+      "amount_final": null,
+      "amount_confirmed": false
+     },
+     {
+      "manuscript": "MPAP_4",
+      "page": "RS1128_DSC00644-scr",
+      "folio": "14r",
+      "image": "RS1128_DSC00644-scr.jpg",
+      "status": "Sent to training",
+      "line": 59,
+      "region": "column a",
+      "text": "mō beldi di marcho Nel chiasso de buoi de dare a libro detto ac̄ 44 pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "sum": "",
+      "date": "",
+      "expanded": "monna beldi di marcho Nel chiasso de buoi de dare a libro detto a carte 44 pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "sum_expanded": "",
+      "date_expanded": "",
+      "translation": "Monna Beldi di Marco, in the Chiasso de' Buoi, owes, in the said book at folio 44, pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "translation_state": "draft",
+      "flag": false,
+      "note": "",
+      "line_ids": "l66",
+      "page_order": 20,
+      "status_code": "sent_to_training",
+      "key": "RS1128_DSC00644-scr|l66",
+      "dates": [],
+      "kind": "debit",
+      "entry": "RS1128_DSC00644-scr#26",
+      "tags": [
+       {
+        "id": "t74a5286062",
+        "type": "person",
+        "span": "mō beldi di marcho",
+        "name": "Beldi di Marco",
+        "attrs": {
+         "title": "monna",
+         "gender": "f",
+         "role": "debtor"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Beldi di Marco",
+        "stale": false
+       },
+       {
+        "id": "t83fb13e02f",
+        "type": "place",
+        "span": "chiasso de buoi",
+        "name": "Chiasso de' Buoi",
+        "attrs": {
+         "kind": "street",
+         "relation": "residence",
+         "of": "Beldi di Marco"
+        },
+        "status": "suggested",
+        "source": "claude",
+        "t": "2026-10-22T18:00:16",
+        "canon": "Chiasso de' Buoi",
+        "stale": false
+       }
+      ],
+      "refs": [
+       {
+        "folios": [
+         44
+        ],
+        "book": "libro detto",
+        "raw": "ac 44",
+        "book_resolved": "libro delle prestanze"
+       }
+      ],
+      "mentions": [
+       {
+        "raw": "℔ viii ß iiiiº 𝒹 vi",
+        "amount": {
+         "florins": null,
+         "lire": 8,
+         "soldi": 4,
+         "denari": 6,
+         "piccioli": false,
+         "a_fiorino": false,
+         "problems": [],
+         "empty": false,
+         "florin_parts": false,
+         "lsd_denari": 1974,
+         "lire_decimal": 8.225,
+         "display": "℔ 8 ß 4 𝒹 6"
+        }
+       }
+      ],
+      "amount": {
+       "florins": null,
+       "lire": 8,
+       "soldi": 4,
+       "denari": 6,
+       "piccioli": true,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 1974,
+       "lire_decimal": 8.225,
+       "display": "℔ 8 ß 4 𝒹 6 pc̄"
+      },
+      "amount_written": "pc̄ ℔ viii ß iiiiº 𝒹 vi",
+      "amount_source": "end of entry",
+      "review": null,
+      "amount_final": {
+       "florins": null,
+       "lire": 8,
+       "soldi": 4,
+       "denari": 6,
+       "piccioli": true,
+       "a_fiorino": false,
+       "problems": [],
+       "empty": false,
+       "florin_parts": false,
+       "lsd_denari": 1974,
+       "lire_decimal": 8.225,
+       "display": "℔ 8 ß 4 𝒹 6 pc̄"
+      },
+      "amount_confirmed": false
+     }
+    ],
+    "groups": [
+     {
+      "value": "RS1110_DSC00626-scr",
+      "rows": 4,
+      "first": null,
+      "last": null
+     },
+     {
+      "value": "RS1128_DSC00644-scr",
+      "rows": 1,
+      "first": null,
+      "last": null
+     }
+    ],
+    "group_by": "page",
+    "id": "street",
+    "op": "query",
+    "title": "False hits: the street Chiasso de' Buoi (not animals)"
+   },
+   "livestock": {
+    "type": "query",
+    "query": {
+     "unit": "lines",
+     "match": "all",
+     "conditions": [
+      {
+       "field": "text",
+       "op": "regex",
+       "value": "(?i)\\b(besti[ae]|bestie|soc[cç]i[od]\\w*|soccit\\w*|livestock|beasts?)\\b"
+      }
+     ]
+    },
+    "describe": "lines: text regex (?i)\\b(besti[ae]|bestie|soc[cç]i[od]\\w*|soccit\\w*|livestock|beasts?)\\b · manuscripts: all",
+    "unit": "lines",
+    "count": 0,
+    "rows": [],
+    "groups": [],
+    "group_by": "page",
+    "id": "livestock",
+    "op": "query",
+    "title": "Wider check: livestock in general and share-farming of animals (bestie, soccio/soccida)"
+   }
+  },
+  "coverage": {
+   "manuscripts": [
+    {
+     "id": "Baker_MS_493",
+     "pages_total": 219,
+     "pages_included": 1,
+     "statuses": [
+      "finished",
+      "sent_to_training"
+     ],
+     "pages_tagged": 0,
+     "tags": 0,
+     "tags_approved": 0,
+     "sums": 7,
+     "sums_checked": 0,
+     "entries": 8,
+     "account_holder": "",
+     "date_style": "florentine"
+    },
+    {
+     "id": "MPAP_4",
+     "pages_total": 593,
+     "pages_included": 51,
+     "statuses": [
+      "finished",
+      "sent_to_training"
+     ],
+     "pages_tagged": 10,
+     "tags": 459,
+     "tags_approved": 0,
+     "sums": 406,
+     "sums_checked": 1,
+     "entries": 1158,
+     "account_holder": "Heirs of Deo di Vanni",
+     "date_style": "florentine"
+    },
+    {
+     "id": "Princeton_MS_131",
+     "pages_total": 144,
+     "pages_included": 0,
+     "statuses": [
+      "finished",
+      "sent_to_training"
+     ],
+     "pages_tagged": 0,
+     "tags": 0,
+     "tags_approved": 0,
+     "sums": 0,
+     "sums_checked": 0,
+     "entries": 0,
+     "account_holder": "",
+     "date_style": "florentine"
+    },
+    {
+     "id": "UPenn_1321",
+     "pages_total": 305,
+     "pages_included": 1,
+     "statuses": [
+      "finished",
+      "sent_to_training"
+     ],
+     "pages_tagged": 0,
+     "tags": 0,
+     "tags_approved": 0,
+     "sums": 17,
+     "sums_checked": 0,
+     "entries": 13,
+     "account_holder": "",
+     "date_style": "florentine"
+    },
+    {
+     "id": "UPenn_1435",
+     "pages_total": 101,
+     "pages_included": 12,
+     "statuses": [
+      "finished",
+      "sent_to_training"
+     ],
+     "pages_tagged": 0,
+     "tags": 0,
+     "tags_approved": 0,
+     "sums": 77,
+     "sums_checked": 0,
+     "entries": 49,
+     "account_holder": "",
+     "date_style": "florentine"
+    }
+   ]
+  },
+  "t": "2026-10-25T16:53:23",
+  "caveats": [
+   "Baker_MS_493: only 0 of 1 included pages are tagged (219 pages in the manuscript), so people and occupations are partial.",
+   "MPAP_4: only 10 of 51 included pages are tagged (593 pages in the manuscript), so people and occupations are partial.",
+   "UPenn_1321: only 0 of 1 included pages are tagged (305 pages in the manuscript), so people and occupations are partial.",
+   "UPenn_1435: only 0 of 12 included pages are tagged (101 pages in the manuscript), so people and occupations are partial."
+  ]
+ },
+ "answer": {
+  "headline": "Four MPAP 4 pages mention cattle: RS1139, RS1140, RS1141 and RS1147. Every one concerns pairs of plough oxen (buoi) on farms. No cows (vacche) appear in the pages searched.",
+  "answer": "Searched only 65 of about 1,360 pages: the Finished or sent-to-training ones (51 MPAP 4, 12 UPenn 1435, 1 Baker MS 493, 1 UPenn 1321). Seventeen lines on 7 pages matched a word for cattle [pages, lines]. Only 4 of those pages are about animals. On RS1110 (4 lines) and RS1128 (1 line), \"buoi\" is part of the street name Chiasso de' Buoi, where houses are located or a debtor lives [street]. On Baker MS 493 img010, the 4 hits are the personal name \"giovencho di giuliano\", the man who brought payments in florins, not young bullocks [pages: ms493_img010, 4 rows].\n\nThe real cattle pages are all in MPAP 4, among the farm inventories of the heirs' estate, and all concern pairs of oxen (\"uno paio di buoi\") kept on poderi. The searches found no vacche, vitelli or general livestock words; the separate livestock search returned 0 lines [livestock]. RS1139 (1 line): the tenant of the podere at Strada must keep ƒ 16 for a pair of oxen on the farm. RS1147 (1 line): the same arrangement for Giuduccio[?] di Tuccio, lavoratore at Strada, ƒ sedici, July 388. RS1140 (2 lines): on the podere at Colombaia (Sezzata), a pair of oxen cost ƒa xxxiiiiº and was held a mezzo pro e mezzo danno. On 26 June 389 Filippo di Trullo had ƒ vi ß xviii pc̄ \"ꝓ arogere a uno paio di buoi\". RS1141 (4 lines): on the podere at Tramā (Sezzata), a pair valued at ƒ xxvi, one of which died in March 388. On 22 June 389 Francesco di Marco, called Chiocciola, had ƒ xi to buy back an ox (\"ꝓricoꝓare uno bue\"). A second podere on the same page, al Poggio, had a pair that cost ƒ xxxiii [lines; entries].\n\nCounted by entry, 12 entries matched the cattle words, but only 5 of them (RS1139#1, RS1140#1, RS1141#1, RS1147#2) are really about oxen [entries]. All sums are as written, and none of them has been checked in the sums review (1 of 406 MPAP 4 sums checked). Dates are in Florentine style, as written.",
+  "claims": [
+   {
+    "text": "Only four pages in the searched set refer to cattle as animals: MPAP 4 RS1139, RS1140, RS1141, RS1147.",
+    "evidence": "pages: RS1139 (1 row), RS1140 (2), RS1141 (4), RS1147 (1); other hits explained by street and name",
+    "strength": "moderate"
+   },
+   {
+    "text": "The hits on RS1110 and RS1128 are the street Chiasso de' Buoi, not animals.",
+    "evidence": "street: RS1110_DSC00626-scr 4 rows, RS1128_DSC00644-scr 1 row",
+    "strength": "strong"
+   },
+   {
+    "text": "The hits on Baker MS 493 img010 are the personal name 'giovencho di giuliano', not young cattle.",
+    "evidence": "lines: ms493_img010 l17, l19, l21, l23 'recho giovencho di giuliano'",
+    "strength": "moderate"
+   },
+   {
+    "text": "Every genuine mention is of oxen (buoi/bue), usually a pair kept on a podere; no cows, calves or heifers appear.",
+    "evidence": "lines: RS1139 l25, RS1140 l24/l28, RS1141 l2/l4/l6/l11, RS1147 l18; livestock: 0 rows",
+    "strength": "moderate"
+   },
+   {
+    "text": "A pair of oxen on the Colombaia podere cost ƒ 34, held half profit and half loss with the worker.",
+    "evidence": "lines: RS1140_DSC00656-scr l24 'costarono ƒa xxxiiiiº 𝒹 sono amezo pro ⁊ amezo'",
+    "strength": "moderate"
+   },
+   {
+    "text": "On the Tramā podere one of a pair of oxen valued at ƒ 26 died in March 388, and the worker received ƒ 11 to buy back an ox.",
+    "evidence": "lines: RS1141_DSC00657-scr l2 'di stima di ƒ xxvi Ene morto uno di mãzo 388', l4 'ꝓricoꝓare uno bue … ƒ xi'",
+    "strength": "moderate"
+   },
+   {
+    "text": "The tenant of the podere at Strada had to keep ƒ 16 for a pair of oxen, recorded on both RS1139 and RS1147.",
+    "evidence": "lines: RS1139_DSC00655-scr l25; RS1147_DSC00662-scr l18 'ƒ sedici 𝒹 ꝓ uno paio di buoi'",
+    "strength": "moderate"
+   }
+  ],
+  "caveats": [
+   "Only 65 of about 1,360 pages were searched. Pages that are machine-read or still being corrected (about 540 MPAP 4 pages, including about 160 farm and house inventories) were not included, so the list is certainly incomplete.",
+   "The search matches words in the diplomatic text, so abbreviated or misread forms (e.g. b̄uoi, Kraken errors) can be missed. The TEI-expanded readings were not searched.",
+   "'giovencho' on Baker img010 is read here as a personal name from context ('recho giovencho di giuliano' = brought by Giovenco di Giuliano). This is an interpretation, not a tag.",
+   "RS1139/RS1147, and the ƒ 34 and ƒ 33 pairs on RS1140/RS1141, may describe the same animals or arrangements in different entries; they should not be added up as separate herds.",
+   "No sums here are checked. 'ƒa' on RS1140 is the open ƒa question in the MPAP 4 conventions."
+  ],
+  "followups": [
+   "Run the same search once the TEI-imported MPAP 4 inventories are Finished, and include the TEI-expanded text (buoi, vacca, giovenco, bestie).",
+   "Check the oxen sums on RS1139, RS1140, RS1141 and RS1147 in the sums review, and confirm whether RS1139 and RS1147 record the same ƒ 16 obligation.",
+   "Tag Chiasso de' Buoi as a place and Giovenco di Giuliano as a person, so future cattle searches exclude them automatically."
+  ],
+  "written_on_data_of": "2026-10-25T16:53:23"
+ }
+}

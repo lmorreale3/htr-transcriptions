@@ -241,3 +241,13 @@ svg.dnet { width: 100%; display: block; }
 .dnode circle { stroke: var(--panel); stroke-width: 1.5; }
 .dnode.r-borrower circle { fill: var(--t-person); } .dnode.r-lender circle { fill: var(--t-place); } .dnode.r-borrowerlender circle { fill: var(--t-occupation); }
 .dnode text { fill: var(--ink); font-size: 11px; paint-order: stroke; stroke: var(--panel); stroke-width: 3px; }
+
+/* Catasto 1427 */
+.catgrid { display: grid; grid-template-columns: 320px 1fr; gap: 16px; align-items: start; }
+.catgrid aside { max-height: calc(100vh - 220px); overflow: auto; }
+@media (max-width: 800px) { .catgrid { grid-template-columns: 1fr; } }
+.catc.dim { opacity: .5; }
+.badge.cs-strong { background: color-mix(in srgb, var(--ok) 18%, var(--panel)); color: var(--ok); }
+.badge.cs-possible { background: color-mix(in srgb, var(--accent) 14%, var(--panel)); }
+.badge.cs-weak { color: var(--ink-3); }
+span.ok { color: var(--ok); } span.warn { color: var(--warn); }

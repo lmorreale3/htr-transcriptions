@@ -3,10 +3,10 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1141_DSC00657-scr.jpg",
  "order": 33,
- "folio": "36v",
+ "folio": "21r",
  "width": 1280,
  "height": 1920,
- "status": "finished",
+ "status": "sent_to_training",
  "lines": [
   {
    "id": "l27",
@@ -7078,9 +7078,17 @@
   {
    "t": "2026-10-18T11:10:05",
    "event": "florin convention: 1 line(s) ƒi → ƒ (Laura, 18 Oct)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 20v → 21r (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T23:35:21",
+   "event": "used to train catmus_secondtraining_v3_wleggio_2026-10-17b_ft_MPAP_4_20261023_221332.mlmodel"
   }
  ],
- "updated": "2026-10-23T11:17:56",
+ "updated": "2026-10-23T23:35:21",
  "regions": [
   {
    "id": "rmvcm7pyj",

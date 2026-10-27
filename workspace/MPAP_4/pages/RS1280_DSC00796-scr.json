@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1280_DSC00796-scr.jpg",
  "order": 170,
- "folio": "105r",
+ "folio": "104v",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -327,7 +327,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Cose dunaltro forziere cheii sono"
+    "kraken": "Cose dunaltro forziere cheii sono",
+    "tei": "Cose dun altro forziere cheivi sono",
+    "tei_expanded": "Cose dun altro forziere cheivi sono",
+    "claude": "Cose dun altro forziere cheivi sono"
    },
    "flag": false,
    "note": "",
@@ -441,7 +444,9 @@
     ]
    ],
    "readings": {
-    "kraken": "dentro Cioe"
+    "kraken": "dentro Cioe",
+    "tei": "dentro Cioe",
+    "tei_expanded": "dentro Cioe"
    },
    "flag": false,
    "note": "",
@@ -679,7 +684,10 @@
     ]
    ],
    "readings": {
-    "kraken": "xvi ƀra di pan̄o lino sottile"
+    "kraken": "xvi ƀra di pan̄o lino sottile",
+    "tei": "xvi braccia di panno lino sottile",
+    "tei_expanded": "xvi braccia di panno lino sottile",
+    "claude": "xvi ƀ di pan̄o lino sottile"
    },
    "flag": false,
    "note": "",
@@ -689,6 +697,212 @@
   {
    "id": "l4",
    "polygon": [
+    [
+     165.0,
+     259.0
+    ],
+    [
+     166.0,
+     259.0
+    ],
+    [
+     167.0,
+     259.0
+    ],
+    [
+     168.0,
+     259.0
+    ],
+    [
+     179.0,
+     253.0
+    ],
+    [
+     310.0,
+     258.0
+    ],
+    [
+     332.0,
+     267.0
+    ],
+    [
+     333.0,
+     267.0
+    ],
+    [
+     334.0,
+     267.0
+    ],
+    [
+     389.0,
+     260.0
+    ],
+    [
+     436.0,
+     270.0
+    ],
+    [
+     437.0,
+     270.0
+    ],
+    [
+     475.0,
+     265.0
+    ],
+    [
+     489.0,
+     272.0
+    ],
+    [
+     490.0,
+     272.0
+    ],
+    [
+     491.0,
+     272.0
+    ],
+    [
+     516.0,
+     267.0
+    ],
+    [
+     548.0,
+     274.0
+    ],
+    [
+     550.0,
+     257.0
+    ],
+    [
+     548.0,
+     231.0
+    ],
+    [
+     526.0,
+     238.0
+    ],
+    [
+     488.0,
+     227.0
+    ],
+    [
+     487.0,
+     227.0
+    ],
+    [
+     486.0,
+     227.0
+    ],
+    [
+     418.0,
+     234.0
+    ],
+    [
+     397.0,
+     224.0
+    ],
+    [
+     396.0,
+     224.0
+    ],
+    [
+     395.0,
+     224.0
+    ],
+    [
+     355.0,
+     232.0
+    ],
+    [
+     322.0,
+     227.0
+    ],
+    [
+     321.0,
+     227.0
+    ],
+    [
+     320.0,
+     227.0
+    ],
+    [
+     306.0,
+     231.0
+    ],
+    [
+     283.0,
+     220.0
+    ],
+    [
+     282.0,
+     220.0
+    ],
+    [
+     281.0,
+     220.0
+    ],
+    [
+     248.0,
+     225.0
+    ],
+    [
+     245.0,
+     219.0
+    ],
+    [
+     244.0,
+     219.0
+    ],
+    [
+     244.0,
+     218.0
+    ],
+    [
+     243.0,
+     218.0
+    ],
+    [
+     242.0,
+     218.0
+    ],
+    [
+     241.0,
+     218.0
+    ],
+    [
+     181.0,
+     227.0
+    ],
+    [
+     75.0,
+     217.0
+    ],
+    [
+     75.0,
+     252.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     243.0
+    ],
+    [
+     550.0,
+     257.0
+    ]
+   ],
+   "readings": {
+    "kraken": "mantellino di mezato cō xxx bottoni",
+    "tei": "1 mantellino di mezato con xxx bottoni",
+    "tei_expanded": "1 mantellino di mezato con xxx bottoni",
+    "claude": "1 mantellino di mezato cō xxx bottoni"
+   },
+   "flag": false,
+   "note": "",
+   "text": "mantellino di mezato cō xxx bottoni",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      148.0,
      252.0
@@ -886,7 +1100,7 @@
      252.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      149.0,
      243.0
@@ -895,14 +1109,7 @@
      550.0,
      257.0
     ]
-   ],
-   "readings": {
-    "kraken": "mantellino di mezato cō xxx bottoni"
-   },
-   "flag": false,
-   "note": "",
-   "text": "mantellino di mezato cō xxx bottoni",
-   "agreement": null
+   ]
   },
   {
    "id": "l5",
@@ -1127,7 +1334,9 @@
     ]
    ],
    "readings": {
-    "kraken": "dariento foderato dindisia"
+    "kraken": "dariento foderato dindisia",
+    "tei": "dariento foderato dindisia",
+    "tei_expanded": "dariento foderato dindisia"
    },
    "flag": false,
    "note": "",
@@ -1137,6 +1346,224 @@
   {
    "id": "l6",
    "polygon": [
+    [
+     187.0,
+     317.0
+    ],
+    [
+     196.0,
+     323.0
+    ],
+    [
+     197.0,
+     323.0
+    ],
+    [
+     198.0,
+     323.0
+    ],
+    [
+     199.0,
+     323.0
+    ],
+    [
+     268.0,
+     321.0
+    ],
+    [
+     275.0,
+     326.0
+    ],
+    [
+     276.0,
+     326.0
+    ],
+    [
+     277.0,
+     326.0
+    ],
+    [
+     278.0,
+     326.0
+    ],
+    [
+     302.0,
+     321.0
+    ],
+    [
+     323.0,
+     329.0
+    ],
+    [
+     324.0,
+     329.0
+    ],
+    [
+     385.0,
+     330.0
+    ],
+    [
+     386.0,
+     330.0
+    ],
+    [
+     387.0,
+     330.0
+    ],
+    [
+     411.0,
+     324.0
+    ],
+    [
+     430.0,
+     331.0
+    ],
+    [
+     432.0,
+     331.0
+    ],
+    [
+     433.0,
+     331.0
+    ],
+    [
+     434.0,
+     331.0
+    ],
+    [
+     451.0,
+     326.0
+    ],
+    [
+     501.0,
+     333.0
+    ],
+    [
+     502.0,
+     333.0
+    ],
+    [
+     503.0,
+     333.0
+    ],
+    [
+     504.0,
+     333.0
+    ],
+    [
+     512.0,
+     327.0
+    ],
+    [
+     563.0,
+     331.0
+    ],
+    [
+     565.0,
+     320.0
+    ],
+    [
+     565.0,
+     301.0
+    ],
+    [
+     443.0,
+     290.0
+    ],
+    [
+     442.0,
+     290.0
+    ],
+    [
+     407.0,
+     297.0
+    ],
+    [
+     332.0,
+     296.0
+    ],
+    [
+     321.0,
+     286.0
+    ],
+    [
+     320.0,
+     286.0
+    ],
+    [
+     318.0,
+     286.0
+    ],
+    [
+     317.0,
+     286.0
+    ],
+    [
+     316.0,
+     286.0
+    ],
+    [
+     294.0,
+     294.0
+    ],
+    [
+     264.0,
+     294.0
+    ],
+    [
+     257.0,
+     286.0
+    ],
+    [
+     257.0,
+     285.0
+    ],
+    [
+     256.0,
+     285.0
+    ],
+    [
+     254.0,
+     285.0
+    ],
+    [
+     253.0,
+     285.0
+    ],
+    [
+     198.0,
+     292.0
+    ],
+    [
+     75.0,
+     282.0
+    ],
+    [
+     75.0,
+     323.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     309.0
+    ],
+    [
+     565.0,
+     320.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Cottardita di mezata da don̄a cō orlo",
+    "tei": "1 Cottardita di mezata da donna con orlo",
+    "tei_expanded": "1 Cottardita di mezata da donna con orlo",
+    "claude": "1 Cottardita di mezata da don̄a cō orlo"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Cottardita di mezata da don̄a cō orlo",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      154.0,
      309.0
@@ -1342,7 +1769,7 @@
      309.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      154.0,
      309.0
@@ -1351,14 +1778,7 @@
      565.0,
      320.0
     ]
-   ],
-   "readings": {
-    "kraken": "Cottardita di mezata da don̄a cō orlo"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Cottardita di mezata da don̄a cō orlo",
-   "agreement": null
+   ]
   },
   {
    "id": "l7",
@@ -1495,7 +1915,10 @@
     ]
    ],
    "readings": {
-    "kraken": "dapie di meza pancia di vaio cō sei bo"
+    "kraken": "dapie di meza pancia di vaio cō sei bo",
+    "tei": "da pie di Meza pancia di varo con sei bo",
+    "tei_expanded": "da pie di Meza pancia di varo con sei bo",
+    "claude": "da pie di Meza pancia di varo cō sei bo"
    },
    "flag": false,
    "note": "",
@@ -1589,7 +2012,10 @@
     ]
    ],
    "readings": {
-    "kraken": "ttonii dariento"
+    "kraken": "ttonii dariento",
+    "tei": "ttoni dariento",
+    "tei_expanded": "ttoni dariento",
+    "claude": "ttoni dariento"
    },
    "flag": false,
    "note": "",
@@ -1887,7 +2313,10 @@
     ]
    ],
    "readings": {
-    "kraken": "vi tƀra di pan̄o cilestrino fine bagnato"
+    "kraken": "vi tƀra di pan̄o cilestrino fine bagnato",
+    "tei": "vi 1/2 braccia di panno cilestrino fine begnato",
+    "tei_expanded": "vi 1/2 braccia di panno cilestrino fine begnato",
+    "claude": "vi 1/2 ƀ di pan̄o cilestrino fine begnato"
    },
    "flag": false,
    "note": "",
@@ -2049,7 +2478,9 @@
     ]
    ],
    "readings": {
-    "kraken": "⁊ cimato"
+    "kraken": "⁊ cimato",
+    "tei": "e cimato",
+    "tei_expanded": "e cimato"
    },
    "flag": false,
    "note": "",
@@ -2059,6 +2490,296 @@
   {
    "id": "l13",
    "polygon": [
+    [
+     269.0,
+     482.0
+    ],
+    [
+     270.0,
+     482.0
+    ],
+    [
+     272.0,
+     482.0
+    ],
+    [
+     286.0,
+     477.0
+    ],
+    [
+     294.0,
+     484.0
+    ],
+    [
+     294.0,
+     485.0
+    ],
+    [
+     295.0,
+     485.0
+    ],
+    [
+     296.0,
+     485.0
+    ],
+    [
+     297.0,
+     485.0
+    ],
+    [
+     329.0,
+     481.0
+    ],
+    [
+     333.0,
+     486.0
+    ],
+    [
+     334.0,
+     486.0
+    ],
+    [
+     334.0,
+     487.0
+    ],
+    [
+     336.0,
+     487.0
+    ],
+    [
+     337.0,
+     487.0
+    ],
+    [
+     365.0,
+     488.0
+    ],
+    [
+     366.0,
+     488.0
+    ],
+    [
+     451.0,
+     483.0
+    ],
+    [
+     551.0,
+     494.0
+    ],
+    [
+     552.0,
+     494.0
+    ],
+    [
+     553.0,
+     494.0
+    ],
+    [
+     581.0,
+     487.0
+    ],
+    [
+     582.0,
+     480.0
+    ],
+    [
+     581.0,
+     458.0
+    ],
+    [
+     516.0,
+     458.0
+    ],
+    [
+     509.0,
+     453.0
+    ],
+    [
+     509.0,
+     452.0
+    ],
+    [
+     508.0,
+     452.0
+    ],
+    [
+     507.0,
+     452.0
+    ],
+    [
+     464.0,
+     449.0
+    ],
+    [
+     462.0,
+     449.0
+    ],
+    [
+     461.0,
+     449.0
+    ],
+    [
+     443.0,
+     454.0
+    ],
+    [
+     426.0,
+     448.0
+    ],
+    [
+     425.0,
+     448.0
+    ],
+    [
+     424.0,
+     448.0
+    ],
+    [
+     423.0,
+     448.0
+    ],
+    [
+     409.0,
+     455.0
+    ],
+    [
+     394.0,
+     448.0
+    ],
+    [
+     393.0,
+     448.0
+    ],
+    [
+     392.0,
+     448.0
+    ],
+    [
+     391.0,
+     448.0
+    ],
+    [
+     378.0,
+     454.0
+    ],
+    [
+     358.0,
+     448.0
+    ],
+    [
+     357.0,
+     448.0
+    ],
+    [
+     356.0,
+     448.0
+    ],
+    [
+     355.0,
+     448.0
+    ],
+    [
+     342.0,
+     453.0
+    ],
+    [
+     311.0,
+     443.0
+    ],
+    [
+     310.0,
+     443.0
+    ],
+    [
+     309.0,
+     443.0
+    ],
+    [
+     308.0,
+     443.0
+    ],
+    [
+     293.0,
+     451.0
+    ],
+    [
+     259.0,
+     442.0
+    ],
+    [
+     258.0,
+     442.0
+    ],
+    [
+     257.0,
+     442.0
+    ],
+    [
+     217.0,
+     449.0
+    ],
+    [
+     198.0,
+     449.0
+    ],
+    [
+     188.0,
+     440.0
+    ],
+    [
+     188.0,
+     439.0
+    ],
+    [
+     187.0,
+     439.0
+    ],
+    [
+     186.0,
+     439.0
+    ],
+    [
+     185.0,
+     439.0
+    ],
+    [
+     184.0,
+     439.0
+    ],
+    [
+     75.0,
+     445.0
+    ],
+    [
+     75.0,
+     475.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     468.0
+    ],
+    [
+     308.0,
+     467.0
+    ],
+    [
+     582.0,
+     480.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Cottardita sangiigna da don̄a vecchia",
+    "tei": "1 Cottardita sanguigna da donna vecchia",
+    "tei_expanded": "1 Cottardita sanguigna da donna vecchia",
+    "claude": "1 Cottardita sanguigna da don̄a vecchia"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Cottardita sangiigna da don̄a vecchia",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      161.0,
      468.0
@@ -2332,7 +3053,7 @@
      468.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      161.0,
      468.0
@@ -2345,18 +3066,241 @@
      582.0,
      480.0
     ]
-   ],
-   "readings": {
-    "kraken": "Cottardita sangiigna da don̄a vecchia"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Cottardita sangiigna da don̄a vecchia",
-   "agreement": null
+   ]
   },
   {
    "id": "l14",
    "polygon": [
+    [
+     178.0,
+     514.0
+    ],
+    [
+     179.0,
+     514.0
+    ],
+    [
+     180.0,
+     514.0
+    ],
+    [
+     270.0,
+     510.0
+    ],
+    [
+     299.0,
+     518.0
+    ],
+    [
+     300.0,
+     518.0
+    ],
+    [
+     301.0,
+     518.0
+    ],
+    [
+     371.0,
+     513.0
+    ],
+    [
+     379.0,
+     519.0
+    ],
+    [
+     379.0,
+     520.0
+    ],
+    [
+     380.0,
+     520.0
+    ],
+    [
+     381.0,
+     520.0
+    ],
+    [
+     382.0,
+     520.0
+    ],
+    [
+     384.0,
+     520.0
+    ],
+    [
+     410.0,
+     514.0
+    ],
+    [
+     422.0,
+     521.0
+    ],
+    [
+     423.0,
+     521.0
+    ],
+    [
+     424.0,
+     521.0
+    ],
+    [
+     425.0,
+     521.0
+    ],
+    [
+     465.0,
+     517.0
+    ],
+    [
+     514.0,
+     523.0
+    ],
+    [
+     515.0,
+     523.0
+    ],
+    [
+     574.0,
+     517.0
+    ],
+    [
+     576.0,
+     510.0
+    ],
+    [
+     576.0,
+     491.0
+    ],
+    [
+     560.0,
+     486.0
+    ],
+    [
+     558.0,
+     486.0
+    ],
+    [
+     557.0,
+     486.0
+    ],
+    [
+     556.0,
+     486.0
+    ],
+    [
+     555.0,
+     486.0
+    ],
+    [
+     545.0,
+     493.0
+    ],
+    [
+     532.0,
+     488.0
+    ],
+    [
+     531.0,
+     488.0
+    ],
+    [
+     530.0,
+     488.0
+    ],
+    [
+     498.0,
+     492.0
+    ],
+    [
+     458.0,
+     483.0
+    ],
+    [
+     457.0,
+     483.0
+    ],
+    [
+     456.0,
+     483.0
+    ],
+    [
+     455.0,
+     483.0
+    ],
+    [
+     427.0,
+     490.0
+    ],
+    [
+     374.0,
+     484.0
+    ],
+    [
+     373.0,
+     484.0
+    ],
+    [
+     345.0,
+     488.0
+    ],
+    [
+     318.0,
+     480.0
+    ],
+    [
+     317.0,
+     480.0
+    ],
+    [
+     251.0,
+     477.0
+    ],
+    [
+     250.0,
+     477.0
+    ],
+    [
+     249.0,
+     477.0
+    ],
+    [
+     226.0,
+     485.0
+    ],
+    [
+     75.0,
+     484.0
+    ],
+    [
+     75.0,
+     507.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     501.0
+    ],
+    [
+     316.0,
+     501.0
+    ],
+    [
+     576.0,
+     510.0
+    ]
+   ],
+   "readings": {
+    "kraken": "mantello di soriano atre fila dimo telo",
+    "tei": "1 mantello di soriano a tre fila duno telo",
+    "tei_expanded": "1 mantello di soriano a tre fila duno telo",
+    "claude": "1 mantello di soriano a tre fila duno telo"
+   },
+   "flag": false,
+   "note": "",
+   "text": "mantello di soriano atre fila dimo telo",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      161.0,
      501.0
@@ -2570,7 +3514,7 @@
      501.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      161.0,
      501.0
@@ -2583,14 +3527,7 @@
      576.0,
      510.0
     ]
-   ],
-   "readings": {
-    "kraken": "mantello di soriano atre fila dimo telo"
-   },
-   "flag": false,
-   "note": "",
-   "text": "mantello di soriano atre fila dimo telo",
-   "agreement": null
+   ]
   },
   {
    "id": "l15",
@@ -2811,7 +3748,10 @@
     ]
    ],
    "readings": {
-    "kraken": "⁊ terzo cō fodera sangiigna"
+    "kraken": "⁊ terzo cō fodera sangiigna",
+    "tei": "e terzo con fodera sanguigna",
+    "tei_expanded": "e terzo con fodera sanguigna",
+    "claude": "⁊ terzo cō fodera sanguigna"
    },
    "flag": false,
    "note": "",
@@ -2821,6 +3761,340 @@
   {
    "id": "l16",
    "polygon": [
+    [
+     188.0,
+     593.0
+    ],
+    [
+     189.0,
+     593.0
+    ],
+    [
+     190.0,
+     593.0
+    ],
+    [
+     192.0,
+     593.0
+    ],
+    [
+     210.0,
+     579.0
+    ],
+    [
+     232.0,
+     587.0
+    ],
+    [
+     233.0,
+     587.0
+    ],
+    [
+     234.0,
+     587.0
+    ],
+    [
+     235.0,
+     587.0
+    ],
+    [
+     262.0,
+     580.0
+    ],
+    [
+     294.0,
+     587.0
+    ],
+    [
+     295.0,
+     587.0
+    ],
+    [
+     296.0,
+     587.0
+    ],
+    [
+     297.0,
+     587.0
+    ],
+    [
+     305.0,
+     582.0
+    ],
+    [
+     311.0,
+     587.0
+    ],
+    [
+     311.0,
+     588.0
+    ],
+    [
+     312.0,
+     588.0
+    ],
+    [
+     313.0,
+     588.0
+    ],
+    [
+     314.0,
+     588.0
+    ],
+    [
+     315.0,
+     588.0
+    ],
+    [
+     332.0,
+     580.0
+    ],
+    [
+     396.0,
+     585.0
+    ],
+    [
+     397.0,
+     585.0
+    ],
+    [
+     398.0,
+     585.0
+    ],
+    [
+     414.0,
+     581.0
+    ],
+    [
+     426.0,
+     588.0
+    ],
+    [
+     427.0,
+     588.0
+    ],
+    [
+     428.0,
+     588.0
+    ],
+    [
+     429.0,
+     588.0
+    ],
+    [
+     430.0,
+     588.0
+    ],
+    [
+     444.0,
+     581.0
+    ],
+    [
+     461.0,
+     596.0
+    ],
+    [
+     462.0,
+     596.0
+    ],
+    [
+     464.0,
+     596.0
+    ],
+    [
+     465.0,
+     597.0
+    ],
+    [
+     549.0,
+     597.0
+    ],
+    [
+     550.0,
+     574.0
+    ],
+    [
+     550.0,
+     555.0
+    ],
+    [
+     516.0,
+     550.0
+    ],
+    [
+     515.0,
+     550.0
+    ],
+    [
+     514.0,
+     550.0
+    ],
+    [
+     497.0,
+     556.0
+    ],
+    [
+     461.0,
+     551.0
+    ],
+    [
+     460.0,
+     551.0
+    ],
+    [
+     408.0,
+     555.0
+    ],
+    [
+     401.0,
+     549.0
+    ],
+    [
+     401.0,
+     548.0
+    ],
+    [
+     400.0,
+     548.0
+    ],
+    [
+     398.0,
+     548.0
+    ],
+    [
+     371.0,
+     548.0
+    ],
+    [
+     370.0,
+     548.0
+    ],
+    [
+     333.0,
+     554.0
+    ],
+    [
+     322.0,
+     547.0
+    ],
+    [
+     321.0,
+     547.0
+    ],
+    [
+     320.0,
+     547.0
+    ],
+    [
+     318.0,
+     547.0
+    ],
+    [
+     317.0,
+     547.0
+    ],
+    [
+     301.0,
+     552.0
+    ],
+    [
+     284.0,
+     547.0
+    ],
+    [
+     283.0,
+     547.0
+    ],
+    [
+     282.0,
+     547.0
+    ],
+    [
+     281.0,
+     547.0
+    ],
+    [
+     266.0,
+     554.0
+    ],
+    [
+     256.0,
+     546.0
+    ],
+    [
+     254.0,
+     546.0
+    ],
+    [
+     253.0,
+     546.0
+    ],
+    [
+     252.0,
+     546.0
+    ],
+    [
+     202.0,
+     553.0
+    ],
+    [
+     190.0,
+     546.0
+    ],
+    [
+     189.0,
+     546.0
+    ],
+    [
+     188.0,
+     546.0
+    ],
+    [
+     187.0,
+     546.0
+    ],
+    [
+     186.0,
+     546.0
+    ],
+    [
+     185.0,
+     546.0
+    ],
+    [
+     185.0,
+     547.0
+    ],
+    [
+     75.0,
+     553.0
+    ],
+    [
+     75.0,
+     592.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     570.0
+    ],
+    [
+     550.0,
+     574.0
+    ]
+   ],
+   "readings": {
+    "kraken": "mantella da huomo luno a3urrino",
+    "tei": "ii mantella da huomo luno azurrino",
+    "tei_expanded": "ii mantella da huomo luno azurrino",
+    "claude": "ii mantella da huomo luno azurrino"
+   },
+   "flag": false,
+   "note": "",
+   "text": "mantella da huomo luno a3urrino",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      163.0,
      570.0
@@ -3146,7 +4420,7 @@
      570.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      163.0,
      570.0
@@ -3155,14 +4429,7 @@
      550.0,
      574.0
     ]
-   ],
-   "readings": {
-    "kraken": "mantella da huomo luno a3urrino"
-   },
-   "flag": false,
-   "note": "",
-   "text": "mantella da huomo luno a3urrino",
-   "agreement": null
+   ]
   },
   {
    "id": "l17",
@@ -3311,7 +4578,9 @@
     ]
    ],
    "readings": {
-    "kraken": "⁊ laltro cilestrino"
+    "kraken": "⁊ laltro cilestrino",
+    "tei": "e laltro cilestrino",
+    "tei_expanded": "e laltro cilestrino"
    },
    "flag": false,
    "note": "",
@@ -3321,6 +4590,52 @@
   {
    "id": "l18",
    "polygon": [
+    [
+     238.0,
+     647.0
+    ],
+    [
+     386.0,
+     648.0
+    ],
+    [
+     388.0,
+     636.0
+    ],
+    [
+     386.0,
+     618.0
+    ],
+    [
+     75.0,
+     616.0
+    ],
+    [
+     75.0,
+     653.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     640.0
+    ],
+    [
+     388.0,
+     636.0
+    ]
+   ],
+   "readings": {
+    "kraken": "guarnello da dona",
+    "tei": "1 guarnello da donna",
+    "tei_expanded": "1 guarnello da donna",
+    "claude": "1 guarnello da donna"
+   },
+   "flag": false,
+   "note": "",
+   "text": "guarnello da dona",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      164.0,
      640.0
@@ -3354,7 +4669,7 @@
      640.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      164.0,
      640.0
@@ -3363,18 +4678,153 @@
      388.0,
      636.0
     ]
-   ],
-   "readings": {
-    "kraken": "guarnello da dona"
-   },
-   "flag": false,
-   "note": "",
-   "text": "guarnello da dona",
-   "agreement": null
+   ]
   },
   {
    "id": "l19",
    "polygon": [
+    [
+     154.0,
+     693.0
+    ],
+    [
+     155.0,
+     693.0
+    ],
+    [
+     156.0,
+     693.0
+    ],
+    [
+     198.0,
+     684.0
+    ],
+    [
+     227.0,
+     693.0
+    ],
+    [
+     228.0,
+     693.0
+    ],
+    [
+     229.0,
+     693.0
+    ],
+    [
+     230.0,
+     693.0
+    ],
+    [
+     264.0,
+     684.0
+    ],
+    [
+     430.0,
+     693.0
+    ],
+    [
+     432.0,
+     693.0
+    ],
+    [
+     433.0,
+     693.0
+    ],
+    [
+     462.0,
+     683.0
+    ],
+    [
+     462.0,
+     674.0
+    ],
+    [
+     462.0,
+     659.0
+    ],
+    [
+     369.0,
+     651.0
+    ],
+    [
+     368.0,
+     651.0
+    ],
+    [
+     366.0,
+     651.0
+    ],
+    [
+     365.0,
+     651.0
+    ],
+    [
+     354.0,
+     659.0
+    ],
+    [
+     325.0,
+     659.0
+    ],
+    [
+     317.0,
+     651.0
+    ],
+    [
+     316.0,
+     651.0
+    ],
+    [
+     315.0,
+     651.0
+    ],
+    [
+     314.0,
+     651.0
+    ],
+    [
+     249.0,
+     658.0
+    ],
+    [
+     195.0,
+     651.0
+    ],
+    [
+     194.0,
+     651.0
+    ],
+    [
+     75.0,
+     654.0
+    ],
+    [
+     75.0,
+     684.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     674.0
+    ],
+    [
+     462.0,
+     674.0
+    ]
+   ],
+   "readings": {
+    "kraken": "u sscingatoi buoni scoppiati",
+    "tei": "v sciugatoi buoni scoppiati",
+    "tei_expanded": "v sciugatoi buoni scoppiati",
+    "claude": "v sciugatoi buoni scoppiati"
+   },
+   "flag": false,
+   "note": "",
+   "text": "u sscingatoi buoni scoppiati",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      136.0,
      674.0
@@ -3504,7 +4954,7 @@
      674.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      136.0,
      674.0
@@ -3513,14 +4963,7 @@
      462.0,
      674.0
     ]
-   ],
-   "readings": {
-    "kraken": "u sscingatoi buoni scoppiati"
-   },
-   "flag": false,
-   "note": "",
-   "text": "u sscingatoi buoni scoppiati",
-   "agreement": null
+   ]
   },
   {
    "id": "l20",
@@ -3575,6 +5018,176 @@
   {
    "id": "l21",
    "polygon": [
+    [
+     211.0,
+     727.0
+    ],
+    [
+     211.0,
+     726.0
+    ],
+    [
+     212.0,
+     726.0
+    ],
+    [
+     227.0,
+     717.0
+    ],
+    [
+     233.0,
+     723.0
+    ],
+    [
+     234.0,
+     723.0
+    ],
+    [
+     235.0,
+     723.0
+    ],
+    [
+     236.0,
+     723.0
+    ],
+    [
+     237.0,
+     723.0
+    ],
+    [
+     238.0,
+     723.0
+    ],
+    [
+     250.0,
+     714.0
+    ],
+    [
+     285.0,
+     718.0
+    ],
+    [
+     286.0,
+     718.0
+    ],
+    [
+     321.0,
+     713.0
+    ],
+    [
+     357.0,
+     723.0
+    ],
+    [
+     358.0,
+     723.0
+    ],
+    [
+     359.0,
+     723.0
+    ],
+    [
+     360.0,
+     723.0
+    ],
+    [
+     361.0,
+     723.0
+    ],
+    [
+     377.0,
+     713.0
+    ],
+    [
+     377.0,
+     705.0
+    ],
+    [
+     373.0,
+     681.0
+    ],
+    [
+     357.0,
+     688.0
+    ],
+    [
+     321.0,
+     681.0
+    ],
+    [
+     320.0,
+     681.0
+    ],
+    [
+     318.0,
+     681.0
+    ],
+    [
+     293.0,
+     689.0
+    ],
+    [
+     285.0,
+     682.0
+    ],
+    [
+     285.0,
+     681.0
+    ],
+    [
+     284.0,
+     681.0
+    ],
+    [
+     283.0,
+     681.0
+    ],
+    [
+     252.0,
+     681.0
+    ],
+    [
+     251.0,
+     681.0
+    ],
+    [
+     250.0,
+     681.0
+    ],
+    [
+     232.0,
+     691.0
+    ],
+    [
+     75.0,
+     684.0
+    ],
+    [
+     75.0,
+     727.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     708.0
+    ],
+    [
+     377.0,
+     705.0
+    ]
+   ],
+   "readings": {
+    "kraken": "mocciclmi Nuovi",
+    "tei": "ii moccichini nuovi",
+    "tei_expanded": "ii moccichini nuovi",
+    "claude": "ii moccichini nuovi"
+   },
+   "flag": false,
+   "note": "",
+   "text": "mocciclmi Nuovi",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      167.0,
      727.0
@@ -3736,7 +5349,7 @@
      727.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      167.0,
      708.0
@@ -3745,14 +5358,7 @@
      377.0,
      705.0
     ]
-   ],
-   "readings": {
-    "kraken": "mocciclmi Nuovi"
-   },
-   "flag": false,
-   "note": "",
-   "text": "mocciclmi Nuovi",
-   "agreement": null
+   ]
   },
   {
    "id": "l22",
@@ -3807,6 +5413,132 @@
   {
    "id": "l23",
    "polygon": [
+    [
+     218.0,
+     757.0
+    ],
+    [
+     219.0,
+     757.0
+    ],
+    [
+     220.0,
+     757.0
+    ],
+    [
+     240.0,
+     748.0
+    ],
+    [
+     277.0,
+     756.0
+    ],
+    [
+     278.0,
+     756.0
+    ],
+    [
+     380.0,
+     746.0
+    ],
+    [
+     445.0,
+     754.0
+    ],
+    [
+     446.0,
+     754.0
+    ],
+    [
+     448.0,
+     754.0
+    ],
+    [
+     471.0,
+     743.0
+    ],
+    [
+     471.0,
+     738.0
+    ],
+    [
+     469.0,
+     723.0
+    ],
+    [
+     438.0,
+     715.0
+    ],
+    [
+     437.0,
+     715.0
+    ],
+    [
+     361.0,
+     724.0
+    ],
+    [
+     322.0,
+     716.0
+    ],
+    [
+     321.0,
+     716.0
+    ],
+    [
+     320.0,
+     716.0
+    ],
+    [
+     318.0,
+     716.0
+    ],
+    [
+     318.0,
+     717.0
+    ],
+    [
+     310.0,
+     725.0
+    ],
+    [
+     213.0,
+     718.0
+    ],
+    [
+     212.0,
+     718.0
+    ],
+    [
+     75.0,
+     727.0
+    ],
+    [
+     75.0,
+     753.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     742.0
+    ],
+    [
+     471.0,
+     738.0
+    ]
+   ],
+   "readings": {
+    "kraken": "telo di pan̄o lino vecchio",
+    "tei": "1 1/2 telo di pano lino vecchio",
+    "tei_expanded": "1 1/2 telo di pano lino vecchio",
+    "claude": "1 1/2 telo di pano lino vecchio"
+   },
+   "flag": false,
+   "note": "",
+   "text": "telo di pan̄o lino vecchio",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      173.0,
      742.0
@@ -3920,7 +5652,7 @@
      742.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      173.0,
      742.0
@@ -3929,18 +5661,137 @@
      471.0,
      738.0
     ]
-   ],
-   "readings": {
-    "kraken": "telo di pan̄o lino vecchio"
-   },
-   "flag": false,
-   "note": "",
-   "text": "telo di pan̄o lino vecchio",
-   "agreement": null
+   ]
   },
   {
    "id": "l24",
    "polygon": [
+    [
+     296.0,
+     786.0
+    ],
+    [
+     357.0,
+     792.0
+    ],
+    [
+     358.0,
+     792.0
+    ],
+    [
+     359.0,
+     792.0
+    ],
+    [
+     373.0,
+     786.0
+    ],
+    [
+     412.0,
+     791.0
+    ],
+    [
+     413.0,
+     791.0
+    ],
+    [
+     452.0,
+     785.0
+    ],
+    [
+     470.0,
+     791.0
+    ],
+    [
+     471.0,
+     791.0
+    ],
+    [
+     472.0,
+     791.0
+    ],
+    [
+     526.0,
+     782.0
+    ],
+    [
+     526.0,
+     774.0
+    ],
+    [
+     524.0,
+     759.0
+    ],
+    [
+     412.0,
+     752.0
+    ],
+    [
+     411.0,
+     752.0
+    ],
+    [
+     368.0,
+     759.0
+    ],
+    [
+     292.0,
+     753.0
+    ],
+    [
+     291.0,
+     753.0
+    ],
+    [
+     290.0,
+     753.0
+    ],
+    [
+     260.0,
+     760.0
+    ],
+    [
+     242.0,
+     754.0
+    ],
+    [
+     241.0,
+     754.0
+    ],
+    [
+     240.0,
+     754.0
+    ],
+    [
+     75.0,
+     760.0
+    ],
+    [
+     75.0,
+     793.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     777.0
+    ],
+    [
+     526.0,
+     774.0
+    ]
+   ],
+   "readings": {
+    "kraken": "paio di chale vecchie da luomo",
+    "tei": "1 paio di chalze vecchie da huomo",
+    "tei_expanded": "1 paio di chalze vecchie da huomo",
+    "claude": "1 paio di chalze vecchie da huomo"
+   },
+   "flag": false,
+   "note": "",
+   "text": "paio di chale vecchie da luomo",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      174.0,
      777.0
@@ -4054,7 +5905,7 @@
      777.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      174.0,
      777.0
@@ -4063,18 +5914,349 @@
      526.0,
      774.0
     ]
-   ],
-   "readings": {
-    "kraken": "paio di chale vecchie da luomo"
-   },
-   "flag": false,
-   "note": "",
-   "text": "paio di chale vecchie da luomo",
-   "agreement": null
+   ]
   },
   {
    "id": "l25",
    "polygon": [
+    [
+     211.0,
+     823.0
+    ],
+    [
+     230.0,
+     823.0
+    ],
+    [
+     237.0,
+     829.0
+    ],
+    [
+     237.0,
+     830.0
+    ],
+    [
+     238.0,
+     830.0
+    ],
+    [
+     240.0,
+     830.0
+    ],
+    [
+     241.0,
+     830.0
+    ],
+    [
+     242.0,
+     830.0
+    ],
+    [
+     261.0,
+     823.0
+    ],
+    [
+     279.0,
+     828.0
+    ],
+    [
+     280.0,
+     828.0
+    ],
+    [
+     281.0,
+     828.0
+    ],
+    [
+     282.0,
+     828.0
+    ],
+    [
+     302.0,
+     823.0
+    ],
+    [
+     317.0,
+     830.0
+    ],
+    [
+     318.0,
+     830.0
+    ],
+    [
+     320.0,
+     830.0
+    ],
+    [
+     321.0,
+     830.0
+    ],
+    [
+     352.0,
+     822.0
+    ],
+    [
+     401.0,
+     822.0
+    ],
+    [
+     424.0,
+     830.0
+    ],
+    [
+     425.0,
+     830.0
+    ],
+    [
+     426.0,
+     830.0
+    ],
+    [
+     427.0,
+     830.0
+    ],
+    [
+     442.0,
+     824.0
+    ],
+    [
+     496.0,
+     829.0
+    ],
+    [
+     497.0,
+     829.0
+    ],
+    [
+     498.0,
+     829.0
+    ],
+    [
+     499.0,
+     829.0
+    ],
+    [
+     508.0,
+     822.0
+    ],
+    [
+     516.0,
+     828.0
+    ],
+    [
+     517.0,
+     828.0
+    ],
+    [
+     518.0,
+     828.0
+    ],
+    [
+     562.0,
+     829.0
+    ],
+    [
+     563.0,
+     829.0
+    ],
+    [
+     564.0,
+     829.0
+    ],
+    [
+     565.0,
+     829.0
+    ],
+    [
+     579.0,
+     820.0
+    ],
+    [
+     579.0,
+     808.0
+    ],
+    [
+     577.0,
+     787.0
+    ],
+    [
+     529.0,
+     781.0
+    ],
+    [
+     528.0,
+     781.0
+    ],
+    [
+     526.0,
+     781.0
+    ],
+    [
+     525.0,
+     781.0
+    ],
+    [
+     516.0,
+     788.0
+    ],
+    [
+     484.0,
+     781.0
+    ],
+    [
+     483.0,
+     781.0
+    ],
+    [
+     482.0,
+     781.0
+    ],
+    [
+     481.0,
+     781.0
+    ],
+    [
+     465.0,
+     792.0
+    ],
+    [
+     432.0,
+     792.0
+    ],
+    [
+     418.0,
+     782.0
+    ],
+    [
+     417.0,
+     782.0
+    ],
+    [
+     416.0,
+     782.0
+    ],
+    [
+     368.0,
+     782.0
+    ],
+    [
+     366.0,
+     782.0
+    ],
+    [
+     365.0,
+     782.0
+    ],
+    [
+     364.0,
+     782.0
+    ],
+    [
+     364.0,
+     784.0
+    ],
+    [
+     355.0,
+     793.0
+    ],
+    [
+     314.0,
+     793.0
+    ],
+    [
+     299.0,
+     785.0
+    ],
+    [
+     298.0,
+     785.0
+    ],
+    [
+     297.0,
+     785.0
+    ],
+    [
+     296.0,
+     785.0
+    ],
+    [
+     295.0,
+     785.0
+    ],
+    [
+     286.0,
+     791.0
+    ],
+    [
+     279.0,
+     785.0
+    ],
+    [
+     279.0,
+     784.0
+    ],
+    [
+     278.0,
+     784.0
+    ],
+    [
+     277.0,
+     784.0
+    ],
+    [
+     261.0,
+     784.0
+    ],
+    [
+     260.0,
+     784.0
+    ],
+    [
+     259.0,
+     784.0
+    ],
+    [
+     258.0,
+     784.0
+    ],
+    [
+     258.0,
+     785.0
+    ],
+    [
+     247.0,
+     794.0
+    ],
+    [
+     75.0,
+     794.0
+    ],
+    [
+     75.0,
+     832.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     811.0
+    ],
+    [
+     579.0,
+     808.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Inuoglia legata cō iscampoli vecchi",
+    "tei": "1 Invoglia legata con i scampoli vecchi",
+    "tei_expanded": "1 Invoglia legata con i scampoli vecchi",
+    "claude": "1 Invoglia legata cō i scampoli vecchi"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Inuoglia legata cō iscampoli vecchi",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      177.0,
      811.0
@@ -4400,7 +6582,7 @@
      811.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      177.0,
      811.0
@@ -4409,14 +6591,7 @@
      579.0,
      808.0
     ]
-   ],
-   "readings": {
-    "kraken": "Inuoglia legata cō iscampoli vecchi"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Inuoglia legata cō iscampoli vecchi",
-   "agreement": null
+   ]
   },
   {
    "id": "l26",
@@ -4501,7 +6676,10 @@
     ]
    ],
    "readings": {
-    "kraken": "⁊ Nuoiiii"
+    "kraken": "⁊ Nuoiiii",
+    "tei": "e nuovi",
+    "tei_expanded": "e nuovi",
+    "claude": "⁊ nuovi"
    },
    "flag": false,
    "note": "",
@@ -4511,6 +6689,204 @@
   {
    "id": "l27",
    "polygon": [
+    [
+     250.0,
+     885.0
+    ],
+    [
+     345.0,
+     890.0
+    ],
+    [
+     346.0,
+     890.0
+    ],
+    [
+     347.0,
+     890.0
+    ],
+    [
+     377.0,
+     883.0
+    ],
+    [
+     387.0,
+     889.0
+    ],
+    [
+     388.0,
+     889.0
+    ],
+    [
+     389.0,
+     889.0
+    ],
+    [
+     390.0,
+     889.0
+    ],
+    [
+     391.0,
+     889.0
+    ],
+    [
+     420.0,
+     882.0
+    ],
+    [
+     438.0,
+     888.0
+    ],
+    [
+     439.0,
+     888.0
+    ],
+    [
+     440.0,
+     888.0
+    ],
+    [
+     489.0,
+     883.0
+    ],
+    [
+     507.0,
+     887.0
+    ],
+    [
+     508.0,
+     887.0
+    ],
+    [
+     509.0,
+     887.0
+    ],
+    [
+     510.0,
+     887.0
+    ],
+    [
+     532.0,
+     880.0
+    ],
+    [
+     583.0,
+     880.0
+    ],
+    [
+     583.0,
+     871.0
+    ],
+    [
+     580.0,
+     854.0
+    ],
+    [
+     510.0,
+     855.0
+    ],
+    [
+     491.0,
+     848.0
+    ],
+    [
+     490.0,
+     848.0
+    ],
+    [
+     489.0,
+     848.0
+    ],
+    [
+     488.0,
+     848.0
+    ],
+    [
+     475.0,
+     854.0
+    ],
+    [
+     392.0,
+     850.0
+    ],
+    [
+     391.0,
+     850.0
+    ],
+    [
+     390.0,
+     850.0
+    ],
+    [
+     371.0,
+     857.0
+    ],
+    [
+     352.0,
+     850.0
+    ],
+    [
+     350.0,
+     850.0
+    ],
+    [
+     349.0,
+     850.0
+    ],
+    [
+     348.0,
+     850.0
+    ],
+    [
+     334.0,
+     857.0
+    ],
+    [
+     278.0,
+     852.0
+    ],
+    [
+     277.0,
+     852.0
+    ],
+    [
+     222.0,
+     860.0
+    ],
+    [
+     75.0,
+     857.0
+    ],
+    [
+     75.0,
+     891.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     880.0
+    ],
+    [
+     345.0,
+     873.0
+    ],
+    [
+     583.0,
+     871.0
+    ]
+   ],
+   "readings": {
+    "kraken": "paia di maniche cō bottoni dariento",
+    "tei": "iii paia di maniche con bottoni dariento",
+    "tei_expanded": "iii paia di maniche con bottoni dariento",
+    "claude": "iii paia di maniche cō bottoni dariento"
+   },
+   "flag": false,
+   "note": "",
+   "text": "paia di maniche cō bottoni dariento",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      176.0,
      880.0
@@ -4692,7 +7068,7 @@
      880.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      176.0,
      880.0
@@ -4705,14 +7081,7 @@
      583.0,
      871.0
     ]
-   ],
-   "readings": {
-    "kraken": "paia di maniche cō bottoni dariento"
-   },
-   "flag": false,
-   "note": "",
-   "text": "paia di maniche cō bottoni dariento",
-   "agreement": null
+   ]
   },
   {
    "id": "l28",
@@ -4965,7 +7334,9 @@
     ]
    ],
    "readings": {
-    "kraken": "alluno paio xviii bottoni grossi"
+    "kraken": "alluno paio xviii bottoni grossi",
+    "tei": "alluno paio xviii bottoni grossi",
+    "tei_expanded": "alluno paio xviii bottoni grossi"
    },
    "flag": false,
    "note": "",
@@ -5127,7 +7498,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Allaltro paio lvi dariento toni"
+    "kraken": "Allaltro paio lvi dariento toni",
+    "tei": "allaltro paio lvi dariento tondi",
+    "tei_expanded": "allaltro paio lvi dariento tondi",
+    "claude": "allaltro paio lvi dariento tondi"
    },
    "flag": false,
    "note": "",
@@ -5365,7 +7739,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Allaltro paio lxii Entrovi una sƒ"
+    "kraken": "Allaltro paio lxii Entrovi una sƒ",
+    "tei": "allaltro paio lxii Entroi una M",
+    "tei_expanded": "allaltro paio lxii Entroi una M",
+    "claude": "allaltro paio lxii Entroi una M"
    },
    "flag": false,
    "note": "",
@@ -5375,6 +7752,168 @@
   {
    "id": "l31",
    "polygon": [
+    [
+     225.0,
+     1016.0
+    ],
+    [
+     237.0,
+     1022.0
+    ],
+    [
+     238.0,
+     1022.0
+    ],
+    [
+     240.0,
+     1022.0
+    ],
+    [
+     283.0,
+     1014.0
+    ],
+    [
+     423.0,
+     1017.0
+    ],
+    [
+     424.0,
+     1017.0
+    ],
+    [
+     460.0,
+     1016.0
+    ],
+    [
+     461.0,
+     1016.0
+    ],
+    [
+     462.0,
+     1016.0
+    ],
+    [
+     473.0,
+     1009.0
+    ],
+    [
+     491.0,
+     1014.0
+    ],
+    [
+     492.0,
+     1014.0
+    ],
+    [
+     493.0,
+     1014.0
+    ],
+    [
+     539.0,
+     1006.0
+    ],
+    [
+     566.0,
+     1010.0
+    ],
+    [
+     567.0,
+     996.0
+    ],
+    [
+     565.0,
+     978.0
+    ],
+    [
+     533.0,
+     971.0
+    ],
+    [
+     532.0,
+     971.0
+    ],
+    [
+     474.0,
+     981.0
+    ],
+    [
+     433.0,
+     981.0
+    ],
+    [
+     426.0,
+     974.0
+    ],
+    [
+     425.0,
+     974.0
+    ],
+    [
+     424.0,
+     974.0
+    ],
+    [
+     423.0,
+     974.0
+    ],
+    [
+     422.0,
+     974.0
+    ],
+    [
+     387.0,
+     983.0
+    ],
+    [
+     324.0,
+     978.0
+    ],
+    [
+     323.0,
+     978.0
+    ],
+    [
+     322.0,
+     978.0
+    ],
+    [
+     321.0,
+     978.0
+    ],
+    [
+     311.0,
+     986.0
+    ],
+    [
+     75.0,
+     986.0
+    ],
+    [
+     75.0,
+     1024.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1008.0
+    ],
+    [
+     567.0,
+     996.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Gilanaccha cō maniche starlatta",
+    "tei": "1 Gaurnaccha con maniche scarlatta",
+    "tei_expanded": "1 Gaurnaccha con maniche scarlatta",
+    "claude": "1 Gaurnaccha cō maniche scarlatta"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Gilanaccha cō maniche starlatta",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      177.0,
      1008.0
@@ -5536,7 +8075,7 @@
      1008.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      177.0,
      1008.0
@@ -5545,14 +8084,7 @@
      567.0,
      996.0
     ]
-   ],
-   "readings": {
-    "kraken": "Gilanaccha cō maniche starlatta"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Gilanaccha cō maniche starlatta",
-   "agreement": null
+   ]
   },
   {
    "id": "l32",
@@ -5821,7 +8353,10 @@
     ]
    ],
    "readings": {
-    "kraken": "sdruscita ⁊ uno scampolino Azurino"
+    "kraken": "sdruscita ⁊ uno scampolino Azurino",
+    "tei": "sdruscita e uno scampolino azurrino",
+    "tei_expanded": "sdruscita e uno scampolino azurrino",
+    "claude": "sdruscita ⁊ uno scampolino azurrino"
    },
    "flag": false,
    "note": "",
@@ -5831,6 +8366,92 @@
   {
    "id": "l33",
    "polygon": [
+    [
+     240.0,
+     1090.0
+    ],
+    [
+     241.0,
+     1090.0
+    ],
+    [
+     302.0,
+     1078.0
+    ],
+    [
+     338.0,
+     1078.0
+    ],
+    [
+     360.0,
+     1085.0
+    ],
+    [
+     361.0,
+     1085.0
+    ],
+    [
+     362.0,
+     1085.0
+    ],
+    [
+     363.0,
+     1085.0
+    ],
+    [
+     364.0,
+     1085.0
+    ],
+    [
+     364.0,
+     1084.0
+    ],
+    [
+     373.0,
+     1076.0
+    ],
+    [
+     453.0,
+     1075.0
+    ],
+    [
+     454.0,
+     1065.0
+    ],
+    [
+     451.0,
+     1046.0
+    ],
+    [
+     75.0,
+     1056.0
+    ],
+    [
+     75.0,
+     1083.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1075.0
+    ],
+    [
+     454.0,
+     1065.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Cappellina di sciamito",
+    "tei": "1 Cappellina di sciamito",
+    "tei_expanded": "1 Cappellina di sciamito",
+    "claude": "1 Cappellina di sciamito"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Cappellina di sciamito",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      180.0,
      1075.0
@@ -5904,7 +8525,7 @@
      1075.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      180.0,
      1075.0
@@ -5913,18 +8534,213 @@
      454.0,
      1065.0
     ]
-   ],
-   "readings": {
-    "kraken": "Cappellina di sciamito"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Cappellina di sciamito",
-   "agreement": null
+   ]
   },
   {
    "id": "l34",
    "polygon": [
+    [
+     288.0,
+     1123.0
+    ],
+    [
+     289.0,
+     1123.0
+    ],
+    [
+     333.0,
+     1110.0
+    ],
+    [
+     454.0,
+     1110.0
+    ],
+    [
+     455.0,
+     1110.0
+    ],
+    [
+     517.0,
+     1101.0
+    ],
+    [
+     524.0,
+     1107.0
+    ],
+    [
+     525.0,
+     1107.0
+    ],
+    [
+     526.0,
+     1107.0
+    ],
+    [
+     528.0,
+     1107.0
+    ],
+    [
+     529.0,
+     1107.0
+    ],
+    [
+     540.0,
+     1101.0
+    ],
+    [
+     553.0,
+     1110.0
+    ],
+    [
+     554.0,
+     1110.0
+    ],
+    [
+     555.0,
+     1110.0
+    ],
+    [
+     556.0,
+     1110.0
+    ],
+    [
+     590.0,
+     1108.0
+    ],
+    [
+     590.0,
+     1089.0
+    ],
+    [
+     589.0,
+     1070.0
+    ],
+    [
+     563.0,
+     1064.0
+    ],
+    [
+     562.0,
+     1064.0
+    ],
+    [
+     561.0,
+     1064.0
+    ],
+    [
+     515.0,
+     1075.0
+    ],
+    [
+     489.0,
+     1068.0
+    ],
+    [
+     488.0,
+     1068.0
+    ],
+    [
+     487.0,
+     1068.0
+    ],
+    [
+     428.0,
+     1070.0
+    ],
+    [
+     427.0,
+     1070.0
+    ],
+    [
+     413.0,
+     1077.0
+    ],
+    [
+     403.0,
+     1072.0
+    ],
+    [
+     402.0,
+     1072.0
+    ],
+    [
+     401.0,
+     1072.0
+    ],
+    [
+     400.0,
+     1072.0
+    ],
+    [
+     398.0,
+     1072.0
+    ],
+    [
+     387.0,
+     1080.0
+    ],
+    [
+     306.0,
+     1078.0
+    ],
+    [
+     305.0,
+     1078.0
+    ],
+    [
+     240.0,
+     1088.0
+    ],
+    [
+     218.0,
+     1080.0
+    ],
+    [
+     217.0,
+     1080.0
+    ],
+    [
+     216.0,
+     1080.0
+    ],
+    [
+     215.0,
+     1080.0
+    ],
+    [
+     75.0,
+     1089.0
+    ],
+    [
+     75.0,
+     1126.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1112.0
+    ],
+    [
+     216.0,
+     1106.0
+    ],
+    [
+     590.0,
+     1089.0
+    ]
+   ],
+   "readings": {
+    "kraken": "gheroni di mantello da huomo vecchi",
+    "tei": "iii gheroni di mantello da huomo vecchi",
+    "tei_expanded": "iii gheroni di mantello da huomo vecchi",
+    "claude": "iii gheroni di mantello da huomo vecchi"
+   },
+   "flag": false,
+   "note": "",
+   "text": "gheroni di mantello da huomo vecchi",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      196.0,
      1112.0
@@ -6110,7 +8926,7 @@
      1112.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      196.0,
      1112.0
@@ -6123,18 +8939,297 @@
      590.0,
      1089.0
     ]
-   ],
-   "readings": {
-    "kraken": "gheroni di mantello da huomo vecchi"
-   },
-   "flag": false,
-   "note": "",
-   "text": "gheroni di mantello da huomo vecchi",
-   "agreement": null
+   ]
   },
   {
    "id": "l35",
    "polygon": [
+    [
+     198.0,
+     1158.0
+    ],
+    [
+     199.0,
+     1158.0
+    ],
+    [
+     200.0,
+     1158.0
+    ],
+    [
+     201.0,
+     1158.0
+    ],
+    [
+     202.0,
+     1158.0
+    ],
+    [
+     212.0,
+     1150.0
+    ],
+    [
+     224.0,
+     1159.0
+    ],
+    [
+     225.0,
+     1159.0
+    ],
+    [
+     226.0,
+     1159.0
+    ],
+    [
+     227.0,
+     1160.0
+    ],
+    [
+     245.0,
+     1160.0
+    ],
+    [
+     245.0,
+     1159.0
+    ],
+    [
+     246.0,
+     1159.0
+    ],
+    [
+     277.0,
+     1146.0
+    ],
+    [
+     293.0,
+     1150.0
+    ],
+    [
+     294.0,
+     1150.0
+    ],
+    [
+     295.0,
+     1150.0
+    ],
+    [
+     296.0,
+     1150.0
+    ],
+    [
+     297.0,
+     1150.0
+    ],
+    [
+     305.0,
+     1145.0
+    ],
+    [
+     328.0,
+     1155.0
+    ],
+    [
+     329.0,
+     1155.0
+    ],
+    [
+     330.0,
+     1155.0
+    ],
+    [
+     331.0,
+     1155.0
+    ],
+    [
+     362.0,
+     1142.0
+    ],
+    [
+     392.0,
+     1152.0
+    ],
+    [
+     393.0,
+     1152.0
+    ],
+    [
+     394.0,
+     1152.0
+    ],
+    [
+     395.0,
+     1152.0
+    ],
+    [
+     422.0,
+     1144.0
+    ],
+    [
+     433.0,
+     1147.0
+    ],
+    [
+     434.0,
+     1147.0
+    ],
+    [
+     435.0,
+     1147.0
+    ],
+    [
+     436.0,
+     1147.0
+    ],
+    [
+     437.0,
+     1147.0
+    ],
+    [
+     448.0,
+     1139.0
+    ],
+    [
+     454.0,
+     1144.0
+    ],
+    [
+     455.0,
+     1144.0
+    ],
+    [
+     456.0,
+     1144.0
+    ],
+    [
+     457.0,
+     1144.0
+    ],
+    [
+     458.0,
+     1144.0
+    ],
+    [
+     478.0,
+     1137.0
+    ],
+    [
+     522.0,
+     1137.0
+    ],
+    [
+     522.0,
+     1127.0
+    ],
+    [
+     519.0,
+     1110.0
+    ],
+    [
+     485.0,
+     1111.0
+    ],
+    [
+     477.0,
+     1105.0
+    ],
+    [
+     477.0,
+     1104.0
+    ],
+    [
+     476.0,
+     1104.0
+    ],
+    [
+     475.0,
+     1104.0
+    ],
+    [
+     474.0,
+     1104.0
+    ],
+    [
+     402.0,
+     1116.0
+    ],
+    [
+     329.0,
+     1118.0
+    ],
+    [
+     311.0,
+     1112.0
+    ],
+    [
+     310.0,
+     1112.0
+    ],
+    [
+     309.0,
+     1112.0
+    ],
+    [
+     308.0,
+     1112.0
+    ],
+    [
+     290.0,
+     1122.0
+    ],
+    [
+     259.0,
+     1123.0
+    ],
+    [
+     245.0,
+     1115.0
+    ],
+    [
+     244.0,
+     1115.0
+    ],
+    [
+     243.0,
+     1115.0
+    ],
+    [
+     242.0,
+     1115.0
+    ],
+    [
+     217.0,
+     1125.0
+    ],
+    [
+     75.0,
+     1125.0
+    ],
+    [
+     75.0,
+     1150.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1144.0
+    ],
+    [
+     522.0,
+     1127.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Cappucci di paonazo dahuomo",
+    "tei": "ii cappucci di paonazo da huomo",
+    "tei_expanded": "ii cappucci di paonazo da huomo",
+    "claude": "ii cappucci di paonazo da huomo"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Cappucci di paonazo dahuomo",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      182.0,
      1144.0
@@ -6408,7 +9503,7 @@
      1144.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      182.0,
      1144.0
@@ -6417,14 +9512,7 @@
      522.0,
      1127.0
     ]
-   ],
-   "readings": {
-    "kraken": "Cappucci di paonazo dahuomo"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Cappucci di paonazo dahuomo",
-   "agreement": null
+   ]
   },
   {
    "id": "l36",
@@ -6725,7 +9813,10 @@
     ]
    ],
    "readings": {
-    "kraken": "v Capucci da den̄a vecchi ⁊Nuoiii"
+    "kraken": "v Capucci da den̄a vecchi ⁊Nuoiii",
+    "tei": "v Cappucci da donna vecchi e Nuovi",
+    "tei_expanded": "v Cappucci da donna vecchi e Nuovi",
+    "claude": "v Cappucci da donna vecchi e Nuovi"
    },
    "flag": false,
    "note": "",
@@ -6735,6 +9826,296 @@
   {
    "id": "l37",
    "polygon": [
+    [
+     236.0,
+     1234.0
+    ],
+    [
+     237.0,
+     1234.0
+    ],
+    [
+     238.0,
+     1234.0
+    ],
+    [
+     256.0,
+     1221.0
+    ],
+    [
+     305.0,
+     1227.0
+    ],
+    [
+     306.0,
+     1227.0
+    ],
+    [
+     307.0,
+     1227.0
+    ],
+    [
+     308.0,
+     1227.0
+    ],
+    [
+     308.0,
+     1226.0
+    ],
+    [
+     314.0,
+     1220.0
+    ],
+    [
+     408.0,
+     1212.0
+    ],
+    [
+     426.0,
+     1224.0
+    ],
+    [
+     427.0,
+     1224.0
+    ],
+    [
+     428.0,
+     1224.0
+    ],
+    [
+     429.0,
+     1224.0
+    ],
+    [
+     473.0,
+     1222.0
+    ],
+    [
+     474.0,
+     1222.0
+    ],
+    [
+     475.0,
+     1222.0
+    ],
+    [
+     496.0,
+     1208.0
+    ],
+    [
+     508.0,
+     1213.0
+    ],
+    [
+     509.0,
+     1213.0
+    ],
+    [
+     510.0,
+     1213.0
+    ],
+    [
+     512.0,
+     1213.0
+    ],
+    [
+     535.0,
+     1205.0
+    ],
+    [
+     535.0,
+     1195.0
+    ],
+    [
+     533.0,
+     1179.0
+    ],
+    [
+     499.0,
+     1172.0
+    ],
+    [
+     498.0,
+     1172.0
+    ],
+    [
+     497.0,
+     1172.0
+    ],
+    [
+     496.0,
+     1172.0
+    ],
+    [
+     482.0,
+     1180.0
+    ],
+    [
+     473.0,
+     1176.0
+    ],
+    [
+     472.0,
+     1176.0
+    ],
+    [
+     471.0,
+     1176.0
+    ],
+    [
+     470.0,
+     1176.0
+    ],
+    [
+     450.0,
+     1182.0
+    ],
+    [
+     439.0,
+     1176.0
+    ],
+    [
+     438.0,
+     1176.0
+    ],
+    [
+     437.0,
+     1176.0
+    ],
+    [
+     436.0,
+     1176.0
+    ],
+    [
+     435.0,
+     1176.0
+    ],
+    [
+     434.0,
+     1176.0
+    ],
+    [
+     434.0,
+     1177.0
+    ],
+    [
+     433.0,
+     1177.0
+    ],
+    [
+     427.0,
+     1185.0
+    ],
+    [
+     379.0,
+     1186.0
+    ],
+    [
+     370.0,
+     1178.0
+    ],
+    [
+     369.0,
+     1178.0
+    ],
+    [
+     368.0,
+     1178.0
+    ],
+    [
+     366.0,
+     1178.0
+    ],
+    [
+     365.0,
+     1178.0
+    ],
+    [
+     340.0,
+     1186.0
+    ],
+    [
+     306.0,
+     1181.0
+    ],
+    [
+     305.0,
+     1181.0
+    ],
+    [
+     304.0,
+     1181.0
+    ],
+    [
+     280.0,
+     1191.0
+    ],
+    [
+     248.0,
+     1185.0
+    ],
+    [
+     247.0,
+     1185.0
+    ],
+    [
+     246.0,
+     1185.0
+    ],
+    [
+     245.0,
+     1185.0
+    ],
+    [
+     233.0,
+     1193.0
+    ],
+    [
+     225.0,
+     1187.0
+    ],
+    [
+     224.0,
+     1187.0
+    ],
+    [
+     222.0,
+     1187.0
+    ],
+    [
+     221.0,
+     1187.0
+    ],
+    [
+     75.0,
+     1189.0
+    ],
+    [
+     75.0,
+     1234.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1213.0
+    ],
+    [
+     535.0,
+     1195.0
+    ]
+   ],
+   "readings": {
+    "kraken": "farsettessa dabuomo Aurrina",
+    "tei": "1 farsettessa da huomo Azurrina",
+    "tei_expanded": "1 farsettessa da huomo Azurrina",
+    "claude": "1 farsettessa da huomo Azurrina"
+   },
+   "flag": false,
+   "note": "",
+   "text": "farsettessa dabuomo Aurrina",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      182.0,
      1213.0
@@ -7012,7 +10393,7 @@
      1213.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      182.0,
      1213.0
@@ -7021,14 +10402,7 @@
      535.0,
      1195.0
     ]
-   ],
-   "readings": {
-    "kraken": "farsettessa dabuomo Aurrina"
-   },
-   "flag": false,
-   "note": "",
-   "text": "farsettessa dabuomo Aurrina",
-   "agreement": null
+   ]
   },
   {
    "id": "l38",
@@ -7193,7 +10567,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Cose ī unaltro forziere"
+    "kraken": "Cose ī unaltro forziere",
+    "tei": "Cose in un altro forziere",
+    "tei_expanded": "Cose in un altro forziere",
+    "claude": "Cose ī un altro forziere"
    },
    "flag": false,
    "note": "",
@@ -7253,6 +10630,288 @@
   {
    "id": "l40",
    "polygon": [
+    [
+     215.0,
+     1330.0
+    ],
+    [
+     216.0,
+     1330.0
+    ],
+    [
+     237.0,
+     1319.0
+    ],
+    [
+     257.0,
+     1326.0
+    ],
+    [
+     258.0,
+     1326.0
+    ],
+    [
+     259.0,
+     1326.0
+    ],
+    [
+     308.0,
+     1315.0
+    ],
+    [
+     318.0,
+     1322.0
+    ],
+    [
+     320.0,
+     1322.0
+    ],
+    [
+     321.0,
+     1322.0
+    ],
+    [
+     322.0,
+     1322.0
+    ],
+    [
+     352.0,
+     1321.0
+    ],
+    [
+     353.0,
+     1321.0
+    ],
+    [
+     354.0,
+     1321.0
+    ],
+    [
+     354.0,
+     1320.0
+    ],
+    [
+     365.0,
+     1310.0
+    ],
+    [
+     387.0,
+     1317.0
+    ],
+    [
+     388.0,
+     1317.0
+    ],
+    [
+     389.0,
+     1317.0
+    ],
+    [
+     390.0,
+     1317.0
+    ],
+    [
+     391.0,
+     1317.0
+    ],
+    [
+     391.0,
+     1316.0
+    ],
+    [
+     403.0,
+     1305.0
+    ],
+    [
+     501.0,
+     1301.0
+    ],
+    [
+     501.0,
+     1290.0
+    ],
+    [
+     498.0,
+     1262.0
+    ],
+    [
+     460.0,
+     1266.0
+    ],
+    [
+     459.0,
+     1266.0
+    ],
+    [
+     458.0,
+     1266.0
+    ],
+    [
+     448.0,
+     1273.0
+    ],
+    [
+     426.0,
+     1268.0
+    ],
+    [
+     425.0,
+     1268.0
+    ],
+    [
+     424.0,
+     1268.0
+    ],
+    [
+     423.0,
+     1268.0
+    ],
+    [
+     411.0,
+     1273.0
+    ],
+    [
+     403.0,
+     1268.0
+    ],
+    [
+     402.0,
+     1268.0
+    ],
+    [
+     401.0,
+     1268.0
+    ],
+    [
+     400.0,
+     1268.0
+    ],
+    [
+     398.0,
+     1268.0
+    ],
+    [
+     382.0,
+     1276.0
+    ],
+    [
+     374.0,
+     1271.0
+    ],
+    [
+     373.0,
+     1271.0
+    ],
+    [
+     372.0,
+     1271.0
+    ],
+    [
+     371.0,
+     1271.0
+    ],
+    [
+     370.0,
+     1271.0
+    ],
+    [
+     369.0,
+     1271.0
+    ],
+    [
+     362.0,
+     1276.0
+    ],
+    [
+     338.0,
+     1273.0
+    ],
+    [
+     337.0,
+     1273.0
+    ],
+    [
+     336.0,
+     1273.0
+    ],
+    [
+     334.0,
+     1273.0
+    ],
+    [
+     334.0,
+     1274.0
+    ],
+    [
+     333.0,
+     1274.0
+    ],
+    [
+     328.0,
+     1281.0
+    ],
+    [
+     310.0,
+     1274.0
+    ],
+    [
+     309.0,
+     1274.0
+    ],
+    [
+     308.0,
+     1274.0
+    ],
+    [
+     272.0,
+     1276.0
+    ],
+    [
+     270.0,
+     1276.0
+    ],
+    [
+     269.0,
+     1276.0
+    ],
+    [
+     269.0,
+     1277.0
+    ],
+    [
+     258.0,
+     1289.0
+    ],
+    [
+     75.0,
+     1293.0
+    ],
+    [
+     75.0,
+     1331.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1310.0
+    ],
+    [
+     501.0,
+     1290.0
+    ]
+   ],
+   "readings": {
+    "kraken": "paniere cō sei libri vecchi",
+    "tei": "1 paniere con sei libri vecchi",
+    "tei_expanded": "1 paniere con sei libri vecchi",
+    "claude": "1 paniere cō sei libri vecchi"
+   },
+   "flag": false,
+   "note": "",
+   "text": "paniere cō sei libri vecchi",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      185.0,
      1310.0
@@ -7522,7 +11181,7 @@
      1310.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      185.0,
      1310.0
@@ -7531,18 +11190,197 @@
      501.0,
      1290.0
     ]
-   ],
-   "readings": {
-    "kraken": "paniere cō sei libri vecchi"
-   },
-   "flag": false,
-   "note": "",
-   "text": "paniere cō sei libri vecchi",
-   "agreement": null
+   ]
   },
   {
    "id": "l41",
    "polygon": [
+    [
+     236.0,
+     1356.0
+    ],
+    [
+     237.0,
+     1356.0
+    ],
+    [
+     238.0,
+     1356.0
+    ],
+    [
+     246.0,
+     1350.0
+    ],
+    [
+     276.0,
+     1354.0
+    ],
+    [
+     277.0,
+     1354.0
+    ],
+    [
+     278.0,
+     1354.0
+    ],
+    [
+     279.0,
+     1354.0
+    ],
+    [
+     288.0,
+     1347.0
+    ],
+    [
+     296.0,
+     1351.0
+    ],
+    [
+     297.0,
+     1351.0
+    ],
+    [
+     298.0,
+     1351.0
+    ],
+    [
+     299.0,
+     1351.0
+    ],
+    [
+     338.0,
+     1340.0
+    ],
+    [
+     381.0,
+     1348.0
+    ],
+    [
+     382.0,
+     1348.0
+    ],
+    [
+     384.0,
+     1348.0
+    ],
+    [
+     385.0,
+     1348.0
+    ],
+    [
+     397.0,
+     1336.0
+    ],
+    [
+     488.0,
+     1331.0
+    ],
+    [
+     488.0,
+     1322.0
+    ],
+    [
+     486.0,
+     1305.0
+    ],
+    [
+     464.0,
+     1300.0
+    ],
+    [
+     462.0,
+     1300.0
+    ],
+    [
+     461.0,
+     1300.0
+    ],
+    [
+     400.0,
+     1303.0
+    ],
+    [
+     398.0,
+     1303.0
+    ],
+    [
+     388.0,
+     1308.0
+    ],
+    [
+     371.0,
+     1305.0
+    ],
+    [
+     370.0,
+     1305.0
+    ],
+    [
+     369.0,
+     1305.0
+    ],
+    [
+     368.0,
+     1305.0
+    ],
+    [
+     368.0,
+     1306.0
+    ],
+    [
+     360.0,
+     1314.0
+    ],
+    [
+     285.0,
+     1313.0
+    ],
+    [
+     284.0,
+     1313.0
+    ],
+    [
+     283.0,
+     1313.0
+    ],
+    [
+     282.0,
+     1313.0
+    ],
+    [
+     275.0,
+     1320.0
+    ],
+    [
+     75.0,
+     1324.0
+    ],
+    [
+     75.0,
+     1358.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1340.0
+    ],
+    [
+     488.0,
+     1322.0
+    ]
+   ],
+   "readings": {
+    "kraken": "phamurra vecchia dadon̄a",
+    "tei": "1 ghamurra vecchia da donna",
+    "tei_expanded": "1 ghamurra vecchia da donna",
+    "claude": "1 ghamurra vecchia da donna"
+   },
+   "flag": false,
+   "note": "",
+   "text": "phamurra vecchia dadon̄a",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      197.0,
      1340.0
@@ -7716,7 +11554,7 @@
      1340.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      197.0,
      1340.0
@@ -7725,18 +11563,133 @@
      488.0,
      1322.0
     ]
-   ],
-   "readings": {
-    "kraken": "phamurra vecchia dadon̄a"
-   },
-   "flag": false,
-   "note": "",
-   "text": "phamurra vecchia dadon̄a",
-   "agreement": null
+   ]
   },
   {
    "id": "l42",
    "polygon": [
+    [
+     204.0,
+     1392.0
+    ],
+    [
+     221.0,
+     1384.0
+    ],
+    [
+     228.0,
+     1389.0
+    ],
+    [
+     229.0,
+     1389.0
+    ],
+    [
+     230.0,
+     1389.0
+    ],
+    [
+     231.0,
+     1389.0
+    ],
+    [
+     302.0,
+     1377.0
+    ],
+    [
+     471.0,
+     1367.0
+    ],
+    [
+     471.0,
+     1355.0
+    ],
+    [
+     468.0,
+     1331.0
+    ],
+    [
+     403.0,
+     1342.0
+    ],
+    [
+     384.0,
+     1339.0
+    ],
+    [
+     382.0,
+     1339.0
+    ],
+    [
+     381.0,
+     1339.0
+    ],
+    [
+     359.0,
+     1348.0
+    ],
+    [
+     342.0,
+     1341.0
+    ],
+    [
+     341.0,
+     1341.0
+    ],
+    [
+     340.0,
+     1341.0
+    ],
+    [
+     339.0,
+     1341.0
+    ],
+    [
+     338.0,
+     1341.0
+    ],
+    [
+     338.0,
+     1342.0
+    ],
+    [
+     337.0,
+     1342.0
+    ],
+    [
+     330.0,
+     1351.0
+    ],
+    [
+     75.0,
+     1357.0
+    ],
+    [
+     75.0,
+     1392.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1378.0
+    ],
+    [
+     471.0,
+     1355.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Cioppa vecchia dadon̄a",
+    "tei": "1 Cioppa vecchia da donna",
+    "tei_expanded": "1 Cioppa vecchia da donna",
+    "claude": "1 Cioppa vecchia da donna"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Cioppa vecchia dadon̄a",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      190.0,
      1378.0
@@ -7858,7 +11811,7 @@
      1378.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      190.0,
      1378.0
@@ -7867,18 +11820,185 @@
      471.0,
      1355.0
     ]
-   ],
-   "readings": {
-    "kraken": "Cioppa vecchia dadon̄a"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Cioppa vecchia dadon̄a",
-   "agreement": null
+   ]
   },
   {
    "id": "l43",
    "polygon": [
+    [
+     250.0,
+     1412.0
+    ],
+    [
+     264.0,
+     1419.0
+    ],
+    [
+     265.0,
+     1419.0
+    ],
+    [
+     266.0,
+     1419.0
+    ],
+    [
+     267.0,
+     1419.0
+    ],
+    [
+     268.0,
+     1419.0
+    ],
+    [
+     278.0,
+     1413.0
+    ],
+    [
+     300.0,
+     1419.0
+    ],
+    [
+     301.0,
+     1419.0
+    ],
+    [
+     302.0,
+     1419.0
+    ],
+    [
+     304.0,
+     1419.0
+    ],
+    [
+     305.0,
+     1419.0
+    ],
+    [
+     305.0,
+     1418.0
+    ],
+    [
+     314.0,
+     1408.0
+    ],
+    [
+     358.0,
+     1404.0
+    ],
+    [
+     374.0,
+     1415.0
+    ],
+    [
+     375.0,
+     1415.0
+    ],
+    [
+     376.0,
+     1415.0
+    ],
+    [
+     377.0,
+     1415.0
+    ],
+    [
+     393.0,
+     1414.0
+    ],
+    [
+     394.0,
+     1414.0
+    ],
+    [
+     416.0,
+     1401.0
+    ],
+    [
+     416.0,
+     1393.0
+    ],
+    [
+     413.0,
+     1371.0
+    ],
+    [
+     339.0,
+     1368.0
+    ],
+    [
+     338.0,
+     1368.0
+    ],
+    [
+     307.0,
+     1370.0
+    ],
+    [
+     306.0,
+     1370.0
+    ],
+    [
+     305.0,
+     1370.0
+    ],
+    [
+     293.0,
+     1380.0
+    ],
+    [
+     273.0,
+     1373.0
+    ],
+    [
+     272.0,
+     1373.0
+    ],
+    [
+     270.0,
+     1373.0
+    ],
+    [
+     269.0,
+     1373.0
+    ],
+    [
+     268.0,
+     1373.0
+    ],
+    [
+     252.0,
+     1385.0
+    ],
+    [
+     75.0,
+     1385.0
+    ],
+    [
+     75.0,
+     1425.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1405.0
+    ],
+    [
+     416.0,
+     1393.0
+    ]
+   ],
+   "readings": {
+    "kraken": "paio duosi bianchi",
+    "tei": "1 paio duosi bianchi",
+    "tei_expanded": "1 paio duosi bianchi",
+    "claude": "1 paio duosi bianchi"
+   },
+   "flag": false,
+   "note": "",
+   "text": "paio duosi bianchi",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      193.0,
      1405.0
@@ -8040,7 +12160,7 @@
      1405.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      193.0,
      1405.0
@@ -8049,18 +12169,117 @@
      416.0,
      1393.0
     ]
-   ],
-   "readings": {
-    "kraken": "paio duosi bianchi"
-   },
-   "flag": false,
-   "note": "",
-   "text": "paio duosi bianchi",
-   "agreement": null
+   ]
   },
   {
    "id": "l44",
    "polygon": [
+    [
+     249.0,
+     1453.0
+    ],
+    [
+     249.0,
+     1452.0
+    ],
+    [
+     250.0,
+     1452.0
+    ],
+    [
+     293.0,
+     1441.0
+    ],
+    [
+     305.0,
+     1446.0
+    ],
+    [
+     306.0,
+     1446.0
+    ],
+    [
+     307.0,
+     1446.0
+    ],
+    [
+     308.0,
+     1446.0
+    ],
+    [
+     309.0,
+     1446.0
+    ],
+    [
+     315.0,
+     1440.0
+    ],
+    [
+     331.0,
+     1445.0
+    ],
+    [
+     332.0,
+     1445.0
+    ],
+    [
+     333.0,
+     1445.0
+    ],
+    [
+     334.0,
+     1445.0
+    ],
+    [
+     336.0,
+     1445.0
+    ],
+    [
+     345.0,
+     1438.0
+    ],
+    [
+     374.0,
+     1442.0
+    ],
+    [
+     375.0,
+     1428.0
+    ],
+    [
+     372.0,
+     1405.0
+    ],
+    [
+     75.0,
+     1415.0
+    ],
+    [
+     75.0,
+     1453.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1437.0
+    ],
+    [
+     375.0,
+     1428.0
+    ]
+   ],
+   "readings": {
+    "kraken": "farsetti vecchi",
+    "tei": "ii farsetti vecchi",
+    "tei_expanded": "ii farsetti vecchi",
+    "claude": "ii farsetti vecchi"
+   },
+   "flag": false,
+   "note": "",
+   "text": "farsetti vecchi",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      192.0,
      1437.0
@@ -8154,7 +12373,7 @@
      1437.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      192.0,
      1437.0
@@ -8163,18 +12382,233 @@
      375.0,
      1428.0
     ]
-   ],
-   "readings": {
-    "kraken": "farsetti vecchi"
-   },
-   "flag": false,
-   "note": "",
-   "text": "farsetti vecchi",
-   "agreement": null
+   ]
   },
   {
    "id": "l45",
    "polygon": [
+    [
+     269.0,
+     1484.0
+    ],
+    [
+     269.0,
+     1483.0
+    ],
+    [
+     270.0,
+     1483.0
+    ],
+    [
+     272.0,
+     1483.0
+    ],
+    [
+     290.0,
+     1472.0
+    ],
+    [
+     315.0,
+     1470.0
+    ],
+    [
+     344.0,
+     1478.0
+    ],
+    [
+     345.0,
+     1478.0
+    ],
+    [
+     346.0,
+     1478.0
+    ],
+    [
+     347.0,
+     1478.0
+    ],
+    [
+     348.0,
+     1478.0
+    ],
+    [
+     363.0,
+     1466.0
+    ],
+    [
+     396.0,
+     1470.0
+    ],
+    [
+     397.0,
+     1470.0
+    ],
+    [
+     398.0,
+     1470.0
+    ],
+    [
+     400.0,
+     1470.0
+    ],
+    [
+     409.0,
+     1463.0
+    ],
+    [
+     438.0,
+     1470.0
+    ],
+    [
+     439.0,
+     1470.0
+    ],
+    [
+     440.0,
+     1470.0
+    ],
+    [
+     484.0,
+     1468.0
+    ],
+    [
+     485.0,
+     1468.0
+    ],
+    [
+     486.0,
+     1468.0
+    ],
+    [
+     501.0,
+     1457.0
+    ],
+    [
+     590.0,
+     1451.0
+    ],
+    [
+     590.0,
+     1442.0
+    ],
+    [
+     588.0,
+     1422.0
+    ],
+    [
+     466.0,
+     1422.0
+    ],
+    [
+     465.0,
+     1422.0
+    ],
+    [
+     464.0,
+     1422.0
+    ],
+    [
+     420.0,
+     1434.0
+    ],
+    [
+     397.0,
+     1428.0
+    ],
+    [
+     396.0,
+     1428.0
+    ],
+    [
+     395.0,
+     1428.0
+    ],
+    [
+     394.0,
+     1428.0
+    ],
+    [
+     373.0,
+     1435.0
+    ],
+    [
+     359.0,
+     1430.0
+    ],
+    [
+     358.0,
+     1430.0
+    ],
+    [
+     357.0,
+     1430.0
+    ],
+    [
+     305.0,
+     1442.0
+    ],
+    [
+     282.0,
+     1436.0
+    ],
+    [
+     281.0,
+     1436.0
+    ],
+    [
+     280.0,
+     1436.0
+    ],
+    [
+     279.0,
+     1436.0
+    ],
+    [
+     263.0,
+     1445.0
+    ],
+    [
+     222.0,
+     1442.0
+    ],
+    [
+     221.0,
+     1442.0
+    ],
+    [
+     220.0,
+     1442.0
+    ],
+    [
+     75.0,
+     1449.0
+    ],
+    [
+     75.0,
+     1484.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1469.0
+    ],
+    [
+     590.0,
+     1442.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Cioppa cilestrina vecchia davomo",
+    "tei": "1 Cioppa cilestrina vecchia da uomo",
+    "tei_expanded": "1 Cioppa cilestrina vecchia da uomo",
+    "claude": "1 Cioppa cilestrina vecchia da uomo"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Cioppa cilestrina vecchia davomo",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      193.0,
      1469.0
@@ -8384,7 +12818,7 @@
      1469.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      193.0,
      1469.0
@@ -8393,18 +12827,229 @@
      590.0,
      1442.0
     ]
-   ],
-   "readings": {
-    "kraken": "Cioppa cilestrina vecchia davomo"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Cioppa cilestrina vecchia davomo",
-   "agreement": null
+   ]
   },
   {
    "id": "l46",
    "polygon": [
+    [
+     225.0,
+     1510.0
+    ],
+    [
+     257.0,
+     1515.0
+    ],
+    [
+     258.0,
+     1515.0
+    ],
+    [
+     259.0,
+     1515.0
+    ],
+    [
+     260.0,
+     1515.0
+    ],
+    [
+     272.0,
+     1506.0
+    ],
+    [
+     281.0,
+     1510.0
+    ],
+    [
+     282.0,
+     1510.0
+    ],
+    [
+     283.0,
+     1510.0
+    ],
+    [
+     284.0,
+     1510.0
+    ],
+    [
+     285.0,
+     1510.0
+    ],
+    [
+     297.0,
+     1504.0
+    ],
+    [
+     359.0,
+     1504.0
+    ],
+    [
+     360.0,
+     1504.0
+    ],
+    [
+     361.0,
+     1504.0
+    ],
+    [
+     362.0,
+     1504.0
+    ],
+    [
+     373.0,
+     1497.0
+    ],
+    [
+     445.0,
+     1499.0
+    ],
+    [
+     446.0,
+     1499.0
+    ],
+    [
+     448.0,
+     1499.0
+    ],
+    [
+     499.0,
+     1485.0
+    ],
+    [
+     499.0,
+     1481.0
+    ],
+    [
+     496.0,
+     1454.0
+    ],
+    [
+     468.0,
+     1465.0
+    ],
+    [
+     443.0,
+     1465.0
+    ],
+    [
+     435.0,
+     1459.0
+    ],
+    [
+     434.0,
+     1459.0
+    ],
+    [
+     433.0,
+     1459.0
+    ],
+    [
+     432.0,
+     1459.0
+    ],
+    [
+     380.0,
+     1463.0
+    ],
+    [
+     379.0,
+     1463.0
+    ],
+    [
+     378.0,
+     1463.0
+    ],
+    [
+     365.0,
+     1474.0
+    ],
+    [
+     285.0,
+     1479.0
+    ],
+    [
+     274.0,
+     1474.0
+    ],
+    [
+     273.0,
+     1474.0
+    ],
+    [
+     272.0,
+     1474.0
+    ],
+    [
+     270.0,
+     1474.0
+    ],
+    [
+     269.0,
+     1474.0
+    ],
+    [
+     269.0,
+     1475.0
+    ],
+    [
+     262.0,
+     1482.0
+    ],
+    [
+     240.0,
+     1483.0
+    ],
+    [
+     219.0,
+     1477.0
+    ],
+    [
+     218.0,
+     1477.0
+    ],
+    [
+     217.0,
+     1477.0
+    ],
+    [
+     216.0,
+     1477.0
+    ],
+    [
+     75.0,
+     1484.0
+    ],
+    [
+     75.0,
+     1515.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1504.0
+    ],
+    [
+     450.0,
+     1481.0
+    ],
+    [
+     499.0,
+     1481.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Cappucci vecchi da huomo",
+    "tei": "iiiiº Cappucci vecchia da huomo",
+    "tei_expanded": "iiiiº Cappucci vecchia da huomo",
+    "claude": "iiiiº Cappucci vecchia da huomo"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Cappucci vecchi da huomo",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      195.0,
      1504.0
@@ -8606,7 +13251,7 @@
      1504.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      195.0,
      1504.0
@@ -8619,18 +13264,185 @@
      499.0,
      1481.0
     ]
-   ],
-   "readings": {
-    "kraken": "Cappucci vecchi da huomo"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Cappucci vecchi da huomo",
-   "agreement": null
+   ]
   },
   {
    "id": "l47",
    "polygon": [
+    [
+     282.0,
+     1536.0
+    ],
+    [
+     302.0,
+     1539.0
+    ],
+    [
+     304.0,
+     1539.0
+    ],
+    [
+     305.0,
+     1539.0
+    ],
+    [
+     320.0,
+     1532.0
+    ],
+    [
+     340.0,
+     1539.0
+    ],
+    [
+     341.0,
+     1539.0
+    ],
+    [
+     342.0,
+     1539.0
+    ],
+    [
+     390.0,
+     1534.0
+    ],
+    [
+     391.0,
+     1534.0
+    ],
+    [
+     392.0,
+     1534.0
+    ],
+    [
+     392.0,
+     1533.0
+    ],
+    [
+     403.0,
+     1525.0
+    ],
+    [
+     458.0,
+     1526.0
+    ],
+    [
+     459.0,
+     1526.0
+    ],
+    [
+     460.0,
+     1526.0
+    ],
+    [
+     461.0,
+     1526.0
+    ],
+    [
+     461.0,
+     1525.0
+    ],
+    [
+     462.0,
+     1525.0
+    ],
+    [
+     466.0,
+     1520.0
+    ],
+    [
+     486.0,
+     1524.0
+    ],
+    [
+     487.0,
+     1524.0
+    ],
+    [
+     593.0,
+     1511.0
+    ],
+    [
+     593.0,
+     1500.0
+    ],
+    [
+     590.0,
+     1483.0
+    ],
+    [
+     484.0,
+     1483.0
+    ],
+    [
+     483.0,
+     1483.0
+    ],
+    [
+     482.0,
+     1483.0
+    ],
+    [
+     435.0,
+     1497.0
+    ],
+    [
+     267.0,
+     1502.0
+    ],
+    [
+     266.0,
+     1502.0
+    ],
+    [
+     265.0,
+     1502.0
+    ],
+    [
+     265.0,
+     1504.0
+    ],
+    [
+     254.0,
+     1512.0
+    ],
+    [
+     234.0,
+     1509.0
+    ],
+    [
+     233.0,
+     1509.0
+    ],
+    [
+     75.0,
+     1517.0
+    ],
+    [
+     75.0,
+     1552.0
+    ]
+   ],
+   "baseline": [
+    [
+     75.0,
+     1536.0
+    ],
+    [
+     593.0,
+     1500.0
+    ]
+   ],
+   "readings": {
+    "kraken": "gonella cilestrina vecchia davomo",
+    "tei": "1 gonella cilestrina vecchia da uomo",
+    "tei_expanded": "1 gonella cilestrina vecchia da uomo",
+    "claude": "1 gonella cilestrina vecchia da uomo"
+   },
+   "flag": false,
+   "note": "",
+   "text": "gonella cilestrina vecchia davomo",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      197.0,
      1536.0
@@ -8792,7 +13604,7 @@
      1536.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      197.0,
      1536.0
@@ -8801,14 +13613,7 @@
      593.0,
      1500.0
     ]
-   ],
-   "readings": {
-    "kraken": "gonella cilestrina vecchia davomo"
-   },
-   "flag": false,
-   "note": "",
-   "text": "gonella cilestrina vecchia davomo",
-   "agreement": null
+   ]
   },
   {
    "id": "l48",
@@ -9101,7 +13906,10 @@
     ]
    ],
    "readings": {
-    "kraken": "viii tragon̄elle ⁊ cioppoline dafanciulli"
+    "kraken": "viii tragon̄elle ⁊ cioppoline dafanciulli",
+    "tei": "viii tragonnello e cioppolino da fanciulli",
+    "tei_expanded": "viii tragonnello e cioppolino da fanciulli",
+    "claude": "viii tragonnello ⁊ cioppolino da fanciulli"
    },
    "flag": false,
    "note": "",
@@ -9163,7 +13971,9 @@
     ]
    ],
    "readings": {
-    "kraken": "vecchie"
+    "kraken": "vecchie",
+    "tei": "vecchie",
+    "tei_expanded": "vecchie"
    },
    "flag": false,
    "note": "",
@@ -9227,6 +14037,144 @@
   {
    "id": "l51",
    "polygon": [
+    [
+     683.0,
+     188.0
+    ],
+    [
+     684.0,
+     188.0
+    ],
+    [
+     685.0,
+     188.0
+    ],
+    [
+     728.0,
+     181.0
+    ],
+    [
+     755.0,
+     182.0
+    ],
+    [
+     762.0,
+     189.0
+    ],
+    [
+     762.0,
+     190.0
+    ],
+    [
+     763.0,
+     190.0
+    ],
+    [
+     764.0,
+     190.0
+    ],
+    [
+     765.0,
+     190.0
+    ],
+    [
+     785.0,
+     187.0
+    ],
+    [
+     801.0,
+     197.0
+    ],
+    [
+     802.0,
+     197.0
+    ],
+    [
+     803.0,
+     197.0
+    ],
+    [
+     804.0,
+     197.0
+    ],
+    [
+     845.0,
+     193.0
+    ],
+    [
+     848.0,
+     181.0
+    ],
+    [
+     848.0,
+     163.0
+    ],
+    [
+     830.0,
+     155.0
+    ],
+    [
+     829.0,
+     155.0
+    ],
+    [
+     828.0,
+     155.0
+    ],
+    [
+     827.0,
+     155.0
+    ],
+    [
+     804.0,
+     161.0
+    ],
+    [
+     730.0,
+     148.0
+    ],
+    [
+     729.0,
+     148.0
+    ],
+    [
+     728.0,
+     148.0
+    ],
+    [
+     715.0,
+     154.0
+    ],
+    [
+     592.0,
+     145.0
+    ],
+    [
+     592.0,
+     173.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     166.0
+    ],
+    [
+     848.0,
+     181.0
+    ]
+   ],
+   "readings": {
+    "kraken": "lenzuola vecchie",
+    "tei": "iii lenzuola vecchie",
+    "tei_expanded": "iii lenzuola vecchie",
+    "claude": "iii lenzuola vecchie"
+   },
+   "flag": false,
+   "note": "",
+   "text": "lenzuola vecchie",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      642.0,
      166.0
@@ -9352,7 +14300,7 @@
      166.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      642.0,
      166.0
@@ -9361,18 +14309,185 @@
      848.0,
      181.0
     ]
-   ],
-   "readings": {
-    "kraken": "lenzuola vecchie"
-   },
-   "flag": false,
-   "note": "",
-   "text": "lenzuola vecchie",
-   "agreement": null
+   ]
   },
   {
    "id": "l52",
    "polygon": [
+    [
+     706.0,
+     217.0
+    ],
+    [
+     707.0,
+     217.0
+    ],
+    [
+     761.0,
+     213.0
+    ],
+    [
+     773.0,
+     220.0
+    ],
+    [
+     774.0,
+     220.0
+    ],
+    [
+     775.0,
+     220.0
+    ],
+    [
+     776.0,
+     220.0
+    ],
+    [
+     777.0,
+     220.0
+    ],
+    [
+     787.0,
+     216.0
+    ],
+    [
+     795.0,
+     224.0
+    ],
+    [
+     796.0,
+     224.0
+    ],
+    [
+     797.0,
+     224.0
+    ],
+    [
+     845.0,
+     227.0
+    ],
+    [
+     848.0,
+     212.0
+    ],
+    [
+     848.0,
+     195.0
+    ],
+    [
+     776.0,
+     192.0
+    ],
+    [
+     766.0,
+     183.0
+    ],
+    [
+     765.0,
+     183.0
+    ],
+    [
+     764.0,
+     183.0
+    ],
+    [
+     763.0,
+     183.0
+    ],
+    [
+     762.0,
+     183.0
+    ],
+    [
+     752.0,
+     188.0
+    ],
+    [
+     746.0,
+     182.0
+    ],
+    [
+     745.0,
+     182.0
+    ],
+    [
+     745.0,
+     181.0
+    ],
+    [
+     744.0,
+     181.0
+    ],
+    [
+     743.0,
+     181.0
+    ],
+    [
+     722.0,
+     179.0
+    ],
+    [
+     721.0,
+     179.0
+    ],
+    [
+     720.0,
+     179.0
+    ],
+    [
+     718.0,
+     179.0
+    ],
+    [
+     718.0,
+     180.0
+    ],
+    [
+     710.0,
+     186.0
+    ],
+    [
+     694.0,
+     186.0
+    ],
+    [
+     665.0,
+     174.0
+    ],
+    [
+     664.0,
+     174.0
+    ],
+    [
+     592.0,
+     174.0
+    ],
+    [
+     592.0,
+     204.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     197.0
+    ],
+    [
+     848.0,
+     212.0
+    ]
+   ],
+   "readings": {
+    "kraken": "tovaglia vechia",
+    "tei": "1 tovaglia vecchia",
+    "tei_expanded": "1 tovaglia vecchia",
+    "claude": "1 tovaglia vecchia"
+   },
+   "flag": false,
+   "note": "",
+   "text": "tovaglia vechia",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      649.0,
      197.0
@@ -9542,7 +14657,7 @@
      197.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      649.0,
      197.0
@@ -9551,18 +14666,157 @@
      848.0,
      212.0
     ]
-   ],
-   "readings": {
-    "kraken": "tovaglia vechia"
-   },
-   "flag": false,
-   "note": "",
-   "text": "tovaglia vechia",
-   "agreement": null
+   ]
   },
   {
    "id": "l53",
    "polygon": [
+    [
+     691.0,
+     240.0
+    ],
+    [
+     702.0,
+     250.0
+    ],
+    [
+     704.0,
+     250.0
+    ],
+    [
+     705.0,
+     250.0
+    ],
+    [
+     706.0,
+     250.0
+    ],
+    [
+     738.0,
+     244.0
+    ],
+    [
+     753.0,
+     254.0
+    ],
+    [
+     754.0,
+     254.0
+    ],
+    [
+     755.0,
+     254.0
+    ],
+    [
+     756.0,
+     254.0
+    ],
+    [
+     794.0,
+     248.0
+    ],
+    [
+     812.0,
+     259.0
+    ],
+    [
+     813.0,
+     259.0
+    ],
+    [
+     814.0,
+     259.0
+    ],
+    [
+     816.0,
+     259.0
+    ],
+    [
+     859.0,
+     254.0
+    ],
+    [
+     861.0,
+     244.0
+    ],
+    [
+     861.0,
+     228.0
+    ],
+    [
+     835.0,
+     227.0
+    ],
+    [
+     827.0,
+     219.0
+    ],
+    [
+     827.0,
+     218.0
+    ],
+    [
+     826.0,
+     218.0
+    ],
+    [
+     825.0,
+     218.0
+    ],
+    [
+     824.0,
+     218.0
+    ],
+    [
+     823.0,
+     218.0
+    ],
+    [
+     811.0,
+     224.0
+    ],
+    [
+     773.0,
+     222.0
+    ],
+    [
+     743.0,
+     212.0
+    ],
+    [
+     742.0,
+     212.0
+    ],
+    [
+     592.0,
+     212.0
+    ],
+    [
+     592.0,
+     238.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     229.0
+    ],
+    [
+     861.0,
+     244.0
+    ]
+   ],
+   "readings": {
+    "kraken": "tovagluole vecchie",
+    "tei": "ii tovagluole vecchie",
+    "tei_expanded": "ii tovagluole vecchie",
+    "claude": "ii tovagluole vecchie"
+   },
+   "flag": false,
+   "note": "",
+   "text": "tovagluole vecchie",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      650.0,
      229.0
@@ -9696,7 +14950,7 @@
      229.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      650.0,
      229.0
@@ -9705,14 +14959,7 @@
      861.0,
      244.0
     ]
-   ],
-   "readings": {
-    "kraken": "tovagluole vecchie"
-   },
-   "flag": false,
-   "note": "",
-   "text": "tovagluole vecchie",
-   "agreement": null
+   ]
   },
   {
    "id": "l54",
@@ -10029,7 +15276,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Altre cose ī uno forziere Nellatanera"
+    "kraken": "Altre cose ī uno forziere Nellatanera",
+    "tei": "Altre cose in uno forziere Nella camera",
+    "tei_expanded": "Altre cose in uno forziere Nella camera",
+    "claude": "Altre cose ī uno forziere Nella camera"
    },
    "flag": false,
    "note": "",
@@ -10157,7 +15407,9 @@
     ]
    ],
    "readings": {
-    "kraken": "di sopra"
+    "kraken": "di sopra",
+    "tei": "di sopra",
+    "tei_expanded": "di sopra"
    },
    "flag": false,
    "note": "",
@@ -10167,6 +15419,256 @@
   {
    "id": "l57",
    "polygon": [
+    [
+     698.0,
+     379.0
+    ],
+    [
+     699.0,
+     379.0
+    ],
+    [
+     700.0,
+     379.0
+    ],
+    [
+     717.0,
+     372.0
+    ],
+    [
+     741.0,
+     382.0
+    ],
+    [
+     742.0,
+     382.0
+    ],
+    [
+     743.0,
+     382.0
+    ],
+    [
+     778.0,
+     375.0
+    ],
+    [
+     796.0,
+     384.0
+    ],
+    [
+     797.0,
+     384.0
+    ],
+    [
+     798.0,
+     384.0
+    ],
+    [
+     852.0,
+     379.0
+    ],
+    [
+     860.0,
+     388.0
+    ],
+    [
+     860.0,
+     389.0
+    ],
+    [
+     861.0,
+     389.0
+    ],
+    [
+     862.0,
+     389.0
+    ],
+    [
+     864.0,
+     389.0
+    ],
+    [
+     865.0,
+     389.0
+    ],
+    [
+     876.0,
+     385.0
+    ],
+    [
+     912.0,
+     391.0
+    ],
+    [
+     913.0,
+     391.0
+    ],
+    [
+     914.0,
+     391.0
+    ],
+    [
+     945.0,
+     384.0
+    ],
+    [
+     960.0,
+     384.0
+    ],
+    [
+     965.0,
+     391.0
+    ],
+    [
+     966.0,
+     391.0
+    ],
+    [
+     966.0,
+     392.0
+    ],
+    [
+     967.0,
+     392.0
+    ],
+    [
+     968.0,
+     392.0
+    ],
+    [
+     969.0,
+     392.0
+    ],
+    [
+     1004.0,
+     387.0
+    ],
+    [
+     1022.0,
+     393.0
+    ],
+    [
+     1027.0,
+     376.0
+    ],
+    [
+     1027.0,
+     359.0
+    ],
+    [
+     984.0,
+     349.0
+    ],
+    [
+     983.0,
+     349.0
+    ],
+    [
+     944.0,
+     354.0
+    ],
+    [
+     923.0,
+     346.0
+    ],
+    [
+     922.0,
+     346.0
+    ],
+    [
+     921.0,
+     346.0
+    ],
+    [
+     882.0,
+     350.0
+    ],
+    [
+     855.0,
+     343.0
+    ],
+    [
+     854.0,
+     343.0
+    ],
+    [
+     853.0,
+     343.0
+    ],
+    [
+     820.0,
+     347.0
+    ],
+    [
+     794.0,
+     340.0
+    ],
+    [
+     793.0,
+     340.0
+    ],
+    [
+     792.0,
+     340.0
+    ],
+    [
+     760.0,
+     344.0
+    ],
+    [
+     752.0,
+     338.0
+    ],
+    [
+     750.0,
+     338.0
+    ],
+    [
+     749.0,
+     338.0
+    ],
+    [
+     748.0,
+     338.0
+    ],
+    [
+     716.0,
+     342.0
+    ],
+    [
+     592.0,
+     332.0
+    ],
+    [
+     592.0,
+     377.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     357.0
+    ],
+    [
+     811.0,
+     362.0
+    ],
+    [
+     1027.0,
+     376.0
+    ]
+   ],
+   "readings": {
+    "kraken": "guardanappe Nuove grosse di ℔6 luno",
+    "tei": "ii guardamappe Nuove grosse di braccia 6 luna",
+    "tei_expanded": "ii guardamappe Nuove grosse di braccia 6 luna",
+    "claude": "ii guardamappe Nuove grosse di ƀ 6 luna"
+   },
+   "flag": false,
+   "note": "",
+   "text": "guardanappe Nuove grosse di ℔6 luno",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      643.0,
      357.0
@@ -10400,7 +15902,7 @@
      357.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      643.0,
      357.0
@@ -10413,18 +15915,141 @@
      1027.0,
      376.0
     ]
-   ],
-   "readings": {
-    "kraken": "guardanappe Nuove grosse di ℔6 luno"
-   },
-   "flag": false,
-   "note": "",
-   "text": "guardanappe Nuove grosse di ℔6 luno",
-   "agreement": null
+   ]
   },
   {
    "id": "l58",
    "polygon": [
+    [
+     699.0,
+     407.0
+    ],
+    [
+     700.0,
+     407.0
+    ],
+    [
+     750.0,
+     402.0
+    ],
+    [
+     778.0,
+     410.0
+    ],
+    [
+     779.0,
+     410.0
+    ],
+    [
+     780.0,
+     410.0
+    ],
+    [
+     912.0,
+     409.0
+    ],
+    [
+     913.0,
+     400.0
+    ],
+    [
+     913.0,
+     385.0
+    ],
+    [
+     869.0,
+     382.0
+    ],
+    [
+     861.0,
+     375.0
+    ],
+    [
+     860.0,
+     375.0
+    ],
+    [
+     859.0,
+     375.0
+    ],
+    [
+     858.0,
+     375.0
+    ],
+    [
+     857.0,
+     375.0
+    ],
+    [
+     835.0,
+     381.0
+    ],
+    [
+     817.0,
+     374.0
+    ],
+    [
+     816.0,
+     374.0
+    ],
+    [
+     814.0,
+     374.0
+    ],
+    [
+     759.0,
+     378.0
+    ],
+    [
+     728.0,
+     370.0
+    ],
+    [
+     727.0,
+     370.0
+    ],
+    [
+     726.0,
+     370.0
+    ],
+    [
+     725.0,
+     370.0
+    ],
+    [
+     709.0,
+     376.0
+    ],
+    [
+     592.0,
+     372.0
+    ],
+    [
+     592.0,
+     396.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     389.0
+    ],
+    [
+     913.0,
+     400.0
+    ]
+   ],
+   "readings": {
+    "kraken": "tovaglia vecchia ƀra 7",
+    "tei": "1 tovaglia vecchia braccia 7",
+    "tei_expanded": "1 tovaglia vecchia braccia 7",
+    "claude": "1 tovaglia vecchia ƀ 7"
+   },
+   "flag": false,
+   "note": "",
+   "text": "tovaglia vecchia ƀra 7",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      646.0,
      389.0
@@ -10542,7 +16167,7 @@
      389.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      646.0,
      389.0
@@ -10551,18 +16176,197 @@
      913.0,
      400.0
     ]
-   ],
-   "readings": {
-    "kraken": "tovaglia vecchia ƀra 7"
-   },
-   "flag": false,
-   "note": "",
-   "text": "tovaglia vecchia ƀra 7",
-   "agreement": null
+   ]
   },
   {
    "id": "l59",
    "polygon": [
+    [
+     669.0,
+     430.0
+    ],
+    [
+     704.0,
+     441.0
+    ],
+    [
+     705.0,
+     441.0
+    ],
+    [
+     706.0,
+     441.0
+    ],
+    [
+     707.0,
+     441.0
+    ],
+    [
+     726.0,
+     433.0
+    ],
+    [
+     740.0,
+     438.0
+    ],
+    [
+     741.0,
+     438.0
+    ],
+    [
+     742.0,
+     438.0
+    ],
+    [
+     743.0,
+     438.0
+    ],
+    [
+     761.0,
+     434.0
+    ],
+    [
+     794.0,
+     444.0
+    ],
+    [
+     795.0,
+     444.0
+    ],
+    [
+     796.0,
+     444.0
+    ],
+    [
+     875.0,
+     438.0
+    ],
+    [
+     890.0,
+     448.0
+    ],
+    [
+     891.0,
+     448.0
+    ],
+    [
+     892.0,
+     448.0
+    ],
+    [
+     893.0,
+     449.0
+    ],
+    [
+     915.0,
+     449.0
+    ],
+    [
+     917.0,
+     429.0
+    ],
+    [
+     916.0,
+     412.0
+    ],
+    [
+     869.0,
+     412.0
+    ],
+    [
+     858.0,
+     406.0
+    ],
+    [
+     857.0,
+     406.0
+    ],
+    [
+     856.0,
+     406.0
+    ],
+    [
+     855.0,
+     406.0
+    ],
+    [
+     827.0,
+     411.0
+    ],
+    [
+     813.0,
+     404.0
+    ],
+    [
+     812.0,
+     404.0
+    ],
+    [
+     811.0,
+     404.0
+    ],
+    [
+     766.0,
+     409.0
+    ],
+    [
+     737.0,
+     401.0
+    ],
+    [
+     736.0,
+     401.0
+    ],
+    [
+     734.0,
+     401.0
+    ],
+    [
+     699.0,
+     404.0
+    ],
+    [
+     676.0,
+     398.0
+    ],
+    [
+     675.0,
+     398.0
+    ],
+    [
+     674.0,
+     398.0
+    ],
+    [
+     592.0,
+     404.0
+    ],
+    [
+     592.0,
+     430.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     420.0
+    ],
+    [
+     917.0,
+     429.0
+    ]
+   ],
+   "readings": {
+    "kraken": "tovaiglia vecchia ℔ 4",
+    "tei": "1 tovalgia vecchia braccia 4",
+    "tei_expanded": "1 tovalgia vecchia braccia 4",
+    "claude": "1 tovalgia vecchia ƀ 4"
+   },
+   "flag": false,
+   "note": "",
+   "text": "tovaiglia vecchia ℔ 4",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      645.0,
      420.0
@@ -10736,7 +16540,7 @@
      420.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      645.0,
      420.0
@@ -10745,18 +16549,153 @@
      917.0,
      429.0
     ]
-   ],
-   "readings": {
-    "kraken": "tovaiglia vecchia ℔ 4"
-   },
-   "flag": false,
-   "note": "",
-   "text": "tovaiglia vecchia ℔ 4",
-   "agreement": null
+   ]
   },
   {
    "id": "l60",
    "polygon": [
+    [
+     661.0,
+     471.0
+    ],
+    [
+     662.0,
+     471.0
+    ],
+    [
+     706.0,
+     464.0
+    ],
+    [
+     739.0,
+     465.0
+    ],
+    [
+     747.0,
+     473.0
+    ],
+    [
+     747.0,
+     474.0
+    ],
+    [
+     748.0,
+     474.0
+    ],
+    [
+     749.0,
+     474.0
+    ],
+    [
+     750.0,
+     475.0
+    ],
+    [
+     777.0,
+     475.0
+    ],
+    [
+     777.0,
+     474.0
+    ],
+    [
+     778.0,
+     474.0
+    ],
+    [
+     779.0,
+     474.0
+    ],
+    [
+     792.0,
+     467.0
+    ],
+    [
+     814.0,
+     467.0
+    ],
+    [
+     826.0,
+     476.0
+    ],
+    [
+     827.0,
+     476.0
+    ],
+    [
+     828.0,
+     476.0
+    ],
+    [
+     829.0,
+     476.0
+    ],
+    [
+     922.0,
+     474.0
+    ],
+    [
+     923.0,
+     461.0
+    ],
+    [
+     922.0,
+     445.0
+    ],
+    [
+     821.0,
+     436.0
+    ],
+    [
+     820.0,
+     436.0
+    ],
+    [
+     819.0,
+     436.0
+    ],
+    [
+     804.0,
+     441.0
+    ],
+    [
+     716.0,
+     433.0
+    ],
+    [
+     715.0,
+     433.0
+    ],
+    [
+     592.0,
+     436.0
+    ],
+    [
+     592.0,
+     467.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     453.0
+    ],
+    [
+     923.0,
+     461.0
+    ]
+   ],
+   "readings": {
+    "kraken": "guardanapa vecchia ℔ 8",
+    "tei": "1 guardanappa vecchia braccia 8",
+    "tei_expanded": "1 guardanappa vecchia braccia 8",
+    "claude": "1 guardanappa vecchia ƀ 8"
+   },
+   "flag": false,
+   "note": "",
+   "text": "guardanapa vecchia ℔ 8",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      646.0,
      453.0
@@ -10886,7 +16825,7 @@
      453.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      646.0,
      453.0
@@ -10895,18 +16834,97 @@
      923.0,
      461.0
     ]
-   ],
-   "readings": {
-    "kraken": "guardanapa vecchia ℔ 8"
-   },
-   "flag": false,
-   "note": "",
-   "text": "guardanapa vecchia ℔ 8",
-   "agreement": null
+   ]
   },
   {
    "id": "l61",
    "polygon": [
+    [
+     720.0,
+     503.0
+    ],
+    [
+     721.0,
+     503.0
+    ],
+    [
+     754.0,
+     496.0
+    ],
+    [
+     798.0,
+     505.0
+    ],
+    [
+     800.0,
+     505.0
+    ],
+    [
+     857.0,
+     500.0
+    ],
+    [
+     888.0,
+     507.0
+    ],
+    [
+     889.0,
+     507.0
+    ],
+    [
+     890.0,
+     507.0
+    ],
+    [
+     891.0,
+     507.0
+    ],
+    [
+     892.0,
+     507.0
+    ],
+    [
+     901.0,
+     501.0
+    ],
+    [
+     902.0,
+     490.0
+    ],
+    [
+     902.0,
+     475.0
+    ],
+    [
+     592.0,
+     462.0
+    ],
+    [
+     592.0,
+     491.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     483.0
+    ],
+    [
+     902.0,
+     490.0
+    ]
+   ],
+   "readings": {
+    "kraken": "tovaglia vecchia ℔8",
+    "tei": "1 tovaglia vecchia braccia 8",
+    "tei_expanded": "1 tovaglia vecchia braccia 8",
+    "claude": "1 tovaglia vecchia ƀ 8"
+   },
+   "flag": false,
+   "note": "",
+   "text": "tovaglia vecchia ℔8",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      647.0,
      483.0
@@ -10980,7 +16998,7 @@
      483.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      647.0,
      483.0
@@ -10989,18 +17007,185 @@
      902.0,
      490.0
     ]
-   ],
-   "readings": {
-    "kraken": "tovaglia vecchia ℔8"
-   },
-   "flag": false,
-   "note": "",
-   "text": "tovaglia vecchia ℔8",
-   "agreement": null
+   ]
   },
   {
    "id": "l62",
    "polygon": [
+    [
+     716.0,
+     529.0
+    ],
+    [
+     756.0,
+     538.0
+    ],
+    [
+     757.0,
+     538.0
+    ],
+    [
+     758.0,
+     538.0
+    ],
+    [
+     759.0,
+     538.0
+    ],
+    [
+     788.0,
+     530.0
+    ],
+    [
+     812.0,
+     539.0
+    ],
+    [
+     813.0,
+     539.0
+    ],
+    [
+     814.0,
+     539.0
+    ],
+    [
+     816.0,
+     539.0
+    ],
+    [
+     817.0,
+     539.0
+    ],
+    [
+     828.0,
+     531.0
+    ],
+    [
+     909.0,
+     541.0
+    ],
+    [
+     910.0,
+     541.0
+    ],
+    [
+     912.0,
+     541.0
+    ],
+    [
+     936.0,
+     533.0
+    ],
+    [
+     937.0,
+     524.0
+    ],
+    [
+     936.0,
+     508.0
+    ],
+    [
+     903.0,
+     508.0
+    ],
+    [
+     886.0,
+     499.0
+    ],
+    [
+     885.0,
+     499.0
+    ],
+    [
+     884.0,
+     499.0
+    ],
+    [
+     883.0,
+     499.0
+    ],
+    [
+     882.0,
+     499.0
+    ],
+    [
+     865.0,
+     507.0
+    ],
+    [
+     846.0,
+     498.0
+    ],
+    [
+     845.0,
+     498.0
+    ],
+    [
+     844.0,
+     498.0
+    ],
+    [
+     757.0,
+     504.0
+    ],
+    [
+     739.0,
+     496.0
+    ],
+    [
+     738.0,
+     496.0
+    ],
+    [
+     737.0,
+     496.0
+    ],
+    [
+     706.0,
+     501.0
+    ],
+    [
+     696.0,
+     493.0
+    ],
+    [
+     695.0,
+     493.0
+    ],
+    [
+     694.0,
+     493.0
+    ],
+    [
+     592.0,
+     491.0
+    ],
+    [
+     592.0,
+     533.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     516.0
+    ],
+    [
+     937.0,
+     524.0
+    ]
+   ],
+   "readings": {
+    "kraken": "guādanappa vecchia ℔10",
+    "tei": "1 guardanappa vecchia braccia 10",
+    "tei_expanded": "1 guardanappa vecchia braccia 10",
+    "claude": "1 guardanappa vecchia ƀ 10"
+   },
+   "flag": false,
+   "note": "",
+   "text": "guādanappa vecchia ℔10",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      647.0,
      516.0
@@ -11162,7 +17347,7 @@
      516.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      647.0,
      516.0
@@ -11171,14 +17356,7 @@
      937.0,
      524.0
     ]
-   ],
-   "readings": {
-    "kraken": "guādanappa vecchia ℔10"
-   },
-   "flag": false,
-   "note": "",
-   "text": "guādanappa vecchia ℔10",
-   "agreement": null
+   ]
   },
   {
    "id": "l63",
@@ -11443,7 +17621,10 @@
     ]
    ],
    "readings": {
-    "kraken": "viº tovagluole vecchie di ƀ 3 luna"
+    "kraken": "viº tovagluole vecchie di ƀ 3 luna",
+    "tei": "vi tovagluole vecchie di braccia 3 luna",
+    "tei_expanded": "vi tovagluole vecchie di braccia 3 luna",
+    "claude": "vi tovagluole vecchie di ƀ 3 luna"
    },
    "flag": false,
    "note": "",
@@ -11554,6 +17735,80 @@
    "id": "l66",
    "polygon": [
     [
+     698.0,
+     603.0
+    ],
+    [
+     699.0,
+     603.0
+    ],
+    [
+     746.0,
+     596.0
+    ],
+    [
+     777.0,
+     596.0
+    ],
+    [
+     795.0,
+     605.0
+    ],
+    [
+     796.0,
+     605.0
+    ],
+    [
+     797.0,
+     605.0
+    ],
+    [
+     830.0,
+     598.0
+    ],
+    [
+     941.0,
+     608.0
+    ],
+    [
+     944.0,
+     590.0
+    ],
+    [
+     944.0,
+     571.0
+    ],
+    [
+     592.0,
+     568.0
+    ],
+    [
+     592.0,
+     593.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     584.0
+    ],
+    [
+     944.0,
+     590.0
+    ]
+   ],
+   "readings": {
+    "kraken": "tovaglia vecchia rotta ℔ 5",
+    "tei": "1 tovaglia vecchia rotta braccia 5",
+    "tei_expanded": "1 tovaglia vecchia rotta braccia 5",
+    "claude": "1 tovaglia vecchia rotta ƀ 5"
+   },
+   "flag": false,
+   "note": "",
+   "text": "tovaglia vecchia rotta ℔ 5",
+   "agreement": null,
+   "polygon_before_tei": [
+    [
      649.0,
      584.0
     ],
@@ -11614,7 +17869,7 @@
      584.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      649.0,
      584.0
@@ -11623,14 +17878,7 @@
      944.0,
      590.0
     ]
-   ],
-   "readings": {
-    "kraken": "tovaglia vecchia rotta ℔ 5"
-   },
-   "flag": false,
-   "note": "",
-   "text": "tovaglia vecchia rotta ℔ 5",
-   "agreement": null
+   ]
   },
   {
    "id": "l67",
@@ -11771,7 +18019,10 @@
     ]
    ],
    "readings": {
-    "kraken": "iii scingatoi vecchi"
+    "kraken": "iii scingatoi vecchi",
+    "tei": "iii sciugatoi vecchi",
+    "tei_expanded": "iii sciugatoi vecchi",
+    "claude": "iii sciugatoi vecchi"
    },
    "flag": false,
    "note": "",
@@ -11781,6 +18032,96 @@
   {
    "id": "l68",
    "polygon": [
+    [
+     673.0,
+     666.0
+    ],
+    [
+     674.0,
+     666.0
+    ],
+    [
+     675.0,
+     666.0
+    ],
+    [
+     700.0,
+     661.0
+    ],
+    [
+     753.0,
+     667.0
+    ],
+    [
+     754.0,
+     667.0
+    ],
+    [
+     755.0,
+     667.0
+    ],
+    [
+     771.0,
+     662.0
+    ],
+    [
+     786.0,
+     667.0
+    ],
+    [
+     787.0,
+     667.0
+    ],
+    [
+     788.0,
+     667.0
+    ],
+    [
+     823.0,
+     662.0
+    ],
+    [
+     942.0,
+     665.0
+    ],
+    [
+     945.0,
+     652.0
+    ],
+    [
+     945.0,
+     632.0
+    ],
+    [
+     592.0,
+     629.0
+    ],
+    [
+     592.0,
+     660.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     649.0
+    ],
+    [
+     945.0,
+     652.0
+    ]
+   ],
+   "readings": {
+    "kraken": "bende di velo sottili dadon̄a",
+    "tei": "ii bende di velo sottoli da donna",
+    "tei_expanded": "ii bende di velo sottoli da donna",
+    "claude": "ii bende di velo sottoli da donna"
+   },
+   "flag": false,
+   "note": "",
+   "text": "bende di velo sottili dadon̄a",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      658.0,
      649.0
@@ -11858,7 +18199,7 @@
      649.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      658.0,
      649.0
@@ -11867,18 +18208,85 @@
      945.0,
      652.0
     ]
-   ],
-   "readings": {
-    "kraken": "bende di velo sottili dadon̄a"
-   },
-   "flag": false,
-   "note": "",
-   "text": "bende di velo sottili dadon̄a",
-   "agreement": null
+   ]
   },
   {
    "id": "l69",
    "polygon": [
+    [
+     677.0,
+     698.0
+    ],
+    [
+     698.0,
+     692.0
+    ],
+    [
+     757.0,
+     701.0
+    ],
+    [
+     758.0,
+     701.0
+    ],
+    [
+     804.0,
+     693.0
+    ],
+    [
+     839.0,
+     698.0
+    ],
+    [
+     840.0,
+     698.0
+    ],
+    [
+     841.0,
+     698.0
+    ],
+    [
+     852.0,
+     693.0
+    ],
+    [
+     853.0,
+     683.0
+    ],
+    [
+     852.0,
+     666.0
+    ],
+    [
+     592.0,
+     660.0
+    ],
+    [
+     592.0,
+     698.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     679.0
+    ],
+    [
+     853.0,
+     683.0
+    ]
+   ],
+   "readings": {
+    "kraken": "mocci chini Nuoiii",
+    "tei": "ii moccichini Nuovi",
+    "tei_expanded": "ii moccichini Nuovi",
+    "claude": "ii moccichini Nuovi"
+   },
+   "flag": false,
+   "note": "",
+   "text": "mocci chini Nuoiii",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      662.0,
      679.0
@@ -11956,7 +18364,7 @@
      679.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      662.0,
      679.0
@@ -11965,18 +18373,105 @@
      853.0,
      683.0
     ]
-   ],
-   "readings": {
-    "kraken": "mocci chini Nuoiii"
-   },
-   "flag": false,
-   "note": "",
-   "text": "mocci chini Nuoiii",
-   "agreement": null
+   ]
   },
   {
    "id": "l70",
    "polygon": [
+    [
+     803.0,
+     727.0
+    ],
+    [
+     804.0,
+     727.0
+    ],
+    [
+     875.0,
+     718.0
+    ],
+    [
+     876.0,
+     709.0
+    ],
+    [
+     873.0,
+     689.0
+    ],
+    [
+     846.0,
+     694.0
+    ],
+    [
+     828.0,
+     685.0
+    ],
+    [
+     827.0,
+     685.0
+    ],
+    [
+     826.0,
+     685.0
+    ],
+    [
+     825.0,
+     685.0
+    ],
+    [
+     802.0,
+     696.0
+    ],
+    [
+     733.0,
+     696.0
+    ],
+    [
+     723.0,
+     688.0
+    ],
+    [
+     722.0,
+     688.0
+    ],
+    [
+     721.0,
+     688.0
+    ],
+    [
+     720.0,
+     688.0
+    ],
+    [
+     592.0,
+     688.0
+    ],
+    [
+     592.0,
+     722.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     712.0
+    ],
+    [
+     876.0,
+     709.0
+    ]
+   ],
+   "readings": {
+    "kraken": "chuffie areticelle",
+    "tei": "ii chuffie a reticelle",
+    "tei_expanded": "ii chuffie a reticelle",
+    "claude": "ii chuffie a reticelle"
+   },
+   "flag": false,
+   "note": "",
+   "text": "chuffie areticelle",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      663.0,
      712.0
@@ -12058,7 +18553,7 @@
      712.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      663.0,
      712.0
@@ -12067,18 +18562,129 @@
      876.0,
      709.0
     ]
-   ],
-   "readings": {
-    "kraken": "chuffie areticelle"
-   },
-   "flag": false,
-   "note": "",
-   "text": "chuffie areticelle",
-   "agreement": null
+   ]
   },
   {
    "id": "l71",
    "polygon": [
+    [
+     872.0,
+     759.0
+    ],
+    [
+     873.0,
+     759.0
+    ],
+    [
+     874.0,
+     759.0
+    ],
+    [
+     885.0,
+     753.0
+    ],
+    [
+     885.0,
+     741.0
+    ],
+    [
+     882.0,
+     725.0
+    ],
+    [
+     794.0,
+     727.0
+    ],
+    [
+     776.0,
+     718.0
+    ],
+    [
+     775.0,
+     718.0
+    ],
+    [
+     774.0,
+     718.0
+    ],
+    [
+     773.0,
+     718.0
+    ],
+    [
+     772.0,
+     718.0
+    ],
+    [
+     772.0,
+     720.0
+    ],
+    [
+     763.0,
+     728.0
+    ],
+    [
+     748.0,
+     720.0
+    ],
+    [
+     747.0,
+     720.0
+    ],
+    [
+     746.0,
+     720.0
+    ],
+    [
+     745.0,
+     720.0
+    ],
+    [
+     722.0,
+     728.0
+    ],
+    [
+     697.0,
+     720.0
+    ],
+    [
+     696.0,
+     720.0
+    ],
+    [
+     695.0,
+     720.0
+    ],
+    [
+     592.0,
+     720.0
+    ],
+    [
+     592.0,
+     755.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     743.0
+    ],
+    [
+     885.0,
+     741.0
+    ]
+   ],
+   "readings": {
+    "kraken": "charnaiiolo ricamato",
+    "tei": "1 charnaviolo ricamato",
+    "tei_expanded": "1 charnaviolo ricamato",
+    "claude": "1 charnaviolo ricamato"
+   },
+   "flag": false,
+   "note": "",
+   "text": "charnaiiolo ricamato",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      661.0,
      743.0
@@ -12184,7 +18790,7 @@
      743.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      661.0,
      743.0
@@ -12193,18 +18799,57 @@
      885.0,
      741.0
     ]
-   ],
-   "readings": {
-    "kraken": "charnaiiolo ricamato"
-   },
-   "flag": false,
-   "note": "",
-   "text": "charnaiiolo ricamato",
-   "agreement": null
+   ]
   },
   {
    "id": "l72",
    "polygon": [
+    [
+     727.0,
+     785.0
+    ],
+    [
+     843.0,
+     788.0
+    ],
+    [
+     844.0,
+     773.0
+    ],
+    [
+     842.0,
+     757.0
+    ],
+    [
+     592.0,
+     755.0
+    ],
+    [
+     592.0,
+     792.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     776.0
+    ],
+    [
+     844.0,
+     773.0
+    ]
+   ],
+   "readings": {
+    "kraken": "specchi davorio",
+    "tei": "ii specchi davorio",
+    "tei_expanded": "ii specchi davorio",
+    "claude": "ii specchi davorio"
+   },
+   "flag": false,
+   "note": "",
+   "text": "specchi davorio",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      667.0,
      776.0
@@ -12238,7 +18883,7 @@
      776.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      667.0,
      776.0
@@ -12247,18 +18892,77 @@
      844.0,
      773.0
     ]
-   ],
-   "readings": {
-    "kraken": "specchi davorio"
-   },
-   "flag": false,
-   "note": "",
-   "text": "specchi davorio",
-   "agreement": null
+   ]
   },
   {
    "id": "l73",
    "polygon": [
+    [
+     728.0,
+     816.0
+    ],
+    [
+     742.0,
+     823.0
+    ],
+    [
+     743.0,
+     823.0
+    ],
+    [
+     744.0,
+     824.0
+    ],
+    [
+     771.0,
+     824.0
+    ],
+    [
+     771.0,
+     823.0
+    ],
+    [
+     818.0,
+     814.0
+    ],
+    [
+     818.0,
+     807.0
+    ],
+    [
+     818.0,
+     791.0
+    ],
+    [
+     592.0,
+     791.0
+    ],
+    [
+     592.0,
+     823.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     807.0
+    ],
+    [
+     818.0,
+     807.0
+    ]
+   ],
+   "readings": {
+    "kraken": "setta di seta",
+    "tei": "1 fetta di seta",
+    "tei_expanded": "1 fetta di seta",
+    "claude": "1 fetta di seta"
+   },
+   "flag": false,
+   "note": "",
+   "text": "setta di seta",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      664.0,
      807.0
@@ -12312,7 +19016,7 @@
      807.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      664.0,
      807.0
@@ -12321,14 +19025,7 @@
      818.0,
      807.0
     ]
-   ],
-   "readings": {
-    "kraken": "setta di seta"
-   },
-   "flag": false,
-   "note": "",
-   "text": "setta di seta",
-   "agreement": null
+   ]
   },
   {
    "id": "l74",
@@ -12573,7 +19270,10 @@
     ]
    ],
    "readings": {
-    "kraken": "vi ƀra di catasciamito vēmiglio ī ii pez"
+    "kraken": "vi ƀra di catasciamito vēmiglio ī ii pez",
+    "tei": "xi braccia di cata sciamite vermiglio in ii pezi",
+    "tei_expanded": "xi braccia di cata sciamite vermiglio in ii pezi",
+    "claude": "xi ƀ di cata sciamite vermiglio ī ii pezi"
    },
    "flag": false,
    "note": "",
@@ -12679,7 +19379,10 @@
     ]
    ],
    "readings": {
-    "kraken": "iiiiº libre datcia grossa"
+    "kraken": "iiiiº libre datcia grossa",
+    "tei": "iiiiº libre daccia grossa",
+    "tei_expanded": "iiiiº libre daccia grossa",
+    "claude": "iiiiº libre daccia grossa"
    },
    "flag": false,
    "note": "",
@@ -12889,7 +19592,10 @@
     ]
    ],
    "readings": {
-    "kraken": "xviiiiº quaderni dellibro de santi padriīcarta"
+    "kraken": "xviiiiº quaderni dellibro de santi padriīcarta",
+    "tei": "xviiiiº quaderni del libro di santi padri in carta",
+    "tei_expanded": "xviiiiº quaderni del libro di santi padri in carta",
+    "claude": "xviiiiº quaderni del libro di santi padri in carta"
    },
    "flag": false,
    "note": "",
@@ -12951,7 +19657,9 @@
     ]
    ],
    "readings": {
-    "kraken": "di chavretto"
+    "kraken": "di chavretto",
+    "tei": "di chavretto",
+    "tei_expanded": "di chavretto"
    },
    "flag": false,
    "note": "",
@@ -13117,7 +19825,10 @@
     ]
    ],
    "readings": {
-    "kraken": "li briccino da don̄a"
+    "kraken": "li briccino da don̄a",
+    "tei": "1 libriccino da donna",
+    "tei_expanded": "1 libriccino da donna",
+    "claude": "1 libriccino da don̄a"
    },
    "flag": false,
    "note": "",
@@ -13315,7 +20026,10 @@
     ]
    ],
    "readings": {
-    "kraken": "iii ƀra di pan̄o lino largo"
+    "kraken": "iii ƀra di pan̄o lino largo",
+    "tei": "iii braccia di panno lino largo",
+    "tei_expanded": "iii braccia di panno lino largo",
+    "claude": "iii ƀ di pan̄o lino largo"
    },
    "flag": false,
    "note": "",
@@ -13325,6 +20039,240 @@
   {
    "id": "l80",
    "polygon": [
+    [
+     738.0,
+     1042.0
+    ],
+    [
+     739.0,
+     1042.0
+    ],
+    [
+     740.0,
+     1042.0
+    ],
+    [
+     750.0,
+     1034.0
+    ],
+    [
+     777.0,
+     1037.0
+    ],
+    [
+     778.0,
+     1037.0
+    ],
+    [
+     779.0,
+     1037.0
+    ],
+    [
+     780.0,
+     1037.0
+    ],
+    [
+     789.0,
+     1032.0
+    ],
+    [
+     837.0,
+     1038.0
+    ],
+    [
+     838.0,
+     1038.0
+    ],
+    [
+     876.0,
+     1031.0
+    ],
+    [
+     887.0,
+     1037.0
+    ],
+    [
+     888.0,
+     1037.0
+    ],
+    [
+     889.0,
+     1037.0
+    ],
+    [
+     890.0,
+     1037.0
+    ],
+    [
+     935.0,
+     1028.0
+    ],
+    [
+     946.0,
+     1034.0
+    ],
+    [
+     947.0,
+     1034.0
+    ],
+    [
+     948.0,
+     1034.0
+    ],
+    [
+     949.0,
+     1034.0
+    ],
+    [
+     950.0,
+     1034.0
+    ],
+    [
+     969.0,
+     1027.0
+    ],
+    [
+     1001.0,
+     1034.0
+    ],
+    [
+     1002.0,
+     1034.0
+    ],
+    [
+     1003.0,
+     1034.0
+    ],
+    [
+     1004.0,
+     1034.0
+    ],
+    [
+     1016.0,
+     1026.0
+    ],
+    [
+     1041.0,
+     1032.0
+    ],
+    [
+     1043.0,
+     1015.0
+    ],
+    [
+     1040.0,
+     993.0
+    ],
+    [
+     931.0,
+     1003.0
+    ],
+    [
+     919.0,
+     998.0
+    ],
+    [
+     918.0,
+     998.0
+    ],
+    [
+     917.0,
+     998.0
+    ],
+    [
+     916.0,
+     998.0
+    ],
+    [
+     901.0,
+     1003.0
+    ],
+    [
+     894.0,
+     997.0
+    ],
+    [
+     893.0,
+     997.0
+    ],
+    [
+     892.0,
+     997.0
+    ],
+    [
+     891.0,
+     997.0
+    ],
+    [
+     819.0,
+     1006.0
+    ],
+    [
+     773.0,
+     1000.0
+    ],
+    [
+     772.0,
+     1000.0
+    ],
+    [
+     771.0,
+     1000.0
+    ],
+    [
+     745.0,
+     1009.0
+    ],
+    [
+     729.0,
+     1001.0
+    ],
+    [
+     728.0,
+     1001.0
+    ],
+    [
+     727.0,
+     1001.0
+    ],
+    [
+     726.0,
+     1001.0
+    ],
+    [
+     711.0,
+     1006.0
+    ],
+    [
+     592.0,
+     1003.0
+    ],
+    [
+     592.0,
+     1042.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     1026.0
+    ],
+    [
+     1043.0,
+     1015.0
+    ]
+   ],
+   "readings": {
+    "kraken": "sacchettino vergato Entrovi una ab",
+    "tei": "1 sacchettino vergato entrovi un ab",
+    "tei_expanded": "1 sacchettino vergato entrovi un ab",
+    "claude": "1 sacchettino vergato entrovi un ab"
+   },
+   "flag": false,
+   "note": "",
+   "text": "sacchettino vergato Entrovi una ab",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      672.0,
      1026.0
@@ -13546,7 +20494,7 @@
      1026.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      672.0,
      1026.0
@@ -13555,14 +20503,7 @@
      1043.0,
      1015.0
     ]
-   ],
-   "readings": {
-    "kraken": "sacchettino vergato Entrovi una ab"
-   },
-   "flag": false,
-   "note": "",
-   "text": "sacchettino vergato Entrovi una ab",
-   "agreement": null
+   ]
   },
   {
    "id": "l81",
@@ -13707,7 +20648,10 @@
     ]
    ],
    "readings": {
-    "kraken": "bottonatura dariento di xxx gottoni"
+    "kraken": "bottonatura dariento di xxx gottoni",
+    "tei": "bottonatura darjento di xxx bottoni",
+    "tei_expanded": "bottonatura darjento di xxx bottoni",
+    "claude": "bottonatura darjento di xxx bottoni"
    },
    "flag": false,
    "note": "",
@@ -13893,7 +20837,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Eii bossolini davorio Anelluno alcuna"
+    "kraken": "Eii bossolini davorio Anelluno alcuna",
+    "tei": "e ii bossolini davorio Anellino alcuna",
+    "tei_expanded": "e ii bossolini davorio Anellino alcuna",
+    "claude": "e ii bossolini davorio Anellino alcuna"
    },
    "flag": false,
    "note": "",
@@ -14111,7 +21058,10 @@
     ]
    ],
    "readings": {
-    "kraken": "ꝓla minuta ⁊ alcuno bottone dariento"
+    "kraken": "ꝓla minuta ⁊ alcuno bottone dariento",
+    "tei": "per la minuta e acluno bottone dariento",
+    "tei_expanded": "per la minuta e acluno bottone dariento",
+    "claude": "per la minuta ⁊ acluno bottone dariento"
    },
    "flag": false,
    "note": "",
@@ -14229,7 +21179,10 @@
     ]
    ],
    "readings": {
-    "kraken": "E1 calcidonio"
+    "kraken": "E1 calcidonio",
+    "tei": "e i chalcidonio",
+    "tei_expanded": "e i chalcidonio",
+    "claude": "e i chalcidonio"
    },
    "flag": false,
    "note": "",
@@ -14239,6 +21192,196 @@
   {
    "id": "l85",
    "polygon": [
+    [
+     743.0,
+     1191.0
+    ],
+    [
+     744.0,
+     1191.0
+    ],
+    [
+     745.0,
+     1191.0
+    ],
+    [
+     745.0,
+     1190.0
+    ],
+    [
+     753.0,
+     1184.0
+    ],
+    [
+     782.0,
+     1189.0
+    ],
+    [
+     784.0,
+     1189.0
+    ],
+    [
+     785.0,
+     1189.0
+    ],
+    [
+     786.0,
+     1189.0
+    ],
+    [
+     786.0,
+     1188.0
+    ],
+    [
+     792.0,
+     1181.0
+    ],
+    [
+     829.0,
+     1178.0
+    ],
+    [
+     894.0,
+     1182.0
+    ],
+    [
+     896.0,
+     1182.0
+    ],
+    [
+     947.0,
+     1172.0
+    ],
+    [
+     948.0,
+     1163.0
+    ],
+    [
+     947.0,
+     1146.0
+    ],
+    [
+     939.0,
+     1142.0
+    ],
+    [
+     938.0,
+     1142.0
+    ],
+    [
+     937.0,
+     1142.0
+    ],
+    [
+     936.0,
+     1142.0
+    ],
+    [
+     884.0,
+     1150.0
+    ],
+    [
+     849.0,
+     1145.0
+    ],
+    [
+     848.0,
+     1145.0
+    ],
+    [
+     846.0,
+     1145.0
+    ],
+    [
+     823.0,
+     1152.0
+    ],
+    [
+     811.0,
+     1147.0
+    ],
+    [
+     810.0,
+     1147.0
+    ],
+    [
+     809.0,
+     1147.0
+    ],
+    [
+     808.0,
+     1147.0
+    ],
+    [
+     807.0,
+     1147.0
+    ],
+    [
+     807.0,
+     1148.0
+    ],
+    [
+     800.0,
+     1155.0
+    ],
+    [
+     752.0,
+     1150.0
+    ],
+    [
+     750.0,
+     1150.0
+    ],
+    [
+     749.0,
+     1150.0
+    ],
+    [
+     748.0,
+     1150.0
+    ],
+    [
+     748.0,
+     1152.0
+    ],
+    [
+     747.0,
+     1152.0
+    ],
+    [
+     742.0,
+     1158.0
+    ],
+    [
+     592.0,
+     1158.0
+    ],
+    [
+     592.0,
+     1194.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     1178.0
+    ],
+    [
+     948.0,
+     1163.0
+    ]
+   ],
+   "readings": {
+    "kraken": "forzerino da don̄a di pinto",
+    "tei": "1 forzerino da donna dipinto",
+    "tei_expanded": "1 forzerino da donna dipinto",
+    "claude": "1 forzerino da don̄a dipinto"
+   },
+   "flag": false,
+   "note": "",
+   "text": "forzerino da don̄a di pinto",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      672.0,
      1178.0
@@ -14416,7 +21559,7 @@
      1178.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      672.0,
      1178.0
@@ -14425,18 +21568,89 @@
      948.0,
      1163.0
     ]
-   ],
-   "readings": {
-    "kraken": "forzerino da don̄a di pinto"
-   },
-   "flag": false,
-   "note": "",
-   "text": "forzerino da don̄a di pinto",
-   "agreement": null
+   ]
   },
   {
    "id": "l86",
    "polygon": [
+    [
+     748.0,
+     1212.0
+    ],
+    [
+     821.0,
+     1216.0
+    ],
+    [
+     822.0,
+     1216.0
+    ],
+    [
+     929.0,
+     1202.0
+    ],
+    [
+     929.0,
+     1195.0
+    ],
+    [
+     926.0,
+     1181.0
+    ],
+    [
+     885.0,
+     1176.0
+    ],
+    [
+     884.0,
+     1176.0
+    ],
+    [
+     883.0,
+     1176.0
+    ],
+    [
+     861.0,
+     1184.0
+    ],
+    [
+     784.0,
+     1181.0
+    ],
+    [
+     782.0,
+     1181.0
+    ],
+    [
+     592.0,
+     1190.0
+    ],
+    [
+     592.0,
+     1222.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     1208.0
+    ],
+    [
+     929.0,
+     1195.0
+    ]
+   ],
+   "readings": {
+    "kraken": "legato cō drappo verde",
+    "tei": "1 legato con drappo verde",
+    "tei_expanded": "1 legato con drappo verde",
+    "claude": "1 legato cō drappo verde"
+   },
+   "flag": false,
+   "note": "",
+   "text": "legato cō drappo verde",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      676.0,
      1208.0
@@ -14502,7 +21716,7 @@
      1208.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      676.0,
      1208.0
@@ -14511,18 +21725,341 @@
      929.0,
      1195.0
     ]
-   ],
-   "readings": {
-    "kraken": "legato cō drappo verde"
-   },
-   "flag": false,
-   "note": "",
-   "text": "legato cō drappo verde",
-   "agreement": null
+   ]
   },
   {
    "id": "l87",
    "polygon": [
+    [
+     1043.0,
+     1190.0
+    ],
+    [
+     1018.0,
+     1191.0
+    ],
+    [
+     1017.0,
+     1191.0
+    ],
+    [
+     1016.0,
+     1191.0
+    ],
+    [
+     1016.0,
+     1192.0
+    ],
+    [
+     1015.0,
+     1192.0
+    ],
+    [
+     1010.0,
+     1198.0
+    ],
+    [
+     985.0,
+     1193.0
+    ],
+    [
+     984.0,
+     1193.0
+    ],
+    [
+     983.0,
+     1193.0
+    ],
+    [
+     945.0,
+     1203.0
+    ],
+    [
+     923.0,
+     1197.0
+    ],
+    [
+     922.0,
+     1197.0
+    ],
+    [
+     921.0,
+     1197.0
+    ],
+    [
+     920.0,
+     1197.0
+    ],
+    [
+     919.0,
+     1197.0
+    ],
+    [
+     904.0,
+     1208.0
+    ],
+    [
+     860.0,
+     1210.0
+    ],
+    [
+     835.0,
+     1204.0
+    ],
+    [
+     834.0,
+     1204.0
+    ],
+    [
+     833.0,
+     1204.0
+    ],
+    [
+     832.0,
+     1204.0
+    ],
+    [
+     830.0,
+     1204.0
+    ],
+    [
+     830.0,
+     1205.0
+    ],
+    [
+     829.0,
+     1205.0
+    ],
+    [
+     824.0,
+     1212.0
+    ],
+    [
+     812.0,
+     1208.0
+    ],
+    [
+     811.0,
+     1208.0
+    ],
+    [
+     810.0,
+     1208.0
+    ],
+    [
+     770.0,
+     1216.0
+    ],
+    [
+     760.0,
+     1209.0
+    ],
+    [
+     759.0,
+     1209.0
+    ],
+    [
+     758.0,
+     1209.0
+    ],
+    [
+     757.0,
+     1209.0
+    ],
+    [
+     756.0,
+     1209.0
+    ],
+    [
+     734.0,
+     1220.0
+    ],
+    [
+     592.0,
+     1220.0
+    ],
+    [
+     592.0,
+     1252.0
+    ],
+    [
+     706.0,
+     1259.0
+    ],
+    [
+     707.0,
+     1259.0
+    ],
+    [
+     743.0,
+     1256.0
+    ],
+    [
+     744.0,
+     1256.0
+    ],
+    [
+     745.0,
+     1256.0
+    ],
+    [
+     756.0,
+     1246.0
+    ],
+    [
+     769.0,
+     1252.0
+    ],
+    [
+     770.0,
+     1252.0
+    ],
+    [
+     771.0,
+     1252.0
+    ],
+    [
+     772.0,
+     1252.0
+    ],
+    [
+     791.0,
+     1244.0
+    ],
+    [
+     811.0,
+     1252.0
+    ],
+    [
+     812.0,
+     1252.0
+    ],
+    [
+     813.0,
+     1252.0
+    ],
+    [
+     862.0,
+     1243.0
+    ],
+    [
+     886.0,
+     1246.0
+    ],
+    [
+     887.0,
+     1246.0
+    ],
+    [
+     888.0,
+     1246.0
+    ],
+    [
+     889.0,
+     1246.0
+    ],
+    [
+     902.0,
+     1237.0
+    ],
+    [
+     921.0,
+     1244.0
+    ],
+    [
+     922.0,
+     1244.0
+    ],
+    [
+     923.0,
+     1244.0
+    ],
+    [
+     924.0,
+     1244.0
+    ],
+    [
+     925.0,
+     1244.0
+    ],
+    [
+     939.0,
+     1234.0
+    ],
+    [
+     977.0,
+     1240.0
+    ],
+    [
+     978.0,
+     1240.0
+    ],
+    [
+     979.0,
+     1240.0
+    ],
+    [
+     980.0,
+     1240.0
+    ],
+    [
+     992.0,
+     1230.0
+    ],
+    [
+     1040.0,
+     1234.0
+    ],
+    [
+     1041.0,
+     1234.0
+    ],
+    [
+     1042.0,
+     1234.0
+    ],
+    [
+     1043.0,
+     1234.0
+    ],
+    [
+     1043.0,
+     1233.0
+    ],
+    [
+     1047.0,
+     1227.0
+    ],
+    [
+     1047.0,
+     1214.0
+    ],
+    [
+     1045.0,
+     1204.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     1240.0
+    ],
+    [
+     1047.0,
+     1214.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Ghonella mescolata sdrusata da don̄a",
+    "tei": "1 Ghonella mescoalta sdruscita da da donna",
+    "tei_expanded": "1 Ghonella mescoalta sdruscita da da donna",
+    "claude": "1 Ghonella mescoalta sdruscita da da don̄a"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Ghonella mescolata sdrusata da don̄a",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      1043.0,
      1190.0
@@ -14840,7 +22377,7 @@
      1190.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      675.0,
      1240.0
@@ -14849,14 +22386,7 @@
      1047.0,
      1214.0
     ]
-   ],
-   "readings": {
-    "kraken": "Ghonella mescolata sdrusata da don̄a"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Ghonella mescolata sdrusata da don̄a",
-   "agreement": null
+   ]
   },
   {
    "id": "l88",
@@ -15057,7 +22587,10 @@
     ]
    ],
    "readings": {
-    "kraken": "vii Canovacci dagrenbiiili"
+    "kraken": "vii Canovacci dagrenbiiili",
+    "tei": "vii canovacci da grembuili",
+    "tei_expanded": "vii canovacci da grembuili",
+    "claude": "vii canovacci da grembuili"
    },
    "flag": false,
    "note": "",
@@ -15311,7 +22844,9 @@
     ]
    ],
    "readings": {
-    "kraken": "Nel palcho ⁊ Nella camera di sopra"
+    "kraken": "Nel palcho ⁊ Nella camera di sopra",
+    "tei": "Nel palcho e Nella camera di sopra",
+    "tei_expanded": "Nel palcho e Nella camera di sopra"
    },
    "flag": false,
    "note": "",
@@ -15321,6 +22856,256 @@
   {
    "id": "l90",
    "polygon": [
+    [
+     699.0,
+     1381.0
+    ],
+    [
+     725.0,
+     1383.0
+    ],
+    [
+     726.0,
+     1383.0
+    ],
+    [
+     727.0,
+     1383.0
+    ],
+    [
+     748.0,
+     1371.0
+    ],
+    [
+     776.0,
+     1380.0
+    ],
+    [
+     777.0,
+     1380.0
+    ],
+    [
+     778.0,
+     1380.0
+    ],
+    [
+     779.0,
+     1380.0
+    ],
+    [
+     780.0,
+     1380.0
+    ],
+    [
+     797.0,
+     1368.0
+    ],
+    [
+     803.0,
+     1372.0
+    ],
+    [
+     804.0,
+     1372.0
+    ],
+    [
+     805.0,
+     1372.0
+    ],
+    [
+     806.0,
+     1372.0
+    ],
+    [
+     807.0,
+     1372.0
+    ],
+    [
+     825.0,
+     1366.0
+    ],
+    [
+     850.0,
+     1369.0
+    ],
+    [
+     851.0,
+     1369.0
+    ],
+    [
+     852.0,
+     1369.0
+    ],
+    [
+     867.0,
+     1362.0
+    ],
+    [
+     938.0,
+     1360.0
+    ],
+    [
+     966.0,
+     1366.0
+    ],
+    [
+     967.0,
+     1366.0
+    ],
+    [
+     968.0,
+     1366.0
+    ],
+    [
+     1012.0,
+     1358.0
+    ],
+    [
+     1012.0,
+     1344.0
+    ],
+    [
+     1009.0,
+     1324.0
+    ],
+    [
+     894.0,
+     1329.0
+    ],
+    [
+     893.0,
+     1329.0
+    ],
+    [
+     892.0,
+     1329.0
+    ],
+    [
+     878.0,
+     1337.0
+    ],
+    [
+     869.0,
+     1331.0
+    ],
+    [
+     868.0,
+     1331.0
+    ],
+    [
+     867.0,
+     1331.0
+    ],
+    [
+     866.0,
+     1331.0
+    ],
+    [
+     865.0,
+     1331.0
+    ],
+    [
+     864.0,
+     1331.0
+    ],
+    [
+     850.0,
+     1339.0
+    ],
+    [
+     814.0,
+     1335.0
+    ],
+    [
+     813.0,
+     1335.0
+    ],
+    [
+     812.0,
+     1335.0
+    ],
+    [
+     811.0,
+     1335.0
+    ],
+    [
+     811.0,
+     1336.0
+    ],
+    [
+     803.0,
+     1344.0
+    ],
+    [
+     728.0,
+     1344.0
+    ],
+    [
+     727.0,
+     1344.0
+    ],
+    [
+     726.0,
+     1344.0
+    ],
+    [
+     725.0,
+     1344.0
+    ],
+    [
+     718.0,
+     1349.0
+    ],
+    [
+     711.0,
+     1344.0
+    ],
+    [
+     710.0,
+     1344.0
+    ],
+    [
+     709.0,
+     1344.0
+    ],
+    [
+     708.0,
+     1344.0
+    ],
+    [
+     707.0,
+     1344.0
+    ],
+    [
+     592.0,
+     1352.0
+    ],
+    [
+     592.0,
+     1386.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     1368.0
+    ],
+    [
+     1012.0,
+     1344.0
+    ]
+   ],
+   "readings": {
+    "kraken": "forzieri antichi vecchi di ℔ ii",
+    "tei": "ii forziere antichi vecchi di braccia ii 1/2",
+    "tei_expanded": "ii forziere antichi vecchi di braccia ii 1/2",
+    "claude": "ii forziere antichi vecchi di ƀ ii 1/2"
+   },
+   "flag": false,
+   "note": "",
+   "text": "forzieri antichi vecchi di ℔ ii",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      675.0,
      1368.0
@@ -15558,7 +23343,7 @@
      1368.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      675.0,
      1368.0
@@ -15567,18 +23352,121 @@
      1012.0,
      1344.0
     ]
-   ],
-   "readings": {
-    "kraken": "forzieri antichi vecchi di ℔ ii"
-   },
-   "flag": false,
-   "note": "",
-   "text": "forzieri antichi vecchi di ℔ ii",
-   "agreement": null
+   ]
   },
   {
    "id": "l91",
    "polygon": [
+    [
+     707.0,
+     1413.0
+    ],
+    [
+     708.0,
+     1413.0
+    ],
+    [
+     709.0,
+     1413.0
+    ],
+    [
+     710.0,
+     1413.0
+    ],
+    [
+     720.0,
+     1404.0
+    ],
+    [
+     746.0,
+     1411.0
+    ],
+    [
+     747.0,
+     1411.0
+    ],
+    [
+     748.0,
+     1411.0
+    ],
+    [
+     749.0,
+     1411.0
+    ],
+    [
+     786.0,
+     1400.0
+    ],
+    [
+     833.0,
+     1405.0
+    ],
+    [
+     834.0,
+     1405.0
+    ],
+    [
+     835.0,
+     1405.0
+    ],
+    [
+     864.0,
+     1396.0
+    ],
+    [
+     896.0,
+     1401.0
+    ],
+    [
+     897.0,
+     1401.0
+    ],
+    [
+     898.0,
+     1401.0
+    ],
+    [
+     919.0,
+     1392.0
+    ],
+    [
+     919.0,
+     1383.0
+    ],
+    [
+     916.0,
+     1368.0
+    ],
+    [
+     592.0,
+     1381.0
+    ],
+    [
+     592.0,
+     1411.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     1398.0
+    ],
+    [
+     919.0,
+     1383.0
+    ]
+   ],
+   "readings": {
+    "kraken": "forziere vecchio tristo",
+    "tei": "1 forziere vecchio tristo",
+    "tei_expanded": "1 forziere vecchio tristo",
+    "claude": "1 forziere vecchio tristo"
+   },
+   "flag": false,
+   "note": "",
+   "text": "forziere vecchio tristo",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      680.0,
      1398.0
@@ -15676,7 +23564,7 @@
      1398.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      680.0,
      1398.0
@@ -15685,18 +23573,297 @@
      919.0,
      1383.0
     ]
-   ],
-   "readings": {
-    "kraken": "forziere vecchio tristo"
-   },
-   "flag": false,
-   "note": "",
-   "text": "forziere vecchio tristo",
-   "agreement": null
+   ]
   },
   {
    "id": "l92",
    "polygon": [
+    [
+     698.0,
+     1445.0
+    ],
+    [
+     699.0,
+     1445.0
+    ],
+    [
+     700.0,
+     1445.0
+    ],
+    [
+     701.0,
+     1445.0
+    ],
+    [
+     708.0,
+     1440.0
+    ],
+    [
+     722.0,
+     1447.0
+    ],
+    [
+     723.0,
+     1447.0
+    ],
+    [
+     724.0,
+     1447.0
+    ],
+    [
+     725.0,
+     1447.0
+    ],
+    [
+     726.0,
+     1447.0
+    ],
+    [
+     740.0,
+     1436.0
+    ],
+    [
+     782.0,
+     1443.0
+    ],
+    [
+     784.0,
+     1443.0
+    ],
+    [
+     814.0,
+     1441.0
+    ],
+    [
+     816.0,
+     1441.0
+    ],
+    [
+     817.0,
+     1441.0
+    ],
+    [
+     830.0,
+     1430.0
+    ],
+    [
+     858.0,
+     1437.0
+    ],
+    [
+     859.0,
+     1437.0
+    ],
+    [
+     860.0,
+     1437.0
+    ],
+    [
+     861.0,
+     1437.0
+    ],
+    [
+     862.0,
+     1437.0
+    ],
+    [
+     876.0,
+     1427.0
+    ],
+    [
+     904.0,
+     1434.0
+    ],
+    [
+     905.0,
+     1434.0
+    ],
+    [
+     906.0,
+     1434.0
+    ],
+    [
+     935.0,
+     1431.0
+    ],
+    [
+     936.0,
+     1431.0
+    ],
+    [
+     937.0,
+     1431.0
+    ],
+    [
+     937.0,
+     1430.0
+    ],
+    [
+     938.0,
+     1430.0
+    ],
+    [
+     944.0,
+     1422.0
+    ],
+    [
+     967.0,
+     1424.0
+    ],
+    [
+     967.0,
+     1411.0
+    ],
+    [
+     965.0,
+     1394.0
+    ],
+    [
+     935.0,
+     1395.0
+    ],
+    [
+     918.0,
+     1388.0
+    ],
+    [
+     917.0,
+     1388.0
+    ],
+    [
+     916.0,
+     1388.0
+    ],
+    [
+     915.0,
+     1388.0
+    ],
+    [
+     893.0,
+     1398.0
+    ],
+    [
+     875.0,
+     1393.0
+    ],
+    [
+     874.0,
+     1393.0
+    ],
+    [
+     873.0,
+     1393.0
+    ],
+    [
+     872.0,
+     1393.0
+    ],
+    [
+     871.0,
+     1393.0
+    ],
+    [
+     871.0,
+     1394.0
+    ],
+    [
+     870.0,
+     1394.0
+    ],
+    [
+     866.0,
+     1400.0
+    ],
+    [
+     824.0,
+     1403.0
+    ],
+    [
+     810.0,
+     1397.0
+    ],
+    [
+     809.0,
+     1397.0
+    ],
+    [
+     808.0,
+     1397.0
+    ],
+    [
+     807.0,
+     1397.0
+    ],
+    [
+     778.0,
+     1406.0
+    ],
+    [
+     765.0,
+     1398.0
+    ],
+    [
+     764.0,
+     1398.0
+    ],
+    [
+     763.0,
+     1398.0
+    ],
+    [
+     762.0,
+     1398.0
+    ],
+    [
+     704.0,
+     1403.0
+    ],
+    [
+     702.0,
+     1403.0
+    ],
+    [
+     701.0,
+     1403.0
+    ],
+    [
+     701.0,
+     1404.0
+    ],
+    [
+     694.0,
+     1411.0
+    ],
+    [
+     592.0,
+     1405.0
+    ],
+    [
+     592.0,
+     1441.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     1431.0
+    ],
+    [
+     967.0,
+     1411.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Cassa adue ßrami vecchia",
+    "tei": "1 cassa a due serrami vecchia",
+    "tei_expanded": "1 cassa a due serrami vecchia",
+    "claude": "1 cassa a due ßrami vecchia"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Cassa adue ßrami vecchia",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      677.0,
      1441.0
@@ -15970,7 +24137,7 @@
      1441.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      677.0,
      1431.0
@@ -15979,18 +24146,113 @@
      967.0,
      1411.0
     ]
-   ],
-   "readings": {
-    "kraken": "Cassa adue ßrami vecchia"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Cassa adue ßrami vecchia",
-   "agreement": null
+   ]
   },
   {
    "id": "l93",
    "polygon": [
+    [
+     693.0,
+     1477.0
+    ],
+    [
+     694.0,
+     1477.0
+    ],
+    [
+     695.0,
+     1477.0
+    ],
+    [
+     755.0,
+     1467.0
+    ],
+    [
+     801.0,
+     1470.0
+    ],
+    [
+     802.0,
+     1470.0
+    ],
+    [
+     845.0,
+     1461.0
+    ],
+    [
+     845.0,
+     1452.0
+    ],
+    [
+     841.0,
+     1429.0
+    ],
+    [
+     817.0,
+     1438.0
+    ],
+    [
+     765.0,
+     1433.0
+    ],
+    [
+     764.0,
+     1433.0
+    ],
+    [
+     763.0,
+     1433.0
+    ],
+    [
+     744.0,
+     1444.0
+    ],
+    [
+     702.0,
+     1445.0
+    ],
+    [
+     693.0,
+     1437.0
+    ],
+    [
+     692.0,
+     1437.0
+    ],
+    [
+     691.0,
+     1437.0
+    ],
+    [
+     592.0,
+     1437.0
+    ],
+    [
+     592.0,
+     1472.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     1462.0
+    ],
+    [
+     845.0,
+     1452.0
+    ]
+   ],
+   "readings": {
+    "kraken": "lettiera ī terra",
+    "tei": "1 lettiera in terra",
+    "tei_expanded": "1 lettiera in terra",
+    "claude": "1 lettiera ī terra"
+   },
+   "flag": false,
+   "note": "",
+   "text": "lettiera ī terra",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      677.0,
      1462.0
@@ -16088,7 +24350,7 @@
      1462.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      677.0,
      1462.0
@@ -16097,18 +24359,233 @@
      845.0,
      1452.0
     ]
-   ],
-   "readings": {
-    "kraken": "lettiera ī terra"
-   },
-   "flag": false,
-   "note": "",
-   "text": "lettiera ī terra",
-   "agreement": null
+   ]
   },
   {
    "id": "l94",
    "polygon": [
+    [
+     716.0,
+     1514.0
+    ],
+    [
+     717.0,
+     1514.0
+    ],
+    [
+     718.0,
+     1514.0
+    ],
+    [
+     736.0,
+     1504.0
+    ],
+    [
+     773.0,
+     1509.0
+    ],
+    [
+     774.0,
+     1509.0
+    ],
+    [
+     775.0,
+     1509.0
+    ],
+    [
+     793.0,
+     1501.0
+    ],
+    [
+     808.0,
+     1507.0
+    ],
+    [
+     809.0,
+     1507.0
+    ],
+    [
+     810.0,
+     1507.0
+    ],
+    [
+     957.0,
+     1485.0
+    ],
+    [
+     957.0,
+     1472.0
+    ],
+    [
+     955.0,
+     1453.0
+    ],
+    [
+     908.0,
+     1451.0
+    ],
+    [
+     907.0,
+     1451.0
+    ],
+    [
+     906.0,
+     1451.0
+    ],
+    [
+     905.0,
+     1451.0
+    ],
+    [
+     893.0,
+     1459.0
+    ],
+    [
+     884.0,
+     1453.0
+    ],
+    [
+     883.0,
+     1453.0
+    ],
+    [
+     882.0,
+     1453.0
+    ],
+    [
+     881.0,
+     1453.0
+    ],
+    [
+     880.0,
+     1453.0
+    ],
+    [
+     880.0,
+     1454.0
+    ],
+    [
+     870.0,
+     1463.0
+    ],
+    [
+     851.0,
+     1464.0
+    ],
+    [
+     825.0,
+     1458.0
+    ],
+    [
+     824.0,
+     1458.0
+    ],
+    [
+     823.0,
+     1458.0
+    ],
+    [
+     822.0,
+     1458.0
+    ],
+    [
+     789.0,
+     1468.0
+    ],
+    [
+     773.0,
+     1462.0
+    ],
+    [
+     772.0,
+     1462.0
+    ],
+    [
+     771.0,
+     1462.0
+    ],
+    [
+     770.0,
+     1462.0
+    ],
+    [
+     769.0,
+     1462.0
+    ],
+    [
+     769.0,
+     1463.0
+    ],
+    [
+     763.0,
+     1467.0
+    ],
+    [
+     745.0,
+     1464.0
+    ],
+    [
+     744.0,
+     1464.0
+    ],
+    [
+     743.0,
+     1464.0
+    ],
+    [
+     742.0,
+     1464.0
+    ],
+    [
+     730.0,
+     1474.0
+    ],
+    [
+     718.0,
+     1468.0
+    ],
+    [
+     717.0,
+     1468.0
+    ],
+    [
+     716.0,
+     1468.0
+    ],
+    [
+     715.0,
+     1468.0
+    ],
+    [
+     592.0,
+     1478.0
+    ],
+    [
+     592.0,
+     1516.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     1494.0
+    ],
+    [
+     957.0,
+     1472.0
+    ]
+   ],
+   "readings": {
+    "kraken": "materassa rotta ⁊ vecchia",
+    "tei": "1 materassa rotta e vecchia",
+    "tei_expanded": "1 materassa rotta e vecchia",
+    "claude": "1 materassa rotta ⁊ vecchia"
+   },
+   "flag": false,
+   "note": "",
+   "text": "materassa rotta ⁊ vecchia",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      680.0,
      1494.0
@@ -16318,7 +24795,7 @@
      1494.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      680.0,
      1494.0
@@ -16327,18 +24804,137 @@
      957.0,
      1472.0
     ]
-   ],
-   "readings": {
-    "kraken": "materassa rotta ⁊ vecchia"
-   },
-   "flag": false,
-   "note": "",
-   "text": "materassa rotta ⁊ vecchia",
-   "agreement": null
+   ]
   },
   {
    "id": "l95",
    "polygon": [
+    [
+     702.0,
+     1548.0
+    ],
+    [
+     712.0,
+     1555.0
+    ],
+    [
+     713.0,
+     1555.0
+    ],
+    [
+     714.0,
+     1555.0
+    ],
+    [
+     715.0,
+     1555.0
+    ],
+    [
+     756.0,
+     1553.0
+    ],
+    [
+     757.0,
+     1553.0
+    ],
+    [
+     758.0,
+     1553.0
+    ],
+    [
+     787.0,
+     1534.0
+    ],
+    [
+     844.0,
+     1537.0
+    ],
+    [
+     844.0,
+     1515.0
+    ],
+    [
+     841.0,
+     1497.0
+    ],
+    [
+     796.0,
+     1502.0
+    ],
+    [
+     786.0,
+     1495.0
+    ],
+    [
+     785.0,
+     1495.0
+    ],
+    [
+     784.0,
+     1495.0
+    ],
+    [
+     782.0,
+     1495.0
+    ],
+    [
+     781.0,
+     1495.0
+    ],
+    [
+     780.0,
+     1495.0
+    ],
+    [
+     772.0,
+     1500.0
+    ],
+    [
+     738.0,
+     1498.0
+    ],
+    [
+     737.0,
+     1498.0
+    ],
+    [
+     736.0,
+     1498.0
+    ],
+    [
+     713.0,
+     1509.0
+    ],
+    [
+     592.0,
+     1509.0
+    ],
+    [
+     592.0,
+     1554.0
+    ]
+   ],
+   "baseline": [
+    [
+     592.0,
+     1527.0
+    ],
+    [
+     844.0,
+     1515.0
+    ]
+   ],
+   "readings": {
+    "kraken": "madia Nuova",
+    "tei": "1 madia nuova",
+    "tei_expanded": "1 madia nuova",
+    "claude": "1 madia nuova"
+   },
+   "flag": false,
+   "note": "",
+   "text": "madia Nuova",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      681.0,
      1527.0
@@ -16452,7 +25048,7 @@
      1527.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      681.0,
      1527.0
@@ -16461,17 +25057,10 @@
      844.0,
      1515.0
     ]
-   ],
-   "readings": {
-    "kraken": "madia Nuova"
-   },
-   "flag": false,
-   "note": "",
-   "text": "madia Nuova",
-   "agreement": null
+   ]
   }
  ],
- "note": "",
+ "note": "Fourth of seventeen folios of the estate of Francescho di Pagolo Speziale. This is the second folio containing a list of movable goods.",
  "history": [
   {
    "t": "2026-10-15T21:20:54",
@@ -16480,7 +25069,17 @@
   {
    "t": "2026-10-18T17:41:47",
    "event": "machine reading: kraken (catmus_secondtraining_v3_wleggio_2026-10-17b.mlmodel)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 89r → 104v (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T17:46:38",
+   "event": "attached TEI ASF MPAP 4 (di Pagolo)_104v_RS1280.xml: 86 of 86 lines matched, 77 suggestion(s); 51 box(es) widened for item numbers"
   }
  ],
- "updated": "2026-10-23T11:17:57"
+ "updated": "2026-10-23T17:46:38",
+ "tei_unmatched": [],
+ "tei_file": "ASF MPAP 4 (di Pagolo)_104v_RS1280.xml"
 }

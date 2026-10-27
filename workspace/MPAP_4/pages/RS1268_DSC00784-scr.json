@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1268_DSC00784-scr.jpg",
  "order": 158,
- "folio": "99r",
+ "folio": "95r",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -12929,7 +12929,7 @@
    "agreement": null
   }
  ],
- "note": "",
+ "note": "Nineteenth of twenty-seven folios of the estate of Jacopo di Bartolomeo Bombeni. The top half of this folio contains an inventory of movable goods, written in 1388, and cancelled. The bottom half contains a record of credits and debits, not transcribed.",
  "history": [
   {
    "t": "2026-10-15T21:20:54",
@@ -12938,7 +12938,19 @@
   {
    "t": "2026-10-18T17:39:49",
    "event": "machine reading: kraken (catmus_secondtraining_v3_wleggio_2026-10-17b.mlmodel)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 83r → 95r (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T17:46:37",
+   "event": "attached TEI ASF MPAP 4 (di Bombeni)_95r_RS1268.xml: 0 of 1 lines matched, 0 suggestion(s); 1 TEI line(s) with no machine line"
   }
  ],
- "updated": "2026-10-23T11:17:57"
+ "updated": "2026-10-23T17:46:37",
+ "tei_unmatched": [
+  "[del: (mccclxxxviii) Certe masserizie vendute delle rede di Jacopo di bartolomeo bombri di xiiio di dicembre 1388 a sandro di filippo e compagni Cio sono 1 coltrice biancha vergata con due pimacci 1 coltrice vermiglia vergata con due pimacci panno vermiglo da letto 1 sargia vermiglia 1 paio di lenzuola sottili a retice lle a iiiio teli 1 materassa di bordo scacchata viii anella cioe 1 anello di perle 1 anello zaffine 1 diamante 1 smeraldo 1 perla sola 1 turchiessa 1 Anello di cinque perle 1 ganbo danello sanza pietra 1 cassone a due serrami 1 cassapancha a tre serrami iii tazze dariento vii chucciai dariento 1 messale 1 calice colla guarnia viii tovalge nuove in uno telo di braccia vii luna ii tovagle grandi braccia 18 luna ii guardanappe di braccia 20 luna 1 panzerone dacciaio 1 paio disca di cosciali forniti e 1 paio di gamberueli 1 paio di bracciali dalla gomita in su vii guanti di ferro chattivi 1 stoccho fornito 1 barbuta coventata di sciamito 1 camaglio e 1 manichino di maglia 1 lettiera braccia v 1/2 1 lettuccio braccia vi con due casse vii botti grandi ]"
+ ],
+ "tei_file": "ASF MPAP 4 (di Bombeni)_95r_RS1268.xml"
 }

@@ -3,17 +3,130 @@
  "collection": "UPenn_1321",
  "image": "images/UPenn_1321/UPenn_1321_img253.jpg",
  "order": 253,
- "folio": "",
+ "folio": "126v",
  "width": 1349,
  "height": 2892,
- "status": "new",
- "lines": [],
+ "status": "machine_read",
+ "lines": [
+  {
+   "id": "l1",
+   "polygon": [
+    [
+     607.0,
+     1343.0
+    ],
+    [
+     606.0,
+     1360.0
+    ],
+    [
+     725.0,
+     1373.0
+    ],
+    [
+     728.0,
+     1347.0
+    ],
+    [
+     728.0,
+     1315.0
+    ],
+    [
+     607.0,
+     1299.0
+    ],
+    [
+     607.0,
+     1343.0
+    ]
+   ],
+   "baseline": [
+    [
+     607.0,
+     1343.0
+    ],
+    [
+     728.0,
+     1347.0
+    ]
+   ],
+   "readings": {
+    "kraken": "e di"
+   },
+   "flag": false,
+   "note": "",
+   "text": "e di",
+   "agreement": null
+  },
+  {
+   "id": "l2",
+   "polygon": [
+    [
+     633.0,
+     1421.0
+    ],
+    [
+     673.0,
+     1415.0
+    ],
+    [
+     720.0,
+     1423.0
+    ],
+    [
+     723.0,
+     1397.0
+    ],
+    [
+     721.0,
+     1367.0
+    ],
+    [
+     649.0,
+     1370.0
+    ],
+    [
+     638.0,
+     1362.0
+    ],
+    [
+     635.0,
+     1394.0
+    ],
+    [
+     633.0,
+     1421.0
+    ]
+   ],
+   "baseline": [
+    [
+     635.0,
+     1394.0
+    ],
+    [
+     723.0,
+     1397.0
+    ]
+   ],
+   "readings": {
+    "kraken": "a o"
+   },
+   "flag": false,
+   "note": "",
+   "text": "a o",
+   "agreement": null
+  }
+ ],
  "note": "",
  "history": [
   {
    "t": "2026-10-18T17:10:17",
    "event": "imported"
+  },
+  {
+   "t": "2026-10-25T19:46:58",
+   "event": "machine reading: kraken (catmus_secondtraining_v2_4.mlmodel)"
   }
  ],
- "updated": "2026-10-18T17:10:17"
+ "updated": "2026-10-25T19:46:58"
 }

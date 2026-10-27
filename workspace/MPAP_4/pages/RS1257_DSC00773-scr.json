@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1257_DSC00773-scr.jpg",
  "order": 147,
- "folio": "93v",
+ "folio": "89v",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -11,6 +11,208 @@
   {
    "id": "l1",
    "polygon": [
+    [
+     470.0,
+     145.0
+    ],
+    [
+     459.0,
+     145.0
+    ],
+    [
+     449.0,
+     145.0
+    ],
+    [
+     448.0,
+     146.0
+    ],
+    [
+     439.0,
+     145.0
+    ],
+    [
+     438.0,
+     145.0
+    ],
+    [
+     427.0,
+     145.0
+    ],
+    [
+     417.0,
+     145.0
+    ],
+    [
+     408.0,
+     145.0
+    ],
+    [
+     405.0,
+     148.0
+    ],
+    [
+     331.0,
+     149.0
+    ],
+    [
+     283.0,
+     145.0
+    ],
+    [
+     282.0,
+     145.0
+    ],
+    [
+     281.0,
+     145.0
+    ],
+    [
+     280.0,
+     145.0
+    ],
+    [
+     274.0,
+     150.0
+    ],
+    [
+     257.0,
+     145.0
+    ],
+    [
+     256.0,
+     145.0
+    ],
+    [
+     254.0,
+     145.0
+    ],
+    [
+     253.0,
+     145.0
+    ],
+    [
+     178.0,
+     151.0
+    ],
+    [
+     178.0,
+     180.0
+    ],
+    [
+     263.0,
+     185.0
+    ],
+    [
+     264.0,
+     185.0
+    ],
+    [
+     265.0,
+     185.0
+    ],
+    [
+     266.0,
+     185.0
+    ],
+    [
+     266.0,
+     184.0
+    ],
+    [
+     272.0,
+     179.0
+    ],
+    [
+     284.0,
+     185.0
+    ],
+    [
+     285.0,
+     185.0
+    ],
+    [
+     286.0,
+     185.0
+    ],
+    [
+     288.0,
+     185.0
+    ],
+    [
+     316.0,
+     178.0
+    ],
+    [
+     353.0,
+     183.0
+    ],
+    [
+     354.0,
+     183.0
+    ],
+    [
+     386.0,
+     177.0
+    ],
+    [
+     423.0,
+     182.0
+    ],
+    [
+     424.0,
+     182.0
+    ],
+    [
+     425.0,
+     182.0
+    ],
+    [
+     440.0,
+     174.0
+    ],
+    [
+     475.0,
+     174.0
+    ],
+    [
+     485.0,
+     181.0
+    ],
+    [
+     489.0,
+     164.0
+    ],
+    [
+     487.0,
+     147.0
+    ],
+    [
+     477.0,
+     145.0
+    ]
+   ],
+   "baseline": [
+    [
+     178.0,
+     169.0
+    ],
+    [
+     489.0,
+     164.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Cassone adue ßrami",
+    "tei": "1 Cassone a due serrami",
+    "tei_expanded": "1 Cassone a due serrami",
+    "claude": "1 Cassone a due ßrami"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Cassone adue ßrami",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      470.0,
      145.0
@@ -200,7 +402,7 @@
      145.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      236.0,
      169.0
@@ -209,18 +411,201 @@
      489.0,
      164.0
     ]
-   ],
-   "readings": {
-    "kraken": "Cassone adue ßrami"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Cassone adue ßrami",
-   "agreement": null
+   ]
   },
   {
    "id": "l2",
    "polygon": [
+    [
+     257.0,
+     217.0
+    ],
+    [
+     279.0,
+     209.0
+    ],
+    [
+     307.0,
+     216.0
+    ],
+    [
+     308.0,
+     216.0
+    ],
+    [
+     309.0,
+     216.0
+    ],
+    [
+     310.0,
+     216.0
+    ],
+    [
+     326.0,
+     208.0
+    ],
+    [
+     341.0,
+     215.0
+    ],
+    [
+     342.0,
+     215.0
+    ],
+    [
+     343.0,
+     215.0
+    ],
+    [
+     381.0,
+     213.0
+    ],
+    [
+     382.0,
+     213.0
+    ],
+    [
+     384.0,
+     213.0
+    ],
+    [
+     384.0,
+     212.0
+    ],
+    [
+     392.0,
+     205.0
+    ],
+    [
+     464.0,
+     211.0
+    ],
+    [
+     465.0,
+     211.0
+    ],
+    [
+     466.0,
+     211.0
+    ],
+    [
+     467.0,
+     211.0
+    ],
+    [
+     467.0,
+     210.0
+    ],
+    [
+     474.0,
+     203.0
+    ],
+    [
+     499.0,
+     210.0
+    ],
+    [
+     500.0,
+     210.0
+    ],
+    [
+     501.0,
+     210.0
+    ],
+    [
+     545.0,
+     200.0
+    ],
+    [
+     545.0,
+     192.0
+    ],
+    [
+     544.0,
+     173.0
+    ],
+    [
+     521.0,
+     167.0
+    ],
+    [
+     520.0,
+     167.0
+    ],
+    [
+     519.0,
+     167.0
+    ],
+    [
+     518.0,
+     167.0
+    ],
+    [
+     500.0,
+     173.0
+    ],
+    [
+     429.0,
+     170.0
+    ],
+    [
+     428.0,
+     170.0
+    ],
+    [
+     427.0,
+     170.0
+    ],
+    [
+     406.0,
+     178.0
+    ],
+    [
+     385.0,
+     171.0
+    ],
+    [
+     384.0,
+     171.0
+    ],
+    [
+     382.0,
+     171.0
+    ],
+    [
+     339.0,
+     180.0
+    ],
+    [
+     178.0,
+     177.0
+    ],
+    [
+     178.0,
+     217.0
+    ]
+   ],
+   "baseline": [
+    [
+     178.0,
+     201.0
+    ],
+    [
+     545.0,
+     192.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Cioppa ⁊ cose dellaschiana",
+    "tei": "1 Cioppa e cose della schiava",
+    "tei_expanded": "1 Cioppa e cose della schiava",
+    "claude": "1 Cioppa ⁊ cose della schiava"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Cioppa ⁊ cose dellaschiana",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      243.0,
      201.0
@@ -414,7 +799,7 @@
      201.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      243.0,
      201.0
@@ -423,14 +808,7 @@
      545.0,
      192.0
     ]
-   ],
-   "readings": {
-    "kraken": "Cioppa ⁊ cose dellaschiana"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Cioppa ⁊ cose dellaschiana",
-   "agreement": null
+   ]
   },
   {
    "id": "l3",
@@ -787,7 +1165,10 @@
     ]
    ],
    "readings": {
-    "kraken": "iii lenzuola a tre teli di ℔6 luno"
+    "kraken": "iii lenzuola a tre teli di ℔6 luno",
+    "tei": "iii lenzuola a tre teli di braccia 6 luno",
+    "tei_expanded": "iii lenzuola a tre teli di braccia 6 luno",
+    "claude": "iii lenzuola a tre teli di ƀ 6 luno"
    },
    "flag": false,
    "note": "",
@@ -1265,7 +1646,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Altre massenzie chesono ī contado nelppło di scā maria a samontana sopra uno"
+    "kraken": "Altre massenzie chesono ī contado nelppło di scā maria a samontana sopra uno",
+    "tei": "Altre masserzie che sono in contado nel popolo di sancta maria a san montana sopra uno",
+    "tei_expanded": "Altre masserzie che sono in contado nel popolo di sancta maria a san montana sopra uno",
+    "claude": "Altre masserzie che sono ī contado nel popolo di sancta maria a san montana sopra uno"
    },
    "flag": false,
    "note": "",
@@ -1747,7 +2131,10 @@
     ]
    ],
    "readings": {
-    "kraken": "podere chevan̄o le dette rede 𝒹i Jacopo bonbeni dove il detto halitana luogo detto alpoggio"
+    "kraken": "podere chevan̄o le dette rede 𝒹i Jacopo bonbeni dove il detto halitana luogo detto alpoggio",
+    "tei": "podere che vanno le dette rede di Jacopo bonbeni dove il detto habitava luogo detto al poggio/",
+    "tei_expanded": "podere che vanno le dette rede di Jacopo bonbeni dove il detto habitava luogo detto al poggio/",
+    "claude": "podere che vanno le dette rede di Jacopo bonbeni dove il detto habitava luogo detto al poggio/"
    },
    "flag": false,
    "note": "",
@@ -1757,6 +2144,100 @@
   {
    "id": "l6",
    "polygon": [
+    [
+     298.0,
+     355.0
+    ],
+    [
+     299.0,
+     355.0
+    ],
+    [
+     394.0,
+     348.0
+    ],
+    [
+     437.0,
+     360.0
+    ],
+    [
+     438.0,
+     360.0
+    ],
+    [
+     439.0,
+     360.0
+    ],
+    [
+     544.0,
+     353.0
+    ],
+    [
+     545.0,
+     338.0
+    ],
+    [
+     542.0,
+     323.0
+    ],
+    [
+     481.0,
+     316.0
+    ],
+    [
+     480.0,
+     316.0
+    ],
+    [
+     361.0,
+     323.0
+    ],
+    [
+     347.0,
+     317.0
+    ],
+    [
+     346.0,
+     317.0
+    ],
+    [
+     345.0,
+     317.0
+    ],
+    [
+     313.0,
+     324.0
+    ],
+    [
+     178.0,
+     318.0
+    ],
+    [
+     178.0,
+     349.0
+    ]
+   ],
+   "baseline": [
+    [
+     178.0,
+     341.0
+    ],
+    [
+     545.0,
+     338.0
+    ]
+   ],
+   "readings": {
+    "kraken": "botte di tenuta di cogna tre",
+    "tei": "1 botte di tenuta di cogna tre",
+    "tei_expanded": "1 botte di tenuta di cogna tre",
+    "claude": "1 botte di tenuta di cogna tre"
+   },
+   "flag": false,
+   "note": "",
+   "text": "botte di tenuta di cogna tre",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      249.0,
      341.0
@@ -1850,7 +2331,7 @@
      341.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      249.0,
      341.0
@@ -1859,18 +2340,53 @@
      545.0,
      338.0
     ]
-   ],
-   "readings": {
-    "kraken": "botte di tenuta di cogna tre"
-   },
-   "flag": false,
-   "note": "",
-   "text": "botte di tenuta di cogna tre",
-   "agreement": null
+   ]
   },
   {
    "id": "l7",
    "polygon": [
+    [
+     408.0,
+     379.0
+    ],
+    [
+     408.0,
+     368.0
+    ],
+    [
+     408.0,
+     355.0
+    ],
+    [
+     178.0,
+     350.0
+    ],
+    [
+     178.0,
+     380.0
+    ]
+   ],
+   "baseline": [
+    [
+     178.0,
+     368.0
+    ],
+    [
+     408.0,
+     368.0
+    ]
+   ],
+   "readings": {
+    "kraken": "lettiora bassa",
+    "tei": "1 lettiora bassa",
+    "tei_expanded": "1 lettiora bassa",
+    "claude": "1 lettiora bassa"
+   },
+   "flag": false,
+   "note": "",
+   "text": "lettiora bassa",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      251.0,
      368.0
@@ -1900,7 +2416,7 @@
      368.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      251.0,
      368.0
@@ -1909,18 +2425,185 @@
      408.0,
      368.0
     ]
-   ],
-   "readings": {
-    "kraken": "lettiora bassa"
-   },
-   "flag": false,
-   "note": "",
-   "text": "lettiora bassa",
-   "agreement": null
+   ]
   },
   {
    "id": "l8",
    "polygon": [
+    [
+     294.0,
+     411.0
+    ],
+    [
+     295.0,
+     411.0
+    ],
+    [
+     296.0,
+     411.0
+    ],
+    [
+     309.0,
+     406.0
+    ],
+    [
+     328.0,
+     413.0
+    ],
+    [
+     329.0,
+     413.0
+    ],
+    [
+     330.0,
+     413.0
+    ],
+    [
+     358.0,
+     409.0
+    ],
+    [
+     361.0,
+     413.0
+    ],
+    [
+     362.0,
+     413.0
+    ],
+    [
+     362.0,
+     414.0
+    ],
+    [
+     363.0,
+     414.0
+    ],
+    [
+     364.0,
+     414.0
+    ],
+    [
+     365.0,
+     414.0
+    ],
+    [
+     430.0,
+     409.0
+    ],
+    [
+     448.0,
+     414.0
+    ],
+    [
+     449.0,
+     414.0
+    ],
+    [
+     450.0,
+     414.0
+    ],
+    [
+     451.0,
+     414.0
+    ],
+    [
+     452.0,
+     414.0
+    ],
+    [
+     452.0,
+     413.0
+    ],
+    [
+     459.0,
+     407.0
+    ],
+    [
+     475.0,
+     407.0
+    ],
+    [
+     476.0,
+     397.0
+    ],
+    [
+     472.0,
+     376.0
+    ],
+    [
+     464.0,
+     381.0
+    ],
+    [
+     425.0,
+     375.0
+    ],
+    [
+     424.0,
+     375.0
+    ],
+    [
+     423.0,
+     375.0
+    ],
+    [
+     402.0,
+     381.0
+    ],
+    [
+     348.0,
+     381.0
+    ],
+    [
+     340.0,
+     374.0
+    ],
+    [
+     339.0,
+     374.0
+    ],
+    [
+     338.0,
+     374.0
+    ],
+    [
+     337.0,
+     374.0
+    ],
+    [
+     273.0,
+     380.0
+    ],
+    [
+     178.0,
+     373.0
+    ],
+    [
+     178.0,
+     404.0
+    ]
+   ],
+   "baseline": [
+    [
+     178.0,
+     395.0
+    ],
+    [
+     476.0,
+     397.0
+    ]
+   ],
+   "readings": {
+    "kraken": "materassa scacchata",
+    "tei": "1 materassa scacchata",
+    "tei_expanded": "1 materassa scacchata",
+    "claude": "1 materassa scacchata"
+   },
+   "flag": false,
+   "note": "",
+   "text": "materassa scacchata",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      250.0,
      404.0
@@ -2082,7 +2765,7 @@
      404.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      251.0,
      395.0
@@ -2091,18 +2774,61 @@
      476.0,
      397.0
     ]
-   ],
-   "readings": {
-    "kraken": "materassa scacchata"
-   },
-   "flag": false,
-   "note": "",
-   "text": "materassa scacchata",
-   "agreement": null
+   ]
   },
   {
    "id": "l9",
    "polygon": [
+    [
+     444.0,
+     435.0
+    ],
+    [
+     445.0,
+     424.0
+    ],
+    [
+     443.0,
+     411.0
+    ],
+    [
+     294.0,
+     405.0
+    ],
+    [
+     293.0,
+     405.0
+    ],
+    [
+     178.0,
+     411.0
+    ],
+    [
+     178.0,
+     436.0
+    ]
+   ],
+   "baseline": [
+    [
+     178.0,
+     425.0
+    ],
+    [
+     445.0,
+     424.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Coltrice vergata",
+    "tei": "1 coltrice vergata",
+    "tei_expanded": "1 coltrice vergata",
+    "claude": "1 coltrice vergata"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Coltrice vergata",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      251.0,
      425.0
@@ -2140,7 +2866,7 @@
      425.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      251.0,
      425.0
@@ -2149,18 +2875,93 @@
      445.0,
      424.0
     ]
-   ],
-   "readings": {
-    "kraken": "Coltrice vergata"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Coltrice vergata",
-   "agreement": null
+   ]
   },
   {
    "id": "l10",
    "polygon": [
+    [
+     336.0,
+     461.0
+    ],
+    [
+     376.0,
+     469.0
+    ],
+    [
+     377.0,
+     469.0
+    ],
+    [
+     440.0,
+     465.0
+    ],
+    [
+     441.0,
+     454.0
+    ],
+    [
+     440.0,
+     439.0
+    ],
+    [
+     398.0,
+     433.0
+    ],
+    [
+     397.0,
+     433.0
+    ],
+    [
+     368.0,
+     438.0
+    ],
+    [
+     348.0,
+     432.0
+    ],
+    [
+     347.0,
+     432.0
+    ],
+    [
+     346.0,
+     432.0
+    ],
+    [
+     289.0,
+     437.0
+    ],
+    [
+     178.0,
+     430.0
+    ],
+    [
+     178.0,
+     466.0
+    ]
+   ],
+   "baseline": [
+    [
+     178.0,
+     452.0
+    ],
+    [
+     441.0,
+     454.0
+    ]
+   ],
+   "readings": {
+    "kraken": "pimatcio vergato",
+    "tei": "1 pimaccio vergato",
+    "tei_expanded": "1 pimaccio vergato",
+    "claude": "1 pimaccio vergato"
+   },
+   "flag": false,
+   "note": "",
+   "text": "pimatcio vergato",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      254.0,
      452.0
@@ -2230,7 +3031,7 @@
      452.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      254.0,
      452.0
@@ -2239,18 +3040,181 @@
      441.0,
      454.0
     ]
-   ],
-   "readings": {
-    "kraken": "pimatcio vergato"
-   },
-   "flag": false,
-   "note": "",
-   "text": "pimatcio vergato",
-   "agreement": null
+   ]
   },
   {
    "id": "l11",
    "polygon": [
+    [
+     267.0,
+     498.0
+    ],
+    [
+     268.0,
+     498.0
+    ],
+    [
+     304.0,
+     493.0
+    ],
+    [
+     385.0,
+     501.0
+    ],
+    [
+     386.0,
+     501.0
+    ],
+    [
+     387.0,
+     501.0
+    ],
+    [
+     388.0,
+     501.0
+    ],
+    [
+     388.0,
+     500.0
+    ],
+    [
+     394.0,
+     494.0
+    ],
+    [
+     440.0,
+     494.0
+    ],
+    [
+     448.0,
+     501.0
+    ],
+    [
+     449.0,
+     501.0
+    ],
+    [
+     450.0,
+     501.0
+    ],
+    [
+     451.0,
+     502.0
+    ],
+    [
+     497.0,
+     502.0
+    ],
+    [
+     498.0,
+     484.0
+    ],
+    [
+     498.0,
+     467.0
+    ],
+    [
+     474.0,
+     458.0
+    ],
+    [
+     473.0,
+     458.0
+    ],
+    [
+     472.0,
+     458.0
+    ],
+    [
+     471.0,
+     458.0
+    ],
+    [
+     450.0,
+     466.0
+    ],
+    [
+     442.0,
+     459.0
+    ],
+    [
+     442.0,
+     458.0
+    ],
+    [
+     441.0,
+     458.0
+    ],
+    [
+     440.0,
+     458.0
+    ],
+    [
+     418.0,
+     458.0
+    ],
+    [
+     417.0,
+     458.0
+    ],
+    [
+     416.0,
+     458.0
+    ],
+    [
+     414.0,
+     458.0
+    ],
+    [
+     404.0,
+     466.0
+    ],
+    [
+     325.0,
+     466.0
+    ],
+    [
+     310.0,
+     457.0
+    ],
+    [
+     309.0,
+     457.0
+    ],
+    [
+     308.0,
+     457.0
+    ],
+    [
+     178.0,
+     462.0
+    ],
+    [
+     178.0,
+     498.0
+    ]
+   ],
+   "baseline": [
+    [
+     178.0,
+     482.0
+    ],
+    [
+     498.0,
+     484.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Coltre grossa biancha",
+    "tei": "1 Coltre grossa biancha",
+    "tei_expanded": "1 Coltre grossa biancha",
+    "claude": "1 Coltre grossa biancha"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Coltre grossa biancha",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      252.0,
      482.0
@@ -2412,7 +3376,7 @@
      482.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      252.0,
      482.0
@@ -2421,14 +3385,7 @@
      498.0,
      484.0
     ]
-   ],
-   "readings": {
-    "kraken": "Coltre grossa biancha"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Coltre grossa biancha",
-   "agreement": null
+   ]
   },
   {
    "id": "l12",
@@ -3778,6 +4735,172 @@
    "id": "l26",
    "polygon": [
     [
+     722.0,
+     493.0
+    ],
+    [
+     738.0,
+     505.0
+    ],
+    [
+     739.0,
+     505.0
+    ],
+    [
+     740.0,
+     505.0
+    ],
+    [
+     741.0,
+     505.0
+    ],
+    [
+     786.0,
+     498.0
+    ],
+    [
+     801.0,
+     505.0
+    ],
+    [
+     802.0,
+     505.0
+    ],
+    [
+     803.0,
+     505.0
+    ],
+    [
+     804.0,
+     505.0
+    ],
+    [
+     805.0,
+     505.0
+    ],
+    [
+     810.0,
+     501.0
+    ],
+    [
+     848.0,
+     507.0
+    ],
+    [
+     849.0,
+     507.0
+    ],
+    [
+     850.0,
+     507.0
+    ],
+    [
+     851.0,
+     507.0
+    ],
+    [
+     865.0,
+     498.0
+    ],
+    [
+     878.0,
+     503.0
+    ],
+    [
+     882.0,
+     487.0
+    ],
+    [
+     881.0,
+     467.0
+    ],
+    [
+     793.0,
+     469.0
+    ],
+    [
+     770.0,
+     459.0
+    ],
+    [
+     769.0,
+     459.0
+    ],
+    [
+     768.0,
+     459.0
+    ],
+    [
+     766.0,
+     459.0
+    ],
+    [
+     747.0,
+     468.0
+    ],
+    [
+     743.0,
+     462.0
+    ],
+    [
+     742.0,
+     462.0
+    ],
+    [
+     742.0,
+     461.0
+    ],
+    [
+     741.0,
+     461.0
+    ],
+    [
+     740.0,
+     461.0
+    ],
+    [
+     739.0,
+     461.0
+    ],
+    [
+     738.0,
+     461.0
+    ],
+    [
+     724.0,
+     465.0
+    ],
+    [
+     662.0,
+     457.0
+    ],
+    [
+     662.0,
+     492.0
+    ]
+   ],
+   "baseline": [
+    [
+     662.0,
+     483.0
+    ],
+    [
+     882.0,
+     487.0
+    ]
+   ],
+   "readings": {
+    "kraken": "lenzuolo vecchio",
+    "tei": "1 lenzuolo vecchio",
+    "tei_expanded": "1 lenzuolo vecchio",
+    "claude": "1 lenzuolo vecchio"
+   },
+   "flag": false,
+   "note": "",
+   "text": "lenzuolo vecchio",
+   "agreement": null,
+   "polygon_before_tei": [
+    [
      692.0,
      492.0
     ],
@@ -3930,7 +5053,7 @@
      492.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      693.0,
      483.0
@@ -3939,18 +5062,121 @@
      882.0,
      487.0
     ]
-   ],
-   "readings": {
-    "kraken": "lenzuolo vecchio"
-   },
-   "flag": false,
-   "note": "",
-   "text": "lenzuolo vecchio",
-   "agreement": null
+   ]
   },
   {
    "id": "l27",
    "polygon": [
+    [
+     718.0,
+     528.0
+    ],
+    [
+     720.0,
+     528.0
+    ],
+    [
+     721.0,
+     528.0
+    ],
+    [
+     762.0,
+     524.0
+    ],
+    [
+     794.0,
+     530.0
+    ],
+    [
+     795.0,
+     530.0
+    ],
+    [
+     796.0,
+     530.0
+    ],
+    [
+     797.0,
+     530.0
+    ],
+    [
+     797.0,
+     529.0
+    ],
+    [
+     803.0,
+     524.0
+    ],
+    [
+     834.0,
+     531.0
+    ],
+    [
+     836.0,
+     517.0
+    ],
+    [
+     834.0,
+     493.0
+    ],
+    [
+     810.0,
+     500.0
+    ],
+    [
+     784.0,
+     492.0
+    ],
+    [
+     782.0,
+     492.0
+    ],
+    [
+     781.0,
+     492.0
+    ],
+    [
+     780.0,
+     492.0
+    ],
+    [
+     779.0,
+     492.0
+    ],
+    [
+     769.0,
+     499.0
+    ],
+    [
+     662.0,
+     489.0
+    ],
+    [
+     662.0,
+     520.0
+    ]
+   ],
+   "baseline": [
+    [
+     662.0,
+     513.0
+    ],
+    [
+     836.0,
+     517.0
+    ]
+   ],
+   "readings": {
+    "kraken": "Lucerne",
+    "tei": "ii lucerne",
+    "tei_expanded": "ii lucerne",
+    "claude": "ii lucerne"
+   },
+   "flag": false,
+   "note": "",
+   "text": "Lucerne",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      699.0,
      513.0
@@ -4048,7 +5274,7 @@
      513.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      699.0,
      513.0
@@ -4057,18 +5283,85 @@
      836.0,
      517.0
     ]
-   ],
-   "readings": {
-    "kraken": "Lucerne"
-   },
-   "flag": false,
-   "note": "",
-   "text": "Lucerne",
-   "agreement": null
+   ]
   },
   {
    "id": "l28",
    "polygon": [
+    [
+     720.0,
+     554.0
+    ],
+    [
+     730.0,
+     563.0
+    ],
+    [
+     731.0,
+     563.0
+    ],
+    [
+     732.0,
+     563.0
+    ],
+    [
+     733.0,
+     564.0
+    ],
+    [
+     754.0,
+     564.0
+    ],
+    [
+     754.0,
+     563.0
+    ],
+    [
+     755.0,
+     563.0
+    ],
+    [
+     787.0,
+     551.0
+    ],
+    [
+     787.0,
+     544.0
+    ],
+    [
+     786.0,
+     525.0
+    ],
+    [
+     662.0,
+     529.0
+    ],
+    [
+     662.0,
+     556.0
+    ]
+   ],
+   "baseline": [
+    [
+     662.0,
+     544.0
+    ],
+    [
+     787.0,
+     544.0
+    ]
+   ],
+   "readings": {
+    "kraken": "toppa",
+    "tei": "1 toppa",
+    "tei_expanded": "1 toppa",
+    "claude": "1 toppa"
+   },
+   "flag": false,
+   "note": "",
+   "text": "toppa",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      704.0,
      544.0
@@ -4130,7 +5423,7 @@
      544.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      704.0,
      544.0
@@ -4139,14 +5432,7 @@
      787.0,
      544.0
     ]
-   ],
-   "readings": {
-    "kraken": "toppa"
-   },
-   "flag": false,
-   "note": "",
-   "text": "toppa",
-   "agreement": null
+   ]
   },
   {
    "id": "l29",
@@ -4279,7 +5565,9 @@
     ]
    ],
    "readings": {
-    "kraken": "ii Arche ꝓ grano"
+    "kraken": "ii Arche ꝓ grano",
+    "tei": "ii Arche per grano",
+    "tei_expanded": "ii Arche per grano"
    },
    "flag": false,
    "note": "",
@@ -4289,6 +5577,52 @@
   {
    "id": "l30",
    "polygon": [
+    [
+     737.0,
+     616.0
+    ],
+    [
+     898.0,
+     628.0
+    ],
+    [
+     900.0,
+     610.0
+    ],
+    [
+     899.0,
+     587.0
+    ],
+    [
+     662.0,
+     588.0
+    ],
+    [
+     662.0,
+     622.0
+    ]
+   ],
+   "baseline": [
+    [
+     662.0,
+     605.0
+    ],
+    [
+     900.0,
+     610.0
+    ]
+   ],
+   "readings": {
+    "kraken": "tavola cō trespoli",
+    "tei": "1 tavola con trespoli",
+    "tei_expanded": "1 tavola con trespoli",
+    "claude": "1 tavola cō trespoli"
+   },
+   "flag": false,
+   "note": "",
+   "text": "tavola cō trespoli",
+   "agreement": null,
+   "polygon_before_tei": [
     [
      692.0,
      605.0
@@ -4322,7 +5656,7 @@
      605.0
     ]
    ],
-   "baseline": [
+   "baseline_before_tei": [
     [
      692.0,
      605.0
@@ -4331,14 +5665,7 @@
      900.0,
      610.0
     ]
-   ],
-   "readings": {
-    "kraken": "tavola cō trespoli"
-   },
-   "flag": false,
-   "note": "",
-   "text": "tavola cō trespoli",
-   "agreement": null
+   ]
   },
   {
    "id": "l31",
@@ -4515,7 +5842,10 @@
     ]
    ],
    "readings": {
-    "kraken": "1 coltello datavola"
+    "kraken": "1 coltello datavola",
+    "tei": "1 Coltello da tavola",
+    "tei_expanded": "1 Coltello da tavola",
+    "claude": "1 Coltello da tavola"
    },
    "flag": false,
    "note": "",
@@ -4689,7 +6019,9 @@
     ]
    ],
    "readings": {
-    "kraken": "piu scodelle ⁊ taglieri"
+    "kraken": "piu scodelle ⁊ taglieri",
+    "tei": "piu scodelle et taglieri",
+    "tei_expanded": "piu scodelle et taglieri"
    },
    "flag": false,
    "note": "",
@@ -4991,7 +6323,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Beni ī mobili delle dette rede sono queste"
+    "kraken": "Beni ī mobili delle dette rede sono queste",
+    "tei": "Beni īmobili delle dette rede son questo",
+    "tei_expanded": "Beni immobili delle dette rede son questo",
+    "claude": "Beni īmobili delle dette rede son questo"
    },
    "flag": false,
    "note": "",
@@ -5417,7 +6752,10 @@
     ]
    ],
    "readings": {
-    "kraken": "IImpma una Casa overo palagio Nel quale ha bitana il detto Jacopo posta ī"
+    "kraken": "IImpma una Casa overo palagio Nel quale ha bitana il detto Jacopo posta ī",
+    "tei": "In prima una casa overo palago Nel quale habitava il detto Jacopo posta in",
+    "tei_expanded": "In prima una casa overo palago Nel quale habitava il detto Jacopo posta in",
+    "claude": "ī prima una casa overo palago Nel quale habitava il detto Jacopo posta ī"
    },
    "flag": false,
    "note": "",
@@ -5859,7 +7197,10 @@
     ]
    ],
    "readings": {
-    "kraken": "firenze nel ppło di santa trinita di firenze a iº ⁊ iiº ⁊ iiiº via a iiiiº"
+    "kraken": "firenze nel ppło di santa trinita di firenze a iº ⁊ iiº ⁊ iiiº via a iiiiº",
+    "tei": "firenze nel popolo di santa trinita di firenze a iº e iiº e iiiº via a iiiiº",
+    "tei_expanded": "firenze nel popolo di santa trinita di firenze a iº e iiº e iiiº via a iiiiº",
+    "claude": "firenze nel popolo di santa trinita di firenze a iº ⁊ iiº ⁊ iiiº via a iiiiº"
    },
    "flag": false,
    "note": "",
@@ -6215,7 +7556,10 @@
     ]
    ],
    "readings": {
-    "kraken": "tꝭ uno podere cō casa portico forno porzo stalla cō terre lavoratoie ⁊vignate"
+    "kraken": "tꝭ uno podere cō casa portico forno porzo stalla cō terre lavoratoie ⁊vignate",
+    "tei": "Item uno podere con casa portico forno pozzo stalla con terre lavoratoie e vignate",
+    "tei_expanded": "Item uno podere con casa portico forno pozzo stalla con terre lavoratoie e vignate",
+    "claude": "Item uno podere cō casa portico forno pozzo stalla cō terre lavoratoie e vignate"
    },
    "flag": false,
    "note": "",
@@ -6549,7 +7893,10 @@
     ]
    ],
    "readings": {
-    "kraken": "pesto nelppło di sangiisto a si gnano ⁊ cō caneti a iº via a iiº il fuime della grieve"
+    "kraken": "pesto nelppło di sangiisto a si gnano ⁊ cō caneti a iº via a iiº il fuime della grieve",
+    "tei": "posto nel popolo de san giusto a signano e con caneti a iº via a iiº il fiume della grione",
+    "tei_expanded": "posto nel popolo de san giusto a signano e con caneti a iº via a iiº il fiume della grione",
+    "claude": "posto nel popolo de san giusto a signano ⁊ cō caneti a iº via a iiº il fiume della grione"
    },
    "flag": false,
    "note": "",
@@ -6883,7 +8230,10 @@
     ]
    ],
    "readings": {
-    "kraken": "a iiiº gherardo piaciti a iiiiº fi lippo gherardini En̄i suso tre tina di cogna diece"
+    "kraken": "a iiiº gherardo piaciti a iiiiº fi lippo gherardini En̄i suso tre tina di cogna diece",
+    "tei": "a iiiº gherardo piatiti a iiiº filippo gherardini . A uni fuso tre tina di cogna dicce",
+    "tei_expanded": "a iiiº gherardo piatiti a iiiº filippo gherardini . A uni fuso tre tina di cogna dicce",
+    "claude": "a iiiº gherardo piatiti a iiiº filippo gherardini . A uni fuso tre tina di cogna dicce"
    },
    "flag": false,
    "note": "",
@@ -7153,7 +8503,10 @@
     ]
    ],
    "readings": {
-    "kraken": "opiii piº bigoncia di bari ⁊ davēdemia"
+    "kraken": "opiii piº bigoncia di bari ⁊ davēdemia",
+    "tei": "o piu una una bigoncia di barili 4 danendemina",
+    "tei_expanded": "o piu una una bigoncia di barili 4 danendemina",
+    "claude": "o piu una una bigoncia di barili 4 danendemina"
    },
    "flag": false,
    "note": "",
@@ -7523,7 +8876,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Biello aficto domenicho di tēn̄i ꝓ ℔ cxxv lan̄o"
+    "kraken": "Biello aficto domenicho di tēn̄i ꝓ ℔ cxxv lan̄o",
+    "tei": "Tiello aficto domenicho di tenni per libbre cxxv lanno",
+    "tei_expanded": "Tiello aficto domenicho di tenni per libbre cxxv lanno",
+    "claude": "Tiello aficto domenicho di tenni ꝓ ℔ cxxv lan̄o"
    },
    "flag": false,
    "note": "",
@@ -7869,7 +9225,10 @@
     ]
    ],
    "readings": {
-    "kraken": "venduto abernardo ⁊ Niccolo dlionaido di Neri 𝒹i 6 di gugno 393 ꝓ ƒ 535 netti ⁊ dee"
+    "kraken": "venduto abernardo ⁊ Niccolo dlionaido di Neri 𝒹i 6 di gugno 393 ꝓ ƒ 535 netti ⁊ dee",
+    "tei": "Venduto abernardo et Niccolo di Lionardo di Neri et 6 di gugno 393 per gli 929 netti et dec",
+    "tei_expanded": "Venduto abernardo et Niccolo di Lionardo di Neri et 6 di gugno 393 per gli 929 netti et dec",
+    "claude": "Venduto abernardo ⁊ Niccolo di Lionardo di Neri ⁊ 6 di gugno 393 ꝓ gli 929 netti ⁊ dec"
    },
    "flag": false,
    "note": "",
@@ -8091,7 +9450,10 @@
     ]
    ],
    "readings": {
-    "kraken": "aere laritolta di queston̄o 132"
+    "kraken": "aere laritolta di queston̄o 132",
+    "tei": "avere la recolta di questo anno 1393",
+    "tei_expanded": "avere la recolta di questo anno 1393",
+    "claude": "avere la recolta di questo anno 1393"
    },
    "flag": false,
    "note": "",
@@ -8377,7 +9739,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Item uuno podere qve lataverna cō case ⁊ terre lanoratoie ⁊ vi gnata ⁊ alborata"
+    "kraken": "Item uuno podere qve lataverna cō case ⁊ terre lanoratoie ⁊ vi gnata ⁊ alborata",
+    "tei": "Item uno podere ove la taverna con case et terre lanoratoie et vignata et alborata",
+    "tei_expanded": "Item uno podere ove la taverna con case et terre lanoratoie et vignata et alborata",
+    "claude": "Item uno podere ove la taverna cō case ⁊ terre lanoratoie ⁊ vignata ⁊ alborata"
    },
    "flag": false,
    "note": "",
@@ -8715,7 +10080,10 @@
     ]
    ],
    "readings": {
-    "kraken": "⁊ cā canēti posto nel dcō ppło a iº strada a iiº il fime di griene a iiiº aō simona da"
+    "kraken": "⁊ cā canēti posto nel dcō ppło a iº strada a iiº il fime di griene a iiiº aō simona da",
+    "tei": "e con canneti posto nel dicto popolo a 1o strada a iiº il fiume di griene a iiiº anno simona da",
+    "tei_expanded": "e con canneti posto nel dicto popolo a 1o strada a iiº il fiume di griene a iiiº anno simona da",
+    "claude": "⁊ con canneti posto nel dicto popolo a 1o strada a iiº il fiume di griene a iiiº anno simona da"
    },
    "flag": false,
    "note": "",
@@ -9009,7 +10377,10 @@
     ]
    ],
    "readings": {
-    "kraken": "gnolo bonciani a iiiiº i frati dogniesanti di firenze An̄i suso uno tino grande"
+    "kraken": "gnolo bonciani a iiiiº i frati dogniesanti di firenze An̄i suso uno tino grande",
+    "tei": "gnolo bonciani a iiiiº i frati dogni e santi di firenze Lui fuso uno tino grande",
+    "tei_expanded": "gnolo bonciani a iiiiº i frati dogni e santi di firenze Lui fuso uno tino grande",
+    "claude": "gnolo bonciani a iiiiº i frati dogni e santi di firenze Lui fuso uno tino grande"
    },
    "flag": false,
    "note": "",
@@ -9371,7 +10742,10 @@
     ]
    ],
    "readings": {
-    "kraken": "tiello aficto viovan̄i landi ꝓ ℔ lxxv lan̄o"
+    "kraken": "tiello aficto viovan̄i landi ꝓ ℔ lxxv lan̄o",
+    "tei": "Tiello aficto Giovanni landi per libbre lxxv lanno",
+    "tei_expanded": "Tiello aficto Giovanni landi per libbre lxxv lanno",
+    "claude": "Tiello aficto Giovanni landi ꝓ ℔ lxxv lan̄o"
    },
    "flag": false,
    "note": "",
@@ -9895,7 +11269,10 @@
     ]
    ],
    "readings": {
-    "kraken": "mōn̄a di anora che fu di filippo di cēn̄i ꝓ certa terra chea sopra lapeschaia del detto"
+    "kraken": "mōn̄a di anora che fu di filippo di cēn̄i ꝓ certa terra chea sopra lapeschaia del detto",
+    "tei": "Monna dianora che fu di filippo di cerni per certa terra chea sopra la peschaia di quelladel detto",
+    "tei_expanded": "Monna dianora che fu di filippo di cerni per certa terra chea sopra la peschaia di quelladel detto",
+    "claude": "Monna dianora che fu di filippo di cerni ꝓ certa terra chea sopra la peschaia di quelladel detto"
    },
    "flag": false,
    "note": "",
@@ -10277,7 +11654,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Jacopo di bartolomeo bombeni de dare ogni an̄o di ficto staia do dici di grano"
+    "kraken": "Jacopo di bartolomeo bombeni de dare ogni an̄o di ficto staia do dici di grano",
+    "tei": "Jacopo di barolomeo bombeni de dare ogni anno di ficto satia do dici di grano",
+    "tei_expanded": "Jacopo di barolomeo bombeni de dare ogni anno di ficto satia do dici di grano",
+    "claude": "Jacopo di barolomeo bombeni de dare ogni an̄o di ficto satia do dici di grano"
    },
    "flag": false,
    "note": "",
@@ -10781,7 +12161,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Item uno podere cōterra lavoratoia ⁊ cō unpoco di vigna posta noldcēppło a iº via"
+    "kraken": "Item uno podere cōterra lavoratoia ⁊ cō unpoco di vigna posta noldcēppło a iº via",
+    "tei": "Item uno podere con terra lanoratoia e con un poco di vigna posta a san michele a lignano [del: nel dicto popolo] a iº via",
+    "tei_expanded": "Item uno podere con terra lanoratoia e con un poco di vigna posta a san michele a lignano a iº via",
+    "claude": "Item uno podere cō terra lanoratoia ⁊ cō un poco di vigna posta a san michele a lignano [del: nel dicto popolo] a iº via"
    },
    "flag": false,
    "note": "",
@@ -11215,7 +12598,10 @@
     ]
    ],
    "readings": {
-    "kraken": "a iiº ⁊ iiiº mesß Antonio del glialberti a iiiiº Ceccho di pico"
+    "kraken": "a iiº ⁊ iiiº mesß Antonio del glialberti a iiiiº Ceccho di pico",
+    "tei": "a iiº e iiiº messer antonio deglialaberti a iiiº ceccho pi pienno",
+    "tei_expanded": "a iiº e iiiº messer antonio deglialaberti a iiiº ceccho pi pienno",
+    "claude": "a iiº ⁊ iiiº mesß antonio deglialaberti a iiiº ceccho pi pienno"
    },
    "flag": false,
    "note": "",
@@ -11593,7 +12979,10 @@
     ]
    ],
    "readings": {
-    "kraken": "lavoralo il deto Ceccho di piero amezo A ccisu uno pauo di buoi ꝓƒ xxviii 8"
+    "kraken": "lavoralo il deto Ceccho di piero amezo A ccisu uno pauo di buoi ꝓƒ xxviii 8",
+    "tei": "lavoralo il detto ceccho di piero amezo acci su uno paio di buio per fiorini xxviii 1/2 dinarii",
+    "tei_expanded": "lavoralo il detto ceccho di piero amezo acci su uno paio di buio per fiorini xxviii 1/2 dinarii",
+    "claude": "lavoralo il detto ceccho di piero amezo acci su uno paio di buio per fiorini xxviii 1/2 dinarii"
    },
    "flag": false,
    "note": "",
@@ -11601,7 +12990,7 @@
    "agreement": null
   }
  ],
- "note": "",
+ "note": "Eighth of twenty-seven folios of the estate of Jacopo di Bartolomeo Bombeni. This is the sixth folio containing an inventory of movable goods.",
  "history": [
   {
    "t": "2026-10-15T21:20:54",
@@ -11610,7 +12999,30 @@
   {
    "t": "2026-10-18T17:38:06",
    "event": "machine reading: kraken (catmus_secondtraining_v3_wleggio_2026-10-17b.mlmodel)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 77v → 89v (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T17:46:37",
+   "event": "attached TEI ASF MPAP 4 (di Bombeni)_89v_RS1257.xml: 37 of 49 lines matched, 35 suggestion(s); 12 box(es) widened for item numbers; 12 TEI line(s) with no machine line"
   }
  ],
- "updated": "2026-10-23T11:17:57"
+ "updated": "2026-10-23T17:46:37",
+ "tei_unmatched": [
+  "1 paio di lenzuola",
+  "1 tovaglia",
+  "1 guardanappa",
+  "ii tovagluole",
+  "ii sciugatoi",
+  "1 forziere",
+  "1 cassetta",
+  "1 paiuolo piccolo",
+  "1 Catino di Rame",
+  "1 materassa trista",
+  "1 Celone rosso",
+  "1 pimaccio tristo"
+ ],
+ "tei_file": "ASF MPAP 4 (di Bombeni)_89v_RS1257.xml"
 }

@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1738_DSC01254-scr.jpg",
  "order": 551,
- "folio": "295v",
+ "folio": "410v",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -343,7 +343,10 @@
     ]
    ],
    "readings": {
-    "kraken": "iii apie faremo memoria di chi dee avere debtestam̄to ⁊ lascio di oō lapā"
+    "kraken": "iii apie faremo memoria di chi dee avere debtestam̄to ⁊ lascio di oō lapā",
+    "tei": "Qui a pie faremo memoria dichi dee avere del testamento e lascia di monna lapa",
+    "tei_expanded": "Qui a pie faremo memoria dichi dee avere del testamento e lascia di monna lapa",
+    "claude": "Qui a pie faremo memoria dichi dee avere del testamento ⁊ lascia di monna lapa"
    },
    "flag": false,
    "note": "",
@@ -857,7 +860,10 @@
     ]
    ],
    "readings": {
-    "kraken": "fi gluola fu di bernado amselmi ⁊ sirocchia di ghmno di bernardo ansel m"
+    "kraken": "fi gluola fu di bernado amselmi ⁊ sirocchia di ghmno di bernardo ansel m",
+    "tei": "figluola fu di bernardo amselmi e sirocchia di ghino di bernardo anselmi",
+    "tei_expanded": "figluola fu di bernardo amselmi e sirocchia di ghino di bernardo anselmi",
+    "claude": "figluola fu di bernardo amselmi ⁊ sirocchia di ghino di bernardo anselmi"
    },
    "flag": false,
    "note": "",
@@ -1251,7 +1257,10 @@
     ]
    ],
    "readings": {
-    "kraken": "fatto ꝓ mano di ß nigi di giovan̄i di r2di gugno 138"
+    "kraken": "fatto ꝓ mano di ß nigi di giovan̄i di r2di gugno 138",
+    "tei": "fatto per mano di ser Nigi di Giovani di 22 di gugno 1387",
+    "tei_expanded": "fatto per mano di ser Nigi di Giovani di 22 di gugno 1387",
+    "claude": "fatto ꝓ mano di ß Nigi di Giovani di 22 di gugno 1387"
    },
    "flag": false,
    "note": "",
@@ -1657,7 +1666,10 @@
     ]
    ],
    "readings": {
-    "kraken": "ipma lascia che qualumque ꝓ sona dee avere si apagato"
+    "kraken": "ipma lascia che qualumque ꝓ sona dee avere si apagato",
+    "tei": "In prima lascia che qualunque person dee avere sia pagato",
+    "tei_expanded": "In prima lascia che qualunque person dee avere sia pagato",
+    "claude": "In prima lascia che qualunque person dee avere sia pagato"
    },
    "flag": false,
    "note": "",
@@ -1971,7 +1983,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Lascia asuora bartolomea damaiano ℔ venticinque pē toccha laraeta v"
+    "kraken": "Lascia asuora bartolomea damaiano ℔ venticinque pē toccha laraeta v",
+    "tei": "Lascia a fuora bartolomeo damaiano libbre vinticinque per anno toccha la meta",
+    "tei_expanded": "Lascia a fuora bartolomeo damaiano libbre vinticinque per anno toccha la meta",
+    "claude": "Lascia a fuora bartolomeo damaiano ℔ vinticinque per anno toccha la meta"
    },
    "flag": false,
    "note": "",
@@ -2329,7 +2344,10 @@
     ]
    ],
    "readings": {
-    "kraken": "alle bede di pippo di piero damsel mo ⁊ coi tatti glialtri lasti"
+    "kraken": "alle bede di pippo di piero damsel mo ⁊ coi tatti glialtri lasti",
+    "tei": "alle Rede di Pippo di Peiro danselmo e cosi tutti gli altri lasci....",
+    "tei_expanded": "alle Rede di Pippo di Peiro danselmo e cosi tutti gli altri lasci....",
+    "claude": "alle Rede di Pippo di Peiro danselmo ⁊ cosi tutti gli altri lasci...."
    },
    "flag": false,
    "note": "",
@@ -13675,7 +13693,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Lastia Ri da gio di betna do suo ftatelli"
+    "kraken": "Lastia Ri da gio di betna do suo ftatelli",
+    "tei": "Lascia Reda ghino di Bernardi suo fratello",
+    "tei_expanded": "Lascia Reda ghino di Bernardi suo fratello",
+    "claude": "Lascia Reda ghino di Bernardi suo fratello"
    },
    "flag": false,
    "note": "",
@@ -13683,7 +13704,7 @@
    "agreement": null
   }
  ],
- "note": "",
+ "note": "Page six of eight, Estsate of of Pippo di Piero d’Anselmo written June, 1291; this folio contains the continuing debits and credits to the estate. Not transcribed.",
  "history": [
   {
    "t": "2026-10-15T21:21:00",
@@ -13692,7 +13713,17 @@
   {
    "t": "2026-10-18T18:57:48",
    "event": "machine reading: kraken (catmus_secondtraining_v3_wleggio_2026-10-17b.mlmodel)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 279v → 410v (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T17:52:18",
+   "event": "attached TEI ASF MPAP 4 (d’Anselmo)_410v_RS1738.xml: 7 of 7 lines matched, 7 suggestion(s)"
   }
  ],
- "updated": "2026-10-23T11:17:59"
+ "updated": "2026-10-23T17:52:18",
+ "tei_unmatched": [],
+ "tei_file": "ASF MPAP 4 (d’Anselmo)_410v_RS1738.xml"
 }

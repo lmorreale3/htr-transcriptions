@@ -40,7 +40,9 @@
   }
  ],
  "promote": [],
- "disable": [],
+ "disable": [
+  "bstroke-pound"
+ ],
  "rules": [
   {
    "id": "rede",
@@ -87,6 +89,13 @@
    "find": "(?<!\\L)(d?a)p(?:ꝛ)?ile(?!\\L)",
    "replace": "$1ꝓile",
    "why": "Laura, 18 Oct 2026"
+  },
+  {
+   "id": "bstroke-pound-sum",
+   "level": "check",
+   "msg": "ƀ before a sum (followed by ß or 𝒹) is probably a misreading of ℔. Elsewhere ƀ = braccia (inventories) or -br- (month names): keep it.",
+   "find": "(?<!\\L)ƀ(?= ?[ivxlc]+º? +(?:ß|𝒹))",
+   "why": "Laura 23 Oct: braccia = ƀ; replaces shared rule bstroke-pound"
   }
  ]
 }

@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1487_DSC01003-scr.jpg",
  "order": 312,
- "folio": "176r",
+ "folio": "246r",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -495,7 +495,10 @@
     ]
    ],
    "readings": {
-    "kraken": "nuentaro di bartolonto dalohostino di lapo"
+    "kraken": "nuentaro di bartolonto dalohostino di lapo",
+    "tei": "Inventaro di bartolomeo daghostino di lapo pupillo fatto",
+    "tei_expanded": "Inventaro di bartolomeo daghostino di lapo pupillo fatto",
+    "claude": "Inventaro di bartolomeo daghostino di lapo pupillo fatto"
    },
    "flag": false,
    "note": "",
@@ -835,7 +838,10 @@
     ]
    ],
    "readings": {
-    "kraken": "d pno di mazo an̄o ⁊ ccclxxxviii"
+    "kraken": "d pno di mazo an̄o ⁊ ccclxxxviii",
+    "tei": "di primo di marzo anno mccclxxxviii In prima",
+    "tei_expanded": "di primo di marzo anno mccclxxxviii In prima",
+    "claude": "di primo di marzo an̄o mccclxxxviii In prima"
    },
    "flag": false,
    "note": "",
@@ -6808,7 +6814,17 @@
   {
    "t": "2026-10-18T18:05:40",
    "event": "machine reading: kraken (catmus_secondtraining_v3_wleggio_2026-10-17b.mlmodel)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 160r → 246r (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T17:47:06",
+   "event": "attached TEI ASF MPAP 4 (di Lapo)_246r_RS1487.xml: 2 of 2 lines matched, 2 suggestion(s)"
   }
  ],
- "updated": "2026-10-23T11:17:57"
+ "updated": "2026-10-23T17:47:06",
+ "tei_unmatched": [],
+ "tei_file": "ASF MPAP 4 (di Lapo)_246r_RS1487.xml"
 }

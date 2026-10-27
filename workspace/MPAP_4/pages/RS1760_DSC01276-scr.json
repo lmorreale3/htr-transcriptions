@@ -3,7 +3,7 @@
  "collection": "MPAP_4",
  "image": "images/MPAP_4/RS1760_DSC01276-scr.jpg",
  "order": 571,
- "folio": "305v",
+ "folio": "428r",
  "width": 1280,
  "height": 1920,
  "status": "machine_read",
@@ -657,7 +657,10 @@
     ]
    ],
    "readings": {
-    "kraken": "ēre la detta R dita ꝓ riformagione"
+    "kraken": "ēre la detta R dita ꝓ riformagione",
+    "tei": "Venne la detta Redita per riformagione",
+    "tei_expanded": "Venne la detta Redita per riformagione",
+    "claude": "Venne la detta Redita ꝓ riformagione"
    },
    "flag": false,
    "note": "",
@@ -823,7 +826,10 @@
     ]
    ],
    "readings": {
-    "kraken": "Inventaro delle dette Rede fatto"
+    "kraken": "Inventaro delle dette Rede fatto",
+    "tei": "Inventaro delle dette rede fatto di di dicembre 1391",
+    "tei_expanded": "Inventaro delle dette rede fatto di di dicembre 1391",
+    "claude": "Inventaro delle dette rede fatto di di dicembre 1391"
    },
    "flag": false,
    "note": "",
@@ -2439,7 +2445,7 @@
    "agreement": null
   }
  ],
- "note": "",
+ "note": "First of four of the estate of Tommaso di Niccolo Malegonelle, written in 1391. This page includes an inventory of immovable goods, not transcribed.",
  "history": [
   {
    "t": "2026-10-15T21:21:00",
@@ -2448,7 +2454,19 @@
   {
    "t": "2026-10-18T19:02:24",
    "event": "machine reading: kraken (catmus_secondtraining_v3_wleggio_2026-10-17b.mlmodel)"
+  },
+  {
+   "t": "2026-10-23T17:30:55",
+   "event": "folio 289v → 428r (from Laura's transcription file names)"
+  },
+  {
+   "t": "2026-10-23T17:52:25",
+   "event": "attached TEI ASF MPAP 4 (Malegonelle)_428r_RS1760.xml: 2 of 3 lines matched, 2 suggestion(s); 1 TEI line(s) with no machine line"
   }
  ],
- "updated": "2026-10-23T11:17:59"
+ "updated": "2026-10-23T17:52:25",
+ "tei_unmatched": [
+  "(mccclxxxxi)"
+ ],
+ "tei_file": "ASF MPAP 4 (Malegonelle)_428r_RS1760.xml"
 }

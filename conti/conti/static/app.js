@@ -9,7 +9,7 @@ async function api(url, opts = {}) {
 }
 const S = { status: null, colls: null, cid: null, statuses: null, data: null, sumFilter: "review", q: "", shown: 40, focus: 0 };
 const TABS = [["overview", "Overview"], ["tags", "Tags"], ["holdings", "Holdings"], ["dates", "Dates"], ["refs", "References"], ["sums", "Sums"], ["settings", "Settings"]];
-const TOP = [["#/", "Manuscripts"], ["#/ask", "Ask"], ["#/query", "Query"], ["#/datasets", "Datasets"], ["#/network", "Network"], ["#/neighbourhoods", "Neighbourhoods"], ["#/map", "Map"], ["#/names", "Names"]];
+const TOP = [["#/", "Manuscripts"], ["#/ask", "Ask"], ["#/query", "Query"], ["#/datasets", "Datasets"], ["#/network", "Network"], ["#/neighbourhoods", "Neighbourhoods"], ["#/map", "Map"], ["#/names", "Names"], ["#/catasto", "Catasto 1427"]];
 const TYPES = ["person", "place", "occupation", "institution", "goods"];
 const TLABEL = { person: "Person", place: "Place", occupation: "Occupation / role", institution: "Institution", goods: "Goods" };
 const KIND = { debit: "de dare", credit: "de avere / anno dato", balance: "resta" };
@@ -35,6 +35,7 @@ async function route() {
     if (h[0] === "neighbourhoods") { S.cid = null; tabs(null, "#/neighbourhoods"); filters(null); await viewNeighbourhood(h.slice(1).join("/") || null); return; }
     if (h[0] === "map") { S.cid = null; tabs(null, "#/map"); filters(null); await viewMap(h[1] === "place" ? h.slice(2).join("/") : null); return; }
     if (h[0] === "places") { S.cid = null; tabs(null, "#/map"); filters(null); await viewPlaces(); return; }
+    if (h[0] === "catasto") { S.cid = null; tabs(null, "#/catasto"); filters(null); await viewCatasto(h.slice(1).join("/") || null); return; }
     if (h[0] === "names") { S.cid = null; tabs(null, "#/names"); filters(null); await viewNames(h[1]); return; }
     if (h[0] === "m" && h[1]) {
       if (S.cid !== h[1]) { S.cid = h[1]; S.statuses = (await api(`/api/settings/${encodeURIComponent(h[1])}`)).statuses; S.data = null; S.focus = 0; }

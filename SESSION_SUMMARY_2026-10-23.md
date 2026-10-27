@@ -87,3 +87,15 @@ writes the answer → `answer <id> answer.json`. (Also recorded in `CLAUDE.md`.)
 - **Possible improvements (not built; Laura: "fine for now")**: "↓ Fill from here" button beside the folio box; hand-entered folios
   as fixed points (fill only between them, never overwrite); skip blank/cover pages; numbering by opening (*carta*: left/right share a
   number), which would let Conti's folio references link to pages. Open question: is MPAP 4 foliated r/v or by opening?
+
+## 9. Catasto of 1427 (23 October, evening)
+- Downloaded Brown's Online Catasto (city of Florence) through its search form: 10,004 households, all 25 fields →
+  `reference/catasto_1427/` (data, codebook, decoded copy, README with source and citation).
+- **Conti → Catasto 1427 tab**: for each tagged person, possible Catasto households (same person, or son / daughter / widow),
+  with reasons, warnings (common name, age in 1427 vs the year of the entry, trade agrees/differs) and the household's gonfalone,
+  trade, age, bocche, wealth, Campioni vol./page. Laura decides; decisions in `conti_data/_catasto.json`; xlsx of confirmed links.
+- First run on MPAP 4: 132 people, 45 with possible households. Best so far: Michele di Fazio, notaio = Michele di Fazio, judge and
+  notary, S. Giovanni – Chiavi, age 74 (strong); Salvestro di ser Bartolomeo (possible); Andrea di Pagolo dell'Aressa, Leon Bianco,
+  perhaps son of Pagolo di Jacopo dell'Aressa. MPAP 4 is c. 1386–1391, ~40 years before the Catasto: most matches will be heirs.
+- Noticed: RS1154 line 5 "28 di genaio 288" is read as 1288/1289; probably 388 (check the transcription).
+- Needs: restart Conti; commit to GitHub (steps given in the chat).

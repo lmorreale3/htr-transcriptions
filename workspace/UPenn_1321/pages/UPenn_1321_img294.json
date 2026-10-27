@@ -3,17 +3,72 @@
  "collection": "UPenn_1321",
  "image": "images/UPenn_1321/UPenn_1321_img294.jpg",
  "order": 294,
- "folio": "",
+ "folio": "147r",
  "width": 1349,
  "height": 2892,
- "status": "new",
- "lines": [],
+ "status": "machine_read",
+ "lines": [
+  {
+   "id": "l1",
+   "polygon": [
+    [
+     975.0,
+     1635.0
+    ],
+    [
+     975.0,
+     1669.0
+    ],
+    [
+     984.0,
+     1667.0
+    ],
+    [
+     984.0,
+     1635.0
+    ],
+    [
+     984.0,
+     1606.0
+    ],
+    [
+     975.0,
+     1606.0
+    ],
+    [
+     975.0,
+     1635.0
+    ]
+   ],
+   "baseline": [
+    [
+     975.0,
+     1635.0
+    ],
+    [
+     984.0,
+     1635.0
+    ]
+   ],
+   "readings": {
+    "kraken": "o"
+   },
+   "flag": false,
+   "note": "",
+   "text": "o",
+   "agreement": null
+  }
+ ],
  "note": "",
  "history": [
   {
    "t": "2026-10-18T17:10:17",
    "event": "imported"
+  },
+  {
+   "t": "2026-10-25T19:50:55",
+   "event": "machine reading: kraken (catmus_secondtraining_v2_4.mlmodel)"
   }
  ],
- "updated": "2026-10-18T17:10:17"
+ "updated": "2026-10-25T19:50:55"
 }
